@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Cooper Black';
+  src: url('../public/fonts/CooperBlack.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --heading: 'Cooper Black', serif;
+  --text-purple: #993ccf;
+}
+
+body,
+html {
+  margin: 0;
+  overflow-x: clip;
+  padding: 0;
+}
