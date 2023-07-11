@@ -14,6 +14,7 @@ export default function Header() {
       <Link
         href="https://github.com/hackclubs/jams"
         target="_blank"
+        style={{marginLeft: "110px"}}
         sx={{ color: 'white' }}>
         <Icon glyph="github" />
       </Link>

@@ -4,25 +4,28 @@ import { useState } from 'react'
 import Footer from '@/components/Footer'
 import SearchControls from '@/components/Search'
 import PreviewCard from '@/components/PreviewCard'
+import { useEffect } from 'react'
+import { promises as fs } from 'fs'
+import path from 'path'
 
 const slides = [
   {
     title: 'How Hack Club Built an AI-Powered Comedy Club at AngelHacks',
     description:
       ' Using GPT 4.0, the game assesses your humor and rewards points and laughter based on its evaluation of your comedic skills.',
-    background: 'https://cloud-m2zh2zpn6-hack-club-bot.vercel.app/0image.png'
+      thumbnail: 'https://cloud-n29u4mb07-hack-club-bot.vercel.app/0image.png'
   },
   {
     title: 'How Hack Club Built an AI-Powered Comedy Club at AngelHacks',
     description:
       ' Using GPT 4.0, the game assesses your humor and rewards points and laughter based on its evaluation of your comedic skills.',
-    background: 'https://cloud-78sm4amqd-hack-club-bot.vercel.app/0image.png'
+    thumbnail: 'https://cloud-n29u4mb07-hack-club-bot.vercel.app/0image.png'
   },
   {
     title: 'How Hack Club Built an AI-Powered Comedy Club at AngelHacks',
     description:
       ' Using GPT 4.0, the game assesses your humor and rewards points and laughter based on its evaluation of your comedic skills.',
-    background: 'https://cloud-95mvb18ss-hack-club-bot.vercel.app/0image.png'
+    thumbnail: 'https://cloud-n29u4mb07-hack-club-bot.vercel.app/0image.png'
   }
 ]
 
@@ -149,7 +152,8 @@ export default function Index() {
               fontSize: 96,
               textShadow: '0px 0px 64px 0px rgba(56, 10, 83, 0.75)',
               mb: 0,
-              lineHeight: 1
+              lineHeight: 1,
+              fontWeight: 400
             }}>
             Code Jams
           </Text>
@@ -215,4 +219,70 @@ export default function Index() {
       <Footer />
     </>
   )
+}
+
+
+const isMarkdownFile = fileName => path.extname(fileName) === '.md'
+
+async function getFiles(dirPath) {
+  let entries = await fs.readdir(dirPath, { withFileTypes: true })
+  let files = entries
+    .filter(fileEnt => fileEnt.isFile() && isMarkdownFile(fileEnt.name))
+    .map(fileEnt => path.join(dirPath, fileEnt.name))
+  let folders = entries.filter(folderEnt => folderEnt.isDirectory())
+  for (let folder of folders) {
+    files = files.concat(await getFiles(path.join(dirPath, folder.name)))
+  }
+  return files
+}
+
+export async function getStaticProps() {
+  const postsDirectory = path.join(process.cwd(), 'jams')
+  const fileNames = await getFiles(postsDirectory)
+
+  const files = await Promise.all(
+    fileNames.map(async filePath => {
+      const fileContents = await fs.readFile(filePath, 'utf8')
+
+      const filePathArray = filePath.split('/')
+      filePathArray.splice(0, filePathArray.indexOf('jams') + 1)
+
+      return {
+        filePath: filePathArray,
+        fileName: path.basename(filePath),
+        content: fileContents
+      }
+    })
+  )
+
+  return {
+    props: {
+      files: files
+    }
+  }
+}
+
+export function getMetaContent(entireFile) {
+  const removingStartingDashes = entireFile.split('---')
+
+  const metaData = removingStartingDashes[1].split('\n')
+  const keyValuePairs = []
+  for (const dataSegment of metaData) {
+    if (dataSegment !== '') {
+      const dataSegmentSplit = dataSegment.split(':')
+      const keyData = dataSegmentSplit[0]
+      let valueData = dataSegmentSplit
+        .slice(1)
+        .join(':')
+        .replace(/'/g, '')
+        .slice(1)
+
+      if (keyData == 'keywords') {
+        valueData = valueData.split(', ')
+      }
+      keyValuePairs.push([keyData, valueData])
+    }
+  }
+
+  return keyValuePairs
 }

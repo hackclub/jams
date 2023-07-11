@@ -3,6 +3,7 @@ import { Box, Container, Heading, Text } from 'theme-ui'
 import { promises as fs } from 'fs'
 import path from 'path'
 import { useEffect } from 'react'
+
 const isMarkdownFile = fileName => path.extname(fileName) === '.md'
 
 async function getFiles(dirPath) {
