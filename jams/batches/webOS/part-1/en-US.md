@@ -1,15 +1,19 @@
 ---
+part: part-1
 title: 'Wielding the Elemental Magic of the Web (not evil)'
-description: 'In this Jam, you'll be creating an awesome welcome screen for your personalOS. It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product that you'll build upon in subsequent Jams.'
-contributor: '@SerenityUX'
+batch: webOS
+description: >
+  In this Jam, you'll be creating an awesome welcome screen for your personalOS.
+  It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
+  that you'll build upon in subsequent Jams.
+contributor: SerenityUX
 thumbnail: 'https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png'
-time-estimate: '30 Min'
-difficulty: 'intermediate'
+timeEstimate: '30 Min'
+difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
 presentation: 'https://www.figma.com/proto/eDPjrXJdDvZrkMgxNjf1kf/tea-leaves?page-id=0%3A1&type=design&node-id=3-19&viewport=191%2C551%2C0.39&t=mfoeIjFrcpSLsFAz-1&scaling=min-zoom&mode=design'
-presentation-pdf: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
-presentation-pdf: 
+presentationPDF: 'https://cloud-biw2lgdxz-hack-club-bot.vercel.app/0sprigworkshop.pdf'
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
@@ -45,23 +49,26 @@ Hey there Hacker! Let's get you setup
 ## Create an Account
 Head over to the [Replit Website](https://replit.com/languages/html) and create an account
 
-<details>
-	<summary>
-		What is Replit?
-	</summary>
+<Dropdown title="What is Replit?">
 Replit is a web-based independent development environment (IDE). Basically Replit allows you to write code in your browser and instantly deploy your site to the entire world. I suppose you could say its *magical*. 
-</details>
-<details><summary>If you're unable to use Replit or would rather not use Replit</summary>If for whatever reason you have difficulty accessing Replit, visit <a href="https://firewalledreplit.com/">Firewalled Replit</a>.
+</Dropdown>
+
+
+
+<Dropdown title="If you're unable to use Replit or would rather not use Replit">
+If for whatever reason you have difficulty accessing Replit, visit <a href="https://firewalledreplit.com/">Firewalled Replit</a>.
 I also recommend checking out GitHub code spaces or running a local development environment in VS Code.
-All the code is the same regardless of the code editor you use. 
-</details>
+All the code is the same regardless of the code editor you use.😉
+</Dropdown>
+
+
 
 ### 2. Create a new Repl/Project 
 Welcome to your Replit Dashboard! Once inside, tap create a Repl and then select **HTML, CSS, and Javascript** as your template. 
 
 Replit will kindly start you off with some boilerplate code (starter code). 
 
-![Replit Signup][https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif]
+![Replit-Signup](https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif)
 
 
 ## Build with Elements
@@ -154,10 +161,10 @@ HTML (HyperText Markup Language) was built for scientists to be able to share re
 For this reason, HTML makes it easy for you to hyper-link to other pages.
 
 ```
-	<body>
-		(rest of your content)
-		<a href="https://example.com/">label</a>
-	</body>
+<body>
+  (rest of your content)
+  <a href="https://example.com/">label</a>
+</body>
 ```
 
 Replace label with the label of the button (so for example [Instagram](https://www.instagram.com/starthackclub/)) and link with the url (like https://www.instagram.com/starthackclub/).
@@ -221,9 +228,7 @@ Your image is probably very large. Let's change the size & shape.
 
 Simply go to the image and apply a style property that sets the width and height: 
 
-```
-  <img style="width: 64px; height: 64px" src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/1img_1181.jpg" />
-```
+`<img style="width: 64px; height: 64px" src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/1img_1181.jpg" />`
 
 I chose to make the width and height 64px, but you don't have to! Pick your own size, play with it, and have fun!
 
@@ -234,20 +239,20 @@ Your image might be a bit crunched up. Try to Google how to fix this (maybe even
 
 ![crunched image](https://cloud-4cdvjzqmo-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_12.43.50_pm.png)
 
-<details><summary>Solution</summary>
-<p>Upon scrubbing through the results, I found the `object-fit: cover` property. Let's try applying that to our image. 
+<Dropdown title="Solution">
+  Upon scrubbing through the results, I found the `object-fit: cover` property. Let's try applying that to our image. Ah lovely, and just like that our image is uncrunched. Whenever you run into something that looks ugly and you want to make it look beautiful, just google it and Google will help you out.
+</Dropdown>
 
-Ah lovely, and just like that our image is uncrunched. Whenever you run into something that looks ugly and you want to make it look beautiful, just google it and Google will help you out.</p>
-</details>
 
 ##### *\*Rounddddd*\*
 Optionally, you can round your corners. Try googling this! (maybe you can even turn your image into a circle shape if you'd like)
 
-<details><summary>Solution</summary>
+<Dropdown title="Solution">
 You probably found a nifty little CSS property called border radius. 
 simply write style="border-radius: 16px; object-fit: cover" on your image tag.
 Note: Semicolons are used to separate css properties
-</details>
+</Dropdown>
+
 
 ![rounded image](https://cloud-b43epg4q2-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_3.59.41_pm.png)
 
@@ -275,7 +280,7 @@ Padding is the gap between the photo and the frame. If you had a box with an ite
 
 Also... here's a comedy skit by Shubham at Epoch Bay Area to learn about Margin and Padding
 
-<video src="https://cloud-2jto14u7d-hack-club-bot.vercel.app/0vid_20221230_184903086.mp4" controls="controls" style="max-width: 480px;">
+<video src="https://cloud-2jto14u7d-hack-club-bot.vercel.app/0vid_20221230_184903086.mp4" controls="controls" style={{maxWidth: "480px"}}>
 </video>
 
 We'll get more into this later, but right now I would just like to bring our items closer together. 
