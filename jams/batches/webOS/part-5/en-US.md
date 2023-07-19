@@ -1,18 +1,18 @@
 ---
-part: part-1
-title: 'Wielding the Elemental Magic of the Web (not evil)'
+part: part-5
+title: p.5 Wielding the Elemental Magic of the Web (not evil)
 batch: webOS
 description: >
   In this Jam, you'll be creating an awesome welcome screen for your personalOS.
   It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
-thumbnail: 'https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png'
+thumbnail: https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png
 timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
-presentation: 'https://www.figma.com/file/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?type=design&node-id=239%3A1286&mode=design&t=5cwsXCx3QrutYqAB-1'
+presentation: https://www.figma.com/file/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?type=design&node-id=239%3A1286&mode=design&t=5cwsXCx3QrutYqAB-1
 presentationPlay: 'https://www.figma.com/proto/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?page-id=239%3A1286&type=design&node-id=243-10232&viewport=1172%2C132%2C0.14&t=Sn3rVs7ua8lHiFmk-1&scaling=contain&starting-point-node-id=243%3A10232&mode=design'
 presentationPDF: 'https://cloud-biw2lgdxz-hack-club-bot.vercel.app/0sprigworkshop.pdf'
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'

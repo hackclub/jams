@@ -109,7 +109,7 @@ export default function JamPage({ jam }) {
 
   return (
     <div>
-      <Header />
+      <Header back={"/"}/>
 
       <Container style={{ paddingTop: '96px' }}>
         <Grid columns={[null, '0.75fr 3fr 0.75fr']} gap={24} style={{ overflow: 'hidden', height: 'calc(100vh - 96px)' }}>
@@ -146,7 +146,7 @@ export default function JamPage({ jam }) {
 
             {presentationSelected ?            
             (<div style={{ width: '100%', aspectRatio: "16/9", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: '0px 0px 24px 24px', overflow: "hidden" }}>
-            <PresentationSlider pdfPath={jam.presentationPDF} />
+            <PresentationSlider presentationPlay={jam.presentationPlay} presentation={jam.presentation} pdfPath={jam.presentationPDF} />
 
             </div>)
             :

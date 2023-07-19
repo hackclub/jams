@@ -5,7 +5,8 @@ import { useRouter } from 'next/router';
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import Header from '@/components/Header'
-import { Container } from 'theme-ui'
+import { Container, Grid } from 'theme-ui'
+import PreviewCard from '@/components/PreviewCard'
 
 export async function getStaticPaths() {
 
@@ -56,29 +57,31 @@ export default function Page({ batch, params }) {
     const router = useRouter();
 console.log(batch)
   return     <div>
-  <Header />
+  <Header back={`/`} />
 
-<Container sx={{paddingTop: "96px"}} variant="copy">
-    <img src={batch.thumbnail}/>
-
+<Container sx={{paddingTop: "96px"}}>
+<Grid columns={[null, '3fr 2fr']} gap={32}>
+<img style={{width: "100%", borderRadius: "16px", marginBottom: "24px"}} src={batch.thumbnail}/>
+    <div>
     <h1>{batch.title}</h1>
     <p>{batch.contributor}</p>
     <p>{batch.description}</p>
+    </div>
+
+</Grid>
+<Grid columns={[null, '1fr 1fr 1fr']}>
 
     {batch.parts.map((part) => 
     <div
     onClick={() => router.push(`/batch/${params.slug}/${part.part}`)}
 
     >
-        <img src={part.thumbnail}/>
-        <p>Part {part.part.split("part-")[1]}</p>
-        <p>{part.keywords.split(", ")[0]}</p>
-        <p>{part.timeEstimate}</p>
-        <p>{part.difficulty}</p>
-
-        <p>{part.title}</p>
+          <PreviewCard
+    {...part}
+    />
     </div>
     )}
+  </Grid>
     {/* render other batch data here */}
   </Container>
   </div>;

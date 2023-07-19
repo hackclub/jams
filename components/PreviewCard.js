@@ -6,14 +6,26 @@ export default function PreviewCard({
   keywords,
   difficulty,
   timeEstimate,
+  part = 0,
   light = true,
   ...props
 }) {
   return (
     <>
-      <Box {...props}>
+      <Box style={{cursor: "pointer"}} {...props}>
         <Box sx={{ borderRadius: '16px' }}>
-        <Box sx={{position: "absolute", marginLeft: "8px", maxWidth: "320px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
+        <Box sx={{position: "absolute", marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
+        {part != "0" ? (
+        <Badge
+        key="partFeature"
+        mr={2}
+        sx={{ cursor: 'pointer', backgroundColor: "#993CCF", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
+        variant="outline"
+        color="#fff"
+        >
+                Part {part.split("-")[1]}
+
+      </Badge>) : (<div></div>)}
             <Badge
         key="keywordFeature"
         mr={2}
@@ -21,6 +33,7 @@ export default function PreviewCard({
         variant="outline"
         color="#993CCF"
         >
+          
                 {keywords.split(", ")[0]}
 
       </Badge>

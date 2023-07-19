@@ -3,7 +3,7 @@ import Icon from '@hackclub/icons'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
-export default function Header({ isHomePage = false }) {
+export default function Header({ isHomePage = false, back }) {
   const [query, setQuery] = useState('')
   const [scrollPosition, setScrollPosition] = useState(0)
   const router = useRouter()
@@ -52,7 +52,17 @@ export default function Header({ isHomePage = false }) {
     cursor: 'pointer', 
     color: "#3c4858"
   }} 
-  onClick={() => router.back()}
+  onClick={() => 
+  {if (back == undefined) {
+
+  
+  router.back()
+} else {
+  router.push(back)
+}
+}
+  
+  }
 >
   <Icon 
     glyph="view-back" 

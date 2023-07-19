@@ -52,7 +52,7 @@ export async function getStaticProps({ params }) {
 export default function PartPage({ part }) {
   return (
 <div>
-  <Header greyModeDefault={true} />
+  <Header back={`/batch/${part.batch}`} greyModeDefault={true} />
 
     <Container sx={{paddingTop: "96px"}} variant="copy">
       <h1>{part.title}</h1>

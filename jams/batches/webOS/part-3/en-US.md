@@ -1,6 +1,6 @@
 ---
-part: part-1
-title: 'Wielding the Elemental Magic of the Web (not evil)'
+part: part-3
+title: 'p.3 Wielding the Elemental Magic of the Web (not evil)'
 batch: webOS
 description: >
   In this Jam, you'll be creating an awesome welcome screen for your personalOS.
