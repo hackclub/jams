@@ -6,11 +6,12 @@ import { MDXRemote } from 'next-mdx-remote';
 import mdxComponents from '../../components/mdxComponents';
 import { Container, Text, Link, Box, Grid, Badge } from 'theme-ui';
 import Header from '@/components/Header';
+
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Icon from '@hackclub/icons'
 import { Link as ScrollLink, Element } from 'react-scroll';
-import PresentationSlider from '../../components/presentationSlider';
+import PresentationSlider from '@/components/presentationSlider';
 
 
 export async function getStaticPaths() {
@@ -261,6 +262,7 @@ export default function JamPage({ jam }) {
           </div>
         </Grid>
       </Container>
+
     </div>
   );
 }

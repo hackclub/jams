@@ -1,5 +1,5 @@
 ---
-title: 'Example'
+title: 'Example2'
 description: >
   In this Jam, you'll be creating an awesome welcome screen for your personalOS.
   It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
@@ -8,7 +8,7 @@ contributor: 'SerenityUX'
 thumbnail: 'https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png'
 timeEstimate: '30 Min'
 difficulty: 'Intermediate'
-keywords: 'Web, App, personalOS, webOS, website, javascript, html, css, replit'
+keywords: 'Game, App, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
 presentation: 'https://www.figma.com/file/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?type=design&node-id=239%3A1286&mode=design&t=5cwsXCx3QrutYqAB-1'
 presentationPlay: 'https://www.figma.com/proto/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?page-id=239%3A1286&type=design&node-id=243-10232&viewport=1172%2C132%2C0.14&t=Sn3rVs7ua8lHiFmk-1&scaling=contain&starting-point-node-id=243%3A10232&mode=design'

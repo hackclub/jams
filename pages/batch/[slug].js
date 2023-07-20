@@ -7,6 +7,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import Header from '@/components/Header'
 import { Container, Grid } from 'theme-ui'
 import PreviewCard from '@/components/PreviewCard'
+import Footer from '@/components/Footer';
 
 export async function getStaticPaths() {
 
@@ -60,8 +61,8 @@ console.log(batch)
   <Header back={`/`} />
 
 <Container sx={{paddingTop: "96px"}}>
-<Grid columns={[null, '3fr 2fr']} gap={32}>
-<img style={{width: "100%", borderRadius: "16px", marginBottom: "24px"}} src={batch.thumbnail}/>
+<Grid sx={{marginBottom: "32px"}} columns={[null, '3fr 2fr']} gap={[1,32]}>
+<img style={{width: "100%", borderRadius: "16px"}} src={batch.thumbnail}/>
     <div>
     <h1>{batch.title}</h1>
     <p>{batch.contributor}</p>
@@ -69,7 +70,7 @@ console.log(batch)
     </div>
 
 </Grid>
-<Grid columns={[null, '1fr 1fr 1fr']}>
+<Grid columns={[null, '1fr 1fr 1fr']} sx={{marginBottom: "32px"}}>
 
     {batch.parts.map((part) => 
     <div
@@ -84,5 +85,6 @@ console.log(batch)
   </Grid>
     {/* render other batch data here */}
   </Container>
+  <Footer/>
   </div>;
 }

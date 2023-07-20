@@ -235,7 +235,7 @@ function Slides({router, initialFeatures}) {
     setFeatures(copyOfFeatures);
   }
   
-  
+
   
   
 
@@ -387,13 +387,49 @@ function Slides({router, initialFeatures}) {
   )
 }
 
+function useStickyCategoryBar() {
+  const [isCategoryBarSticky, setCategoryBarSticky] = useState(false);
+
+  const handleScroll = () => {
+    const headerHeight = 100; // Adjust this value based on the header's height
+    const scrollTop = window.scrollY;
+    setCategoryBarSticky(scrollTop >= headerHeight);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return isCategoryBarSticky;
+}
+
 export default function Index(props) {
+
+  const isCategoryBarSticky = useStickyCategoryBar();
+
+  const categories = ["Web", "Game", "Crypto", "Art", "Python", "3D", "AI/ML"]
+  const [selectedCategory, setSelectedCategory] = useState("")
+  const [query, setQuery] = useState("")
+  const [filter, setFilter] = useState('')
+  const [language, setLanguage] = useState('')
+  const [timeEstimate, settimeEstimate] = useState('') 
+  const [selected, setSelected] = useState('')
+
   const router = useRouter();
 
 
-  console.log(props.jamsContent.singles)
   const batches = [... props.jamsContent.batches, ... props.jamsContent.batches, ... props.jamsContent.batches, ... props.jamsContent.batches]
   const jams = [... props.jamsContent.singles, ... props.jamsContent.singles, ... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles]
+  .filter((jam) => 
+{ 
+  return (jam.keywords.includes(selectedCategory) && Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
+}
+  )
+
   const features = [  {
     keywords: 'Web, AI',
     difficulty: 'Intermediate',
@@ -403,11 +439,16 @@ export default function Index(props) {
     slug: '/test'
   },... props.jamsContent.singles, ... props.jamsContent.singles]
 
-  const [query, setQuery] = useState('')
-  const [filter, setFilter] = useState('')
-  const [language, setLanguage] = useState('')
-  const [timeEstimate, settimeEstimate] = useState('')
-  const [selected, setSelected] = useState('')
+
+
+  const [scrollPosition, setScrollPosition] = useState(0)
+  useEffect(() => {
+    const onScroll = () => {
+      setScrollPosition(window.pageYOffset)
+    }
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
     <>
@@ -435,7 +476,7 @@ export default function Index(props) {
             zIndex: -1
           }}
         />
-        <Header isHomePage={true} />
+        <Header jams={jams} query={query} setQuery={setQuery} isHomePage={true} />
         <Box
           sx={{ p: 4, textAlign: 'center',          marginTop: "64px",          position: 'relative', zIndex: 2,
            }}>
@@ -603,6 +644,37 @@ export default function Index(props) {
             (one-part Jams)
           </Text>
         </Text>
+        
+        <Box style={{display: "flex",              top: 84, backgroundColor: "#fff", zIndex: 2,
+          left: 0, opacity: `${Math.min(((scrollPosition / 500) - 1), 1)}`,        backdropFilter: 'blur(5px)',          backgroundColor: `rgba(200, 200, 200, ${Math.min(((scrollPosition / 500) - 1), 0.75)})`,
+          right: 0, cursor: 'pointer', position: 'fixed', flexDirection: "row", borderColor: "#e0e6ed", borderTop: "1px solid #e0e6ed", borderBottom: "1px solid #e0e6ed"}}>
+        <Container>
+        <Badge
+        key="all"
+        mr={2}
+        sx={{ cursor: 'pointer', backgroundColor: selectedCategory == "" ? ("#993CCF") : ("#fff"), marginTop: "8px", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
+        variant="outline"
+        color={selectedCategory == "" ? ("#fff") : ("#993CCF")}
+        onClick={() => setSelectedCategory("")}
+        >
+                All
+
+      </Badge>
+        {categories.map((category) =>
+        <Badge
+        key="all"
+        mr={2}
+        sx={{backgroundColor: selectedCategory == category ? ("#993CCF") : ("#fff"), marginTop: "8px", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
+        variant="outline"
+        color={selectedCategory == category ? ("#fff") : ("#993CCF")}
+        onClick={() => setSelectedCategory(category)}
+        >
+                {category}
+
+      </Badge>        
+      )}
+</Container>
+        </Box>
         {/* <SearchControls
           query={query}
           setQuery={setQuery}
@@ -613,7 +685,10 @@ export default function Index(props) {
           timeEstimate={timeEstimate}
           settimeEstimate={settimeEstimate}
         /> */}
+          {jams.length != 0 ? (<p style={{marginTop: 8, marginBottom: 0}}>{jams.length} Jams Found</p>) : (<p style={{marginTop: 8, marginBottom: 0}}>No Results Found</p>)}
+
         <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ py: 3 }}>
+
           {jams.map((jam, idx) => (
             <PreviewCard 
             style={{cursor: "pointer"}}
