@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { number } from 'prop-types'
 
-export default function Header({ isHomePage = false, back, query, setQuery, jams }) {
+
+export default function Header({ isHomePage = false, back, query, setQuery, jams = [] }) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [searching, setSearching] = useState(false);
   const [numberAvailable, setNumberAvailable] = useState(5);
