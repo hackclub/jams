@@ -84,6 +84,7 @@ Extrude the square by 50 and add some roundness.
 </GridItem>
 <GridItem>
 > We’ll start with the body of the house.
+
 Press “+” in the toolbar, then “Cube”. Select the top of the base so it highlights red.
 Adjust settings.
 - Size: X200, Y200, Z200
@@ -110,6 +111,7 @@ In the toolbar, select the `Vertex (V)` select tool.
 </GridItem>
 <GridItem>
 > Now, let’s make the roof.
+
 Duplicate the cube and drag the copy up.
 - `Ctrl`/`⌘`+`D` OR right-click > Duplicate
 In the toolbar, select the `Vertex (V)` select tool.
@@ -122,6 +124,7 @@ Exit (”X”) out and drag the roof down. Repeat the above steps until the roof
 </GridItem>
 <GridItem>
 > Let’s add some roundness to the roof.
+
 Select (single-click) the roof. Adjust settings:
 - Subdivision Modifier > Level: 2
 In the toolbar, select the `Loop Cut (C)` tool.
@@ -133,6 +136,7 @@ In the toolbar, select the `Loop Cut (C)` tool.
 </GridItem>
 <GridItem>
 > Now some roundness for the walls.
+
 Repeat the above steps on the body.
 </GridItem>
 </Grid>
@@ -144,6 +148,7 @@ Repeat the above steps on the body.
 </GridItem>
 <GridItem>
 > Our scene desperately needs a makeover. Let’s start with the background!
+
 Click the background to deselect all objects. Adjust scene settings:
 - Frame > BG Color: any color you want!
 </GridItem>
@@ -153,8 +158,9 @@ Click the background to deselect all objects. Adjust scene settings:
 </GridItem>
 <GridItem>
 > Now, let’s make the ground look like grass and dirt.
+
 Select (single-click) the ground. Adjust settings:
-- Material > ~~Color~~ Depth
+- Material > <strike>Color</strike> Depth
 - Type: Linear
 - Direction: X0 Y0 Z1
 Adjust the start and end positions of the depth layer.
@@ -176,6 +182,7 @@ Repeat for the walls and the roof. Make it your own!
 </GridItem>
 <GridItem>
 > You’re on your own for this one. You got this!
+
 In the toolbar, use the `Rectangle (R)` and `Ellipse (O)` tools to draw doors and windows on the house.
 Add rounding and color to them as well.
 > 💡 To add rounding to specific corners, click the "⛶” icon in Shape > Corner.
@@ -189,6 +196,7 @@ Add rounding and color to them as well.
 </GridItem>
 <GridItem>
 > You’re on your own for this one. You got this!
+
 In the toolbar, add cubes and cylinders with the “+” icon to form trees.
 Add rounding and color to them as well. Try using a Depth material for a gradient effect.
 </GridItem>
@@ -201,6 +209,7 @@ Add rounding and color to them as well. Try using a Depth material for a gradien
 </GridItem>
 <GridItem>
 > Let’s add a green glow effect coming from the trees!
+
 Select (left-click) the body of the house. In Material:
 - Click the “+” icon to add a new layer.
 - Select ~~Color~~ Depth
@@ -218,6 +227,7 @@ Drag the origin of the layer to the tree and adjust the end position.
 </GridItem>
 <GridItem>
 > Let’s build a stone path towards the door!
+
 In the toolbar, select the `Vector` tool. Draw the vertices to form a stone step. Adjust settings:
 - Corner: 8
 - Extrusion: 2
