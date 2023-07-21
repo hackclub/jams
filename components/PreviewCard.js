@@ -1,4 +1,6 @@
 import { Box, Text, Card, Badge, Image } from 'theme-ui'
+import { useState } from 'react'
+
 export default function PreviewCard({
   title,
   thumbnail,
@@ -10,10 +12,13 @@ export default function PreviewCard({
   light = true,
   ...props
 }) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <>
-      <Box style={{cursor: "pointer"}} {...props}>
+      <Box onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} style={{cursor: "pointer"}} {...props}>
         <Box sx={{ borderRadius: '16px' }}>
+        {isHovered ? (
         <Box sx={{position: "absolute", marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
         {part != "0" ? (
         <Badge
@@ -56,7 +61,7 @@ export default function PreviewCard({
         >
         {timeEstimate}
       </Badge>
-            </Box>
+            </Box>) : (<Box></Box>)}
           <Image
             src={thumbnail}
             sx={{

@@ -1,5 +1,5 @@
 ---
-title: 'Zero to Hero: Create Basic Python Apps, Machine Learning, and anything you want with Gradio & Python'
+title: 'Create a Machine Learning App w/ Gradio'
 description: >
   Learn how to take any Python function and turn it into a web application in 1 line using Gradio. You can deploy anything from a simple calculator to machine learning apps with Gradio.
 contributor: 'ganning127'

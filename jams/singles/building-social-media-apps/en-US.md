@@ -1,5 +1,5 @@
 ---
-title: 'Building social media apps'
+title: 'Building Your Own Social Media w/ 🔥 Firebase 🏰'
 description: >
     At the end of this jam, you'll create your very own social media app that handles users and posts.
 contributor: 'InternetRamen'

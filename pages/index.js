@@ -133,7 +133,7 @@ function Slides({router, initialFeatures}) {
       <Card
           key={0}
           
-          onClick={() => router.push(`/jam/${slides[0].slug}`)}
+          onClick={() => router.push(`/jam/${features[0].slug}`)}
           sx={{
                 backgroundImage: `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${features[0].thumbnail}")`,
     backgroundSize: 'cover',

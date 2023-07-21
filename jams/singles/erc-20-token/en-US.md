@@ -1,5 +1,5 @@
 ---
-title: 'From Code to Crypto: An epic Adventure in Cryptocurrency Creation with Solidity'
+title: 'Create Your Own Crypto Currency with Solidity'
 description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
 contributor: 'briyandyju09'
