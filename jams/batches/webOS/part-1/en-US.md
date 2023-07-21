@@ -44,7 +44,7 @@ There are six steps/headings in this Jam! Go through each and begin building you
 5. **Additional Optional Style Challenges**
 6. **Next Time on Building Your Personal OS**
 
-## Enter the Code Editor 
+## Enter the Code Editor
 Hey there Hacker! Let's get you setup
 
 ## Create an Account
@@ -64,7 +64,7 @@ All the code is the same regardless of the code editor you use.😉
 
 
 
-### 2. Create a new Repl/Project 
+### 2. Create a new Repl/Project
 Welcome to your Replit Dashboard! Once inside, tap create a Repl and then select **HTML, CSS, and Javascript** as your template. 
 
 Replit will kindly start you off with some boilerplate code (starter code). 
@@ -195,7 +195,7 @@ Your content most likely looks rather bland and uninteresting which leads us int
 
 ![content styling in progress](https://cloud-9jc9u3xyy-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_3.51.07_pm.png)
 
-## Style Your Elements 
+## Style Your Elements
 ### What's a style?
 A style is a property-value pair that changes the way an element looks.
 

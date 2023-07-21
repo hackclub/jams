@@ -6,6 +6,8 @@ import { MDXRemote } from 'next-mdx-remote';
 import mdxComponents from '../../../components/mdxComponents';
 import { Container } from 'theme-ui'
 import Header from '@/components/Header'
+import JamPage from '../../jam/[slug]'
+import JamComponent from '@/components/JamComponent';
 
 export async function getStaticPaths() {
   const batchesDir = path.join(process.cwd(), 'jams', 'batches');
@@ -19,7 +21,9 @@ export async function getStaticPaths() {
 
     partsNames.forEach((partName) => {
       paths.push({
-        params: { slug: batchName, part: partName },
+        params: { slug: batchName,
+           
+          part: partName },
       });
     });
   });
@@ -38,35 +42,30 @@ export async function getStaticProps({ params }) {
 
   // Serialize the MDX content
   const mdxSource = await serialize(formattedContent);
+  const headers = [];
+  
+  const regex = /^#{2}\s(.+)$/gm; // Regular expression to match ## headers
+
+  let match;
+  while ((match = regex.exec(content))) {
+    headers.push(match[1]);
+  }
+
 
   return {
     props: {
       part: {
         ...data,
-        content: mdxSource, // Replace the content property with the serialized MDX source
+        headers,
+        source: mdxSource, // Replace the content property with the serialized MDX source
       },
     },
   };
 }
 
 export default function PartPage({ part }) {
+  console.log(part.headers)
   return (
-<div>
-  <Header back={`/batch/${part.batch}`} greyModeDefault={true} />
-
-    <Container sx={{paddingTop: "96px"}} variant="copy">
-      <h1>{part.title}</h1>
-      <video style={{width: "256px"}}  controls src={part.video}/>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <h2>Part Resources</h2>
-        {part.presentation && <a href={part.presentationPDF}>Presentation</a>}
-        {part.video && <a href={part.video}>Video</a>}
-        {part.notes && <a href={part.notes}>Notes</a>}
-        {part.poster && <a href={part.poster}>Poster</a>}
-      </div>
-      {/* Render the MDX content */}
-      <MDXRemote components={mdxComponents} {...part.content} />
-    </Container>
-    </div>
+    <JamComponent jamsContent={ {singles: [] } } jam={part}/>
   );
 }

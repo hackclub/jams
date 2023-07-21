@@ -9,6 +9,7 @@ import { Container, Grid } from 'theme-ui'
 import PreviewCard from '@/components/PreviewCard'
 import Footer from '@/components/Footer';
 import { useState } from 'react'
+import JamComponent from '@/components/JamComponent';
 
 function getJams(fs, directory) {
   const filenames = fs.readdirSync(directory);
@@ -83,11 +84,10 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Page({ batch, params, jams }) {
+  
   const [query, setQuery] = useState("")
-  console.log(jams)
 
     const router = useRouter();
-console.log(batch)
   return     <div>
   <Header setQuery={setQuery} query={query} jams={jams.singles} back={`/`} />
 
