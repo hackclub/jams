@@ -27,7 +27,7 @@ export const CodeBlock = ({ children, className }) => {
   }, [children, language]);
 
   return (
-    <pre style={{borderRadius: '8px', overflow: 'hidden' }}>
+    <pre style={{borderRadius: '8px', fontSize: 16, overflow: 'hidden' }}>
       <code ref={codeRef} className={language}>
         {children}
       </code>
