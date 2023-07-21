@@ -91,7 +91,7 @@ export default function JamComponent({ jam, jamsContent }) {
   </ul>
   
             </Box>
-            <Box ref={scrollBoxRef} style={{ overflow: 'scroll', paddingLeft: [0, '24px'], paddingRight: [0, '24px'], height: 'calc(100vh - 96px)' }}>
+            <Box ref={scrollBoxRef} style={{ overflowY: 'scroll', overflowX: "hidden", paddingLeft: [0, '24px'], paddingRight: [0, '24px'], height: 'calc(100vh - 96px)' }}>
               <Box>
   
   
