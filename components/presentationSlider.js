@@ -45,7 +45,7 @@ const PresentationSlider = ({ pdfPath, presentationPlay, presentation }) => {
   return (
     <div style={{ width: '100%', cursor: pageNumber <= numPages - 1 ? ("pointer") : ("auto"), backgroundColor: '#000', position: 'relative', height: '100%', aspectRatio: '16/9' }} ref={containerRef}>
         <div style={{cursor: "pointer", position: 'absolute', borderRadius: "12px", top: 16, left: 16, zIndex: 1}}>
-        <Link sx={{textDecoration: "none", marginRight: "16px"}} href={presentationPlay} style={{ color: '#5551FF', backgroundColor: "#fff", border: "2px solid #5551FF", padding: "8px 16px", fontSize: "16px", borderRadius: "8px" }}>
+        <Link  sx={{textDecoration: "none", marginRight: "16px"}} href={presentationPlay} style={{ color: '#5551FF', backgroundColor: "#fff", border: "2px solid #5551FF", padding: "8px 16px", fontSize: "16px", borderRadius: "8px" }}>
         Play in Figma
         </Link>
         <Link sx={{textDecoration: "none"}} href={presentation} style={{ color: '#fff', backgroundColor: "#5551FF", padding: "8px 16px", fontSize: "16px", borderRadius: "8px" }}>
