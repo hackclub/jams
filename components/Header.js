@@ -165,7 +165,7 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
                     columns={[null, '1fr 2fr']}
                     style={{ alignItems: 'start', cursor: 'pointer', borderBottom: '1px solid #e0e6ed', paddingBottom: '8px', paddingTop: '8px' }}
                   >
-                    <img style={{ maxWidth: '100%', borderRadius: '8px' }} src={jam.thumbnail} />
+                    <img style={{ maxWidth: '100%', aspectRatio: "16/9", objectFit: "cover", borderRadius: '8px' }} src={jam.thumbnail} />
                     <p style={{ margin: 0, fontSize: '16px' }}>{jam.title}</p>
                   </Grid>
                 ))}

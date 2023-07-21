@@ -9,6 +9,20 @@ import Header from '@/components/Header'
 import JamPage from '../../jam/[slug]'
 import JamComponent from '@/components/JamComponent';
 
+function getJams(fs, directory) {
+  const filenames = fs.readdirSync(directory);
+
+  return filenames.map((filename) => {
+    const fileContent = fs.readFileSync(path.join(directory, filename, 'en-US.md'), 'utf8');
+    const { data, content } = matter(fileContent);
+
+    return {
+      ...data, // Spread the properties from the data object
+      content,
+    };
+  });
+}
+
 export async function getStaticPaths() {
   const batchesDir = path.join(process.cwd(), 'jams', 'batches');
   const batchNames = fs.readdirSync(batchesDir);
@@ -46,6 +60,13 @@ export async function getStaticProps({ params }) {
   
   const regex = /^#{2}\s(.+)$/gm; // Regular expression to match ## headers
 
+  const jamsDir = path.join(process.cwd(), 'jams');
+
+  const singlesDir = path.join(jamsDir, 'singles');
+
+  const singles = getJams(fs, singlesDir);
+
+
   let match;
   while ((match = regex.exec(content))) {
     headers.push(match[1]);
@@ -59,13 +80,16 @@ export async function getStaticProps({ params }) {
         headers,
         source: mdxSource, // Replace the content property with the serialized MDX source
       },
+      jamsContent: {
+        singles
+      },
     },
   };
 }
 
-export default function PartPage({ part }) {
+export default function PartPage({ part, jamsContent }) {
   console.log(part.headers)
   return (
-    <JamComponent jamsContent={ {singles: [] } } jam={part}/>
+    <JamComponent jamsContent={jamsContent} jam={part}/>
   );
 }
