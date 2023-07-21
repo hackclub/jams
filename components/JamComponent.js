@@ -71,8 +71,8 @@ export default function JamComponent({ jam, jamsContent }) {
   
         <Container style={{ paddingTop: '96px' }}>
           <Grid columns={[null, '0.75fr 3fr 0.75fr']} gap={24} style={{ overflow: 'hidden', height: 'calc(100vh - 96px)' }}>
-            <nav>
-              <h2 style={{ margin: 0 }}>Outline</h2>
+            <Box sx={{display: ["none", "flex"], flexDirection: "column"}}>
+              <h2 style={{ margin: 0 }}>Outline</h2> 
               <ul>
     {jam?.headers?.map((header) => (
       <li key={header}>
@@ -90,8 +90,8 @@ export default function JamComponent({ jam, jamsContent }) {
     ))}
   </ul>
   
-            </nav>
-            <Box ref={scrollBoxRef} style={{ overflow: 'scroll', paddingLeft: '24px', paddingRight: '24px', height: 'calc(100vh - 96px)' }}>
+            </Box>
+            <Box ref={scrollBoxRef} style={{ overflow: 'scroll', paddingLeft: [0, '24px'], paddingRight: [0, '24px'], height: 'calc(100vh - 96px)' }}>
               <Box>
   
   

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import Icon from '@hackclub/icons'
-import { Link
+import { Link, Box
  } from 'theme-ui'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -53,7 +53,7 @@ const PresentationSlider = ({ pdfPath, presentationPlay, presentation }) => {
         </Link>
 
         </div>
-      <div style={{ position: 'absolute', top: 16, right: 16, zIndex: 1, color: '#fff' }}>
+      <Box sx={{ position: 'absolute', top: ["auto", 16], bottom: [16, "auto"], left: [16, "auto"], right: ["auto", 16], zIndex: 1, color: '#fff' }}>
         <div>
 
           <div style={{display: "flex", backgroundColor: "#E1E6EC", borderRadius: "12px", color: "#000", alignItems: "center", padding: "8px"}}>
@@ -70,7 +70,7 @@ const PresentationSlider = ({ pdfPath, presentationPlay, presentation }) => {
             </div>
           </div>
         </div>
-      </div>
+      </Box>
 
       
       <Document style={{ backgroundColor: '#E1E6EC' }} file={pdfPath} onLoadSuccess={onDocumentLoadSuccess}>
