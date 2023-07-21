@@ -65,7 +65,7 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
         }}
       >
         {isHomePage ? (
-          <Image src="/assets/flag.svg" />
+          <Link href="https://hackclub.com/"><Image src="/assets/flag.svg" /></Link>
         ) : (
           <Box sx={{ height: '84px', alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
             <div
