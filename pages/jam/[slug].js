@@ -14,6 +14,21 @@ import { Link as ScrollLink, Element } from 'react-scroll';
 import PresentationSlider from '@/components/presentationSlider';
 
 
+function getJams(fs, directory) {
+  const filenames = fs.readdirSync(directory);
+
+  return filenames.map((filename) => {
+    const fileContent = fs.readFileSync(path.join(directory, filename, 'en-US.md'), 'utf8');
+    const { data, content } = matter(fileContent);
+
+    return {
+      ...data, // Spread the properties from the data object
+      content,
+    };
+  });
+}
+
+
 export async function getStaticPaths() {
   const jamsDir = path.join(process.cwd(), 'jams', 'singles');
   const jamNames = fs.readdirSync(jamsDir);
@@ -28,6 +43,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const fs = require('fs');
+  const path = require('path');
+
   const jamDirectory = path.join(process.cwd(), 'jams', 'singles', params.slug);
 
   const fileContent = fs.readFileSync(path.join(jamDirectory, 'en-US.md'), 'utf8');
@@ -46,6 +64,13 @@ export async function getStaticProps({ params }) {
     headers.push(match[1]);
   }
 
+  const jamsDir = path.join(process.cwd(), 'jams');
+
+  const singlesDir = path.join(jamsDir, 'singles');
+  const batchesDir = path.join(jamsDir, 'batches');
+
+  const singles = getJams(fs, singlesDir);
+
   return {
     props: {
       jam: {
@@ -53,13 +78,17 @@ export async function getStaticProps({ params }) {
         source: mdxSource,
         headers,
       },
+      jamsContent: {
+        singles
+      },
     },
   };
 }
 
 
 
-export default function JamPage({ jam }) {
+export default function JamPage({ jam, jamsContent }) {
+
   const router = useRouter();
   const scrollBoxRef = useRef(null);
 
@@ -107,10 +136,17 @@ export default function JamPage({ jam }) {
     };
   }, []);
   
+  const [query, setQuery] = useState("")
 
   return (
     <div>
-      <Header back={"/"}/>
+      <Header query={query} setQuery={setQuery} jams={jamsContent.singles
+        .filter((jam) => 
+        { 
+          return (Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
+        }
+          )
+      } back={"/"}/>
 
       <Container style={{ paddingTop: '96px' }}>
         <Grid columns={[null, '0.75fr 3fr 0.75fr']} gap={24} style={{ overflow: 'hidden', height: 'calc(100vh - 96px)' }}>

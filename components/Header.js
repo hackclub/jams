@@ -169,6 +169,7 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
                     <p style={{ margin: 0, fontSize: '16px' }}>{jam.title}</p>
                   </Grid>
                 ))}
+                {jams.length > numberAvailable ? (
                 <p
                   onMouseDown={handleMouseDown}
                   onClick={handleShowMoreClick}
@@ -181,7 +182,7 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
                   }}
                 >
                   Show More
-                </p>
+                </p>) : (<p></p>)}
               </Box>
             </div>
           )}

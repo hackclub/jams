@@ -8,6 +8,23 @@ import Header from '@/components/Header'
 import { Container, Grid } from 'theme-ui'
 import PreviewCard from '@/components/PreviewCard'
 import Footer from '@/components/Footer';
+import { useState } from 'react'
+
+function getJams(fs, directory) {
+  const filenames = fs.readdirSync(directory);
+
+  return filenames.map((filename) => {
+    const fileContent = fs.readFileSync(path.join(directory, filename, 'en-US.md'), 'utf8');
+    const { data, content } = matter(fileContent);
+
+    return {
+      ...data, // Spread the properties from the data object
+      content,
+    };
+  });
+}
+
+
 
 export async function getStaticPaths() {
 
@@ -32,6 +49,14 @@ export async function getStaticProps({ params }) {
   const partsDirectory = path.join(batchDirectory);
   const partsNames = fs.readdirSync(partsDirectory).filter(part => part.startsWith('part'));
   partsNames.sort((a, b) => a.localeCompare(b, undefined, {numeric: true}));
+  const jamDirectory = path.join(process.cwd(), 'jams', 'singles', params.slug);
+
+  const jamsDir = path.join(process.cwd(), 'jams');
+
+  const singlesDir = path.join(jamsDir, 'singles');
+
+  const singles = getJams(fs, singlesDir);
+
 
   const parts = partsNames.map(partName => {
     const partContent = fs.readFileSync(path.join(partsDirectory, partName, 'en-US.md'), 'utf8');
@@ -39,7 +64,7 @@ export async function getStaticProps({ params }) {
 
     return {
       ...data,
-      content,
+      content, 
     };
   });
   return {
@@ -49,16 +74,22 @@ export async function getStaticProps({ params }) {
         content: readMeContent,
         parts,
       },
+      jams: {
+        singles
+      },
       params
     },
   };
 }
 
-export default function Page({ batch, params }) {
+export default function Page({ batch, params, jams }) {
+  const [query, setQuery] = useState("")
+  console.log(jams)
+
     const router = useRouter();
 console.log(batch)
   return     <div>
-  <Header back={`/`} />
+  <Header setQuery={setQuery} query={query} jams={jams.singles} back={`/`} />
 
 <Container sx={{paddingTop: "96px"}}>
 <Grid sx={{marginBottom: "32px"}} columns={[null, '3fr 2fr']} gap={[1,32]}>

@@ -70,151 +70,10 @@ function getBatches(fs, directory) {
 
 
 
-const batches = [
-  {
-    title: 'Creating Your Personal Web-based Operating System (w/ Apps included)',
-    short: "An Introspective Journey to Define the Self in Code",
-    slug: "webOS",
-    description: 'What if instead of directing random strangers on the internet to your boring personal website, you could direct them to an entire OS (where through exploring, they get to know you)',
-    video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4',
-    thumbnail: 'https://cloud-78sm4amqd-hack-club-bot.vercel.app/0image.png',
-    keywords: 'Web',
-    timeEstimate: '5 Hours',
-    difficulty: 'Beginner',
-    numberOfParts: 4
-  },
-  {
-    title: 'Creating Your Personal Web-based Operating System (w/ Apps included)',
-    short: "An Introspective Journey to Define the Self in Code",
-    slug: "webOS",
-    description: 'What if instead of directing random strangers on the internet to your boring personal website, you could direct them to an entire OS (where through exploring, they get to know you)',
-    video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4',
-    thumbnail: 'https://cloud-78sm4amqd-hack-club-bot.vercel.app/0image.png',
-    keywords: 'Web',
-    timeEstimate: '5 Hours',
-    difficulty: 'Beginner',
-    numberOfParts: 4
-  },
-  {
-    title: 'Creating Your Personal Web-based Operating System (w/ Apps included)',
-    short: 'An Introspective Journey to Define the Self in Code',
-    slug: "webOS",
-
-    description: 'What if instead of directing random strangers on the internet to your boring personal website, you could direct them to an entire OS (where through exploring, they get to know you)',
-    video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4',
-    thumbnail: 'https://cloud-78sm4amqd-hack-club-bot.vercel.app/0image.png',
-    keywords: 'Web',
-    timeEstimate: '5 Hours',
-    difficulty: 'Beginner',
-    numberOfParts: 4
-  },
-  {
-    title: 'Creating Your Personal Web-based Operating System (w/ Apps included)',
-    short: 'An Introspective Journey to Define the Self in Code',
-    slug: "webOS",
-
-    description: 'What if instead of directing random strangers on the internet to your boring personal website, you could direct them to an entire OS (where through exploring, they get to know you)',
-    video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4',
-    thumbnail: 'https://cloud-78sm4amqd-hack-club-bot.vercel.app/0image.png',
-    keywords: 'Web',
-    timeEstimate: '5 Hours',
-    difficulty: 'Beginner',
-    numberOfParts: 4
-  }
-
-
-]
-
-const slides = [
-  {
-    title: 'Sample Hack Club Built an AI-Powered Comedy Club at AngelHacks',
-    description:
-      ' Using GPT 4.0, the game assesses your humor and rewards points and laughter based on its evaluation of your comedic skills.',
-      thumbnail: 'https://cloud-78sm4amqd-hack-club-bot.vercel.app/0image.png',
-    timeEstimate: "45min",
-    keywords: ["Web", "VR", "Sample"],
-    difficulty: "Intermediate",
-    slug: "example"
-  },
-  {
-    title: 'Sample2 Hack Club Built an AI-Powered Comedy Club at AngelHacks',
-    description:
-      ' Using GPT 4.0, the game assesses your humor and rewards points and laughter based on its evaluation of your comedic skills.',
-    thumbnail: 'https://cloud-kpqzgy9pn-hack-club-bot.vercel.app/0kmm_6259.jpeg',
-    timeEstimate: "30min",
-    keywords: ["Mobile", "OS", "Sample"],
-    difficulty: "Intermediate",
-    slug: "webSample"
-
-  },
-  {
-    title: 'Sample3 Hack Club Built an AI-Powered Comedy Club at AngelHacks',
-    description:
-      ' Using GPT 4.0, the game assesses your humor and rewards points and laughter based on its evaluation of your comedic skills.',
-    thumbnail: 'https://cloud-79krudf79-hack-club-bot.vercel.app/0hackers-assemble__1_.png',
-    timeEstimate: "1 Hour",
-    keywords: ["AI/ML", "VR", "Sample"],
-    difficulty: "Beginner",
-    slug: "webSample"
-
-  }
-]
-
-const fakeJams = [
-  {
-    keywords: ['Web'],
-    difficulty: 'Beginner',
-    timeEstimate: '45 Min',
-    image: 'https://picsum.photos/300/200',
-    title: 'Designing and Customizing Your Own Sneakers in CSS',
-    slug: '/test',
-    
-  },
-  {
-    keywords: ['Web', 'AI'],
-    difficulty: 'Intermediate',
-    timeEstimate: '1.5 hours',
-    image: 'https://picsum.photos/300/200',
-    title: 'Making a Story Game with OpenAI API',
-    slug: '/test'
-  },
-  {
-    keywords: ['Web', 'AI'],
-    difficulty: 'Advanced',
-    timeEstimate: '2 hours',
-    image: 'https://picsum.photos/300/200',
-    title: 'Cloning and Coding with Voices using 11-Labs',
-    slug: '/test'
-  },
-  {
-    keywords: ['APIs'],
-    difficulty: 'Intermediate',
-    timeEstimate: '1 hour',
-    image: 'https://picsum.photos/300/200',
-    title: 'Creating and Exchanging Club Currency',
-    slug: '/test'
-  },
-  {
-    keywords: ['App'],
-    difficulty: 'Beginner',
-    timeEstimate: '1 hour',
-    image: 'https://picsum.photos/300/200',
-    title: 'Making a Custom Soundboard in SwiftUI',
-    slug: '/test'
-  },
-  {
-    keywords: ['Extension'],
-    difficulty: 'Intermediate',
-    timeEstimate: '2 hours',
-    image: 'https://picsum.photos/300/200',
-    title: 'Chrome Extension to Cheat in Kahoot (use responsibly)',
-    slug: '/test'
-  }
-];
 
 
 function Slides({router, initialFeatures}) {
-  const [active, setActive] = useState(Math.floor(slides.length / 2))
+  const [active, setActive] = useState(Math.floor(initialFeatures.length / 2))
 
   const [features, setFeatures] = useState(initialFeatures);
   function moveRight() {
@@ -423,21 +282,14 @@ export default function Index(props) {
 
 
   const batches = [... props.jamsContent.batches, ... props.jamsContent.batches, ... props.jamsContent.batches, ... props.jamsContent.batches]
-  const jams = [... props.jamsContent.singles, ... props.jamsContent.singles, ... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles,... props.jamsContent.singles, ... props.jamsContent.singles]
+  const jams = props.jamsContent.singles
   .filter((jam) => 
 { 
   return (jam.keywords.includes(selectedCategory) && Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
 }
   )
 
-  const features = [  {
-    keywords: 'Web, AI',
-    difficulty: 'Intermediate',
-    timeEstimate: '1.5 hours',
-    thumbnail: 'https://cloud-78sm4amqd-hack-club-bot.vercel.app/0image.png',
-    title: 'Sample FeaturedJam',
-    slug: '/test'
-  },... props.jamsContent.singles, ... props.jamsContent.singles]
+  const features = [props.jamsContent.singles[3], props.jamsContent.singles[4], props.jamsContent.singles[0]]
 
 
 
