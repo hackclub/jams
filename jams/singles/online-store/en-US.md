@@ -3,7 +3,7 @@ title: 'Online Store Odyssey'
 description: >
   In this jam, you'll be designing your own online store with Figma! In the next jam, we'll be using the Shopify API to turn this into a real store.
 contributor: 'ryanchou-dev'
-thumbnail: 'https://cloud-i005yxf6r-hack-club-bot.vercel.app/0thumbnail.png'
+thumbnail: 'https://cloud-o4hxzgrcl-hack-club-bot.vercel.app/0image.png',
 timeEstimate: '45 Min'
 difficulty: 'Easy'
 keywords: 'Figma, website, store, design, ux, ui'
