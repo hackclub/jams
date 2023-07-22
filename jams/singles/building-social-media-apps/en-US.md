@@ -16,7 +16,6 @@ poster: ''
 video: ''
 slug: 'building-social-media-apps'
 ---
-# Building social media apps
 
 _1 hour • Intermediate_
 At the end of this jam, we'll create a social media app that handles users and posts.
