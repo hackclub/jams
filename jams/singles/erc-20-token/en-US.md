@@ -1,20 +1,20 @@
 ---
-title: 'Create Your Own Crypto Currency with Solidity'
-description: >
+*title: 'From Code to Crypto: An epic Adventure in Cryptocurrency Creation with Solidity'
+*description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
-contributor: 'briyandyju09'
-thumbnail: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/1violet__orange__blue__and_pink_crypto_trading_bot_abstract_concept_facebook_post.png'
-timeEstimate: '30 Mins max.'
-difficulty: 'Beginner'
-keywords: 'Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, Testnet'
-language: 'Solidity'
-presentation: ''
-presentationPlay: ''
-presentationPDF: ''
-notes: ''
-poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png' 
-video: ''
-slug: 'erc-20-token'
+*contributor: 'briyandyju09'
+*thumbnail: '![Thumbnail Link](https://cloud-gvf9kgtcv-hack-club-bot.vercel.app/0share_your_token_with_others_.png)'
+*timeEstimate: '30 Mins max.'
+*difficulty: 'Beginner'
+*keywords: 'Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, Testnet'
+*language: 'Solidity'
+*presentation: ''
+*presentationPlay: ''
+*presentationPDF: ''
+*notes: ''
+*poster: '![Poster Link](https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png)' (Stock image is for the fun vibe and was meant to be there, definitly not a lack of image issue)
+*video: ''
+*slug: 'make-your-own-erc20-token'
 ---
 
 
@@ -62,11 +62,12 @@ What you will end up with:
 * ERC-20 - Short for Ethereum Request for Comment 20, It helps guide the creation of new tokens in the ethereum blockchain
 * Testnet - The opposite of Mainnet, Coins in the mainnet have monetary value and the value can change but in a testnet all coins are just virtual copies/duplicates without a realworld value. But dont let that get to you as these coins are indeed shareable!
 
-### WARNING: THE COINS YOU MAKE ARE IN THE TESTNET AND HAVE NO MONETARY VALUE! DONT EXPECT TO MAKE MONEY OUT OF THIS lol 
-### DOUBLE WARNING (AND TIP): WHEN MAKING YOUR METAMASK ACCOUNT, MAKE SURE TO SAVE THE 12 PHRASES AS THEY ARE LIKE A PASSWORD TO YOUR ACCOUNT, STORE THEM ANYWHERE SAFE LIKE YOUR NOTEPAD, DIARY, ANYWHERE SAFE. ONCE LOST, YOUR ACCOUNT IS GONE BYE-BYE FOREVER. (also dont trust anyone and show them your phrases)
+#### WARNING: THE COINS YOU MAKE ARE IN THE TESTNET AND HAVE NO MONETARY VALUE! DONT EXPECT TO MAKE MONEY OUT OF THIS lol 
+#### DOUBLE WARNING (AND TIP): WHEN MAKING YOUR METAMASK ACCOUNT, MAKE SURE TO SAVE THE 12 PHRASES AS THEY ARE LIKE A PASSWORD TO YOUR ACCOUNT, STORE THEM ANYWHERE SAFE LIKE YOUR NOTEPAD, DIARY, ANYWHERE SAFE. ONCE LOST, YOUR ACCOUNT IS GONE BYE-BYE FOREVER. (also dont trust anyone and show them your phrases)
 
 ## The guide! (dont be overwhelmed by the number of steps, Its easy!)
 
+### Creating A Endpoint With Quicknode
 1. Navigate to quicknode.com and create an account
 
 2. Click "Endpoints"
@@ -108,6 +109,8 @@ What you will end up with:
 
 18. Press the text showing "Account 1" to copy the MetaMask address
 
+### Getting some free ETH for exchange fees! 🤑💲
+
 19. Go to sepoliafaucet.com in your web browser (You're just a few clicks away from being a crypto millionaire! Well, at least in Sepolia. Time to collect those shiny tokens!)
 
      ![ss](https://cloud-noik0omfz-hack-club-bot.vercel.app/0screenshot__77_.png)
@@ -115,6 +118,8 @@ What you will end up with:
 21. Paste the copied MetaMask address into the provided field on the Sepolia Faucet website
 
 22. Follow the instructions on the website to claim the free tokens
+
+### The Coding & Creation Part!
 
 23. Go to remix.ethereum.org in your web browser (Now you're a real crypto artist! Grab your virtual paintbrush and start creating your masterpiece.)
 
@@ -150,13 +155,16 @@ the third line imports code from an open source library called openzeppelin
 the forth line defines a new contract called MyToken from the ERC20 contract
 
 the next few lines defines the personality of the coin like its name, symbol, amount and decimal points. psss.. BTW dont remove the " " from around your token name and symbol.
-
+```
 Quick FAQ:
 
-* Why use openzeppelin?: OpenZeppelin is like a prebuilt library with most of the important things already made by the community, think of it like a library used in your fav. programming language. Openzeppelin makes things easy so that we dont have to stress about the backend!
-* What is _mint for and why only that much?: _mint is used to set and create an amount of tokens in the blockchain, you can increase 1000000 to any number but keep in mind that the more bigger the amount is the much less value something has. What I mean is, if everyone in the world has an Iphone, the value or the pride of having one is way low as Iphone/apple products are a way to flex but if everyone has one, you arent much unique (Dont take this example to heart as this applies to anything)
+<Dropdown title="Why use openzeppelin?">
+      OpenZeppelin is like a prebuilt library with most of the important things already made by the community, think of it like a library used in your fav. programming language. Openzeppelin makes things easy so that we dont have to stress about the backend!
+</Dropdown>
 
-```
+<Dropdown title="What is _mint for and why only that much?">
+_mint is used to set and create an amount of tokens in the blockchain, you can increase 1000000 to any number but keep in mind that the more bigger the amount is the much less value something has. What I mean is, if everyone in the world has an Iphone, the value or the pride of having one is way low as Iphone/apple products are a way to flex but if everyone has one, you arent much unique (Dont take this example to heart as this applies to anything)
+</Dropdown>
 
 23. Click on the third icon in the sidebar to access the Solidity compiler
 
@@ -173,6 +181,8 @@ Quick FAQ:
     ![ss](https://cloud-qsv7014dp-hack-club-bot.vercel.app/0screenshot__81_.png)
 
 30. Wait for a message or confirmation from MetaMask indicating the successful deployment
+
+### Verifying your tokens existence (This is where you check if you did things right!)
 
 31. Scroll down in the Deploy and Run Transactions tool to find the "Deployed Contracts" section
 
@@ -224,5 +234,3 @@ Quick FAQ:
 ## Stuck? Facing issues? Your last braincell stopped working?
 
 * Feel free to contact me on slack! The name's @Briyan Dyju
-
-
