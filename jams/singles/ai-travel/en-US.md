@@ -1,9 +1,9 @@
 ---  
-title: 'Wield the Power of AI wizards to Plan Your Travels'  
+title: 'Make an AI Trip Planner for a Club Adventure'  
 description: >  
   This Jam will teach you how to use ChatGPT and AI to create a trip itinerary planner. It is extremely customizable and gives a foundation for you to expand upon with your own ideas!
 contributor: 'ShubhamPatilsd'  
-thumbnail: 'https://cloud-52ssdqcs9-hack-club-bot.vercel.app/0thumbnailfixed.png'  
+thumbnail: 'https://cloud-nszl20cv1-hack-club-bot.vercel.app/0aithumbnail.png'  
 timeEstimate: '60 Min'  
 difficulty: 'Intermediate'  
 keywords: 'API, chatgpt, openai, ai, ai api, trip itinerary, itinerary planner ai, planner ai, website, javascript, HTML, CSS, replit'  
