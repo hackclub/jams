@@ -1,3 +1,23 @@
+---
+part: (Part 2) Finishing the Hilt
+title: 'Forge of Legends: Crafting Weapons, Shields, and Armor in TinkerCAD'  
+batch: 3DArmory
+description: >  
+  In this Jam, you'll be finishing the hilt of the sword that we made in the last jam part. You will have fun customizing your product while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
+contributor: 'thesuperRL'  
+thumbnail: 'https://media.discordapp.net/attachments/893657462790557716/1131005602185875466/Screenshot_2023-07-18_at_4.32.23_PM.png?width=1442&height=1064'
+timeEstimate: '30 Min'  
+difficulty: 'Beginner-Intermediate'
+keywords: 'Sword, CAD, 3D Design, Model, TinkerCAD, 3D Printing, Hilt'  
+language: 'N/A'
+presentation: "" # TODO
+presentationPlay: "" # TODO
+presentationPDF: "" # TODO 
+notes: "" # TODO
+poster: # TODO 
+video: "" # TODO
+---
+
 
 10-30 minutes, beginner difficulty
 
