@@ -281,7 +281,7 @@ export default function Index(props) {
   const router = useRouter();
 
 
-  const batches = [... props.jamsContent.batches, ... props.jamsContent.batches, ... props.jamsContent.batches, ... props.jamsContent.batches]
+  const batches = [... props.jamsContent.batches]
   const jams = props.jamsContent.singles
   .filter((jam) => 
 { 
