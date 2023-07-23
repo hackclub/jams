@@ -1,6 +1,6 @@
 ---
 part: part-2
-title: 'Create Your OS Desktop & Top Bar (w/ clock)'
+title: 'Create Your OS Desktop & Top Bar (w/ a Clock)'
 batch: webOS
 description: >
   In this Jam, you'll be creating an awesome welcome screen for your personalOS.
@@ -22,6 +22,10 @@ video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.
 Mmm... Hacker, you are more brave than I thought. You're continuing on to the second Jam in the Batch. I commend your efforts.
 
 Today we're going to be diving into JavaScript and combining it with the HTML & CSS we learned about last time. Don't worry, you'll probably survive. We'll dive into the JavaScript at the end of this Jam. 
+
+You'll be adding your outlining your window, creating your desktop, and adding a top bar.
+
+![ending with](https://cloud-d6rlms9ox-hack-club-bot.vercel.app/0image.png)
 
 While we will be writing JavaScript, all code will still be remain in the HTML file *(until next time on WebOS Jams)*
 
@@ -54,7 +58,7 @@ Let's group all of our content within a div tag.
 
 That should look something like...
 
-```
+```html
 	<body>
 		<div>
 			(the content of your site)
@@ -71,7 +75,7 @@ Fear not, you're on the right path. The group has no style attributes that would
 ### Outlining our Window
 Alrighty, let's apply a style on our div (yeah... you can apply styles to divs)
 
-```
+```html
 	<div style="border: solid;">
 		(content)
 	</div>
@@ -90,7 +94,7 @@ At the moment our box is taking up the width of the entire site!
 
 Let's change it to a fixed width.
 
-```
+```html
 	<div style="border: solid; width: 128px;">
 		(content)
 	</div>
@@ -111,7 +115,7 @@ AHH THE TEXT IS A VERY *CLAUSTROPHOBIC*. YOU PUT IT IN A BOX AND IT HAS NOOOO BR
 
 ADD PADDING FASTTTT
 
-```
+```html
 	<div style="padding: 16px; (additional styles)">
 		(content)
 	</div>
@@ -130,7 +134,7 @@ Because our window is going to exist on top of our desktop we need to use positi
 
 You don't totally need to understand position absolute right now. As we go deeper into the batch, it will start to make more sense. 
 
-```
+```html
 	<div style="position: absolute; (additional styles)">
 		(content)
 	</div>
@@ -143,7 +147,7 @@ Awesome and with the `position: absolute` property, we unlock four more properti
 
 To place it in the center, we can simply write
 
-```
+```html
 	<div style="position: absolute; top: 50%; left: 50%; (additional styles)">
 		(content)
 	</div>
@@ -151,7 +155,7 @@ To place it in the center, we can simply write
 
 Hmm.. well that doesn't look quite right. The reason why is because the top, left, bottom, and right properties define how far the top left corner of our window is from the walls of our browser. To fix this, let's adjust the window so that the center of the window is the point that we're positioning around by using the `transform: translate(-50%, -50%)` property. 
 
-```
+```html
 	<div style="position: absolute; top: 50%; left: 50%; 
 transform: translate(-50%, -50%); (additional styles)">
 		(content)
@@ -197,17 +201,17 @@ I'll show you how you can add the name of the OS and the time. You can do whatev
 
 Alright, let's start by just making a div (a group) to contain our top bar.
 
-```
-	<div>
-	
-	</div>
+```html
+<div>
+
+</div>
 ```
 
 ### Horizontally Aligning The Elements
 
 Now... let's add some text and make the text horizontally aligned (by using `display: flex` which by default places text into columns)
 
-```
+```html
 	<div style="display: flex;">
 		<p>
 			ThomasOS
@@ -227,7 +231,7 @@ We can optionally space-out the content by applying justify-content (checkout [t
 ![justify-content](https://cloud-e3m7dz3v0-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_3.52.01_pm.png)
 based on this demo, I decided I want to use space-between in the example below, but I encourage you to checkout the testing site and pick what justify-content style works best for your design! 
 
-```
+```html
 	<div style="display: flex; justify-content: space-between">
 		(content)
 	</div>
@@ -240,7 +244,7 @@ RGBA stands for Red, Green, Blue, Alpha where Alpha is the level of transparency
 
 Here's an example.
 
-```
+```html
   <div
     style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between;">
     <p style="margin-left: 16px;">
@@ -266,7 +270,7 @@ Here's how I decided to make mine look
 
 I hope yours looks totally different!
 Here's my code in case you want to take some inspiration from it. (but again, DON'T MAKE AN EXACT STYLE COPY) 
-```
+```html
 
   <div
     style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-between; gap: 32px;">
@@ -301,7 +305,7 @@ We can write JavaScript it's own file, or we can just write in the HTML file ins
 #### Where Do I Write JavaScript? 
 
 You can include your script tag in the html file. 
-```
+```html
 <html>
 	<body>
 		(site content)
@@ -320,7 +324,7 @@ You can include your script tag in the html file.
 
 Let's begin by getting the time and storing it in a variable.
 
-```
+```html
 <script>
 	var currentTime = new Date().toLocaleString();
 </script>
@@ -343,7 +347,7 @@ Here's how we go about doing that.
 
 ##### Mark the text we'd like to alter
 Let's add an "id" to the time text so we can select it. Here's how that might look:
-```
+```html
     <p id="timeElement"
       style="(YOUR STYLES)">
       Time
@@ -353,7 +357,7 @@ Let's add an "id" to the time text so we can select it. Here's how that might lo
 ##### Select it in JavaScript
 We can use a querySelector to select the element and store it in a variable. We pass into the querySelector the id of the element we're working with:
 
-```
+```html
 <script>
 	var currentTime = new Date().toLocaleString();
 	var timeText = document.querySelector("#timeElement");
@@ -365,7 +369,7 @@ We can use a querySelector to select the element and store it in a variable. We 
 
 Finally we can set the innerHTML (the peanut butter in the bagel sandwich) and change the value (perhaps to cream cheese).
 
-```
+```html
 <script>
 	var currentTime = new Date().toLocaleString();
 	var timeText = document.querySelector("#timeElement");
@@ -383,7 +387,7 @@ We need it to run every second.
 We can use the setInterval function to make the code repeat every 1000 milliseconds (every second).
 
 Here's how we can go about doing that 
-```
+```html
   <script>
 
 	function updateTime() {
@@ -404,7 +408,7 @@ Try doing updating the time every second in just three lines and then check the 
 
 <Dropdown title="Solution">
 
-```
+```javascript
 setInterval(function () {
   document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
 }, 1000);
@@ -416,7 +420,7 @@ Lovely, here's what we've ended up with:
 
 ![PersonalOS](https://cloud-r3drmd84c-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.59.32_pm.png)
 
-For your final bonus challenge, continue making your welcome screen look awesome! Add more images, text, etc (whatever you want!)
+For your final bonus challenge, try adding something interesting to your background. Maybe make it a gif?
 
 Remember, this is your site.
 
