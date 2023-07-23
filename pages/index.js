@@ -285,7 +285,7 @@ export default function Index(props) {
   const jams = props.jamsContent.singles
   .filter((jam) => 
 { 
-  return (jam.keywords.includes(selectedCategory) && Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
+  return (jam?.keywords?.includes(selectedCategory) && Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
 }
   )
 

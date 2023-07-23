@@ -1,4 +1,4 @@
-# (Part 1) Preparing Your Forge and Forging the Blade
+ v# (Part 1) Preparing Your Forge and Forging the Blade
 
 
 10-30 minutes, beginner difficulty

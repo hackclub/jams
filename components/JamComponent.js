@@ -118,7 +118,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   variant="outline"
                   color="#993CCF"
                 >
-                  {jam.keywords.split(', ')[0]}
+                  {jam?.keywords.split(', ')[0]}
                 </Badge>
                 <Badge
                   key="difficultyFeature"
