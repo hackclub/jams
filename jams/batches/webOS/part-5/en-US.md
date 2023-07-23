@@ -20,310 +20,194 @@ poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_e
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
 ---
 
-30-45 minutes, intermediate difficulty
+You didn't know it, but you've been riding a bike with training wheels. It's time we take off those training wheels and let you ride into the wind...
 
-![Capybara OS demo](https://cloud-ir4w2s05f-hack-club-bot.vercel.app/0screenrecording.gif)
+![riding into the wind](https://cloud-1cmmfb0q5-hack-club-bot.vercel.app/0the-penny-farthing-bike-race-vintage.gif)
 
-*(p.s. this is a sample of what your OS might look like, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all)*
+Today you're going to be building an app for your personalOS and you'll be given pretty little guidance. **YOU GET TO DECIDE THE CONTENT AND FEATURES FOR THIS APP.** You're probably a bit nervous.
 
- 
-The OS will be entirely web-based (using HTML, CSS, and JS). You'll be the designer and developer of your OS (so you'll have complete creative freedom). You'll decide the content, style, features, etc. If your website looks totally different from mine by the end of the batch jam, then you've done the Jam well. If it looks the same, go back to the drawing board.
+Don't worry, I'll be riding alongside you. I also don't know what app I am going to build. Fear not young one, we'll figure it out together. Be brave. You've been so brave up to this point and I am so proud of what you've built. Here's what I built, but I assure you that your final product will be nothing like this:
 
-**Today you'll be creating an awesome welcome screen for your personalOS. It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product that you'll build upon in subsequent Jams.**
+![final product](https://cloud-1ovz11fvq-hack-club-bot.vercel.app/0photo.gif)
 
-[Live Demo ](https://step8.thomasstubblef2.repl.co/)
-[Sample Code](https://replit.com/@ThomasStubblef2/Step8#index.html)
+Make sure you have some paper! Let's do this!
 
-There are six steps/headings in this Jam! Go through each and begin building your personalOS.
+**Outline:** 
+1. **Ideation** *(figure out what we're going to build)*
+2. **Wireframe** *(make some sketches)*
+3. **Build Your App** *(build an awesome app for our OS)*
 
-**Outline:**
-1. **Enter The Code Editor** *(start coding in your browser)*
-2. **Build with Elements** *(create elements for your welcome screen)*
-3. **Personalize Your Content** *(make the content personally relevant to you)*
-4. **Style Your Elements** *(make your elements fit your aesthetic)*
-5. **Additional Optional Style Challenges**
-6. **Next Time on Building Your Personal OS**
+## Ideation
+You finally get to create your own app. It could be an app to do whatever you'd like! Here are some ideas (but I encourage you to come up with your own ideas):
+* **Contact App** *(helps people get in contact w/ you)*
+* **Projects App** *(shows all projects you've been)*
+* **Map App** *(shows your life story on a map)*
+* **Weather App** *(shows your local weather?)*
 
-## Enter the Code Editor 
-Hey there Hacker! Let's get you setup
+### Brainstorming on Paper
+Let's begin by mind mapping on paper for ten minutes!
 
-## Create an Account
-Head over to the [Replit Website](https://replit.com/languages/html) and create an account
+#### What is Mind Mapping?
+A mind map is basically a visualization of a bunch of your ideas. It helps you be creative and explore ideas that would have otherwise never surfaced.
 
-<Dropdown title="What is Replit?">
-Replit is a web-based independent development environment (IDE). Basically Replit allows you to write code in your browser and instantly deploy your site to the entire world. I suppose you could say its *magical*. 
-</Dropdown>
+A question/prompt in the center of the map will provide us with some degree of direction and ideas will radiate from the center of our sheet. 
 
+I found this example for you by browsing the internet:
+![example of a mind map](https://cloud-i3lmaxn11-hack-club-bot.vercel.app/0image.png)
+image from an [IDEO article about Mind Maps](https://www.ideo.com/blog/build-your-creative-confidence-mindmaps)
 
+Your Mind Map doesn't have to be quite as big and crazy. Let's put in the center of our sheet of paper "What do I want people who visit my site to walk away knowing about me?." 
 
-<Dropdown title="If you're unable to use Replit or would rather not use Replit">
-If for whatever reason you have difficulty accessing Replit, visit <a href="https://firewalledreplit.com/">Firewalled Replit</a>.
-I also recommend checking out GitHub code spaces or running a local development environment in VS Code.
-All the code is the same regardless of the code editor you use.😉
-</Dropdown>
+![question in the circle](https://cloud-dfm3s8clg-hack-club-bot.vercel.app/0img_1302-2.png)
 
+When an answer comes to mind, draw it around the circle and then connect it to the center. Write down as many ideas as possible
 
+![a new idea](https://cloud-ff7mcajxn-hack-club-bot.vercel.app/0img_1304.jpg)
 
-### 2. Create a new Repl/Project 
-Welcome to your Replit Dashboard! Once inside, tap create a Repl and then select **HTML, CSS, and Javascript** as your template. 
+Create a string of ideas & be sure to go for quantity over quality (no idea is too crazy for the mind map)
 
-Replit will kindly start you off with some boilerplate code (starter code). 
+![question with some answers](https://cloud-on92ke5el-hack-club-bot.vercel.app/0img_1306.jpg)
 
-![Replit-Signup](https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif)
+& then go wild with it!
 
+![complete mind map](https://cloud-bg351r0tv-hack-club-bot.vercel.app/0img_1309.jpg)
 
-## Build with Elements
+(your answers should & will be quite different than mine, and that's good) (have fun with it)
 
-### What are elements?
-Every site you've ever visited has elements. Try right clicking this site and tapping Inspect, you'll see a bunch of elements. HTML is the file format for these elements.
+[Here's a ten minute timer](https://www.google.com/search?q=10min+timer&rlz=1C5CHFA_enUS1062US1062&oq=10min+timer+&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyBwgBEAAYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyCggJEAAYhgMYigXSAQgxMjc4ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8), good luck!
 
-#### What makes an element?
-Elements consist of three parts. 
+#### Turning Brain Dump into ~~Beautiful~~ App
 
-Elements consist of an opening tag, the content in the middle, and a closing tag. So for example `<p>Sample Content</p>` creates paragraph text because there is an opening tag (`<p>`), with content in the middle (`Sample Content`), and a closing tag (`</p>`) indicating where the content ends 
+You probably now have an idea in your mind for something you'd love to convey inside your site after making that Mind Map. You may also have an idea for what that app would look like (if not, take a moment to consider what you might build to achieve your desired effect on the user).
 
-![bagel](https://cloud-rd8lvcrjx-hack-club-bot.vercel.app/0video.gif)
-*(bagels are a lot like tags or I suppose you could say tags are a lot like bagels... depending on your perspective)*
+I decided to try to create an image that contains almost every element of my life and then make it interactive so the user can tap on sections of the image to learn a bit more about me. Please make an app that is totally different! This app will be your App and should not look like my App. 
 
-### Where can I place them?
-Replit gave you some starter code, but it has some unnecessary elements. Orpheus the Dinosaur *(don't ask who [Orpheus](https://workshops.hackclub.com/orpheus/) is)* asks that you please copy and paste the code below into your project
+To begin, let's map out what a typical user experience will look like in terms of how they will flow through your App (this will vary depending on your App)
 
-```
-<!DOCTYPE html>
-<html>
+ ![App Flow](https://cloud-dxudaq5de-hack-club-bot.vercel.app/0img_1311.jpg)
 
-	<body>
-  
-	</body>
+Let's create a wireframe to flesh out our ideas a bit more.
 
-</html>
-```
+## Wireframe
+A wireframe is sort of a sketch of your app. You can sketch however you'd like, but the way I do it is by drawing shapes (like rectangles, circles, etc) that represent text, images, etc. 
 
-The body of your site is contained inside of an opening tag (`<body>`) and a closing tag (`</body>`). The content of your site goes inside the body.  **Inside your body is where you'll place your elements.**
+![Insert image of the wireframe](https://cloud-1ungcc4hw-hack-club-bot.vercel.app/0img_1314.jpg)
 
-It's sort of like how cream cheese goes inside of a bagel. A bagel has a top and bottom and all of the tasty cream cheese in the middle.
+Sketches are really just for you, so do whatever you like. Just make sure you can draw them as fast as possible.
 
-Let's fill your body tag sandwich with some tasty content! 🥯
+I am also going to take a moment to ideate what items I would like to include in the image. This is a higher fidelity version of the initial wireframe. 
 
-### How can I make elements for my welcome screen?
-Inside of your body tags, let's write some code
+![](https://cloud-i8dp56cio-hack-club-bot.vercel.app/0img_1317.jpg)
 
-```
-<body>
-  <p>Hello world!</p>
-</body>
-```
+Because I am not currently at home (I am at a Cafe across from Hack Club HQ), I am going to work with a prototype image. This will also just make it much easier to build the first version & then scale from there. 
 
-You've created your first element & it's a `<p>` element (p stands for paragraph)! Congratulations!
+![Empty Table](https://cloud-649y4sz8h-hack-club-bot.vercel.app/0img_1315.jpg)
 
-Let's try making a heading! Simply create a new element with h1 tags.
-```
-<body>
-  <h1>Welcome to my OS</h1>
-  <p>Hello world!</p>
-</body>
-```
+I hope your app is totally different. If your app requires a lot of content that you don't have, try making it placeholder content for the time being. 
 
-Awesome. We can also make smaller headings. `h1` is the largest heading, but you can also create an `h2`, `h3`, `h4`, & so on. 
+### Vision Secured
+Awesome, hopefully you have secured your vision for the application. 
+
+Next up, we'll be making the app icon & window (but it will be fast because of the work we did in our last Jam).
+
+#### Creating App Icon
+If we copy our previous icon and paste it beneath the previous icon...
+![copy & paste](https://cloud-nl08nicka-hack-club-bot.vercel.app/0copypaste.gif)
+
+wow, that was easy! Now we have our second icon on the screen!
+
+Let's customize it to the name & image of our app! (import an image you'd like to use as your icon) (feel free to steal an image off the internet or create your own beautiful icon (or anything in-between))
+
+![not tappable](https://cloud-p2xdz2i3j-hack-club-bot.vercel.app/0tap_icon.gif)
 
 ```
-<body>
-  <h1>Welcome to my OS</h1>
-  <h2>Introduction</h2>
-  <p>Hello world!</p>
-</body>
+    <div id="photoIcon"
+      style="text-align: center; margin: 8px; padding: 8px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;">
+      <img src="./photo.png" style="width: 64px; height: 64px; border-radius: 16px;">
+      <p style="margin: 0px; color: #fff; ">Life.png</p>
+    </div>
 ```
 
-Text is neat, but let's add an image:
-First we need to drag an image into Replit file manager.
+Great, but now we're not able to tap on our icon! We need to initialize the icon.
 
-![Drag & Drop](https://cloud-id4r1tr7g-hack-club-bot.vercel.app/0drag_drop.gif)
+Here's our old code:
+```
+var notesIcon = document.querySelector("#notesIcon")
+var notesScreen = document.querySelector("#notes")
+
+notesIcon.addEventListener("click", () => handleIconTap(notesIcon, notesScreen));
 
 ```
-<body>
-  <h1>Welcome to my OS</h1>
-  <h2>Introduction</h2>
-  <p>Hello world!</p>
-  <img src="./nameOfImage.jpeg" />
-</body>
-```
 
-You can also do a direct link to the image (has .png, .jpeg, etc at the end of the url), so for example here's code for placing an image of a Capybara 
-
-`<img src="./imageOfMe.png" />`
-
-The image tag has a property of `src` which stands for source. You can pass in the direct link to the image or import an image and set the src as `"./imageName.png"`.
-
-![Website with text on top and a Capybara image](https://cloud-33eico6lp-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_11.54.32_am.png)
-
-### Let's link to another page
-HTML (HyperText Markup Language) was built for scientists to be able to share research documents (& is now used on every website on the internet). If you know anything about scientists, then you know they LOVE to reference other pages. 
-
-For this reason, HTML makes it easy for you to hyper-link to other pages.
-
-```
-<body>
-  (rest of your content)
-  <a href="https://example.com/">label</a>
-</body>
-```
-
-Replace label with the label of the button (so for example [Instagram](https://www.instagram.com/starthackclub/)) and link with the url (like https://www.instagram.com/starthackclub/).
-
-You can use this to link to a personal social media, a GitHub, a random website about your favorite creature, or just not make an a tag at the moment. It's totally up to you. 
-
-## Personalize Your Content
-Soo... surprise, you didn't realize but you just started your onboarding screen for you operating system.
-
-**Go ahead and fill it up with your own content.** 
-
-Don't know what to add? Perhaps try:
-* Linking to your favorite playlist
-* Adding a picture of a pet
-* Writing a bit about your favorite hobbies
-* etc
-
-### Customize the text content and image
-Make the text content whatever you would like users to see when they first land on your site. Be creative and have fun with it! 
-
-Select an image for your site that represents you (either literally like a selfie or metaphorically like your favorite creature) by changing the src of the image to a URL or path to your image. 
-
-### Content Complete
-Okay, so you should now have the content for your "Welcome to My OS" screen and it should feel totally unique to you (i.e. if a friend saw your welcome screen, they would immediately know it was your OS).
-
-Your content most likely looks rather bland and uninteresting which leads us into our next topic... styling our content!
-
-![content styling in progress](https://cloud-9jc9u3xyy-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_3.51.07_pm.png)
-
-## Style Your Elements 
-### What's a style?
-A style is a property-value pair that changes the way an element looks.
-
-Styles can exist within an html file when written in-line, but can also be in a separate file (styles.css). For now, we're going to write the styles inside of our HTML file (inside of opening tags)
-
-To apply a style, it's as simple as:
-`<tag style="property: value"> content </tag>`
-
-**Every style has a property and a value.** 
-For example a style may be color with the value of red (to turn the text red)
-
-### Styling Color 🎨
-To change the color text you would simply write
-`<p style="color: red">This text is red</p>`
-
-You can also add a background color: 
-```
-<body style="background-color: #c9ffcf">
-	// your content//
-</body>
-```
-
-Easy, right? 
-
-*p.s. you'll notice I used hex (#c9ffcf) instead of the name of a color (red) for the second example. Hex is a format for representing color. You can use either the name of a color or the hex value. To find hex values, try googling "hex color picker"
-
-### Styling Shape
-Images can have styles too!
-
-Your image is probably very large. Let's change the size & shape.
-
-Simply go to the image and apply a style property that sets the width and height: 
-
-`<img style="width: 64px; height: 64px" src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/1img_1181.jpg" />`
-
-I chose to make the width and height 64px, but you don't have to! Pick your own size, play with it, and have fun!
-
-*Note: Semicolons are used to separate css properties*
-
-##### *\*Crunch*\*
-Your image might be a bit crunched up. Try to Google how to fix this (maybe even ask GPT). Even a very basic search term such as What is the CSS Property for making an image not crunch, would probably work.
-
-![crunched image](https://cloud-4cdvjzqmo-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_12.43.50_pm.png)
+Let's try turning it into a function so we do not have to rewrite this code for our new icon. I challenge you to give it a shot! 
 
 <Dropdown title="Solution">
-  Upon scrubbing through the results, I found the `object-fit: cover` property. Let's try applying that to our image. Ah lovely, and just like that our image is uncrunched. Whenever you run into something that looks ugly and you want to make it look beautiful, just google it and Google will help you out.
+    ```//Replace Old Code with This New Code
+function initializeIcon(name) {
+  var icon = document.querySelector("#" + name + "Icon")
+  var screen = document.querySelector("#" + name)
+  icon.addEventListener("click", () => handleIconTap(icon, screen));
+}
+initializeIcon("notes")
+```
+
 </Dropdown>
 
+Now if you want to be really *nifty*, try making it so we initialize the window, we initialize the icon too 
 
-##### *\*Rounddddd*\*
-Optionally, you can round your corners. Try googling this! (maybe you can even turn your image into a circle shape if you'd like)
+(hint: it's only a 2-3 line change)
 
 <Dropdown title="Solution">
-You probably found a nifty little CSS property called border radius. 
-simply write style="border-radius: 16px; object-fit: cover" on your image tag.
-Note: Semicolons are used to separate css properties
+    ```//Include initializeIcon function in initializeWindow for when it's not the welcome screen (because welcomeScreen has no icon)
+function initializeWindow(elementName) {
+  var screen = document.querySelector("#" + elementName)
+  addWindowTapHandling(screen)
+  makeClosable(elementName)
+  dragElement(screen)
+  if(elementName != "welcome") {
+    initializeIcon(elementName)  
+  }
+}
+initializeWindow("welcome")
+initializeWindow("notes")
+```
 </Dropdown>
 
+#### Creating Our App Window
+Before we can initialize the window, we actually need to create it. Let's copy the code from the welcome window and then just delete the content and change the id of the application to the name of this app.
 
-![rounded image](https://cloud-b43epg4q2-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_3.59.41_pm.png)
+```
 
-### Styling Font
-Adding a font in CSS is easy!
+  <div class="window" id="photo" style="top: calc(50% - 90px); left: calc(50% - 180px); display: none; ">
+    <div class="windowheader" id="photoheader">
+      <div class="closebutton" id="photoclose">
+      </div>
 
-The easiest way to add a font is to visit the [W3 Library of browser-built-in](https://www.w3.org/Style/Examples/007/fonts.en.html) fonts and select one that fits the vibe of your site! 
+      <p class="headertext">Photo</p>
+      <div style="width: 16px; margin-right: 6x; height: 16px;"></div>
+    </div>
+    <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 360px; padding: 16px;">
+      <p>Hello World</p>
+    </div>
+  </div>
+```
 
-Once you pick out your favorite font(s), go to the body and put a style property of font-family on the opening tag.
+& then if in our javascript we call our initialize window function with our new app...
 
-`<body style="font-family: Helvetica, Noto Sans, sans-serif">`
+```
+initializeWindow("photo")
+```
 
-*Note: If you want cooler fonts, checkout [Google Fonts](https://fonts.google.com/) and [this document for learning how to integrate a google font into your project](https://developers.google.com/fonts/docs/getting_started).*  *You'll need to put a link inside `head` tags (which includes content that is not visible on the site, but that the browser uses to configure the site)*
+BOOOYAHHHH, OUR SECOND WINDOW IS LIVEEEEEEEEEEEEE!!! WE'RE FULLY SETUP!
+![new icon](https://cloud-96f6252ll-hack-club-bot.vercel.app/0newicon.gif)
 
-*Additional Note: not all computers have access to the same fonts, so if a computer does not have access to a font, it will go to the next one in the list. For this reason, I suggest putting selecting your favorite three fonts and putting them in order from most-liked to least-liked.*
+## Build Your App
+Okay now for the fun part... build your app. No hand holding here, you've built an app before and I know you can do it again. I encourage you to have fun & try to make an amazing app for your personalOS!
 
-*Final Note: you can use the font-size property and font-weight property to further change the visual appearance of a text element*  
+## You Built It, Congrats! 
+Thanks for coming along this journey. I honestly was not expecting you to make it this far. Here's what my app ended up looking like:
 
-### Styling Space ✨
-Space is created by a combination of Margin (not margarine, MARGIN) and padding (fluff).
+![final product](https://cloud-1ovz11fvq-hack-club-bot.vercel.app/0photo.gif)
 
-Margin is your space between your picture frames on your wall. 
+I hope you continue building apps for your personalOS & just generally have fun with it, but more importantly I hope you leave this batch with the urge to develop sites not just for yourself, but for other people! Building tools that help make the lives of others better is a task within reach given the fact that you made it all the way through this rigorous batch of Jams. I'm proud of you, and I hope you're proud of yourself. Have a great day, and keep Jamming!
 
-Padding is the gap between the photo and the frame. If you had a box with an item in the middle, the space between the object in the center and the walls of the box is padding. 
-
-Also... here's a comedy skit by Shubham at Epoch Bay Area to learn about Margin and Padding
-
-<video src="https://cloud-2jto14u7d-hack-club-bot.vercel.app/0vid_20221230_184903086.mp4" controls="controls" style={{maxWidth: "480px"}}>
-</video>
-
-We'll get more into this later, but right now I would just like to bring our items closer together. 
-
-![spaced out](https://cloud-5txt6wpqn-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.12.11_pm.png)
-
-So if we open the inspect window...
-
-![Margin is the problem](https://cloud-p8iio5lh4-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.19.38_pm.png)
-
-We can see that the default margin on the h1 is quite large and it's making the site look a bit awkward. Let's correct that. 
-
-Let's reduce the margin on the h1 tag
-
-` <h1 style="margin: 4px;">thomasOS</h1>`
-
-*Note: px stands for pixels, so we now have a 4px space on all sides for the header text element*
-
-If you wanted to add some space within your heading, you could add padding, so perhaps make it
-` <h1 style="padding: 4px; margin: 4px; background-color: #000; color: #fff">thomasOS</h1>`
-(you can see the padding added a gap between the walls of the element and the content itself)
-
-*Note: with both padding and margin, you can change the spacing in a specific direction by appending -top, -bottom, -right, or -left. For example you could add margin-top: 4px; or padding-left: 16px;*
-
-Alright, lovely! Here's my finished site for this episode of the batch. I hope your site looks nothing like this! Please take the opportunity to have fun with this site and do something wild!
-
-![Finished Site](https://cloud-423oznftn-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.27.35_pm.png)
-
-*Note: You'll notice I added some unique looking tags inside the paragraph text, YOU CAN DO THAT TOO BY CHECKING OUT THE SOMEWHAT OPTIONAL ADDITIONAL CHALLENGE BELOW.*
-
-## Additional Challenge (optional-ish)
-Discover some unique tags on the [W3 Tags Site](https://www.w3schools.com/TAGS/default.asp). There are 100+  tags for you to experiment with. Go dive into the W3 Tags Directory and find some random tags and experiment with them on your site. Have fun :) 
-
-here are some ones we really like:
-* `<s>Strike Through</s>`
-* `<p>break the </br> line like this</p>`
-* `<p>use strong to <strong>bold text</strong></p>`
-
-
-## Next time on building your own PersonalOS...
-In the next episode we will build the foundation of our OS by:
-* Adding a wallpaper
-* Creating Your Window
-* Creating the top bar
-* Tracking time with JS

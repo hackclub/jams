@@ -41,11 +41,12 @@ There are six steps/headings in this Jam! Go through each and begin building you
 4. **Style Your Elements** *(make your elements fit your aesthetic)*
 5. **Additional Optional Style Challenges**
 6. **Next Time on Building Your Personal OS**
-  
+
+Awesome  
 ## Enter the Code Editor
 Hey there Hacker! Let's get you setup
 
-## Create an Account
+### Create an Account
 Head over to the [Replit Website](https://replit.com/languages/html) and create an account
 
 <Dropdown title="What is Replit?">
