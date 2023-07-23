@@ -1,7 +1,22 @@
- v# (Part 1) Preparing Your Forge and Forging the Blade
-
-
-10-30 minutes, beginner difficulty
+---
+part: part-1
+title: 'Preparing Your Forge and Forging the Blade'  
+batch: 3DArmory
+description: >  
+  In this Jam, you will be learning what CAD is, the functions of TinkerCAD, and learning how to make the blade of a medieval sword. You will have fun customizing your blade while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
+contributor: 'thesuperRL'  
+thumbnail: 'https://media.discordapp.net/attachments/893657462790557716/1132503866030706780/Screenshot_2023-07-17_at_3.04.58_PM.png?width=1576&height=1064'
+timeEstimate: '40 Min'  
+difficulty: 'Beginner'
+keywords: 'Sword, CAD, 3D Design'  
+language: 'N/A'
+presentation: "" 
+presentationPlay: "" 
+presentationPDF: "" 
+notes: "" 
+poster: ""
+video: ""
+---
 
 ![Fire](https://media.discordapp.net/attachments/893657462790557716/1132503866030706780/Screenshot_2023-07-17_at_3.04.58_PM.png?width=1576&height=1064)
 

@@ -14,5 +14,5 @@ presentationPDF: ""
 notes: "" 
 poster: ""
 video: "" 
-slug: '3dmodel-sword'
+slug: '3d-armory'
 ---

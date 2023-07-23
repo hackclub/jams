@@ -1,5 +1,22 @@
-
-10-30 minutes, beginner difficulty
+---
+part: 'part-2'
+title: 'Forge of Legends: Crafting Weapons, Shields, and Armor in TinkerCAD'  
+batch: '3DArmory'
+description: >  
+    In this Jam, you will be finishing the hilt of the sword that we made in the last jam part. You will have fun customizing your product while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
+contributor: 'thesuperRL'  
+thumbnail: 'https://media.discordapp.net/attachments/893657462790557716/1131005602185875466/Screenshot_2023-07-18_at_4.32.23_PM.png?width=1442&height=1064'
+timeEstimate: '30 Min'  
+difficulty: 'Beginner'
+keywords: 'Sword, CAD, 3D Design'  
+language: 'N/A'
+presentation: "" 
+presentationPlay: "" 
+presentationPDF: "" 
+notes: "" 
+poster: ""
+video: "" 
+---
 
 ![Excalibur?](https://media.discordapp.net/attachments/893657462790557716/1131005602185875466/Screenshot_2023-07-18_at_4.32.23_PM.png?width=1442&height=1064)
 
