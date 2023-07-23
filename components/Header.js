@@ -188,7 +188,7 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
           )}
         </Box>
 
-        <Link href="https://github.com/hackclubs/jams" target="_blank" style={{ marginLeft: '110px' }} sx={{ color: isHomePage ? `rgba(calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), 1)` : '#000' }}>
+        <Link href="https://github.com/hackclub/jams" target="_blank" style={{ marginLeft: '110px' }} sx={{ color: isHomePage ? `rgba(calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), 1)` : '#000' }}>
           <Icon glyph="github" />
         </Link>
       </Container>
