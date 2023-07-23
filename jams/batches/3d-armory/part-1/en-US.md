@@ -1,22 +1,25 @@
 ---
 part: part-1
-title: 'Preparing Your Forge and Forging the Blade'  
+title: '(Part 1) Preparing Your Forge and Forging the Blade'  
 batch: 3DArmory
 description: >  
-  In this Jam, you will be learning what CAD is, the functions of TinkerCAD, and learning how to make the blade of a medieval sword. You will have fun customizing your blade while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
+  In this Jam, you'll be learning what CAD is, the functions of TinkerCAD, and learning how to make the blade of a medieval sword. You will have fun customizing your blade while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
 contributor: 'thesuperRL'  
 thumbnail: 'https://media.discordapp.net/attachments/893657462790557716/1132503866030706780/Screenshot_2023-07-17_at_3.04.58_PM.png?width=1576&height=1064'
 timeEstimate: '40 Min'  
 difficulty: 'Beginner'
-keywords: 'Sword, CAD, 3D Design'  
+keywords: 'Sword, CAD, 3D Design, Model, TinkerCAD, 3D Printing, Blade'  
 language: 'N/A'
-presentation: "" 
-presentationPlay: "" 
-presentationPDF: "" 
-notes: "" 
-poster: ""
-video: ""
+presentation: "" # TODO
+presentationPlay: "" # TODO
+presentationPDF: "" # TODO 
+notes: "" # TODO
+poster: "" # TODO 
+video: "" # TODO
 ---
+
+
+20-40 minutes, beginner difficulty
 
 ![Fire](https://media.discordapp.net/attachments/893657462790557716/1132503866030706780/Screenshot_2023-07-17_at_3.04.58_PM.png?width=1576&height=1064)
 
@@ -94,13 +97,7 @@ The best option for online CAD (that means Computer Aided Design) is TinkerCAD, 
 
 Head over to the [TinkerCAD Website](https://www.tinkercad.com/) and create an account
 
-<details>
-
-<summary>
-
-What is TinkerCAD?
-
-</summary>
+<Dropdown title="What is TinkerCAD?">
 
 TinkerCAD is a web-based computer aided design (CAD) software, developed by Autodesk (who makes many other CAD softwares). In simple terms, TinkerCAD lets you model in your browser, and import/export models easily. It even lets you turn a model into a Minecraft or Lego build. With the ease of its use, it has become the small beginner's workshop to all the big, magnificent forges.
 
@@ -115,19 +112,19 @@ PROS:
 CONS:
 - Functionality is really basic. Hard to model advanced things
 
-</details>
+</Dropdown>
 
-<details><summary>If you're unable to use TinkerCAD</summary>
+<Dropdown title="If you're unable to use TinkerCAD">
 
 Blender and Fusion 360 are valid alternatives, though both are far harder to use.
 
-Fusion 360 requires a pretty expensive membership. Check with your school, since some private institutions may have Autodesk access for students. It's also worth a try to register <a href="https://www.autodesk.com/education/students">here</a>. A tutorial will be included in Going Beyond A.
+Fusion 360 requires a pretty expensive membership. Check with your school, since some private institutions may have Autodesk access for students. It's also worth a try to register <a href="https://www.autodesk.com/education/students">here</a>.
 
-Blender, on the other hand, is free and open source, though it does require a download. It regularly gets updates and improvements to both UI and functionality, and it's a bit easier to use than Fusion. It does offer a LOT of different functions, most of which people rarely use. You can download it <a href="https://www.blender.org/"> here </a>. A tutorial will be included in Going Beyond B.
+Blender, on the other hand, is free and open source, though it does require a download. It regularly gets updates and improvements to both UI and functionality, and it's a bit easier to use than Fusion. It does offer a LOT of different functions, most of which people rarely use. You can download it <a href="https://www.blender.org/"> here </a>.
 
-</details>
+</Dropdown>
 
-<details><summary>Looking for CAD communities you can join?</summary>
+<Dropdown title="Looking for CAD communities you can join?">
 
 I found many very interesting communities on discord. All of them are filled with CAD designers ranging in all levels of knowledge. 
 
@@ -135,7 +132,7 @@ I found many very interesting communities on discord. All of them are filled wit
 <a href="https://discord.gg/YcX3hUq9kv"> 3D Modeling </a>
 <a href="https://discord.gg/3dprinters"> 3D Printing </a>
 
-</details>
+</Dropdown>
   
 
 ## Navigating Your Workshop
@@ -278,31 +275,19 @@ Let's just use a simple diamond shape right now. It looks like, well, a diamond.
 
 So (QUIZ TIME!!!) what kind of 3D shape do we need for the long, straight part of the blade? (Also, it's really hard to describe what I'm talking about. Let's just call the long, straight part of the blade the "stem" for now.)
 
-<details>
-
-<summary>
-
-QUIZ QUESTION 1
-
-</summary>
+<Dropdown title="QUIZ QUESTION 1">
 
 We need a Rhombus/Diamond prism shape! 10 (virtual) blacksmith points if you were right!
 
-</details>
+</Dropdown>
 
 Great! That about the top, pointy part?
 
-<details>
-
-<summary>
-
-QUIZ QUESTION 2
-
-</summary>
+<Dropdown title="QUIZ QUESTION 2">
 
 We need a Rhombus/Diamond pyramid shape! 10 more (virtual) blacksmith points if you were right!
 
-</details>
+</Dropdown>
 
 Now that we have that, all we need is to actually make it.
 
@@ -372,29 +357,17 @@ The number indicates now long in millimeters it is. Click and type into it to in
 
 Great! That's one way of forging the stem. The other way, using the modification technique, will be left as an exercise to the reader (always wanted to say that)
 
-<details>
-
-<summary>
-
-Hint
-
-</summary>
+<Dropdown title="Hint">
 
 It uses the red cube!
 
-<details>
-
-<summary>
-
-Second Hint
-
-</summary>
+<Dropdown title="Hint 2">
 
 What if we rotated it 45 degrees?
 
-</details>
+</Dropdown>
 
-</details>
+</Dropdown>
 
 Now, just drag the top white dot upwards, and you now have a long blade! For now though, since we need a tip, let's keep it the same length.
 
