@@ -1,6 +1,6 @@
 ---
 part: 'part-2'
-title: 'Forge of Legends: Crafting Weapons, Shields, and Armor in TinkerCAD'  
+title: 'Crafting Weapons, Shields, and Armor in TinkerCAD'  
 batch: '3DArmory'
 description: >  
     In this Jam, you will be finishing the hilt of the sword that we made in the last jam part. You will have fun customizing your product while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
