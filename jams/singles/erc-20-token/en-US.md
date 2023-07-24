@@ -1,20 +1,20 @@
 ---
-title: 'From Code to Crypto: An epic Adventure in Cryptocurrency Creation with Solidity'
-description: >
+*title: 'From Code to Crypto: An epic Adventure in Cryptocurrency Creation with Solidity'
+*description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
-contributor: 'briyandyju09'
-thumbnail: 'https://cloud-gvf9kgtcv-hack-club-bot.vercel.app/0share_your_token_with_others_.png'
-timeEstimate: '30 Mins max.'
-difficulty: 'Beginner'
-keywords: 'Cryptocurrency, Token, ERC, Metamask, Endpoint, Solidity, Testnet'
-language: 'Solidity'
-presentation: ''
-presentationPlay: ''
-presentationPDF: ''
-notes: ''
-poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
-video: ''
-slug: 'erc-20-token'
+*contributor: 'briyandyju09'
+*thumbnail: '![Thumbnail Link](https://cloud-gvf9kgtcv-hack-club-bot.vercel.app/0share_your_token_with_others_.png)'
+*timeEstimate: '30 Mins max.'
+*difficulty: 'Beginner'
+*keywords: 'Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, Testnet'
+*language: 'Solidity'
+*presentation: ''
+*presentationPlay: ''
+*presentationPDF: ''
+*notes: ''
+*poster: '![Poster Link](https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png)' (Stock image is for the fun vibe and was meant to be there, definitly not a lack of image issue)
+*video: ''
+*slug: 'make-your-own-erc20-token & from-code-to-crypto:-an-epic-adventure-in-cryptocurrency-creation-with-solidity'
 ---
 
 
@@ -23,6 +23,22 @@ slug: 'erc-20-token'
 What you will end up with:
 
 ![Demo](https://cloud-rcnqjs0ni-hack-club-bot.vercel.app/0image.png)
+
+### How you will use this as a club?
+
+As a club, you will be able to send and recieve these tokens between eachother as a way of rewarding. For example, you the club owner can send your club members 2 tokens after the end of this jam as a way to boost their enthusiasm.
+
+This guide teaches users how to create their own personalized cryptocurrency token using Solidity and Metamask. By following the step-by-step instructions, users set up an endpoint, create a MetaMask account, and code their token on Remix Ethereum. The resulting token can be shared and used as a form of reward or gratitude among club members, fostering a sense of community and enthusiasm. The process is beginner-friendly and offers an opportunity to learn about blockchain concepts while exploring the world of cryptocurrency creation.
+
+Here are some memes to convey the message:
+
+![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/77tjen8.jpg)
+
+![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/67tjep6.jpg)
+
+![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/4download__2_.jpg)
+
+![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/3download__3_.jpg)
 
 ### Why should you even care?
 
@@ -221,6 +237,10 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 * IMPORTANT STEP - You can rename the Network name to your coins name and ** ADD YOUR (THE PERSON SENDING THE TOKEN) Quicknode http link (step 9) and paste it in the reciever's NEW RPC URL field.
 * then go back your dashboard, click on your coin, click on send, paste the recievers address (step 18) to send it to him! Its that easy!!!!
 
+  ![sending](https://cloud-ago25sz07-hack-club-bot.vercel.app/0how_to_send_tokens.gif)
+  
+  ![getting](https://cloud-ago25sz07-hack-club-bot.vercel.app/1recieved_tokens.gif)
+
 ## A couple of things as tips or bonus
 * Make sure to give all your addresses right as messing up addresses can ruin literally everything
 * Play around with code or settings to find out how things work! (You can never go wrong in a testnet)
@@ -234,3 +254,6 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 ## Stuck? Facing issues? Your last braincell stopped working?
 
 * Feel free to contact me on slack! The name's @Briyan Dyju
+
+
+
