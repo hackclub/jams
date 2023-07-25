@@ -1,21 +1,22 @@
 ---
-title: 'Building Your Own Social Media w/ 🔥 Firebase 🏰'
+title: "Building social media apps"
 description: >
     At the end of this jam, you'll create your very own social media app that handles users and posts.
-contributor: 'InternetRamen'
-thumbnail: 'https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png'
-timeEstimate: '60 Min'
-difficulty: 'Intermediate'
-keywords: 'Web, App, website, javascript, HTML, Replit, Firebase, user authentication'
-language: 'HTML & JS'
-presentation: ''
-presentationPlay: ''
-presentationPDF: ''
-notes: ''
-poster: ''
-video: ''
-slug: 'building-social-media-apps'
+contributor: "InternetRamen"
+thumbnail: "https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png"
+timeEstimate: "60 Min"
+difficulty: "Intermediate"
+keywords: "Web, App, website, javascript, HTML, Replit, Firebase, user authentication"
+language: "HTML & JS"
+presentation: ""
+presentationPlay: ""
+presentationPDF: ""
+notes: ""
+poster: ""
+video: ""
+slug: "building-social-media-apps"
 ---
+
 # Building social media apps
 
 _1 hour • Intermediate_
@@ -23,7 +24,14 @@ At the end of this jam, we'll create a social media app that handles users and p
 We'll be using [Firebase](https://firebase.google.com) SDKs to help us with user authentication and data storage.
 
 Here's a demo of something you could build:
-![Demo](image.png)
+![Demo](https://cloud-e2rnk6vqx-hack-club-bot.vercel.app/0image.png)
+[demo.jaden.mov](https://demo.jaden.mov)
+
+<Dropdown title="Leader notes">
+
+This jam is more suited toward a collaborative environment, so try to divide jammers into teams. One group could focus on designing the app, another could focus on the front-end, and another could focus on the back-end.
+
+</Dropdown>
 
 #### Pre-requisites
 
@@ -31,25 +39,21 @@ Ideally, you have a basic understanding of HTML, CSS, and JavaScript, but if thi
 
 ## Brainstorming
 
-<details>
-<summary>
-Brain Fact!
-</summary>
+<Dropdown title="Brain Fact!">
 The human brain weighs 3 pounds
-</details>
+</Dropdown>
 The foundation of any social media app is creating and loading some sort of post. Think of any popular social media (Instagram, Reddit, YouTube, or even a recipe app)
 
 ## Setting up
 
-Please fork/clone [this Repl.it boilerplate](https://replit.com/@JadenHou1/JAM) to get started! We'll go over each file in a sec.
+Please fork/clone [this Repl.it boilerplate](https://replit.com/@JadenHou1/JAM) to get started! We'll go over the files in a sec.
 
 ```
 index.html
-create.html
 login.html
 ```
 
-These are the three pages we'll be using for our app. `index.html` is the home page where we'll load all the posts, `create.html` is the page where users can create posts, and `login.html` is the page where users can log in.
+These are the two pages we'll be using for our app. `index.html` is the home page where we'll load all the posts and login, and `create.html` is the page where users can create posts.
 
 On each page, we have a basic HTML boilerplate with script and style tags. Conventionally, you'd have these in other files and link them to the HTML file, but for simplicity, we'll just keep them in the same file.
 
@@ -58,7 +62,7 @@ On each page, we have a basic HTML boilerplate with script and style tags. Conve
 Head over to [Firebase Console](https://console.firebase.google.com/u/0/) and log in with Google. Once you're in, create a new project and name it whatever you want.
 
 Then, click and enable `Authentication` and `Firestore Database`.
-![Console](image-1.png)
+![Console](https://cloud-5uj5nkwmd-hack-club-bot.vercel.app/0image-1.png)
 
 **Authentication**
 
@@ -68,19 +72,16 @@ Then, click and enable `Authentication` and `Firestore Database`.
 
 **Firestore**
 
-<details>
-<summary>
-Shark Fact!
-</summary>
+<Dropdown title="Shark Fact!">
 Sharks...do not have bones
-</details>
+</Dropdown>
 
 1. Click `Start in test mode`
 2. Click `Next` and choose `nam5` as the location
 
 ### Creating an app in Firebase
 
-![Console](image-3.png)
+![Console](https://cloud-aal2o35z9-hack-club-bot.vercel.app/0image-3.png)
 
 1. Click the `</>` icon
 2. Name your app anything
@@ -108,8 +109,8 @@ Here is what the code snippet looks like and what each line does:
 
 ## Logging in
 
-![Logs](image-4.png)
-Head over to `login.html`. Firebase makes it super easy to add user authentication to your app. We'll be using Google Sign-In, but you can use any of the other methods Firebase provides.
+![Logs](https://cloud-aal2o35z9-hack-club-bot.vercel.app/1image-4.png)
+Head over to `index.html`. Firebase makes it super easy to add user authentication to your app. We'll be using Google Sign-In, but you can use any of the other methods Firebase provides.
 
 First, create a button with `Sign in with Google`. We'll use the id `login` to add an event listener.
 
@@ -138,7 +139,10 @@ const auth = getAuth();
 const provider = new GoogleAuthProvider();
 ```
 
-Now, we can add an event listener to the `login` button. When the user clicks the button, we'll call `signInWithPopup` and pass in the `auth` and `provider` we just created.
+Now, we can add an event listener to the `login` button. Try making it so when the user clicks the button, we call `signInWithPopup`.
+
+
+<Dropdown title="Solution!>
 
 ```js
 document.getElementById("login").addEventListener("click", () => {
@@ -148,7 +152,9 @@ document.getElementById("login").addEventListener("click", () => {
 });
 ```
 
-Your HTML Body should look like this when finished.
+</Dropdown>
+
+<Dropdown title="Your HTML Body should look something like this when finished.">
 
 ```html
 <button id="login">Sign in with Google</button>
@@ -180,23 +186,22 @@ Your HTML Body should look like this when finished.
 </script>
 ```
 
-![Login button](image-5.png)
+</Dropdown>
+
+![Login button](https://cloud-aal2o35z9-hack-club-bot.vercel.app/7image-5.png)
 Test it out! You should receive a prompt to login. <small>[Need help?](https://firebase.google.com/docs/auth/web/google-signin)</small>
 
 ## Creating a post
 
-![Alt text](image-7.png)
+![Alt text](https://cloud-aal2o35z9-hack-club-bot.vercel.app/3image-7.png)
 
-<details>
-<summary>
-Whale Fact!
-</summary>
+<Dropdown title="Whale Fact!">
 Whales can get SUNBURNS
-</details>
+</Dropdown>
 
 Head over to `create.html`. This is where we'll let users create posts. I'll have to leave these fields up to you, but I'll give you a starting point. Please add fields that are relevant to your idea!
 
-**From now on, your code will depend on the idea you came up with.** For me, I'm going with a dog personality-sharing app.
+**From now on, your code will depend on the idea you came up with.** For me, I'm going with your average dog personality-sharing app.
 
 First, create a form for users to enter their information.
 
@@ -250,6 +255,10 @@ We don't want just anyone to add posts, just users! So, we'll add a check to see
 
 Add the following after the `e.preventDefault()`.
 
+If I can get the current user by using `auth.currentUser`, how would I check if there is no current user?
+
+<Dropdown title="Solution!">
+
 ```js
 const currentUser = auth.currentUser;
 if (!currentUser) {
@@ -258,17 +267,19 @@ if (!currentUser) {
 }
 ```
 
+</Dropdown>
+
 `auth.currentUser` lets us access the current user. If there is no current user, the variable will be `null`, so we can alert the user and not add anything. `return` will stop the function from executing any more code.
 
 Then, create a collection in Firestore. A collection holds all your documents. It's like a bucket for all your data.
-![Alt text](image-8.png)
-![Alt text](image-9.png)
+![Alt text](https://cloud-aal2o35z9-hack-club-bot.vercel.app/4image-8.png)
+![Alt text](https://cloud-aal2o35z9-hack-club-bot.vercel.app/5image-9.png)
 
 > Choose a collection name that makes sense for your app! It doesn't have to be posts if that doesn't make sense. Maybe something like `recipes` or `clubs` would make more sense for your idea
 
 When you're prompted to create the first document, add sample data for the fields you've already created above. You can just click auto-ID for the document ID.
 _For example, in my case I'll add `name` and `description`._
-![Alt text](image-10.png)
+![Alt text](https://cloud-aal2o35z9-hack-club-bot.vercel.app/6image-10.png)
 
 Now, we can access the values of each input and add them to the database. We'll use `addDoc` to add a document to the database. `addDoc` takes in 2 parameters: the reference to the collection and the data to add. We'll use `collection` to reference the collection we want to add to, `name.value` to get the value of the first input, and `description.value` to get the value of the second input. We can also use `currentUser.displayName` to grab the name of the author to display.
 
@@ -291,7 +302,7 @@ Finally, we'll let the user know that they've successfully submitted a post.
 alert("Successfully submitted post!");
 ```
 
-Your HTML Body should look something like this when finished.
+<Dropdown title="Your HTML Body should look something like this when finished.">
 
 ```html
 <form id="form">
@@ -331,10 +342,10 @@ Your HTML Body should look something like this when finished.
             return;
         }
         const name = document.getElementById("name").value;
-        const idea = document.getElementById("idea").value;
+        const description = document.getElementById("description").value;
         addDoc(collection(db, "posts"), {
             name: name,
-            idea: idea,
+            description: description,
             author: currentUser.displayName,
         });
         alert("Successfully submitted post!");
@@ -342,15 +353,19 @@ Your HTML Body should look something like this when finished.
 </script>
 ```
 
+</Dropdown>
+
 ## Loading posts
 
 This is where it gets good. We'll be loading posts from the database and displaying them on the home page. Head over to `index.html`.
 
 > I'll leave this implementation up to you, but I'll give you some steps to get started.
 
-First, add the **Firebase code snippet**, and import and initialize the Firestore functions from before.
+After the code from the login, import the Firestore from before into the file.
 
 ```js
+// snippet
+
 import {
     getFirestore,
     getDocs,
@@ -362,9 +377,45 @@ const db = getFirestore();
 To create an element for each post, we'll need to get each post and run a function for each. We'll need `getDocs`. `getDocs` returns a [Promise](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises#async_and_await), and we can use `await` to turn that into a value, but we won't get into that in this jam (think of it as a black box).
 
 Here's an example of how to use `getDocs` to get all the posts.
+
 ```js
 const posts = await getDocs(collection(db, "posts"));
 ```
+
 Now, we can use [`.forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) to [create elements](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement).
 
-*draft*
+<Dropdown title="Solution!">
+
+```js
+const db = getFirestore();
+const div = document.getElementById("div");
+const posts = await getDocs(collection(db, "posts"));
+posts.forEach((doc) => {
+    const element = document.createElement("div");
+    const name = document.createElement("h1");
+    name.innerText =
+        doc.data().name +
+        " • " +
+        doc.data().author;
+    element.appendChild(name);
+    const description = document.createElement("p");
+    idea.innerText = doc.data().description;
+    element.appendChild(idea);
+    div.appendChild(element);
+});
+```
+
+> Your code will look different depending on your fields
+
+</Dropdown>
+
+That's it! Now you have a working social media app. It's your job to add CSS, more fields, and more features to make it your own.
+
+## Not-so-full list of customizations
+ - Change the styling
+ - Change how posts are loaded
+ - Change fields
+ - Add cosmetic elements
+ - ...
+
+*draft 2*
