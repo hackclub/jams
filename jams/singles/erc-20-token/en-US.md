@@ -1,20 +1,20 @@
 ---
-*title: 'From Code to Crypto: An epic Adventure in Cryptocurrency Creation with Solidity'
-*description: >
+title: 'From Code to Crypto: An epic Adventure in Cryptocurrency Creation with Solidity'
+description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
-*contributor: 'briyandyju09'
-*thumbnail: '![Thumbnail Link](https://cloud-gvf9kgtcv-hack-club-bot.vercel.app/0share_your_token_with_others_.png)'
-*timeEstimate: '30 Mins max.'
-*difficulty: 'Beginner'
-*keywords: 'Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, Testnet'
-*language: 'Solidity'
-*presentation: ''
-*presentationPlay: ''
-*presentationPDF: ''
-*notes: ''
-*poster: '![Poster Link](https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png)' (Stock image is for the fun vibe and was meant to be there, definitly not a lack of image issue)
-*video: ''
-*slug: 'make-your-own-erc20-token & from-code-to-crypto:-an-epic-adventure-in-cryptocurrency-creation-with-solidity'
+contributor: 'briyandyju09'
+thumbnail: 'https://cloud-c63ohq6fg-hack-club-bot.vercel.app/02.png'
+timeEstimate: '30 Mins max.'
+difficulty: 'Beginner'
+keywords: 'Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, Testnet'
+language: 'Solidity'
+presentation: ''
+presentationPlay: ''
+presentationPDF: ''
+notes: ''
+poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
+video: ''
+slug: 'make-your-own-erc20-token & from-code-to-crypto:-an-epic-adventure-in-cryptocurrency-creation-with-solidity'
 ---
 
 
