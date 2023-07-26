@@ -1,13 +1,13 @@
 ---
 part: part-1
-title: 'Wielding the Elemental Magic of the Web (not evil)'
+title: 'Build Your Welcome Screen'
 batch: webOS
 description: >
   In this Jam, you'll be creating an awesome welcome screen for your personalOS.
   It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
-thumbnail: 'https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png'
+thumbnail: 'https://cloud-78mhgjste-hack-club-bot.vercel.app/0welcomescreen.png'
 timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
@@ -20,19 +20,17 @@ poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_e
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
 ---
 
-30-45 minutes, intermediate difficulty
-
 ![Capybara OS demo](https://cloud-ir4w2s05f-hack-club-bot.vercel.app/0screenrecording.gif)
+[Live Demo ](https://step8.thomasstubblef2.repl.co/)
+[Sample Code](https://replit.com/@ThomasStubblef2/Step8#index.html)  
 
-*(p.s. this is a sample of what your OS might look like, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all)*
+  *(p.s. this is a sample of what your OS might look like at the end of the entire batch, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all. Yours will also have a totally different set of apps by the end of the batch.)*
 
- 
 The OS will be entirely web-based (using HTML, CSS, and JS). You'll be the designer and developer of your OS (so you'll have complete creative freedom). You'll decide the content, style, features, etc. If your website looks totally different from mine by the end of the batch jam, then you've done the Jam well. If it looks the same, go back to the drawing board.
 
 **Today you'll be creating an awesome welcome screen for your personalOS. It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product that you'll build upon in subsequent Jams.**
 
-[Live Demo ](https://step8.thomasstubblef2.repl.co/)
-[Sample Code](https://replit.com/@ThomasStubblef2/Step8#index.html)
+![this is what today's build may look like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
 
 There are six steps/headings in this Jam! Go through each and begin building your personalOS.
 
@@ -44,10 +42,11 @@ There are six steps/headings in this Jam! Go through each and begin building you
 5. **Additional Optional Style Challenges**
 6. **Next Time on Building Your Personal OS**
 
+Awesome  
 ## Enter the Code Editor
 Hey there Hacker! Let's get you setup
 
-## Create an Account
+### Create an Account
 Head over to the [Replit Website](https://replit.com/languages/html) and create an account
 
 <Dropdown title="What is Replit?">
@@ -319,6 +318,11 @@ here are some ones we really like:
 * `<s>Strike Through</s>`
 * `<p>break the </br> line like this</p>`
 * `<p>use strong to <strong>bold text</strong></p>`
+
+Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
+
+This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style in the moment of writing the Jam.
+![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
 
 
 ## Next time on building your own PersonalOS...

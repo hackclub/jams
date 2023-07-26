@@ -3,7 +3,7 @@ title: 'Online Store Odyssey'
 description: >
   In this jam, you'll be designing your own online store with Figma! In the next jam, we'll be using the Shopify API to turn this into a real store.
 contributor: 'ryanchou-dev'
-thumbnail: 'https://cloud-i005yxf6r-hack-club-bot.vercel.app/0thumbnail.png'
+thumbnail: 'https://cloud-o4hxzgrcl-hack-club-bot.vercel.app/0image.png'
 timeEstimate: '45 Min'
 difficulty: 'Easy'
 keywords: 'Figma, website, store, design, ux, ui'
@@ -22,7 +22,7 @@ slug: 'online-store'
 here's an example of what a finished product might look like! however, your project is going to be completely unique. the feel and flow of your project should be very different ;)
 </Dropdown>
 
-* * * 
+---
 
 > Hacker!
 > Are you awake? Hurry up; we have a boat to catch.
@@ -42,6 +42,7 @@ Today, we'll be designing our website using [**Figma**](https://figma.com/), a d
 There are **6** important steps in this Jam! Feel free to backtrack and reference old points as you design your dream store!
 
 #### Outline:
+
 1. **Embark on your journey.** (create your first Figma file)
 2. **Open your inventory**. (learn about the tools in your hot-bar & Figma structure)
 3. **Make your first painting.** (create the landing page to your store)
@@ -54,6 +55,7 @@ Packed your things? Let's rock this.
 ---
 
 ## Embark on your journey. 🛶
+
 > You made it to your home for the next hour. Time to set up camp.
 
 ### Create an Account
@@ -64,9 +66,10 @@ You should be instantly booted into a new design file!
 
 ![Figma New File](https://cloud-opkznq4e6-hack-club-bot.vercel.app/0figma_new_file.png)
 
-> [!error]- Not there? 
-> If you're redirected to the dashboard instead, just click the **+ New Design File** button!
-> <video controls style={{width: "400px"}}> <source src="https://cloud-n2adyd9na-hack-club-bot.vercel.app/0file_from_dashboard.mp4" type="video/mp4"/> </video>
+<Dropdown title="Not there?">
+If you're redirected to the dashboard instead, just click the **+ New Design File** button!
+<video controls style={{width: "400px"}}> <source src="https://cloud-n2adyd9na-hack-club-bot.vercel.app/0file_from_dashboard.mp4" type="video/mp4" /></video>
+</Dropdown>
 
 If you're working with a team, click the Share button in the top right and add your groupmates' emails with "Edit" permissions!
 
@@ -76,46 +79,49 @@ You're all set now! ≧(´▽｀)≦
 
 ## Open your inventory ⚒️
 
-<Dropdown title="weirdly shaped creature takes off its hood">
+<Dropdown title="a weirdly shaped creature takes off its hood">
 Hey there. I'm Orpheus, your humble guide to Figma!
 
-We're about to go over a lot of info, so don't worry if you forget some of it. 
+We're about to go over a lot of info, so don't worry if you forget some of it.
 I suggest you read through this section and then use it as a cheat-sheet if you ever get stuck!
 </Dropdown>
 
-It *speaks*:
+It _speaks_:
 
 Okay! So, let's go over the structure of the Figma editor.
 
 ---
 
 ![Left Sidebar](https://cloud-p4lmdd3r0-hack-club-bot.vercel.app/0pasted_image_20230716011036.png)
+
 ### Left Sidebar
+
 Here, you'll keep track the current objects in your design (text, shapes, images), and be able to access assets & pages (we'll go over this later).
 
-
 ![Toolbar](https://cloud-i2t8xhz0p-hack-club-bot.vercel.app/0pasted_image_20230716011117.png)
-### Toolbar
-Situated at the top of your screen, this contains every tool you need to start designing, we'll break them down below :)).
 
+### Toolbar
+
+Situated at the top of your screen, this contains every tool you need to start designing, we'll break them down below :)).
 
 ![Right Sidebar](https://cloud-i2t8xhz0p-hack-club-bot.vercel.app/1pasted_image_20230716011129.png)
 
 ### Right Sidebar
+
 This section opens properties of the currently selected layer or tool. You can edit attributes such as font size, stroke, etc. and prototype!
-
-
 
 ---
 
 Figma relies on a layered system of groups. Think about it like you're stacking sheets on top of each other. Here are the main types of objects in Figma.
 
 ### Frame
+
 The foundational element for your designs is called a "frame"! It acts like a top-level container for your content. We normally set these to the dimensions of a target device to see what our design might look like on it.
 
 ![](https://cloud-ki7xeojmd-hack-club-bot.vercel.app/0frame.gif)
 
 ### Group
+
 A group combines related objects together. This is a temporary union that helps reduce the number of layers that you have to work with as you design.
 
 You can group a selection of layers together with `Ctrl + G`!
@@ -123,6 +129,7 @@ You can group a selection of layers together with `Ctrl + G`!
 ![](https://cloud-8utwa7bc9-hack-club-bot.vercel.app/0group.gif)
 
 ### Layers
+
 Layers are the building blocks in any Figma Design. They can be anything from images, vector objects, or text. Anytime you insert an image or create a rectangle, you're making a layer!
 
 ---
@@ -147,7 +154,6 @@ Take this time to think about the name of your corporation and the products you 
 
 ---
 
-
 Let's give your project an awesome name! Click into the area which says "Untitled" and give it a name of your choosing (you can change this at any time).
 
 ![Name your Project](https://cloud-4m7ljqmox-hack-club-bot.vercel.app/0image.png)
@@ -161,43 +167,37 @@ Note that you can always extend the height of the frame as you need.
 Can you believe it? You've created your first layer in Figma. 🎉
 
 > I really love cows. In fact, I love them so much I'd like to make a business selling cow charms. I want to name it something unique and original. I GOT IT!
-> 
+>
 > ~ the cow charm ~
 
-Inside your frame, we'll create a *text object*! Once the tool is selected, click anywhere in your frame to create a text box. You may type whatever you'd like in here.
+Inside your frame, we'll create a _text object_! Once the tool is selected, click anywhere in your frame to create a text box. You may type whatever you'd like in here.
 
-> [!warning]+ wait a minute...
+wait a minute...
 ![Text is too small naurr](https://cloud-6gf9bcrd6-hack-club-bot.vercel.app/0pasted_image_20230716031051.png)
 
-
 #### Quiz Time!
-> [!example]- What do you think we should do?
-> 
-> > [!hint]-
-> > Hmm... Think back to the tools we learned about earlier, maybe something in the "Move Tools" section?
-> > 
-> 
-> ---
-> 
-> > [!hint]- Solution
-> > Luckily we can scale this up with the **Scale Tool (K)**. Scale the text to your desired size and place it where you want on the frame.
-> > 
-> > We can also select it using the **Move Tool (V)** and edit the font size in the text box's properties.
 
+<Dropdown title="What do you think we should do?">
+<Dropdown title="Hint">
+Hmm... Think back to the tools we learned about earlier, maybe something in the "Move Tools" section?
+</Dropdown>
+<Dropdown title="Solution">
+Luckily we can scale this up with the **Scale Tool (K)**. Scale the text to your desired size and place it where you want on the frame.
 
+We can also select it using the **Move Tool (V)** and edit the font size in the text box's properties.
+</Dropdown>
+</Dropdown>
 
-Let's try adding stars to our page. We can do this by selecting the **Star Tool** and placing them as we want. If a sharp grey star isn't what I want, I can choose the *Fill Color* and the *Corner Radius* in the layer's properties after selecting it. In fact, I can also change the amount of angles and the size of each angle of the star. If you ever want to edit some property of an object, you always check the right sidebar!
+Let's try adding stars to our page. We can do this by selecting the **Star Tool** and placing them as we want. If a sharp grey star isn't what I want, I can choose the _Fill Color_ and the _Corner Radius_ in the layer's properties after selecting it. In fact, I can also change the amount of angles and the size of each angle of the star. If you ever want to edit some property of an object, you always check the right sidebar!
 
 > Might there be some property to smite.
 > Veer your eyes to the right.
 
-
 #### Quiz Time!
 
-> [!example]- Try to find these properties yourself! (expand for solution)
-> ![Needed Properties](https://cloud-6fotdvxns-hack-club-bot.vercel.app/0pasted_image_20230716203619_480.png)
-
-
+<Dropdown title="Try to find these properties yourself! (expand for solution)">
+![Needed Properties](https://cloud-6fotdvxns-hack-club-bot.vercel.app/0pasted_image_20230716203619_480.png)
+</Dropdown>
 
 Now, I'll make the background black, text white, and change the color and size of the stars!
 ![Initial background](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/0pasted_image_20230718011242.png)
@@ -205,7 +205,6 @@ Now, I'll make the background black, text white, and change the color and size o
 I want the background to resemble a dark sky with a bright moon, so I'll set it to a gradient with dark shades of purple. You can find the settings of the **Fill Color**.
 
 ![Gradient](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/1pasted_image_20230718011436.png)
-
 
 It's time to create the ✨ charm ✨! I'll make an Circle with the **Ellipse Tool** and import the images I want to use for the design.
 
@@ -217,7 +216,7 @@ It's starting to come together! It would be really awesome to have it drop down 
 
 > [!question]- What tool should I use to create the string?
 > We have a lot of different choices, I could use the **Line** tool to make a simple straight string, or the **Pen** tool to create a more realistic, curvy, string.
-> 
+>
 > I think I'll stick with the **Line** tool, thanks for your help!
 
 This is cool, but something seems a bit off.
@@ -237,32 +236,28 @@ At the top of your screen, you'll see an icon that looks like two overlapping re
 
 ![Boolean operators](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/5pasted_image_20230718012524.png)
 
-
 These are Figma's boolean operators!! 😍😍
 
 You have four options:
 
-1. Union selection. 
-	- Merges two layers together. If the objects overlap, then the shape's outline consists of the it's sublayers not including segments that overlap.
-	- Think of it as a bitwise OR operator — `A | B`
+1. Union selection.
+   - Merges two layers together. If the objects overlap, then the shape's outline consists of the it's sublayers not including segments that overlap.
+   - Think of it as a bitwise OR operator — `A | B`
 2. Subtract selection.
-	- Removes a layer's intersection (and itself!) from another layer. This is the opposite of a union.
-	- Think of it as `A & ~B`.
+   - Removes a layer's intersection (and itself!) from another layer. This is the opposite of a union.
+   - Think of it as `A & ~B`.
 3. Intersect selection.
-	- Removes everything but the intersection between the two.
-	- Think of it as a bitwise AND operator — `A & B`
+   - Removes everything but the intersection between the two.
+   - Think of it as a bitwise AND operator — `A & B`
 4. Exclude selection.
-	1. Keeps everything except the intersection between the two.
-	2. Think of it as a bitwise XOR operator — `A ^ B`
-
+   1. Keeps everything except the intersection between the two.
+   2. Think of it as a bitwise XOR operator — `A ^ B`
 
 > [!question]- Which one do we need?
 > The **Subtract** boolean operator! We want to remove the smaller circle from the larger one.
-> 
+>
 > Awesome! Now we'll select both and perform that operation:
 > ![Subtract](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/6pasted_image_20230718112359.png)
-
-
 
 It's starting to look more and more like a charm!
 ![Charm](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/7pasted_image_20230718112519.png)
@@ -273,19 +268,44 @@ Now, I'll add some decorations and drop shadow, and we'll have a completed eleme
 
 If I have multiple layers that I want to fit into a circle, I can use Figma's **Mask** tool!
 ![Mask select](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/9pasted_image_20230718113841.png)
-*Here, I've created a new circle to use as the frame and selected all the layers I want to be inside of it!*
+_Here, I've created a new circle to use as the frame and selected all the layers I want to be inside of it!_
 
 This tool allows you to use a layer as a "cutout" for another, and we can even adjust it after masking!
 
 Here's the result:
 ![Masked layers](https://cloud-f6y742j59-hack-club-bot.vercel.app/0pasted_image_20230718114047.png)
 
+Now, we'll place in a product image (ill use the mockup we designed earlier).
+![Background + Product](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/1pasted_image_20230722221003.png)
+_To make the background stars, I created 4 stars and dropped the opacity to ~60%_
+
+From here, I can add some text using the **Text Tool (T)**, setting its fill color to whatever I want.
+
+![With Text](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/2pasted_image_20230722221229.png)
+
+Awesome! I'll create a couple more to create a grid-like format.
+
+![Few more!](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/3pasted_image_20230722221310.png)
+
+As you might have guessed, the footer will also be the same; we'll use a rectangle as a background:
+![Step 1](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/4pasted_image_20230722221404.png)
+
+Add in star shapes with the **Star Tool** and add our logo!
+![Step 2](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/5pasted_image_20230722221434.png)
+
+After that, it's up to us to add whatever information we think is necessary. I'll add a privacy & terms page and a contact us page :D
+
+![Step 3](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/6pasted_image_20230722221519.png)
+
+Try creating the Navbar by yourself :)
+
 ---
 
 Looks like you've got the hang of it! Remember to look back at the tool cheat-sheet from earlier and start to build out your store.
 
 Here are the pages you should build out **right now**:
-1. **Landing Page**
+
+1. **Landing Page** (add your own creative splash on this!)
 2. **About Page**
 3. **Product Listing Page** (can be on the landing page)
 4. **Product Pages** (for each one you sell)
@@ -305,9 +325,11 @@ Fear not, Figma has a wonderful tool called: **Assets**!
 These are layers that reference another layer instead of having its own value. If your familiar with pointers and references, these are basically the same thing.
 
 ### Layer
+
 ![Layer Animation](https://cloud-faklou4uh-hack-club-bot.vercel.app/0color-scheme-_remix_.gif)
 
 ### Asset
+
 ![Asset Animation](https://cloud-ghmaoucif-hack-club-bot.vercel.app/0color-scheme-_remix___1_.gif)
 
 First, we'll create a new page so that we have our final prototype in one place. We can do this by expanding the "Page" icon on the left sidebar and clicking the '+' icon when it appears. Name this page **Assets**.
@@ -360,7 +382,6 @@ For example, I set the transition between the home and about page to "**Smart An
 
 Once your finished, click the present icon on the top right corner (looks like a play button) and enjoy the show! Make sure you're on the final prototype page and not the assets page!
 
-
 Splendid! Here's are my interactions in my example design:
 ![Final prototype](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/7pasted_image_20230717005112.png)
 
@@ -377,12 +398,12 @@ The **Plugins** tab :00
 
 It's a community run store with a lot of amazing pre-made components/tools to help with your Figma design.
 
-Feel free to browse through and find something awesome for your design. One that I thought was really cool is called "*MeshFlow Gradients*".
+Feel free to browse through and find something awesome for your design. One that I thought was really cool is called "_MeshFlow Gradients_".
 
 ## Your next adventure.
 
 > You thought it was over?
-> sorry 
+> sorry
 
 Onward to the next island! Here we'll learn how to integrate the Shopify API with Next.JS to make our site **REAL**!
 
@@ -390,10 +411,9 @@ Before you head over, you should implement your design in code! (preferably in N
 
 Check out the jam "**Wielding the Elemental Magic of the Web (not evil)**" to figure out how to implement your design in HTML and CSS! Also, try enabling "**Dev Mode**" in Figma (a switch on the top right corner) to see property values in CSS and example code for some objects! If you have no idea what Next.JS is, I suggest you check out their <a href="https://nextjs.org/docs">Official Tutorial</a> to get started.
 
-
 It's been a blast jamming out with you! Catch you later :>
 <video controls style={{width: "400px"}}> <source src="https://cloud-f39p2nwab-hack-club-bot.vercel.app/00718.mp4" type="video/mp4"/> </video>
 <br/>
-<small>"Oh, Christmas Tree" Kevin MacLeod (incompetech.com)  
-Licensed under Creative Commons: By Attribution 4.0 License  
+<small>"Oh, Christmas Tree" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
 http://creativecommons.org/licenses/by/4.0/</small>

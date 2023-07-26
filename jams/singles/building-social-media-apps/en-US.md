@@ -1,5 +1,5 @@
 ---
-title: "Building social media apps"
+title: 'Building Your Own Social Media w/ 🔥 Firebase 🏰'
 description: >
     At the end of this jam, you'll create your very own social media app that handles users and posts.
 contributor: "InternetRamen"
@@ -16,15 +16,14 @@ poster: ""
 video: ""
 slug: "building-social-media-apps"
 ---
-
-# Building social media apps
-
+# Building Your Own Social Media w/ 🔥 Firebase 🏰
 _1 hour • Intermediate_
 At the end of this jam, we'll create a social media app that handles users and posts.
 We'll be using [Firebase](https://firebase.google.com) SDKs to help us with user authentication and data storage.
 
 Here's a demo of something you could build:
 ![Demo](https://cloud-e2rnk6vqx-hack-club-bot.vercel.app/0image.png)
+
 [demo.jaden.mov](https://demo.jaden.mov)
 
 <Dropdown title="Leader notes">
@@ -32,6 +31,7 @@ Here's a demo of something you could build:
 This jam is more suited toward a collaborative environment, so try to divide jammers into teams. One group could focus on designing the app, another could focus on the front-end, and another could focus on the back-end.
 
 </Dropdown>
+
 
 #### Pre-requisites
 
@@ -110,6 +110,7 @@ Here is what the code snippet looks like and what each line does:
 ## Logging in
 
 ![Logs](https://cloud-aal2o35z9-hack-club-bot.vercel.app/1image-4.png)
+
 Head over to `index.html`. Firebase makes it super easy to add user authentication to your app. We'll be using Google Sign-In, but you can use any of the other methods Firebase provides.
 
 First, create a button with `Sign in with Google`. We'll use the id `login` to add an event listener.

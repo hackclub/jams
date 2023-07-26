@@ -22,10 +22,10 @@ TODO
 
 ## Getting started with Spline
 1. Head over to [spline.design](https://spline.design) and create an account. Select ***New File*** to get started.
-![Getting started - Step 1]()
+![Getting started - Step 1](https://cloud-cmkhxafch-hack-club-bot.vercel.app/1gettingstarted-1.png)
 
 2. Play around with the UI and controls!
-![Getting started - Step 2]()
+![Getting started - Step 2](https://cloud-cmkhxafch-hack-club-bot.vercel.app/0gettingstarted-2.png)
 **Toolbar:** add shapes, select/view modes, and edit tools.
 - Press “+” for more tools and objects to add to the scene.
 - Press “▷” to access Play mode.
@@ -53,7 +53,7 @@ Start thinking about what you want on your own island: a house, a forest, an amu
 1. Let’s start by adding the ground.
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 1A]()
+![Creating your island - Step 1A](https://cloud-3klicbvir-hack-club-bot.vercel.app/9creatingisland-1a.gif)
 </GridItem>
 <GridItem>
 Select (single-click) the square.
@@ -64,7 +64,7 @@ Rotate the square flat and change the size to 500x500.
 
 
 <GridItem>
-![Creating your island - Step 1B]()
+![Creating your island - Step 1B](https://cloud-3klicbvir-hack-club-bot.vercel.app/8creatingisland-1b.gif)
 </GridItem>
 <GridItem>
 Select (single-click) the square.
@@ -80,7 +80,7 @@ Extrude the square by 50 and add some roundness.
 2. Create the base house model.
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 2A]()
+![Creating your island - Step 2A](https://cloud-3klicbvir-hack-club-bot.vercel.app/7creatingisland-2a.gif)
 </GridItem>
 <GridItem>
 > We’ll start with the body of the house.
@@ -93,7 +93,7 @@ Adjust settings.
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 2B]()
+![Creating your island - Step 2B](https://cloud-3klicbvir-hack-club-bot.vercel.app/6creatingisland-2b.gif)
 </GridItem>
 <GridItem>
 Select (single-click) the cube. Adjust settings:
@@ -107,7 +107,7 @@ In the toolbar, select the `Vertex (V)` select tool.
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 2C]()
+![Creating your island - Step 2C](https://cloud-3klicbvir-hack-club-bot.vercel.app/5creatingisland-2c.gif)
 </GridItem>
 <GridItem>
 > Now, let’s make the roof.
@@ -120,7 +120,7 @@ Exit (”X”) out and drag the roof down. Repeat the above steps until the roof
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 2D]()
+![Creating your island - Step 2D](https://cloud-3klicbvir-hack-club-bot.vercel.app/4creatingisland-2d.gif)
 </GridItem>
 <GridItem>
 > Let’s add some roundness to the roof.
@@ -132,7 +132,7 @@ In the toolbar, select the `Loop Cut (C)` tool.
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 2E]()
+![Creating your island - Step 2E](https://cloud-3klicbvir-hack-club-bot.vercel.app/3creatingisland-2e.gif)
 </GridItem>
 <GridItem>
 > Now some roundness for the walls.
@@ -144,7 +144,7 @@ Repeat the above steps on the body.
 3. Add colors!
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 3A]()
+![Creating your island - Step 3A](https://cloud-3klicbvir-hack-club-bot.vercel.app/2creatingisland-3a.gif)
 </GridItem>
 <GridItem>
 > Our scene desperately needs a makeover. Let’s start with the background!
@@ -154,7 +154,7 @@ Click the background to deselect all objects. Adjust scene settings:
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 3B]()
+![Creating your island - Step 3B](https://cloud-3klicbvir-hack-club-bot.vercel.app/1creatingisland-3b.gif)
 </GridItem>
 <GridItem>
 > Now, let’s make the ground look like grass and dirt.
@@ -168,7 +168,7 @@ In “Ramp”, select colors for dirt and grass and adjust their positions.
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 3C]()
+![Creating your island - Step 3C](https://cloud-3klicbvir-hack-club-bot.vercel.app/0creatingisland-3c.gif)
 </GridItem>
 <GridItem>
 Repeat for the walls and the roof. Make it your own!
@@ -178,7 +178,7 @@ Repeat for the walls and the roof. Make it your own!
 4. Add doors, windows, and doorknobs.
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 4]()
+![Creating your island - Step 4](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/4creatingisland-4.png)
 </GridItem>
 <GridItem>
 > You’re on your own for this one. You got this!
@@ -192,7 +192,7 @@ Add rounding and color to them as well.
 5. Add trees.
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 5]()
+![Creating your island - Step 5](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/3creatingisland-5.png)
 </GridItem>
 <GridItem>
 > You’re on your own for this one. You got this!
@@ -205,7 +205,7 @@ Add rounding and color to them as well. Try using a Depth material for a gradien
 6. Add shadows influenced by surrounding color.
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 6]()
+![Creating your island - Step 6](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/2creatingisland-6.gif)
 </GridItem>
 <GridItem>
 > Let’s add a green glow effect coming from the trees!
@@ -223,7 +223,7 @@ Drag the origin of the layer to the tree and adjust the end position.
 7. Build a stone path to the door.
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 7]()
+![Creating your island - Step 7](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/1creatingisland-7.gif)
 </GridItem>
 <GridItem>
 > Let’s build a stone path towards the door!
@@ -244,7 +244,7 @@ Now you know the basics of Spline and have built a mini-house, start making the 
 ### Spline’s asset library
 Spline has a ***huge*** library of 3D models and scenes for you to use in your project! Sprinkle little details into your island or add full building prefabs to form towns and parks.
 
-![Spline's asset library]()
+![Spline's asset library](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/0splinelibrary.png)
 
 > Here are some ideas for what to make for ya:
 - A park

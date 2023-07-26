@@ -281,11 +281,11 @@ export default function Index(props) {
   const router = useRouter();
 
 
-  const batches = [... props.jamsContent.batches, ... props.jamsContent.batches, ... props.jamsContent.batches, ... props.jamsContent.batches]
+  const batches = [... props.jamsContent.batches]
   const jams = props.jamsContent.singles
   .filter((jam) => 
 { 
-  return (jam.keywords.includes(selectedCategory) && Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
+  return (jam?.keywords?.includes(selectedCategory) && Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
 }
   )
 

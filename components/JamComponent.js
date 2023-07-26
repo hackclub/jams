@@ -11,7 +11,6 @@ import Header from '@/components/Header';
 export default function JamComponent({ jam, jamsContent }) {
 
     const router = useRouter();
-    const scrollBoxRef = useRef(null);
   
     const [presentationSelected, setPresentationSelected] = useState(true);
   
@@ -21,7 +20,9 @@ export default function JamComponent({ jam, jamsContent }) {
     const [upcomingSections, setUpcomingSections] = useState([]);
     
     const handleSectionClick = (sectionId) => {
-      router.push(`#${sectionId}`, undefined, { scroll: false });
+      // router.push(`#${sectionId}`, undefined, { scroll: false });
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      window.scrollBy(0, -50);
     };
   
     useEffect(() => {
@@ -46,14 +47,11 @@ export default function JamComponent({ jam, jamsContent }) {
         setPassedSections(passedSections);
         setUpcomingSections(upcomingSections);
       };
-      if (scrollBoxRef.current) {
-        scrollBoxRef.current.addEventListener('scroll', handleScroll);
-      }
+
+      window.addEventListener('scroll', handleScroll);
     
       return () => {
-        if (scrollBoxRef.current) {
-          scrollBoxRef.current.removeEventListener('scroll', handleScroll);
-        }
+        window.removeEventListener('scroll', handleScroll);
       };
     }, []);
     
@@ -70,31 +68,30 @@ export default function JamComponent({ jam, jamsContent }) {
         } back={"/"}/>
   
         <Container style={{ paddingTop: '96px' }}>
-          <Grid columns={[null, '0.75fr 3fr 0.75fr']} gap={24} style={{ overflow: 'hidden', height: 'calc(100vh - 96px)' }}>
-            <Box sx={{display: ["none", "flex"], flexDirection: "column"}}>
-              <h2 style={{ margin: 0 }}>Outline</h2> 
-              <ul>
-    {jam?.headers?.map((header) => (
-      <li key={header}>
-        <div>
-          <Link 
-            href={`#${header}`} 
-            onClick={() => handleSectionClick(header)}
-            sx={{color: header === activeSection ? "#000" : passedSections.includes(header) ? "muted" : "#000",
-                    textDecoration: header === activeSection ? "underline" : "none"}}
-          >
-            {header}
-          </Link>
-        </div>
-      </li>
-    ))}
-  </ul>
-  
+          <Grid columns={[null, '0.75fr 3fr 0.75fr']} gap={24} style={{ bg: 'blue' }}>
+            <Box sx={{display: ["none", "flex"], flexDirection: "column", position:"relative"}}>
+              <Box sx={{position:"sticky", top:96}}>
+                <h2 style={{ margin: 0 }}>Outline</h2> 
+                <ul>
+                  {jam?.headers?.map((header) => (
+                    <li key={header}>
+                      <div>
+                        <Link 
+                          href={`#${header}`} 
+                          onClick={() => handleSectionClick(header)}
+                          sx={{color: header === activeSection ? "#000" : passedSections.includes(header) ? "muted" : "#000",
+                                  textDecoration: header === activeSection ? "underline" : "none"}}
+                        >
+                          {header}
+                        </Link>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </Box>
             </Box>
-            <Box ref={scrollBoxRef} style={{ overflowY: 'scroll', overflowX: "hidden", paddingLeft: [0, '24px'], paddingRight: [0, '24px'], height: 'calc(100vh - 96px)' }}>
+            <Box style={{ paddingLeft: [0, '24px'], paddingRight: [0, '24px'] }}>
               <Box>
-  
-  
               <Box style={{display: "flex", borderRadius: '24px 24px 0px 0px', justifyContent: "center", backgroundColor: "#e0e6ed", gap: "32px"}}>
                 <Box style={{display: "flex", border:"1px solid #e0e6ed", padding: "2px", backgroundColor: "#fff", marginTop: "8px", marginBottom: "8px", backgroundColor: "#f9fafc", gap: "16px", padding: "4px 16px", borderRadius: "16px"}}>
                 <p onClick={() => setPresentationSelected(true)} style={{cursor: "pointer",  border:"1px solid #e0e6ed", marginBottom: "2px", marginTop: "2px", backgroundColor: presentationSelected ? ("#F1E8FF") : ("#F6F6F6"), color: presentationSelected ? ("#993CCF") : ("#000"), width: "120px", alignItems: "center", display: "flex", justifyContent: "center", paddingTop: "4px", paddingBottom: "4px", borderRadius: "8px"}}>Presentation</p>
@@ -118,7 +115,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   variant="outline"
                   color="#993CCF"
                 >
-                  {jam.keywords.split(', ')[0]}
+                  {jam?.keywords.split(', ')[0]}
                 </Badge>
                 <Badge
                   key="difficultyFeature"
@@ -146,77 +143,79 @@ export default function JamComponent({ jam, jamsContent }) {
               </Box>
             </Box>
   
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <h2 style={{ margin: 0 }}>Jam Resources</h2>
-              {jam.presentation && (
-                <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.presentationPDF}>
-                  <Box
-                    sx={{
-                      alignItems: 'center',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      border: '1px solid',
-                      padding: '8px',
-                      borderRadius: '8px',
-                    }}
-                  >
-                    <Text sx={{ textDecoration: 'none' }}>Presentation</Text>
-                    <Icon height={22} width={22} glyph={'download'} />
-                  </Box>
-                </Link>
-              )}
-              {jam.video && (
-                <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.video}>
-                  <Box
-                    sx={{
-                      alignItems: 'center',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      border: '1px solid',
-                      padding: '8px',
-                      borderRadius: '8px',
-                    }}
-                  >
-                    <Text sx={{ textDecoration: 'none' }}>Video</Text>
-                    <Icon height={22} width={22} glyph={'download'} />
-                  </Box>
-                </Link>
-              )}
-              {jam.notes && (
-                <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.notes}>
-                  <Box
-                    sx={{
-                      alignItems: 'center',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      border: '1px solid',
-                      padding: '8px',
-                      borderRadius: '8px',
-                    }}
-                  >
-                    <Text sx={{ textDecoration: 'none' }}>Notes</Text>
-                    <Icon height={22} width={22} glyph={'download'} />
-                  </Box>
-                </Link>
-              )}
-              {jam.poster && (
-                <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.poster}>
-                  <Box
-                    sx={{
-                      alignItems: 'center',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      border: '1px solid',
-                      padding: '8px',
-                      borderRadius: '8px',
-                    }}
-                  >
-                    <Text sx={{ textDecoration: 'none' }}>Poster</Text>
-                    <Icon height={22} width={22} glyph={'download'} />
-                  </Box>
-                </Link>
-              )}
-            </div>
+            <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+              <Box sx={{ position: 'sticky', top: 96 }}>
+                <h2 style={{ margin: 0 }}>Jam Resources</h2>
+                {jam.presentation && (
+                  <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.presentationPDF}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        padding: '8px',
+                        borderRadius: '8px',
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>Presentation</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+                {jam.video && (
+                  <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.video}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        padding: '8px',
+                        borderRadius: '8px',
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>Video</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+                {jam.notes && (
+                  <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.notes}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        padding: '8px',
+                        borderRadius: '8px',
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>Notes</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+                {jam.poster && (
+                  <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.poster}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        padding: '8px',
+                        borderRadius: '8px',
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>Poster</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+              </Box>
+            </Box>
           </Grid>
         </Container>
   

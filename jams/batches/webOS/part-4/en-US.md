@@ -1,13 +1,13 @@
 ---
 part: part-4
-title: 'p.4 Wielding the Elemental Magic of the Web (not evil)'
-batch: webOS
+title: 'Create Your First App'
+batch: 'webOS'
 description: >
   In this Jam, you'll be creating an awesome welcome screen for your personalOS.
   It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
-thumbnail: 'https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png'
+thumbnail: 'https://cloud-8w65kztfg-hack-club-bot.vercel.app/0gifnotes.gif'
 timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
@@ -19,311 +19,678 @@ notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_ep
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
 ---
+Aye there mate, welcome to the forth Jam in this Batch. We're quite impressed by your resilience. Surely you're a bit impressed with yourself as well.
 
-30-45 minutes, intermediate difficulty
+Our first app is going to be a text-based app where you can create little text-based posts about yourself or whatever you'd like to post about. Your app is going to look totally different from mine, so prepare to get your creative thinking cap on and begin your first app. 
 
-![Capybara OS demo](https://cloud-ir4w2s05f-hack-club-bot.vercel.app/0screenrecording.gif)
+![Content Selection](https://cloud-cxohec4p9-hack-club-bot.vercel.app/0notesselector.gif)
 
-*(p.s. this is a sample of what your OS might look like, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all)*
+You could make the theme of your blog/article app about whatever you'd like! For example, you could use this as a place to store reviews of/notes about your favorite restaurants, cafes, recipes, books, etc. 
 
- 
-The OS will be entirely web-based (using HTML, CSS, and JS). You'll be the designer and developer of your OS (so you'll have complete creative freedom). You'll decide the content, style, features, etc. If your website looks totally different from mine by the end of the batch jam, then you've done the Jam well. If it looks the same, go back to the drawing board.
-
-**Today you'll be creating an awesome welcome screen for your personalOS. It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product that you'll build upon in subsequent Jams.**
-
-[Live Demo ](https://step8.thomasstubblef2.repl.co/)
-[Sample Code](https://replit.com/@ThomasStubblef2/Step8#index.html)
-
-There are six steps/headings in this Jam! Go through each and begin building your personalOS.
+HAVE FUN WITH THIS! IT'S YOURRRR **app** ON YOUR **personalOS**! Do whatever you'd like. 
 
 **Outline:**
-1. **Enter The Code Editor** *(start coding in your browser)*
-2. **Build with Elements** *(create elements for your welcome screen)*
-3. **Personalize Your Content** *(make the content personally relevant to you)*
-4. **Style Your Elements** *(make your elements fit your aesthetic)*
-5. **Additional Optional Style Challenges**
-6. **Next Time on Building Your Personal OS**
+1. **Adding App to Desktop**
+2. **Making App Icon Tappable** 
+3. **Making our App Window** 
+4. **Making Our First App** 
+5. **Additional Challenges**
 
-## Enter the Code Editor 
-Hey there Hacker! Let's get you setup
-
-## Create an Account
-Head over to the [Replit Website](https://replit.com/languages/html) and create an account
-
-<Dropdown title="What is Replit?">
-Replit is a web-based independent development environment (IDE). Basically Replit allows you to write code in your browser and instantly deploy your site to the entire world. I suppose you could say its *magical*. 
-</Dropdown>
-
-
-
-<Dropdown title="If you're unable to use Replit or would rather not use Replit">
-If for whatever reason you have difficulty accessing Replit, visit <a href="https://firewalledreplit.com/">Firewalled Replit</a>.
-I also recommend checking out GitHub code spaces or running a local development environment in VS Code.
-All the code is the same regardless of the code editor you use.😉
-</Dropdown>
-
-
-
-### 2. Create a new Repl/Project 
-Welcome to your Replit Dashboard! Once inside, tap create a Repl and then select **HTML, CSS, and Javascript** as your template. 
-
-Replit will kindly start you off with some boilerplate code (starter code). 
-
-![Replit-Signup](https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif)
-
-
-## Build with Elements
-
-### What are elements?
-Every site you've ever visited has elements. Try right clicking this site and tapping Inspect, you'll see a bunch of elements. HTML is the file format for these elements.
-
-#### What makes an element?
-Elements consist of three parts. 
-
-Elements consist of an opening tag, the content in the middle, and a closing tag. So for example `<p>Sample Content</p>` creates paragraph text because there is an opening tag (`<p>`), with content in the middle (`Sample Content`), and a closing tag (`</p>`) indicating where the content ends 
-
-![bagel](https://cloud-rd8lvcrjx-hack-club-bot.vercel.app/0video.gif)
-*(bagels are a lot like tags or I suppose you could say tags are a lot like bagels... depending on your perspective)*
-
-### Where can I place them?
-Replit gave you some starter code, but it has some unnecessary elements. Orpheus the Dinosaur *(don't ask who [Orpheus](https://workshops.hackclub.com/orpheus/) is)* asks that you please copy and paste the code below into your project
+## Adding App to Desktop
+Alrighty, so let's go into our body tag and create a div beneath the menu bar (hey, pro tip btw, you can collapse your divs to make your code more readable for cases like this by tapping the dropdown button next to the code line number of a div)
 
 ```
-<!DOCTYPE html>
-<html>
-
-	<body>
-  
-	</body>
-
-</html>
+  <div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
+    <p>Name Of Your App</p>
+  </div>
 ```
 
-The body of your site is contained inside of an opening tag (`<body>`) and a closing tag (`</body>`). The content of your site goes inside the body.  **Inside your body is where you'll place your elements.**
+Note: I added some padding on the top and left to give the application icons some breathing room and to make sure it was not covered by the top-bar. 
 
-It's sort of like how cream cheese goes inside of a bagel. A bagel has a top and bottom and all of the tasty cream cheese in the middle.
+Here's what my code looks like
 
-Let's fill your body tag sandwich with some tasty content! 🥯
-
-### How can I make elements for my welcome screen?
-Inside of your body tags, let's write some code
-
-```
-<body>
-  <p>Hello world!</p>
+```html
+<body style="font-family: Noto Sans, system-ui, sans-serif; height: 100vh; background-image: url(./beautifulImage.png); background-size: cover; background-repeat: no-repeat; margin: 0px;">
+	<div class="window" id="welcome" style="top: calc(50% - 90px); left: calc(50% - 180px);">
+		(window content)
+	</div>
+	<div style="position: absolute; window: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-between; gap: 32px;">
+		(topbar content)
+	</div>
+	<div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
+		<p>Hacker Notes</p>
+	</div>
 </body>
 ```
+### Add Your Icon
+#### Create an Icon
+My app is going to be called Hacker Notes. 
 
-You've created your first element & it's a `<p>` element (p stands for paragraph)! Congratulations!
+Note: Want to also name your app Hacker Notes? Ha, no you cannot because you're not doing a workshop, you're doing a **JAM** and **JAMS** require that you do-ya-own-thing™. 
 
-Let's try making a heading! Simply create a new element with h1 tags.
+I took a photo of a friend's notebook *(note from Thomas's "friend", Sahiti: "WHY MY NOTEBOOK?!")* to use as the icon for the app. 
+
+![notebook image](https://iili.io/HPLAlyP.md.png)
+
+Take your own image that fits your app and send it to your computer using email or AirDrop and then drag it into Replit (just as we did for the background). Make sure the file format is .png or .jpg (otherwise find an online file converter). 
+
+You can also you can icon you create or find online. I really don't mind, this is your operating system after all and you're the chief designing, so you make the call pal. 
+
+#### Use Your Icon
+Create an image tag, and apply some styles of your choice! I customized the width, height, border-radius, and added a drop-shadow. 
+
+It's also probably a good idea to wrap your icon in a div so we can later tap on that icon to open the window. 
+
+Here's what my code looks like:
 ```
-<body>
-  <h1>Welcome to my OS</h1>
-  <p>Hello world!</p>
-</body>
-```
-
-Awesome. We can also make smaller headings. `h1` is the largest heading, but you can also create an `h2`, `h3`, `h4`, & so on. 
-
-```
-<body>
-  <h1>Welcome to my OS</h1>
-  <h2>Introduction</h2>
-  <p>Hello world!</p>
-</body>
-```
-
-Text is neat, but let's add an image:
-First we need to drag an image into Replit file manager.
-
-![Drag & Drop](https://cloud-id4r1tr7g-hack-club-bot.vercel.app/0drag_drop.gif)
-
-```
-<body>
-  <h1>Welcome to my OS</h1>
-  <h2>Introduction</h2>
-  <p>Hello world!</p>
-  <img src="./nameOfImage.jpeg" />
-</body>
+  <div id="desktopApps" style="padding-top: 64px;">
+    <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
+      <img src="./notebook.png" style="width: 64px; height: 64px; border-radius: 16px;">
+      <p style="margin: 0px; color: #fff; ">Notes</p>
+    </div>
+  </div>
 ```
 
-You can also do a direct link to the image (has .png, .jpeg, etc at the end of the url), so for example here's code for placing an image of a Capybara 
+Note: PLEASE DO NOT COPY THIS CODE! Do your own app and style your icon in your own way. Want to make all the icons circles, go for it (increase that border-radius)! 
 
-`<img src="./imageOfMe.png" />`
+Here's what my icon is currently looking like inside my application
 
-The image tag has a property of `src` which stands for source. You can pass in the direct link to the image or import an image and set the src as `"./imageName.png"`.
+![Icon in my personalOS](https://cloud-9y8sc20z9-hack-club-bot.vercel.app/0screenshot_2023-06-26_at_4.39.55_pm.png)
 
-![Website with text on top and a Capybara image](https://cloud-33eico6lp-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_11.54.32_am.png)
+Currently when we tap on the icon... nothing happens. Let's select the icon when we tap on it! 
 
-### Let's link to another page
-HTML (HyperText Markup Language) was built for scientists to be able to share research documents (& is now used on every website on the internet). If you know anything about scientists, then you know they LOVE to reference other pages. 
+### Making App Icon Tappable
+Alright let's break this into parts.
 
-For this reason, HTML makes it easy for you to hyper-link to other pages.
+1. Store what icon is selected
+2. We need a way to communicate to the user whether the icon is selected or not selected
+3. We need a way to change the icon's appearance to show that it is selected
+4. We also need a way to change the appearance when deselected (tapped that second time) 
+#### Store the State of the Selected Icon
+Let's begin by storing what the selected icon is (by default, this will be undefined because there is no selected icon).
 
+For that we will use a... you guessed it... variable 
+
+```javascript
+var selectedIcon = undefined
 ```
-<body>
-  (rest of your content)
-  <a href="https://example.com/">label</a>
-</body>
-```
+*(p.s. this is JavaScript code, so it's in our JavaScript file)*
 
-Replace label with the label of the button (so for example [Instagram](https://www.instagram.com/starthackclub/)) and link with the url (like https://www.instagram.com/starthackclub/).
-
-You can use this to link to a personal social media, a GitHub, a random website about your favorite creature, or just not make an a tag at the moment. It's totally up to you. 
-
-## Personalize Your Content
-Soo... surprise, you didn't realize but you just started your onboarding screen for you operating system.
-
-**Go ahead and fill it up with your own content.** 
-
-Don't know what to add? Perhaps try:
-* Linking to your favorite playlist
-* Adding a picture of a pet
-* Writing a bit about your favorite hobbies
-* etc
-
-### Customize the text content and image
-Make the text content whatever you would like users to see when they first land on your site. Be creative and have fun with it! 
-
-Select an image for your site that represents you (either literally like a selfie or metaphorically like your favorite creature) by changing the src of the image to a URL or path to your image. 
-
-### Content Complete
-Okay, so you should now have the content for your "Welcome to My OS" screen and it should feel totally unique to you (i.e. if a friend saw your welcome screen, they would immediately know it was your OS).
-
-Your content most likely looks rather bland and uninteresting which leads us into our next topic... styling our content!
-
-![content styling in progress](https://cloud-9jc9u3xyy-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_3.51.07_pm.png)
-
-## Style Your Elements 
-### What's a style?
-A style is a property-value pair that changes the way an element looks.
-
-Styles can exist within an html file when written in-line, but can also be in a separate file (styles.css). For now, we're going to write the styles inside of our HTML file (inside of opening tags)
-
-To apply a style, it's as simple as:
-`<tag style="property: value"> content </tag>`
-
-**Every style has a property and a value.** 
-For example a style may be color with the value of red (to turn the text red)
-
-### Styling Color 🎨
-To change the color text you would simply write
-`<p style="color: red">This text is red</p>`
-
-You can also add a background color: 
-```
-<body style="background-color: #c9ffcf">
-	// your content//
-</body>
-```
-
-Easy, right? 
-
-*p.s. you'll notice I used hex (#c9ffcf) instead of the name of a color (red) for the second example. Hex is a format for representing color. You can use either the name of a color or the hex value. To find hex values, try googling "hex color picker"
-
-### Styling Shape
-Images can have styles too!
-
-Your image is probably very large. Let's change the size & shape.
-
-Simply go to the image and apply a style property that sets the width and height: 
-
-`<img style="width: 64px; height: 64px" src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/1img_1181.jpg" />`
-
-I chose to make the width and height 64px, but you don't have to! Pick your own size, play with it, and have fun!
-
-*Note: Semicolons are used to separate css properties*
-
-##### *\*Crunch*\*
-Your image might be a bit crunched up. Try to Google how to fix this (maybe even ask GPT). Even a very basic search term such as What is the CSS Property for making an image not crunch, would probably work.
-
-![crunched image](https://cloud-4cdvjzqmo-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_12.43.50_pm.png)
+Lovely, now let's make a function for changing the visual appearance of the icon. I challenge you to give it some thought & think hmmm "how can I change the style of an icon without using in-line styles".
 
 <Dropdown title="Solution">
-  Upon scrubbing through the results, I found the `object-fit: cover` property. Let's try applying that to our image. Ah lovely, and just like that our image is uncrunched. Whenever you run into something that looks ugly and you want to make it look beautiful, just google it and Google will help you out.
+Classes, wahooo!!!
+
 </Dropdown>
 
+#### Communicate whether an icon is selected
+We're going to this using classes! 
 
-##### *\*Rounddddd*\*
-Optionally, you can round your corners. Try googling this! (maybe you can even turn your image into a circle shape if you'd like)
+Let's make a class for a selected icon. For testing purposes, you can go ahead and add the class to your icon div like so:
+
+```html
+<div class="selected" styles="(styles)">
+	(content)
+</div>
+```
+
+Here's what I added in my css file. Please DON'T TAKE THIS CODE. Communicate that it is selected in your own way. This may be through a curvy underline, a rounding of the corners, a green background, etc whatever you'd like!
+
+#### Programmatically Adding/Removing a Class
+Poke around this [geeksforgeeks site on classes](https://www.geeksforgeeks.org/javascript-adding-a-class-name-to-the-element/) and see if you can programmatically add a class to an element 
 
 <Dropdown title="Solution">
-You probably found a nifty little CSS property called border radius. 
-simply write style="border-radius: 16px; object-fit: cover" on your image tag.
-Note: Semicolons are used to separate css properties
+Use the `element.classList.add("newClass");`` to add a class
+
+</Dropdown>
+
+Let's go ahead and add some style properties for when the icon is selected. 
+
+```javascript
+function selectIcon(element) {
+  element.classList.add("selected");
+  selectedIcon = element
+} 
+```
+
+& now try implementing a function for deselecting an icon
+
+<Dropdown title="Solution for Deselecting Icon function">
+```javascript
+function deselectIcon(element) {
+  element.classList.remove("selected");
+  selectedIcon = undefined
+}
+```
+
 </Dropdown>
 
 
-![rounded image](https://cloud-b43epg4q2-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_3.59.41_pm.png)
 
-### Styling Font
-Adding a font in CSS is easy!
+When I first introduced JavaScript, I described it as the logic of your program. 
 
-The easiest way to add a font is to visit the [W3 Library of browser-built-in](https://www.w3.org/Style/Examples/007/fonts.en.html) fonts and select one that fits the vibe of your site! 
+I think we've already worked with if else statements, but just in case you were lost, here's a brief introduction.
 
-Once you pick out your favorite font(s), go to the body and put a style property of font-family on the opening tag.
+If else statements check if a certain condition is true in which case a certain block of code runs & if that condition is not true a different block of code runs.
 
-`<body style="font-family: Helvetica, Noto Sans, sans-serif">`
+Try to write an if-then statement inside a `handleIconTap` function that selects the item if it's not selected, but deselects it if it is already selected.
 
-*Note: If you want cooler fonts, checkout [Google Fonts](https://fonts.google.com/) and [this document for learning how to integrate a google font into your project](https://developers.google.com/fonts/docs/getting_started).*  *You'll need to put a link inside `head` tags (which includes content that is not visible on the site, but that the browser uses to configure the site)*
+Your code may look a little like this:
+```javascript
+function handleIconTap(element) {
+  if (condition) {
+    functionA(element)
+  } else {
+    functionB(element)
+  }
+}
+```
 
-*Additional Note: not all computers have access to the same fonts, so if a computer does not have access to a font, it will go to the next one in the list. For this reason, I suggest putting selecting your favorite three fonts and putting them in order from most-liked to least-liked.*
-
-*Final Note: you can use the font-size property and font-weight property to further change the visual appearance of a text element*  
-
-### Styling Space ✨
-Space is created by a combination of Margin (not margarine, MARGIN) and padding (fluff).
-
-Margin is your space between your picture frames on your wall. 
-
-Padding is the gap between the photo and the frame. If you had a box with an item in the middle, the space between the object in the center and the walls of the box is padding. 
-
-Also... here's a comedy skit by Shubham at Epoch Bay Area to learn about Margin and Padding
-
-<video src="https://cloud-2jto14u7d-hack-club-bot.vercel.app/0vid_20221230_184903086.mp4" controls="controls" style={{maxWidth: "480px"}}>
-</video>
-
-We'll get more into this later, but right now I would just like to bring our items closer together. 
-
-![spaced out](https://cloud-5txt6wpqn-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.12.11_pm.png)
-
-So if we open the inspect window...
-
-![Margin is the problem](https://cloud-p8iio5lh4-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.19.38_pm.png)
-
-We can see that the default margin on the h1 is quite large and it's making the site look a bit awkward. Let's correct that. 
-
-Let's reduce the margin on the h1 tag
-
-` <h1 style="margin: 4px;">thomasOS</h1>`
-
-*Note: px stands for pixels, so we now have a 4px space on all sides for the header text element*
-
-If you wanted to add some space within your heading, you could add padding, so perhaps make it
-` <h1 style="padding: 4px; margin: 4px; background-color: #000; color: #fff">thomasOS</h1>`
-(you can see the padding added a gap between the walls of the element and the content itself)
-
-*Note: with both padding and margin, you can change the spacing in a specific direction by appending -top, -bottom, -right, or -left. For example you could add margin-top: 4px; or padding-left: 16px;*
-
-Alright, lovely! Here's my finished site for this episode of the batch. I hope your site looks nothing like this! Please take the opportunity to have fun with this site and do something wild!
-
-![Finished Site](https://cloud-423oznftn-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.27.35_pm.png)
-
-*Note: You'll notice I added some unique looking tags inside the paragraph text, YOU CAN DO THAT TOO BY CHECKING OUT THE SOMEWHAT OPTIONAL ADDITIONAL CHALLENGE BELOW.*
-
-## Additional Challenge (optional-ish)
-Discover some unique tags on the [W3 Tags Site](https://www.w3schools.com/TAGS/default.asp). There are 100+  tags for you to experiment with. Go dive into the W3 Tags Directory and find some random tags and experiment with them on your site. Have fun :) 
-
-here are some ones we really like:
-* `<s>Strike Through</s>`
-* `<p>break the </br> line like this</p>`
-* `<p>use strong to <strong>bold text</strong></p>`
+*Hint: `element.classList.contains("selected")` exists and returns a Boolean value (either True or False)*
+ 
+<Dropdown title="Solution Handling Icon Tap">
+```javascript
+function handleIconTap(element) {
+  if (element.classList.contains("selected")) {
+    deselectIcon(element)
+    openWindow(window)
+  } else {
+    selectIcon(element)
+  }
+}
+```
+</Dropdown>
 
 
-## Next time on building your own PersonalOS...
-In the next episode we will build the foundation of our OS by:
-* Adding a wallpaper
-* Creating Your Window
-* Creating the top bar
-* Tracking time with JS
+## Making our App Window
+### Copying & customizing the old window
+We can basically copy the code from our other window and remove the content. 
+
+Once we copy that code, change the id to "theNameOfYourApp" (actually make it the name of your app). Then inside the div that contains the content of your app, you may want to adjust the height and width.  You can also change the header text. 
+
+Here's what my code looks like (keep in mind if you copy this code it will probably break your site because it should have significantly different styling than what is here)
+
+(don't copy)
+```html
+  <div class="window" id="notes" style="top: calc(50% - 240px); left: calc(50% - 260px); ">
+    <div class="windowheader" id="notesheader">
+      <div class="closebutton" id="notesclose">
+      </div>
+
+      <p class="headertext">Notes</p>
+      <div style="width: 16px; margin-right: 6x; height: 16px;"></div>
+    </div>
+    <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 520px; height: 480px; padding: 16px;">
+      <p>Hacker Notes</p>
+    </div>
+  </div>
+
+```
+
+### Making our App Draggable
+
+Also make sure to run in your script.js file the code 
+```javascript
+dragElement(document.querySelector("#notes"))
+```
+just as you did with your other window. 
+
+Boommmm, we have our second window!
+
+Now we're able to move it around, but we cannot yet close it. 
+
+![Draggable](https://cloud-j9a1i26ly-hack-club-bot.vercel.app/0draggable.gif)
+
+### Making our App Closable
+
+Let's look at the code we implemented for the welcome screen
+```javascript
+var welcomeScreen = document.querySelector("#welcome")
+
+var notesScreenClose = document.querySelector("#welcomeclose")
+
+notesScreenClose.addEventListener("click", () => closeWindow(welcomeScreen));
+```
+
+Now try editing your HTML code id (for the close button) and write a new set of code for making this screen closable
+
+<Dropdown title="Solution For Closing The Window">
+```javascript
+var notesScreen = document.querySelector("#notes")
+
+var notesScreenClose = document.querySelector("#notesclose")
+
+notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
+```
+
+</Dropdown>
+
+![make the window closable](https://cloud-76crcv3i9-hack-club-bot.vercel.app/0closable.gif)
+
+Soo... this is quite annoying... repeating code that is...
+
+When you repeat code, that's a good sign you should make it a function. Try turning it into a function and calling said function
+
+<Dropdown title="Solution For Closable Window Function">
+```javascript
+var notesScreen = document.querySelector("#notes")
+
+var notesScreenClose = document.querySelector("#notesclose")
+
+notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
+```
+
+</Dropdown>
+
+### Making Our Window Closed By Default
+This is quite simple! Just add the `display: none;` style property inline to your notes div. 
+
+![closed by default](https://cloud-8h1gc5y7n-hack-club-bot.vercel.app/0closed_default_.gif)
+
+### Making our Rise To The Top
+You'll notice on that last gif that when we tap on the notes window, it doesn't rise on top of the welcome screen. 
+
+When we tap on a window, we should make it rise to the top. We can do this using the [z-index style property](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index).
+
+If you're feeling quite confident, try implementing this feature on your own! Otherwise, go through the notes below
+
+#### Defining the largest index
+We need to store the largest index so we can know what value we need to set the tapped on window to. We want the window we tap on to have an index greater than the one previously tapped on. 
+
+```javascript
+var biggestIndex = 1;
+```
+I initialized it at 1. You can initialize the variable at any value you'd like to initialize it at. 
+
+#### Checking for a Tap on the window
+We need a function to make the window listen for the user to click on it (we call this `"mousedown"`). When the user taps on the window, we then run the will run some block of code (`handleWindowTap`) to move it to the top
+
+```javascript
+function addWindowTapHandling(element) {
+  element.addEventListener("mousedown", () =>
+    handleWindowTap(element)
+  )
+}
+```
+#### Making the Window to the Top On Move on Tap
+We're now lifting the window up to the top by incrementing the biggestIndex and setting the zIndex to that new `biggestIndex`
+
+```javascript
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+}
+```
+#### Making Window Move To Top On Open
+Awesome, we want to make it so when we open the window, it moves straight to the top immediately. 
+
+```javascript
+function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+}
+```
+
+#### Protecting The Top Bar
+An issue we encounter is that eventually the window goes on top of the topBar. To counter that, let's identify the top bar and then increment it's value each time we increment the window
+
+```html
+<div id="top"
+    style="(styles)">
+</div
+```
+(in HTML)
+
+```javascript
+var topBar = document.querySelector("#top")
+
+function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+}
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+  deselectIcon(selectedIcon)
+}
+```
+(in JavaScript) 
+
+### Celebrate it works
+Awesome! Now we're able to tap on our windows and see them ov
+
+![overlapping fixed](https://cloud-fok3p0igt-hack-club-bot.vercel.app/0overlapfix.gif)
+
+
+### Putting All Of This Into One Function to Initialize a Window
+We're writing a bunch of functions to initialize the window, I challenge you to try putting it all into one window. This isn't necessary, but it will just be helpful later on. 
+
+<Dropdown title="Solution">
+```
+function initializeWindow(elementName) {
+  var screen = document.querySelector("#" + elementName)
+  addWindowTapHandling(screen)
+  makeClosable(elementName)
+  dragElement(screen)
+}
+```
+</Dropdown>
+
+### Calling Our Function 
+Make sure you call the function you create to ensure your window functions properly 
+`initializeWindow("notes")`
+
+## Making Our First App
+The time has come young one. You're going to make the first app for your OS. It's going to be a text-based app about whatever you'd like. Mine will be my "Hacker Notes," but maybe yours will be your "Hiking Notes" or your "Favorite Recipes," or your "Random Inspirational Quotes."
+
+It's totally up to you. There's only one app you cannot make (& that is Hacker Notes). You need to do your ownnnn thinggg my friend! Don't be a follower, be a leader!!!
+
+### Making Initial View
+The initial view for my site will be introducing the concept of Hacker Notes. If you would like, you can make an initial view that represents your site well. I changed the font, added some text, and just generally had fun with it. I encourage you to do the same (& add your own unique style with images, awesome styles, etc).
+
+![initial screen](https://cloud-5atxrow99-hack-club-bot.vercel.app/0screenshot_2023-06-28_at_11.30.46_am.png)
+
+### Adding Content Selection
+Having one piece of content on your app is sort of boring. We should make it so the user can select between multiple pieces of content.
+
+#### Creating a side bar, bottom bar, top bar, or whatever you'd like 
+You need a space to store your content selection options. I put this in a side bar. You can put this in whatever you'd like. 
+
+![side bar added](https://cloud-9djehu11s-hack-club-bot.vercel.app/0screenshot_2023-06-28_at_11.44.56_am.png)
+
+I encourage you to create something other than a sidebar to display your content selection options. Get creative, and be unique.
+
+Here are the steps I took to create this sidebar.
+1. Wrapped my text content inside of a div 
+2. Created a div inside of the window content div
+3. Made the window content div use `display: flex;` and `flex-direction: row;`
+4. Added some padding and some margin
+5. Styled the sidebar to make it look nice and added the first entry (with a name and date)
+
+If you're stuck and want to see my code, take a look (but please don't copy and paste)
+
+```html
+  <div class="window" id="notes" style="top: calc(50% - 240px); display: none; left: calc(50% - 260px); ">
+    <div class="windowheader" id="notesheader">
+      <div class="closebutton" id="notesclose">
+      </div>
+
+      <p class="headertext">Notes</p>
+      <div style="width: 16px; margin-right: 6x; height: 16px;"></div>
+    </div>
+    <div
+      style="background-color: #fff; margin: 6px; border-radius: 12px; width: 520px; height: 480px; padding: 16px; font-family: Courier; display: flex;">
+      <div style="background-color: #F9F9F9; width: 520px; margin-right: 16px; padding: 16px; border-radius: 16px;">
+        <p style="margin: 0px;">Welcome</p>
+        <p style="font-size: 12px; margin: 0px;">06/28/2023</p>
+      </div>
+
+      <div style="overflow-y: scroll;">
+        <p contenteditable="True">
+          <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
+            </br>
+            </br>
+            <img src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/0img_0837.jpg"
+              style="width: 96px; border-radius: 16px" />
+            </br>
+            </br>
+
+            This is a place where I store my thoughts as they come to mind. What exactly will you find when browsing
+            through
+            these notes? As I <del>once said</del> <ins>always say</ins>
+          </span>
+        <blockquote
+          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
+          contenteditable="true">
+          <i>Time Will Tell
+            </br>
+            ~ Thomas
+          </i>
+        </blockquote>
+        <span contenteditable="true">
+          I suppose you may see a bit of content about technology. Perhaps some insights regarding recent projects.
+          Maybe
+          even some thoughts regarding nature & tea? Go and find out!
+        </span>
+        </p>
+      </div>
+    </div>
+  </div>
+```
+
+#### Storing Our Content in JS
+We're going to be storing our content in a JavaScript array of objects. What data you'll have inside of each object will vary depending on what you're making.
+
+For example, your objects may have a property of music if your app will display different songs for piece of content selected. 
+
+An object is a collection of properties (or smaller pieces of data) 
+```javascript
+{
+	title: "Welcome",
+	date: "06/28/2023",
+	content: `(a bunch of html content in my case)`
+}
+```
+
+`title` for example is a property and `"Welcome"` is the value of that property.
+
+*Note: I used ` `` ` instead of ` " " `  to ensure that the quotations inside of my html code would not prematurely end the string*
+
+#### Storing our content
+We don't want to hard code the content, rather we want the content to be programmatically added to the screen so we can easily change it. 
+
+Let's begin by commenting out our HTML code and pasting it into our Java Script object. We'll have an object for each post. 
+```javascript
+var content = [
+  {
+    title: "Welcome",
+    date: "06/28/2023",
+    content: `
+              <p contenteditable="True">
+          <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
+            </br>
+            </br>
+            <img src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/0img_0837.jpg"
+              style="width: 96px; border-radius: 16px" />
+            </br>
+            </br>
+
+            This is a place where I store my thoughts as they come to mind. What exactly will you find when browsing
+            through
+            these notes? As I <del>once said</del> <ins>always say</ins>
+          </span>
+        <blockquote
+          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
+          contenteditable="true">
+          <i>Time Will Tell
+            </br>
+            ~ Thomas
+          </i>
+        </blockquote>
+        <span contenteditable="true">
+          I suppose you may see a bit of content about technology. Perhaps some insights regarding recent projects.
+          Maybe
+          even some thoughts regarding nature & tea? Go and find out!
+        </span>
+        </p>
+      `
+  }
+]
+```
+*(p.s. we're creating an object which is a group of properties and placing that object in an array which is a list of values)*
+
+
+When we refresh the page, our notes page should now have no content. 
+
+#### Programmatically displaying our content
+
+Let's make a function for setting the content.
+
+We need to 1) get where we are placing the content (and make that place identifiable), 2) get the content, and then 3) place the content where it needs to go.
+
+Try implementing it on your own, and if you get lost check the solution below:
+
+<Dropdown title="Solution (keep in mind I added an id onto the div where the note content goes)">
+```javascript
+function setNotesContent(index) {
+
+  var notesContent = document.querySelector("#notesContent")
+
+  notesContent.innerHTML = content[index].content
+}
+
+setNotesContent(0)
+```
+</Dropdown>
+
+#### Programmatically Populating our content selector
+Currently our content selector is hard coded, but we want this to be dynamic so that it can respond to additional notes being added to the array. 
+
+Let's take all of the content out of our sidebar in HTML (because we no longer need to hard code it in)
+
+We need to create a function that accepts the parameter of index (we can use the index of the item to identify it because the index (its spot in the array) is unique)
+
+```javascript
+function addToSideBar(index) {
+	(code goes here)
+}
+```
+
+Try implementing it on your own, and if you get stuck consult the help below.
+
+1. We need to get the div where we are placing the content by placing an id on it and then storing it using a querySelector
+
+`var sidebar = document.querySelector("#sidebar");`
+
+2. We then need to get the note content from our index
+
+`var note = content[index];`
+
+*note: index is being given to use by our for loop and we're using that index to select the piece of content*
+
+3. We then need to create a new div using the document.createElement function and pass it in the element type of "div" (where we'll be storing our listening inside of)
+
+`var newDiv = document.createElement("div");`
+
+
+4. We need to set the content of this new div we created using the innerHTML property
+```javascript
+  newDiv.innerHTML = `
+    <p style="margin: 0px;">
+      ${note.title}
+    </p>
+    <p style="font-size: 12px; margin: 0px;">
+      ${note.date}
+    </p>
+  `;
+```
+
+6.  We need to add an event listener to check if it has been tapped (& in which case we'll programmatically set the content)
+```javascript
+newDiv.addEventListener("click", function() {
+    setNotesContent(index);
+  });
+```
+
+7. & last but not least we need to append it to our div
+```javascript
+  sidebar.appendChild(newDiv);
+```
+
+8. & then finally we need to loop through the function to ensure it is done for every object in the array
+```javascript
+for (let i = 0; i < content.length; i++) {
+  addToSideBar(i)
+}
+```
+*(a for loop runs a segment of code a given number of times and passes in a number that increments each time the code segment runs)*
+
+Woooo, it's working!!!
+![wow correctly displays content](https://cloud-muubvyfhr-hack-club-bot.vercel.app/0notesimprovement.gif)
+
+btw if you got confused, here's the complete set of code
+
+#### Creating Content to Select
+I am going to create a sample
+
+Creating content is now quite easy. It actually doesn't involve any code, you can just add it to the array of content & it just automagically works!
+
+Here's how I added to my array of objects (notice now there are two objects in the JavaScript array):
+```javascript
+var content = [
+  {
+    title: "Welcome",
+    date: "06/28/2023",
+    content: `
+              <p contenteditable="True">
+          <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
+            </br>
+            </br>
+            <img src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/0img_0837.jpg"
+              style="width: 96px; border-radius: 16px" />
+            </br>
+            </br>
+
+            This is a place where I store my thoughts as they come to mind. What exactly will you find when browsing
+            through
+            these notes? As I <del>once said</del> <ins>always say</ins>
+          </span>
+        <blockquote
+          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
+          contenteditable="true">
+          <i>Time Will Tell
+            </br>
+            ~ Thomas
+          </i>
+        </blockquote>
+        <span contenteditable="true">
+          I suppose you may see a bit of content about technology. Perhaps some insights regarding recent projects.
+          Maybe
+          even some thoughts regarding nature & tea? Go and find out!
+        </span>
+        </p>
+      `
+  },
+    {
+    title: "Sample Text",
+    date: "06/28/2023",
+    content: `
+              <p contenteditable="True">
+          Here's some sample text
+        </p>
+      `
+  }
+]
+```
+
+![Content Selection](https://cloud-cxohec4p9-hack-club-bot.vercel.app/0notesselector.gif)
+
+WAHOOOOOOOOOOOOO
+
+OUR FIRST APP IS COMPLETE EXCEPT HA NO IT'S NOT! 
+
+You saw this coming...
+
+ADDITIONAL CHALLENGE TIMEEEEE
+
+## Additional Challenges 
+Pick some challenges that seem fun & add them to your App
+
+1) Add a really unique background color and color for your text
+2) Make the top bar of the application change depending on the notes currently open
+3) Make some awesome content for your site 
+4) Fix the bug where the menu gets trapped in the top bar when you pull it up too far (either by limiting how far you can pull it up or by making it possible to click through the top bar)
+
+## Celebrate
+I am so proud of you. I really did not think you would make it this far...
+
+Next time you'll build your own App (based on your own idea). It's going to be a lot of fun. I'm sure you're a bit tired. 
+
+Take some rest & return back ready to CONQUER THE WORLDDDD (& build an awesome App that will be fully determined by your own interests for your OS).
+
+(Seriously though, great job!)
