@@ -3,7 +3,7 @@ title: 'Building Your Own Social Media w/ 🔥 Firebase 🏰'
 description: >
     At the end of this jam, you'll create your very own social media app that handles users and posts.
 contributor: "InternetRamen"
-thumbnail: "https://cloud-po7bskead-hack-club-bot.vercel.app/0slide_16_9_-_1.png"
+thumbnail: "https://cloud-2eiu5023i-hack-club-bot.vercel.app/0slide_16_9_-_2.png"
 timeEstimate: "60 Min"
 difficulty: "Intermediate"
 keywords: "Web, App, Website, JavaScript"
@@ -21,7 +21,7 @@ At the end of this jam, we'll create a social media app that handles users and p
 We'll be using [Firebase](https://firebase.google.com) SDKs to help us with user authentication and data storage.
 
 Here's a demo of something you could build:
-![Demo](https://cloud-e2rnk6vqx-hack-club-bot.vercel.app/0image.png)
+![Demo](https://cloud-aspwulevx-hack-club-bot.vercel.app/0document.png)
 
 [Link To Live Demo](https://demo.jaden.mov)
 
