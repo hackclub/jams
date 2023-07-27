@@ -8,7 +8,7 @@ const Image = ({ src, alt }) => (
     style={{
       width: "100%",
       // maxWidth: "calc(100vw - 32px)",
-      objectFit: "cover",
+      objectFit: "contain",
       borderRadius: "8px",
       display:"block",
     }}
