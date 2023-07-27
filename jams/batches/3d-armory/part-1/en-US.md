@@ -10,12 +10,12 @@ timeEstimate: '40 Min'
 difficulty: 'Beginner'
 keywords: 'Sword, CAD, 3D Design, Model, TinkerCAD, 3D Printing, Blade'  
 language: 'N/A'
-presentation: "" # TODO
-presentationPlay: "" # TODO
-presentationPDF: "" # TODO 
-notes: "" # TODO
-poster: # TODO 
-video: "" # TODO
+presentation: "" 
+presentationPlay: "" 
+presentationPDF: ""
+notes: "" 
+poster: "" 
+video: "" 
 ---
 
 
