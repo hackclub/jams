@@ -1,5 +1,5 @@
 ---
-title: "Let's build a game (with explosions!)"
+title: "Build a game (with explosions!)"
 description: >
   In this Jam, you'll be creating an awesome welcome screen for your personalOS.
   It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
