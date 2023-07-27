@@ -1,12 +1,12 @@
 ---
-title: 'From Code to Crypto: An epic Adventure in Cryptocurrency Creation with Solidity'
+title: 'Create your own Club Crypto Token!'
 description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
 contributor: 'briyandyju09'
-thumbnail: 'https://cloud-gvf9kgtcv-hack-club-bot.vercel.app/0share_your_token_with_others_.png'
-timeEstimate: '30 Mins max.'
+thumbnail: 'https://cloud-lir0xp6or-hack-club-bot.vercel.app/0crypto_thumbnail.gif'
+timeEstimate: '30 Mins'
 difficulty: 'Beginner'
-keywords: 'Cryptocurrency, Token, ERC, Metamask, Endpoint, Solidity, Testnet'
+keywords: 'Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, Testnet'
 language: 'Solidity'
 presentation: ''
 presentationPlay: ''
@@ -14,7 +14,7 @@ presentationPDF: ''
 notes: ''
 poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
 video: ''
-slug: 'erc-20-token'
+slug: 'make-your-own-erc20-token & from-code-to-crypto:-an-epic-adventure-in-cryptocurrency-creation-with-solidity'
 ---
 
 
@@ -24,7 +24,23 @@ What you will end up with:
 
 ![Demo](https://cloud-rcnqjs0ni-hack-club-bot.vercel.app/0image.png)
 
-### Why should you even care?
+## How you will use this as a club?
+
+As a club, you will be able to send and recieve these tokens between eachother as a way of rewarding. For example, you the club owner can send your club members 2 tokens after the end of this jam as a way to boost their enthusiasm.
+
+This guide teaches users how to create their own personalized cryptocurrency token using Solidity and Metamask. By following the step-by-step instructions, users set up an endpoint, create a MetaMask account, and code their token on Remix Ethereum. The resulting token can be shared and used as a form of reward or gratitude among club members, fostering a sense of community and enthusiasm. The process is beginner-friendly and offers an opportunity to learn about blockchain concepts while exploring the world of cryptocurrency creation.
+
+Here are some memes to convey the message:
+
+![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/77tjen8.jpg)
+
+![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/67tjep6.jpg)
+
+![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/4download__2_.jpg)
+
+![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/3download__3_.jpg)
+
+## Why should you even care?
 
 * Well, imagine a reward you made that you can share withothers.
 * Like a sign of gratitude or thanks. Or anything you want! This token can be like a cashback, a reward, a sign  , of thanks, a form of currency between your friends
@@ -32,7 +48,7 @@ What you will end up with:
 * Understanding blockchain concepts can significantly impact your future prospects, especially in the field of blockchain development.
 * Learning about current trends can help you keep up and learn something new!
    
-### Learning Objectives
+## Learning Objectives
 
 * To learn and understand the Ethereum platform
 * To create a crypto token
@@ -48,7 +64,7 @@ What you will end up with:
 * Code in solidity
 * Deploy and receive the tokens.
 
-### What to keep ready?
+## What to keep ready?
 
 * install the metamask extension to your browser (a place to store your coins)
 * open and keep quicknode.com ready (a place to interact with the ethereum platform)
@@ -65,9 +81,9 @@ What you will end up with:
 #### WARNING: THE COINS YOU MAKE ARE IN THE TESTNET AND HAVE NO MONETARY VALUE! DONT EXPECT TO MAKE MONEY OUT OF THIS lol 
 #### DOUBLE WARNING (AND TIP): WHEN MAKING YOUR METAMASK ACCOUNT, MAKE SURE TO SAVE THE 12 PHRASES AS THEY ARE LIKE A PASSWORD TO YOUR ACCOUNT, STORE THEM ANYWHERE SAFE LIKE YOUR NOTEPAD, DIARY, ANYWHERE SAFE. ONCE LOST, YOUR ACCOUNT IS GONE BYE-BYE FOREVER. (also dont trust anyone and show them your phrases)
 
-## The guide! (dont be overwhelmed by the number of steps, Its easy!)
+# The guide! (dont be overwhelmed by the number of steps, Its easy!)
 
-### Creating A Endpoint With Quicknode
+## Creating A Endpoint With Quicknode
 1. Navigate to quicknode.com and create an account
 
 2. Click "Endpoints"
@@ -109,7 +125,7 @@ What you will end up with:
 
 18. Press the text showing "Account 1" to copy the MetaMask address
 
-### Getting some free ETH for exchange fees! 🤑💲
+## Getting some free ETH for exchange fees! 🤑💲
 
 19. Go to sepoliafaucet.com in your web browser (You're just a few clicks away from being a crypto millionaire! Well, at least in Sepolia. Time to collect those shiny tokens!)
 
@@ -119,7 +135,7 @@ What you will end up with:
 
 22. Follow the instructions on the website to claim the free tokens
 
-### The Coding & Creation Part!
+## The Coding & Creation Part!
 
 23. Go to remix.ethereum.org in your web browser (Now you're a real crypto artist! Grab your virtual paintbrush and start creating your masterpiece.)
 
@@ -182,7 +198,7 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 
 30. Wait for a message or confirmation from MetaMask indicating the successful deployment
 
-### Verifying your tokens existence (This is where you check if you did things right!)
+## Verifying your tokens existence (This is where you check if you did things right!)
 
 31. Scroll down in the Deploy and Run Transactions tool to find the "Deployed Contracts" section
 
@@ -209,24 +225,28 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 
     ![ss](https://cloud-67bytcbnd-hack-club-bot.vercel.app/1screenshot__86_.png)
 
-## Personalizing options
+### Personalizing options
 
 * Try experimenting and testing different blockchains like matic!
 * Try making more coins for different occasions (maybe one for thanks and one for sorry?)
 * Try messing around the settings! It wont hurt to try new things!
 
-## And your reward for sticking around (How to share tokens)
+## How to share tokens?
 
 * remember steps 13-17? just redo it on your reciever's (the person you want to send the tokens to) metamask
 * IMPORTANT STEP - You can rename the Network name to your coins name and ** ADD YOUR (THE PERSON SENDING THE TOKEN) Quicknode http link (step 9) and paste it in the reciever's NEW RPC URL field.
 * then go back your dashboard, click on your coin, click on send, paste the recievers address (step 18) to send it to him! Its that easy!!!!
 
-## A couple of things as tips or bonus
+  ![sending](https://cloud-ago25sz07-hack-club-bot.vercel.app/0how_to_send_tokens.gif)
+  
+  ![getting](https://cloud-ago25sz07-hack-club-bot.vercel.app/1recieved_tokens.gif)
+
+### A couple of things as tips or bonus
 * Make sure to give all your addresses right as messing up addresses can ruin literally everything
 * Play around with code or settings to find out how things work! (You can never go wrong in a testnet)
 * Before trying out a new Blockchain, do infact read and understand about it.
 
-## Additional Resources & Guides
+### Additional Resources & Guides
 * Check out metaschool.so (where i learnt all of this) for many many for courses where you get to explore the wonders of Web 3.0
 * Learn more about ethereum and its blockchain at ethereum.org/en/
 * Make a blockchain with python ![link](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46) ![and this](http://ecomunsing.com/build-your-own-blockchain)
@@ -234,3 +254,6 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 ## Stuck? Facing issues? Your last braincell stopped working?
 
 * Feel free to contact me on slack! The name's @Briyan Dyju
+
+
+
