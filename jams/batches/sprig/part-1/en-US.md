@@ -5,17 +5,17 @@ batch: Get Started Making Fun Tile-Based Games With Sprig
 description: >
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
-thumbnail: ''#TODO
+thumbnail: ''
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
 language: 'JavaScript'
-presentation: "" # TODO
-presentationPlay: "" # TODO
-presentationPDF: "" # TODO
-notes: "" # TODO
-poster: # TODO
-video: "" # TODO
+presentation: "" 
+presentationPlay: "" 
+presentationPDF: "" 
+notes: "" 
+poster: ""
+video: ""
 ---
 
 # Welcome to Sprig!

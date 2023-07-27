@@ -10,12 +10,12 @@ timeEstimate: '100-120 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
 language: 'JavaScript'
-presentation: "" # TODO
-presentationPlay: "" # TODO
-presentationPDF: "" # TODO
-notes: "" # TODO
-poster: # TODO
-video: "" # TODO
+presentation: "" 
+presentationPlay: "" 
+presentationPDF: "" 
+notes: "" 
+poster: ""
+video: "" 
 ---
 
 # Wrapping Up With Your Game and Creating a Pull Request
