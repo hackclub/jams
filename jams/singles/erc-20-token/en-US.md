@@ -3,8 +3,8 @@ title: 'From Code to Crypto: An epic Adventure in Cryptocurrency Creation with S
 description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
 contributor: 'briyandyju09'
-thumbnail: 'https://cloud-c63ohq6fg-hack-club-bot.vercel.app/02.png'
-timeEstimate: '30 Mins max.'
+thumbnail: 'https://cloud-lir0xp6or-hack-club-bot.vercel.app/0crypto_thumbnail.gif'
+timeEstimate: '30 Mins'
 difficulty: 'Beginner'
 keywords: 'Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, Testnet'
 language: 'Solidity'
