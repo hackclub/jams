@@ -6,7 +6,7 @@ contributor: "InternetRamen"
 thumbnail: "https://cloud-po7bskead-hack-club-bot.vercel.app/0slide_16_9_-_1.png"
 timeEstimate: "60 Min"
 difficulty: "Intermediate"
-keywords: "Web, App, website, javascript, HTML, Replit, Firebase, user authentication"
+keywords: "Web, App, Website, JavaScript"
 language: "HTML & JS"
 presentation: ""
 presentationPlay: ""
@@ -16,15 +16,14 @@ poster: ""
 video: ""
 slug: "building-social-media-apps"
 ---
-# Building Your Own Social Media w/ 🔥 Firebase 🏰
-_1 hour • Intermediate_
+
 At the end of this jam, we'll create a social media app that handles users and posts.
 We'll be using [Firebase](https://firebase.google.com) SDKs to help us with user authentication and data storage.
 
 Here's a demo of something you could build:
 ![Demo](https://cloud-e2rnk6vqx-hack-club-bot.vercel.app/0image.png)
 
-[demo.jaden.mov](https://demo.jaden.mov)
+[Link To Live Demo](https://demo.jaden.mov)
 
 <Dropdown title="Leader notes">
 
@@ -143,7 +142,7 @@ const provider = new GoogleAuthProvider();
 Now, we can add an event listener to the `login` button. Try making it so when the user clicks the button, we call `signInWithPopup`.
 
 
-<Dropdown title="Solution!>
+<Dropdown title="Solution!">
 
 ```js
 document.getElementById("login").addEventListener("click", () => {
