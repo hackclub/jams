@@ -1,5 +1,5 @@
 ---
-title: 'Create your own Club Crypto Token!'
+title: 'Create your own Club Token!'
 description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
 contributor: 'briyandyju09'
@@ -14,7 +14,7 @@ presentationPDF: ''
 notes: ''
 poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
 video: ''
-slug: 'make-your-own-erc20-token & from-code-to-crypto:-an-epic-adventure-in-cryptocurrency-creation-with-solidity'
+slug: 'erc-20-token'
 ---
 
 
