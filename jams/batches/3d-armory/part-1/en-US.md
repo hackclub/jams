@@ -129,7 +129,9 @@ Blender, on the other hand, is free and open source, though it does require a do
 I found many very interesting communities on discord. All of them are filled with CAD designers ranging in all levels of knowledge. 
 
 <a href="https://discord.gg/blender"> Blender Community </a>
+
 <a href="https://discord.gg/YcX3hUq9kv"> 3D Modeling </a>
+
 <a href="https://discord.gg/3dprinters"> 3D Printing </a>
 
 </Dropdown>
@@ -139,7 +141,7 @@ I found many very interesting communities on discord. All of them are filled wit
 
 Welcome to your TinkerCAD Dashboard! 
 
-![TinkerCAD Home][https://media.discordapp.net/attachments/893657462790557716/1129208736486002718/Screenshot_2023-07-13_at_5.32.18_PM.png?width=2160&height=1050]
+![TinkerCAD Home](https://media.discordapp.net/attachments/893657462790557716/1129208736486002718/Screenshot_2023-07-13_at_5.32.18_PM.png?width=2160&height=1050)
 
 On the left is your profile. Everything here is self explanatory, and Collections is equivalent to folders (or I guess something like an armory to store collections of items). 
 
