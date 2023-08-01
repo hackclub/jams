@@ -1,9 +1,9 @@
 ---
-title: 'Build your own 3D club village 🏘️'
+title: 'Build your own 3D club village'
 description: >
   In this jam, you'll create your very own virtual sky village with Spline, a web-based 3D modeling software.
 contributor: 'linkai101'
-thumbnail: 'https://cloud-du9kcyhz9-hack-club-bot.vercel.app/03dclubvillage.png'
+thumbnail: 'https://cloud-8oi5u7dkg-hack-club-bot.vercel.app/0image.png'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
 keywords: 'Web, 3D, 3D modeling, Spline'
