@@ -17,11 +17,11 @@ video: ''
 slug: 'online-store'
 ---
 
-<video controls style={{width: "400px"}}> <source src="https://cloud-opkznq4e6-hack-club-bot.vercel.app/1store_preview.mp4" type="video/mp4"/> </video>
+<video controls style={{width: "400px"}}> <source src="https://cloud-opkznq4e6-hack-club-bot.vercel.app/1store_preview.mp4" type="video/mp4" /></video>
+
 <Dropdown title="psst">
 here's an example of what a finished product might look like! however, your project is going to be completely unique. the feel and flow of your project should be very different ;)
 </Dropdown>
-
 ---
 
 > Hacker!
@@ -374,7 +374,7 @@ Select the one you want and customize the transition!
 p.s. for similar pages (such as your product page), it might be more intuitive for a "**Smart Animate**" transition.
 
 For example, I set the transition between the home and about page to "**Smart Animate**", and this is the result:
-![[2023-07-18 11-49-28.gif]]
+![Animation Preview](https://cloud-h7lkfzs4c-hack-club-bot.vercel.app/02023-07-18_11-49-28.gif)
 
 **Follow the same technique for every single clickable element!**
 
