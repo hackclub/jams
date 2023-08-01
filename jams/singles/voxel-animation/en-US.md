@@ -1,7 +1,7 @@
 ---
-title: "Creating your own ✨ unique Voxel Animation"
+title: "Creating your own ✨unique Lofi Animation based on Voxels"
 description: >
-    In this Jam, you'll be creating an awesome unique Voxel Animation! It will be a lot of fun and you will have an awesome animation as a result!
+    In this Jam, you'll be creating an awesome unique Lofi Animation using Voxels! It will be a lot of fun and you will have an awesome animation as a result!
 contributor: "GalaxyGamignBoy"
 thumbnail: "https://cloud-lbcq0pee2-hack-club-bot.vercel.app/0va_thumb.png"
 timeEstimate: "~60+ Minutes"
@@ -20,14 +20,18 @@ slug: "voxel-animation"
 # Creating your own ✨ unique Voxel Animation
 
 ~60+ Minutes, Basic javascript & html knowledge needed
-![demo_dot_gif](https://cloud-c4y0bofdf-hack-club-bot.vercel.app/0demo.gif)
+![demo_dot_webm](https://cloud-1duz1dnxo-hack-club-bot.vercel.app/0demo.gif)
+
 ( _This is a demo animation, this jam encourages to create your **own!**_ )
 
-[Demo Animation](<[hcjam.galaxygamingboy.repl.co](https://hcjam.galaxygamingboy.repl.co/)>)
+[Demo Animation](https://hcjam.galaxygamingboy.repl.co)
 [Source Code of Demo](https://replit.com/@GalaxyGamingBoy/HCJam)
 
+**Note for leaders!**
+This jam will include a **gallery** so you can **publish** your members animations in a form of a **playlist**. It will also include an online **tool** for merging **all** of the videos together and adding music, till the website get's released you **must** create the playlist yourself.
+
 **Note for learners!**
-Creating your own voxel animation may seem tidious and hard at the start but after setting up the renderer everything after is a breeze ( like literaly ).
+Creating your own lofi animation may seem **tidious and hard** at the start but after setting up the renderer everything after is a breeze ( like literaly ).
 You will have so much fun! You **can do it!**
 
 **Table Of Contents - Project Outline**:
@@ -49,6 +53,8 @@ You will have so much fun! You **can do it!**
 ## Forking the Template
 
 This is the first part of your wonderful journey to Three.js!
+The template includes assets that you might use in your lofi animation, everything will be lofi themed so feel free to use them!
+
 You will fork the [template](https://replit.com/@GalaxyGamingBoy/VoxelAnimation-Template) from [this link](https://replit.com/@GalaxyGamingBoy/VoxelAnimation-Template).
 After visiting the link on the right hand side of the screen there is a `FORK` button. Click it!
 After clicking enter your voxel animation name and click `FORK REPL`.
@@ -74,6 +80,7 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 3. A preview window that will preview your animation, it should automatically reload if it doesn't press `RUN`
 4. Open the preview on another tab
 
+<!-- SECTION START - DROPDOWN, WHAT IS REPLIT-->
 <Dropdown title="What is replit?">
 	Replit is a web-based independent development environment (IDE). Basically Replit allows you to write code in your browser and instantly deploy it!
 	
@@ -81,16 +88,21 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 		<img src="https://cloud-lnspzc1vi-hack-club-bot.vercel.app/1meme_magic.jpg" width="40%"/>
 	</div>
 </Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
+<!-- SECTION START - DROPDOWN, OPTIONAL TASK -->
 <Dropdown title="Optional Task | Get used to the replit editor">
-	Create an `h1`, `h2`, `h3`, with the text being: `Hello, Orpeus!`<br/>
-	You should see the output on the right, preview automatically. Doesn't show? Press `RUN`!<br/>
-	After completion remove the lines.<br/>
+	Create an `h1`, `h2`, `h3`, with the text being: `Hello, Orpeus!`<br>
+	You should see the output on the right, preview automatically. Doesn't show? Press `RUN`!<br>
+	After completion remove the lines.<br>
 </Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
+<!-- SECTION START - DROPDOWN, SOLUTION -->
 <Dropdown title="Solution to the optional task">
 	<img src="https://cloud-blshr6ft8-hack-club-bot.vercel.app/0image.png" />
 </Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
 So yea, that's everything about replit, that you will need to know!
 Shall we get started with the template?
@@ -114,7 +126,7 @@ Lets quickly dissect the `index.html` so we have a basic understanding.
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Animation</title>
+    <title>Lofi Animation</title>
 </head>
 ```
 
@@ -182,6 +194,7 @@ const runButton = document.getElementById("run");
 const startRec = document.getElementById("rec-start");
 const stopRec = document.getElementById("rec-stop");
 const statusRec = document.getElementById("rec-status");
+stopRec.disabled = true // This will disabled the stop recording button, since we haven't started a recording
 ```
 
 Here we just get the HTML elements so we can use them.
@@ -189,14 +202,19 @@ Here we just get the HTML elements so we can use them.
 ```js
 // () => {} This is a arrow function
 runButton.addEventListener("click", () => {
+	runButton.disabled = true // Disables the run button
     // Executed on run
 });
 
 startRec.addEventListener("click", () => {
+	startRec.disabled = true // Disables the start recording button
+	stopRec.disabled = false // Enables the stop recording buttpn
     // Executed on start rec
 });
 
 stopRec.addEventListener("click", () => {
+	startRec.disabled = false // Enables the start recording button
+	stopRec.disabled = true // Disables the stop recording button
     // Executed on stop rec
 });
 ```
@@ -296,7 +314,7 @@ A perspective camera has 4 parameters, here they are ordered start to finish:
 -   FOV: Camera frustum vertical field of view.
 -   ASPECT: Camera frustum aspect ratio.
 -   NEAR: Camera frustum near plane.
--   FAR: Camera frustum far plane.
+-   FAR: Camera frustum far plane.
     For now use these defaults, if you want to learn more, [click here](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)
 
 ### Now let's add a cube
@@ -399,9 +417,11 @@ Well it is task time everyone!
 
 Try to add 2 other cubes with different sizes, you don't have to add any animation for static objects.
 
+<!-- SECTION START - DROPDOWN, CODE -->
 <Dropdown title="Picture of Code">
 	<img src="https://cloud-iwc0zdnr7-hack-club-bot.vercel.app/0image.png" />
 </Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
 ## Add Picture as cube surface
 
@@ -420,19 +440,21 @@ This just creates a loader, now we need to _import_ the images.
 
 In the cube material replace the
 `color: 0xWHATEVER` with
-`map: loader.load('assets/cube.jpg')`
+`map: loader.load('assets/cube.png')`
 
 i.e.
 
 ```
-const cubeMaterial = new THREE.MeshBasicMaterial({ map: loader.load('assets/cube.jpg') });
+const cubeMaterial = new THREE.MeshBasicMaterial({ map: loader.load('assets/cube.png') });
 ```
 
 That is **it**! Wasn't that easy?
 
+<!-- SECTION START - DROPDOWN, CODE -->
 <Dropdown title="Picture of Code">
 	<img src="https://cloud-kwxt1tznz-hack-club-bot.vercel.app/0msedge_a6hyeprrn4.png" />
 </Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
 ## Three.js must haves
 
@@ -447,7 +469,7 @@ Isn't that handy, you may replace it of course!
 Now between the loader and the materials copy this code:
 
 ```js
-scene.background = loader.load("assets/skybox.png");
+scene.background = loader.load("assets/skybox.jpg");
 ```
 
 This will set the background to the `assets/skybox.png`, isn't that handy!
@@ -475,9 +497,11 @@ audioLoader.load("assets/bg.mp3", function (buffer) {
 Well that is it!
 It will play the `bg.mp3` that is located in the `assets` folder!
 
+<!-- SECTION START - DROPDOWN, CODE -->
 <Dropdown title="Picture of Code">
 	<img src="https://cloud-h08blnusw-hack-club-bot.vercel.app/0image.png" />
 </Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
 ### Camera rotations
 
@@ -515,7 +539,7 @@ Well the first thing we need to do is add the capturer so we can use it. Copy th
 
 ```js
 var capturer = new CCapture({
-    format: "gif",
+    format: "webm",
     workersPath: "/lib/",
     verbose: true,
     framerate: 60,
@@ -552,9 +576,11 @@ capturer.save(); // Save the recording
 statusRec.innerText = "Saving recording... This *may* take a while"; // Update status
 ```
 
+<!-- SECTION START - DROPDOWN, CODE -->
 <Dropdown title="Picture of Code">
 	<img src="https://cloud-7y3bq31u9-hack-club-bot.vercel.app/0image.png" />
 </Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
 **WARNING FOR ADVENTURERS: THE CAPTURE FUNCTIONALITY WORKS ONLY WHEN THE PREVIEW IS OUTSIDE REPLIT**.
 
