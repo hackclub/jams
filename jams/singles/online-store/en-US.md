@@ -374,7 +374,6 @@ Select the one you want and customize the transition!
 p.s. for similar pages (such as your product page), it might be more intuitive for a "**Smart Animate**" transition.
 
 For example, I set the transition between the home and about page to "**Smart Animate**", and this is the result:
-![[2023-07-18 11-49-28.gif]]
 ![Animation Preview](https://cloud-h7lkfzs4c-hack-club-bot.vercel.app/02023-07-18_11-49-28.gif)
 
 **Follow the same technique for every single clickable element!**
