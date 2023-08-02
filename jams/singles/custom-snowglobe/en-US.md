@@ -9,6 +9,8 @@ difficulty: 'Intermediate'
 keywords: 'Snowglobe, Snow, Fun, website, javascript, HTML, CSS, replit, custom'
 language: 'HTML, JS'
 slug: 'custom-snowglobe'
+presentation: 'https://www.figma.com/file/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?type=design&node-id=239%3A1286&mode=design&t=5cwsXCx3QrutYqAB-1'
+presentationPlay: 'https://www.figma.com/proto/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?page-id=239%3A1286&type=design&node-id=243-10232&viewport=1172%2C132%2C0.14&t=Sn3rVs7ua8lHiFmk-1&scaling=contain&starting-point-node-id=243%3A10232&mode=design'
 ---
 
 # Introduction
