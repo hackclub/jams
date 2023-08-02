@@ -3,7 +3,7 @@ title: 'Create Your Own Comic Book with AI'
 description: >
     In this jam, we'll be using ChatGPT to generate the text of a children's comic, and use Stable Diffusion to create pictures for the comic. Both ChatGPT and Stable Diffusion are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 contributor: 'ganning127'
-thumbnail: 'https://cloud-phut1bzrc-hack-club-bot.vercel.app/0gradiojam__1_.png'
+thumbnail: 'https://cloud-aryjfx0lv-hack-club-bot.vercel.app/0gradiojam__2_.png'
 timeEstimate: '55 Min'
 difficulty: 'Easy'
 keywords: 'ChatGPT, Stable Diffusion, HTML, CSS'
