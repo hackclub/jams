@@ -1,7 +1,7 @@
 ---
 part: part-3
-title: '(Part 3) Take Your Sprig Game to the Next Level With Traps, Moving Obstacles, and More.'
-batch: Get Started Making Fun Tile-Based Games With Sprig
+title: 'Take Your Sprig Game to the Next Level With Traps, Moving Obstacles, and More.'
+batch: 'sprig'
 description: >
   Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
@@ -17,8 +17,6 @@ notes: ""
 poster: ""
 video: "" 
 ---
-
-# Take Your Sprig Game to the Next Level With Traps, Moving Obstacles, and More.
 
 ### this should take two sessions in a club!
 
