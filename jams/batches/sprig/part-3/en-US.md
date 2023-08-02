@@ -1,11 +1,11 @@
 ---
 part: part-3
-title: '(Part 3) Take Your Sprig Game to the Next Level With Traps, Moving Obstacles, and More.'
+title: 'Take Your Sprig Game to the Next Level With Traps, Moving Obstacles, and More.'
 batch: Get Started Making Fun Tile-Based Games With Sprig
 description: >
   Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
-thumbnail: ''
+thumbnail: 'https://cloud-mswaasys4-hack-club-bot.vercel.app/0screen_recording_2023-07-13_at_11.12.28.gif'
 timeEstimate: '100-120 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
@@ -19,8 +19,7 @@ video: ""
 ---
 
 # Take Your Sprig Game to the Next Level With Traps, Moving Obstacles, and More.
-
-### this should take two sessions in a club!
+(this should take two sessions in a club!)
 
 Last session, you built your very own maze game from scratch! (if this isn't true, check out [session 2](LINK AAAA TODO) of this jam!) Today, we'll be expanding on our game by adding various game mechanics, or features. Take a look at the list of examples below, and make note of what seems fun/interesting/inspiring to you!
 

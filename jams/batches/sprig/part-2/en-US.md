@@ -5,7 +5,7 @@ batch: Get Started Making Fun Tile-Based Games With Sprig
 description: >  
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
-thumbnail: ''
+thumbnail: 'https://cloud-ctbvwlpse-hack-club-bot.vercel.app/0sprig.gif'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
@@ -37,7 +37,6 @@ This jam is organized as a series of steps with not much help at first. Try your
 
 [Click here](https://sprig-nocode.hackclub.dev/maze) for a demo of what you could make today.
 
-TODO: what's the policy on remixes of games getting into the gallery?  
 Disclaimer: making a maze game by following this tutorial won't qualify you to get a free Sprig console. However, you can expand on this game to be unique and personalized after finishing this batch jam, or take the skills you gain here to make a unique game later!
 
 ## Starting the tutorial
