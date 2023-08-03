@@ -80,6 +80,7 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 3. A preview window that will preview your animation, it should automatically reload if it doesn't press `RUN`
 4. Open the preview on another tab
 
+<!-- SECTION START - DROPDOWN, WHAT IS REPLIT-->
 <Dropdown title="What is replit?">
 	Replit is a web-based independent development environment (IDE). Basically Replit allows you to write code in your browser and instantly deploy it!
 	
@@ -87,16 +88,15 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 		<img src="https://cloud-lnspzc1vi-hack-club-bot.vercel.app/1meme_magic.jpg" width="40%"/>
 	</div>
 </Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
+<!-- SECTION START - DROPDOWN, OPTIONAL TASK -->
 <Dropdown title="Optional Task | Get used to the replit editor">
-	Create an `h1`, `h2`, `h3`, with the text being: `Hello, Orpeus!`<br/>
-	You should see the output on the right, preview automatically. Doesn't show? Press `RUN`!<br/>
-	After completion remove the lines.<br/>
+	Create an `h1`, `h2`, `h3`, with the text being: `Hello, Orpeus!`<br>
+	You should see the output on the right, preview automatically. Doesn't show? Press `RUN`!<br>
+	After completion remove the lines.<br>
 </Dropdown>
-
-<Dropdown title="Solution to the optional task">
-	<img src="https://cloud-blshr6ft8-hack-club-bot.vercel.app/0image.png" />
-</Dropdown>
+<!-- SECTION END - DROPDOWN -->
 
 So yea, that's everything about replit, that you will need to know!
 Shall we get started with the template?
@@ -138,6 +138,7 @@ The head of the html file, provides the title and the viewport
 Here we have the buttons
 
 ```html
+<!-- Import THREE.JS -->
 <script
     async
     src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
@@ -408,12 +409,11 @@ Try fiddling with it!
 Well it is task time everyone!
 ![time_meme-dot-jpg](https://cloud-qmjjp049v-hack-club-bot.vercel.app/0meme_time.jpg)
 
-Try to add 2 other cubes with different sizes, you don't have to add any animation for static objects.
-
-<Dropdown title="Picture of Code">
-	<img src="https://cloud-iwc0zdnr7-hack-club-bot.vercel.app/0image.png" />
+<!-- SECTION START - DROPDOWN, OPTIONAL TASK -->
+<Dropdown title="Task">
+	Add 2 of your own cubes into the scene!
 </Dropdown>
-
+<!-- SECTION END - DROPDOWN -->
 ## Add Picture as cube surface
 
 Yes you heard that right! Forget the boring colors, let's add real textures!
@@ -435,15 +435,11 @@ In the cube material replace the
 
 i.e.
 
-```
+```js
 const cubeMaterial = new THREE.MeshBasicMaterial({ map: loader.load('assets/cube.png') });
 ```
 
 That is **it**! Wasn't that easy?
-
-<Dropdown title="Picture of Code">
-	<img src="https://cloud-kwxt1tznz-hack-club-bot.vercel.app/0msedge_a6hyeprrn4.png" />
-</Dropdown>
 
 ## Three.js must haves
 
@@ -486,10 +482,11 @@ audioLoader.load("assets/bg.mp3", function (buffer) {
 Well that is it!
 It will play the `bg.mp3` that is located in the `assets` folder!
 
-<Dropdown title="Picture of Code">
-	<img src="https://cloud-h08blnusw-hack-club-bot.vercel.app/0image.png" />
+<!-- SECTION START - DROPDOWN, OPTIONAL TASK -->
+<Dropdown title="Optional Task">
+	Find your own background lofi music and import it into your project, so you can play it instead.
 </Dropdown>
-
+<!-- SECTION END - DROPDOWN -->
 ### Camera rotations
 
 I think we can agree that static cameras are boring so let's make ours to rotate!
@@ -562,10 +559,6 @@ capturer.stop(); // Stop rhe capturer
 capturer.save(); // Save the recording
 statusRec.innerText = "Saving recording... This *may* take a while"; // Update status
 ```
-
-<Dropdown title="Picture of Code">
-	<img src="https://cloud-7y3bq31u9-hack-club-bot.vercel.app/0image.png" />
-</Dropdown>
 
 **WARNING FOR ADVENTURERS: THE CAPTURE FUNCTIONALITY WORKS ONLY WHEN THE PREVIEW IS OUTSIDE REPLIT**.
 
@@ -683,7 +676,7 @@ For that THREE.JS has a light object, here is how to declare and add it in the s
 Copy this code at the end of the `scene.add` calls:
 
 ```js
-scene.add(new THREE.AmbientLight(0xffffff, 1)); // Add light so we can see the models
+scene.add(new THREE.AmbientLight(0xFFFFFF, 1)); // Add light so we can see the models
 ```
 
 Well now you should be able to see the models!
