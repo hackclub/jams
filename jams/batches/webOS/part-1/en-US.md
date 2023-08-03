@@ -40,8 +40,7 @@ There are six steps/headings in this Jam! Go through each and begin building you
 3. **Personalize Your Content** *(make the content personally relevant to you)*
 4. **Style Your Elements** *(make your elements fit your aesthetic)*
 6. **Next Time on Building Your Personal OS**
-
-Awesome  
+  
 ## Enter the Code Editor
 Hey there Hacker! Let's get you setup
 

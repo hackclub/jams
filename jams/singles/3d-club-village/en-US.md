@@ -3,14 +3,14 @@ title: 'Build your own 3D club village'
 description: >
   In this jam, you'll create your very own virtual sky village with Spline, a web-based 3D modeling software.
 contributor: 'linkai101'
-thumbnail: 'https://cloud-8oi5u7dkg-hack-club-bot.vercel.app/0image.png'
+thumbnail: 'https://cloud-qgq7ebke0-hack-club-bot.vercel.app/0680a6b28-7504-46b3-90d5-04cd1057640e.png'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
 keywords: 'Web, 3D, 3D modeling, Spline'
 language: 'Spline'
-presentation: ''
-presentationPlay: ''
-presentationPDF: ''
+presentation: 'https://www.figma.com/file/DYnMTevG5DWxHDcVstUzIE/Jam-Presentation---3D-Club-Village?type=design&node-id=0%3A1&mode=design&t=F8dabi5Vvsa5m6pz-1'
+presentationPlay: 'https://www.figma.com/proto/DYnMTevG5DWxHDcVstUzIE/Jam-Presentation---3D-Club-Village?type=design&node-id=1-2&t=F8dabi5Vvsa5m6pz-0&scaling=contain&page-id=0%3A1'
+presentationPDF: 'https://cloud-fqv7hdkg3-hack-club-bot.vercel.app/0jam_presentation_-_3d_club_village.pdf'
 notes: ''
 poster: ''
 video: ''
@@ -59,7 +59,7 @@ Start thinking about what you want on your own island: your dream mansion on a m
 
 > We’re going to start by building a basic house. Afterwards, you can transform it to make it your own!
 
-1. Let’s start by adding the ground.
+<Dropdown title="1. Let's start by adding the ground.">
 <Grid cols={2}>
 <GridItem>
 ![Creating your island - Step 1A](https://cloud-3klicbvir-hack-club-bot.vercel.app/9creatingisland-1a.gif)
@@ -87,8 +87,9 @@ Keep in mind that you can always change these settings anytime as you add more s
 </Comment>
 </GridItem>
 </Grid>
+</Dropdown>
 
-2. Create the base house model.
+<Dropdown title="2. Create the base house model.">
 <Grid cols={2}>
 <GridItem>
 ![Creating your island - Step 2A](https://cloud-3klicbvir-hack-club-bot.vercel.app/7creatingisland-2a.gif)
@@ -162,8 +163,9 @@ In the toolbar, select the `Loop Cut (C)` tool.
 Repeat the above steps on the body.
 </GridItem>
 </Grid>
+</Dropdown>
 
-3. Add colors!
+<Dropdown title="3. Add colors!">
 <Grid cols={2}>
 <GridItem>
 ![Creating your island - Step 3A](https://cloud-3klicbvir-hack-club-bot.vercel.app/2creatingisland-3a.gif)
@@ -201,8 +203,9 @@ In “Ramp”, select colors for dirt and grass and adjust their positions.
 Repeat for the walls and the roof. Make it your own!
 </GridItem>
 </Grid>
+</Dropdown>
 
-4. Add doors, windows, and doorknobs.
+<Dropdown title="4. Add doors, windows, and doorknobs.">
 <Grid cols={2}>
 <GridItem>
 ![Creating your island - Step 4](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/4creatingisland-4.png)
@@ -215,8 +218,9 @@ Add rounding and color to them as well.
 > 💡 **Hint:** To add rounding to specific corners, click the "⛶” icon in Shape > Corner.
 </GridItem>
 </Grid>
+</Dropdown>
 
-5. Add trees.
+<Dropdown title="5. Add trees.">
 <Grid cols={2}>
 <GridItem>
 ![Creating your island - Step 5](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/3creatingisland-5.png)
@@ -228,8 +232,9 @@ In the toolbar, add cubes and cylinders with the “+” icon to form trees.
 Add rounding and color to them as well. Try using a Depth material for a gradient effect.
 </GridItem>
 </Grid>
+</Dropdown>
 
-6. Add shadows influenced by surrounding color.
+<Dropdown title="6. Add shadows influenced by surrounding color.">
 <Grid cols={2}>
 <GridItem>
 ![Creating your island - Step 6](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/2creatingisland-6.gif)
@@ -252,8 +257,9 @@ Drag the origin of the layer to the tree and adjust the end position.
 > Repeat this for the other tree.
 </GridItem>
 </Grid>
+</Dropdown>
 
-7. Build a stone path to the door.
+<Dropdown title="7. Build a stone path to the door.">
 <Grid cols={2}>
 <GridItem>
 ![Creating your island - Step 7](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/1creatingisland-7.gif)
@@ -270,6 +276,7 @@ In the toolbar, select the `Vector` tool. Draw the vertices to form a stone step
 > Repeat this for the rest of the stones in the path.
 </GridItem>
 </Grid>
+</Dropdown>
 
 ## Customizing your island 🎀
 Now you know the basics of Spline, **it's time to start making the island your own**. Transform this basic house into your dream mansion, expand your island with more structures, or start from scratch to build something unique!
@@ -291,7 +298,7 @@ Spline has a ***huge*** library of 3D models and scenes for you to use in your p
 Collaboration is one of the most fun and fulfilling aspects of design and making, and Spline makes it super easy! If you're working with a group or wanna collab with a few friends, let's build a sky village!
 
 <Comment githubUser="linkai101">
-Unfortunately, Spline's free tier currently only has 2 additional editor seats. (file owner + 2 other editors) You could still make it work if everyone sends their islands to the leader and the leader puts them together.
+Note: Spline's free tier currently only has 2 additional editor seats. (file owner + 2 other editors) You could still make it work if everyone sends their islands to the leader(s) who links them together.
 </Comment>
 
 1. Have the club/group leader create a new file on Spline. Share the file with the rest of the group with editing privileges.
@@ -308,4 +315,14 @@ Unfortunately, Spline's free tier currently only has 2 additional editor seats. 
 - Augmented/visual reality (AR/VR)
 - Just for fun or for the sake of art—create and showcase a portfolio!
 
-I wonder what you'll build next! 😁
+I wonder what you'll build next with 3D! 😁
+
+### Exporting
+Often in big projects like making 3D games and websites, 3D modeling is only one side of the story. You'll eventually need to export them into another app, and here's how you do it:
+
+<Comment githubUser="linkai101">
+Keep in mind that some export options are only available to the paid tiers. 😐 You should be able to get by though!
+</Comment>
+
+1. In the toolbar, click on "Export". There will be options on the left-hand side for various file formats to export to.
+![Exporting](https://cloud-ctimzr33x-hack-club-bot.vercel.app/0image.png)
