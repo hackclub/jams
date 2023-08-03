@@ -3,7 +3,7 @@ title: 'Building Your Own Social Media w/ 🔥 Firebase 🏰'
 description: >
     At the end of this jam, you'll create your very own social media app that handles users and posts.
 contributor: "InternetRamen"
-thumbnail: "https://cloud-2eiu5023i-hack-club-bot.vercel.app/0slide_16_9_-_2.png"
+thumbnail: "https://cloud-jmxqm5zoe-hack-club-bot.vercel.app/0image.png"
 timeEstimate: "60 Min"
 difficulty: "Intermediate"
 keywords: "Web, App, Website, JavaScript"

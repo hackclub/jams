@@ -1,7 +1,7 @@
 ---
 part: part-1
 title: 'Welcome to Sprig!'
-batch: Get Started Making Fun Tile-Based Games With Sprig
+batch: 'sprig'
 description: >
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
@@ -18,7 +18,6 @@ poster: ""
 video: ""
 ---
 
-# Welcome to Sprig!
 At Hack Club we believe strongly that the best way to learn to code is by making creative, interesting, meaningful projects. Sprig is a project by Hack Club that enables anyone to do just that - we've created a web editor that both beginners and more advanced programmers can have fun making games in, and an accompanying handheld console that you can get for free by publishing your own game!
 
 By the end of today's session, we'll be making our first project in Sprig: a Sokoban-style push block game!
@@ -56,7 +55,7 @@ Finally - it's simply really awesome (at least in my opinion) to build games & p
 
 ## 2. Let’s explore the Sprig editor!
 
-<video src="https://cloud-qrfzzm21i-hack-club-bot.vercel.app/0untitled.mp4" controls="controls" style="max-width: 720px;"></video>
+<video src="https://cloud-qrfzzm21i-hack-club-bot.vercel.app/0untitled.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 
 This video guides you are around the world of Sprig
 
