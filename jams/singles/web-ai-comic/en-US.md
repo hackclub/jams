@@ -14,10 +14,8 @@ presentationPDF: 'https://cloud-c4phbrzty-hack-club-bot.vercel.app/0comicbookai.
 notes: 'https://hackmd.io/l3VKBJluTM2tdP40TDFCIw'
 poster: 'https://cloud-h5osxqcta-hack-club-bot.vercel.app/0build_your_own_comic_book_with_ai.pdf'
 video: ''
-slug: 'comic-book-ai'
+slug: 'web-ai-comic'
 ---
-
-> 50-60 minutes, easy difficulty.
 
 Hey hacker, welcome to the land of writing and drawing, or rather, using **AI to write and draw for you**! 👋 In this jam, we'll be using **ChatGPT** to generate the text of a children's comic, and use **Stable Diffusion** to create pictures for the comic. Both ChatGPT and Stable Diffusion  are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 
@@ -589,10 +587,10 @@ Also, if you have no experience with web development, don't panic, we'll walk yo
 1. Let's get the images and text you uploaded onto your site!
 3. Click into `index.html` on the file pane
 4. On line 12, replace "Comic Title Goes Here" with the title of your comic. 
-5. Replace "<source>" with the filename of your first image. 
+5. Replace `<source>` with the filename of your first image. 
 6. Next, replace "description goes here" with the ChatGPT generated text for the first section. 
-7. Scroll down, and do the same with "<source 2>" and "description 2 goes here"
-8. Repeat the process by replacing "<source x>" and "description x goes here" until you finish the last one (8).
+7. Scroll down, and do the same with `<source 2>` and "description 2 goes here"
+8. Repeat the process by replacing `<source x>` and "description x goes here" until you finish the last one (8).
 
 
 For example, since the filename of my first image is called `img1.png` and filename of my second image is `img2.jpeg`, my `index.html` file looks like: 
