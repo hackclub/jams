@@ -5,7 +5,7 @@ batch: 'sprig'
 description: >
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
-thumbnail: ''
+thumbnail: 'https://sprig.hackclub.com/stories-tiny/sprig-front.jpeg'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
@@ -99,4 +99,4 @@ Remember to click the "remix" button in the top right corner, so that your chang
 Congratulations! By finishing this session, you just made your first game in Sprig!  
 
 ![](https://cloud-4ja9fp00s-hack-club-bot.vercel.app/0image.png)
-Next session, we'll be starting the maze game that we'll be creating from scratch and working on for the next (TODO: 2 or 3) sessions.
+Next session, we'll be starting the maze game that we'll be creating from scratch and working on for the next 3 sessions.
