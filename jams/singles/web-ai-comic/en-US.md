@@ -8,13 +8,13 @@ timeEstimate: '55 Min'
 difficulty: 'Easy'
 keywords: 'ChatGPT, Stable Diffusion, HTML, CSS'
 language: 'ChatGPT,HTMl,CSS,StableDiffusion'
-presentation: ''
-presentationPlay: ''
-presentationPDF: ''
+presentation: 'https://www.figma.com/file/vPvkTekK6hzED7fowx0aBf/ComicBookAi?type=design&node-id=11%3A182&mode=design&t=Qgq1JvXvHyxwNwAo-1'
+presentationPlay: 'https://www.figma.com/proto/vPvkTekK6hzED7fowx0aBf/ComicBookAi?type=design&node-id=1-2&t=Qgq1JvXvHyxwNwAo-0&scaling=contain&page-id=0%3A1'
+presentationPDF: 'https://cloud-c4phbrzty-hack-club-bot.vercel.app/0comicbookai.pdf'
 notes: 'https://hackmd.io/l3VKBJluTM2tdP40TDFCIw'
-poster: ''
+poster: 'https://cloud-h5osxqcta-hack-club-bot.vercel.app/0build_your_own_comic_book_with_ai.pdf'
 video: ''
-slug: 'web-ai-comic'
+slug: 'comic-book-ai'
 ---
 
 > 50-60 minutes, easy difficulty.
@@ -24,9 +24,9 @@ Hey hacker, welcome to the land of writing and drawing, or rather, using **AI to
 This jam will take you from 0 to a ChatGPT and AI model "Hero":
 ![](https://cloud-a10rlmpqz-hack-club-bot.vercel.app/0image.png)
 
-As an example, here is an example of what your storybook may look like!
+As an example, here is an example of what your finished storybook may look like!
 
-![](https://cloud-kbdb0vrw1-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_10.06.05_pm.png)
+![](https://cloud-d9ibqv1p3-hack-club-bot.vercel.app/0screen_recording_2023-08-01_at_12.26.59_pm__2_.gif)
 
 Keep in mind that your result will be completely different. In fact, if it is the same, you're probably doing something wrong :) With that said, here are some resources that you may find helpful!
 
@@ -95,7 +95,7 @@ While this will work for common problems, it may fail on more unique prompts.
 > ❓ Using few-shot prompting, ask ChatGPT to output "yes" or "no", based on whether the following words are examples of physical activity. The words are "running" and "diving" However, you cannot tell ChatGPT that it needs to classify for physical activity. Come up with a few examples, like:
 
 ```w!
-User
+**User**
 Swimming | yes
 Walking | yes
 Sitting | no
@@ -117,7 +117,7 @@ the word farduddle is:
 When we won the game, we all started to farduddle in celebration.
 ```
 
-### Chain-of-Thought
+### Chain-of-Thought Prompting
 > ❓ Using chain-of-thought prompting, see if you can get ChatGPT to explain the hidden meaning behind a difficult-to-read poem from English class
 
 When using Chain-of-Thought prompting, you'll want to ask the model to **explain the intermediate reasoning steps** before giving the final answer. 
@@ -183,7 +183,7 @@ incorporate this feedback into your original short positive review
 Absolutely thrilled with my Amazon cactus purchase! 🌵 The Golden Barrel cactus arrived in perfect condition, boasting a delightful round shape and vibrant green color that looks stunning on my desk. Low-maintenance and full of character, it adds a delightful touch of nature to my workspace, brightening up my day with its charm. I've had it for several months now, and it has maintained its health and appearance beautifully, making it a long-term source of joy. Compared to other cacti I've owned, this one stands out for its ease of care and unique aesthetics. Highly recommend for anyone seeking a charming and easy-to-care-for plant companion! 🌿👍
 ```
 
-### Tree of Thought Prompting
+### Tree-of-Thought Prompting
 > ❓ Since tree of thought prompting is a bit more difficult than the others to use, we challenge you to come up with a scenario in which tree prompting could be very useful. Maybe even feed it to ChatGPT. 
 
 TOT is structured just like you think it would! First, the user asks the model to provide possible solutions to a problem. Next, the user asks the model to "run through" each of those solutions, to figure out the best one. 
@@ -589,10 +589,10 @@ Also, if you have no experience with web development, don't panic, we'll walk yo
 1. Let's get the images and text you uploaded onto your site!
 3. Click into `index.html` on the file pane
 4. On line 12, replace "Comic Title Goes Here" with the title of your comic. 
-5. Replace `<source>` with the filename of your first image. 
+5. Replace "<source>" with the filename of your first image. 
 6. Next, replace "description goes here" with the ChatGPT generated text for the first section. 
-7. Scroll down, and do the same with `<source 2>` and "description 2 goes here"
-8. Repeat the process by replacing `<source x>` and "description x goes here" until you finish the last one (8).
+7. Scroll down, and do the same with "<source 2>" and "description 2 goes here"
+8. Repeat the process by replacing "<source x>" and "description x goes here" until you finish the last one (8).
 
 
 For example, since the filename of my first image is called `img1.png` and filename of my second image is `img2.jpeg`, my `index.html` file looks like: 
