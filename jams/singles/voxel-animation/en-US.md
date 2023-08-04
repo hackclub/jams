@@ -19,7 +19,7 @@ slug: "voxel-animation"
 
 # Creating your own ✨ unique Voxel Animation
 
-~60+ Minutes, Basic javascript & html knowledge needed
+~60+ Minutes, Basic javascript and html knowledge needed
 ![demo_dot_webm](https://cloud-1duz1dnxo-hack-club-bot.vercel.app/0demo.gif)
 
 ( _This is a demo animation, this jam encourages to create your **own!**_ )
@@ -46,7 +46,7 @@ You will have so much fun! You **can do it!**
 -   The start of your solo adventure
     ✨ Optional tasks for those who have more time ✨
 -   Import 3D models
--   Lighting & Object scaling
+-   Lighting and Object scaling
 
 ---
 
@@ -288,7 +288,7 @@ Copy this line above the render code, in order to intialize a new scene
 const scene = new THREE.Scene(); // Init Scene
 ```
 
-Then we need to create & add the camera!
+Then we need to create and add the camera!
 
 ```js
 const camera = new THREE.PerspectiveCamera(
@@ -548,7 +548,7 @@ capturer.start(); // Start the capturer
 statusRec.innerText = "Recording in progress"; // Update the status
 ```
 
-Well that is everything you need to add to start the recording, now let's end & save it.
+Well that is everything you need to add to start the recording, now let's end and save it.
 
 ### Stop the recording
 
@@ -578,7 +578,7 @@ TIPS
 ```
 
 Farewell traveler!
-<img src="https://media1.giphy.com/media/6VriQO3GFRwwBVPbi4/giphy.gif?cid=ecf05e474dx0omnat02vthuv0n1komd3yefmcqhqljwguudn&ep=v1_gifs_search&rid=giphy.gif" width="25%"/>
+<img src="https://media1.giphy.com/media/6VriQO3GFRwwBVPbi4/giphy.gif?cid=ecf05e474dx0omnat02vthuv0n1komd3yefmcqhqljwguudnandep=v1_gifs_searchandrid=giphy.gif" width="25%"/>
 
 **But** before I leave here are some useful materials.
 
