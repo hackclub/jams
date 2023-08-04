@@ -8,20 +8,13 @@ timeEstimate: '60 Min'
 difficulty: 'Intermediate'  
 keywords: 'API, chatgpt, openai, ai, ai api, trip itinerary, itinerary planner ai, planner ai, website, javascript, HTML, CSS, replit'  
 language: 'HTML, JS'  
-presentation: ''  
-presentationPlay: ''  
-presentationPDF: ''  
+presentation: 'https://www.figma.com/file/eT0znn6hYdESlhCSfmmwBG/Untitled?type=design&node-id=1%3A2&mode=design&t=6KWZTxjPBdL20osY-1'  
+presentationPlay: 'https://www.figma.com/proto/eT0znn6hYdESlhCSfmmwBG/Untitled?type=design&node-id=1-2&t=jECJDbIDCUZQwKjc-1&scaling=contain&page-id=0%3A1&mode=design'  
+presentationPDF: 'https://cloud-opfk4nagv-hack-club-bot.vercel.app/0ai_trip_itinerary_planner.pdf'  
 notes: ''  
 poster: ''  
 video: ''  
 slug: 'ai-travel'  
----
-
-
-Time estimate: 60 minutes
-Requirements: Basic understanding of HTML, CSS, and JavaScript. Intermediate friendly
-Language used: HTML, CSS, and Javascript
-
 ---
 
 Welcome to your first day as an intern at Wizard Travels! Back in '07, we finally moved from our old brick and mortar shop to an online website. 
@@ -29,6 +22,9 @@ Welcome to your first day as an intern at Wizard Travels! Back in '07, we finall
 However, there's a problem. There's a new piece of technology on the block: ChatGPT. We've seen our competitors using ChatGPT to generate itineraries using AI, and we've nearly lose 50% of our customers to them.
 
 We've created a guide for you, our new ~~unpaid~~ intern, to create a prototype of what this new AI trip itinerary planner could look like. 
+
+Here's a demo of what the end product should look like:
+![Live Demo Gif](https://cloud-j37pzs32q-hack-club-bot.vercel.app/0plantripwithaigif.gif)
 
 ## Steps
 1. Clone a starter template for HTML CSS and JS 
@@ -79,7 +75,7 @@ Underneath your `location` input, add two of these and assign them unique names:
 At this stage, you should have something like this:
 ![result](https://cloud-2vb2zquzl-hack-club-bot.vercel.app/2pasted_image_20230715110807.png)
 
-## Coffee Break
+### Coffee Break
 Oh no! Your eyes are starting to droop a little, and you start slouching over in your desk. Intern, you know what time I think it is? **_Coffee time!_**
 
 ![](https://media3.giphy.com/media/vTKlrr8Gf0C6J0VWPk/giphy.gif?cid=6c09b952wten7vlpy7xka00v8l0nwsjdzimnm9s3cochtl4i&ep=v1_stickers_related&rid=giphy.gif&ct=s)
@@ -98,13 +94,13 @@ Usually, we're used to interacting with ChatGPT using their [website](https://ch
 
 However, we can't go and interact with the website using our code! This is why we use the official ChatGPT API.
 
-### What's an API?
+## What's an API?
 API Textbook Definition:
->  A · P · I
+>  A · P · I <br/>
 > An application programming interface (API) is a specification intended to be used as an interface by software components to communicate with each other.
 
 Our Cool And Easy to Digest™ Definition:
-> A · P · I
+> A · P · I <br/>
 > **An API is the way our code can talk to someone else's code.** Sounds weird right? In this case OpenAI has their ChatGPT code running in some server somewhere, and our app needs to use ChatGPT. Many people like us also want to use ChatGPT in our code, so OpenAI created something called the "ChatGPT API" so we can use ChatGPT's code in our app.
 
 
@@ -114,23 +110,22 @@ Great question! Let's break down the API structure for ChatGPT!
 
 We are going to be using the `/v1/chat/completions` endpoint to get the job done; it's the core technology behind ChatGPT!
 
-> _Psst: Get it? Completions? Like how ChatGPT can "complete" an answer to a prompt? _
+> *Psst: Get it? Completions? Like how ChatGPT can "complete" an answer to a prompt?*
 
 ### How do I talk to an API?
 Don't worry, talking to APIs is much easier than talking to people ;)
 
 We can send a ***"request"*** to our API in order to talk to it.
 
-#### Types of Requests
+### Types of Requests
 There are four types of requests: GET, POST, PUT, and DELETE
 
 ![](https://cloud-c8wbo8ip9-hack-club-bot.vercel.app/0image2.png)
 
-	-figure-Graphic from <a href="https://debugmode.net/2017/03/03/step-by-step-building-node-js-based-rest-api-to-perform-crud-operations-on-mongodb/">Dhanajay Kumar's Blog</a>-/figure-
 
-> GET: We tell the API to fetch some data for us to use
-> POST: We tell the API to create some data for us
-> PUT: We tell the API to update some data for us
+> GET: We tell the API to fetch some data for us to use<br/>
+> POST: We tell the API to create some data for us<br/>
+> PUT: We tell the API to update some data for us<br/>
 > DELETE: Obviously, we tell the API to delete some data for us
 
 We can select which type of request we want to send from our client!
@@ -148,7 +143,7 @@ And since the person making that API wants to build it quickly, they choose the 
 
 But why is it the easiest/best? [Security](https://security.stackexchange.com/questions/33837/get-vs-post-which-is-more-secure). A `POST` request is more secure than a `GET` request.
 
-#### Request Body
+### Request Body
 Since we're going to be sending a `POST` request, that also means that we have to send a **request body** as well.
 
 Think of the request as a cardboard box and the body being the stuff that goes inside that box. We (our browser) can then package and ship that box to the API.
@@ -191,7 +186,7 @@ function getItinerary() {
 ### Getting the value of our `<input/>`s
 Remember the `<input/>` elements that we created in `index.html`? Yeah, we need to extract the information that the user inputs into them!
 
-##### Wrapping with `<form/>`
+### Wrapping with `<form/>`
 To get the value of our input elements, we need to wrap them with the `<form/>` element. Think of this as an element that bundles our inputs into an easy-to-manage way.
 
 ```html
@@ -208,11 +203,15 @@ Yes, that's correct. You seem to be catching on, intern.
 
 **We need to add a submit button!** 
 
-> Is this a regular `<button/>`?
-Not really. Our browser will render it as a button, but in reality, it is another `<input/>` element.
+<Dropdown title="Is this a regular <button/>?">
+  
+  Not really. Our browser will render it as a button, but in reality, it is another `<input/>` element.
+</Dropdown>
 
-> What? How would an `<input/>` element be a button?
+
+<Dropdown title="What? How would an <input/> element be a button?">
 You know how all of our current input elements have a `type` attached to them? Well that's the secret behind the submit button: it's an `<input/>` element with `type="submit"`
+</Dropdown>
 
 So here is how that would look like:
 ```html
@@ -220,7 +219,10 @@ So here is how that would look like:
 ```
 The `type` specifies that this input element is the button that submits the form. The `value` is the actual text that shows up on the button.
 
-> Where should I put this button?
+
+<Dropdown
+ title="Where should I put this button?"
+ >
 For the form to be submitted, the button should be placed inside the `<form/>` tags! Our code for the form should now look like this:
 
 ```html
@@ -232,11 +234,14 @@ For the form to be submitted, the button should be placed inside the `<form/>` t
   </form>
 ```
 
-#### Getting the values into our JavaScript code
+</Dropdown>
+
+## Getting the values into our JavaScript code
 If you submit the form right now, all it does is reload and clear the values from the form.
 
-> Why is this happening?
+<Dropdown title="Why is this happening?">
 Since we haven't told the form where/how to submit its information, it's doing nothing right now. **We can tell the form how to submit information using the `onsubmit` property**
+</Dropdown>
 
 We can add this to the opening form tag like so:
 ```html
@@ -262,15 +267,15 @@ Hint: Open the developer tools in Replit to see the console! It's the wrench ico
 
 Hmm, [seems like we need to debug this out](https://www.youtube.com/watch?v=ySDX02WD0og)
 
-<details>
--summary-Riddle me this: what's the current behavior of the code right now?-/summary-
-<br/>Hmm, it seems like the browser is refreshing without even running the code!
-</details>
+<Dropdown title="
+Riddle me this: what's the current behavior of the code right now?
+">
+Hmm, it seems like the browser is refreshing without even running the code!
+</Dropdown>
 
-<details>
--summary-How do you think we should go about fixing it?-/summary-
-<br/>We could sit here for hours trying to think of our solutions, but how about we save some time and Google it! 
-</details>
+<Dropdown title="How do you think we should go about fixing it?">
+We could sit here for hours trying to think of our solutions, but how about we save some time and Google it! 
+</Dropdown>
 
 After a little seaching, I found [this](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault). Maybe it could help us?
 
@@ -299,10 +304,10 @@ function getItinerary(event) {
 Nice! We just got something in the console!
 ![console.log output showing in the console](https://cloud-lx8djo7vn-hack-club-bot.vercel.app/0image.png)
 
-##### We're making so much progress! Great work!
+### We're making so much progress! Great work!
 ![great work gif](https://gifdb.com/images/high/great-job-guys-jimmy-fallon-wsvujhpbhgk80bh7.gif)
 
-##### Another secret in `event`
+### Another secret in `event`
 > Now, how do we actually get the values that the user types/selects in our `<input/>` elements?
 
 **Through our very trusty `event` parameter!**
@@ -335,10 +340,10 @@ function getItinerary(event) {
 Run your code, type in your location and dates, click submit and check in the console! This is what I got:
 ![result with everything printed](https://cloud-giko7ueoa-hack-club-bot.vercel.app/0image.png)
 
-### Interacting with the ChatGPT API
+## Interacting with the ChatGPT API
 This is going great so far! We have all the values from our input elements. Now the only thing left is to communicate with the ChatGPT API.
 
-#### Calling the API with `fetch`
+### Calling the API with `fetch`
 ![](https://media.tenor.com/h2ADJoJya-YAAAAd/playing-fetch-playing.gif)
 To make a request to our API, we're going to be using something called `fetch`. It's a tool baked into every browser, and it enables us to send HTTP requests.
 
@@ -373,15 +378,13 @@ Copy paste that and put it underneath all the `console.log` statements that we h
 > ![cat red error gif](https://media.tenor.com/TY8N6z1MGKsAAAAM/evil-cat-red-screen-evil-cat.gif)
 
 Let's replace a couple of those placeholder values:
-<details>
--summary-What should we replace <code>API_URL</code> with?-/summary-
-We should replace it with <code>https://api.openai.com/v1/chat/completions</code>
-</details>
+<Dropdown title="What should we replace API_URL with?">
+We should replace it with `https://api.openai.com/v1/chat/completions`
+</Dropdown>
 
-<details>
--summary-What should we replace <code>method</code> with?-/summary-
-We should replace it with <code>POST</code>
-</details>
+<Dropdown title="What should we replace method with?">
+We should replace it with `POST`
+</Dropdown>
 
 Let's make some of those changes:
 ```js
@@ -398,7 +401,7 @@ fetch('https://api.openai.com/v1/chat/completions', {
 })
 ```
 
-##### What's this `headers` thing?
+### What's this `headers` thing?
 Well, some APIs need to verify that we're authorized to use them. This could be because it's too expensive to run those APIs and they need some way to limit usage or keep track of who is using them.
 
 Let's add something to our diagram:
@@ -445,7 +448,7 @@ fetch('https://api.openai.com/v1/chat/completions', {
 })
 ```
 
-##### What should I put `body`?
+### What should I put `body`?
 Remember, the code that we had earlier for the request body? We need to modify that a little bit.
 
 Here's what we're starting with:
@@ -489,7 +492,7 @@ Here, we're asking a response in `JSON` format so that we can parse it later on.
 
 > **Note:** I'm using `event.target.location.value`, `event.target.startdate.value`, and `event.target.enddate.value` here. If you used different values you should change these.  
 
-##### Progress check
+## Progress check
 Your `fetch` request should look something like this now:
 ```js
 fetch('https://api.openai.com/v1/chat/completions', {
@@ -513,7 +516,7 @@ fetch('https://api.openai.com/v1/chat/completions', {
   })
 ```
 
-#### Parsing the API response
+## Parsing the API response
 At this point, we are making a request to the ChatGPT API, but we aren't getting its output. 
 
 Our `fetch` call returns a [JavaScript promise](https://javascript.info/promise-basics), so we need to use `.then()` to get the response from the API.
@@ -527,10 +530,11 @@ fetch('...',{
 Our first `.then()` **resolves** the API request and extracts what it returns. It then converts it to JSON, which contains all of the itinerary details.
 
 However, `result.json()` returns ***another*** promise. 
-<details>
--summary-What should we do in this case?-/summary-
-<br/>We need to add another <code>.then()</code>!
-</details>
+<Dropdown title="What should we do in this case?">
+We need to add another `.then()`!
+</Dropdown>
+
+
 
 ```js
 fetch('...',{
@@ -634,7 +638,7 @@ If we `console.log(events)`, it should look something like this:
 ]
 ```
 
-#### Adding itinerary events to the page
+## Adding itinerary events to the page
 This has been going great so far! We're so close, we just need to add a couple things.
 
 Now we need to show the itinerary on the main page. How we can do this is by adding a new HTML "card" for each event in the itinerary.
@@ -647,7 +651,7 @@ Go to `index.html` again and add a `<div>` element with any `id`. This is how ou
 ```
 
 
-**Back to our JavaScript code**
+**Back to our JavaScript code!**\n
 This is what it looks like right now:
 ```js
 fetch('...',{
@@ -697,13 +701,15 @@ Let's break some things down here:
 - We're creating a string that has HTML elements inside of it. This is sort of a "template"
 - Then, we can add the details of each specific event using template literals
 
-> **What's going on with the `event.date` here?**
+<Dropdown title="What's going on with the event.date here?">
  
 It looks scary, I know. Let's break that down:
 - If we look at `event.date`, it looks very unreadable. Let's make it readable!
 - `.toLocalDateString()` makes our date look very pretty and readable. Here's `dateStyle:"medium"` shortens it (instead of `December 10th, 2023`, we get `Dec 10, 2023`)
 - The `.toLocalDateString()` function needs a `Date` object to work with
 - Since `event.date` is a `string`, we convert it to a date with `new Date()`
+
+</Dropdown>
 
 If we `console.log` the variable `htmlGenerated` now, we should get something like this:
 ```
