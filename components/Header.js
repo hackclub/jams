@@ -80,12 +80,18 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
                 cursor: 'pointer',
                 color: '#3c4858',
               }}
-              onClick={() => {
-                if (back === undefined) {
-                  router.back();
-                } else {
-                  router.push(back);
-                }
+                onClick={() => {
+                  // if back is /, it sends to the main page (index). 
+                  // however this is default value AND doesn't count as undefined
+                  // include it here to use back
+                  if (back === undefined || back === "/") {
+                    // however, it screws up the system of browser back arrow
+                    // since router.back() is the equivalent of clicking the browser back arrow
+                    // so its not a perfect fix, but it will do in most situations
+                    router.back();
+                  } else {
+                    router.push(back);
+                  }
               }}
             >
               <Icon glyph="view-back" style={{ height: '24px', padding: '0px' }} />
