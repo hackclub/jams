@@ -32,12 +32,11 @@ Last session, you built a push block game in Sprig (if you haven't, check out [p
 
 Today, we'll be learning to make a maze game in Sprig! By the end of this jam, you'll have created your very own maze game from scratch! Next session we'll be adding custom game mechanics and getting ready to share your game with the world! (how exciting is that??)
 
-This jam is organized as a series of steps with not much help at first. Try your best to figure them out using your resources (using the Sprig help, Google, and asking the people around you is all encouraged!) but don't be afraid to use the hints if you need to.
+The tutorial includes hidden hints that you can use if you need. Try your best to work through the challenges using your resources (using the Sprig help, Google, and asking the people around you is all encouraged!) but don't be afraid to use the hints if you need to.
 
 [Click here](https://sprig-nocode.hackclub.dev/maze) for a demo of what you could make today.
 
-Disclaimer: making a maze game by following this tutorial won't qualify you to get a free Sprig console. However, you can expand on this game to be unique and personalized after finishing this batch jam, or take the skills you gain here to make a unique game later!
-
+Important note: If you’re interested in getting a free Sprig game console for a Game submission, you’ll need to make unique gameplay mechanics beyond the scope of this tutorial. (link to rules). We suggest expanding this game to make it more original, or creating a new one once you’ve learned the basics here!
 ## Starting the tutorial
 THIS IS TODO; I'm blocked by the Sprig PR being merged for tutorial pane
 
@@ -45,4 +44,4 @@ THIS IS TODO; I'm blocked by the Sprig PR being merged for tutorial pane
 Congratulations!! By finishing this tutorial, you just made your own game from scratch!
 
 ![](https://cloud-bsg8pyzmi-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_15.27.47.png)
-Next session, we'll be adding custom game mechanics to our game! Take a look at the game mechanics list in part 4 for some examples of what you can make.
+Next session, we'll be adding custom game mechanics to our game! Take a look at the game mechanics list in [part 4](LINK AAA TODO) for some examples of what you can make.
