@@ -17,14 +17,16 @@ video: ''
 slug: 'ai-travel'  
 ---
 
-Welcome to your first day as an intern at Wizard Travels! Back in '07, we finally moved from our old brick and mortar shop to an online website. 
+As a club, it's time to have a 5 day club retreat! Y'all can go on vacation anywhere, but the question is, where?
 
-However, there's a problem. There's a new piece of technology on the block: ChatGPT. We've seen our competitors using ChatGPT to generate itineraries using AI, and we've nearly lose 50% of our customers to them.
+Take some time as a club to brainstorm the greatest place to take a vacation. Maybe it could be San Francisco, Los Angeles, New York City? Whatever it is, take a minute to think of what this vacation would look like and what you all would do.
 
-We've created a guide for you, our new ~~unpaid~~ intern, to create a prototype of what this new AI trip itinerary planner could look like. 
+However, you might have run into a problem: you can't think of things to do! For example, in San Francisco, you might think of going to the Golden Gate Bridge, but what else?
 
-Here's a demo of what the end product should look like:
+This is where we can use AI and code to solve our problem by making an AI travel itinerary planner:
 ![Live Demo Gif](https://cloud-j37pzs32q-hack-club-bot.vercel.app/0plantripwithaigif.gif)
+
+Try it out [here](https://replit.com/@ShubhamPatilsd/AI-Trip-Itinerary)!
 
 ## Steps
 1. Clone a starter template for HTML CSS and JS 
@@ -36,7 +38,7 @@ Here's a demo of what the end product should look like:
 8. Go on your next trip
 
 ## Humble beginnings
-So, you decide to get started! You log onto your company laptop then realize that your company has disabled downloading _anything_ to your computer.
+So, you decide to get started! You log onto your laptop then realize that your school has disabled downloading _anything_ to your computer.
 
 You take two deep breaths and realize that you can just use Replit to do this.
 
@@ -48,14 +50,19 @@ Then, you create a new project with the HTML, CSS, and JS template
 
 
 ## Inputting information
-Upper management wants us to create a couple input parameters for the application. You find out that this is the best way to do so:
+For our code to know the details of our club trip, we need to have some way to input the destination and dates of our trip.
+
+
+<Dropdown title="What are some ways we can do this?">
 
 1. Making an `<input>` element for the location of the trip 
 2. Making another `<input>` element for the start date of the trip 
 3. Making a third `<input>` element for the end date of the trip 
 
+</Dropdown>
+
 ### Inputting trip location
-While there are many places to visit in this world, the user must only select one. To do that, we have to add an `<input/>` element of type `text` to your HTML code and give it an easy to remember `name`:
+While there are many places we can visit in this world, the club must only select one. To do that, we have to add an `<input/>` element of type `text` to your HTML code and give it an easy to remember `name`:
 ```html
 <input type="text" name="location" />
 ```
@@ -63,9 +70,12 @@ While there are many places to visit in this world, the user must only select on
 If you save and run your code, on the right side of your screen you should be able to see a textbox that you can type in!
 
 ### Adding trip dates
-Now that the user can input their location, we can ask them to define some travel dates. The process is similar to adding a text input, but instead of having an `<input/>` of `type="text"`, we have an input that has `type="date"`.
+Now that we can input our trip destination, we need to define some travel dates. The process is similar to adding a text input, but instead of having an `<input/>` of `type="text"`, we have an input that has `type="date"`.
 
+
+<Dropdown title={`What does changing it to "date" do?`}>
 Having a `type` of `"date"` tells the browser to render a calendar picker where we can select a date. So, to have a start and end date, we will have two `<input/>` elements with `type="date"`
+</Dropdown>
 
 Underneath your `location` input, add two of these and assign them unique names:
 ```html
@@ -75,15 +85,18 @@ Underneath your `location` input, add two of these and assign them unique names:
 At this stage, you should have something like this:
 ![result](https://cloud-2vb2zquzl-hack-club-bot.vercel.app/2pasted_image_20230715110807.png)
 
-### Coffee Break
-Oh no! Your eyes are starting to droop a little, and you start slouching over in your desk. Intern, you know what time I think it is? **_Coffee time!_**
 
-![](https://media3.giphy.com/media/vTKlrr8Gf0C6J0VWPk/giphy.gif?cid=6c09b952wten7vlpy7xka00v8l0nwsjdzimnm9s3cochtl4i&ep=v1_stickers_related&rid=giphy.gif&ct=s)
+### Adding more inputs
+Hey, sometimes we need more customization for our trips. We can do this by adding more `<input/>` elements that serve different purposes!
 
-Go ahead, take a break, drink a coffee, because when you come back, that's when things get serious.
+<Dropdown title="Here are some ideas for more inputs:">
+1. Specifiying the types of activities (e.g. outdoors, museums, food only)
+2. Specifying the budget that your club has for this trip
+3. Having one club member plan meals and have another club member plan activities
+</Dropdown>
 
 ## Configuring ChatGPT
-Now this is the technology that everyone and their dog are using in their apps: ChatGPT. 
+ChatGPT. ChatGPT is the magical black box of the modern age. We don't know how it works, but it can spit out useful information, and we can especially use it to plan a club outing. 
 
 ![chatgpt gif](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHNhMXRoN2U4ZzVjcGVhM2lzamgwZHZsdTl1MW96bTZnbDh6b253MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qAtZM2gvjWhPjmclZE/giphy.gif)
 
@@ -104,24 +117,27 @@ Our Cool And Easy to Digest™ Definition:
 > **An API is the way our code can talk to someone else's code.** Sounds weird right? In this case OpenAI has their ChatGPT code running in some server somewhere, and our app needs to use ChatGPT. Many people like us also want to use ChatGPT in our code, so OpenAI created something called the "ChatGPT API" so we can use ChatGPT's code in our app.
 
 
-### So which API are we using?
+<Dropdown
+title="So which API are we using?"
+>
 Great question! Let's break down the API structure for ChatGPT!
 ![explanation of API](https://cloud-647cibhzc-hack-club-bot.vercel.app/0hack_club_jam.png)
 
 We are going to be using the `/v1/chat/completions` endpoint to get the job done; it's the core technology behind ChatGPT!
 
 > *Psst: Get it? Completions? Like how ChatGPT can "complete" an answer to a prompt?*
+</Dropdown>
 
-### How do I talk to an API?
+<Dropdown title="How do I talk to an API?">
 Don't worry, talking to APIs is much easier than talking to people ;)
 
 We can send a ***"request"*** to our API in order to talk to it.
+</Dropdown>
 
 ### Types of Requests
 There are four types of requests: GET, POST, PUT, and DELETE
 
 ![](https://cloud-c8wbo8ip9-hack-club-bot.vercel.app/0image2.png)
-
 
 > GET: We tell the API to fetch some data for us to use<br/>
 > POST: We tell the API to create some data for us<br/>
@@ -135,14 +151,18 @@ We can select which type of request we want to send from our client!
 ### Communicating with the ChatGPT API
 The ChatGPT API that we're using (`https://api.openai.com/v1/chat/completions`) requires a `POST` request.
 
-But hey! `POST` is for creating data right? Shouldn't we use `GET` instead, because we're asking data from the API.
+<Dropdown title="But hey! POST is for creating data right? Shouldn't we use GET instead, because we're asking data from the API?">
 
 Well, the truth is that API developers set the request type arbitrarily. There's no hard rule whether to set your API endpoint to use `GET`, `POST`, `PUT`, or `DELETE`, it's completely up to the person making that API.
 
 And since the person making that API wants to build it quickly, they choose the easiest/best option to use, in this case it is a `POST` request.
+</Dropdown>
 
-But why is it the easiest/best? [Security](https://security.stackexchange.com/questions/33837/get-vs-post-which-is-more-secure). A `POST` request is more secure than a `GET` request.
+<Dropdown
+title="But why is POST the easiest/best in this situation?"> 
 
+[Security](https://security.stackexchange.com/questions/33837/get-vs-post-which-is-more-secure). A `POST` request is more secure than a `GET` request.
+</Dropdown>
 ### Request Body
 Since we're going to be sending a `POST` request, that also means that we have to send a **request body** as well.
 
@@ -197,9 +217,12 @@ To get the value of our input elements, we need to wrap them with the `<form/>` 
   </form>
 ```
 
-> Hmm, we have a form, but no way to submit it?
+<Dropdown
+title="Hmm, we have a form, but no way to submit it?"
+>
+Yes, that's correct.
+</Dropdown>
 
-Yes, that's correct. You seem to be catching on, intern.
 
 **We need to add a submit button!** 
 
@@ -213,11 +236,15 @@ Yes, that's correct. You seem to be catching on, intern.
 You know how all of our current input elements have a `type` attached to them? Well that's the secret behind the submit button: it's an `<input/>` element with `type="submit"`
 </Dropdown>
 
-So here is how that would look like:
-```html
- <input type="submit" value="Submit" />
-```
-The `type` specifies that this input element is the button that submits the form. The `value` is the actual text that shows up on the button.
+<Dropdown
+title={`Think with your club, how could we create a button that says "Submit"?`}
+>
+  So here is how that would look like:
+  ```html
+   <input type="submit" value="Submit" />
+  ```
+  The `type` specifies that this input element is the button that submits the form. The `value` is the actual text that shows up on the button.
+</Dropdown>
 
 
 <Dropdown
@@ -336,6 +363,8 @@ function getItinerary(event) {
   console.log("Hello there")
 }
 ```
+
+**Also remember to add any additional input elements that you made at the start!**
 
 Run your code, type in your location and dates, click submit and check in the console! This is what I got:
 ![result with everything printed](https://cloud-giko7ueoa-hack-club-bot.vercel.app/0image.png)
@@ -470,17 +499,27 @@ The main thing we need to edit is the value in `messages`. We can keep the `role
 
 Now what exactly should our `content` be? Well, it has to be a prompt for ChatGPT!
 
-There are new jobs popping up everywhere for this stuff: Prompt Engineering. However, we don't have the budget to hire a dedicated Prompt Engineer, so we need to figure this out ourselves.
+Take some time with your club to think of a prompt. If one of your club members is making a meal planner for your trip, their prompt should include something about food. If you have additional `<input/>` elements that specify the type of trip, you should add them here.
 
-Fortunately, I have a prompt stored somewhere in my computer...ah! Found it. We should edit our `body` to add it:
+<Dropdown title="How do I add <input/> values in the prompt?">
+You can do this using [template literal strings](https://www.w3schools.com/js/js_string_templates.asp)
 
+For example, you could do something like this to add the location to your prompt (remember to use backticks for the string):
+
+```js
+'content':`plan a trip to ${event.target.location.value}`
+```
+</Dropdown>
+
+
+If you need some inspiration here is what my prompt looks like:
 ```js
 {
       'model': 'gpt-3.5-turbo',
       'messages': [
         {
           'role': 'user',
-          'content': 'content': `plan a trip itinerary for someone going to ${event.target.location.value} from ${event.target.startdate.value} to ${event.target.enddate.value}. have about 3 or 4 things to do per day. respond ONLY with an array that has JSON objects with the parameters \`date\` \`eventTitle\` \`startTime\` \`endTime\`
+          'content': `plan a trip itinerary for someone going to ${event.target.location.value} from ${event.target.startdate.value} to ${event.target.enddate.value}. have about 3 or 4 things to do per day. respond ONLY with an array that has JSON objects with the parameters \`date\` \`eventTitle\` \`startTime\` \`endTime\`
           \`\`\`
           `
         }
@@ -490,10 +529,18 @@ Fortunately, I have a prompt stored somewhere in my computer...ah! Found it. We 
 
 Here, we're asking a response in `JSON` format so that we can parse it later on. In this array of `JSON` objects, it will have the date, title, start time, and end time of each event in our trip itinerary. It will give us about 3-4 events per day, which will be great for our users!
 
-> **Note:** I'm using `event.target.location.value`, `event.target.startdate.value`, and `event.target.enddate.value` here. If you used different values you should change these.  
+Notice how we are asking ChatGPT to return certain values in our JSON. Think about what else we could ask it to return.
+
+<Dropdown title="Here are some ideas">
+1. The estimated cost of the trip/each event
+2. How far each event is from the previous one
+3. How long it would take to get there from the previous event
+</Dropdown>
+
+> **Note:** I'm using `event.target.location.value`, `event.target.startdate.value`, and `event.target.enddate.value` here. If you used different values you should change these, along with the custom inputs that you added
 
 ## Progress check
-Your `fetch` request should look something like this now:
+Your `fetch` request should look something like this now (with your own custom prompt):
 ```js
 fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
@@ -641,7 +688,7 @@ If we `console.log(events)`, it should look something like this:
 ## Adding itinerary events to the page
 This has been going great so far! We're so close, we just need to add a couple things.
 
-Now we need to show the itinerary on the main page. How we can do this is by adding a new HTML "card" for each event in the itinerary.
+Now we need to show the itinerary on the main page. We can do this is by adding a new HTML "card" for each event in the itinerary.
 
 Go to `index.html` again and add a `<div>` element with any `id`. This is how our JavaScript code identifies which element to add the itinerary to.
 
@@ -709,6 +756,12 @@ It looks scary, I know. Let's break that down:
 - The `.toLocalDateString()` function needs a `Date` object to work with
 - Since `event.date` is a `string`, we convert it to a date with `new Date()`
 
+</Dropdown>
+
+<Dropdown title="Remember to add anything else we requested from ChatGPT. Here are some ideas we can do with that data:">
+1. With the estimated cost of the trip/each event, express that cost in terms of Starbucks frappucinos (for example, a $20 ticket to a museum would be 4-5 Starbucks fraps)
+2. Convert the distance from each itinerary event and express it in terms of Subway sandwitches
+3. Express the time needed to drive between destinations in terms of dog days (i.e. it would take 1 dog day to drive between Vermont and New Hampshire) 
 </Dropdown>
 
 If we `console.log` the variable `htmlGenerated` now, we should get something like this:
@@ -874,12 +927,12 @@ Now, if you run this code, type in some inputs, you should get a trip itinerary 
 
 # What next?
 
-![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDQwaW5weDI3anl4ZGJidm81ZmIzeGkxcm5zZ2NjMXd6NHVyYXpiaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vIhsNx26iHyTJlQBCp/giphy.gif)
+![](https://i.giphy.com/media/KkOCoWiqwTztjUPZRR/giphy.webp)
 
-It was an absolute delight having you intern at Wizard Travels! You might be wondering what tasks you have now. Since we have the core functionality, you're free to take this demo home and tinker with it!
+And now we have our club trip planned! You might be wondering what we should do now. Since we have the core functionality, you're free to take this demo home and tinker with it!
 
 **Ideas:**
-Maybe we can add an input for users to specify what kinds of activities they want? Maybe you can make it look a bit nicer! The possibilities are endless.
+Maybe we can add some functionality to only go to Starbucks or only go to boba shops on the trip? Maybe we can make it look a bit nicer! The possibilities are endless.
 
 ![you're a wizard](https://media.tenor.com/IoIn9W74-lcAAAAC/youre-a-wizard-hagrid.gif)
-We hope that you've left your internship with more knowledge about ChatGPT! Now you're truly an AI wizard 😎
+We hope that you've built this and came out with more knowledge about ChatGPT! Now you're truly an AI wizard 😎
