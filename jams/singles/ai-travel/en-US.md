@@ -203,11 +203,15 @@ Yes, that's correct. You seem to be catching on, intern.
 
 **We need to add a submit button!** 
 
-> Is this a regular `<button/>`?
-Not really. Our browser will render it as a button, but in reality, it is another `<input/>` element.
+<Dropdown title="Is this a regular <button/>?">
+  
+  Not really. Our browser will render it as a button, but in reality, it is another `<input/>` element.
+</Dropdown>
 
-> What? How would an `<input/>` element be a button?
+
+<Dropdown title="What? How would an <input/> element be a button?">
 You know how all of our current input elements have a `type` attached to them? Well that's the secret behind the submit button: it's an `<input/>` element with `type="submit"`
+</Dropdown>
 
 So here is how that would look like:
 ```html
@@ -215,7 +219,10 @@ So here is how that would look like:
 ```
 The `type` specifies that this input element is the button that submits the form. The `value` is the actual text that shows up on the button.
 
-> Where should I put this button?
+
+<Dropdown
+ title="Where should I put this button?"
+ >
 For the form to be submitted, the button should be placed inside the `<form/>` tags! Our code for the form should now look like this:
 
 ```html
@@ -227,11 +234,14 @@ For the form to be submitted, the button should be placed inside the `<form/>` t
   </form>
 ```
 
+</Dropdown>
+
 ## Getting the values into our JavaScript code
 If you submit the form right now, all it does is reload and clear the values from the form.
 
-> Why is this happening?
+<Dropdown title="Why is this happening?">
 Since we haven't told the form where/how to submit its information, it's doing nothing right now. **We can tell the form how to submit information using the `onsubmit` property**
+</Dropdown>
 
 We can add this to the opening form tag like so:
 ```html
@@ -368,12 +378,12 @@ Copy paste that and put it underneath all the `console.log` statements that we h
 > ![cat red error gif](https://media.tenor.com/TY8N6z1MGKsAAAAM/evil-cat-red-screen-evil-cat.gif)
 
 Let's replace a couple of those placeholder values:
-<Dropdown title="What should we replace <code>API_URL</code> with?">
-We should replace it with <code>https://api.openai.com/v1/chat/completions</code>
+<Dropdown title="What should we replace API_URL with?">
+We should replace it with `https://api.openai.com/v1/chat/completions`
 </Dropdown>
 
-<Dropdown title="What should we replace <code>method</code> with?">
-We should replace it with <code>POST</code>
+<Dropdown title="What should we replace method with?">
+We should replace it with `POST`
 </Dropdown>
 
 Let's make some of those changes:
@@ -521,8 +531,10 @@ Our first `.then()` **resolves** the API request and extracts what it returns. I
 
 However, `result.json()` returns ***another*** promise. 
 <Dropdown title="What should we do in this case?">
-We need to add another <code>.then()</code>!
+We need to add another `.then()`!
 </Dropdown>
+
+
 
 ```js
 fetch('...',{
@@ -639,7 +651,7 @@ Go to `index.html` again and add a `<div>` element with any `id`. This is how ou
 ```
 
 
-**Back to our JavaScript code**
+**Back to our JavaScript code!**\n
 This is what it looks like right now:
 ```js
 fetch('...',{
@@ -689,13 +701,15 @@ Let's break some things down here:
 - We're creating a string that has HTML elements inside of it. This is sort of a "template"
 - Then, we can add the details of each specific event using template literals
 
-> **What's going on with the `event.date` here?**
+<Dropdown title="What's going on with the event.date here?">
  
 It looks scary, I know. Let's break that down:
 - If we look at `event.date`, it looks very unreadable. Let's make it readable!
 - `.toLocalDateString()` makes our date look very pretty and readable. Here's `dateStyle:"medium"` shortens it (instead of `December 10th, 2023`, we get `Dec 10, 2023`)
 - The `.toLocalDateString()` function needs a `Date` object to work with
 - Since `event.date` is a `string`, we convert it to a date with `new Date()`
+
+</Dropdown>
 
 If we `console.log` the variable `htmlGenerated` now, we should get something like this:
 ```
