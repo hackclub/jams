@@ -752,6 +752,6 @@ Just like everything in this jam... Just play with it! almost everything in this
 
 Finally, I want to leave you guys with 2 ShaderToy links, one of a fully completed project, and one of the project in its current state, so you can fork it if you ever got lost along the way. I hope you learned something, and happy hacking!
 
-[Example Project - {Fully Complete}](https://www.shadertoy.com/view/clfcRs)
+[Example Project, Fully Complete](https://www.shadertoy.com/view/clfcRs)
 
-[Example Project - {Base Code To Fork}](https://www.shadertoy.com/view/dlXcDj)
+[Example Project, Base Code To Fork](https://www.shadertoy.com/view/dlXcDj)
