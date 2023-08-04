@@ -12,9 +12,9 @@ timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
-presentation: 'https://www.figma.com/file/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?type=design&node-id=239%3A1286&mode=design&t=5cwsXCx3QrutYqAB-1'
-presentationPlay: 'https://www.figma.com/proto/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?page-id=239%3A1286&type=design&node-id=243-10232&viewport=1172%2C132%2C0.14&t=Sn3rVs7ua8lHiFmk-1&scaling=contain&starting-point-node-id=243%3A10232&mode=design'
-presentationPDF: 'https://cloud-biw2lgdxz-hack-club-bot.vercel.app/0sprigworkshop.pdf'
+presentation: 'https://www.figma.com/file/PTWgxtPTUU5ZdEr8JZtH7X/webOSPart2?type=design&node-id=0%3A1&mode=design&t=BUR8qjk3lvlcygxO-1'
+presentationPlay: 'https://www.figma.com/proto/PTWgxtPTUU5ZdEr8JZtH7X/webOSPart2?page-id=0%3A1&type=design&node-id=1-2&viewport=-21176%2C281%2C0.38&t=CSTNNjzGHDS0y5ls-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
+presentationPDF: 'https://cloud-kw17t7ykp-hack-club-bot.vercel.app/0webospart2.pdf'
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
@@ -179,7 +179,7 @@ Adding the background is surprisingly easy!
 
 1. Find your image (I'll be using a photo I took in Michigan)
 2. Drag it into Replit (the file manager)
-3. On your body tag as the style property of `background-image: url(./(NAME_OF_YOUR_IMAGE.png)`
+3. On your body tag as the style property of `background-image: url(./NAME_OF_YOUR_IMAGE.png)`
 4. Adding `background-size: cover;` to the body to make the size of the image fit the screen.
 5. If your image still isn't quite fitting, add height: 100vh as a property to your body. This will make the height of the background 100% of the vertical height of your browser.
 
