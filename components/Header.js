@@ -81,16 +81,32 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
                 color: '#3c4858',
               }}
                 onClick={() => {
-                  // if back is /, it sends to the main page (index). 
-                  // however this is default value AND doesn't count as undefined
-                  // include it here to use back
-                  if (back === undefined || back === "/") {
-                    // however, it screws up the system of browser back arrow
-                    // since router.back() is the equivalent of clicking the browser back arrow
-                    // so its not a perfect fix, but it will do in most situations
+                  let {asPath} = router; // accesses the url path right now
+                  console.log(asPath);
+                  let pathAsList = asPath.split("/");
+                  console.log(pathAsList);
+                  // this lists out each segment in the batch
+                  // the first one is blank, so its equivalent to 1-index
+                  // the second (index 1) item is either "batch" or "jam"
+                  // we only care if it's batch
+                  if (back === undefined) {
                     router.back();
                   } else {
-                    router.push(back);
+                    if (pathAsList[1] == "batch") {
+                      // at this point we care if its len 3 or 4
+                      // len 3 - alr at batch main page, go back to index page
+                      if (pathAsList.length == 3 || pathAsList[3] == "") {
+                        // something in the form of ['', 'batch', '3d-armory']
+                        // also just in case include null so ending with / doesnt mess it up
+                        router.push("/");
+                      } else {
+                        // something in the form of ['', 'batch', '3d-armory', 'part-1']
+                        // otherwise connect the first 2, and go back
+                        router.push("/batch/" + pathAsList[2]);
+                      }
+                    } else {
+                      router.push(back);
+                    }
                   }
               }}
             >
