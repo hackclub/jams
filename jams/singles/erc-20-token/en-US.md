@@ -1,5 +1,5 @@
 ---
-title: 'Create your own Club Token as a reward system in your club!'
+title: 'Create your own Club Crypto Currency'
 description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
 contributor: 'briyandyju09'
