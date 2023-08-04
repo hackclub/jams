@@ -20,7 +20,7 @@ slug: 'glsl-shaders'
 
 
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Mandlebrot.png" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Mandlebrot.png" width="500"/>
 
 You may have seen or heard of fractals. Even if you haven't, you've probably seen an hour long video of someone zooming into a picture, revealing more and more detail the farther they go.
 
@@ -45,7 +45,7 @@ So how does this have anything to do with the Mandelbrot set, or fractals in gen
 ### The Complex Plane
 The complex plane is a way to map any complex number to a point on a graph. To understand how it works, first look at this is an ordinary plane, with an ordinary point (point A) located at (4,6)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/real_graph.jpeg" width="400">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/real_graph.jpeg" width="400"/>
 
 The Complex Plane might sound complex but its just a way of translating any complex number into a point on a graph, and vice versa.
 
@@ -57,7 +57,7 @@ Again let me emphasize the form of complex numbers. **In `a + bi`, A is the *rea
 
 Another way to visualize the complex plane is to rename the axes from the image above.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/complexPlane.jpeg" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/complexPlane.jpeg" width="500"/>
 
 Now you can see how the point `(4,6)` on the plane translates to the complex number `4 + 6i`
 
@@ -65,7 +65,7 @@ So now we have this method of converting any complex number to a point on the co
 
 Well this is where the actual formula for the Mandelbrot set comes in.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/MandelbrotEquation.jpeg" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/MandelbrotEquation.jpeg" width="500"/>
 
 This might look pretty scary at first, but I promise it will make sense soon. First of all, what even is this? Essentially, this equation is a formula that we *recursively* apply to a complex number(like `2 + 3i`  or  `5 + 2i`). 
 
@@ -75,7 +75,7 @@ Let me walk you through the steps of the equation. This equation essentially jus
 
 Now this formula needs an input. That input is a complex number. As you can recall we can take any point on the plane and use it as a complex number. So lets choose the point `(1,2)`, which corresponds to the complex number `1 + 2i`. Let's call this point `C`
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/pointC.jpeg" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/pointC.jpeg" width="300"/>
 
 Now to find the next number in the sequence, the formula states we
 1. Take the **last** number in the sequence and **Square it**
@@ -85,7 +85,7 @@ So lets do that;
 
 Currently our sequence is just `[0]` so in this case, `0` is the last number in the sequence, and for the complex number, ours is `1 + 2i`. So our equation for the next number in the sequence is
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index2.jpeg" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index2.jpeg" width="300"/>
 
 The zero can be discarded and we are left with `(1 + 2i)`
 
@@ -93,7 +93,7 @@ The zero can be discarded and we are left with `(1 + 2i)`
 
 Now lets repeat that. Now to find the third number in the sequence, we take the square of the last number(which is what we just found), and add our complex number C to it.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index3.jpeg" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index3.jpeg" width="500"/>
 
 Wow! That's a lot longer than then the previous iteration, but thats only because we are squaring a complex number now. As you can see, we basically treat `i` as any normal algebriac variable, except for one special case.
 
@@ -104,7 +104,7 @@ This just means that we need to convert `i^2` to `-1` whenever we see it in our 
 
 (don't worry the computer will take care of all of this once we code it ;)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index3squared.jpeg" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index3squared.jpeg" width="300"/>
 
 Now our sequence looks like this
 
@@ -112,24 +112,24 @@ Now our sequence looks like this
 
 We can also plot this new point on the complex plane (as well as our starting point of `0`)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/graphIndex3.jpeg" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/graphIndex3.jpeg" width="300"/>
 
 Very soon we'll see some emergent behavior from this system, but first lets quickly do one more iteration
 
 (Only look at this next equation if you really care)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index4.jpeg" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index4.jpeg" width="500"/>
 
 `Our sequence => 0, 1 + 2i, -2 + 6i, -31 - 22i`
 
 Now our graph looks like this:
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/graphIndex4.jpeg" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/graphIndex4.jpeg" width="500"/>
 
 Well there goes our point... At this point its obvious that if we continue this sequence it will eventually spiral out to infinity. So we can classify this point as... Drumroll please..... Not in the Mandelbrot set!!!!
 
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/whatjusthappened.gif" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/whatjusthappened.gif" width="300"/>
 
 
 
@@ -142,7 +142,7 @@ So back to what I was saying about this point not being in the Mandelbrot set. *
 
 To see what I mean, lets try a different point. This time I'll leave out all of the equations behind the scenes and just show you the end graph.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/secondPointPath.jpeg" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/secondPointPath.jpeg" width="500"/>
 
 You can see that instead of escaping out into infinity, this point seems to do the opposite, and sort of falls in towards the center and floats around. This type of point, one that does not explode out into infinity, *is* in the Mandelbrot set.
 
@@ -156,11 +156,11 @@ Go to `shadertoy.com` and sign up for an account. You can complete this Jam with
 
 Once you are logged in, click the `New` button in the top right.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/newbutton.png" width="400">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/newbutton.png" width="400"/>
 
 After you click that, you'll land on a page that looks like this
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/newshader.png" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/newshader.png" width="500"/>
 
 I've gone ahead and filled out the Title and Description for this Jam. Now lets get into GLSL!
 
@@ -234,7 +234,7 @@ This line just normalizes our coordinates. If we just use the input to the funct
 
 Heres a simple diagram to show what uv coordinates are
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/textureUV.jpeg" width="700">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/textureUV.jpeg" width="700"/>
 
 ***By default we are given the texture coordinate for the pixel, so in this line we just calculate the corresponding UV coordinate.***
 
@@ -275,7 +275,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 ```
 
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputRedBlack.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputRedBlack.png" width="300"/>
 
 Remember that the normalized UV coordinates mean that the halfway line is at x position 0.5, so by coloring pixels who's x UV position is greater than 0.5 red, we get this simple pattern. Try changing 0.5 in the code and seeing what happens.
 
@@ -292,7 +292,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 }
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputRed.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputRed.png" width="300"/>
 
 Then you could even set the blue value equal to the pixel UV y coordinate
 
@@ -300,7 +300,7 @@ Then you could even set the blue value equal to the pixel UV y coordinate
 fragColor = vec4(0.0, 0.0, uv.y, 1.0);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputBlue.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputBlue.png" width="300"/>
 
 Then combine them into one statement that sets the Red value to the X position and the blue value to the Y position
 
@@ -308,7 +308,7 @@ Then combine them into one statement that sets the Red value to the X position a
 fragColor = vec4(uv.x, 0.0, uv.y, 1.0);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputPurple.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputPurple.png" width="300"/>
 
 # Coding the Mandelbrot set
 
@@ -436,17 +436,17 @@ fragColor = vec4(0.0, 0.0, 0.0, 1.0);
 
 And then we get this image:
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mvpImage.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mvpImage.png" width="300"/>
 
 ...
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/notGood.gif" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/notGood.gif" width="300"/>
 
 # Fixing visual bugs
 
 Well hey, at least we're making progress! If we compare our image with another render of the set-
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Mandlebrot.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Mandlebrot.png" width="300"/>
 
 We can see several issues
 
@@ -456,7 +456,7 @@ We can see several issues
 
 First up, lets fix the stretching. Remember when I talked about converting texture to UV coordinates, here lets look at the picture again real quick
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/textureUV.jpeg" width="400">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/textureUV.jpeg" width="400"/>
 
 Well the problem is that in our original texture coordinates, the Y axis(height) is 720 pixels, which is 560 pixels shorter than the X axis(width). This is a size difference of 43.75%, while in the UV Coordinates, both the X and Y axis are forced to be the same length, which effectively stretches the Y axis and shrinks the X axis. Not good for our Mandelbrot image.
 
@@ -476,7 +476,7 @@ Instead we can just choose one axis to use to stretch both axis equally. In this
 vec2 c = fragCoord/iResolution.x;
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/unStretched.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/unStretched.png" width="300"/>
 
 More progress!
 
@@ -492,7 +492,7 @@ float scale = 4.0;
 c *= scale;
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/scaled.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/scaled.png" width="300"/>
 
 And this makes sense when you think about it. Now, our plane is **4 times bigger**, so all points are now **4 time farther apart**. The smaller this number is(or more accurately, the closer it approaches to zero) the farther we will zoom into the set.
 
@@ -511,7 +511,7 @@ c *= scale;
 c += vec2(-2.7,-1.1);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/transformed.png" width="300">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/transformed.png" width="300"/>
 
 I came up with these transformation with trail and error by the way, which is the way that you do a LOT of stuff in GLSL. Unlike more languages, GLSL has zero output other than the end shader result. There is no way to debug a variable, or even `console.log()` or `print()`
 
@@ -557,7 +557,7 @@ if(dot(Z, Z) > 4.0) {
     break;
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bw.png" width="700">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bw.png" width="700"/>
 CONGRATULATIONS, you just successfully rendered the Mandelbrot set! We still have a few more additions, like color, and camera movements.
 
 # Color weights
@@ -604,14 +604,14 @@ Right now, we have the same multiplier for all the value. Lets try making the se
 vec3 weights = vec3(1.0,1.0,2.0);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/blueset.png" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/blueset.png" width="500"/>
 
 Cool! Now try out some more combinations of weights to color the set.
 
 	Tip: try bigger numbers (>10.0)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/greenset.png" width="500">
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/yellowset.png" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/greenset.png" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/yellowset.png" width="500"/>
 
 Choose a color that you love, and then we can move onto smooth (log) coloring
 
@@ -695,7 +695,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 Now if you click on the `shader inputs` drop down directly above the code box...
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/shaderInputs.png" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/shaderInputs.png" width="500"/>
 
 You can see a list of **built in variables**. These variables provide access to some important information about the current state of our shader.
 
