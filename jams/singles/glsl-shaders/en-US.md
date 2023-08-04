@@ -42,7 +42,7 @@ In that number, `a` represents the real part, and `bi` is the imaginary componen
 
 So how does this have anything to do with the Mandelbrot set, or fractals in general? Well there's something really cool we can do with these complex numbers.
 
-### The Complex Plane
+## The Complex Plane
 The complex plane is a way to map any complex number to a point on a graph. To understand how it works, first look at this is an ordinary plane, with an ordinary point (point A) located at (4,6)
 
 <img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/real_graph.jpeg" width="400"/>
@@ -164,7 +164,7 @@ After you click that, you'll land on a page that looks like this
 
 I've gone ahead and filled out the Title and Description for this Jam. Now lets get into GLSL!
 
-# Intro to GLSL
+## Intro to GLSL
 
 We can see that we have a default starter shader already loaded. We're going to start from scratch so begin by replacing all the code in the code box with the following basic script. **Make sure to recompile by clicking the play button at the bottom left of the code box.**
 
@@ -310,7 +310,7 @@ fragColor = vec4(uv.x, 0.0, uv.y, 1.0);
 
 <img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputPurple.png" width="300"/>
 
-# Coding the Mandelbrot set
+## Coding the Mandelbrot set
 
 Hopefully you're still with me, and hopefully you've either miraculously understood everything up until this point, or you are frantically searching on youtube for a better explanation of the Mandelbrot set(in which case I recommend [this one](https://www.youtube.com/watch?v=GiAj9WW1OfQ), [this one](https://www.youtube.com/watch?v=FFftmWSzgmk), and [The Mandelbrot Set: Atheists’ WORST Nightmare](https://www.youtube.com/watch?v=OlD2rcm971U))(Watch that last one at your own risk)
 
@@ -442,7 +442,7 @@ And then we get this image:
 
 <img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/notGood.gif" width="300"/>
 
-# Fixing visual bugs
+## Fixing visual bugs
 
 Well hey, at least we're making progress! If we compare our image with another render of the set-
 
@@ -517,7 +517,7 @@ I came up with these transformation with trail and error by the way, which is th
 
 Now for the fun part.. COLORS!!
 
-# Adding color
+## Adding color
 
 There are a few ways we can color this set, and we have lots of information about a pixel to use when coloring it, but a really popular way to do it is to follow this flow
 1. Is the point in the Mandelbrot set? 
@@ -560,7 +560,7 @@ if(dot(Z, Z) > 4.0) {
 <img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bw.png" width="700"/>
 CONGRATULATIONS, you just successfully rendered the Mandelbrot set! We still have a few more additions, like color, and camera movements.
 
-# Color weights
+## Color weights
 
 First, lets explore some different ways of coloring the set. One popular way is to apply different **weights** to the RED GREEN and BLUE values instead of them all using the same values.
 
@@ -615,7 +615,7 @@ Cool! Now try out some more combinations of weights to color the set.
 
 Choose a color that you love, and then we can move onto smooth (log) coloring
 
-# Smooth colors
+## Smooth colors
 You probably noticed the banding on the image. The brightness values doesn't produce a perfect gradient, instead it steps down in large increments. We can fix this by making use of the double log formula. I'm not going to go into depth on this, but feel free to research it if you want to.
 
 First replace the brightness variable declaration as so
@@ -623,7 +623,7 @@ First replace the brightness variable declaration as so
 float brightness = (float(i) - log2(log2(dot(Z,Z))) + 4.0) / float(maxIterations);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/almostBanding.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/almostBanding.png" width="500"/>
 
 This doesn't completely fix the problem, because we change the the brightness formula, we need to increase the escape radius as well from `4` to `20`.
 
@@ -631,10 +631,10 @@ This doesn't completely fix the problem, because we change the the brightness fo
 if(dot(Z, Z) > 20.0) {
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bandingFixed.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bandingFixed.png" width="500"/>
 
 !!! BEAUTIFUL !!! Now for my favorite part of the jam
-# Make it your own
+## Make it your own
 Im going to leave you guys with two more tool that will allow you to create infinite variations of the Mandelbrot set....
 
 1. Mutating the Mandelbrot formula
@@ -725,19 +725,21 @@ Change it to anything. I mean it!! Try messing around with the function, like mu
 vec2 oldZ = Z;
 Z = cSquare(oldZ + c) + c + cSquare(c * sin(iTime));
 ```
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm1.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm1.png" width="500"/>
 
 ```C
 vec2 oldZ = Z;
 Z = cSquare(c) + c + cSquare(oldZ - sin(iTime));
 ```
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm2.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm2.png" width="500"/>
 
 ```C
 vec2 oldZ = Z;
 Z = cSquare(cSquare(oldZ) + c);
 ```
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm3.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm3.png" width="500"/>
+
+## Final Thoughts! + Source Code
 
 Just like everything in this jam... Just play with it! almost everything in this jam can be modified, tweaked, and changed to make this project yours! The best thing about writing this renderer in ShaderToy is that its all real time! No render time to wait, just change something and immediately see its effect.  If you want to keep learning, here are some resources and questions to keep learning with
 
@@ -751,4 +753,5 @@ Just like everything in this jam... Just play with it! almost everything in this
 Finally, I want to leave you guys with 2 ShaderToy links, one of a fully completed project, and one of the project in its current state, so you can fork it if you ever got lost along the way. I hope you learned something, and happy hacking!
 
 [Example Project, Fully Complete](https://www.shadertoy.com/view/clfcRs)
-[Example Project, Base Code To Fork](https://www.shadertoy.com/view/clfcRs)
+
+[Example Project, Base Code To Fork](https://www.shadertoy.com/view/dlXcDj)

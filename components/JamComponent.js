@@ -68,11 +68,11 @@ export default function JamComponent({ jam, jamsContent }) {
         } back={"/"}/>
   
         <Container style={{ paddingTop: '96px' }}>
-          <Grid columns={[null, '0.75fr 3fr 0.75fr']} gap={24} style={{ bg: 'blue' }}>
+          <Grid columns={[null, '1fr 3fr 1fr']} gap={32} style={{ bg: 'blue' }}>
             <Box sx={{display: ["none", "flex"], flexDirection: "column", position:"relative"}}>
               <Box sx={{position:"sticky", top:96}}>
                 <h2 style={{ margin: 0 }}>Outline</h2> 
-                <ul>
+                <ul style={{paddingLeft: 14, display:'flex', flexDirection:'column', gap:6}}>
                   {jam?.headers?.map((header) => (
                     <li key={header}>
                       <div>
@@ -138,13 +138,13 @@ export default function JamComponent({ jam, jamsContent }) {
               </Box>
               <h1 style={{ marginTop: 0, marginBottom: 0 }}>{jam.title}</h1>
   
-              <Box style={{ fontSize: 18, lineHeight: '200%' }}>
+              <Box style={{ fontSize: 18, lineHeight: '200%', paddingBottom: [32,64] }}>
                 <MDXRemote components={mdxComponents} {...jam.source} />
               </Box>
             </Box>
   
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={{ position: 'sticky', top: 96 }}>
+              <Box sx={{ position: 'sticky', top: 96, paddingBottom: 36 }}>
                 <h2 style={{ margin: 0 }}>Jam Resources</h2>
                 {jam.presentation && (
                   <Link sx={{ marginBottom: '12px', color: '#993CCF' }} href={jam.presentationPDF}>
@@ -218,7 +218,6 @@ export default function JamComponent({ jam, jamsContent }) {
             </Box>
           </Grid>
         </Container>
-  
       </div>
     );
   }

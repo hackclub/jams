@@ -1,17 +1,16 @@
 ---
 title: "Build a game (with explosions!)"
 description: >
-  In this Jam, you'll be creating an awesome welcome screen for your personalOS.
-  It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
-contributor: 'SerenityUX'
+  In this Jam, you'll be designing and creating a fun platformer-style game and sharing it with your friends.
+contributor: 'ajs256'
 thumbnail: 'https://cloud-86mea0y22-hack-club-bot.vercel.app/0thumb-cropped.gif'
 timeEstimate: '30 minutes'  
 difficulty: 'Intermediate'  
 keywords: 'Web, Game, js, JavaScript, glitch, kaboom, gamedev' 
 language: 'JavaScript'  
-presentation: "" 
-presentationPlay: "" 
-presentationPDF: "" 
+presentation: "https://www.figma.com/file/fUIpjYIAnybmQXUOr8rEPn/KaboomJam?type=design&node-id=0%3A1&mode=design&t=HnYTGbk8JkUTZmWg-1" 
+presentationPlay: "https://www.figma.com/proto/fUIpjYIAnybmQXUOr8rEPn/KaboomJam?type=design&node-id=1-2&t=phUMnwxbFt7UStva-1&scaling=contain&page-id=0%3A1&mode=design" 
+presentationPDF: "https://cloud-93xagowus-hack-club-bot.vercel.app/0kaboomjam__1_.pdf" 
 notes: "" 
 poster: "" 
 video: "" 
@@ -20,7 +19,7 @@ slug: 'kaboom-game'
 
 
 Hello!! In this Jam, you will be designing and building a web game. When you're all done, it'll look a bit like this:
-(TODO video or gif of completed game)
+![A demonstration of a completed platformer game](https://cloud-4p2y0vzmm-hack-club-bot.vercel.app/0screen_recording_2023-08-04_at_11.06.53_am.gif)
 
 ## So how are we gonna do this?
 Here are the steps we'll go through to build your own game:
@@ -42,7 +41,6 @@ First, let's get started on [🎏 Glitch](https://glitch.com).
 ---
 ## Start coding
 Now, it's time to code!
-(TODO: this is a good place for a joke gif)
 
 Start by remixing my template. Head to https://glitch.com/~kaboom-game-template, then scroll down and click `Remix your own` below the preview. Now you've got your own code editor!
 
@@ -102,7 +100,7 @@ Now, head back to your code. You'll notice I've left a comment in the code with 
            There's a place in the code where the level is laid out with symbols. Can you try to add more?
 </Dropdown>
 Once you're done, your game should look a bit like this:
-(TODO gif of completed game)
+![a screenshot of a platformer game with a wider platform and more coins](https://cloud-7rnuby5u8-hack-club-bot.vercel.app/0image.png)
 
 > Psst.. here's a tip. Hit <kbd>F1</kbd>. See all those blue boxes? Those are the collision areas of each object in your game. Now hover over one of those objects. Now you can see every object's components! It's a bit like those [x-ray specs](https://en.wikipedia.org/wiki/X-ray_specs) that there used to be ads for in comic books, but it actually works. 
 > 

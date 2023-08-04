@@ -11,7 +11,7 @@ export default function Dropdown({ title, children }) {
   return (
     <div style={{marginBottom: "8px"}}>
       <Box onClick={toggleOpen} sx={{alignItems: "center",  cursor: "pointer", display: "flex", padding: '8px', borderRadius: "32px", border: "#e0e6ed 1px solid", backgroundColor: "#fff"}}>
-        <Icon style={{marginLeft: "8px", marginRight: "8px"}} glyph={!isOpen ? "down-caret" : "up-caret"}/>
+        <Icon style={{marginLeft: "8px", marginRight: "8px", flexShrink:0}} glyph={!isOpen ? "down-caret" : "up-caret"}/>
         {title}
       </Box>
       {isOpen && 
