@@ -623,7 +623,7 @@ First replace the brightness variable declaration as so
 float brightness = (float(i) - log2(log2(dot(Z,Z))) + 4.0) / float(maxIterations);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/almostBanding.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/almostBanding.png" width="500"/>
 
 This doesn't completely fix the problem, because we change the the brightness formula, we need to increase the escape radius as well from `4` to `20`.
 
@@ -631,7 +631,7 @@ This doesn't completely fix the problem, because we change the the brightness fo
 if(dot(Z, Z) > 20.0) {
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bandingFixed.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bandingFixed.png" width="500"/>
 
 !!! BEAUTIFUL !!! Now for my favorite part of the jam
 ## Make it your own
@@ -725,19 +725,19 @@ Change it to anything. I mean it!! Try messing around with the function, like mu
 vec2 oldZ = Z;
 Z = cSquare(oldZ + c) + c + cSquare(c * sin(iTime));
 ```
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm1.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm1.png" width="500"/>
 
 ```C
 vec2 oldZ = Z;
 Z = cSquare(c) + c + cSquare(oldZ - sin(iTime));
 ```
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm2.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm2.png" width="500"/>
 
 ```C
 vec2 oldZ = Z;
 Z = cSquare(cSquare(oldZ) + c);
 ```
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm3.png"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm3.png" width="500"/>
 
 ## Final Thoughts! + Source Code
 
