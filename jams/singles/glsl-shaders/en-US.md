@@ -1,15 +1,15 @@
 ---
-title: "Create INFINITE art with math (and code)"
+title: "Create INFINITE ART with math (and code)"
 description: >  
   In this jam, you'll learn about the Mandelbrot set, and how to render it in realtime using ShaderToy.
 contributor: 'NalinPlad'  
-thumbnail: 'https://cloud-cwvoueygg-hack-club-bot.vercel.app/0iterations.gif' 
+thumbnail: 'https://cloud-6vz7a5rgs-hack-club-bot.vercel.app/0morph.gif' 
 timeEstimate: '60 minutes'  
 difficulty: 'Advanced'  
 keywords: 'shaders, GPU, graphics, fractals, art, math' 
 language: 'GLSL'  
-presentation: ""
-presentationPlay: ""
+presentation: "https://www.figma.com/file/KTFep6bY1tTuoI72RPVKrJ/GLSL-Fractals?type=design&mode=design&t=QysD5HAdzeoScNMj-1"
+presentationPlay: "https://www.figma.com/proto/KTFep6bY1tTuoI72RPVKrJ/GLSL-Fractals?page-id=0%3A1&type=design&node-id=103-2&viewport=140%2C-1561%2C0.36&t=0Ze2BaKYdvrRsYn5-1&scaling=contain"
 presentationPDF: ""
 notes: ""
 poster: ""
@@ -20,11 +20,11 @@ slug: 'glsl-shaders'
 
 
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Mandlebrot.png" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Mandlebrot.png" width="500">
 
 You may have seen or heard of fractals. Even if you haven't, you've probably seen an hour long video of someone zooming into a picture, revealing more and more detail the farther they go.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Zoom.gif"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Zoom.gif">
 
 Well this particular geometrical shape shown in the GIF is part of a large family of *infinitely* detailed, *infinitely* precise object, called **fractals**. Today, we are going to write a computer program that will allow us to create the same fractal you see in the images above, namely, the ***Mandelbrot set***
 
@@ -45,7 +45,7 @@ So how does this have anything to do with the Mandelbrot set, or fractals in gen
 ### The Complex Plane
 The complex plane is a way to map any complex number to a point on a graph. To understand how it works, first look at this is an ordinary plane, with an ordinary point (point A) located at (4,6)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/real_graph.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/real_graph.jpeg" width="400">
 
 The Complex Plane might sound complex but its just a way of translating any complex number into a point on a graph, and vice versa.
 
@@ -57,7 +57,7 @@ Again let me emphasize the form of complex numbers. **In `a + bi`, A is the *rea
 
 Another way to visualize the complex plane is to rename the axes from the image above.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/complexPlane.jpeg" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/complexPlane.jpeg" width="500">
 
 Now you can see how the point `(4,6)` on the plane translates to the complex number `4 + 6i`
 
@@ -65,7 +65,7 @@ So now we have this method of converting any complex number to a point on the co
 
 Well this is where the actual formula for the Mandelbrot set comes in.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/MandelbrotEquation.jpeg" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/MandelbrotEquation.jpeg" width="500">
 
 This might look pretty scary at first, but I promise it will make sense soon. First of all, what even is this? Essentially, this equation is a formula that we *recursively* apply to a complex number(like `2 + 3i`  or  `5 + 2i`). 
 
@@ -75,25 +75,25 @@ Let me walk you through the steps of the equation. This equation essentially jus
 
 Now this formula needs an input. That input is a complex number. As you can recall we can take any point on the plane and use it as a complex number. So lets choose the point `(1,2)`, which corresponds to the complex number `1 + 2i`. Let's call this point `C`
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/pointC.jpeg" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/pointC.jpeg" width="300">
 
 Now to find the next number in the sequence, the formula states we
-1. Take the **previous** number in the sequence and **Square it**
+1. Take the **last** number in the sequence and **Square it**
 2. Add a complex number **C** to the result
 
 So lets do that;
 
-Currently our sequence is just `[0]` so in this case, `0` is the previous number in the sequence, and for the complex number, ours is `1 + 2i`. So our equation for the next number in the sequence is
+Currently our sequence is just `[0]` so in this case, `0` is the last number in the sequence, and for the complex number, ours is `1 + 2i`. So our equation for the next number in the sequence is
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index2.jpeg" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index2.jpeg" width="300">
 
 The zero can be discarded and we are left with `(1 + 2i)`
 
 `Our sequence => 0, 1 + 2i`
 
-Now lets repeat that. Now to find the third number in the sequence, we take the square of the previous number(which is what we just found), and add our complex number C to it.
+Now lets repeat that. Now to find the third number in the sequence, we take the square of the last number(which is what we just found), and add our complex number C to it.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index3.jpeg" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index3.jpeg" width="500">
 
 Wow! That's a lot longer than then the previous iteration, but thats only because we are squaring a complex number now. As you can see, we basically treat `i` as any normal algebriac variable, except for one special case.
 
@@ -104,7 +104,7 @@ This just means that we need to convert `i^2` to `-1` whenever we see it in our 
 
 (don't worry the computer will take care of all of this once we code it ;)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index3squared.jpeg" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index3squared.jpeg" width="300">
 
 Now our sequence looks like this
 
@@ -112,24 +112,24 @@ Now our sequence looks like this
 
 We can also plot this new point on the complex plane (as well as our starting point of `0`)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/graphIndex3.jpeg" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/graphIndex3.jpeg" width="300">
 
 Very soon we'll see some emergent behavior from this system, but first lets quickly do one more iteration
 
 (Only look at this next equation if you really care)
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index4.jpeg" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/index4.jpeg" width="500">
 
 `Our sequence => 0, 1 + 2i, -2 + 6i, -31 - 22i`
 
 Now our graph looks like this:
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/graphIndex4.jpeg" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/graphIndex4.jpeg" width="500">
 
 Well there goes our point... At this point its obvious that if we continue this sequence it will eventually spiral out to infinity. So we can classify this point as... Drumroll please..... Not in the Mandelbrot set!!!!
 
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/whatjusthappened.gif" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/whatjusthappened.gif" width="300">
 
 
 
@@ -142,13 +142,12 @@ So back to what I was saying about this point not being in the Mandelbrot set. *
 
 To see what I mean, lets try a different point. This time I'll leave out all of the equations behind the scenes and just show you the end graph.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/secondPointPath.jpeg" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/secondPointPath.jpeg" width="500">
 
 You can see that instead of escaping out into infinity, this point seems to do the opposite, and sort of falls in towards the center and floats around. This type of point, one that does not explode out into infinity, *is* in the Mandelbrot set.
 
+## Intro to Shadertoy
 
-
-# The code
 At long last, its time to take all of our newly gained knowledge and make something out of it. We're going to be using **Shader Toy**, which is kind of like replit for high performance graphics shaders. Shader Toy lets us write **GLSL** shaders that run on the GPU. 
 
 **GLSL** is the language of WebGL, which is a technology that allows developers to write high performance graphics on the web.
@@ -157,13 +156,15 @@ Go to `shadertoy.com` and sign up for an account. You can complete this Jam with
 
 Once you are logged in, click the `New` button in the top right.
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/newbutton.png" width="400"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/newbutton.png" width="400">
 
 After you click that, you'll land on a page that looks like this
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/newshader.png" width="500"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/newshader.png" width="500">
 
-I've gone ahead and filled out the Title and Description for this Jam.
+I've gone ahead and filled out the Title and Description for this Jam. Now lets get into GLSL!
+
+# Intro to GLSL
 
 We can see that we have a default starter shader already loaded. We're going to start from scratch so begin by replacing all the code in the code box with the following basic script. **Make sure to recompile by clicking the play button at the bottom left of the code box.**
 
@@ -233,7 +234,7 @@ This line just normalizes our coordinates. If we just use the input to the funct
 
 Heres a simple diagram to show what uv coordinates are
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/textureUV.jpeg" width="700"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/textureUV.jpeg" width="700">
 
 ***By default we are given the texture coordinate for the pixel, so in this line we just calculate the corresponding UV coordinate.***
 
@@ -274,7 +275,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 ```
 
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputRedBlack.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputRedBlack.png" width="300">
 
 Remember that the normalized UV coordinates mean that the halfway line is at x position 0.5, so by coloring pixels who's x UV position is greater than 0.5 red, we get this simple pattern. Try changing 0.5 in the code and seeing what happens.
 
@@ -291,7 +292,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 }
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputRed.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputRed.png" width="300">
 
 Then you could even set the blue value equal to the pixel UV y coordinate
 
@@ -299,7 +300,7 @@ Then you could even set the blue value equal to the pixel UV y coordinate
 fragColor = vec4(0.0, 0.0, uv.y, 1.0);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputBlue.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputBlue.png" width="300">
 
 Then combine them into one statement that sets the Red value to the X position and the blue value to the Y position
 
@@ -307,9 +308,10 @@ Then combine them into one statement that sets the Red value to the X position a
 fragColor = vec4(uv.x, 0.0, uv.y, 1.0);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputPurple.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/outputPurple.png" width="300">
 
-## Coding the Mandelbrot set
+# Coding the Mandelbrot set
+
 Hopefully you're still with me, and hopefully you've either miraculously understood everything up until this point, or you are frantically searching on youtube for a better explanation of the Mandelbrot set(in which case I recommend [this one](https://www.youtube.com/watch?v=GiAj9WW1OfQ), [this one](https://www.youtube.com/watch?v=FFftmWSzgmk), and [The Mandelbrot Set: Atheists’ WORST Nightmare](https://www.youtube.com/watch?v=OlD2rcm971U))(Watch that last one at your own risk)
 
 We are dealing with some pretty high level and abstract mathematical concepts here, so if you want to have a solid foundation going into the end of this Jam, make sure you understand the math.
@@ -339,6 +341,7 @@ int maxIterations = 256;
 Lets also add our initial Mandelbrot starting point of (0,0)
 
 ```C
+// Starting point
 vec2 Z = vec2(0,0)
 ```
 
@@ -402,6 +405,7 @@ Add this if statement to the bottom of the for loop
 // If the point escapes, color it differently
 if(dot(Z, Z) > 4.0) {
     fragColor = vec4(1.0, 0.0, 0.0, 1.0);
+    break;
 } else {
     fragColor = vec4(0.0, 0.0, 0.0, 1.0);
 }
@@ -432,15 +436,17 @@ fragColor = vec4(0.0, 0.0, 0.0, 1.0);
 
 And then we get this image:
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mvpImage.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mvpImage.png" width="300">
 
 ...
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/notGood.gif" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/notGood.gif" width="300">
+
+# Fixing visual bugs
 
 Well hey, at least we're making progress! If we compare our image with another render of the set-
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Mandlebrot.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Mandlebrot.png" width="300">
 
 We can see several issues
 
@@ -450,7 +456,7 @@ We can see several issues
 
 First up, lets fix the stretching. Remember when I talked about converting texture to UV coordinates, here lets look at the picture again real quick
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/textureUV.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/textureUV.jpeg" width="400">
 
 Well the problem is that in our original texture coordinates, the Y axis(height) is 720 pixels, which is 560 pixels shorter than the X axis(width). This is a size difference of 43.75%, while in the UV Coordinates, both the X and Y axis are forced to be the same length, which effectively stretches the Y axis and shrinks the X axis. Not good for our Mandelbrot image.
 
@@ -470,7 +476,7 @@ Instead we can just choose one axis to use to stretch both axis equally. In this
 vec2 c = fragCoord/iResolution.x;
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/unStretched.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/unStretched.png" width="300">
 
 More progress!
 
@@ -486,7 +492,7 @@ float scale = 4.0;
 c *= scale;
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/scaled.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/scaled.png" width="300">
 
 And this makes sense when you think about it. Now, our plane is **4 times bigger**, so all points are now **4 time farther apart**. The smaller this number is(or more accurately, the closer it approaches to zero) the farther we will zoom into the set.
 
@@ -505,11 +511,13 @@ c *= scale;
 c += vec2(-2.7,-1.1);
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/transformed.png" width="300"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/transformed.png" width="300">
 
 I came up with these transformation with trail and error by the way, which is the way that you do a LOT of stuff in GLSL. Unlike more languages, GLSL has zero output other than the end shader result. There is no way to debug a variable, or even `console.log()` or `print()`
 
 Now for the fun part.. COLORS!!
+
+# Adding color
 
 There are a few ways we can color this set, and we have lots of information about a pixel to use when coloring it, but a really popular way to do it is to follow this flow
 1. Is the point in the Mandelbrot set? 
@@ -549,4 +557,198 @@ if(dot(Z, Z) > 4.0) {
     break;
 ```
 
-<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bw.png" width="700"/>
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bw.png" width="700">
+CONGRATULATIONS, you just successfully rendered the Mandelbrot set! We still have a few more additions, like color, and camera movements.
+
+# Color weights
+
+First, lets explore some different ways of coloring the set. One popular way is to apply different **weights** to the RED GREEN and BLUE values instead of them all using the same values.
+
+Basically it just means that we can make the RED GREEN and BLUE values increase at different rates, causing more diverse colors.
+
+So to reiterate, currently we are raising the RGB value equally
+
+```C
+// Current method. All channels(R G and B) increase at same rate
+numIters = 10
+RGB(10,10,10)
+
+numIters = 30
+RGB(30,30,30)
+```
+
+which means that all the possible values will be different shades of white. Instead of that, we can change how much each RGB value increases based on how much the number of iterations increases
+
+```C
+// New method. Apply different weights(mulitpliers) to channels
+numIters = 10
+RGB(10,8,6)
+
+numIters = 30
+RGB(30,20,10)
+```
+
+So lets actually implement that. Add a weights variable and multiply the brightness value by it.
+
+```C
+// multipliers for ( R   G   B ) values
+vec3 weights = vec3(1.0,1.0,1.0);
+
+fragColor = vec4(vec3(brightness) * weights, 1.0);
+break;
+```
+
+Right now, we have the same multiplier for all the value. Lets try making the set more blue
+
+```C
+vec3 weights = vec3(1.0,1.0,2.0);
+```
+
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/blueset.png" width="500">
+
+Cool! Now try out some more combinations of weights to color the set.
+
+	Tip: try bigger numbers (>10.0)
+
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/greenset.png" width="500">
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/yellowset.png" width="500">
+
+Choose a color that you love, and then we can move onto smooth (log) coloring
+
+# Smooth colors
+You probably noticed the banding on the image. The brightness values doesn't produce a perfect gradient, instead it steps down in large increments. We can fix this by making use of the double log formula. I'm not going to go into depth on this, but feel free to research it if you want to.
+
+First replace the brightness variable declaration as so
+```C
+float brightness = (float(i) - log2(log2(dot(Z,Z))) + 4.0) / float(maxIterations);
+```
+
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/almostBanding.png">
+
+This doesn't completely fix the problem, because we change the the brightness formula, we need to increase the escape radius as well from `4` to `20`.
+
+```C
+if(dot(Z, Z) > 20.0) {
+```
+
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/bandingFixed.png">
+
+!!! BEAUTIFUL !!! Now for my favorite part of the jam
+# Make it your own
+Im going to leave you guys with two more tool that will allow you to create infinite variations of the Mandelbrot set....
+
+1. Mutating the Mandelbrot formula
+2. Using `iTime`
+
+Before we do that, heres what our code looks like right now so you can catch up;
+
+```C
+// Squares a given complex number
+vec2 cSquare( in vec2 z ) 
+{
+    return vec2(
+            z.x * z.x - z.y * z.y,
+            2.0 * z.x * z.y
+        );
+}
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    // Normalized pixel coordinates (from 0 to 1)
+    vec2 c = fragCoord/iResolution.x;
+    
+    // Scale [lower is more zoomed in]
+    float scale = 4.0;
+    
+    c *= scale;
+    
+    // Move set into view
+    c += vec2(-2.7,-1.1);
+    
+    // Maximum number of iterations
+    int maxIterations = 256;
+
+	// Starting point
+	vec2 Z = vec2(0,0);
+    
+    for(int i = 0; i < maxIterations; i++)
+    {
+        // Z(n+1) = Z(n)^2 + C
+        vec2 oldZ = Z;
+        Z = cSquare(oldZ) + c;
+        
+        if(dot(Z, Z) > 20.0) {
+            // Normalize i for brightness
+            float brightness = (float(i) - log2(log2(dot(Z,Z))) + 4.0) / float(maxIterations);
+            
+            // multipliers for ( R   G   B ) values
+            vec3 weights = vec3(10.0,10.0,2.0);
+            
+            fragColor = vec4(vec3(brightness) * weights, 1.0);
+            break;
+        } else {
+            fragColor = vec4(0.0, 0.0, 0.0, 1.0);
+        }
+    }
+}
+```
+
+Now if you click on the `shader inputs` drop down directly above the code box...
+
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/shaderInputs.png" width="500">
+
+You can see a list of **built in variables**. These variables provide access to some important information about the current state of our shader.
+
+The most important one is `iTime`. It returns the current time of the shader animation as a float. It is very powerful when combined with a trigonometric function like `sin() cos() and tan()`.
+
+```C
+// multipliers for ( R   G   B ) values
+vec3 weights = vec3(sin(iTime) * 2.0 + 5.0, cos(iTime) * 3.0 + 5.0, sin(iTime) * 10.0);
+            
+fragColor = vec4(vec3(brightness) * weights, 1.0);
+```
+
+Again, really play around with these values! There are infinite permutations of these functions combined with `iTime` to explore!
+
+And my personal favorite way to make this yours is to edit the actual Mandelbrot formula. Remember this?
+
+```C
+// Z(n+1) = Z(n)^2 + C
+vec2 oldZ = Z;
+Z = cSquare(oldZ) + c;
+```
+
+Change it to anything. I mean it!! Try messing around with the function, like multiplying `c`, running `cSquare` multiple times, inverting variables, adding noise, subtracting value, multiplying by itself, literally anything will give you a unique output. Heres some examples for inspiration.
+
+
+```C
+vec2 oldZ = Z;
+Z = cSquare(oldZ + c) + c + cSquare(c * sin(iTime));
+```
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm1.png">
+
+```C
+vec2 oldZ = Z;
+Z = cSquare(c) + c + cSquare(oldZ - sin(iTime));
+```
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm2.png">
+
+```C
+vec2 oldZ = Z;
+Z = cSquare(cSquare(oldZ) + c);
+```
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/mandelPerm3.png">
+
+Just like everything in this jam... Just play with it! almost everything in this jam can be modified, tweaked, and changed to make this project yours! The best thing about writing this renderer in ShaderToy is that its all real time! No render time to wait, just change something and immediately see its effect.  If you want to keep learning, here are some resources and questions to keep learning with
+
+1. Try messing with the `cSquare()` function. Maybe it doesn't have to "square" the complex number? Change it up randomly (z.y => z.x)
+2. Try increasing / decreasing the max iterations and the escape radius
+3. What are some other ways that color the set? Try using trigonometric functions...
+4. I wonder what the `iMouse` builtin variable does..
+5. Right now we color any points inside the Mandelbrot set black.. How else can we color them?
+
+
+Finally, I want to leave you guys with 2 ShaderToy links, one of a fully completed project, and one of the project in its current state, so you can fork it if you ever got lost along the way. I hope you learned something, and happy hacking!
+
+[Example Project - {Fully Complete}](https://www.shadertoy.com/view/clfcRs)
+[Example Project - {Base Code To Fork}](https://www.shadertoy.com/view/clfcRs)
