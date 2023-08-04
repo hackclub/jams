@@ -7,10 +7,10 @@ export default function Comment({ githubUser, children }) {
   return <>
     <Box sx={{ width: "100%", position: "relative" }}>
       <Box sx={{
-        position: "absolute",
+        position: ["static", "absolute"],
         top: 0,
         left: "calc(100%)",
-        width: "13rem",
+        width: ["100%", "13rem"],
         px: "12px",
         pt: "12px",
         // bg: "rgba(0,0,0,0.1)",
