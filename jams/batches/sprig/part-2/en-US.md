@@ -38,7 +38,7 @@ The tutorial includes hidden hints that you can use if you need. Try your best t
 
 Important note: If you’re interested in getting a free Sprig game console for a Game submission, you’ll need to make unique gameplay mechanics beyond the scope of this tutorial. (link to rules). We suggest expanding this game to make it more original, or creating a new one once you’ve learned the basics here!
 ## Starting the tutorial
-THIS IS TODO; I'm blocked by the Sprig PR being merged for tutorial pane
+Let's head to [this page](LINK AAA TODO) and get started with the tutorial! It's in the bottom right corner, just like the getting started tutorial was in session 1.
 
 ## Wrap-up!
 Congratulations!! By finishing this tutorial, you just made your own game from scratch!

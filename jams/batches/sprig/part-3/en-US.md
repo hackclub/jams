@@ -42,4 +42,4 @@ During these next two sessions, you'll be choosing two game mechanics to impleme
 
 
 ## Starting the tutorial
-THIS IS TODO; I'm blocked by the Sprig PR being merged for tutorial pane
+Let's head to [this page](LINK AAA TODO) and get started with the tutorial! Again, it's in the bottom right corner, in the same spot as the toolkit.
