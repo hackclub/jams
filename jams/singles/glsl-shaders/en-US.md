@@ -3,7 +3,7 @@ title: "Create INFINITE ART with MATH (and code)"
 description: >  
   In this jam, you'll learn about the Mandelbrot set, and how to render it (and other fractals!) in realtime using ShaderToy.
 contributor: 'NalinPlad'  
-thumbnail: 'https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/morph.png' 
+thumbnail: 'https://cloud-6vz7a5rgs-hack-club-bot.vercel.app/0morph.gif' 
 timeEstimate: '60 minutes'  
 difficulty: 'Advanced'  
 keywords: 'shaders, GPU, graphics, fractals, art, math' 
