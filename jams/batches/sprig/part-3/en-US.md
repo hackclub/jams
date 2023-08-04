@@ -1,6 +1,6 @@
 ---
 part: part-3
-title: 'Take Your Sprig Game to the Next Level With Traps, Moving Obstacles, and More.'
+title: 'Maze Game (Part 2/3): Adding Gameplay Mechanics'
 batch: Get Started Making Fun Tile-Based Games With Sprig
 description: >
   Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.

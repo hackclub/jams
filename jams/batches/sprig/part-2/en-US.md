@@ -1,6 +1,6 @@
 ---
 part: part-2
-title: 'Make Your Very Own Maze Game With Sprig!'
+title: 'Maze Game (Part 1/3): Characters, Enemies and Maps.'
 batch: Get Started Making Fun Tile-Based Games With Sprig
 description: >  
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
