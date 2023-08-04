@@ -1,5 +1,5 @@
 ---
-title: 'Create your own Club Token!'
+title: 'Create your own Club Crypto Currency'
 description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
 contributor: 'briyandyju09'
@@ -8,10 +8,10 @@ timeEstimate: '30 Mins'
 difficulty: 'Beginner'
 keywords: 'Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, Testnet'
 language: 'Solidity'
-presentation: ''
-presentationPlay: ''
-presentationPDF: ''
-notes: ''
+presentation: 'https://www.figma.com/file/UFFlwD9kEFmMkygaY8yG3h/Untitled?type=design&node-id=0%3A1&mode=design&t=9UnEZB6EYxvg2aQv-1'
+presentationPlay: 'https://www.figma.com/proto/UFFlwD9kEFmMkygaY8yG3h/Untitled?type=design&node-id=2-2&t=IebotsxN9M6q3Edr-1&scaling=contain&page-id=0%3A1&mode=design'
+presentationPDF: 'https://cloud-fplorbj3h-hack-club-bot.vercel.app/0make_your_own_club_token_w_solidity.pdf'
+notes: 'https://cloud-mrmhmej0t-hack-club-bot.vercel.app/0notes_for_this_jam__for_learner_to_note__jot_down_.pdf'
 poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
 video: ''
 slug: 'erc-20-token'
@@ -30,7 +30,7 @@ As a club, you will be able to send and recieve these tokens between eachother a
 
 This guide teaches users how to create their own personalized cryptocurrency token using Solidity and Metamask. By following the step-by-step instructions, users set up an endpoint, create a MetaMask account, and code their token on Remix Ethereum. The resulting token can be shared and used as a form of reward or gratitude among club members, fostering a sense of community and enthusiasm. The process is beginner-friendly and offers an opportunity to learn about blockchain concepts while exploring the world of cryptocurrency creation.
 
-Here are some memes to convey the message:
+<dropdown title="Here are some memes to convey the message:">
 
 ![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/77tjen8.jpg)
 
@@ -39,6 +39,7 @@ Here are some memes to convey the message:
 ![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/4download__2_.jpg)
 
 ![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/3download__3_.jpg)
+</dropdown>
 
 ## Why should you even care?
 
@@ -78,12 +79,15 @@ Here are some memes to convey the message:
 * ERC-20 - Short for Ethereum Request for Comment 20, It helps guide the creation of new tokens in the ethereum blockchain
 * Testnet - The opposite of Mainnet, Coins in the mainnet have monetary value and the value can change but in a testnet all coins are just virtual copies/duplicates without a realworld value. But dont let that get to you as these coins are indeed shareable!
 
+<dropdown title="warnings">
 #### WARNING: THE COINS YOU MAKE ARE IN THE TESTNET AND HAVE NO MONETARY VALUE! DONT EXPECT TO MAKE MONEY OUT OF THIS lol 
 #### DOUBLE WARNING (AND TIP): WHEN MAKING YOUR METAMASK ACCOUNT, MAKE SURE TO SAVE THE 12 PHRASES AS THEY ARE LIKE A PASSWORD TO YOUR ACCOUNT, STORE THEM ANYWHERE SAFE LIKE YOUR NOTEPAD, DIARY, ANYWHERE SAFE. ONCE LOST, YOUR ACCOUNT IS GONE BYE-BYE FOREVER. (also dont trust anyone and show them your phrases)
+</dropdown>
 
 # The guide! (dont be overwhelmed by the number of steps, Its easy!)
 
 ## Creating A Endpoint With Quicknode
+
 1. Navigate to quicknode.com and create an account
 
 2. Click "Endpoints"
@@ -248,8 +252,8 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 
 ### Additional Resources & Guides
 * Check out metaschool.so (where i learnt all of this) for many many for courses where you get to explore the wonders of Web 3.0
-* Learn more about ethereum and its blockchain at ethereum.org/en/
-* Make a blockchain with python ![link](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46) ![and this](http://ecomunsing.com/build-your-own-blockchain)
+* Learn more about ethereum and its blockchain at - ethereum.org/en/
+* Make a blockchain with python - https://hackernoon.com/learn-blockchains-by-building-one-117428612f46 & http://ecomunsing.com/build-your-own-blockchain
   
 ## Stuck? Facing issues? Your last braincell stopped working?
 

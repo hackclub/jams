@@ -1,7 +1,7 @@
 ---
 part: part-2
 title: 'Maze Game (Part 1/3): Characters, Enemies and Maps.'
-batch: Get Started Making Fun Tile-Based Games With Sprig
+batch: 'sprig'
 description: >  
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
@@ -18,14 +18,13 @@ poster: ""
 video: "" 
 ---
 
-# Make Your Very Own Maze Game With Sprig!
-### (tips for club leaders)
+## (tips for club leaders)
 Try to make this club session as collaborative as possible! Collaboration and interaction is what makes meetings fun and keeps people coming back.  
 Here's some ideas to encourage this:
 - Encourage people to ask the people around them from help as a first resort!
 - Have everyone design sprites, then pair up with someone else who creates a story and game around it
 
-### Part 2/5 - 45-60 minutes
+## Get Started
 Last session, you built a push block game in Sprig (if you haven't, check out [part 1](LINK AAAA TODO) of this jam!). Let's build off that experience and make something even more awesome!
 
 ![](https://cloud-ctbvwlpse-hack-club-bot.vercel.app/0sprig.gif)

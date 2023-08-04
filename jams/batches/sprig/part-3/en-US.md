@@ -1,7 +1,7 @@
 ---
 part: part-3
 title: 'Maze Game (Part 2/3): Adding Gameplay Mechanics'
-batch: Get Started Making Fun Tile-Based Games With Sprig
+batch: 'sprig'
 description: >
   Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
@@ -18,8 +18,9 @@ poster: ""
 video: "" 
 ---
 
-# Take Your Sprig Game to the Next Level With Traps, Moving Obstacles, and More.
-(this should take two sessions in a club!)
+
+### this should take two sessions in a club!
+
 
 Last session, you built your very own maze game from scratch! (if this isn't true, check out [session 2](LINK AAAA TODO) of this jam!) Today, we'll be expanding on our game by adding various game mechanics, or features. Take a look at the list of examples below, and make note of what seems fun/interesting/inspiring to you!
 

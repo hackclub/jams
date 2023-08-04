@@ -12,21 +12,21 @@ timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
-presentation: 'https://www.figma.com/file/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?type=design&node-id=239%3A1286&mode=design&t=5cwsXCx3QrutYqAB-1'
-presentationPlay: 'https://www.figma.com/proto/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?page-id=239%3A1286&type=design&node-id=243-10232&viewport=1172%2C132%2C0.14&t=Sn3rVs7ua8lHiFmk-1&scaling=contain&starting-point-node-id=243%3A10232&mode=design'
-presentationPDF: 'https://cloud-biw2lgdxz-hack-club-bot.vercel.app/0sprigworkshop.pdf'
+presentation: 'https://www.figma.com/file/GKrLB0EfGWDcErrbrO1Wre/webOSPart1?type=design&node-id=0%3A1&mode=design&t=0HHMIeSDMmAzH864-1'
+presentationPlay: 'https://www.figma.com/proto/GKrLB0EfGWDcErrbrO1Wre/webOSPart1?page-id=0%3A1&type=design&node-id=1-14&viewport=-22828%2C193%2C0.29&t=Zv6vemAJ3hYlLn6Q-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
+presentationPDF: 'https://cloud-1kxf64v4t-hack-club-bot.vercel.app/0webospart1.pdf'
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
 ---
 
 ![Capybara OS demo](https://cloud-ir4w2s05f-hack-club-bot.vercel.app/0screenrecording.gif)
-[Live Demo ](https://step8.thomasstubblef2.repl.co/)
+[Live Demo ](https://step8.thomasstubblef2.repl.co/) & 
 [Sample Code](https://replit.com/@ThomasStubblef2/Step8#index.html)  
 
   *(p.s. this is a sample of what your OS might look like at the end of the entire batch, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all. Yours will also have a totally different set of apps by the end of the batch.)*
 
-The OS will be entirely web-based (using HTML, CSS, and JS). You'll be the designer and developer of your OS (so you'll have complete creative freedom). You'll decide the content, style, features, etc. If your website looks totally different from mine by the end of the batch jam, then you've done the Jam well. If it looks the same, go back to the drawing board.
+The Operating System (OS) will be entirely web-based (using HTML, CSS, and JS). An Operating System is the interface & set of logic you use to interact with applications. You'll be the designer and developer of your OS (so you'll have complete creative freedom). You'll decide the content, style, features, etc. If your website looks totally different from mine by the end of the batch jam, then you've done the Jam well. If it looks the same, go back to the drawing board. Your Personal Operating System will be a website you can share with people (friends, club members, people you meet at hackathons, etc) to allow them to easily get a sense of who you are and the type of things you like to do.
 
 **Today you'll be creating an awesome welcome screen for your personalOS. It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product that you'll build upon in subsequent Jams.**
 
@@ -39,10 +39,8 @@ There are six steps/headings in this Jam! Go through each and begin building you
 2. **Build with Elements** *(create elements for your welcome screen)*
 3. **Personalize Your Content** *(make the content personally relevant to you)*
 4. **Style Your Elements** *(make your elements fit your aesthetic)*
-5. **Additional Optional Style Challenges**
 6. **Next Time on Building Your Personal OS**
-
-Awesome  
+  
 ## Enter the Code Editor
 Hey there Hacker! Let's get you setup
 
@@ -74,7 +72,9 @@ Replit will kindly start you off with some boilerplate code (starter code).
 ## Build with Elements
 
 ### What are elements?
-Every site you've ever visited has elements. Try right clicking this site and tapping Inspect, you'll see a bunch of elements. HTML is the file format for these elements.
+Every site you've ever visited has elements. Elements are the building blocks that come together to create websites. For example, this block of text is an element. The gif you'll see below is also an element. Even the container that holds the text you are reading is an element. Try right clicking this site and tapping Inspect, you'll see a bunch of elements. HTML is the file format for these elements.
+
+![Inspect Screen](https://cloud-8ywcul7zm-hack-club-bot.vercel.app/0inspect.gif)
 
 #### What makes an element?
 Elements consist of three parts. 
@@ -85,7 +85,12 @@ Elements consist of an opening tag, the content in the middle, and a closing tag
 *(bagels are a lot like tags or I suppose you could say tags are a lot like bagels... depending on your perspective)*
 
 ### Where can I place them?
-Replit gave you some starter code, but it has some unnecessary elements. Orpheus the Dinosaur *(don't ask who [Orpheus](https://workshops.hackclub.com/orpheus/) is)* asks that you please copy and paste the code below into your project
+
+Let's begin by deleting all the starter code that replit gave you.
+
+![delete starter code](https://cloud-884himjr3-hack-club-bot.vercel.app/0nameswitch.gif)
+
+Orpheus the Dinosaur *(don't ask who [Orpheus](https://workshops.hackclub.com/orpheus/) is)* asks that you please copy and paste the code below into your project
 
 ```
 <!DOCTYPE html>
@@ -187,6 +192,17 @@ Make the text content whatever you would like users to see when they first land 
 
 Select an image for your site that represents you (either literally like a selfie or metaphorically like your favorite creature) by changing the src of the image to a URL or path to your image. 
 
+### Additional Challenge 
+Discover some unique tags on the [W3 Tags Site](https://www.w3schools.com/TAGS/default.asp). There are 100+  tags for you to experiment with. Go dive into the W3 Tags Directory and find some random tags and experiment with them on your site. Have fun :) 
+
+here are some tags we really like:
+* `<s>Strike Through</s>`
+* `<p>break the </br> line like this</p>`
+* `<p>use strong to <strong>bold text</strong></p>`
+* `<p> <dfn>DFN Tag</dfn> is a tag that marks something being defined</p>`
+* `<p><abbr title="abbreviation">abbr</abbr> is a tag that marks an abbreviated term</p>`
+
+
 ### Content Complete
 Okay, so you should now have the content for your "Welcome to My OS" screen and it should feel totally unique to you (i.e. if a friend saw your welcome screen, they would immediately know it was your OS).
 
@@ -221,10 +237,13 @@ Easy, right?
 
 *p.s. you'll notice I used hex (#c9ffcf) instead of the name of a color (red) for the second example. Hex is a format for representing color. You can use either the name of a color or the hex value. To find hex values, try googling "hex color picker"
 
-### Styling Shape
+### Styling Shape & Size
 Images can have styles too!
 
 Your image is probably very large. Let's change the size & shape.
+
+
+**IF YOUR IMAGE IS TOO LARGE OR TOO SMALL, BE SURE TO ADJUST THE HEIGHT AND WIDTH AS IS DONE BELOW** 
 
 Simply go to the image and apply a style property that sets the width and height: 
 
@@ -259,7 +278,7 @@ Note: Semicolons are used to separate css properties
 ### Styling Font
 Adding a font in CSS is easy!
 
-The easiest way to add a font is to visit the [W3 Library of browser-built-in](https://www.w3.org/Style/Examples/007/fonts.en.html) fonts and select one that fits the vibe of your site! 
+The easiest way to add a font is to visit the [W3 Library of browser-built-in fonts](https://www.w3.org/Style/Examples/007/fonts.en.html) and select one that fits the vibe of your site! 
 
 Once you pick out your favorite font(s), go to the body and put a style property of font-family on the opening tag.
 
@@ -303,6 +322,15 @@ If you wanted to add some space within your heading, you could add padding, so p
 ` <h1 style="padding: 4px; margin: 4px; background-color: #000; color: #fff">thomasOS</h1>`
 (you can see the padding added a gap between the walls of the element and the content itself)
 
+### Keep Hacking! 
+
+Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
+
+This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style in the moment of writing the Jam.
+![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
+
+
+
 *Note: with both padding and margin, you can change the spacing in a specific direction by appending -top, -bottom, -right, or -left. For example you could add margin-top: 4px; or padding-left: 16px;*
 
 Alright, lovely! Here's my finished site for this episode of the batch. I hope your site looks nothing like this! Please take the opportunity to have fun with this site and do something wild!
@@ -310,19 +338,6 @@ Alright, lovely! Here's my finished site for this episode of the batch. I hope y
 ![Finished Site](https://cloud-423oznftn-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.27.35_pm.png)
 
 *Note: You'll notice I added some unique looking tags inside the paragraph text, YOU CAN DO THAT TOO BY CHECKING OUT THE SOMEWHAT OPTIONAL ADDITIONAL CHALLENGE BELOW.*
-
-## Additional Challenge (optional-ish)
-Discover some unique tags on the [W3 Tags Site](https://www.w3schools.com/TAGS/default.asp). There are 100+  tags for you to experiment with. Go dive into the W3 Tags Directory and find some random tags and experiment with them on your site. Have fun :) 
-
-here are some ones we really like:
-* `<s>Strike Through</s>`
-* `<p>break the </br> line like this</p>`
-* `<p>use strong to <strong>bold text</strong></p>`
-
-Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
-
-This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style in the moment of writing the Jam.
-![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
 
 
 ## Next time on building your own PersonalOS...

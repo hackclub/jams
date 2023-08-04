@@ -1,7 +1,7 @@
 ---
 part: part-4
 title: 'Maze Game (Part 3/3): Polish & Submit a Pull Request to the Gallery'
-batch: Get Started Making Fun Tile-Based Games With Sprig
+batch: 'sprig'
 description: >
   Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
@@ -17,8 +17,6 @@ notes: ""
 poster: ""
 video: "" 
 ---
-
-# Wrapping Up With Your Game and Creating a Pull Request
 
 Congratulations! If you finished the last part of the Jam and implemented two different game mechanics, you've just created an entirely unique game and learned to implement different game mechanics on your own!
 

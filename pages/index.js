@@ -429,7 +429,7 @@ export default function Index(props) {
         variant="outline"
         color="#993CCF"
         >
-                {batch.keywords.split(", ")[0]}
+                {batch?.keywords?.split(", ")[0]}
 
       </Badge>
       <Badge
