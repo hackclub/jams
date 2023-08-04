@@ -80,7 +80,6 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 3. A preview window that will preview your animation, it should automatically reload if it doesn't press `RUN`
 4. Open the preview on another tab
 
-<!-- SECTION START - DROPDOWN, WHAT IS REPLIT-->
 <Dropdown title="What is replit?">
 	Replit is a web-based independent development environment (IDE). Basically Replit allows you to write code in your browser and instantly deploy it!
 	
@@ -88,15 +87,12 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 		<img src="https://cloud-lnspzc1vi-hack-club-bot.vercel.app/1meme_magic.jpg" width="40%"/>
 	</div>
 </Dropdown>
-<!-- SECTION END - DROPDOWN -->
 
-<!-- SECTION START - DROPDOWN, OPTIONAL TASK -->
 <Dropdown title="Optional Task | Get used to the replit editor">
-	Create an `h1`, `h2`, `h3`, with the text being: `Hello, Orpeus!`<br>
-	You should see the output on the right, preview automatically. Doesn't show? Press `RUN`!<br>
-	After completion remove the lines.<br>
+	Create an `h1`, `h2`, `h3`, with the text being: `Hello, Orpeus!`<br/>
+	You should see the output on the right, preview automatically. Doesn't show? Press `RUN`!<br/>
+	After completion remove the lines.<br/>
 </Dropdown>
-<!-- SECTION END - DROPDOWN -->
 
 So yea, that's everything about replit, that you will need to know!
 Shall we get started with the template?
@@ -409,11 +405,9 @@ Try fiddling with it!
 Well it is task time everyone!
 ![time_meme-dot-jpg](https://cloud-qmjjp049v-hack-club-bot.vercel.app/0meme_time.jpg)
 
-<!-- SECTION START - DROPDOWN, OPTIONAL TASK -->
 <Dropdown title="Task">
 	Add 2 of your own cubes into the scene!
 </Dropdown>
-<!-- SECTION END - DROPDOWN -->
 ## Add Picture as cube surface
 
 Yes you heard that right! Forget the boring colors, let's add real textures!
@@ -482,11 +476,9 @@ audioLoader.load("assets/bg.mp3", function (buffer) {
 Well that is it!
 It will play the `bg.mp3` that is located in the `assets` folder!
 
-<!-- SECTION START - DROPDOWN, OPTIONAL TASK -->
 <Dropdown title="Optional Task">
 	Find your own background lofi music and import it into your project, so you can play it instead.
 </Dropdown>
-<!-- SECTION END - DROPDOWN -->
 ### Camera rotations
 
 I think we can agree that static cameras are boring so let's make ours to rotate!
