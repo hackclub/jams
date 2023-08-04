@@ -202,12 +202,6 @@ here are some tags we really like:
 * `<p> <dfn>DFN Tag</dfn> is a tag that marks something being defined</p>`
 * `<p><abbr title="abbreviation">abbr</abbr> is a tag that marks an abbreviated term</p>`
 
-Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
-
-This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style in the moment of writing the Jam.
-![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
-
-
 
 ### Content Complete
 Okay, so you should now have the content for your "Welcome to My OS" screen and it should feel totally unique to you (i.e. if a friend saw your welcome screen, they would immediately know it was your OS).
@@ -284,7 +278,7 @@ Note: Semicolons are used to separate css properties
 ### Styling Font
 Adding a font in CSS is easy!
 
-The easiest way to add a font is to visit the [W3 Library of browser-built-in](https://www.w3.org/Style/Examples/007/fonts.en.html) fonts and select one that fits the vibe of your site! 
+The easiest way to add a font is to visit the [W3 Library of browser-built-in fonts](https://www.w3.org/Style/Examples/007/fonts.en.html) and select one that fits the vibe of your site! 
 
 Once you pick out your favorite font(s), go to the body and put a style property of font-family on the opening tag.
 
@@ -327,6 +321,15 @@ Let's reduce the margin on the h1 tag
 If you wanted to add some space within your heading, you could add padding, so perhaps make it
 ` <h1 style="padding: 4px; margin: 4px; background-color: #000; color: #fff">thomasOS</h1>`
 (you can see the padding added a gap between the walls of the element and the content itself)
+
+### Keep Hacking! 
+
+Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
+
+This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style in the moment of writing the Jam.
+![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
+
+
 
 *Note: with both padding and margin, you can change the spacing in a specific direction by appending -top, -bottom, -right, or -left. For example you could add margin-top: 4px; or padding-left: 16px;*
 
