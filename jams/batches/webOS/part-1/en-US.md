@@ -12,9 +12,9 @@ timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
-presentation: 'https://www.figma.com/file/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?type=design&node-id=239%3A1286&mode=design&t=5cwsXCx3QrutYqAB-1'
-presentationPlay: 'https://www.figma.com/proto/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?page-id=239%3A1286&type=design&node-id=243-10232&viewport=1172%2C132%2C0.14&t=Sn3rVs7ua8lHiFmk-1&scaling=contain&starting-point-node-id=243%3A10232&mode=design'
-presentationPDF: 'https://cloud-biw2lgdxz-hack-club-bot.vercel.app/0sprigworkshop.pdf'
+presentation: 'https://www.figma.com/file/GKrLB0EfGWDcErrbrO1Wre/webOSPart1?type=design&node-id=0%3A1&mode=design&t=0HHMIeSDMmAzH864-1'
+presentationPlay: 'https://www.figma.com/proto/GKrLB0EfGWDcErrbrO1Wre/webOSPart1?page-id=0%3A1&type=design&node-id=1-14&viewport=-22828%2C193%2C0.29&t=Zv6vemAJ3hYlLn6Q-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
+presentationPDF: 'https://cloud-1kxf64v4t-hack-club-bot.vercel.app/0webospart1.pdf'
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
@@ -202,12 +202,6 @@ here are some tags we really like:
 * `<p> <dfn>DFN Tag</dfn> is a tag that marks something being defined</p>`
 * `<p><abbr title="abbreviation">abbr</abbr> is a tag that marks an abbreviated term</p>`
 
-Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
-
-This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style in the moment of writing the Jam.
-![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
-
-
 
 ### Content Complete
 Okay, so you should now have the content for your "Welcome to My OS" screen and it should feel totally unique to you (i.e. if a friend saw your welcome screen, they would immediately know it was your OS).
@@ -284,7 +278,7 @@ Note: Semicolons are used to separate css properties
 ### Styling Font
 Adding a font in CSS is easy!
 
-The easiest way to add a font is to visit the [W3 Library of browser-built-in](https://www.w3.org/Style/Examples/007/fonts.en.html) fonts and select one that fits the vibe of your site! 
+The easiest way to add a font is to visit the [W3 Library of browser-built-in fonts](https://www.w3.org/Style/Examples/007/fonts.en.html) and select one that fits the vibe of your site! 
 
 Once you pick out your favorite font(s), go to the body and put a style property of font-family on the opening tag.
 
@@ -327,6 +321,15 @@ Let's reduce the margin on the h1 tag
 If you wanted to add some space within your heading, you could add padding, so perhaps make it
 ` <h1 style="padding: 4px; margin: 4px; background-color: #000; color: #fff">thomasOS</h1>`
 (you can see the padding added a gap between the walls of the element and the content itself)
+
+### Keep Hacking! 
+
+Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
+
+This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style in the moment of writing the Jam.
+![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
+
+
 
 *Note: with both padding and margin, you can change the spacing in a specific direction by appending -top, -bottom, -right, or -left. For example you could add margin-top: 4px; or padding-left: 16px;*
 
