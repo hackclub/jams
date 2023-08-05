@@ -1,7 +1,7 @@
 ##  Level 2: Sonic Sagas
 ### Adding Music and Style to your Text Based Adventure Game
 
-![[Copy of Arial.gif | 370]]
+![Adding music and style](https://cloud-3usasijgs-hack-club-bot.vercel.app/0copy_of_arial.gif)
 
 Once again, great job in finishing ***Level 1: The Storyteller's Forge***. Now we're moving on to the second layer of the **pizza**, the *sauce*! A cool add on that gives a kick of flavor! In this level we will be learning how to add background music, sound effects, text animation, and color! 
 
