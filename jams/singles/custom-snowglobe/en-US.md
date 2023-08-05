@@ -11,7 +11,12 @@ language: 'HTML, JS'
 slug: 'custom-snowglobe'
 presentation: 'https://www.figma.com/proto/irzmIKLAgp2DC0Op6LL46d/Snowglobe?type=design&node-id=1-3&t=R9P5nSfR6B0jP1bd-1&scaling=contain&page-id=0%3A1&mode=design'
 presentationPlay: 'https://www.figma.com/file/irzmIKLAgp2DC0Op6LL46d/Snowglobe?type=design&mode=design&t=D4GxfdgxV0G6w8MC-1'
+presentationPDF: 'https://cloud-cgmqkb53u-hack-club-bot.vercel.app/0snowglobe-compressed.pdf'
+notes: 'https://cloud-avh8xhfhk-hack-club-bot.vercel.app/0presentation_notes.pdf'
+poster: 'https://cloud-mura8dz7x-hack-club-bot.vercel.app/0poster.pdf'
 ---
+
+> For the Code Snippets PDF, [click here.](https://cloud-gdufd98x3-hack-club-bot.vercel.app/0code_snippets.pdf)
 
 # Introduction
 Winter is objectively the best season of the year. Hot cocoa, pine trees, family tradition, sledding, and, most importantly, snow, are all favourites from this cozy season. However, winter doesn't last forever, and snow melts, much to the dismay of every five-year-old with a snowman. But, we humans have made a solution... snowglobes!
@@ -26,6 +31,9 @@ So much snow in a small sphere?!? What much more could a person want?
 So, how would you like to create your own, virtual, shareable snowglobe? (I guess you don't have a choice at this point because, spoiler alert, you are doing that right about now...)
 
 ## What We're Making
+
+![https://cloud-782rtf1du-hack-club-bot.vercel.app/0ezgif.com-resize.gif](https://cloud-782rtf1du-hack-club-bot.vercel.app/0ezgif.com-resize.gif)
+
 In this jam, we'll be making a custom, digital snowglobe (as implied by the title!) You'll be able to choose the background, particles, or even the music. [Here's a live demo of what we're building.](https://snowglobe.judahbrown.dev/)
 
 # The Basics
@@ -335,14 +343,14 @@ Anyway, you'll want to download that audio and add it to the website directory (
 </audio>
 ```
 
-Now, select the audio element. Then, add the line `audio.play();` into the `shakeItUp()` function. 
+Now, select the audio element. Then, add the line `music.play();` into the `shakeItUp()` function. 
 
 ```js
 let music = document.getElementById('music')
 ...
 function shakeItUp() {
 	...
-	audio.play()
+	music.play()
 }
 ```
 
