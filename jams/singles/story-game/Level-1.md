@@ -1,3 +1,4 @@
+# Choose Wisely, Code Boldly; Creating a Choice Driven Game in Python
 ## Level 1: The Storyteller's Forge
 ### Create your Text-Based Adventure Game
 
@@ -7,7 +8,7 @@ Here is the example code of what we're going to create!: https://replit.com/@Con
 
 Building a Choose Your Own Adventure Game is kinda like making a **pizza**! First, the base! The most important part, and the thing that holds everything up... *drum roll please...* the story line!
 
-![[Copy of Copy of Arial.gif | 370]]
+![The storyline, the base of all games, is like the dough of a pizza. ](https://cloud-kck0n0txs-hack-club-bot.vercel.app/0copy_of_copy_of_arial.gif)
 
 ## What Makes Text Based Adventure Games SO Playable?
 
@@ -22,7 +23,7 @@ So what's the most important part? Planning.
 
 ## Game Design
 
-![[STORY2.gif]]
+![You need to branch out with Gane Design](https://cloud-d4qej17bj-hack-club-bot.vercel.app/0story2.gif)
 
 ### Choosing a Theme or Setting! 
 
@@ -44,6 +45,7 @@ The best part is the sky's the limit! Keep brainstorming until you find somethin
 Also consider the potential story choices, depth, and player engagement.
 
 ### Planning Game Structure!
+![Planning a player's journey](https://cloud-ojeynixq6-hack-club-bot.vercel.app/0untitled_design-removebg-preview.png)
 
 Define what the game structure by figuring out the overall goal that players will strive to achieve. It can be finding treasure, surviving on an abandoned island, solving a mystery, or saving the world!
 
@@ -52,25 +54,29 @@ In this stage determine the key challenges, events, or puzzles the players will 
 Now figure out your player's choices. Imagine a tree, and each choice is a different branch of the story. Identify these "branching off" points in the narrative where the player's choices will affect the outcome. 
 
 ### Characters!
+![Characters](https://cloud-8yiaur9jb-hack-club-bot.vercel.app/0untitled_design__2_.gif)
 
 This is also a good time to figure out any potential non-player characters (NPC's). These are characters that the player can interact with and can make the storyline richer.  
 
 Here are some tips that can help your character become more fleshed out, relatable, and believable, hooking the user to your game:
 
 - Make your characters have "strong" and or detailed backstories that can include their past experiences, goals, motivations, etc.
-- Give your characters unique personalities! Think about their temperament, speech patterns, quirks. How do they express themselves and relate to others? 
+- Give your characters unique personalities! Think about their temperament, speech patterns, and quirks. How do they express themselves and relate to others? 
 	- When writing their dialogue pay attention to how they speak and their language; make sure it reflects their personality and background.
-- These NPCs can even have a character arc through out the story, or perhaps the user's character can influence them. 
+- These NPCs can even have a character arc throughout the story, or perhaps the user's character can influence them. 
 	- You could even create side quests that allow the user to strengthen their relationship with them allowing the, to unlock other levels. 
 		- This can allow your player to have a more immersive experience.
-- You can also make your characters complex by considering their relationships with other NPC character's in the game or the user's. 
+- You can also make your characters complex by considering their relationships with other NPC characters in the game or the user's. 
 
 Once you're all done writing everything up- let's start programming!
 
 
 ## Setting Up Replit
+![Replit.com Home Page](https://cloud-rmnz8besq-hack-club-bot.vercel.app/0replit_sigh_up.gif) 
 
 Before continuing further, make sure to set up or log in to your https://replit.com account. 
+
+![Create a New Repl](https://cloud-lthzt6trl-hack-club-bot.vercel.app/0untitled_design.gif)
 
 Once there click on 'Create a New Repl'
 
