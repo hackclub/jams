@@ -37,7 +37,8 @@ Here is Replit's Documentation for future Reference: https://docs.replit.com/
 1. Simplicity and Readability: Python's syntax is best known for its readability and simplicity making it a great option for beginners and those who would like a more straightforward language. 
 2. Beginner Friendly: Python's syntax resembles natural language. This allows users to focus on programming concepts more than complex syntax. 
 3. Rapid Development and Prototyping: Python's focus on code simplicity and the availability of powerful libraries allow users to quickly prototype and iterate on ideas.
----
+
+
 # Level 1: The Storyteller's Forge
 ### Create your Text-Based Adventure Game
 
@@ -274,7 +275,6 @@ You have successfully finished ***Level 1: The Storyteller's Forge***! You now h
 Let's add some music and customization options (like colors and text animation!)
 Go to the next level now! 
 
----
 
 #  Level 2: Sonic Sagas
 ### Adding Music and Style to your Text-Based Adventure Game
@@ -482,7 +482,7 @@ You have successfully finished ***Level 2: Sonic Sagas***! You now have your own
 Let's add a Graphical User Interface (GUI) that will allow our player to interact with the game in a different way~ BUTTONS! 
 Go to the next level now! 
 
---- 
+
 # Level 3: GUI,  the Final Boss
 
 ### Creating a Graphical User Interface 
