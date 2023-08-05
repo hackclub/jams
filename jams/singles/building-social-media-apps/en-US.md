@@ -41,7 +41,7 @@ Ideally, you have a basic understanding of HTML, CSS, and JavaScript, but if thi
 <Dropdown title="Brain Fact!">
 The human brain weighs 3 pounds
 </Dropdown>
-The foundation of any social media app is creating and loading some sort of post. Think of any popular social media (Instagram, Reddit, YouTube, or even a recipe app)
+The foundation of any social media app is creating and loading some sort of post. Think of any popular social media (Instagram, Reddit, YouTube, or even a recipe app). Share your ideas with the club!
 
 ## Setting up
 
@@ -416,6 +416,3 @@ That's it! Now you have a working social media app. It's your job to add CSS, mo
  - Change how posts are loaded
  - Change fields
  - Add cosmetic elements
- - ...
-
-*draft 2*
