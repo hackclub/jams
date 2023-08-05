@@ -1,8 +1,7 @@
 ---
 title: 'Make Your First Game with Sprig'
 contributor: 'recursiveforte'
-description: >
-    Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
+description: "Get started making your very first game with the Sprig game engine, using JavaScript! Sprig is a great tool for both beginners and advanced programmers, and if you make a game, you can get a free DIY handheld console! Follow this four-part series in order, and you'll get to make your very own puzzle game."
 video: 'none'
 thumbnail: 'https://cloud-91ormuize-hack-club-bot.vercel.app/03.png'
 keywords: 'Sprig, Games, Game'

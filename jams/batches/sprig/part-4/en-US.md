@@ -1,6 +1,6 @@
 ---
 part: part-4
-title: 'Wrapping Up With Your Game and Creating a Pull Request'
+title: 'Maze Game (Part 3/3): Polish & Submit a Pull Request to the Gallery'
 batch: 'sprig'
 description: >
   Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
