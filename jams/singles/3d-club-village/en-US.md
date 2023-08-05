@@ -10,7 +10,7 @@ keywords: 'Web, 3D, 3D modeling, Spline'
 language: 'Spline'
 presentation: 'https://www.figma.com/file/DYnMTevG5DWxHDcVstUzIE/Jam-Presentation---3D-Club-Village?type=design&node-id=0%3A1&mode=design&t=F8dabi5Vvsa5m6pz-1'
 presentationPlay: 'https://www.figma.com/proto/DYnMTevG5DWxHDcVstUzIE/Jam-Presentation---3D-Club-Village?type=design&node-id=1-2&t=F8dabi5Vvsa5m6pz-0&scaling=contain&page-id=0%3A1'
-presentationPDF: 'https://cloud-fqv7hdkg3-hack-club-bot.vercel.app/0jam_presentation_-_3d_club_village.pdf'
+presentationPDF: 'https://cloud-nd30iq2uv-hack-club-bot.vercel.app/0jam_presentation_-_3d_club_village__1_.pdf'
 notes: ''
 poster: ''
 video: ''
@@ -278,6 +278,11 @@ In the toolbar, select the `Vector` tool. Draw the vertices to form a stone step
 </Grid>
 </Dropdown>
 
+## Optional activity: making assets! 📦
+If you're working in a group and have extra time, this could be really fun to spice up the collaboration: making custom assets to use in each of your islands!
+### The Task
+Each person will create a single asset from scratch—it could be anything from a funny-looking lawn chair to a giant Among Us crewmate statue! The assets that everyone makes will be available for others to use to customize their islands in the following steps.
+
 ## Customizing your island 🎀
 Now you know the basics of Spline, **it's time to start making the island your own**. Transform this basic house into your dream mansion, expand your island with more structures, or start from scratch to build something unique!
 
@@ -326,3 +331,12 @@ Keep in mind that some export options are only available to the paid tiers. 😐
 
 1. In the toolbar, click on "Export". There will be options on the left-hand side for various file formats to export to.
 ![Exporting](https://cloud-ctimzr33x-hack-club-bot.vercel.app/0image.png)
+
+### Jams to do next
+> Looking for more 3D jams? I gotchu!
+
+**[Mastering the Matrix: Crafting Your Own Web-based AR App](/jam/webar-wonderland)**  
+Deploy your 3D models into the metaverse! Learn how to make a web-based AR app in which you can display and manipulate your 3D models from Spline.
+
+**[Crafting Weapons, Shields, and Armor in TinkerCAD](/batch/3d-armory)**  
+TinkerCAD is a great web-based beginner CAD software. Computer aided design (CAD) is often used for designing 3D models for engineering purposes!
