@@ -1,5 +1,6 @@
+# Choose Wisely, Code Boldly; Styling a Choice Driven Game in Python
 ##  Level 2: Sonic Sagas
-### Adding Music and Style to your Text Based Adventure Game
+### Adding Music and Style to your Text-Based Adventure Game
 
 ![Adding music and style](https://cloud-3usasijgs-hack-club-bot.vercel.app/0copy_of_arial.gif)
 
