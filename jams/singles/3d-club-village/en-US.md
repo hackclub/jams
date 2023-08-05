@@ -335,7 +335,7 @@ Keep in mind that some export options are only available to the paid tiers. 😐
 ### Jams to do next
 > Looking for more 3D jams? I gotchu!
 
-**[Mastering the Matrix: Crafting Your Own Web-based AR App](/jam/webar-wonderland)**  
+**[Mastering the Matrix: Crafting Your Own Web-based AR App](/jam/WebAR-Wonderland)**  
 Deploy your 3D models into the metaverse! Learn how to make a web-based AR app in which you can display and manipulate your 3D models from Spline.
 
 **[Crafting Weapons, Shields, and Armor in TinkerCAD](/batch/3d-armory)**  
