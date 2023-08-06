@@ -21,7 +21,7 @@ video: ''
 slug: 'story-game' 
 ---
 # Choose Wisely, Code Boldly; Crafting a Build Your Own Adventure Game!
-{Insert Intro Vid Here}
+Insert Intro Vid Here}
 
 Whether you have programmed your whole life or this is your very first project, there is plenty of fun to be had with creating a Choose 
 Your Own Adventure Game (CYOA)! This build incorporates music, interactive elements, and the ability to control all stylistic features! 
@@ -55,7 +55,7 @@ Here is Replit's Documentation for future Reference: https://docs.replit.com/
 # Level 1: The Storyteller's Forge
 ### Create your Text-Based Adventure Game
 
-{Insert Live Tutorial here}
+Insert Live Tutorial here}
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Beginner-CYOA?v=1
 
@@ -331,7 +331,7 @@ Once again, great job in finishing ***Level 1: The Storyteller's Forge***. Now w
 *sauce*! A cool add-on that gives a kick of flavor! In this level, we will be learning how to add background music, sound effects, text 
 animation, and color! 
 
-{Insert Live Tutorial here}
+Insert Live Tutorial here}
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Intermediate-CYOA?v=1
 
@@ -560,7 +560,7 @@ Go to the next level now!
 Once again, great job in finishing **_Level 2: Sonic Sagas_**. Now we're moving on to the third and **final** layer of the **pizza**, 
 the *cheese*! It's the thing that all of our users will get to see and experience first before the storyline, music, etc. ***THE GUI!*** 
 
-{Insert Live Tutorial here}
+Insert Live Tutorial here}
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Advanced-CYOA?v=1
 
