@@ -501,7 +501,7 @@ html {
 ```
 
 ## Final Demo
-<video src="https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style="max-width: 720px;"></video>
+<video src="https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 
 ## Additional Challenge Hacking! (recommended)
 
