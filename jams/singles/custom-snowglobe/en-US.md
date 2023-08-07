@@ -53,7 +53,6 @@ While some skeletons are spooky-scary, these skeletons are actually really usefu
 ### ⛓ Linking Libraries
 Now, to link the `tsParticles` library.
 tsParticles is available as a single file from JSDeliver. Link to it using a `<script>`  tag at `https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js`.
-(Hint: `<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>`)
 
 ### Lay it all Out
 To lay out our page, we'll be using `div`'s (inside of the `<body>` tag) which allow us to split the page into separate areas. They can be nested inside of each other and stylized with CSS. Let's make a `snowglobe` div with sections `particles` and `ground`...
