@@ -12,9 +12,9 @@ timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
-presentation: 'https://www.figma.com/file/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?type=design&node-id=239%3A1286&mode=design&t=5cwsXCx3QrutYqAB-1'
-presentationPlay: 'https://www.figma.com/proto/iDvJOOXk4chMZQlIIIaDuU/SprigWorkshop?page-id=239%3A1286&type=design&node-id=243-10232&viewport=1172%2C132%2C0.14&t=Sn3rVs7ua8lHiFmk-1&scaling=contain&starting-point-node-id=243%3A10232&mode=design'
-presentationPDF: 'https://cloud-biw2lgdxz-hack-club-bot.vercel.app/0sprigworkshop.pdf'
+presentation: 'https://www.figma.com/file/KxIYo80ojSHmEisOtn6MqC/webOSPart3?type=design&node-id=0%3A1&mode=design&t=oo06lQb0NF9vKcpc-1'
+presentationPlay: 'https://www.figma.com/proto/KxIYo80ojSHmEisOtn6MqC/webOSPart3?page-id=0%3A1&type=design&node-id=1-2&viewport=-3713%2C136%2C0.13&t=wIV03vQshi9kngPz-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
+presentationPDF: 'https://cloud-6elyts7vs-hack-club-bot.vercel.app/0webospart3.pdf'
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
@@ -247,13 +247,18 @@ Awesome
 
 ![Handle Added](https://cloud-l4ck638kz-hack-club-bot.vercel.app/0osmove.gif)
 
-Now it's time for you to customize your handle and make it look hover you'd like. Here are some ideas:
+<Comment githubUser="jianmin-chen">
+Hey... the creator of this Jam missed out on a huge upgrade to the site, but dw, I'll let you in on the inside scoop. You can avoid annoying underlining of the handle text on drag by adding `user-select: none;` & `cursor: grab;`
+</Comment>
+
+Now it's time for you to customize your handle and make it look hover you'd like. Perhaps:
+
 1) Add an icon as an image that conveys that the window can be dragged from that point
 2) Place the handle in the div at the top and style similar to a traditional window
 3) Make the "Handle" text look quite cool and leave it as text
 4) Make it look like a door handle
 
-Note: I highly suggest adding the style property of cursor: move or cursor: grab to your welcomeheader div to make it clear to users that it can be dragged\. 
+
 
 Here's what I decided to do (I hope yours looks nothing like this)
 ![Window Screen Effect](https://cloud-n6ytrol13-hack-club-bot.vercel.app/0gif.gif)
@@ -280,9 +285,7 @@ Here's what I decided to do (I hope yours looks nothing like this)
 ```
 </Dropdown>
 
-<Comment githubUser="jianmin-chen">
-Hey... the creator of this Jam missed out on a huge upgrade to the site, but dw, I'll let you in on the inside scoop. You can avoid annoying underlining of the handle text on drag by adding `user-select: none;` & `cursor: grab;`
-</Comment>
+
 
 ## Opening & Closing The Window
 
