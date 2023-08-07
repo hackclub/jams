@@ -19,6 +19,10 @@ slug: 'online-store'
 
 <video controls style={{width: "400px"}}> <source src="https://cloud-opkznq4e6-hack-club-bot.vercel.app/1store_preview.mp4" type="video/mp4" /></video>
 
+[Sample Figma Design](https://www.figma.com/file/R0x2u5Z0n1wcOAbVVekcei/The-Cow-Charm?type=design&node-id=34%3A423&mode=design&t=68QuGZqGJfs2QT92-1)
+[Interactive Demo](https://www.figma.com/proto/R0x2u5Z0n1wcOAbVVekcei/The-Cow-Charm?page-id=34%3A423&type=design&node-id=34-507&viewport=535%2C362%2C0.09&t=RaHKT5mf6K7wXh1B-1&scaling=scale-down&starting-point-node-id=34%3A507&mode=design)
+
+
 <Dropdown title="psst">
 here's an example of what a finished product might look like! however, your project is going to be completely unique. the feel and flow of your project should be very different ;)
 </Dropdown>
@@ -36,8 +40,7 @@ Otherwise, go back and brainstorm ways to make your project ✨ unique ✨
 
 Today, we'll be designing our website using [**Figma**](https://figma.com/), a design tool to create functional and awesome user interfaces! If you're worried about code, don't worry. There isn't going to be any code yet, you'll have full artistic freedom after we explain Figma's features!
 
-[Sample Figma Design](https://www.figma.com/file/R0x2u5Z0n1wcOAbVVekcei/The-Cow-Charm?type=design&node-id=34%3A423&mode=design&t=68QuGZqGJfs2QT92-1)
-[Interactive Demo](https://www.figma.com/proto/R0x2u5Z0n1wcOAbVVekcei/The-Cow-Charm?page-id=34%3A423&type=design&node-id=34-507&viewport=535%2C362%2C0.09&t=RaHKT5mf6K7wXh1B-1&scaling=scale-down&starting-point-node-id=34%3A507&mode=design)
+
 
 There are **6** important steps in this Jam! Feel free to backtrack and reference old points as you design your dream store!
 
