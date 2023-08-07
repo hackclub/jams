@@ -14,7 +14,7 @@ presentationPDF: ''
 notes: ''
 poster: ''
 video: ''
-slug: 'WebAR-Wonderland'
+slug: 'web-ar'
 ---
 ![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/7image.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/7image.gif)
 
