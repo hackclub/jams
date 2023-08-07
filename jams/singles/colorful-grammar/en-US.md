@@ -1,9 +1,10 @@
 ---
 title: 'Color the Screen with Your Words'
-description: Let your words color the screen as you type!
+description: >
+  Let your words color the screen as you type!
 contributor: 'sahitid'
 originalAuthor: 'MatthewStanciu'
-thumbnail: '[colorful grammar thumbnail final demo](https://cloud-pvpvkpeuc-hack-club-bot.vercel.app/0demo.png)'
+thumbnail: 'https://cloud-pvpvkpeuc-hack-club-bot.vercel.app/0demo.png'
 timeEstimate: '30-45 Min'
 difficulty: 'Beginner'
 keywords: 'color, colorful, grammar, colorful grammar'
@@ -212,7 +213,7 @@ Now that we have a number that we can create an HSL color with, let’s create i
 $('body').css('background-color', `hsl(${color}, 100%, 50%)`)
 ```
 
-(Note: in JavaScript, you can use back-ticks instead of quotation marks and concatenate strings using the ${variable} syntax. The dollar sign next to `hsl` is unrelated to jQuery. Learn more about this syntax [here](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings).)
+(Note: in JavaScript, you can use back-ticks instead of quotation marks and concatenate strings using the `${variable}` syntax. The dollar sign next to `hsl` is unrelated to jQuery. Learn more about this syntax [here](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings).)
 
 Here’s what your entire `script.js` file should look like after this:
 

@@ -1,9 +1,10 @@
 ---
-title: 'Let's Splatter Paint in Your Browser'
-description: Crazy colorful splatter paint in your browser with Paper.js
+title: 'Splatter Paint in Your Browser'
+description: >
+  Crazy colorful splatter paint in your browser with Paper.js
 contributor: 'sahitid'
 originalAuthor: 'MatthewStanciu'
-thumbnail: '[splatter paint thumbnail final demo](https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png)'
+thumbnail: 'https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png'
 timeEstimate: '30-45 Min'
 difficulty: 'Beginner'
 keywords: 'colors, paint, art, splatter paint'
