@@ -1,3 +1,23 @@
+---
+part: part-2
+title: '(Part 2) Giving Your Smart AI Companion a Voice!'  
+batch: 'artificial-intelligence'
+description: >  
+  This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
+contributor: 'sahitid'  
+thumbnail: 'https://cloud-1xtor5uxe-hack-club-bot.vercel.app/0thumbnail_2.png'
+timeEstimate: '45 Min'  
+difficulty: 'Beginner'
+keywords: 'AI, ML, Machine Learning, Artificial Intelligence'  
+language: 'JavaScript, HTML'
+presentation: "" # TODO
+presentationPlay: "" # TODO
+presentationPDF: "" # TODO 
+notes: "" # TODO
+poster: # TODO 
+video: "" # TODO
+---
+
 # Artificial Intelligence and Machine Learning
 ### Part 2/4 | Prerequisite: a little web dev knowledge (HTML, JS, CSS) | 45-60 minutes
 
