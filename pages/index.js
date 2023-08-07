@@ -434,7 +434,7 @@ export default function Index(props) {
       </Badge>
       <Badge
         key="difficultyFeature"
-        mr={2}
+        mr={2} 
         sx={{ cursor: 'pointer', backgroundColor: "#fff", fontSize: ["14px", "auto"] }}
         variant="outline"
         color="#993CCF"

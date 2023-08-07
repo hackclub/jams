@@ -24,6 +24,7 @@ Surpassed my expectations, young one, you have. Confront your fears, you must, f
  
 Today we're going to be making our windows movable and throwing in some JavaScript magic (you'll see later what I mean by this).  Here's what that looks like:
 
+![Sample Outcome Gif](https://cloud-1v30rbp0i-hack-club-bot.vercel.app/00gif.gif)
 
 **Outline:**
 1. **Organizing Our Logic**
@@ -33,7 +34,11 @@ Today we're going to be making our windows movable and throwing in some JavaScri
 5. **Organizing Our Styles**
 
 ## Organizing Our Logic
-Our index.html file is getting a bit messy. As a reminder, this is what my code looked like at the end of the last Jam:
+Our index.html file is getting a bit messy. Let's try splitting our Logic (JavaScript) from our Content (HTML) by moving the JavaScript code to it's own `script.js` file.
+
+![splitting files](https://cloud-pfegd9qpz-hack-club-bot.vercel.app/0twofiles.gif)
+
+As a reminder, this is what my code looked like at the end of the last Jam:
 <Dropdown title="My Code (pls don't copy paste)">
 ```html
 <!DOCTYPE html>
@@ -275,20 +280,15 @@ Here's what I decided to do (I hope yours looks nothing like this)
 ```
 </Dropdown>
 
-*~-~-~-~-~-~-~-~-~-~-*
-**A SPONTANEOUS HACKER NAMED JC APPEARS.**
-
-JC: "Hey... the creator of this Jam missed out on a huge upgrade to the site, but dw, I'll let you in on the inside scoop. You can avoid annoying underlining of the handle text on drag by adding `user-select: none;` & `cursor: grab;`
-
-**JC OUT**  
-_JC Spontaneously disappears_
-*~-~-~-~-~-~-~-~-~-~-*
+<Comment githubUser="jianmin-chen">
+Hey... the creator of this Jam missed out on a huge upgrade to the site, but dw, I'll let you in on the inside scoop. You can avoid annoying underlining of the handle text on drag by adding `user-select: none;` & `cursor: grab;`
+</Comment>
 
 ## Opening & Closing The Window
 
 Alright, so let's break down this challenge
 1) We need a way to toggle whether the window is visible
-	* We can use the display property (which has the property of none)
+	* We can use the display property (which can be set to none)
 
 2) We need to create a function to open the window 
 	* We can pass in an element and enable its visibility

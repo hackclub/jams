@@ -1,4 +1,4 @@
-import { Box, Text, Paragraph, Image } from 'theme-ui';
+import { Box, Text, Link, Paragraph, Image } from 'theme-ui';
 import Icon from '@hackclub/icons'
 
 export default function Comment({ githubUser, children }) {
@@ -19,7 +19,7 @@ export default function Comment({ githubUser, children }) {
         backdropFilter: "blur(16px)",
         zIndex: 4,
       }}>
-        <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <Link href={`https://github.com/${githubUser}`} sx={{ display: "flex", textDecoration: "none", color: "#000", alignItems: "center", gap: "0.5rem" }}>
           <Image
             src={`https://github.com/${githubUser}.png`}
             sx={{
@@ -32,7 +32,7 @@ export default function Comment({ githubUser, children }) {
           <Text sx={{ fontWeight: "bold", fontSize: 1, lineHeight: 1 }}>
             {githubUser}
           </Text>
-        </Box>
+        </Link>
 
         <Box sx={{
           lineHeight: "1.25rem",
