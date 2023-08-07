@@ -1,6 +1,6 @@
 ---
 part: part-3
-title: '(Part 3) Teaching your AI companion to listen to your voice'  
+title: 'Teaching your AI companion to listen to your voice'  
 batch: 'artificial-intelligence'
 description: >  
   This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
@@ -18,7 +18,6 @@ poster: # TODO
 video: "" # TODO
 ---
 
-# Artificial Intelligence and Machine Learning
 ### Part 3/4 | Prerequisite: a little web dev knowledge (HTML, JS, CSS) | 45-60 minutes
 
 Welcome back to our little journey to create a walking talking Orpheus AI Companion *(but of course, your own AI Companion will serve its own purpose to you)*.
@@ -31,7 +30,7 @@ In the first part of the Jams, we used Teachable machine to train a model in ord
 
 In the second part of the Jams, we gave Orpheus a voice! Now instead of printing out a message in the console, our AI Companion would speak and say it out loud.
 
-<video src="https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style="max-width: 720px;"></video>
+<video src="https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 Now in the third part of the Jams, we will allow Orpheus to convert the speech that we say when we talk to it into text.
 
 *Reminder: If you're ever stuck or confused ~~or have a spelling mistake in your code that your IDE isn't catching but continues to break the whole program~~, try asking [AI such as ChatGPT](https://chat.openai.com/) to figure it out for you!*

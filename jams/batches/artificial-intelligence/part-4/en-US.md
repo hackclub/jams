@@ -1,6 +1,6 @@
 ---
 part: part-4
-title: '(Part 4) Giving Your Smart AI Companion a Body and Brain!'  
+title: 'Giving Your Smart AI Companion a Body and Brain!'  
 batch: 'artificial-intelligence'
 description: >  
   This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
@@ -18,7 +18,6 @@ poster: # TODO
 video: "" # TODO
 ---
 
-# Artificial Intelligence and Machine Learning
 ### Part 4/4 | Prerequisite: a little web dev knowledge (HTML, JS, CSS) | 45-60 minutes
 
 ## Let's RECAP
@@ -29,7 +28,7 @@ In the first part of the Jams, we used Teachable machine to train a model in ord
 
 In the second part of the Jams, we gave Orpheus a voice! Now instead of printing out a message in the console, our AI Companion would speak and say it out loud.
 
-<video src="https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style="max-width: 720px;"></video>
+<video src="https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 In the third part of the Jams, we gave Orpheus the power to convert our speech into text.
 
 Now, in the fourth and final part, we will finally incorporate the OpenAI API to utilize the GPT 3.5 model. Ever heard of ChatGPT? OpenAI built it and invested years and billions of dollars to create the dataset that you will be using for your AI Companion.

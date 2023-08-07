@@ -1,6 +1,6 @@
 ---
 part: part-1
-title: '(Part 1) Beginning the Foundation with Machine Learning '  
+title: 'Beginning the Foundation with Machine Learning '  
 batch: 'artificial-intelligence'
 description: >  
   This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
@@ -18,13 +18,11 @@ poster: # TODO
 video: "" # TODO
 ---
 
-
-# Artificial Intelligence and Machine Learning
 ### Part 1/4 | Prerequisite: a little web dev knowledge (HTML, JS, CSS) | 30-45 minutes
 
 So what is artificial intelligence and machine learning? And what can you do with them?
 
-<video src="https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style="max-width: 720px;"></video>
+<video src="https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 *(here's an example of what you'll create by the end of this jams. Your AI & ML model will be unique to you and serve a completely different purpose!)*
 
 **We're going to be making an AI Companion or Smart Voice Assistant in your browser!**
@@ -162,12 +160,10 @@ Now let's implement the model into a program so you can interact with it.
 
 Firstly, let's get setup in the code editor! Head over to the [Replit Website](https://replit.com/languages/html) and create an account.
 
-<details>
-  <summary>
-    What is Replit?
-  </summary>
+
+<Dropdown title="What is Replit?">
 Replit is a web-based independent development environment (IDE). It's essentially a code editor in your browser that will instantly deploy your site to the entire world
-</details>
+</Dropdown>
 
 If you're having difficulty using the site try https://firewalledreplit.com/ or even an alternative like [Glitch](https://glitch.com/)
 
