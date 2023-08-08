@@ -1,7 +1,7 @@
 ---
 part: part-1
 title: 'Preparing Your Forge and Forging the Blade'  
-batch: 3DArmory
+batch: '3d-armory'
 description: >  
   In this Jam, you'll be learning what CAD is, the functions of TinkerCAD, and learning how to make the blade of a medieval sword. You will have fun customizing your blade while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
 contributor: 'thesuperRL'  

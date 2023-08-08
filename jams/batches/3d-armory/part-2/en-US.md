@@ -1,7 +1,7 @@
 ---
 part: 'part-2'
 title: 'Crafting Weapons, Shields, and Armor in TinkerCAD'  
-batch: '3DArmory'
+batch: '3d-armory'
 description: >  
     In this Jam, you will be finishing the hilt of the sword that we made in the last jam part. You will have fun customizing your product while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
 contributor: 'thesuperRL'  
