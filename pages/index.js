@@ -1,5 +1,5 @@
 import Header from '@/components/Header'
-import { Box, Flex, Badge, Container, Grid, Heading, Text, Card } from 'theme-ui'
+import { Box, Image, Flex, Badge, Container, Grid, Heading, Text, Card } from 'theme-ui'
 import Footer from '@/components/Footer'
 import SearchControls from '@/components/Search'
 import PreviewCard from '@/components/PreviewCard'
@@ -328,6 +328,7 @@ export default function Index(props) {
             zIndex: -1
           }}
         />
+        <Image sx={{width: "100%", height: "100%", position: "absolute", mixBlendMode: "color-burn"}} src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"/>
         <Header jams={jams} query={query} setQuery={setQuery} isHomePage={true} />
         <Box
           sx={{ p: 4, textAlign: 'center',          marginTop: "64px",          position: 'relative', zIndex: 2,
