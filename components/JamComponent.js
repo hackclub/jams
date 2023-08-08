@@ -141,10 +141,20 @@ export default function JamComponent({ jam, jamsContent }) {
         </button>
       </Container> */}
 
-      <Container sx={{ p:"1rem"}} style={{ maxWidth:"64rem !important"}}>
-        {/* TEMPORARY BREADCRUMBS */}
-        <Link href="/jam" sx={{ color:"#993CCF", textDecoration:"underline" }}>jam</Link> / <Link href="" sx={{ color:"#993CCF", textDecoration:"underline" }}>{jam.slug}</Link>
-      </Container>
+      
+      {/* So what this code does is checks if batch is null or not. upon null renders the singles breadcrumbs ver, upon non null renders the batch ver */}
+      {jam.batch != null
+        
+          ? (<Container sx={{ p:"1rem"}} style={{ maxWidth:"64rem !important"}}>
+                {/* Structure: root / batch name / part */}
+                <Link href="/" sx={{ color: "#993CCF", textDecoration: "underline" }}>batch</Link> / <Link href={"/batch/" + jam.batch} sx={{ color: "#993CCF", textDecoration: "underline" }}>{jam.batch}</Link> / <Link href={"/batch/" + jam.batch + "/" + jam.part} sx={{ color: "#993CCF", textDecoration: "underline" }}>{jam.part}</Link>
+              </Container>)
+        
+          : (<Container sx={{ p:"1rem"}} style={{ maxWidth:"64rem !important"}}>
+                {/* Structure: root / jam name */}
+                <Link href="/" sx={{ color: "#993CCF", textDecoration: "underline" }}>jam</Link> / <Link href={"/jam/" + jam.slug} sx={{ color: "#993CCF", textDecoration: "underline" }}>{jam.slug}</Link>
+              </Container>)}
+
 
       <Container as="main" sx={{
         px:"1rem",
