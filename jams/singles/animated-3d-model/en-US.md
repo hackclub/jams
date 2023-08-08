@@ -1,3 +1,23 @@
+---
+title: 'Create Your Own Animated 3D Model'
+description: >
+  Animate your own 3D Models.
+contributor: 'zoya-hussain'
+originalAuthor: 'wollygfx'
+thumbnail: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzgzbp7.jpeg'
+timeEstimate: '45min'
+difficulty: 'Beginner'
+keywords: '3D, Animated, Animated 3D Model'
+language: 'JS'
+presentation: ''
+presentationPlay: ''
+presentationPDF: ''
+notes: ''
+poster: ''
+video: ''
+slug: 'animated-3d-model'
+---
+
 Contributors: [@wollygfx](https://github.com/wollygfx "View @wollygfx on GitHub")
 Edited by: [@zsh](https://read.cv/explore)
 Time: 45-50 minutes, Beginner 
