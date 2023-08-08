@@ -29,9 +29,9 @@ export default function App({
           }
         }
       }}>
-      <head>
+      <Head>
         <script defer data-domain="jams.hackclub.com" src="https://plausible.io/js/script.js"></script>
-      </head>
+      </Head>
       <Meta
         as={Head}
         name="Hack Club"
