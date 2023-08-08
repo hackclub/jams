@@ -17,6 +17,7 @@ export default function Comment({ githubUser, children }) {
         border: "2px solid rgba(0,0,0,0.1)",
         borderRadius: "8px",
         backdropFilter: "blur(16px)",
+        bg:"rgb(255,255,255,0.50)",
         zIndex: 4,
       }}>
         <Link href={`https://github.com/${githubUser}`} sx={{ display: "flex", textDecoration: "none", color: "#000", alignItems: "center", gap: "0.5rem" }}>
