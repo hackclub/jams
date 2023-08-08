@@ -19,7 +19,7 @@ slug: 'animated-3d-model'
 ---
 
 Contributors: [@wollygfx](https://github.com/wollygfx "View @wollygfx on GitHub")
-Edited by: [@zsh](https://read.cv/explore)
+Edited by: [@zsh](https://read.cv/zoyashussain)
 Time: 45-50 minutes, Beginner 
 ****
 > It's time to start modelling! In this Jam, we'll be developing 3D models with the JavaScript library [Zdog](https://zzz.dog/#made-with-zdog). You ready? Let's go!
