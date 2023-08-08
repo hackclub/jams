@@ -17,7 +17,7 @@ presentationPlay: 'https://www.figma.com/proto/GzkGDAybZ9hO1AHfWMMvAR/CYOA-New-J
 presentationPDF: 'https://cloud-b7pr0h6i7-hack-club-bot.vercel.app/0cyoa_new_jam_presentation.pdf'  
 notes: ''  
 poster: ''  
-video: ''  
+video: 'https://cloud-9mn1z1s9z-hack-club-bot.vercel.app/0coose_your_own_adventure_game.mp4'  
 slug: 'story-game' 
 ---
 # Choose Wisely, Code Boldly; Crafting a Build Your Own Adventure Game!
@@ -55,15 +55,15 @@ Here is Replit's Documentation for future Reference: https://docs.replit.com/
 # Level 1: The Storyteller's Forge
 ### Create your Text-Based Adventure Game
 
-Insert Live Tutorial here}
+<video src="https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Beginner-CYOA?v=1
 
 Building a Choose Your Own Adventure Game is kinda like making a **pizza**! First, the base! The most important part, and the thing that 
-holds everything up... *drum roll please...* the story line!
+holds everything up... *drum roll please...* the storyline!
 
-![The storyline, the base of all games, is like the dough of a pizza. ](https://cloud-kck0n0txs-hack-club-
-bot.vercel.app/0copy_of_copy_of_arial.gif)
+![The storyline, the base of all games, is like the dough of a pizza. ](https://cloud-kck0n0txs-hack-club-bot.vercel.app/0copy_of_copy_of_arial.gif)
 
 ## What Makes Text Based Adventure Games SO Playable?
 
@@ -203,11 +203,11 @@ while gameStart == "yes":
     # this is a comment, something that will not appear in the 
       final game
     # It is great for taking notes and explaining code!
-    # add all game related content inside this loop
+    # add all game-related content inside this loop
 
     print("Welcome to La Mia Pizzeria Preferita!")
     print("What would you like for your toppings? Potatoes or 
-          Champignon Mushrooms")
+    Champignon Mushrooms")
 
     gameStart = input("Would you like to restart? ")
 
@@ -246,28 +246,28 @@ gameStart = "yes"
 
 while gameStart == "yes":
 
-    # this is a comment, something that will not appear in the 
-      final game
+    # this is a comment, something that will not appear in the final game
     # It is great for taking notes and explaining code!
     # add all game related content inside this loop
 
     print("Welcome to La Mia Pizzeria Preferita!")
     print("What would you like for your toppings? Potatoes or 
-          Champignon Mushrooms")
+    Champignon Mushrooms")
 
     pizza_choice = input("Please choose one > ")
 
     if pizza_choice == "Potatoes":
         print("You chose" + pizza_choice + "! That's delicious!
-              Coming right up!")
+        Coming right up!")
 
     elif pizza_choice == "Champignon Mushrooms":
 	        print("You chose" + pizza_choice + "! It is a fan   
-	              favorite!")
+	        favorite!")
 
     else:
         print("Sorry we do not have that item. Come back another 
-              time.")
+        time.")
+
     gameStart = input("Would you like to restart? ")
 
 ```
@@ -331,7 +331,7 @@ Once again, great job in finishing ***Level 1: The Storyteller's Forge***. Now w
 *sauce*! A cool add-on that gives a kick of flavor! In this level, we will be learning how to add background music, sound effects, text 
 animation, and color! 
 
-Insert Live Tutorial here}
+<video src="[https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4](https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4)" controls="controls" style={{maxWidth: "720px"}}></video>
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Intermediate-CYOA?v=1
 
@@ -398,7 +398,7 @@ Free Download / Stream: https://get.slip.stream/p2t2Ot
 from replit import audio
 
 def backGround():
-	    source = audio.play_file('Mezzogiorno.mp3')
+    source = audio.play_file('Mezzogiorno.mp3')
   
 gameStart = "yes"
 while gameStart == "yes":
@@ -425,11 +425,11 @@ from replit import audio
 import time
 
 def backGround():
-	source = audio.play_file('Mezzogiorno.mp3')
+    source = audio.play_file('Mezzogiorno.mp3')
 
 def pop():
-	source = audio.play_file('Pop.mp3')
-	time.sleep(2)
+    source = audio.play_file('Pop.mp3')
+    time.sleep(2)
   
 gameStart = "yes"
 while gameStart == "yes":
@@ -469,16 +469,16 @@ from replit import audio
 import time
 
 def typewriter(text):
-  for letter in text:
-    print(letter, end="", flush=True)
-    time.sleep(0.05)
+    for letter in text:
+       print(letter, end="", flush=True)
+       time.sleep(0.05)
     
 def backGround():
-	source = audio.play_file('Mezzogiorno.mp3')
+    source = audio.play_file('Mezzogiorno.mp3')
 
 def pop():
-	source = audio.play_file('Pop.mp3')
-	time.sleep(2)
+    source = audio.play_file('Pop.mp3')
+    time.sleep(2)
   
 gameStart = "yes"
 while gameStart == "yes":
@@ -508,7 +508,7 @@ We should have something like this:
 import termcolor
 
 def change_color(text, color):
-  termcolor.cprint(text, color)
+    termcolor.cprint(text, color)
   
 ```
 
@@ -519,16 +519,16 @@ from replit import audio
 import time
 
 def typewriter(text):
-  for letter in text:
-    print(letter, end="", flush=True)
-    time.sleep(0.05)
+    for letter in text:
+        print(letter, end="", flush=True)
+        time.sleep(0.05)
     
 def backGround():
-	source = audio.play_file('Mezzogiorno.mp3')
+    source = audio.play_file('Mezzogiorno.mp3')
 
 def pop():
-	source = audio.play_file('Pop.mp3')
-	time.sleep(2)
+    source = audio.play_file('Pop.mp3')
+    time.sleep(2)
   
 gameStart = "yes"
 while gameStart == "yes":
@@ -559,8 +559,6 @@ Go to the next level now!
 
 Once again, great job in finishing **_Level 2: Sonic Sagas_**. Now we're moving on to the third and **final** layer of the **pizza**, 
 the *cheese*! It's the thing that all of our users will get to see and experience first before the storyline, music, etc. ***THE GUI!*** 
-
-Insert Live Tutorial here}
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Advanced-CYOA?v=1
 
@@ -653,7 +651,7 @@ Next let's `def` our `submit_name` that we talked about earlier (while this is f
 question where the user input is unique)
 ```py
 def submit_name():
-	global points
+    global points
 
 	# retrieving user input to store in widget name_entry
     name = name_entry.get()
@@ -664,7 +662,7 @@ def submit_name():
     
     # what the user sees
     typewriter(f"Hey {name}, now it's time to choose a morning 
-               activity!", output_text)
+    activity!", output_text)
     
     # move on to the next frame and get current 
     name_frame.pack_forget()
@@ -686,13 +684,13 @@ def select_activity(activity):
         print_points()
         
         typewriter("\nYou go to the beach but boating is the only 
-                   thing available. You get a boat. Things are
-                   going smoothly until your motor gives out.", 
-                   output_text)
+        thing available. You get a boat. Things are
+        going smoothly until your motor gives out.", 
+        output_text)
         
         typewriter("\nYou have two options: SOS (try to flag down a 
-                   boat for help) or fix (fix the motor 
-                   yourself).\n", output_text)
+        boat for help) or fix (fix the motor 
+        yourself).\n", output_text)
         
         activity_frame.pack_forget()
         helpSwim_frame.pack()
@@ -702,20 +700,20 @@ def select_activity(activity):
         print_points()
         
         typewriter("\nThere are no trail leaders available at this 
-                   time. Try again later!", output_text)
+        time. Try again later!", output_text)
         
     elif activity == "volunteer":
         add_points(5)
         print_points()
         
         typewriter("\nUnfortunately, they are still setting up 
-                   different volunteer opportunities. You decide to 
-                   rest in the shade and read a book.", output_text)
+        different volunteer opportunities. You decide to 
+        rest in the shade and read a book.", output_text)
         
     else:
         
         typewriter("\nUnfortunately, this activity is closed for 
-                   the day for repairs.", output_text)
+        the day for repairs.", output_text)
         
         add_points(5)
         print_points()
