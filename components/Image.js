@@ -6,7 +6,7 @@ const Image = ({ src, alt }) => (
   <img
     src={src} alt={alt}
     style={{
-      width: "100%",
+      maxHeight: "33vh",
       // maxWidth: "calc(100vw - 32px)",
       objectFit: "contain",
       borderRadius: "8px",

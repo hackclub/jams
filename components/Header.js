@@ -211,7 +211,7 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
         </Box>
 
         <Link href="https://github.com/hackclub/jams" target="_blank" style={{ marginLeft: '110px' }} sx={{ color: isHomePage ? `rgba(calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), 1)` : '#000',                     "&:hover": {
-                      color: '#993CCF', // Set text color to purple on hover
+                      color: scrollPosition != 0 ? ('#993CCF') : ("#fff"), // Set text color to purple on hover
                     }, }}>
           <Icon glyph="github" />
         </Link>
