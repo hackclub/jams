@@ -14,7 +14,7 @@ presentationPDF: 'https://cloud-c4phbrzty-hack-club-bot.vercel.app/0comicbookai.
 notes: 'https://hackmd.io/l3VKBJluTM2tdP40TDFCIw'
 poster: 'https://cloud-h5osxqcta-hack-club-bot.vercel.app/0build_your_own_comic_book_with_ai.pdf'
 video: ''
-slug: 'comic-book-ai'
+slug: 'web-ai-comic'
 ---
 
 > 50-60 minutes, easy difficulty.
