@@ -18,6 +18,7 @@ presentationPDF: 'https://cloud-6elyts7vs-hack-club-bot.vercel.app/0webospart3.p
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
+totalParts: 5
 ---
 
 Surpassed my expectations, young one, you have. Confront your fears, you must, for a Jedi JavaScript master you have the potential to become.

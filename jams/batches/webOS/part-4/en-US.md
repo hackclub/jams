@@ -18,6 +18,7 @@ presentationPDF: 'https://cloud-biw2lgdxz-hack-club-bot.vercel.app/0sprigworksho
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
+totalParts: 5
 ---
 Aye there mate, welcome to the forth Jam in this Batch. We're quite impressed by your resilience. Surely you're a bit impressed with yourself as well.
 

@@ -18,6 +18,7 @@ presentationPDF: 'https://cloud-biw2lgdxz-hack-club-bot.vercel.app/0sprigworksho
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
+totalParts: 5
 ---
 
 You didn't know it, but you've been riding a bike with training wheels. It's time we take off those training wheels and let you ride into the wind...
