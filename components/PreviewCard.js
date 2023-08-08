@@ -32,7 +32,7 @@ export default function PreviewCard({
       <Box onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} style={{cursor: "pointer"}} {...props}>
         <Box sx={{ borderRadius: '16px' }}>
         {isHovered ? (
-        <Box sx={{position: "absolute", marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
+        <Box sx={{position: "absolute", zIndex: 1, marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
         {part != "0" ? (
         <Badge
         key="partFeature"
@@ -88,6 +88,7 @@ export default function PreviewCard({
           sx={{
             width: '100%',
             aspectRatio: '16/9',
+            zIndex: 0,
             objectFit: 'cover',
             background:
               'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat',
