@@ -206,7 +206,9 @@ export default function JamComponent({ jam, jamsContent }) {
                 src={`https://github.com/${jam.contributor}.png`}
                 sx={{ width:"1.5rem", borderRadius:"9999px" }}
               />
-              <span sx={{ fontWeight:"bold", color:"rgb(115 115 115)" }}>
+              <span sx={{ fontWeight:"bold", color:"rgb(115 115 115)", "&:hover": {
+                      color: '#993CCF', // Set text color to purple on hover
+                    } }}>
                 {jam.contributor}
               </span>
             </div>
@@ -235,7 +237,11 @@ export default function JamComponent({ jam, jamsContent }) {
               <img src={`https://github.com/${jam.contributor}.png`} sx={{ width:"3rem", height:"3rem", borderRadius:"9999px" }} />
               <div>
                 <Link href={`https://github.com/${jam.contributor}`} target="_blank" rel="noopener noreferrer" sx={{ textDecoration:"none"}}>
-                  <div sx={{ display:"flex", alignItems:"end", gap:"0.25rem", mt:"0.25rem", color:"rgb(115 115 115)", }}>
+                  <div sx={{ display:"flex", alignItems:"end", gap:"0.25rem", mt:"0.25rem", color:"rgb(115 115 115)",                     "&:hover": {
+                      color: '#993CCF', // Set text color to purple on hover
+                      borderColor: "#993CCF",
+                      opacity: 1
+                    }, }}>
                     <span sx={{ fontSize:"1.1rem", lineHeight:"1rem", fontWeight:"bold" }}>
                       {jam.contributor}
                     </span>
@@ -247,11 +253,16 @@ export default function JamComponent({ jam, jamsContent }) {
                 <div sx={{ display:"flex", gap:"0.75rem", mt:"0.1rem" }}>
                   <Link
                     href={``}
-                    sx={{ display:"flex", alignItems:"center", gap:"0.25rem", color:"#993CCF", textDecoration:"underline" }}
+                    sx={{ display:"flex", opacity: 0.5, border: "1px solid #000", fontSize: "15px", padding: ["1px 12px", "1px 8px"], marginTop: "4px", backgroundColor: "#fff", borderRadius: "8px", textDecoration: "none", alignItems:"center", gap:"0.25rem",           color: '#000', // Set initial text color to black
+                    "&:hover": {
+                      color: '#993CCF', // Set text color to purple on hover
+                      borderColor: "#993CCF",
+                      opacity: 1
+                    }, }}
                     target="_blank" rel="noopener noreferrer"
                   >
-                    <Icon glyph="slack" style={{ height: '20px', width: '20px' }} />
-                    <span>DM on Slack</span>
+                    <Icon glyph="slack" style={{ height: '20px', width: '20px', padding: "0px" }} />
+                    <span style={{textDecoration: "none"}}>Message on Slack</span>
                   </Link>
                 </div>
               </div>
@@ -276,6 +287,7 @@ export default function JamComponent({ jam, jamsContent }) {
                       paddingBottom: '5px',
                       borderRadius: '8px',
                       bg: '#fff',
+                      
                     }}
                   >
                     <Text sx={{ textDecoration: 'none' }}>Presentation</Text>

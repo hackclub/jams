@@ -78,7 +78,7 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
                 borderRadius: '32px',
                 border: '1px solid #8492a6',
                 cursor: 'pointer',
-                color: '#3c4858',
+
               }}
                 onClick={() => {
                   let {asPath} = router; // accesses the url path right now
@@ -210,7 +210,9 @@ export default function Header({ isHomePage = false, back, query, setQuery, jams
           )}
         </Box>
 
-        <Link href="https://github.com/hackclub/jams" target="_blank" style={{ marginLeft: '110px' }} sx={{ color: isHomePage ? `rgba(calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), 1)` : '#000' }}>
+        <Link href="https://github.com/hackclub/jams" target="_blank" style={{ marginLeft: '110px' }} sx={{ color: isHomePage ? `rgba(calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), 1)` : '#000',                     "&:hover": {
+                      color: '#993CCF', // Set text color to purple on hover
+                    }, }}>
           <Icon glyph="github" />
         </Link>
       </Container>
