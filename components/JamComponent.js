@@ -153,22 +153,36 @@ export default function JamComponent({ jam, jamsContent }) {
         gap:"3rem",
       }} style={{ maxWidth:"64rem !important"}}>
         <div sx={{ flex:"1 1 0%" }}>
-          <Box>
+
+        {jam.presentationPDF != "" && jam.video == "" && 
+                      <div style={{ width: '100%', aspectRatio: "16/9", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: '24px', overflow: "hidden" }}>
+                      <PresentationSlider presentationPlay={jam.presentationPlay} presentation={jam.presentation} pdfPath={jam.presentationPDF} />
+                    </div> 
+        }
+        {jam.video != "" && jam.presentationPDF == "" && 
+                      <div style={{ width: '100%', aspectRatio: "16/9", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: '24px', overflow: "hidden" }}>
+              <video style={{ width: '100%', borderRadius: '0px 0px 24px 24px', aspectRatio: '16/9', backgroundColor: '#000' }} controls src={jam.video} />
+                    </div> 
+        }
+        {jam.presentationPDF != "" && jam.video != "" && 
+
+          (<Box>
+
             <Box style={{display: "flex", borderRadius: '24px 24px 0px 0px', justifyContent: "center", backgroundColor: "#e0e6ed", gap: "32px"}}>
               <Box style={{display: "flex", border:"1px solid #e0e6ed", padding: "2px", backgroundColor: "#fff", marginTop: "8px", marginBottom: "8px", backgroundColor: "#f9fafc", gap: "16px", padding: "4px 16px", borderRadius: "16px"}}>
               <p onClick={() => setPresentationSelected(true)} style={{cursor: "pointer",  border:"1px solid #e0e6ed", marginBottom: "2px", marginTop: "2px", backgroundColor: presentationSelected ? ("#F1E8FF") : ("#F6F6F6"), color: presentationSelected ? ("#993CCF") : ("#000"), width: "120px", alignItems: "center", display: "flex", justifyContent: "center", paddingTop: "4px", paddingBottom: "4px", borderRadius: "8px"}}>Presentation</p>
               <p onClick={() => setPresentationSelected(false)} style={{cursor: "pointer", border:"1px solid #e0e6ed", marginBottom: "2px", marginTop: "2px", backgroundColor: !presentationSelected ? ("#F1E8FF") : ("#F6F6F6"), color: !presentationSelected ? ("#993CCF") : ("#000"), width: "120px", alignItems: "center", display: "flex", justifyContent: "center", paddingTop: "4px", paddingBottom: "4px", borderRadius: "8px"}}>Video</p>
               </Box>
             </Box>
-
-            {presentationSelected ?            
+            {(presentationSelected ?            
               <div style={{ width: '100%', aspectRatio: "16/9", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: '0px 0px 24px 24px', overflow: "hidden" }}>
                 <PresentationSlider presentationPlay={jam.presentationPlay} presentation={jam.presentation} pdfPath={jam.presentationPDF} />
               </div>
             :
               <video style={{ width: '100%', borderRadius: '0px 0px 24px 24px', aspectRatio: '16/9', backgroundColor: '#000' }} controls src={jam.video} />
-            }
-          </Box>
+            )}
+          </Box>)}
+            
           <Box style={{ marginTop: 8 }}>
             <Badge
               key="keywordFeature"

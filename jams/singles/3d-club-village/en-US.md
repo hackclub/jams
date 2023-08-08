@@ -13,7 +13,7 @@ presentationPlay: 'https://www.figma.com/proto/DYnMTevG5DWxHDcVstUzIE/Jam-Presen
 presentationPDF: 'https://cloud-nd30iq2uv-hack-club-bot.vercel.app/0jam_presentation_-_3d_club_village__1_.pdf'
 notes: ''
 poster: ''
-video: ''
+video: 'https://cloud-2jto14u7d-hack-club-bot.vercel.app/0vid_20221230_184903086.mp4'
 slug: '3d-club-village'
 ---
 
