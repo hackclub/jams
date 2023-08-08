@@ -1,5 +1,5 @@
 ---
-title: "Create INFINITE ART with MATH (and code)"
+title: "Create Abstract Animated Art with Math and Code"
 description: >  
   In this jam, you'll learn about the Mandelbrot set, and how to render it (and other fractals!) in realtime using ShaderToy.
 contributor: 'NalinPlad'  

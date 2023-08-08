@@ -43,8 +43,9 @@ export default function App({
         as={Head}
         name="Hack Club"
         title="Jams"
-        description="Learn how to build and ship with Jams!"
-        image=""
+        description="Collaborative coding workshops for clubs where sparks ignite,
+        fears dissolve, and inventions come to life."
+        image="https://cloud-kmjdr71cm-hack-club-bot.vercel.app/0hack_club_assemble_ltnj_00622.jpg"
         color="#ec3750"
       />
       <Component {...pageProps} />
