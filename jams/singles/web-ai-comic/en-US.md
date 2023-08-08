@@ -3,7 +3,7 @@ title: 'Create Your Own Comic Book with AI'
 description: >
     In this jam, we'll be using ChatGPT to generate the text of a children's comic, and use Stable Diffusion to create pictures for the comic. Both ChatGPT and Stable Diffusion are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 contributor: 'ganning127'
-thumbnail: 'https://cloud-aryjfx0lv-hack-club-bot.vercel.app/0gradiojam__2_.png'
+thumbnail: 'https://cloud-mbryeyf6a-hack-club-bot.vercel.app/0thumbnail__2_.png'
 timeEstimate: '55 Min'
 difficulty: 'Easy'
 keywords: 'ChatGPT, Stable Diffusion, HTML, CSS'
@@ -14,17 +14,22 @@ presentationPDF: 'https://cloud-c4phbrzty-hack-club-bot.vercel.app/0comicbookai.
 notes: 'https://hackmd.io/l3VKBJluTM2tdP40TDFCIw'
 poster: 'https://cloud-h5osxqcta-hack-club-bot.vercel.app/0build_your_own_comic_book_with_ai.pdf'
 video: ''
-slug: 'web-ai-comic'
+slug: 'comic-book-ai'
 ---
+
+> 50-60 minutes, easy difficulty.
 
 Hey hacker, welcome to the land of writing and drawing, or rather, using **AI to write and draw for you**! 👋 In this jam, we'll be using **ChatGPT** to generate the text of a children's comic, and use **Stable Diffusion** to create pictures for the comic. Both ChatGPT and Stable Diffusion  are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 
 This jam will take you from 0 to a ChatGPT and AI model "Hero":
 ![](https://cloud-a10rlmpqz-hack-club-bot.vercel.app/0image.png)
 
-As an example, here is an example of what your finished storybook may look like!
+As an example, here is an example of what your finished storybook may look like ([alex-gets-his-private-pilot-license.ganningxu.repl.co](https://alex-gets-his-private-pilot-license.ganningxu.repl.co))!
 
 ![](https://cloud-d9ibqv1p3-hack-club-bot.vercel.app/0screen_recording_2023-08-01_at_12.26.59_pm__2_.gif)
+
+If you're interested, here's another comic that I made with ChatGPT and DALL-E ([robotics-mayhem.ganningxu.repl.co](https://robotics-mayhem.ganningxu.repl.co/))
+![](https://cloud-dau1tq7mx-hack-club-bot.vercel.app/0screen_recording_2023-08-08_at_7.06.00_pm.gif)
 
 Keep in mind that your result will be completely different. In fact, if it is the same, you're probably doing something wrong :) With that said, here are some resources that you may find helpful!
 
@@ -587,10 +592,10 @@ Also, if you have no experience with web development, don't panic, we'll walk yo
 1. Let's get the images and text you uploaded onto your site!
 3. Click into `index.html` on the file pane
 4. On line 12, replace "Comic Title Goes Here" with the title of your comic. 
-5. Replace `<source>` with the filename of your first image. 
+5. Replace "<source>" with the filename of your first image. 
 6. Next, replace "description goes here" with the ChatGPT generated text for the first section. 
-7. Scroll down, and do the same with `<source 2>` and "description 2 goes here"
-8. Repeat the process by replacing `<source x>` and "description x goes here" until you finish the last one (8).
+7. Scroll down, and do the same with "<source 2>" and "description 2 goes here"
+8. Repeat the process by replacing "<source x>" and "description x goes here" until you finish the last one (8).
 
 
 For example, since the filename of my first image is called `img1.png` and filename of my second image is `img2.jpeg`, my `index.html` file looks like: 
@@ -617,3 +622,5 @@ If you're feeling adventurous (or just want to learn something new), here are so
 - **Add a description**: You can add a description to your comic by adding a `<meta>` tag to your `index.html` file. You can learn more about the `<meta>` tag [here](https://www.w3schools.com/tags/tag_meta.asp).
 - **Add a background color**: You can add a background color to your comic by adding a `<body>` tag to your `index.html` file. You can learn more about the `<body>` tag [here](https://www.w3schools.com/tags/tag_body.asp).
 - **Add a background image**: You can add a background image to your comic by adding a `<body>` tag to your `index
+
+
