@@ -78,7 +78,7 @@ export default function PreviewCard({
             <Box sx={{borderRadius: "16px", overflow: 'hidden',             width: '100%',
             aspectRatio: '16/9',
             objectFit: 'cover',}}>
-            {thumbnail.includes(".gif") ? (
+            {thumbnail.includes(".gif") && part == "0" ? (
         <ReactFreezeframe
           src={thumbnail}
           options={{

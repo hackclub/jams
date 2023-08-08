@@ -1,5 +1,5 @@
 ---
-title: 'Design Your Own ECommerce Store'
+title: 'Design Your Own Digital Store'
 description: >
   In this jam, you'll be designing your own online store with Figma! In the next jam, we'll be using the Shopify API to turn this into a real store.
 contributor: 'ryanchou-dev'
