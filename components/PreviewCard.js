@@ -1,6 +1,10 @@
 import { Box, Text, Card, Badge, Image } from 'theme-ui'
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 
+const ReactFreezeframe = dynamic(() => import('react-freezeframe'), {
+  ssr: false,
+});
 export default function PreviewCard({
   title,
   thumbnail,
@@ -14,6 +18,15 @@ export default function PreviewCard({
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
+
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <>
       <Box onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} style={{cursor: "pointer"}} {...props}>
@@ -62,17 +75,35 @@ export default function PreviewCard({
         {timeEstimate}
       </Badge>
             </Box>) : (<Box></Box>)}
-          <Image
-            src={thumbnail}
-            sx={{
-              width: '100%',
-              borderRadius: '16px',
-              aspectRatio: "16/9",
-              objectFit: "cover",
-              background:
-                'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat'
-            }}
-          />
+            <Box sx={{borderRadius: "16px", overflow: 'hidden',             width: '100%',
+            aspectRatio: '16/9',
+            objectFit: 'cover',}}>
+            {thumbnail.includes(".gif") ? (
+        <ReactFreezeframe
+          src={thumbnail}
+          options={{
+            overlay: false, // Optional: Show overlay play icon
+            trigger: 'hover', // Use 'hover' to trigger animation on hover
+          }}
+          sx={{
+            width: '100%',
+            aspectRatio: '16/9',
+            objectFit: 'cover',
+            background:
+              'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat',
+          }}
+        />) : (        <Image
+          src={thumbnail}
+
+          sx={{
+            width: '100%',
+            aspectRatio: '16/9',
+            objectFit: 'cover',
+            background:
+              'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat',
+          }}
+        />)}
+        </Box>
         </Box>
         <Text as="h2" sx={{ fontSize: 28, lineHeight: 1.2, fontWeight: '600' }}>
           {title}
@@ -81,3 +112,4 @@ export default function PreviewCard({
     </>
   )
 }
+

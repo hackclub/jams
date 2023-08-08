@@ -2255,6 +2255,11 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-freezeframe@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-freezeframe/-/react-freezeframe-5.0.2.tgz#e1f00dcd1d89827f6de960318552a969feb867e6"
+  integrity sha512-UOabWMDpklR6Kx/nXw89NzD4IqUdM/wkrMUTOpP7otT/9qfvQOnWsIIqXj9QHt4LwJFYKGBRUJqNh+o/V6Yhow==
+
 react-highlight@^0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/react-highlight/-/react-highlight-0.15.0.tgz#66749d01969853327d499959558f9468330cd9d8"
