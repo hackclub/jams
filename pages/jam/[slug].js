@@ -90,6 +90,7 @@ export async function getStaticProps({ params }) {
 
 export default function JamPage({ jam, jamsContent }) {
   return (
+    
     <JamComponent jam={jam} jamsContent={jamsContent}/>
   );
 }

@@ -7,6 +7,8 @@ import { MDXRemote } from 'next-mdx-remote';
 import mdxComponents from '@/components/mdxComponents';
 import { Container, Text, Link, Box, Grid, Badge } from 'theme-ui';
 import Header from '@/components/Header';
+import Meta from '@hackclub/meta'
+import Head from 'next/head'
 
 export default function JamComponent({ jam, jamsContent }) {
 
@@ -59,6 +61,15 @@ export default function JamComponent({ jam, jamsContent }) {
   
     return (
       <div>
+
+<Meta
+  as={Head}
+  name={jam.title}
+  title={jam.title}
+  description={jam.description}
+  image={jam.thumbnail}
+  color="#ec3750"
+/>
         <Header query={query} setQuery={setQuery} jams={jamsContent.singles
           .filter((jam) => 
           { 

@@ -29,6 +29,7 @@ export default function App({
           }
         }
       }}>
+
       <Meta
         as={Head}
         name="Hack Club"

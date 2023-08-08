@@ -10,6 +10,8 @@ import PreviewCard from '@/components/PreviewCard'
 import Footer from '@/components/Footer';
 import { useState } from 'react'
 import JamComponent from '@/components/JamComponent';
+import Meta from '@hackclub/meta'
+import Head from 'next/head'
 
 function getJams(fs, directory) {
   const filenames = fs.readdirSync(directory);
@@ -89,6 +91,14 @@ export default function Page({ batch, params, jams }) {
 
     const router = useRouter();
   return     <div>
+  <Meta
+  as={Head}
+  name={batch.title}
+  title={batch.title}
+  description={batch.description}
+  image={batch.thumbnail}
+  color="#ec3750"
+/>
   <Header setQuery={setQuery} query={query} jams={jams.singles} back={`/`} />
 
 <Container sx={{paddingTop: "96px"}}>
