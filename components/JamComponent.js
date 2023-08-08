@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Icon from '@hackclub/icons';
 import { Link as ScrollLink, Element } from 'react-scroll';
 import PresentationSlider from '@/components/presentationSlider';
+import BatchPartSlider from '@/components/BatchPartSlider';
 import { MDXRemote } from 'next-mdx-remote';
 import mdxComponents from '@/components/mdxComponents';
 import { Container, Text, Link, Box, Grid, Badge } from 'theme-ui';
@@ -244,7 +245,10 @@ export default function JamComponent({ jam, jamsContent }) {
         </div>
 
         <div sx={{ width:["auto","auto","20rem"], position:"relative" }}>
-          <div sx={{ position:"sticky", top:"6rem", pb:"3rem", maxHeight:["none","none","100vh"], overflowY:["visible","visible","auto"] }}>
+          <div sx={{ position: "sticky", top: "6rem", pb: "3rem", maxHeight: ["none", "none", "100vh"], overflowY: ["visible", "visible", "auto"] }}>
+            
+            {jam.batch != null ? <BatchPartSlider jam={jam} currentPart={jam.part} maxParts={jam.totalParts}></BatchPartSlider> : <></>}
+            
             <h2 sx={{ fontSize:"1.5rem", lineHeight:"1rem", fontWeight:"bold" }}>
               Author
             </h2>

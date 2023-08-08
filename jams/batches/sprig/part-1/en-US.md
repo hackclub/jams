@@ -16,6 +16,7 @@ presentationPDF: ""
 notes: "" 
 poster: ""
 video: ""
+totalParts: 4
 ---
 
 At Hack Club we believe strongly that the best way to learn to code is by making creative, interesting, meaningful projects. Sprig is a project by Hack Club that enables anyone to do just that - we've created a web editor that both beginners and more advanced programmers can have fun making games in, and an accompanying handheld console that you can get for free by publishing your own game!

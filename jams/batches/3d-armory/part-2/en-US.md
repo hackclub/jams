@@ -1,5 +1,5 @@
 ---
-part: 'part-2'
+part: part-2
 title: 'Crafting Weapons, Shields, and Armor in TinkerCAD'  
 batch: '3d-armory'
 description: >  
@@ -16,6 +16,7 @@ presentationPDF: "https://cloud-ec18cvc7z-hack-club-bot.vercel.app/0forge_of_leg
 notes: "https://docs.google.com/document/d/1MsnPHKdCjI5Qz-b-30BlTOcyaVMjJLMo8Am--FTmLgA/edit" 
 poster: ""
 video: "" 
+totalParts: 2
 ---
 
 ![Excalibur?](https://cloud-jtvxpzl1c-hack-club-bot.vercel.app/0image.png)
