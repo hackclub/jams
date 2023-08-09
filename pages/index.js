@@ -523,12 +523,15 @@ export default function Index(props) {
         <Badge
         key="all"
         mr={2}
-        sx={{ cursor: 'pointer', backgroundColor: selectedCategories == [] ? ("#993CCF") : ("#fff"), marginTop: "8px", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
+        sx={{ cursor: 'pointer', backgroundColor: selectedCategories == "" ? ("#993CCF") : ("#fff"), marginTop: "8px", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
         variant="outline"
-        color={selectedCategories == [] ? ("#fff") : ("#993CCF")}
-        onClick={() => setSelectedCategories([])}
+        color={selectedCategories == "" ? ("#fff") : ("#993CCF")}
+        onClick={() => {
+          setSelectedCategories([])
+          console.log(selectedCategories)
+        }}
         >
-                All
+                All 
 
       </Badge>
         {categories.map((category) =>
