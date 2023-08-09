@@ -270,7 +270,7 @@ export default function Index(props) {
 
   const isCategoryBarSticky = useStickyCategoryBar();
 
-  const categories = ["Web", "Game", "Crypto", "Art", "Python", "3D", "AI/ML"]
+  const categories = ["Web", "Game", "Crypto", "Art", "Python", "3D", "AI"]
   const [selectedCategory, setSelectedCategory] = useState("")
   const [query, setQuery] = useState("")
   const [filter, setFilter] = useState('')

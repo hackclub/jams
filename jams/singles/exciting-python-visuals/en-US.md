@@ -1,13 +1,13 @@
 ---
 title: 'Create Visuals with Python's Turtle Library'
 description: >
-  In this Jam, we'll be working on creating stunning shapes and graphics using Python and its pre-installed Turtle library.
+    In this Jam, we'll be working on creating stunning shapes and graphics using Python and its pre-installed Turtle library.
 contributor: 'zsh'
 originalAuthor: 'YashKalbande'
 thumbnail: 'https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif'
 timeEstimate: '45-50 Mins'
 difficulty: 'Beginner'
-keywords: 'Python', 'Art', 'Turtle', 'Geometry'
+keywords: 'Beta, Python', 'Art', 'Turtle', 'Geometry'
 language: 'Python'
 presentation: ''
 presentationPlay: ''
@@ -15,7 +15,7 @@ presentationPDF: ''
 notes: ''
 poster: ''
 video: ''
-slug: 'python-graphics'
+slug: 'exciting-python-visuals'
 ---
 
 Contributors: [@YashKalbande](https://github.com/YashKalbande "View @YashKalbande on GitHub")]
