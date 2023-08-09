@@ -88,7 +88,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function PartPage({ part, jamsContent }) {
-  console.log(part.headers)
+  // console.log(part.headers)
   return (
     <JamComponent jamsContent={jamsContent} jam={part}/>
   );
