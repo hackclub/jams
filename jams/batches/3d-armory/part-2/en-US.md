@@ -1,5 +1,5 @@
 ---
-part: 'part-2'
+part: part-2
 title: 'Crafting Weapons, Shields, and Armor in TinkerCAD'  
 batch: '3d-armory'
 description: >  
