@@ -11,7 +11,7 @@ language: "Javascript"
 presentation: "https://www.figma.com/file/ImHTihOiCSxpcpS2AC7zYy/Voxel-Animation---Slides"
 presentationPlay: "https://www.figma.com/proto/ImHTihOiCSxpcpS2AC7zYy/Voxel-Animation---Slides"
 presentationPDF: "https://cloud-abxtk9jcc-hack-club-bot.vercel.app/0voxel_animation_-_slides__1_.pdf"
-notes: "https://cloud-abxtk9jcc-hack-club-bot.vercel.app/0voxel_animation_-_slides__1_.pdf"
+notes: "https://cloud-bt4376wp7-hack-club-bot.vercel.app/0three.js_ultimate_geometry_guide.pdf"
 poster: ""
 video: ""
 slug: "voxel-animation"
@@ -94,6 +94,14 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 	You should see the output on the right, preview automatically. Doesn't show? Press `RUN`!<br/>
 	After completion remove the lines.<br/>
 </Dropdown>
+
+### Uploading assets
+The process of uploading assets like images is very easy!  
+All you need to do is to drag and drop it into the `assets` folder ot wherever else in your project!
+
+<video controls>
+	<source src="https://cloud-ldawt72v9-hack-club-bot.vercel.app/0uploadtoreplit.mp4" type="video/mp4">
+</video>
 
 So yea, that's everything about replit, that you will need to know!
 Shall we get started with the template?
@@ -323,24 +331,47 @@ const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 }); // We nee
 const cube = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), cubeMaterial); // We create a new cube, by default it DOES not exist in the scene
 ```
 
-Okay I did that, but what is THREE.BoxGeometry, you might say?
+#### BoxGeometry
+Okay I did that, but what is THREE.BoxGeometry, you might say?  
 Box geometry is the size of the cube, each paramater each paramater is another dimension.
-i.e. This cube is 1x1x1
+i.e. This cube is 1x1x1  
+
+#### Material
+Okay okay, we got that figured out but what exactly does the `MeshBasicMaterial` do?  
+The `MeshBasicMaterial` is the **material** that the object will have.  
+The material will define it's **texture and color**, so it is pretty important to know how to use it!  
+
+In three.js **colors** are stored in the **HEX format**, that is that they are made up from 3 different sections.  
+The first 2 decide the **red** value, the other 2 the **green** and the final 2 the **blue**!
+
+But you might say, and rightfully so, why do they start with `0x` and not `#` as like they are defined most of the time in web development?  
+That is because `0x` defines that the value will be hex, and because JS doesn't natively support starting elements with `#` it is used instead of it.
 
 **TIP**
 You may reuse the material for more than one cube, but if you want a different color ( or texture in the future ) split them into different variable.
 i.e. All wood blocks would use a woodMaterial but glass will use a glass material.
 
-Now let's add them to the scene, in the run arrow function add the following lines:
+#### Adding it to our scene
+If you click the run button now tho, you will see that the cube we made isn't visible in the scene! But why is that?
+
+Well that issue occurs because we **initialized** our cube, but not **added it** to the scene.
+You see by intializing something, you just create it in the computers **memory** but not added it to our virtual animation **world** also known as **scene**.
+
+Here is a quick real life analogy, so we can understand it better.
+
+If you think about it a pizza perfectly **resembles** our cube, because we can define it's shape,  the `BoxGeometry` in our cube, and it's toppings, the `MeshBasicMaterial` in our cube.
+But if we don't put it in the oven how are we going to bake it!
+
+Just like pizza we must "bake" our cube, to "bake" our cube we need to put it in our virtual oven, the scene!
+In the **run arrow function** add the following lines:
 
 ```js
 scene.add(cube);
-renderer.render(scene, camera);
 ```
 
 Now try clicking the RUN button on the browser after reloading, do you see the cube?
 
-Try changing the THREE.BoxGeometry, do you see the cube size changing?
+Try changing the THREE.BoxGeometry and the color of the material, do you see the cube size changing?
 
 ### Changing the position and rotation
 
@@ -355,31 +386,49 @@ cube.position.y = -1;
 cube.rotation.x = 1;
 ```
 
-Do you see the cube? Chaning it's position and rotation?
-After that you may delete these 3 lines
+#### The Rotation Unit
+
+THREE.JS like some other 3d modelling tools, use **radians** for rotation.  
+This sadly makes it a bit hard to rotate objects for people who aren't used for them.  
+Thankfully three.js has a **math** function that will let us **convert** degrees to radians without thinking much!
+
+```js
+THREE.MathUtils.degToRad(deg)
+```
+
+Just replace `deg` with the degrees you want. i.e. `180`
+
+Let's see a more in depth example:
+```js
+cube.rotation.x = THREE.MathUtils.degToRad(90) // Rotate the X axis by 90 degrees
+cube.rotation.z = THREE.MathUtils.degToRad(45) // Rotate the Z axis by 45 degrees
+```
+
+<Dropdown title="Optional Task">
+	Do you see the cube? Chaning it's position and rotation?
+	After completion feel free to delete the lines if needed.
+</Dropdown>
 
 ### Animating the cube
 
 The final piece of this section is the actual animation.
-Cope this code to the end of the file:
+In the function seen below, which has already been implemented for your convienience, thank me later :)
 
 ```js
 // Animate Scene
 let tick = 0;
 function animate() {
     requestAnimationFrame(animate);
-
     // ANIMATE STUFF HERE
-
     renderer.render(scene, camera);
     tick++;
 }
 ```
 
-Here we add a tick variable where we keep track of the time, this variable gets increased at the end of the function.
+Here we add a `tick` variable where we keep **track** of the time, this variable gets increased at the end of the function.
 Then we request the frame, and render it.
 
-**At the end of the `run` arrow function don't forget to call it `animate()`!**
+Now we also need to call the function somewhere, because the function never terminates, a **smart** location to **place** it is at the end of the start function!
 
 Let's make the cube rotate constantly!
 After the `requestAnimationFrame` copy this code:
@@ -388,20 +437,32 @@ After the `requestAnimationFrame` copy this code:
 cube.rotation.x += 0.1;
 ```
 
-This code increases the cubes X axis rotation by .1
+This code increases the cubes X axis rotation by .1 radians.
 
 Now after that add copy this code below:
 
 ```js
-if (tick % 64 > 64 / 2 - 1) {
+if (tick % 64 > 31) {
     cube.position.x += 0.1;
 } else {
     cube.position.x -= 0.1;
 }
 ```
 
-This code changes the cubes x position by 0.1 and then by -0.1.
-Try fiddling with it!
+This code changes the cubes x position by 0.1 and then by -0.1. But why is that?
+
+#### Explaining the formula
+This might be a boring but necessary explanation, please **bare with me for a bit.**.
+
+Well behind the `tick % 64 > 31` formula is a really smart way to do consistent rotation.  
+Let's start by dissecting the first part, `tick % 64`.  If you think about it, the animation goes on forever, each frame the `tick` variable will be increased by 1. That is great for animations that stop after a while but for continous animations there is a flaw, because we can't check if the tick is less than a value, let's say `32` more than one time.  
+
+**But!** with the modulo(`%`) operator we can, since every time we use it with a number, i.e. `64`, the values will **always** be from the range of 0 to 63, no other exceptions. We can use that to our **advantage**, since half of the time (0 to 30) we will be going right and the other half of the time (31 to 63) we will go the other way, cancelling each other out!
+
+Now 
+<Dropdown title="Task">
+	Try fiddling with it! Change values, add rotation, go <strong>as crazy as your heart desires</strong>!
+</Dropdown>
 
 Well it is task time everyone!
 ![time_meme-dot-jpg](https://cloud-qmjjp049v-hack-club-bot.vercel.app/0meme_time.jpg)
@@ -409,6 +470,7 @@ Well it is task time everyone!
 <Dropdown title="Task">
 	Add 2 of your own cubes into the scene!
 </Dropdown>
+
 ## Add Picture as cube surface
 
 Yes you heard that right! Forget the boring colors, let's add real textures!
@@ -424,9 +486,8 @@ const loader = new THREE.TextureLoader();
 
 This just creates a loader, now we need to _import_ the images.
 
-In the cube material replace the
-`color: 0xWHATEVER` with
-`map: loader.load('assets/cube.png')`
+In the cube material replace the:
+`color: 0x000000`, with: `map: loader.load('assets/cube.png')`
 
 i.e.
 
@@ -452,7 +513,9 @@ Now between the loader and the materials copy this code:
 scene.background = loader.load("assets/skybox.jpg");
 ```
 
-This will set the background to the `assets/skybox.png`, isn't that handy!
+This will set the background to the `assets/skybox.png`, isn't that **handy**!
+
+**TIP: Make sure if you have time to find your own skybox, as to make your animation unique and to have a touch of your own personality! A place I have been using for a while now for skyboxes is Unsplashed, check it out! If you don't have time, feel free to keep using the default one.**
 
 ### Background Audio
 
@@ -557,6 +620,12 @@ statusRec.innerText = "Saving recording... This *may* take a while"; // Update s
 
 ## Start of your SOLO adventure
 
+<Dropdown title="Final Task">
+	Create a ground for your project.<br>
+	It can either use a texture or a green color, like 0x00FF00.<br>
+	Make sure to make the y <strong>negative</strong>, or make the other objects y <strong>positive</strong>!
+</Dropdown>
+
 It is finally time! I hope you learned enough to start on your own.
 Just remember these tips!
 
@@ -569,6 +638,8 @@ TIPS
 5) Use the tick variable to keep track of time in your animations
 6) Feel free to seek the demo code for more examples
 ```
+
+If you would like to learn how to add more shapes to use in your lofi animation, check out the jam's note, printed or digitally. They can also be found [here](https://cloud-bt4376wp7-hack-club-bot.vercel.app/0three.js_ultimate_geometry_guide.pdf)
 
 Farewell traveler!
 <img src="https://media1.giphy.com/media/6VriQO3GFRwwBVPbi4/giphy.gif?cid=ecf05e474dx0omnat02vthuv0n1komd3yefmcqhqljwguudnandep=v1_gifs_searchandrid=giphy.gif" width="25%"/>
