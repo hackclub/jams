@@ -16,12 +16,11 @@ presentationPlay: 'https://www.figma.com/proto/GzkGDAybZ9hO1AHfWMMvAR/CYOA-New-J
 2343&t=tg1xDh0nrZuq8lMk-1&scaling=min-zoom&page-id=0%3A1&mode=design'  
 presentationPDF: 'https://cloud-b7pr0h6i7-hack-club-bot.vercel.app/0cyoa_new_jam_presentation.pdf'  
 notes: ''  
-poster: ''  
+poster: 'https://cloud-pfs2toghq-hack-club-bot.vercel.app/0build_a_choose_your_own_adventure_game_.jpg'  
 video: 'https://cloud-9mn1z1s9z-hack-club-bot.vercel.app/0coose_your_own_adventure_game.mp4'  
 slug: 'story-game' 
 ---
-# Choose Wisely, Code Boldly; Crafting a Build Your Own Adventure Game!
-Insert Intro Vid Here}
+## Choose Wisely, Code Boldly; Crafting a Build Your Own Adventure Game!
 
 Whether you have programmed your whole life or this is your very first project, there is plenty of fun to be had with creating a Choose 
 Your Own Adventure Game (CYOA)! This build incorporates music, interactive elements, and the ability to control all stylistic features! 
@@ -52,7 +51,7 @@ Here is Replit's Documentation for future Reference: https://docs.replit.com/
    prototype and iterate on ideas.
 
 
-# Level 1: The Storyteller's Forge
+## Level 1: The Storyteller's Forge
 ### Create your Text-Based Adventure Game
 
 <video src="https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
@@ -322,7 +321,7 @@ Let's add some music and customization options (like colors and text animation!)
 Go to the next level now! 
 
 
-#  Level 2: Sonic Sagas
+##  Level 2: Sonic Sagas
 ### Adding Music and Style to your Text-Based Adventure Game
 
 ![Adding music and style](https://cloud-3usasijgs-hack-club-bot.vercel.app/0copy_of_arial.gif)
@@ -551,7 +550,7 @@ Let's add a Graphical User Interface (GUI) that will allow our player to interac
 Go to the next level now! 
 
 
-# Level 3: GUI,  the Final Boss
+## Level 3: GUI,  the Final Boss
 
 ### Creating a Graphical User Interface 
 
