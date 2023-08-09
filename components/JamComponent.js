@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Icon from '@hackclub/icons';
 import { Link as ScrollLink, Element } from 'react-scroll';
 import PresentationSlider from '@/components/presentationSlider';
+import BatchPartSlider from '@/components/BatchPartSlider';
 import { MDXRemote } from 'next-mdx-remote';
 import mdxComponents from '@/components/mdxComponents';
 import { Container, Text, Link, Box, Grid, Badge } from 'theme-ui';
@@ -72,10 +73,26 @@ export default function JamComponent({ jam, jamsContent }) {
 />
       <Header query={query} setQuery={setQuery} jams={jamsContent.singles
         .filter((jam) => 
-        { 
-          return (Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
-        }
-          )
+        {
+          /* check if it is true that:
+              for some value in jam's values
+              every part of the query is contained within that value*/
+          var jamValues = Object.values(jam); // indicates each value that exists in the jam dict
+          var queryWords = query.toLowerCase().trim().split(" "); // splits query into separate words and elimiates prefix and suffix whitespaces
+          for (let singleJamValue = 0; singleJamValue < jamValues.length; singleJamValue++) { // iterates through the jam values
+            var successful = true; // assume it works
+            for (let singleWord = 0; singleWord < queryWords.length; singleWord++) { // iterates through the words in query
+              if ((jamValues[singleJamValue].toLowerCase().split(" ")).indexOf(queryWords[singleWord]) == -1) { // if ANY word in query is not found in the values
+                successful = false; // it is not working / not successful / wont be displayed
+              }
+            }
+            if (successful) { // if it is confirmed to be successful
+              return true; // display it
+            }
+          }
+          return false; // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
+          // return (Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
+        })
       } back={"/"}/>
       <div sx={{ height:"5rem" }}></div>
 
@@ -244,7 +261,10 @@ export default function JamComponent({ jam, jamsContent }) {
         </div>
 
         <div sx={{ width:["auto","auto","20rem"], position:"relative" }}>
-          <div sx={{ position:"sticky", top:"6rem", pb:"3rem", maxHeight:["none","none","100vh"], overflowY:["visible","visible","auto"] }}>
+          <div sx={{ position: "sticky", top: "6rem", pb: "3rem", maxHeight: ["none", "none", "100vh"], overflowY: ["visible", "visible", "auto"] }}>
+            
+            {jam.batch != null ? <BatchPartSlider jam={jam} currentPart={jam.part} maxParts={jam.totalParts}></BatchPartSlider> : <></>}
+
             <h2 sx={{ fontSize:"1.5rem", lineHeight:"1rem", fontWeight:"bold" }}>
               Author
             </h2>

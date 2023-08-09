@@ -99,7 +99,29 @@ export default function Page({ batch, params, jams }) {
   image={batch.thumbnail}
   color="#ec3750"
 />
-  <Header setQuery={setQuery} query={query} jams={jams.singles} back={`/`} />
+  <Header setQuery={setQuery} query={query} jams={jams.singles
+        .filter((jam) => 
+        {
+          /* check if it is true that:
+              for some value in jam's values
+              every part of the query is contained within that value*/
+          var jamValues = Object.values(jam); // indicates each value that exists in the jam dict
+          var queryWords = query.toLowerCase().trim().split(" "); // splits query into separate words and elimiates prefix and suffix whitespaces
+          for (let singleJamValue = 0; singleJamValue < jamValues.length; singleJamValue++) { // iterates through the jam values
+            var successful = true; // assume it works
+            for (let singleWord = 0; singleWord < queryWords.length; singleWord++) { // iterates through the words in query
+              if ((jamValues[singleJamValue].toLowerCase().split(" ")).indexOf(queryWords[singleWord]) == -1) { // if ANY word in query is not found in the values
+                successful = false; // it is not working / not successful / wont be displayed
+              }
+            }
+            if (successful) { // if it is confirmed to be successful
+              return true; // display it
+            }
+          }
+          return false; // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
+          // return (Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
+        })
+      } back={`/`} />
 
 <Container sx={{paddingTop: "96px"}}>
   <Container sx={{ p:"1rem"}} style={{ maxWidth:"64rem !important"}}>

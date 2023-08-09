@@ -18,6 +18,7 @@ presentationPDF: 'https://cloud-1kxf64v4t-hack-club-bot.vercel.app/0webospart1.p
 notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
 video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
+totalParts: 5
 ---
 
 ![Capybara OS demo](https://cloud-ir4w2s05f-hack-club-bot.vercel.app/0screenrecording.gif)

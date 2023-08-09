@@ -16,6 +16,7 @@ presentationPDF: "https://cloud-a4eaqfm9v-hack-club-bot.vercel.app/0forge_of_leg
 notes: "https://docs.google.com/document/d/1MsnPHKdCjI5Qz-b-30BlTOcyaVMjJLMo8Am--FTmLgA/edit" 
 poster: "" 
 video: "" 
+totalParts: 2
 ---
 
 

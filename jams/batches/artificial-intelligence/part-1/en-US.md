@@ -16,6 +16,7 @@ presentationPDF: "" # TODO
 notes: "" # TODO
 poster: # TODO 
 video: "" # TODO
+totalParts: 4
 ---
 
 ### Part 1/4 | Prerequisite: a little web dev knowledge (HTML, JS, CSS) | 30-45 minutes

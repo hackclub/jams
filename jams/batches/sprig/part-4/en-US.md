@@ -16,6 +16,7 @@ presentationPDF: ""
 notes: "" 
 poster: ""
 video: "" 
+totalParts: 4
 ---
 
 Congratulations! If you finished the last part of the Jam and implemented two different game mechanics, you've just created an entirely unique game and learned to implement different game mechanics on your own!
