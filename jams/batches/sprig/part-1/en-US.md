@@ -99,4 +99,4 @@ Click the "remix" button in the top right corner, so that your changes will be s
 Congratulations! By finishing this session, you just made your first game in Sprig!  
 
 ![](https://cloud-4ja9fp00s-hack-club-bot.vercel.app/0image.png)
-Next session and for the next 2 sessions, we’ll be building on our knowledge and creating a maze game from scratch. Click [here](LINK AAA TODO) to advance to the next session.
+Next session and for the next 2 sessions, we’ll be building on our knowledge and creating a maze game from scratch. Click [here](/batch/sprig/part-2) to advance to the next session.
