@@ -592,10 +592,10 @@ Also, if you have no experience with web development, don't panic, we'll walk yo
 1. Let's get the images and text you uploaded onto your site!
 3. Click into `index.html` on the file pane
 4. On line 12, replace "Comic Title Goes Here" with the title of your comic. 
-5. Replace "<source>" with the filename of your first image. 
+5. Replace `<source>` with the filename of your first image. 
 6. Next, replace "description goes here" with the ChatGPT generated text for the first section. 
-7. Scroll down, and do the same with "<source 2>" and "description 2 goes here"
-8. Repeat the process by replacing "<source x>" and "description x goes here" until you finish the last one (8).
+7. Scroll down, and do the same with `<source 2>` and "description 2 goes here"
+8. Repeat the process by replacing `<source x>` and "description x goes here" until you finish the last one (8).
 
 
 For example, since the filename of my first image is called `img1.png` and filename of my second image is `img2.jpeg`, my `index.html` file looks like: 
@@ -622,5 +622,3 @@ If you're feeling adventurous (or just want to learn something new), here are so
 - **Add a description**: You can add a description to your comic by adding a `<meta>` tag to your `index.html` file. You can learn more about the `<meta>` tag [here](https://www.w3schools.com/tags/tag_meta.asp).
 - **Add a background color**: You can add a background color to your comic by adding a `<body>` tag to your `index.html` file. You can learn more about the `<body>` tag [here](https://www.w3schools.com/tags/tag_body.asp).
 - **Add a background image**: You can add a background image to your comic by adding a `<body>` tag to your `index
-
-
