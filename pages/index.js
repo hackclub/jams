@@ -396,8 +396,8 @@ export default function Index(props) {
         <Grid columns={[null, '1fr', '1fr', '1fr 1fr']} gap={3} sx={{ py: 3 }}>
 
         {batches.map((batch) => 
+        <a style={{textDecoration: "none", color: "#000"}} href={`/batch/${batch.slug}`}>
           <Box
-          onClick={() => router.push(`/batch/${batch.slug}`)}
   sx={{
     position: "relative",
     cursor: "pointer",
@@ -495,6 +495,7 @@ export default function Index(props) {
     />
   </Box>
 </Box>
+</a>
 
 
 

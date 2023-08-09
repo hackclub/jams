@@ -2,8 +2,8 @@
 title: "Creating Your Own 3D Club Lofi Animation"
 description: >
     In this Jam, you'll be creating an awesome unique Lofi Animation using Voxels! It will be a lot of fun and you will have an awesome animation as a result!
-contributor: "GalaxyGamignBoy"
-thumbnail: "https://cloud-3qhtrx1s6-hack-club-bot.vercel.app/0thumb.gif"
+contributor: "GalaxyGamingBoy"
+thumbnail: "https://cloud-akci9gy8k-hack-club-bot.vercel.app/0applesfallinggif.gif"
 timeEstimate: "~60+ Minutes"
 difficulty: "Intermediate"
 keywords: "HTML, javascript, replit, Web, Voxel, Cube, Textures, Animation"
