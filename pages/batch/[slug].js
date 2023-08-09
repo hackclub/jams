@@ -13,6 +13,8 @@ import JamComponent from '@/components/JamComponent';
 import Meta from '@hackclub/meta'
 import Head from 'next/head'
 
+/** @jsxImportSource theme-ui */
+
 function getJams(fs, directory) {
   const filenames = fs.readdirSync(directory);
 
@@ -90,17 +92,18 @@ export default function Page({ batch, params, jams }) {
   const [query, setQuery] = useState("")
 
     const router = useRouter();
-  return     <div>
-  <Meta
-  as={Head}
-  name={batch.title}
-  title={batch.title}
-  description={batch.description}
-  image={batch.thumbnail}
-  color="#ec3750"
-/>
-  <Header setQuery={setQuery} query={query} jams={jams.singles
-        .filter((jam) => 
+  return <>
+    <Meta
+      as={Head}
+      name={batch.title}
+      title={batch.title}
+      description={batch.description}
+      image={batch.thumbnail}
+      color="#ec3750"
+    />
+    <Header
+      setQuery={setQuery} query={query}
+      jams={jams.singles.filter((jam) => 
         {
           /* check if it is true that:
               for some value in jam's values
@@ -121,39 +124,77 @@ export default function Page({ batch, params, jams }) {
           return false; // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
           // return (Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
         })
-      } back={`/`} />
-
-<Container sx={{paddingTop: "96px"}}>
-  <Container sx={{ p:"1rem"}} style={{ maxWidth:"64rem !important"}}>
-    {/* Structure: root / batch name / part */}
-    <Link href="/" sx={{ color: "#993CCF", textDecoration: "underline" }}>batch</Link> / <Link href={"/batch/" + batch.slug} sx={{ color: "#993CCF", textDecoration: "underline" }}>{batch.slug}</Link>
-  </Container>
-<Grid sx={{marginBottom: "32px"}} columns={[null, '3fr 2fr']} gap={[1,32]}>
-<img style={{width: "100%", borderRadius: "16px"}} src={batch.thumbnail}/>
-    <div>
-    <h1>{batch.title}</h1>
-    <p>{batch.contributor}</p>
-    <p>{batch.description}</p>
-    </div>
-
-</Grid>
-<Grid columns={[null, '1fr 1fr 1fr']} sx={{marginBottom: "32px"}}>
-
-    {batch.parts.map((part) => 
-    
-    <a           style={{color: "#000", textDecoration: "none"}} 
-    href={`/batch/${params.slug}/${part.part}`}
-
-
-    >
-          <PreviewCard
-    {...part}
+      }
+      back={`/`}
     />
-    </a>
-    )}
-  </Grid>
-    {/* render other batch data here */}
-  </Container>
-  <Footer/>
-  </div>;
+
+    <Container sx={{paddingTop: "96px"}} style={{ maxWidth:"64rem !important"}}>
+      {/* Structure: root / batch name / part */}
+      <Link href="/" sx={{ color: "#993CCF", textDecoration: "underline" }}>batch</Link> / <Link href={"/batch/" + batch.slug} sx={{ color: "#993CCF", textDecoration: "underline" }}>{batch.slug}</Link>
+    </Container>
+
+    <Container as="main"
+      sx={{
+        px:"1rem",
+        mt:"1rem",
+      }} style={{ maxWidth:"64rem !important"}}
+    >
+      <div sx={{
+        px: "1.5rem",
+        pt: "1.5rem",
+        pb: "1rem",
+        display:"flex",
+        flexDirection:["column","column","row"],
+        gap:["1rem", "1rem", "3rem"],
+        bg: "rgb(229 229 229 / 0.50)",
+        borderRadius: "16px",
+      }}>
+        <div sx={{ flex:"1 1 0%" }}>
+          <img style={{width: "100%", aspectRatio:"16 / 9", objectFit:"cover", borderRadius: "16px"}} src={batch.thumbnail}/>
+        </div>
+
+        <div sx={{ width:["auto","auto","20rem"], position:"relative" }}>
+          <h1 sx={{ m:0, lineHeight:"2.2rem" }}>
+            {batch.title}
+          </h1>
+
+          <Link href={`https://github.com/${batch.contributor}`} target="_blank" rel="noopener noreferrer" sx={{ textDecoration:"none"}}>
+            <div sx={{ display:"flex", alignItems:"center", gap:"0.5rem", mt:"0.5rem" }}>
+              <img
+                src={`https://github.com/${batch.contributor}.png`}
+                sx={{ width:"1.5rem", borderRadius:"9999px" }}
+              />
+              <span sx={{ fontWeight:"bold", color:"rgb(115 115 115)", "&:hover": {
+                color: '#993CCF', // Set text color to purple on hover
+              } }}>
+                {batch.contributor}
+              </span>
+            </div>
+          </Link>
+
+          <p>
+            {batch.description}
+          </p>
+        </div>
+      </div>
+    </Container>
+
+    <Container sx={{ mt:"3rem" }} style={{ maxWidth:"64rem !important"}}>
+      <Grid columns={[null, '1fr 1fr 1fr']} sx={{ marginBottom: "32px", gap:"3rem" }}>
+        {batch.parts.map((part) => 
+          <Link
+            style={{color: "#000", textDecoration: "none"}} 
+            href={`/batch/${params.slug}/${part.part}`}
+          >
+            <PreviewCard
+            {...part}
+            />
+          </Link>
+        )}
+      </Grid>
+
+      {/* render other batch data here */}
+    </Container>
+    <Footer/>
+  </>;
 }

@@ -62,15 +62,15 @@ export default function JamComponent({ jam, jamsContent }) {
     const [query, setQuery] = useState("")
   
     return <>
+      <Meta
+        as={Head}
+        name={jam.title}
+        title={jam.title}
+        description={jam.description}
+        image={jam.thumbnail}
+        color="#ec3750"
+      />
 
-<Meta
-  as={Head}
-  name={jam.title}
-  title={jam.title}
-  description={jam.description}
-  image={jam.thumbnail}
-  color="#ec3750"
-/>
       <Header query={query} setQuery={setQuery} jams={jamsContent.singles
         .filter((jam) => 
         {
@@ -173,12 +173,14 @@ export default function JamComponent({ jam, jamsContent }) {
               </Container>)}
 
 
-      <Container as="main" sx={{
-        px:"1rem",
-        display:"flex",
-        flexDirection:["column","column","row"],
-        gap:"3rem",
-      }} style={{ maxWidth:"64rem !important"}}>
+      <Container as="main"
+        sx={{
+          px:"1rem",
+          display:"flex",
+          flexDirection:["column","column","row"],
+          gap:"3rem",
+        }} style={{ maxWidth:"64rem !important"}}
+      >
         <div sx={{ flex:"1 1 0%" }}>
 
         {jam.presentationPDF != "" && jam.video == "" && 
@@ -239,7 +241,7 @@ export default function JamComponent({ jam, jamsContent }) {
               {jam.timeEstimate}
             </Badge>
           </Box>
-          <h1 style={{ marginTop: 0, marginBottom: 0 }}>{jam.title}</h1>
+          <h1 style={{ marginTop: 0, marginBottom: 0, lineHeight:"2.2rem" }}>{jam.title}</h1>
           
           <Link href={`https://github.com/${jam.contributor}`} target="_blank" rel="noopener noreferrer" sx={{ textDecoration:"none"}}>
             <div sx={{ display:"flex", alignItems:"center", gap:"0.5rem", mt:"0.25rem" }}>

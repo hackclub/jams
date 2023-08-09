@@ -106,7 +106,7 @@ export default function PreviewCard({
         />)}
         </Box>
         </Box>
-        <Text as="h2" sx={{ fontSize: 28, lineHeight: 1.2, fontWeight: '600' }}>
+        <Text as="h2" sx={{ fontSize: 28, lineHeight: 1.2, fontWeight: '600', mt:"0.75rem" }}>
           {title}
         </Text>
       </Box>
