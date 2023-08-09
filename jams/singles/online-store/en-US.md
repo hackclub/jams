@@ -12,7 +12,7 @@ presentation: 'https://www.figma.com/file/ZZtBSywMbFgI8T3NWVWXP7/Online-Store-Od
 presentationPlay: 'https://www.figma.com/proto/ZZtBSywMbFgI8T3NWVWXP7/Online-Store-Odyssey?page-id=0%3A1&type=design&node-id=8-2&viewport=171%2C208%2C0.07&t=1T2UYUSbx8HOPyTG-1&scaling=contain&mode=design'
 presentationPDF: 'https://cloud-nlo5cmv8d-hack-club-bot.vercel.app/0online_store_odyssey.pdf'
 notes: ''
-poster: ''
+poster: 'https://cloud-cqx4mk7nt-hack-club-bot.vercel.app/0online-store-poster.pdf'
 video: ''
 slug: 'online-store'
 ---
