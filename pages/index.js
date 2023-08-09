@@ -519,7 +519,8 @@ export default function Index(props) {
         <Box style={{display: "flex",              top: 84, backgroundColor: "#fff", zIndex: 2,
           left: 0, opacity: `${Math.min(((scrollPosition / 500) - 1), 1)}`,        backdropFilter: 'blur(5px)',          backgroundColor: `rgba(200, 200, 200, ${Math.min(((scrollPosition / 500) - 1), 0.75)})`,
           right: 0, cursor: 'pointer', position: 'fixed', flexDirection: "row", borderColor: "#e0e6ed", borderTop: "1px solid #e0e6ed", borderBottom: "1px solid #e0e6ed"}}>
-        <Container>
+        <Container style={{display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: 'center'}}>
+          <Box>
         <Badge
         key="all"
         mr={2}
@@ -559,6 +560,102 @@ export default function Index(props) {
 
       </Badge>        
       )}
+      </Box>
+      <Box style={{display: "flex", gap: "12px"}}>
+        <Box style={{display: "flex", gap: "8px", backgroundColor: "#fff", padding: "4px 8px", borderRadius: "8px"}}>
+        <span style={{backgroundColor: "#993CCF", margin: "0px", padding: "0px 8px", color: "#fff", borderRadius: "4px"}}>
+          Any
+        </span>
+        
+        <Text
+      sx={{
+        backgroundColor: '#fff',
+        margin: '0px',
+        padding: '0px 4px',
+        color: '#000',
+        borderRadius: '4px',
+        transition: 'background-color 0.3s, color 0.3s',
+
+        ':hover': {
+          backgroundColor: '#EFEFEF',
+        },
+      }}
+    >
+      Beginner
+    </Text>
+    <Text
+      sx={{
+        backgroundColor: '#fff',
+        margin: '0px',
+        padding: '0px 4px',
+        color: '#000',
+        borderRadius: '4px',
+        transition: 'background-color 0.3s, color 0.3s',
+
+        ':hover': {
+          backgroundColor: '#EFEFEF',
+        },
+      }}
+    >
+      Intermediate
+    </Text>
+    <Text
+      sx={{
+        backgroundColor: '#fff',
+        margin: '0px',
+        padding: '0px 4px',
+        color: '#000',
+        borderRadius: '4px',
+        transition: 'background-color 0.3s, color 0.3s',
+
+        ':hover': {
+          backgroundColor: '#EFEFEF',
+        },
+      }}
+    >
+      Advanced
+    </Text>
+        </Box>
+        <Box style={{display: "flex", gap: "8px", backgroundColor: "#fff", padding: "4px 8px", borderRadius: "8px"}}>
+        <span style={{backgroundColor: "#993CCF", margin: "0px", padding: "0px 8px", color: "#fff", borderRadius: "4px"}}>
+          Any
+        </span>
+        
+        <Text
+      sx={{
+        backgroundColor: '#fff',
+        margin: '0px',
+        padding: '0px 4px',
+        color: '#000',
+        borderRadius: '4px',
+        transition: 'background-color 0.3s, color 0.3s',
+
+        ':hover': {
+          backgroundColor: '#EFEFEF',
+        },
+      }}
+    >
+      30 Min
+    </Text>
+    <Text
+      sx={{
+        backgroundColor: '#fff',
+        margin: '0px',
+        padding: '0px 4px',
+        color: '#000',
+        borderRadius: '4px',
+        transition: 'background-color 0.3s, color 0.3s',
+
+        ':hover': {
+          backgroundColor: '#EFEFEF',
+        },
+      }}
+    >
+      60 Min
+    </Text>
+        </Box>
+
+      </Box>
 </Container>
         </Box>
         {/* <SearchControls
