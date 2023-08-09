@@ -1,4 +1,5 @@
----
+DISABLED. CURRENTLY INCOMPLETE & BROKEN
+
 title: 'Create Visuals with Python's Turtle Library'
 description: >
     In this Jam, we'll be working on creating stunning shapes and graphics using Python and its pre-installed Turtle library.
@@ -16,7 +17,7 @@ notes: ''
 poster: ''
 video: ''
 slug: 'exciting-python-visuals'
----
+
 
 Contributors: [@YashKalbande](https://github.com/YashKalbande "View @YashKalbande on GitHub")]
 Edited by: [@zsh](https://read.cv/zoyashussain)
