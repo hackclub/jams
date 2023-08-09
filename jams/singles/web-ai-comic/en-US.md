@@ -3,7 +3,7 @@ title: 'Create Your Own Comic Book with AI'
 description: >
     In this jam, we'll be using ChatGPT to generate the text of a children's comic, and use Stable Diffusion to create pictures for the comic. Both ChatGPT and Stable Diffusion are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 contributor: 'ganning127'
-thumbnail: 'https://cloud-aryjfx0lv-hack-club-bot.vercel.app/0gradiojam__2_.png'
+thumbnail: 'https://cloud-mbryeyf6a-hack-club-bot.vercel.app/0thumbnail__2_.png'
 timeEstimate: '55 Min'
 difficulty: 'Easy'
 keywords: 'ChatGPT, Stable Diffusion, HTML, CSS'
@@ -17,14 +17,19 @@ video: ''
 slug: 'web-ai-comic'
 ---
 
+> 50-60 minutes, easy difficulty.
+
 Hey hacker, welcome to the land of writing and drawing, or rather, using **AI to write and draw for you**! 👋 In this jam, we'll be using **ChatGPT** to generate the text of a children's comic, and use **Stable Diffusion** to create pictures for the comic. Both ChatGPT and Stable Diffusion  are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 
 This jam will take you from 0 to a ChatGPT and AI model "Hero":
 ![](https://cloud-a10rlmpqz-hack-club-bot.vercel.app/0image.png)
 
-As an example, here is an example of what your finished storybook may look like!
+As an example, here is an example of what your finished storybook may look like ([alex-gets-his-private-pilot-license.ganningxu.repl.co](https://alex-gets-his-private-pilot-license.ganningxu.repl.co))!
 
 ![](https://cloud-d9ibqv1p3-hack-club-bot.vercel.app/0screen_recording_2023-08-01_at_12.26.59_pm__2_.gif)
+
+If you're interested, here's another comic that I made with ChatGPT and DALL-E ([robotics-mayhem.ganningxu.repl.co](https://robotics-mayhem.ganningxu.repl.co/))
+![](https://cloud-dau1tq7mx-hack-club-bot.vercel.app/0screen_recording_2023-08-08_at_7.06.00_pm.gif)
 
 Keep in mind that your result will be completely different. In fact, if it is the same, you're probably doing something wrong :) With that said, here are some resources that you may find helpful!
 
