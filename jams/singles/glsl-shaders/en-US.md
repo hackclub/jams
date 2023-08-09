@@ -28,7 +28,7 @@ You may have seen or heard of fractals. Even if you haven't, you've probably see
 
 Well this particular geometrical shape shown in the GIF is part of a large family of *infinitely* detailed, *infinitely* precise object, called **fractals**. Today, we are going to write a computer program that will allow us to create the same fractal you see in the images above, namely, the ***Mandelbrot set***.
 
-The Mandelbrot set is actually very interesting mathematically, and you can learn a lot by implementing a renderer for it. Thats what were going to do today, you find out that theres so much more that you can do with fractals than just zooming in...
+The Mandelbrot set is actually very interesting mathematically, and you can learn a lot by implementing a renderer for it. Thats what were going to do today, and you'll find out that theres so much more that you can do with fractals than just zooming in...
 
 <img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/capture.gif"/>
 
