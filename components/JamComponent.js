@@ -317,7 +317,7 @@ export default function JamComponent({ jam, jamsContent }) {
               </div>
             </div>
 
-            {jam.presentation || jam.video || jam.notes || jam.poster && <>
+            {(jam.presentation || jam.video || jam.notes || jam.poster) && <>
               <h2 sx={{ fontSize:"1.5rem", lineHeight:"1rem", fontWeight:"bold", mt:"2rem" }}>
                 Resources
               </h2>
