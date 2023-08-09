@@ -140,14 +140,16 @@ export default function Page({ batch, params, jams }) {
 <Grid columns={[null, '1fr 1fr 1fr']} sx={{marginBottom: "32px"}}>
 
     {batch.parts.map((part) => 
-    <div
-    onClick={() => router.push(`/batch/${params.slug}/${part.part}`)}
+    
+    <a           style={{color: "#000", textDecoration: "none"}} 
+    href={`/batch/${params.slug}/${part.part}`}
+
 
     >
           <PreviewCard
     {...part}
     />
-    </div>
+    </a>
     )}
   </Grid>
     {/* render other batch data here */}
