@@ -178,10 +178,10 @@ export default function JamComponent({ jam, jamsContent }) {
           px:"1rem",
           display:"flex",
           flexDirection:["column","column","row"],
-          gap:"3rem",
+          gap:[0,0,"3rem"],
         }} style={{ maxWidth:"64rem !important"}}
       >
-        <div sx={{ flex:"1 1 0%" }}>
+        <div sx={{ flex:"1 1 0%", pb:[0,0,"2rem"] }}>
 
         {jam.presentationPDF != "" && jam.video == "" && 
                       <div style={{ width: '100%', aspectRatio: "16/9", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: '24px', overflow: "hidden" }}>
@@ -241,7 +241,7 @@ export default function JamComponent({ jam, jamsContent }) {
               {jam.timeEstimate}
             </Badge>
           </Box>
-          <h1 style={{ marginTop: 0, marginBottom: 0, lineHeight:"2.2rem" }}>{jam.title}</h1>
+          <h1 sx={{ mt:"0.5rem", marginBottom: 0, lineHeight:"2.2rem" }}>{jam.title}</h1>
           
           <Link href={`https://github.com/${jam.contributor}`} target="_blank" rel="noopener noreferrer" sx={{ textDecoration:"none"}}>
             <div sx={{ display:"flex", alignItems:"center", gap:"0.5rem", mt:"0.25rem" }}>
@@ -257,7 +257,7 @@ export default function JamComponent({ jam, jamsContent }) {
             </div>
           </Link>
 
-          <Box style={{ fontSize: 18, lineHeight: '200%', paddingBottom: [32,64] }}>
+          <Box sx={{ fontSize: 18, lineHeight: '200%', pb: [32,64], mt:"1rem" }}>
             <MDXRemote components={mdxComponents} {...jam.source} />
           </Box>
         </div>
@@ -317,97 +317,99 @@ export default function JamComponent({ jam, jamsContent }) {
               </div>
             </div>
 
-            <h2 sx={{ fontSize:"1.5rem", lineHeight:"1rem", fontWeight:"bold", mt:"2rem" }}>
-              Resources
-            </h2>
+            {jam.presentation || jam.video || jam.notes || jam.poster && <>
+              <h2 sx={{ fontSize:"1.5rem", lineHeight:"1rem", fontWeight:"bold", mt:"2rem" }}>
+                Resources
+              </h2>
 
-            <Box sx={{ display:'flex', flexDirection:'column', gap:"8px", marginTop: "6px" }}>
-              {jam.presentation && (
-                <Link sx={{ color: '#993CCF' }} href={jam.presentationPDF}>
-                  <Box
-                    sx={{
-                      alignItems: 'center',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      border: '1px solid',
-                      paddingLeft: '10px',
-                      paddingRight: '10px',
-                      paddingTop: '5px',
-                      paddingBottom: '5px',
-                      borderRadius: '8px',
-                      bg: '#fff',
-                      
-                    }}
-                  >
-                    <Text sx={{ textDecoration: 'none' }}>Presentation</Text>
-                    <Icon height={22} width={22} glyph={'download'} />
-                  </Box>
-                </Link>
-              )}
-              {jam.video && (
-                <Link sx={{ color: '#993CCF' }} href={jam.video}>
-                  <Box
-                    sx={{
-                      alignItems: 'center',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      border: '1px solid',
-                      paddingLeft: '10px',
-                      paddingRight: '10px',
-                      paddingTop: '5px',
-                      paddingBottom: '5px',
-                      borderRadius: '8px',
-                      bg: '#fff',
-                    }}
-                  >
-                    <Text sx={{ textDecoration: 'none' }}>Video</Text>
-                    <Icon height={22} width={22} glyph={'download'} />
-                  </Box>
-                </Link>
-              )}
-              {jam.notes && (
-                <Link sx={{ color: '#993CCF' }} href={jam.notes}>
-                  <Box
-                    sx={{
-                      alignItems: 'center',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      border: '1px solid',
-                      paddingLeft: '10px',
-                      paddingRight: '10px',
-                      paddingTop: '5px',
-                      paddingBottom: '5px',
-                      borderRadius: '8px',
-                      bg: '#fff',
-                    }}
-                  >
-                    <Text sx={{ textDecoration: 'none' }}>Notes</Text>
-                    <Icon height={22} width={22} glyph={'download'} />
-                  </Box>
-                </Link>
-              )}
-              {jam.poster && (
-                <Link sx={{ color: '#993CCF' }} href={jam.poster}>
-                  <Box
-                    sx={{
-                      alignItems: 'center',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      border: '1px solid',
-                      paddingLeft: '10px',
-                      paddingRight: '10px',
-                      paddingTop: '5px',
-                      paddingBottom: '5px',
-                      borderRadius: '8px',
-                      bg: '#fff',
-                    }}
-                  >
-                    <Text sx={{ textDecoration: 'none' }}>Poster</Text>
-                    <Icon height={22} width={22} glyph={'download'} />
-                  </Box>
-                </Link>
-              )}
-            </Box>
+              <Box sx={{ display:'flex', flexDirection:'column', gap:"8px", marginTop: "6px" }}>
+                {jam.presentation && (
+                  <Link sx={{ color: '#993CCF' }} href={jam.presentationPDF}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        paddingLeft: '10px',
+                        paddingRight: '10px',
+                        paddingTop: '5px',
+                        paddingBottom: '5px',
+                        borderRadius: '8px',
+                        bg: '#fff',
+                        
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>Presentation</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+                {jam.video && (
+                  <Link sx={{ color: '#993CCF' }} href={jam.video}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        paddingLeft: '10px',
+                        paddingRight: '10px',
+                        paddingTop: '5px',
+                        paddingBottom: '5px',
+                        borderRadius: '8px',
+                        bg: '#fff',
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>Video</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+                {jam.notes && (
+                  <Link sx={{ color: '#993CCF' }} href={jam.notes}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        paddingLeft: '10px',
+                        paddingRight: '10px',
+                        paddingTop: '5px',
+                        paddingBottom: '5px',
+                        borderRadius: '8px',
+                        bg: '#fff',
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>Notes</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+                {jam.poster && (
+                  <Link sx={{ color: '#993CCF' }} href={jam.poster}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        paddingLeft: '10px',
+                        paddingRight: '10px',
+                        paddingTop: '5px',
+                        paddingBottom: '5px',
+                        borderRadius: '8px',
+                        bg: '#fff',
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>Poster</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+              </Box>
+            </>}
 
             <div sx={{ display:["none","none","block"] }}>
               <h2 sx={{ fontSize:"1.5rem", lineHeight:"1rem", fontWeight:"bold", mt:"2rem" }}>
