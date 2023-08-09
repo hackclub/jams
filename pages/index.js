@@ -298,7 +298,7 @@ export default function Index(props) {
       }
     }
     if (successful) { // if it is confirmed to be successful
-      return !jam.keywords.includes("Beta") && jam?.keywords?.includes(selectedCategory); // display it if other attributes work
+      return !jam?.keywords?.includes("Beta") && jam?.keywords?.includes(selectedCategory); // display it if other attributes work
     }
   }
     return false; // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown

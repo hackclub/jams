@@ -55,7 +55,8 @@ You will have so much fun! You **can do it!**
 This is the first part of your wonderful journey to Three.js!
 The template includes assets that you might use in your lofi animation, everything will be lofi themed so feel free to use them!
 
-You will fork the [template](https://replit.com/@GalaxyGamingBoy/VoxelAnimation-Template) from [this link](https://replit.com/@GalaxyGamingBoy/VoxelAnimation-Template).
+You will fork the [template from this link](https://replit.com/@GalaxyGamingBoy/VoxelAnimation-Template) from.
+
 After visiting the link on the right hand side of the screen there is a `FORK` button. Click it!
 After clicking enter your voxel animation name and click `FORK REPL`.
 
