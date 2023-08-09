@@ -1,4 +1,4 @@
----
+<!-- ---
 title: 'BROKEN-Create your own Club Crypto Currency'
 description: >
   In this Jam, we'll be working on creating stunning shapes and graphics using Python and its pre-installed Turtle library.
@@ -15,7 +15,7 @@ presentationPDF: 'https://cloud-fplorbj3h-hack-club-bot.vercel.app/0make_your_ow
 notes: 'https://cloud-mrmhmej0t-hack-club-bot.vercel.app/0notes_for_this_jam__for_learner_to_note__jot_down_.pdf'
 poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
 video: ''
-slug: 'exciting-python-visuals'
+slug: 'discord-custom-message'
 ---
 
 
@@ -38,11 +38,7 @@ video: ''
 slug: 'custom-discord-bot'
 
 
-Contributors: [@JakeGerber](https://github.com/JakeGerber "View @JakeGerber on GitHub")
-Edited by: [@zsh](https://read.cv/zoyashussain)
-Time: 45-50 minutes, Intermediate 
-
-> Howdy! In this Jam, we're going to create a Discord bot that allows users to save custom messages that they can have the bot send at any time. By the end you will have programmed a sweet bot to add to your Discord server! Are you ready? Let's begin!
+ Howdy! In this Jam, we're going to create a Discord bot that allows users to save custom messages that they can have the bot send at any time. By the end you will have programmed a sweet bot to add to your Discord server! Are you ready? Let's begin!
 
 <img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
 
@@ -440,4 +436,4 @@ Congratulations! You've now finished your Discord bot. If you're looking to leve
 - [Original Bot](https://repl.it/@CosmicSnowman/Discord-Bot-Workshop#index.js)
 - [Expanded Bot with Community Messages](https://repl.it/@CosmicSnowman/WorkshopExpanded1#index.js)
 - [Expanded Bot with Message Limits](https://repl.it/@CosmicSnowman/WorkshopExpanded2#index.js)
-- [Expanded Bot with Random Messages](https://repl.it/@CosmicSnowman/WorkshopExpanded3#index.js)
+- [Expanded Bot with Random Messages](https://repl.it/@CosmicSnowman/WorkshopExpanded3#index.js) -->
