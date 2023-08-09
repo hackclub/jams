@@ -20,8 +20,6 @@ totalParts: 2
 ---
 
 
-20-40 minutes, beginner difficulty
-
 ![Fire](https://cloud-bwybtmgkd-hack-club-bot.vercel.app/0image.png)
 
 (3D Modeled fire credits to Thiên Huỳnh Quốc)

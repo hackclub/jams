@@ -271,7 +271,7 @@ export default function Index(props) {
   const isCategoryBarSticky = useStickyCategoryBar();
 
   const categories = ["Web", "Game", "Crypto", "Art", "Python", "3D", "AI"]
-  const [selectedCategory, setSelectedCategory] = useState("")
+  const [selectedCategories, setSelectedCategories] = useState([])
   const [query, setQuery] = useState("")
   const [filter, setFilter] = useState('')
   const [language, setLanguage] = useState('')
@@ -298,7 +298,7 @@ export default function Index(props) {
       }
     }
     if (successful) { // if it is confirmed to be successful
-      return !jam?.keywords?.includes("Beta") && jam?.keywords?.includes(selectedCategory); // display it if other attributes work
+      return !jam?.keywords?.includes("Beta") && (jam?.keywords?.split(",")?.some((keyword) => selectedCategories.includes(keyword)) || selectedCategories == [] || selectedCategories == undefined || selectedCategories == "") // display it if other attributes work
     }
   }
     return false; // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
@@ -523,22 +523,34 @@ export default function Index(props) {
         <Badge
         key="all"
         mr={2}
-        sx={{ cursor: 'pointer', backgroundColor: selectedCategory == "" ? ("#993CCF") : ("#fff"), marginTop: "8px", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
+        sx={{ cursor: 'pointer', backgroundColor: selectedCategories == [] ? ("#993CCF") : ("#fff"), marginTop: "8px", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
         variant="outline"
-        color={selectedCategory == "" ? ("#fff") : ("#993CCF")}
-        onClick={() => setSelectedCategory("")}
+        color={selectedCategories == [] ? ("#fff") : ("#993CCF")}
+        onClick={() => setSelectedCategories([])}
         >
                 All
 
       </Badge>
         {categories.map((category) =>
         <Badge
-        key="all"
+        key={category}
         mr={2}
-        sx={{backgroundColor: selectedCategory == category ? ("#993CCF") : ("#fff"), marginTop: "8px", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
+        sx={{backgroundColor: selectedCategories.includes(category) ? ("#993CCF") : ("#fff"), marginTop: "8px", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
         variant="outline"
-        color={selectedCategory == category ? ("#fff") : ("#993CCF")}
-        onClick={() => setSelectedCategory(category)}
+        color={selectedCategories.includes(category) ? ("#fff") : ("#993CCF")}
+        onClick={() => 
+          setSelectedCategories((currentCategories) => {
+            if (currentCategories.includes(category)) {
+              const updatedCategories = currentCategories.filter((cat) => cat !== category);
+              console.log(updatedCategories);
+              return updatedCategories;
+            } else {
+              const updatedCategories = [...currentCategories, category];
+              console.log(updatedCategories);
+              return updatedCategories;
+            }
+          })
+        }
         >
                 {category}
 
@@ -564,7 +576,7 @@ export default function Index(props) {
             <a style={{color: "#000", textDecoration: "none"}} href={`/jam/${jam.slug}`}>
             <PreviewCard 
             style={{cursor: "pointer"}}
-            key={idx} light={true} {...jam} />
+            key={idx + jam.title} light={true} {...jam} />
             </a>
           ))}
         </Grid>

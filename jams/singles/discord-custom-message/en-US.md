@@ -5,7 +5,7 @@ description: >
 contributor: 'zoya-hussain'
 originalAuthor: 'wollygfx'
 thumbnail: 'https://cloud-bj4vorj8t.vercel.app/examplebot.png'
-timeEstimate: '45-50 mins'
+timeEstimate: '45 Min'
 difficulty: 'Intermediate'
 keywords: 'Beta'
 language: ''
