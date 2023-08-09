@@ -560,10 +560,11 @@ export default function Index(props) {
         <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ py: 3 }}>
 
           {jams.map((jam, idx) => (
+            <a style={{color: "#000", textDecoration: "none"}} href={`/jam/${jam.slug}`}>
             <PreviewCard 
             style={{cursor: "pointer"}}
-            onClick={() => router.push(`/jam/${jam.slug}`)}
             key={idx} light={true} {...jam} />
+            </a>
           ))}
         </Grid>
       </Container>
