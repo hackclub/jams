@@ -1,4 +1,24 @@
 ---
+title: 'BROKEN-Create your own Club Crypto Currency'
+description: >
+  In this Jam, we'll be working on creating stunning shapes and graphics using Python and its pre-installed Turtle library.
+contributor: 'zsh'
+originalAuthor: 'YashKalbande'
+thumbnail: 'https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif'
+timeEstimate: '45 Min'
+difficulty: 'Beginner'
+keywords: 'Beta, Python, Art'
+language: 'Python'
+presentation: 'https://www.figma.com/file/UFFlwD9kEFmMkygaY8yG3h/Untitled?type=design&node-id=0%3A1&mode=design&t=9UnEZB6EYxvg2aQv-1'
+presentationPlay: 'https://www.figma.com/proto/UFFlwD9kEFmMkygaY8yG3h/Untitled?type=design&node-id=2-2&t=IebotsxN9M6q3Edr-1&scaling=contain&page-id=0%3A1&mode=design'
+presentationPDF: 'https://cloud-fplorbj3h-hack-club-bot.vercel.app/0make_your_own_club_token_w_solidity.pdf'
+notes: 'https://cloud-mrmhmej0t-hack-club-bot.vercel.app/0notes_for_this_jam__for_learner_to_note__jot_down_.pdf'
+poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
+video: ''
+slug: 'exciting-python-visuals'
+---
+
+
 title: 'Discord Custom Message Bot'
 description: >
   In this Jam, we're going to create a Discord bot that allows users to save custom messages that they can have the bot send at any time.
@@ -16,7 +36,7 @@ notes: ''
 poster: ''
 video: ''
 slug: 'custom-discord-bot'
----
+
 
 Contributors: [@JakeGerber](https://github.com/JakeGerber "View @JakeGerber on GitHub")
 Edited by: [@zsh](https://read.cv/zoyashussain)
