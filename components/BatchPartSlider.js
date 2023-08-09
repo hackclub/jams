@@ -29,13 +29,13 @@ const BatchPartSlider = ({ jam, currentPart, maxParts}) => {
         <div style={{margin: "auto auto", maxWidth: "64rem !important", textAlign: "center" }}>
             <Container sx={{ p: "0rem" }} style={{ maxWidth: "64rem !important", textAlign: "center" }}>
                 <ul style={{display: "inline-block", textAlign: "center", color: "#993CCF"}}>
-                    <li style={{ display: "inline-block", padding: "5px 5px"}}>
+                    <li key={0} style={{ display: "inline-block", padding: "5px 5px"}}>
                         {prevPage != null ? <Link href={prevPage} sx={{ color: "#993CCF", textDecoration: "underline" }}>Previous</Link> : "First Page"}
                     </li>
-                    <li style={{ display: "inline-block", padding: "5px 5px" }}>
+                    <li key={1} style={{ display: "inline-block", padding: "5px 5px" }}>
                         {currentPartInt}/{maxParts}
                     </li>
-                    <li style={{ display: "inline-block", padding: "5px 5px" }}>
+                    <li key={2} style={{ display: "inline-block", padding: "5px 5px" }}>
                         {nextPage != null ? <Link href={nextPage} sx={{ color: "#993CCF", textDecoration: "underline" }}>Next</Link> : "Last Page"}
                     </li>
                 </ul>
