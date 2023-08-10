@@ -89,7 +89,7 @@ export default function PreviewCard({
             width: '100%',
             aspectRatio: '16/9',
             zIndex: 0,
-            objectFit: 'cover',
+            objectFit: 'cover', 
             background:
               'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat',
           }}

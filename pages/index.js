@@ -282,6 +282,31 @@ export default function Index(props) {
 
 
   const batches = [... props.jamsContent.batches]
+  .filter(batch => {
+    // Check if any value in batch's values contains all words in the query
+    const batchValues = Object.values(batch);
+    const queryWords = query.toLowerCase().trim().split(" ");
+  
+    for (let singleBatchValue = 0; singleBatchValue < batchValues.length; singleBatchValue++) {
+      let successful = true;
+  
+      const batchValueAsString = String(batchValues[singleBatchValue]).toLowerCase(); // Convert to string
+      const batchValueWords = batchValueAsString.split(" ");
+  
+      for (let singleWord = 0; singleWord < queryWords.length; singleWord++) {
+        if (batchValueWords.indexOf(queryWords[singleWord]) === -1) {
+          successful = false;
+        }
+      }
+  
+      if (successful) {
+        // Apply other conditions and return the result
+        return !batch?.keywords?.includes("Beta") && (batch?.keywords?.split(",")?.some((keyword) => selectedCategories.includes(keyword)) || selectedCategories == [] || selectedCategories == undefined || selectedCategories == "") // display it if other attributes work
+      }
+    }
+  
+    return false;
+  });
   const jams = props.jamsContent.singles
   .filter((jam) => 
 { 
@@ -306,10 +331,9 @@ export default function Index(props) {
 }
   )
 
-  const features = [props.jamsContent.singles[3], props.jamsContent.singles[4], props.jamsContent.singles[0]]
-
-
-
+  const desiredSlugs = ["ai-travel", "online-store", "voxel-animation"];
+  const features = props.jamsContent.singles.filter(jam => desiredSlugs.includes(jam.slug));
+  
   const [scrollPosition, setScrollPosition] = useState(0)
   useEffect(() => {
     const onScroll = () => {
@@ -692,7 +716,10 @@ export default function Index(props) {
             key={idx + jam.title} light={true} {...jam} />
             </a>
           ))}
-                    {batches.map((batch, idx) =>
+                    {batches
+                    .
+                    
+                    map((batch, idx) =>
             <a style={{color: "#000", textDecoration: "none"}} href={`/batch/${batch.slug}`}>
             <PreviewCard 
             style={{cursor: "pointer"}}
