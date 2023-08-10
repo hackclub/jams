@@ -4,7 +4,7 @@ description: >
   In this jam, you'll learn about the Mandelbrot set, and how to render it (and other fractals!) in realtime using ShaderToy.
 contributor: 'NalinPlad'  
 thumbnail: 'https://cloud-d20e07zy6-hack-club-bot.vercel.app/0render.gif' 
-timeEstimate: '60 minutes'  
+timeEstimate: '60 Min'  
 difficulty: 'Advanced'  
 keywords: 'shaders, GPU, graphics, fractals, art, math' 
 language: 'GLSL'  

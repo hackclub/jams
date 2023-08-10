@@ -4,7 +4,7 @@ description: >
     In this Jam, you'll be creating an awesome unique Lofi Animation using Voxels! It will be a lot of fun and you will have an awesome animation as a result!
 contributor: "GalaxyGamingBoy"
 thumbnail: "https://cloud-akci9gy8k-hack-club-bot.vercel.app/0applesfallinggif.gif"
-timeEstimate: "~60+ Minutes"
+timeEstimate: "60 Min"
 difficulty: "Intermediate"
 keywords: "Web, HTML, javascript, replit, Web, Voxel, Cube, Textures, Animation"
 language: "Javascript"
