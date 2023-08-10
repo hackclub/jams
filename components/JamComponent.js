@@ -162,9 +162,13 @@ export default function JamComponent({ jam, jamsContent }) {
       {/* So what this code does is checks if batch is null or not. upon null renders the singles breadcrumbs ver, upon non null renders the batch ver */}
       {jam.batch != null
         
-          ? (<Container sx={{ p:"1rem"}} style={{ maxWidth:"64rem !important"}}>
+          ? (<Container sx={{ p:"0px 1rem"}} style={{ display: "flex", maxWidth:"64rem !important", alignItems: "center", flexDirection: "row", justifyContent: "space-between"}}>
                 {/* Structure: root / batch name / part */}
+                <Box style={{display: "flex", gap: "12px"}}>
                 <Link href="/" sx={{ color: "#993CCF", textDecoration: "underline" }}>batch</Link> / <Link href={"/batch/" + jam.batch} sx={{ color: "#993CCF", textDecoration: "underline" }}>{jam.batch}</Link> / <Link href={"/batch/" + jam.batch + "/" + jam.part} sx={{ color: "#993CCF", textDecoration: "underline" }}>{jam.part}</Link>
+                </Box>
+                {jam.batch != null ? <BatchPartSlider jam={jam} currentPart={jam.part} maxParts={jam.totalParts}></BatchPartSlider> : <></>}
+
               </Container>)
         
           : (<Container sx={{ p:"1rem"}} style={{ maxWidth:"64rem !important"}}>
@@ -264,9 +268,7 @@ export default function JamComponent({ jam, jamsContent }) {
 
         <div sx={{ width:["auto","auto","20rem"], position:"relative" }}>
           <div sx={{ position: "sticky", top: "6rem", pb: "3rem", maxHeight: ["none", "none", "calc(100vh - 6rem)"], overflowY: ["visible", "visible", "auto"] }}>
-            
-            {jam.batch != null ? <BatchPartSlider jam={jam} currentPart={jam.part} maxParts={jam.totalParts}></BatchPartSlider> : <></>}
-
+        
             <h2 sx={{ fontSize:"1.5rem", lineHeight:"1rem", fontWeight:"bold" }}>
               Author
             </h2>
