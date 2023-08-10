@@ -347,6 +347,7 @@ export default function Index(props) {
         />
         <Image sx={{width: "100%", height: "100%", position: "absolute", mixBlendMode: "color-burn"}} src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"/>
         <Header jams={jams} query={query} setQuery={setQuery} isHomePage={true} />
+        
         <Box
           sx={{ p: 4, textAlign: 'center',          marginTop: "64px",          position: 'relative', zIndex: 2,
            }}>
@@ -357,18 +358,20 @@ export default function Index(props) {
               fontSize: [48, 56, 96],
               textShadow: '0px 0px 64px 0px rgba(56, 10, 83, 0.75)',
               mb: 0,
+              mt: 0,
               lineHeight: 1,
               fontWeight: 400
             }}>
             Code Jams
           </Text>
-          <Box sx={{maxWidth: "100%", padding: [2, 4], textAlign: "center"}}>
+          <Box sx={{maxWidth: "100%", px: [2, 4], py: [2, 3], textAlign: "center"}}>
             <Text
               sx={{
                 textShadow: '0px 0px 32px 0px rgba(56, 10, 83, 0.50)',
                 fontSize: [16, 18, 24],
                 mt: 0,
                 lineHeight: 1.2,
+                pt: 0,
                 px: 3,
               }}>
               Collaborative coding workshops where sparks ignite, <br/>fears
@@ -378,7 +381,14 @@ export default function Index(props) {
           <Slides initialFeatures={features} router={router}/>
         </Box>
       </Box>
-      <Container sx={{ marginTop: '-72px' }}>
+      <Container sx={{ marginTop: '-132px', position: "relative", zIndex: 1 }}>
+        <Box sx={{backgroundColor: "#FDF5EC", border: "1px solid #F0924B", padding: "32px", borderRadius: "16px"}}>
+        <Text as="h2" sx={{ fontSize: 42, fontWeight: 600, margin: 0, p: 0, zIndex: 2 }}>
+          New to Jams? Start Jamming! 🍁
+        </Text>
+        <Text as="h2" sx={{ fontSize: 24, fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
+        Here are some Great Multi-part Jams to Kickoff Your Club  this Fall 🍂            </Text>
+        </Box>
         <Text as="h1" sx={{ fontSize: 48, fontWeight: 600, zIndex: 2 }}>
           Jams
         </Text>
