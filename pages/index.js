@@ -76,7 +76,12 @@ function Slides({router, initialFeatures}) {
   const [active, setActive] = useState(Math.floor(initialFeatures.length / 2))
 
   const [features, setFeatures] = useState(initialFeatures);
-  function moveRight() {
+
+  const [difficulty, setDifficulty] = useState("");
+  const [time, setTime] = useState("");
+
+
+    function moveRight() {
     const copyOfFeatures = [...features];
   
     const firstValue = copyOfFeatures.shift();
