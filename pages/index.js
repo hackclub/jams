@@ -276,6 +276,9 @@ export default function Index(props) {
   const categories = ["Web", "Game", "Crypto", "Art", "Python", "3D", "AI"]
   const [selectedCategories, setSelectedCategories] = useState([])
   const [query, setQuery] = useState("")
+  const [difficulty, setDifficulty] = useState("");
+  const [time, setTime] = useState("");
+
   const [filter, setFilter] = useState('')
   const [language, setLanguage] = useState('')
   const [timeEstimate, settimeEstimate] = useState('') 
@@ -286,6 +289,17 @@ export default function Index(props) {
 
   const batches = props.jamsContent.batches
   .filter(batch => {
+
+    if(batch.difficulty?.toLowerCase() != difficulty && difficulty != "") {
+  
+      return false
+    }
+      
+    if(batch.timeEstimate != time && time != "") {
+  
+      return false
+    }
+    
     // Check if any value in batch's values contains all words in the query
     const batchValues = Object.values(batch);
     const queryWords = query.toLowerCase().trim().split(" ");
@@ -318,6 +332,19 @@ export default function Index(props) {
       every part of the query is contained within that value*/
   var jamValues = Object.values(jam); // indicates each value that exists in the jam dict
   var queryWords = query.toLowerCase().trim().split(" "); // splits query into separate words and elimiates prefix and suffix whitespaces
+  
+  if(jam.difficulty?.toLowerCase() != difficulty && difficulty != "") {
+    console.log(jam.difficulty, difficulty)
+
+    return false
+  }
+    
+  if(jam.timeEstimate != time && time != "") {
+    console.log(jam.difficulty, difficulty)
+
+    return false
+  }
+
   for (let singleJamValue = 0; singleJamValue < jamValues.length; singleJamValue++) { // iterates through the jam values
     var successful = true; // assume it works
     for (let singleWord = 0; singleWord < queryWords.length; singleWord++) { // iterates through the words in query
@@ -351,8 +378,6 @@ export default function Index(props) {
   }, [])
 
 
-  const [difficulty, setDifficulty] = useState("");
-  const [time, setTime] = useState("");
 
   return (
     <>
