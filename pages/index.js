@@ -383,7 +383,7 @@ export default function Index(props) {
       </Box>
       <Container sx={{ marginTop: '-132px', position: "relative", zIndex: 1 }}>
         <Box sx={{backgroundColor: "#FDF5EC", border: "1px solid #F0924B", padding: "32px", borderRadius: "16px"}}>
-        <Text as="h2" sx={{ fontSize: 42, fontWeight: 600, margin: 0, p: 0, zIndex: 2 }}>
+        <Text as="h2" sx={{ fontSize: 42, lineHeight: 1.2, fontWeight: 600, margin: 0, p: 0, zIndex: 2 }}>
           New to Jams? Start Jamming! 🍁
         </Text>
         <Text as="h2" sx={{ fontSize: 24, fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
@@ -392,7 +392,7 @@ export default function Index(props) {
         <Text as="h1" sx={{ fontSize: 48, fontWeight: 600, zIndex: 2 }}>
           Jams
         </Text>
-        <Text sx={{ fontSize: 24 }}>
+        {/* <Text sx={{ fontSize: 24 }}>
           Batches{' '}
           <Text
             sx={{
@@ -510,11 +510,11 @@ export default function Index(props) {
 
 
         )}
-        </Grid>
+        </Grid> */}
       </Container>
       
       <Container>
-        <Text sx={{ fontSize: 24 }}>
+        {/* <Text sx={{ fontSize: 24 }}>
           Singles{' '}
           <Text
             sx={{
@@ -524,7 +524,7 @@ export default function Index(props) {
             }}>
             (one-part Jams)
           </Text>
-        </Text>
+        </Text> */}
         
         <Box style={{display: "flex",              top: 84, backgroundColor: "#fff", zIndex: 2,
           left: 0, opacity: `${Math.min(((scrollPosition / 500) - 1), 1)}`,        backdropFilter: 'blur(5px)',          backgroundColor: `rgba(200, 200, 200, ${Math.min(((scrollPosition / 500) - 1), 0.75)})`,
@@ -678,9 +678,12 @@ export default function Index(props) {
           timeEstimate={timeEstimate}
           settimeEstimate={settimeEstimate}
         /> */}
+         
+        <Text> 
           {jams.length != 0 ? (<p style={{marginTop: 8, marginBottom: 0}}>{jams.length} Jams Found</p>) : (<p style={{marginTop: 8, marginBottom: 0}}>No Results Found</p>)}
-
+          </Text>
         <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ py: 3 }}>
+
 
           {jams.map((jam, idx) => (
             <a style={{color: "#000", textDecoration: "none"}} href={`/jam/${jam.slug}`}>
@@ -689,6 +692,13 @@ export default function Index(props) {
             key={idx + jam.title} light={true} {...jam} />
             </a>
           ))}
+                    {batches.map((batch, idx) =>
+            <a style={{color: "#000", textDecoration: "none"}} href={`/batch/${batch.slug}`}>
+            <PreviewCard 
+            style={{cursor: "pointer"}}
+            key={idx + batch.title} light={true} {...batch} />
+            </a>  
+          )}
         </Grid>
       </Container>
       <Footer />
