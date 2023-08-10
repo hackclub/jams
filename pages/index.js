@@ -424,12 +424,12 @@ export default function Index(props) {
           <Box
             sx={{
               position: "absolute",
-              top: "-32px", // Adjust the top distance as needed
-              right: "-32px", // Adjust the right distance as needed
+              top: "-48px", // Adjust the top distance as needed
+              right: "-48px", // Adjust the right distance as needed
               zIndex: 1,
             }}
           >
-            <img src={fallFeature.sticker} style={{width: "82px", height: "82px"}}/>
+            <img src={fallFeature.sticker} style={{width: "96px", height: "96px"}}/>
           </Box>
         )}
             <PreviewCard 
