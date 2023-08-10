@@ -9,4 +9,5 @@ timeEstimate: '5 Hours'
 difficulty: 'Beginner'
 slug: 'sprig'
 short: 'Get started making games with Sprig!'
+sticker: 'https://cloud-8zhue0w0u-hack-club-bot.vercel.app/0frame_100.png'
 ---

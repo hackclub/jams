@@ -14,6 +14,7 @@ export default function PreviewCard({
   timeEstimate,
   part = 0,
   light = true,
+  sticker,
   ...props
 }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -30,7 +31,10 @@ export default function PreviewCard({
   return (
     <>
       <Box onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} style={{cursor: "pointer"}} {...props}>
+
+        
         <Box sx={{ borderRadius: '16px' }}>
+
         {isHovered ? (
         <Box sx={{position: "absolute", zIndex: 1, marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
         {part != "0" ? (
@@ -77,6 +81,7 @@ export default function PreviewCard({
             </Box>) : (<Box></Box>)}
             <Box sx={{borderRadius: "16px", overflow: 'hidden',             width: '100%',
             aspectRatio: '16/9',
+            border: sticker ? ("1px #F0924B solid") : ("0px"),
             objectFit: 'cover',}}>
             {thumbnail?.includes(".gif") && part == "0" ? (
         <ReactFreezeframe

@@ -9,4 +9,5 @@ timeEstimate: '5 Hours'
 difficulty: 'Beginner'
 slug: 'webOS'
 short: 'An Introspective Journey to Define the Self in Code'
+sticker: 'https://cloud-km03d89bn-hack-club-bot.vercel.app/0frame_98.png'
 ---

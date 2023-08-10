@@ -334,7 +334,7 @@ export default function Index(props) {
   const desiredSlugs = ["ai-travel", "online-store", "voxel-animation"];
   const features = props.jamsContent.singles.filter(jam => desiredSlugs.includes(jam.slug));
   
-  const desiredSlugsBatches = ["sprig", "webOS", "artificial-intelligence"];
+  const desiredSlugsBatches = ["sprig", "webOS", "artificial-intelligence", "usb-hub"];
   const fallFeatures = props.jamsContent.batches.filter(batch => desiredSlugsBatches.includes(batch.slug));
   
 
@@ -416,10 +416,22 @@ export default function Index(props) {
         </Text>
         <Text as="h2" sx={{ fontSize: 24, fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
         Here are some Great Multi-part Jams to Kickoff Your Club  this Fall 🍂            </Text>
-        <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ py: 3 }}>
+        <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']} gap={3} sx={{ py: 3 }}>
 
-        {fallFeatures.map((fallFeature, idx) =>
-            <a style={{color: "#000", textDecoration: "none"}} href={`/batch/${fallFeature.slug}`}>
+        {fallFeatures.reverse().map((fallFeature, idx) =>
+            <a style={{color: "#000", position: "relative", textDecoration: "none"}} href={`/batch/${fallFeature.slug}`}>
+                    {fallFeature.sticker && (
+          <Box
+            sx={{
+              position: "absolute",
+              top: "-32px", // Adjust the top distance as needed
+              right: "-32px", // Adjust the right distance as needed
+              zIndex: 1,
+            }}
+          >
+            <img src={fallFeature.sticker} style={{width: "82px", height: "82px"}}/>
+          </Box>
+        )}
             <PreviewCard 
             style={{cursor: "pointer"}}
             key={idx + fallFeature.title} light={true} {...fallFeature} />
