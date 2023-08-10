@@ -747,7 +747,7 @@ export default function Index(props) {
           ))}
                     {batches.
                     map((batch, idx) =>
-            <a style={{color: "#000", textDecoration: "none"}} onClick={() => console.log(batches)}>
+            <a style={{color: "#000", textDecoration: "none"}} href={`/batch/${batch.slug}`}>
             <PreviewCard 
             style={{cursor: "pointer"}}
             key={idx + batch.title} light={true} {...batch} />
