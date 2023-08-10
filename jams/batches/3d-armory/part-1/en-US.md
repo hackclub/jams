@@ -17,6 +17,7 @@ notes: "https://docs.google.com/document/d/1MsnPHKdCjI5Qz-b-30BlTOcyaVMjJLMo8Am-
 poster: "" 
 video: "" 
 totalParts: 2
+contributorSlackID: "U05E2FK240N"
 ---
 
 
