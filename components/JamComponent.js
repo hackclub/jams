@@ -46,6 +46,8 @@ export default function JamComponent({ jam, jamsContent }) {
             upcomingSections.push(header);
           }
         });
+
+        console.log(jam.AITokenLink);
     
         setActiveSection(newActiveSection);
         setPassedSections(passedSections);
@@ -319,7 +321,7 @@ export default function JamComponent({ jam, jamsContent }) {
               </div>
             </div>
 
-            {(jam.presentation || jam.video || jam.notes || jam.poster) && <>
+            {(jam.presentation || jam.video || jam.notes || jam.poster || jam.AITokenLink) && <>
               <h2 sx={{ fontSize:"1.5rem", lineHeight:"1rem", fontWeight:"bold", mt:"2rem" }}>
                 Resources
               </h2>
@@ -406,6 +408,27 @@ export default function JamComponent({ jam, jamsContent }) {
                       }}
                     >
                       <Text sx={{ textDecoration: 'none' }}>Poster</Text>
+                      <Icon height={22} width={22} glyph={'download'} />
+                    </Box>
+                  </Link>
+                )}
+                {jam.AITokenLink && (
+                  <Link sx={{ color: '#993CCF' }} href={jam.AITokenLink}>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        border: '1px solid',
+                        paddingLeft: '10px',
+                        paddingRight: '10px',
+                        paddingTop: '5px',
+                        paddingBottom: '5px',
+                        borderRadius: '8px',
+                        bg: '#fff',
+                      }}
+                    >
+                      <Text sx={{ textDecoration: 'none' }}>AI Token / API Key</Text>
                       <Icon height={22} width={22} glyph={'download'} />
                     </Box>
                   </Link>
