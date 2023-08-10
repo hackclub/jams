@@ -2,9 +2,9 @@
 title: 'Build a USB Hub'
 contributor: 'maxwofford'
 description: "Get started making your very first game with the Sprig game engine, using JavaScript! Sprig is a great tool for both beginners and advanced programmers, and if you make a game, you can get a free DIY handheld console! Follow this four-part series in order, and you'll get to make your very own puzzle game."
-video: 'none'
+video: ''
 thumbnail: 'https://cloud-if0dmv5a3-hack-club-bot.vercel.app/0usb-dino.png'
-keywords: 'PCB, Circuit, USB, Hub, Electronics, Soldering, Schematic, Design, EasyEDA, EDA, Beginner'
+keywords: 'PCB, Circuit, USB, PCB, Hub, Electronics, Soldering, Schematic, Design, EasyEDA, EDA, Beginner'
 timeEstimate: '2 Hours'
 difficulty: 'Beginner'
 slug: 'usb-hub'

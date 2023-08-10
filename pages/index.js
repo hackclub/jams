@@ -281,7 +281,7 @@ export default function Index(props) {
   const router = useRouter();
 
 
-  const batches = [... props.jamsContent.batches]
+  const batches = props.jamsContent.batches
   .filter(batch => {
     // Check if any value in batch's values contains all words in the query
     const batchValues = Object.values(batch);
@@ -416,9 +416,9 @@ export default function Index(props) {
         </Text>
         <Text as="h2" sx={{ fontSize: 24, fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
         Here are some Great Multi-part Jams to Kickoff Your Club  this Fall 🍂            </Text>
-        <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']} gap={3} sx={{ py: 3 }}>
+        <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']} gap={3} sx={{ pt: 4 }}>
 
-        {fallFeatures.reverse().map((fallFeature, idx) =>
+        {fallFeatures.map((fallFeature, idx) =>
             <a style={{color: "#000", position: "relative", textDecoration: "none"}} href={`/batch/${fallFeature.slug}`}>
                     {fallFeature.sticker && (
           <Box
@@ -439,7 +439,6 @@ export default function Index(props) {
         )}
         </Grid>
         
-        <p onClick={() => console.log(fallFeatures)}>(p.s. maybe your club needs some stickers, if tap here & we’ll mail you some!)</p>
         </Box>
         
         <Text as="h1" sx={{ fontSize: 48, fontWeight: 600, zIndex: 2 }}>
@@ -734,7 +733,7 @@ export default function Index(props) {
         /> */}
          
         <Text> 
-          {jams.length != 0 ? (<p style={{marginTop: 8, marginBottom: 0}}>{jams.length} Jams Found</p>) : (<p style={{marginTop: 8, marginBottom: 0}}>No Results Found</p>)}
+          {jams.length + batches.length != 0 ? (<p style={{marginTop: 8, marginBottom: 0}}>{jams.length + batches.length} Jams Found</p>) : (<p style={{marginTop: 8, marginBottom: 0}}>No Results Found</p>)}
           </Text>
         <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ py: 3 }}>
 
@@ -746,11 +745,9 @@ export default function Index(props) {
             key={idx + jam.title} light={true} {...jam} />
             </a>
           ))}
-                    {batches
-                    .
-                    
+                    {batches.
                     map((batch, idx) =>
-            <a style={{color: "#000", textDecoration: "none"}} href={`/batch/${batch.slug}`}>
+            <a style={{color: "#000", textDecoration: "none"}} onClick={() => console.log(batches)}>
             <PreviewCard 
             style={{cursor: "pointer"}}
             key={idx + batch.title} light={true} {...batch} />
