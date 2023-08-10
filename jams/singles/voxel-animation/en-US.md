@@ -99,8 +99,8 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 The process of uploading assets like images is very easy!  
 All you need to do is to drag and drop it into the `assets` folder ot wherever else in your project!
 
-<video controls>
-	<source src="https://cloud-ldawt72v9-hack-club-bot.vercel.app/0uploadtoreplit.mp4" type="video/mp4">
+<video controls style={{width: "400px"}}>
+	<source src="https://cloud-ldawt72v9-hack-club-bot.vercel.app/0uploadtoreplit.mp4" type="video/mp4"/>
 </video>
 
 So yea, that's everything about replit, that you will need to know!
@@ -621,8 +621,8 @@ statusRec.innerText = "Saving recording... This *may* take a while"; // Update s
 ## Start of your SOLO adventure
 
 <Dropdown title="Final Task">
-	Create a ground for your project.<br>
-	It can either use a texture or a green color, like 0x00FF00.<br>
+	Create a ground for your project.<br/>
+	It can either use a texture or a green color, like 0x00FF00.<br/>
 	Make sure to make the y <strong>negative</strong>, or make the other objects y <strong>positive</strong>!
 </Dropdown>
 
