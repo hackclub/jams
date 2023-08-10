@@ -77,6 +77,7 @@ export default function PreviewCard({
                 {difficulty}
 
       </Badge>}
+      {!parts &&
       <Badge
         key="timeFeature"
         mr={2}
@@ -85,7 +86,8 @@ export default function PreviewCard({
         color="#993CCF"
         >
         {timeEstimate}
-      </Badge>
+      </Badge>}
+      
             </Box>}
 
 
