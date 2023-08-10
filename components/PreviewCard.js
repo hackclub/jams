@@ -15,11 +15,11 @@ export default function PreviewCard({
   part = 0,
   light = true,
   sticker,
+  totalParts=null,
+  parts=null,
   ...props
 }) {
   const [isHovered, setIsHovered] = useState(false);
-
-
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -31,12 +31,10 @@ export default function PreviewCard({
   return (
     <>
       <Box onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} style={{cursor: "pointer"}} {...props}>
-
-        
         <Box sx={{ borderRadius: '16px' }}>
-
-        <Box sx={{position: "absolute", opacity: isHovered ? (1) : (0), transition: 'opacity 0.2s ease-in', zIndex: 1, marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
-        {part != "0" ? (
+        {isHovered &&
+        <Box sx={{position: "absolute", zIndex: 1, marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
+        {part != "0" && (
         <Badge
         key="partFeature"
         mr={2}
@@ -46,7 +44,18 @@ export default function PreviewCard({
         >
                 Part {part.split("-")[1]}
 
-      </Badge>) : (<div></div>)}
+      </Badge>)}
+      {parts?.length && (
+        <Badge
+        key="partFeature"
+        mr={2}
+        sx={{ cursor: 'pointer', backgroundColor: "#993CCF", marginBottom: "8px", fontSize: ["14px", "auto"] }} 
+        variant="outline"
+        color="#fff"
+        >
+                {parts.length} Parts
+
+      </Badge>)}
             <Badge
         key="keywordFeature"
         mr={2}
@@ -58,7 +67,7 @@ export default function PreviewCard({
                 {keywords.split(", ")[0]}
 
       </Badge>
-      <Badge
+      {part===0 && <Badge
         key="difficultyFeature"
         mr={2}
         sx={{ cursor: 'pointer', backgroundColor: "#fff", marginBottom: "8px", fontSize: ["14px", "auto"]}} // Adjust '4px' as needed
@@ -67,7 +76,7 @@ export default function PreviewCard({
         >
                 {difficulty}
 
-      </Badge>
+      </Badge>}
       <Badge
         key="timeFeature"
         mr={2}
@@ -77,7 +86,7 @@ export default function PreviewCard({
         >
         {timeEstimate}
       </Badge>
-            </Box>
+            </Box>}
 
 
             <Box sx={{borderRadius: "16px", overflow: 'hidden',             width: '100%',

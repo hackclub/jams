@@ -145,7 +145,7 @@ export default function Page({ batch, params, jams }) {
         pb: "1rem",
         display:"flex",
         flexDirection:["column","column","row"],
-        gap:["1rem", "1rem", "3rem"],
+        gap:["1rem", "1rem", "2rem"],
         bg: "rgb(229 229 229 / 0.50)",
         borderRadius: "16px",
       }}>
@@ -180,7 +180,7 @@ export default function Page({ batch, params, jams }) {
     </Container>
 
     <Container sx={{ mt:"3rem" }} style={{ maxWidth:"64rem !important"}}>
-      <Grid columns={[null, '1fr 1fr 1fr']} sx={{ marginBottom: "32px", gap:"3rem" }}>
+      <Grid columns={[null, '1fr 1fr 1fr']} sx={{ marginBottom: "32px", gap:"1rem" }}>
         {batch.parts.map((part) => 
           <Link
             style={{color: "#000", textDecoration: "none"}} 
