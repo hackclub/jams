@@ -77,8 +77,6 @@ function Slides({router, initialFeatures}) {
 
   const [features, setFeatures] = useState(initialFeatures);
 
-  const [difficulty, setDifficulty] = useState("");
-  const [time, setTime] = useState("");
 
 
     function moveRight() {
@@ -352,6 +350,10 @@ export default function Index(props) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+
+  const [difficulty, setDifficulty] = useState("");
+  const [time, setTime] = useState("");
+
   return (
     <>
       <Box
@@ -584,7 +586,7 @@ export default function Index(props) {
           </Text>
         </Text> */}
         
-        <Box style={{display: "flex",              top: 84, backgroundColor: "#fff", zIndex: 2,
+        <Box sx={{display: ["none", "none", "flex"],              top: 84, backgroundColor: "#fff", zIndex: 2,
           left: 0, opacity: `${Math.min(((scrollPosition / 500) - 1), 1)}`,        backdropFilter: 'blur(5px)',          backgroundColor: `rgba(200, 200, 200, ${Math.min(((scrollPosition / 500) - 1), 0.75)})`,
           right: 0, cursor: 'pointer', position: 'fixed', flexDirection: "row", borderColor: "#e0e6ed", borderTop: "1px solid #e0e6ed", borderBottom: "1px solid #e0e6ed"}}>
         <Container style={{display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: 'center'}}>
@@ -629,100 +631,132 @@ export default function Index(props) {
       </Badge>        
       )}
       </Box>
-      <Box style={{display: "flex", gap: "12px"}}>
-        <Box style={{display: "flex", gap: "8px", backgroundColor: "#fff", padding: "4px 8px", borderRadius: "8px"}}>
-        <span style={{backgroundColor: "#993CCF", margin: "0px", padding: "0px 8px", color: "#fff", borderRadius: "4px"}}>
+      <Box style={{display: "flex", flexDirection: "row", gap: "16px"}}>
+      <Box style={{ display: "flex", gap: "8px", backgroundColor: "#fff", padding: "4px 8px", borderRadius: "8px" }}>
+        <span
+          style={{
+            backgroundColor: difficulty === "" ? "#993CCF" : "#fff",
+            margin: "0px",
+            padding: "0px 8px",
+            color: difficulty === "" ? "#fff" : "#000",
+            borderRadius: "4px",
+            cursor: "pointer",
+            ':hover': {
+              backgroundColor: difficulty === "" ? "#993CCF" : "#EFEFEF",
+            },
+          }}
+          onClick={() => setDifficulty("")}
+        >
           Any
         </span>
-        
         <Text
-      sx={{
-        backgroundColor: '#fff',
-        margin: '0px',
-        padding: '0px 4px',
-        color: '#000',
-        borderRadius: '4px',
-        transition: 'background-color 0.3s, color 0.3s',
+          sx={{
+            backgroundColor: difficulty === "beginner" ? "#993CCF" : "#fff",
+            margin: "0px",
+            padding: "0px 4px",
+            color: difficulty === "beginner" ? "#fff" : "#000",
+            borderRadius: "4px",
+            cursor: "pointer",
+            transition: 'background-color 0.3s, color 0.3s',
+            ':hover': {
+              backgroundColor: difficulty === "beginner" ? "#993CCF" : "#EFEFEF",
+            },
+          }}
+          onClick={() => setDifficulty("beginner")}
+        >
+          Beginner
+        </Text>
+        <Text
+          sx={{
+            backgroundColor: difficulty === "intermediate" ? "#993CCF" : "#fff",
+            margin: "0px",
+            padding: "0px 4px",
+            color: difficulty === "intermediate" ? "#fff" : "#000",
+            borderRadius: "4px",
+            cursor: "pointer",
+            transition: 'background-color 0.3s, color 0.3s',
+            ':hover': {
+              backgroundColor: difficulty === "intermediate" ? "#993CCF" : "#EFEFEF",
+            },
+          }}
+          onClick={() => setDifficulty("intermediate")}
+        >
+          Intermediate
+        </Text>
+        <Text
+          sx={{
+            backgroundColor: difficulty === "advanced" ? "#993CCF" : "#fff",
+            margin: "0px",
+            padding: "0px 4px",
+            color: difficulty === "advanced" ? "#fff" : "#000",
+            borderRadius: "4px",
+            cursor: "pointer",
+            transition: 'background-color 0.3s, color 0.3s',
+            ':hover': {
+              backgroundColor: '#EFEFEF',
+            },
+            ':hover': {
+              backgroundColor: difficulty === "advanced" ? "#993CCF" : "#EFEFEF",
+            },
+          }}
+          onClick={() => setDifficulty("advanced")}
+        >
+          Advanced
+        </Text>
+      </Box>
 
-        ':hover': {
-          backgroundColor: '#EFEFEF',
-        },
-      }}
-    >
-      Beginner
-    </Text>
-    <Text
-      sx={{
-        backgroundColor: '#fff',
-        margin: '0px',
-        padding: '0px 4px',
-        color: '#000',
-        borderRadius: '4px',
-        transition: 'background-color 0.3s, color 0.3s',
-
-        ':hover': {
-          backgroundColor: '#EFEFEF',
-        },
-      }}
-    >
-      Intermediate
-    </Text>
-    <Text
-      sx={{
-        backgroundColor: '#fff',
-        margin: '0px',
-        padding: '0px 4px',
-        color: '#000',
-        borderRadius: '4px',
-        transition: 'background-color 0.3s, color 0.3s',
-
-        ':hover': {
-          backgroundColor: '#EFEFEF',
-        },
-      }}
-    >
-      Advanced
-    </Text>
-        </Box>
-        <Box style={{display: "flex", gap: "8px", backgroundColor: "#fff", padding: "4px 8px", borderRadius: "8px"}}>
-        <span style={{backgroundColor: "#993CCF", margin: "0px", padding: "0px 8px", color: "#fff", borderRadius: "4px"}}>
+      <Box style={{ display: "flex", gap: "8px", backgroundColor: "#fff", padding: "4px 8px", borderRadius: "8px" }}>
+        <span
+          style={{
+            backgroundColor: time === "" ? "#993CCF" : "#fff",
+            margin: "0px",
+            padding: "0px 8px",
+            color: time === "" ? "#fff" : "#000",
+            borderRadius: "4px",
+            cursor: "pointer",
+            ':hover': {
+              backgroundColor: time === "" ? "#993CCF" : "#EFEFEF",
+            },
+          }}
+          onClick={() => setTime("")}
+        >
           Any
         </span>
-        
         <Text
-      sx={{
-        backgroundColor: '#fff',
-        margin: '0px',
-        padding: '0px 4px',
-        color: '#000',
-        borderRadius: '4px',
-        transition: 'background-color 0.3s, color 0.3s',
-
-        ':hover': {
-          backgroundColor: '#EFEFEF',
-        },
-      }}
-    >
-      30 Min
-    </Text>
-    <Text
-      sx={{
-        backgroundColor: '#fff',
-        margin: '0px',
-        padding: '0px 4px',
-        color: '#000',
-        borderRadius: '4px',
-        transition: 'background-color 0.3s, color 0.3s',
-
-        ':hover': {
-          backgroundColor: '#EFEFEF',
-        },
-      }}
-    >
-      60 Min
-    </Text>
-        </Box>
-
+          sx={{
+            backgroundColor: time === "30 Min" ? "#993CCF" : "#fff",
+            margin: "0px",
+            padding: "0px 4px",
+            color: time === "30 Min" ? "#fff" : "#000",
+            borderRadius: "4px",
+            cursor: "pointer",
+            transition: 'background-color 0.3s, color 0.3s',
+            ':hover': {
+              backgroundColor: time === "30 Min" ? "#993CCF" : "#EFEFEF",
+            },
+          }}
+          onClick={() => setTime("30 Min")}
+        >
+          30 Min
+        </Text>
+        <Text
+          sx={{
+            backgroundColor: time === "60 Min" ? "#993CCF" : "#fff",
+            margin: "0px",
+            padding: "0px 4px",
+            color: time === "60 Min" ? "#fff" : "#000",
+            borderRadius: "4px",
+            cursor: "pointer",
+            transition: 'background-color 0.3s, color 0.3s',
+            ':hover': {
+              backgroundColor: time === "60 Min" ? "#993CCF" : "#EFEFEF",
+            },
+          }}
+          onClick={() => setTime("60 Min")}
+        >
+          60 Min
+        </Text>
+      </Box>
       </Box>
 </Container>
         </Box>
@@ -737,7 +771,7 @@ export default function Index(props) {
           settimeEstimate={settimeEstimate}
         /> */}
          
-        <Text> 
+        <Text style={{width: "100"}}> 
           {jams.length + batches.length != 0 ? (<p style={{marginTop: 8, marginBottom: 0}}>{jams.length + batches.length} Jams Found</p>) : (<p style={{marginTop: 8, marginBottom: 0}}>No Results Found</p>)}
           </Text>
         <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ py: 3 }}>
