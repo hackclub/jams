@@ -334,6 +334,10 @@ export default function Index(props) {
   const desiredSlugs = ["ai-travel", "online-store", "voxel-animation"];
   const features = props.jamsContent.singles.filter(jam => desiredSlugs.includes(jam.slug));
   
+  const desiredSlugsBatches = ["sprig", "webOS", "artificial-intelligence"];
+  const fallFeatures = props.jamsContent.batches.filter(batch => desiredSlugsBatches.includes(batch.slug));
+  
+
   const [scrollPosition, setScrollPosition] = useState(0)
   useEffect(() => {
     const onScroll = () => {
@@ -412,10 +416,24 @@ export default function Index(props) {
         </Text>
         <Text as="h2" sx={{ fontSize: 24, fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
         Here are some Great Multi-part Jams to Kickoff Your Club  this Fall 🍂            </Text>
+        <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ py: 3 }}>
+
+        {fallFeatures.map((fallFeature, idx) =>
+            <a style={{color: "#000", textDecoration: "none"}} href={`/batch/${fallFeature.slug}`}>
+            <PreviewCard 
+            style={{cursor: "pointer"}}
+            key={idx + fallFeature.title} light={true} {...fallFeature} />
+            </a>
+        )}
+        </Grid>
+        
+        <p onClick={() => console.log(fallFeatures)}>(p.s. maybe your club needs some stickers, if tap here & we’ll mail you some!)</p>
         </Box>
+        
         <Text as="h1" sx={{ fontSize: 48, fontWeight: 600, zIndex: 2 }}>
           Jams
         </Text>
+
         {/* <Text sx={{ fontSize: 24 }}>
           Batches{' '}
           <Text
