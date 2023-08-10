@@ -15,6 +15,7 @@ notes: ''
 poster: ''  
 video: ''  
 slug: 'ai-travel'  
+AITokenLink: "https://hackclub.slack.com/archives/C05L8BSDJJ3"
 ---
 
 As a club, it's time to have a 5 day club retreat! Y'all can go on vacation anywhere, but the question is, where?

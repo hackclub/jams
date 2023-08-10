@@ -17,6 +17,7 @@ notes: "" # TODO
 poster: # TODO 
 video: "" # TODO
 totalParts: 4
+AITokenLink: "https://hackclub.slack.com/archives/C05L8BSDJJ3"
 ---
 
 ### Part 4/4 | Prerequisite: a little web dev knowledge (HTML, JS, CSS) | 45-60 minutes
