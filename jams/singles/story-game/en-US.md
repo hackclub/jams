@@ -16,7 +16,7 @@ presentationPlay: 'https://www.figma.com/proto/GzkGDAybZ9hO1AHfWMMvAR/CYOA-New-J
 2343&t=tg1xDh0nrZuq8lMk-1&scaling=min-zoom&page-id=0%3A1&mode=design'  
 presentationPDF: 'https://cloud-b7pr0h6i7-hack-club-bot.vercel.app/0cyoa_new_jam_presentation.pdf'  
 notes: ''  
-poster: 'https://cloud-pfs2toghq-hack-club-bot.vercel.app/0build_a_choose_your_own_adventure_game_.jpg'  
+poster: 'https://cloud-fulkcjrnl-hack-club-bot.vercel.app/0build_a_choose_your_own_adventure_game_.pdf'  
 video: 'https://cloud-9mn1z1s9z-hack-club-bot.vercel.app/0coose_your_own_adventure_game.mp4'  
 slug: 'story-game' 
 ---
