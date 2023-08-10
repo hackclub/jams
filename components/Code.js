@@ -6,7 +6,7 @@ export const InlineCode = ({ children }) => {
   const codeRef = useRef(null)
 
   useEffect(() => {
-    hljs.highlightBlock(codeRef.current)
+    hljs.highlightElement(codeRef.current)
   }, [children])
 
   return (
@@ -25,7 +25,7 @@ export const CodeBlock = ({ children, className }) => {
   const language = className ? className.replace('language-', '') : ''
 
   useEffect(() => {
-    hljs.highlightBlock(codeRef.current)
+    hljs.highlightElement(codeRef.current)
   }, [children, language])
 
   return (
