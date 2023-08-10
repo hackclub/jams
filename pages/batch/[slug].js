@@ -179,8 +179,8 @@ export default function Page({ batch, params, jams }) {
       </div>
     </Container>
 
-    <Container sx={{ mt:"3rem" }} style={{ maxWidth:"64rem !important"}}>
-      <Grid columns={[null, '1fr 1fr 1fr']} sx={{ marginBottom: "32px", gap:"1rem" }}>
+    <Container sx={{ mt:"3rem", pb:"4rem" }} style={{ maxWidth:"64rem !important"}}>
+      <Grid columns={[null, '1fr 1fr 1fr']} sx={{ gap:"1rem" }}>
         {batch.parts.map((part) => 
           <Link
             style={{color: "#000", textDecoration: "none"}} 

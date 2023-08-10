@@ -10,6 +10,8 @@ import { useRouter } from 'next/router';
 import path from 'path';
 import matter from 'gray-matter';
 
+/** @jsxImportSource theme-ui */
+
 export async function getStaticProps() {
   const fs = require('fs');
 
@@ -472,10 +474,6 @@ export default function Index(props) {
         </Grid>
         
         </Box>
-        
-        <Text as="h1" sx={{ fontSize: 48, fontWeight: 600, zIndex: 2 }}>
-          Jams
-        </Text>
 
         {/* <Text sx={{ fontSize: 24 }}>
           Batches{' '}
@@ -796,10 +794,15 @@ export default function Index(props) {
           settimeEstimate={settimeEstimate}
         /> */}
          
+        
+        <Text as="h1" sx={{ fontSize: 48, fontWeight: 600, mt:"2rem", lineHeight:"3.5rem", zIndex: 2 }}>
+          Jams
+        </Text>
+        
         <Text style={{width: "100"}}> 
-          {jams.length + batches.length != 0 ? (<p style={{marginTop: 8, marginBottom: 0}}>{jams.length + batches.length} Jams Found</p>) : (<p style={{marginTop: 8, marginBottom: 0}}>No Results Found</p>)}
+          {jams.length + batches.length != 0 ? (<p sx={{m:0}}>{jams.length + batches.length} Jams Found</p>) : (<p sx={{m:0}}>No Results Found</p>)}
           </Text>
-        <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ py: 3 }}>
+        <Grid columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']} gap={3} sx={{ pt: 3, pb:"4rem", mt:"1rem" }}>
 
 
           {jams.map((jam, idx) => (
