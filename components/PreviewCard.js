@@ -35,8 +35,7 @@ export default function PreviewCard({
         
         <Box sx={{ borderRadius: '16px' }}>
 
-        {isHovered ? (
-        <Box sx={{position: "absolute", zIndex: 1, marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
+        <Box sx={{position: "absolute", opacity: isHovered ? (1) : (0), transition: 'opacity 0.2s ease-in', zIndex: 1, marginLeft: "8px", maxWidth: "420px", marginTop: "8px", display: 'flex', flexWrap: 'wrap'}}>
         {part != "0" ? (
         <Badge
         key="partFeature"
@@ -78,7 +77,9 @@ export default function PreviewCard({
         >
         {timeEstimate}
       </Badge>
-            </Box>) : (<Box></Box>)}
+            </Box>
+
+
             <Box sx={{borderRadius: "16px", overflow: 'hidden',             width: '100%',
             aspectRatio: '16/9',
             objectFit: 'cover',}}>

@@ -7,6 +7,7 @@ description: >
   It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
+contributorSlackID: 'U041FQB8VK2'
 thumbnail: 'https://cloud-8w65kztfg-hack-club-bot.vercel.app/0gifnotes.gif'
 timeEstimate: '30 Min'
 difficulty: Intermediate
