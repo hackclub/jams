@@ -1,9 +1,9 @@
 ---
-title: "Create Abstract Animated Art with Math and Code"
+title: "Create INFINITE ART with MATH (and code)"
 description: >  
   In this jam, you'll learn about the Mandelbrot set, and how to render it (and other fractals!) in realtime using ShaderToy.
 contributor: 'NalinPlad'  
-thumbnail: 'https://cloud-6vz7a5rgs-hack-club-bot.vercel.app/0morph.gif' 
+thumbnail: 'https://cloud-d20e07zy6-hack-club-bot.vercel.app/0render.gif' 
 timeEstimate: '60 minutes'  
 difficulty: 'Advanced'  
 keywords: 'shaders, GPU, graphics, fractals, art, math' 
@@ -26,8 +26,13 @@ You may have seen or heard of fractals. Even if you haven't, you've probably see
 
 <img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Zoom.gif"/>
 
-Well this particular geometrical shape shown in the GIF is part of a large family of *infinitely* detailed, *infinitely* precise object, called **fractals**. Today, we are going to write a computer program that will allow us to create the same fractal you see in the images above, namely, the ***Mandelbrot set***
+Well this particular geometrical shape shown in the GIF is part of a large family of *infinitely* detailed, *infinitely* precise object, called **fractals**. Today, we are going to write a computer program that will allow us to create the same fractal you see in the images above, namely, the ***Mandelbrot set***.
 
+The Mandelbrot set is actually very interesting mathematically, and you can learn a lot by implementing a renderer for it. Thats what were going to do today, and you'll find out that theres so much more that you can do with fractals than just zooming in...
+
+<img src="https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/capture.gif"/>
+
+Link to [example completed project](https://www.shadertoy.com/view/mlsczN)
 
 ## What is the Mandelbrot set?
 The Mandelbrot set is perhaps the most famous fractals ever discovered. We'll start coding soon, but first, we need to learn about the Mandelbrot set and how its derived.
@@ -750,8 +755,11 @@ Just like everything in this jam... Just play with it! almost everything in this
 5. Right now we color any points inside the Mandelbrot set black.. How else can we color them?
 
 
-Finally, I want to leave you guys with 2 ShaderToy links, one of a fully completed project, and one of the project in its current state, so you can fork it if you ever got lost along the way. I hope you learned something, and happy hacking!
+Finally, I want to leave you guys with 3 ShaderToy links, two of a fully completed example projects, and one of the project in its current state, so you can fork it if you ever got lost along the way. I hope you learned something, and happy hacking!
 
-[Example Project, Fully Complete](https://www.shadertoy.com/view/clfcRs)
 
-[Example Project, Base Code To Fork](https://www.shadertoy.com/view/dlXcDj)
+[Example Project, Fully Complete](https://www.shadertoy.com/view/clfcRs) 
+
+[Example Project, Also Fully Complete](https://www.shadertoy.com/view/mlsczN) 
+
+[Example Project, Base Code To Fork](https://www.shadertoy.com/view/dlXcDj) 
