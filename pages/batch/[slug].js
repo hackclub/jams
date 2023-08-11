@@ -243,15 +243,11 @@ export default function Page({ batch, params, jams }) {
         style={{ maxWidth: '64rem !important' }}>
         <Grid columns={[null, '1fr 1fr 1fr']} sx={{ gap: '1rem' }}>
           {batch.parts.map(part => (
-            <Link
-              style={{ color: '#000', textDecoration: 'none' }}
-              href={`/batch/${params.slug}/${part.part}`}>
-              <PreviewCard
-                redirect={'/batch/' + params.slug + '/' + part.part}
-                {...part}
-                isSortable={false}
-              />
-            </Link>
+            <PreviewCard
+              redirect={'/batch/' + params.slug + '/' + part.part}
+              {...part}
+              isSortable={false} // since this is false we really don't care about the 4 parameters used for sorting
+            />
           ))}
         </Grid>
 
