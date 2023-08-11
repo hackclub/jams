@@ -34,6 +34,7 @@ export default function PreviewCard({
   const handleMouseLeave = () => {
     setIsHovered(false)
   }
+  
   return (
     <>
       <Box

@@ -319,7 +319,7 @@ export default function Index(props) {
   const router = useRouter()
 
   const batches = props.jamsContent.batches.filter(batch => {
-    if (batch.difficulty?.toLowerCase() != difficulty && difficulty != '') {
+    if (batch.difficulty.toLowerCase() != difficulty && difficulty != '') {
       return false
     }
 
@@ -372,14 +372,14 @@ export default function Index(props) {
     var jamValues = Object.values(jam) // indicates each value that exists in the jam dict
     var queryWords = query.toLowerCase().trim().split(' ') // splits query into separate words and elimiates prefix and suffix whitespaces
 
-    if (jam.difficulty?.toLowerCase() != difficulty && difficulty != '') {
+    if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
       console.log(jam.difficulty, difficulty)
 
       return false
     }
 
     if (jam.timeEstimate != time && time != '') {
-      console.log(jam.difficulty, difficulty)
+      console.log(jam.timeEstimate, time)
 
       return false
     }
@@ -419,6 +419,10 @@ export default function Index(props) {
     return false // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
     // dont consider other attributes, since it's AND logic, and one of the conditions alr didnt work
   })
+  const desiredSlugs = ['ai-travel', 'online-store', 'voxel-animation']
+  const features = props.jamsContent.singles.filter(jam =>
+    desiredSlugs.includes(jam.slug)
+  )
 
   const desiredSlugsBatches = [
     'sprig',
@@ -426,7 +430,6 @@ export default function Index(props) {
     'artificial-intelligence',
     'usb-hub'
   ]
-
   const fallFeatures = props.jamsContent.batches.filter(batch =>
     desiredSlugsBatches.includes(batch.slug)
   )
@@ -930,6 +933,22 @@ export default function Index(props) {
                   }}
                   onClick={() => setTime('30 Min')}>
                   30 Min
+                </Text>
+                <Text
+                  sx={{
+                    'backgroundColor': time === '45 Min' ? '#993CCF' : '#fff',
+                    'margin': '0px',
+                    'padding': '0px 4px',
+                    'color': time === '60 Min' ? '#fff' : '#000',
+                    'borderRadius': '4px',
+                    'cursor': 'pointer',
+                    'transition': 'background-color 0.3s, color 0.3s',
+                    ':hover': {
+                      backgroundColor: time === '45 Min' ? '#993CCF' : '#EFEFEF'
+                    }
+                  }}
+                  onClick={() => setTime('45 Min')}>
+                  45 Min
                 </Text>
                 <Text
                   sx={{
