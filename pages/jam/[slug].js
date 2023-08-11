@@ -29,6 +29,44 @@ function getJams(fs, directory) {
   });
 }
 
+function getBatches(fs, directory) {
+  const batchNames = fs.readdirSync(directory)
+
+  return batchNames.map(batchName => {
+    const batchDirectory = path.join(directory, batchName)
+    const readMeFileContent = fs.readFileSync(
+      path.join(batchDirectory, 'readMe', 'en-US.md'),
+      'utf8'
+    )
+    const { data: readMeData, content: readMeContent } =
+      matter(readMeFileContent)
+
+    const partsDirectory = path.join(batchDirectory)
+    const partsNames = fs
+      .readdirSync(partsDirectory)
+      .filter(part => part.startsWith('part'))
+    partsNames.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+
+    const parts = partsNames.map(partName => {
+      const partContent = fs.readFileSync(
+        path.join(partsDirectory, partName, 'en-US.md'),
+        'utf8'
+      )
+      const { data, content } = matter(partContent)
+
+      return {
+        ...data, // Spread the properties from the data object
+        content
+      }
+    })
+
+    return {
+      ...readMeData, // Spread the properties from the readMeData object
+      content: readMeContent,
+      parts
+    }
+  })
+}
 
 export async function getStaticPaths() {
   const jamsDir = path.join(process.cwd(), 'jams', 'singles');
@@ -71,6 +109,7 @@ export async function getStaticProps({ params }) {
   const batchesDir = path.join(jamsDir, 'batches');
 
   const singles = getJams(fs, singlesDir);
+  const batches = getBatches(fs, path.join(jamsDir, 'batches'))
 
   return {
     props: {
@@ -80,7 +119,8 @@ export async function getStaticProps({ params }) {
         headers,
       },
       jamsContent: {
-        singles
+        singles,
+        batches,
       },
     },
   };

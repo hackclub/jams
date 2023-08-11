@@ -48,8 +48,6 @@ export default function JamComponent({ jam, jamsContent }) {
         }
       })
 
-      console.log(jam.AITokenLink)
-
       setActiveSection(newActiveSection)
       setPassedSections(passedSections)
       setUpcomingSections(upcomingSections)
@@ -78,7 +76,7 @@ export default function JamComponent({ jam, jamsContent }) {
       <Header
         query={query}
         setQuery={setQuery}
-        jams={jamsContent.singles.filter(jam => {
+        jams={jamsContent.singles.concat(jamsContent.batches).filter(jam => {
           /* check if it is true that:
               for some value in jam's values
               every part of the query is contained within that value*/
@@ -98,6 +96,7 @@ export default function JamComponent({ jam, jamsContent }) {
             ) {
               // iterates through the words in query
               if (
+                typeof jamValues[singleJamValue] == 'string' &&
                 jamValues[singleJamValue]
                   .toLowerCase()
                   .split(' ')
@@ -105,6 +104,8 @@ export default function JamComponent({ jam, jamsContent }) {
               ) {
                 // if ANY word in query is not found in the values
                 successful = false // it is not working / not successful / wont be displayed
+              } else if (typeof jamValues[singleJamValue] != 'string') {
+                successful = false
               }
             }
             if (successful) {
