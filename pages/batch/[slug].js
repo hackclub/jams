@@ -250,10 +250,6 @@ export default function Page({ batch, params, jams }) {
                 redirect={'/batch/' + params.slug + '/' + part.part}
                 {...part}
                 isSortable={false}
-                currentDifficulty={difficulty}
-                currentTime={time}
-                modifyDifficulty={setDifficulty}
-                modifyTime={setTime}
               />
             </Link>
           ))}
