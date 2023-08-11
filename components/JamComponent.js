@@ -14,9 +14,29 @@ import Meta from '@hackclub/meta'
 import Head from 'next/head'
 
 export default function JamComponent({ jam, jamsContent }) {
+
+  useEffect(() => {
+    const fetchSubmissions = async () => {
+      try {
+        const response = await fetch('https://jams-api-1daa6fb9f168.herokuapp.com/getSubmissions');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        console.log('Fetched data:', data);
+        setFinishedProjects(data)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchSubmissions();
+  }, []);
+
   const router = useRouter()
 
   const [presentationSelected, setPresentationSelected] = useState(true)
+  const [finishedProjects, setFinishedProjects] = useState([])
 
   const [activeSection, setActiveSection] = useState()
   const [passedSections, setPassedSections] = useState([])
@@ -460,6 +480,14 @@ export default function JamComponent({ jam, jamsContent }) {
               </span>
             </div>
           </Link>
+          
+          <Box sx={{pt: 16}}>
+            Finished Projects
+            {finishedProjects.map((project) => 
+            <a style={{display:"flex" }} href={project.url}>
+              {project.title}
+            </a>)}
+          </Box>
 
           <Box
             sx={{ fontSize: 18, lineHeight: '200%', pb: [32, 64], mt: '1rem' }}>
