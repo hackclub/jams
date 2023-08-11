@@ -15,6 +15,24 @@ import Head from 'next/head'
 
 export default function JamComponent({ jam, jamsContent }) {
 
+  const submitProject = async () => {
+    try {
+      const response = await fetch(`https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${jam.slug}/${submissionURL}`);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      
+      const data = await response.json();
+      console.log('Fetched data:', data);
+      setApiResponse(data.message)
+      // if(data.message == "Submission successful") {
+      //   router.reload()
+      // }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
   useEffect(() => {
     const fetchSubmissions = async () => {
       try {
@@ -24,7 +42,7 @@ export default function JamComponent({ jam, jamsContent }) {
         }
         const data = await response.json();
         console.log('Fetched data:', data);
-        setFinishedProjects(data)
+        setFinishedProjects(data.filter((project) => project.jam == jam.slug))
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -34,6 +52,8 @@ export default function JamComponent({ jam, jamsContent }) {
   }, []);
 
   const router = useRouter()
+  const [apiResponse, setApiResponse] = useState("")
+  const [submissionURL, setSubmissionURL] = useState("")
 
   const [presentationSelected, setPresentationSelected] = useState(true)
   const [finishedProjects, setFinishedProjects] = useState([])
@@ -482,17 +502,27 @@ export default function JamComponent({ jam, jamsContent }) {
           </Link>
           
           <Box sx={{pt: 16}}>
-            Finished Projects
+            {/* Finished Projects
             {finishedProjects.map((project) => 
             <a style={{display:"flex" }} href={project.url}>
+              {project.title.includes("Figma") && "F "}
+              {project.title.includes("GitHub") && "GH "}
               {project.title}
-            </a>)}
+            </a>)} */}
           </Box>
 
           <Box
-            sx={{ fontSize: 18, lineHeight: '200%', pb: [32, 64], mt: '1rem' }}>
+            sx={{ fontSize: 18, lineHeight: '200%', pb: [32, 32], mt: '1rem' }}>
             <MDXRemote components={mdxComponents} {...jam.source} />
           </Box>
+
+          {/* <Box>
+            Submit Your Project URL<br/>
+            <input onChange={(e) => setSubmissionURL(e.target.value)}/>
+            <button onClick={() => submitProject()}>Submit</button>
+            <p>{apiResponse}</p>
+          </Box> */}
+
         </div>
 
         <div sx={{ width: ['auto', 'auto', '20rem'], position: 'relative' }}>
