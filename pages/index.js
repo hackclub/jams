@@ -819,11 +819,9 @@ export default function Index(props) {
                   onClick={() =>
                     setSelectedCategories(currentCategories => {
                       if (currentCategories.includes(category)) {
-                        const dCategories = currentCategories.filter(
+                        return currentCategories.filter(
                           cat => cat !== category
                         )
-                        console.log(updatedCategories)
-                        return updatedCategories
                       } else {
                         const updatedCategories = [
                           ...currentCategories,
