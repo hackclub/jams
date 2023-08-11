@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import Header from '@/components/Header'
-import { Container, Grid, Link } from 'theme-ui'
+import { Container, Grid, Link, Badge } from 'theme-ui'
 import PreviewCard from '@/components/PreviewCard'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
@@ -243,7 +243,63 @@ export default function Page({ batch, params, jams }) {
           </div>
 
           <div sx={{ width: ['auto', 'auto', '20rem'], position: 'relative' }}>
-            <h1 sx={{ m: 0, lineHeight: '2.2rem' }}>{batch.title}</h1>
+            <div>
+              <Badge
+                key="partFeature"
+                mr={2}
+                sx={{
+                  cursor: 'pointer',
+                  backgroundColor: '#993CCF',
+                  marginBottom: '8px',
+                  fontSize: ['14px', 'auto']
+                }}
+                variant="outline"
+                color="#fff">
+                {batch.parts.length} Parts
+              </Badge>
+
+              <Badge
+                key="keywordFeature"
+                mr={2}
+                sx={{
+                  cursor: 'pointer',
+                  backgroundColor: '#fff',
+                  marginBottom: '8px',
+                  fontSize: ['14px', 'auto']
+                }}
+                variant="outline"
+                color="#993CCF">
+                {batch?.keywords.split(', ')[0]}
+              </Badge>
+              <Badge
+                key="difficultyFeature"
+                mr={2}
+                sx={{
+                  cursor: 'pointer',
+                  backgroundColor: '#fff',
+                  marginBottom: '8px',
+                  fontSize: ['14px', 'auto']
+                }}
+                variant="outline"
+                color="#993CCF">
+                {batch.difficulty}
+              </Badge>
+              {/* <Badge
+                key="timeFeature"
+                mr={2}
+                sx={{
+                  cursor: 'pointer',
+                  backgroundColor: '#fff',
+                  marginBottom: '8px',
+                  fontSize: ['14px', 'auto']
+                }}
+                variant="outline"
+                color="#993CCF">
+                {batch.timeEstimate}
+              </Badge> */}
+            </div>
+
+            <h1 sx={{ m: 0, lineHeight: '2.2rem', mt:"0.25rem" }}>{batch.title}</h1>
 
             <Link
               href={`https://github.com/${batch.contributor}`}
