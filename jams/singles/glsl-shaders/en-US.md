@@ -5,7 +5,7 @@ description: >
 contributor: 'NalinPlad'  
 contributorSlackID: 'U03Q06DS8H2'
 thumbnail: 'https://cloud-d20e07zy6-hack-club-bot.vercel.app/0render.gif' 
-timeEstimate: '60 minutes'  
+timeEstimate: '60 Min'  
 difficulty: 'Advanced'  
 keywords: 'shaders, GPU, graphics, fractals, art, math' 
 language: 'GLSL'  
