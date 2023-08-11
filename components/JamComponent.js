@@ -78,7 +78,7 @@ export default function JamComponent({ jam, jamsContent }) {
       <Header
         query={query}
         setQuery={setQuery}
-        jams={jamsContent.singles.filter(jam => {
+        jams={jamsContent.filter(jam => {
           /* check if it is true that:
               for some value in jam's values
               every part of the query is contained within that value*/
