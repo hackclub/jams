@@ -2,10 +2,10 @@
 title: "Make your own PCB Hacker Card"
 description: Let's build a business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
 contributor: "maggie-j-liu"
-thumbnail: "https://scrapbook-into-the-redwoods.s3.amazonaws.com/2318e7a7-f3d8-44d3-8e7c-efb01b297a25-placeholder.png"
+thumbnail: "https://cloud-lnokwbjfp-hack-club-bot.vercel.app/0hacker_card_jam_thumbnail.png"
 timeEstimate: "1 Hour"
 difficulty: "Beginner"
-keywords: "Beta, Hardware, PCB, EasyEDA, NFC, business card, OnBoard"
+keywords: "Hardware, PCB, EasyEDA, NFC, business card, OnBoard"
 language: "EasyEDA"
 presentation: ""
 presentationPlay: ""
@@ -18,11 +18,11 @@ slug: "hacker-card"
 
 # Make your own PCB Hacker Card
 
-[TODO: intro]
+PCBs are in nearly all electronics, from phones to cars! It's super easy to make your own, and make them not just functional, but also fun. In this jam, you'll design your own business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard. With these skills, you'll be able to tackle even more complex boards, such as a custom macropad or fidget toy.
 
 ## Schematic
 
-The first step is creating a schematic for your PCB design. A schematic shows the components that will be used in the circuit, as well as how each of these components connect to each other.
+The first step is creating a schematic for your PCB design. A schematic shows the components that will be used in the circuit, as well as how each of these components connect to each other. An important thing to note -- a schematic is only a diagram of what connects to what, not where the components are actually placed on the board.
 
 For our card, we'll be using
 
@@ -34,38 +34,40 @@ For our card, we'll be using
 First, let's open up [EasyEDA](https://easyeda.com). This is a browser based PCB designer, so all you need is an account.
 
 Once you've logged in, select `File` > `New` > `Project` to create a new project.
-![](/photos/new-project.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
 
 This will open up the schematic editor. Some important parts:
 
 - `Library` on the left toolbar: This is where we will search for components and import them.
 - `Wiring Tools` panel: We'll be using the wire tool to connect the components together.
 
-![](/photos/schematic-unannotated.png)
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/3schematic.png)
 
 ## Adding components to the schematic
 
 Click the `Library` button to open the parts picker. Search for a part (the part number works best), and make sure `JLCPCB Assembled` is selected. This will make sure we're choosing parts from JLCPCB's parts library, so that JLCPCB can assemble the boards when we order them.
 
-![](/photos/searching-for-parts-unannotated.png)
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/4searching-for-parts.png)
 
 Select the part, then hit the `Place` button to add it to your schematic. Repeat for all 4 of the parts listed above.
 
-![](/photos/parts-on-schematic-unannotated.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/9parts-on-schematic.png)
 
 ### Adding the antenna
 
-The NFC chip needs an antenna to work. We'll be using a PCB trace as the antenna, so we'll need to add that to our schematic.
+The NFC chip needs an antenna to work. We'll be using a PCB trace (a line of copper in the board) as the antenna, so we'll need to add that to our schematic.
 
 Note: this is not an actual part, so it doesn't need to be assembled onto the board -- it's formed by the copper traces on the PCB.
 
 To add the antenna, search for `25X48MM_NFC_ANTENNA` in the Library, and instead of `JLCPCB Assembled`, select `User Contributed`. Select one of the options (check the preview to make sure it looks similar to the one I used here, but most of them should work), and place it on your schematic.
 
-![](/photos/selecting-antenna-unannotated.png)
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/5selecting-antenna.png)
 
 ## Wiring up the components
 
-Now that all of our components are placed, let's connect them together! We'll use the `Wire` tool to indicated an electrical connection between the different parts -- this is similar to how you would connect wires on a breadboard. On the actual PCB, copper traces will go where we added wires, to form those electrical connections.
+Now that all of our components are placed, let's connect them together! Make sure to save your work (command-s or control-s) as you go along.
+
+We'll use the `Wire` tool to indicate an electrical connection between the different parts -- this is similar to how you would connect wires on a breadboard. On the actual PCB, copper traces will go where we added wires, to form those electrical connections.
 
 We'll reference the NFC Chip's Datasheet, specifically [this explanation](https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf#page=38) for creating an energy harvesting circuit.
 
@@ -76,28 +78,28 @@ The datasheet says
 
 So we'll connect the capacitor between `VOUT` and GND (the `VSS` pin).
 
-https://github.com/maggie-j-liu/hacker-card-jam/assets/63619830/d65ff889-cf6c-44e8-90d4-0d61e032274d
+<video src="https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/1wire-tool.mp4" controls="controls" style="max-width: 480px;"></video>
 
 - The pins `LA` and `LB` are for the antenna, so we'll wire up the antenna between those two pins.
 - > If NTAG I2C also powers the I2C bus, then VCC must be connected to VOUT
 
-  Since the NFC chip's energy harvesting _will_ be powering the chip itself, we'll connect `VCC` to `VOUT`.
+  Since the NFC chip will use the power transmitted from the phone to power the chip itself, we'll connect `VCC` to `VOUT`.
 
 - Finally, to complete the circuit and light up the LED, we'll connect the LED and resistor between `VOUT` and GND (the `VSS` pin).
 
-Here's what your schematic should look like when completed!
+Your schematic should look something like this when completed!
 
-![](/photos/completed-schematic.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/3completed-schematic.png)
 
 # Designing the PCB
 
-Now that the schematic is complete, we can start designing the PCB. In this step, we'll place the components onto the board, in the exact shape and configuration that the final board will be. The schematic will help guide us in connecting the the components together.
+Now that the schematic is complete, we can start designing the PCB. In this step, we'll place the components onto the board, in the exact shape and configuration that the final board will be. The schematic will help guide us in connecting the components together.
 
 ## Converting the schematic to a PCB
 
 To convert the schematic into a PCB design file, click `Design` > `Convert Schematic to PCB`. You may get a warning about unfinished nets -- this is fine, just click "No, Keep Going."
 
-![](/photos/convert-schematic-to-pcb.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/5convert-schematic-to-pcb.png)
 
 This will open up the PCB editor, as well as a popup window to specify the board's dimensions. (If the popup window doesn't show up for any reason, you can find it through `Tools` > `Set Board Outline`.)
 
@@ -108,13 +110,13 @@ Here are the dimensions I'll be using, but feel free to make your business card 
 - Height: 50.8mm
 - Radius: 4mm
 
-![](/photos/set-board-outline.png)
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/6set-board-outline.png)
 
 ## Functionality: Making a working PCB card
 
 Once you set the board outline, you should see something like the image below. There's the outline of the board in pink, a bunch of components in red, and some thin blue lines connecting the components. Let's talk about what these are, and what the colors mean!
 
-![](/photos/pcb-editor-unannotated.png)
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/0pcb-editor.png)
 
 ### Layers
 
@@ -125,7 +127,7 @@ A PCB like a sandwich -- it's made up of many different layers. We're designing 
 - On top of the copper layers are **soldermask** layers. This is what gives PCBs their color -- common soldermask colors are green or black, but white, purple, blue, red, yellow, and more are also possible. Soldermask is added to the entire surface of the board (both the top and the bottom) by default. If you want to **remove** the soldermask (which will reveal the copper underneath), use the `TopSolderMaskLayer` or `BottomSolderMaskLayer` (for the top and bottom of the board, respectively).
 - On top of the soldermask layers are **silkscreen** layers. Silkscreen is usually white, and is generally used to label and identify components, but we'll be using it for ✨ PCB art ✨. We can use this to add contact info, a QR code, or even some illustrations to our business card. In EasyEDA, silkscreen is added on the `TopSilkLayer` and `BottomSilkLayer`.
 
-[TODO: insert illustration of PCB layers]
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/1pcb-layers.png)
 
 ### Components
 
@@ -139,7 +141,7 @@ Some helpful tips:
 
 Drag the components around until you're happy with the placement. Here's what mine looks like, but don't copy it directly; almost anything will work!
 
-![](/photos/components-placed.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/4components-placed.png)
 
 ### Routing traces
 
@@ -147,31 +149,31 @@ Now, we have a bunch of components on the card. If we were to have the card manu
 
 It's best practice to manually route your traces, using the first button in the PCB tools panel: the `Track` tool.
 
-[TODO: insert image of PCB tools menu]
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/2pcb-tools.png)
 
 However, to speed up the jam a bit, we'll be using EasyEDA's auto-router. Select `Route` > `Auto Route...` and click `Run` to watch the magic happen...
 
-![](/photos/auto-router.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/0auto-router.png)
 
 ...Except, it seems like the magical autorouter 🪄 wasn't 100% successful :(. We'll finish up the last bit with some manual routing.
 
-![](/photos/autorouter-results.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/1autorouter-results.png)
 
-The autorouter was able to connect most of the components, but there's still one thin blue line (representing an unrouted connection). Can you find it?
+In my case, the autorouter was able to connect most of the components, but there's still one thin blue line (representing an unrouted connection). Can you find it?
 
-Zoooming in, we see that it's between the antenna loop and pin #8 on the NFC chip. Here's how to route it:
+Zooooming in, we see that it's between the antenna loop and pin #8 on the NFC chip. Here's how to route it:
 
 1. Click the `Track` tool in the PCB Tools panel
 2. On the right sidebar, set `Routing Conflict` to `Ignore`. This step is generally not needed (for normal manual routing), but there's a small issue with the footprints that makes it necessary here.
 3. Click between the two pads that need to be connected. The thin blue line should disappear, and a red trace should connect the two pads.
 
-[TODO: insert manual-routing.mov video]
+<video src="https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/0manual-routing.mp4" controls="controls" style="max-width: 480px;"></video>
 
 Now, your PCB card is functional. Woooo! 🎉
 
-We can check out a preview by clicking the `3D` button in the top toolbar. Hmmm... doesn't look like a business card yet. Let's fix that!
+Remember to save your progress! We can check out a preview by clicking the `3D` button in the top toolbar. Hmmm... doesn't look like a business card yet. Let's add some personality to it!
 
-![](/photos/card-preview.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/2card-preview.png)
 
 ## Aesthetics: Personalizing your card
 
@@ -181,11 +183,11 @@ We'll mostly be using the silkscreen layer to add our information and designs. S
 
 In the PCB Tools panel, select the `Text` tool. If you want to make it a business card, you can add your name and contact info -- or add any other text you want. Select the text object you just placed, and change the font, line width, and size in the right sidebar.
 
-![](/photos/text-properties.png)
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/8text-properties.png)
 
 Drag the text to where you want it on your board. Here, I've added my name, website, and GitHub. If you need ideas: you can add your email, phone number, or other social media handles.
 
-![](/photos/text-added.png)
+![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/7text-added.png)
 
 ### Adding a QR Code
 
@@ -193,7 +195,7 @@ EasyEDA also supports importing images! I'll use this to add a QR Code that link
 
 Just like Text objects, you can select the image to modify the properties (width, height, etc.) on the right sidebar.
 
-![](/photos/import-image.png)
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/6import-image.png)
 
 Note: we've been placing everything on the yellow `TopSilkLayer`. This means that they will all appear on the top side of our board. If you want to add anything to the bottom, use the green `BottomSilkLayer`! Keep in mind that the bottom layers of the board are a top-down, see through view, which is essentially flipped -- use the 3D viewer to check that all your text and images are oriented correctly.
 
@@ -208,4 +210,12 @@ Here are some examples -- try incorporating these techniques into your board.
 - **Textured, or with slight color variation**: add your object to only the `TopLayer` or `BottomLayer`. Without removing the soldermask, the copper will still be covered by the soldermask, but it may slightly lighten the soldermask color and will create a textured feel.
 - **Translucent yellow** (color of the FR-4 material): add our object to only the `TopSolderMaskLayer` or `BottomSolderMaskLayer`. This will remove the soldermask on the object, revealing the yellow FR-4 material underneath. This technique is useful for allowing LEDs to shine from one side of the board to the other, or just for adding another color to your design.
 
-[TODO: conclusion / onboard / links to other projects to try out]
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/7layer-effects.png)
+
+## Turn your design... into an actual card!
+
+Now that you've got an amazing design, you can actually get your card manufactured and have it in your hands in a few weeks!
+
+Hack Club's [OnBoard grant](https://hackclub.com/onboard/) gives high schoolers $100 to manufacture their own PCB designs, and you can use it to get your own card manufactured.
+
+[TODO: Add more about onboard and link to more projects to try out]
