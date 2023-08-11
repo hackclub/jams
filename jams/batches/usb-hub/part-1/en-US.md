@@ -4,7 +4,7 @@ title: 'Getting familiar with designing PCBs + Make your own USB hub!'
 batch: 'usb-hub'
 description: >
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
-contributor: 'recursiveforte'
+contributor: 'MaxWofford'
 thumbnail: 'https://sprig.hackclub.com/stories-tiny/sprig-front.jpeg'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
@@ -18,18 +18,21 @@ poster: ""
 video: ""
 ---
 
-_Want to just see the result?_
+_Want to just see the result? See the [Schematic](https://cloud-1we5i4we0-hack-club-bot.vercel.app/1schematic_schematic-usb-hub-2-port-jam_2023-08-10.pdf) and the [EasyEDA source](https://cloud-1we5i4we0-hack-club-bot.vercel.app/0sch_schematic-usb-hub-2-port-jam_2023-08-10.json)._
 
-- (Schematic PDF link)
-- (EasyEDA source file link)
-
-## Intro
-
-We're going to make a USB splitter. It'll have 1 USB-A on one side, and 2 USB-A ports on the other side. It can transmit power as well as data.
+# Putting the "scheme" in schematic
 
 ![](https://cloud-j8bxr01tm-hack-club-bot.vercel.app/1usb_hub_needed.png)
 
-_If you want a USB hub, this is the tutorial for you!_
+_Has this ever happened to you? You really need a USB hub!_
+
+Today we're going to make a USB splitter. It'll have 1 USB-A on one side, and 2 USB-A ports on the other side. It can transmit power as well as data.
+
+We're starting with a schematic. They're like the blueprint for a PCB. It's a good way to figure out what's connected to what before you actually lay out the parts on your board.
+
+![](https://cloud-6d6aarot8-hack-club-bot.vercel.app/0schematic_to_pcb.png)
+
+> Schematics correspond to the parts of your PCB.
 
 ### Start a new project
 
@@ -41,15 +44,15 @@ For our design, we're going to need a USB-A connector that plugs into our comput
 
 ![](https://cloud-mjv8qcmxc-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.12.42.png)
 
-A bunch of options will show up with options like price, stock, and mounting type. You won't understand all the options yet & that's ok! I ended up using [part number `C404965`](https://www.lcsc.com/product-detail/USB-Connectors_SHOU-HAN-AM90_C404965.html). Once you select it, click the `Place` button to add the part to our project.
+A bunch of options will show up with options like price, stock, and mounting type. You won't understand all the options yet & <b>that's ok</b>! I ended up using part number [`C404965`](https://www.lcsc.com/product-detail/USB-Connectors_SHOU-HAN-AM90_C404965.html). Once you select it, click the `Place` button to add the part to our project.
 
 ![](https://cloud-b1al1d09c-hack-club-bot.vercel.app/00screenshot_2023-08-08_at_12.20.04.png)
 
 Yeah! You did it. Now let's add the other parts we'll need!
 
-We'll need another USB-A connector, but this time a female connector for the devices we charge / plug in. Do another search for `usb-a`, but this time I used [part number `C46407`](https://www.lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-903-131A1011D10100_C46407.html). This time, place 2 of them on the board.
+We'll need another USB-A connector, but this time a female connector for the devices we charge / plug in. Do another search for `usb-a`, but this time I used part number [`C46407`](https://www.lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-903-131A1011D10100_C46407.html). This time, place 2 of them on the board.
 
-Next up we need a main board to connect everything together. There are a bunch out there, but I ended up using the CoreChips SL2.1A with part number `C192893`.
+Next up we need a main board to connect everything together. There are a bunch out there, but I ended up using the CoreChips SL2.1A with part number [`C192893`](https://www.lcsc.com/product-detail/USB-ICs_CoreChips-SL2-1A_C192893.html).
 
 Now that we've got a great big pile of parts in our sandbox, the next step is to connect them together!
 
@@ -82,7 +85,7 @@ Printed Circuit Board (PCB) part-makers really like to use acronymns, which are 
 
 Great, now we know what we need to do on the chip side, let's find the spec for the USB-A!
 
-The part I chose also had a spec in chinese, but it's a common part so I found [this by googling "USB-A pinout spec"](https://components101.com/connectors/usb-type-a-male-connector). It's a bit different than our pin numbers, but the names are the same. The only difference is that our USB connectors want a grounded shield, so that means we'll connect ports 5 & 6 to `GND`.
+The part I chose also had a spec in chinese, but it's a common part so I found [this by googling "USB-A pinout spec"](https://components101.com/connectors/usb-type-a-male-connector). It's a bit different than our pin numbers, but the names are the same. The only difference is that our ports HM1 & HM2 are also `GND` ports. You don't need to know why right now, but for the curious, google "grounded USB shield".
 
 ### Connect it together, for real this time!
 
@@ -114,9 +117,7 @@ Nets are kinda like portals– you can connect them from a distance as a way to 
 
 Keep in mind though with nets, there are a lot of ways to write things. All the following are a way to say PIN 4 and PIN 5 are connected to `GND`:
 
-![](https://cloud-4w251mwos-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_15.13.08.png)
-![](https://cloud-4w251mwos-hack-club-bot.vercel.app/1screenshot_2023-08-08_at_15.13.16.png)
-![](https://cloud-4w251mwos-hack-club-bot.vercel.app/2screenshot_2023-08-08_at_15.13.30.png)
+![](https://cloud-d47mlqyh7-hack-club-bot.vercel.app/0gnd_net_types.png)
 
 To prevent mistakes, try to keep your nets looking like mine for this tutorial, but in general everyone has their own style and that's ok.
 
@@ -142,11 +143,11 @@ Knowing where these protective components go can be an art and hotly debated on 
 
 _This is a little hard to see, so we'll go through it step by step. For now, just know we're getting the following instructions from reading this image & adapting it a little for our own design._
 
-First up we'll add a diode to protect from a surge coming _from the laptop_. That's a case where the laptop sends too much power and goes beyond the 5V we want. The Schottky (pronounced "shot-key") diode with part number `C48192` is perfect or this. Let's drop it in right after we take on the 5V power from the USB-A male.
+First up we'll add a diode to protect from a surge coming _from the laptop_. That's a case where the laptop sends too much power and goes beyond the 5V we want. The Schottky (pronounced "shot-key") diode with part number [`C48192`](https://www.lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_onsemi-NSR0320MW2T1G_C48192.html) is perfect or this. Let's drop it in right after we take on the 5V power from the USB-A male.
 
 _Diodes can also ensure power flows in 1 direction, but we aren't using it for that property right now- we just want it to slightly resist the flow of electricity. If you google around for diodes, keep in mind most people are using it for a different reason than we are!_
 
-Now let's protect from power surges that make it past the diode. We'll use a capacitor for this– it's kinda like a resevior for power. It can store up power and then release it when it's needed. If there's a power fluctuation, this capacitor will let the extra power blead out to `GND` harmlessly. We'll use a 10uF capacitor with part number `C19702`. Let's drop it in right after the diode, and connect it to `GND`.
+Now let's protect from power surges that make it past the diode. We'll use a capacitor for this– it's kinda like a resevior for power. It can store up power and then release it when it's needed. If there's a power fluctuation, this capacitor will let the extra power blead out to `GND` harmlessly. We'll use a 10uF capacitor with part number [`C19702`](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.html). Let's drop it in right after the diode, and connect it to `GND`.
 
 ![](https://cloud-e0ekzo8gw-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.37.55.png)
 
