@@ -43,17 +43,34 @@ export default function PreviewCard({
         style={{ cursor: 'pointer' }}
         {...props}>
         <Box sx={{ borderRadius: '16px' }}>
-          {isHovered && (
-            <Box
-              sx={{
-                position: 'absolute',
-                zIndex: 1,
-                marginLeft: '8px',
-                maxWidth: '420px',
-                marginTop: '8px',
-                display: 'flex',
-                flexWrap: 'wrap'
-              }}>
+          <Box
+            sx={{
+              position: 'absolute',
+              zIndex: 1,
+              marginLeft: '8px',
+              maxWidth: '420px',
+              marginTop: '8px',
+              display: 'flex',
+              flexWrap: 'wrap'
+            }}
+          >
+            {parts?.length && (
+              <Badge
+                key="partFeature"
+                mr={2}
+                sx={{
+                  cursor: 'pointer',
+                  backgroundColor: '#993CCF',
+                  marginBottom: '8px',
+                  fontSize: ['14px', 'auto']
+                }}
+                variant="outline"
+                color="#fff">
+                {parts.length} Parts
+              </Badge>
+            )}
+            
+            {isHovered && <>
               {part != '0' && (
                 <Badge
                   key="partFeature"
@@ -67,21 +84,6 @@ export default function PreviewCard({
                   variant="outline"
                   color="#fff">
                   Part {part.split('-')[1]}
-                </Badge>
-              )}
-              {parts?.length && (
-                <Badge
-                  key="partFeature"
-                  mr={2}
-                  sx={{
-                    cursor: 'pointer',
-                    backgroundColor: '#993CCF',
-                    marginBottom: '8px',
-                    fontSize: ['14px', 'auto']
-                  }}
-                  variant="outline"
-                  color="#fff">
-                  {parts.length} Parts
                 </Badge>
               )}
               <Badge
@@ -149,8 +151,8 @@ export default function PreviewCard({
                   {timeEstimate}
                 </Badge>
               )}
-            </Box>
-          )}
+            </>}
+          </Box>
 
           <a style={{ color: '#000', textDecoration: 'none' }} href={redirect}>
             <Box
