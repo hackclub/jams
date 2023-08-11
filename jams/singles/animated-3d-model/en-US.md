@@ -5,7 +5,7 @@ description: >
 contributor: 'zoya-hussain'
 originalAuthor: 'wollygfx'
 thumbnail: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzgzbp7.jpeg'
-timeEstimate: '45min'
+timeEstimate: '45 Min'
 difficulty: 'Beginner'
 keywords: 'Beta, 3D, Animated, Animated 3D Model'
 language: 'JS'
