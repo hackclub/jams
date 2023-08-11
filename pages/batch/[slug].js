@@ -32,6 +32,45 @@ function getJams(fs, directory) {
   })
 }
 
+function getBatches(fs, directory) {
+  const batchNames = fs.readdirSync(directory)
+
+  return batchNames.map(batchName => {
+    const batchDirectory = path.join(directory, batchName)
+    const readMeFileContent = fs.readFileSync(
+      path.join(batchDirectory, 'readMe', 'en-US.md'),
+      'utf8'
+    )
+    const { data: readMeData, content: readMeContent } =
+      matter(readMeFileContent)
+
+    const partsDirectory = path.join(batchDirectory)
+    const partsNames = fs
+      .readdirSync(partsDirectory)
+      .filter(part => part.startsWith('part'))
+    partsNames.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+
+    const parts = partsNames.map(partName => {
+      const partContent = fs.readFileSync(
+        path.join(partsDirectory, partName, 'en-US.md'),
+        'utf8'
+      )
+      const { data, content } = matter(partContent)
+
+      return {
+        ...data, // Spread the properties from the data object
+        content
+      }
+    })
+
+    return {
+      ...readMeData, // Spread the properties from the readMeData object
+      content: readMeContent,
+      parts
+    }
+  })
+}
+
 export async function getStaticPaths() {
   const jamsDir = path.join(process.cwd(), 'jams', 'batches')
   const batchNames = fs.readdirSync(jamsDir)
@@ -71,6 +110,7 @@ export async function getStaticProps({ params }) {
   const singlesDir = path.join(jamsDir, 'singles')
 
   const singles = getJams(fs, singlesDir)
+  const batches = getBatches(fs, path.join(jamsDir, 'batches'))
 
   const parts = partsNames.map(partName => {
     const partContent = fs.readFileSync(
@@ -92,7 +132,8 @@ export async function getStaticProps({ params }) {
         parts
       },
       jams: {
-        singles
+        singles,
+        batches,
       },
       params
     }
@@ -116,7 +157,7 @@ export default function Page({ batch, params, jams }) {
       <Header
         setQuery={setQuery}
         query={query}
-        jams={jams.singles.filter(jam => {
+        jams={(jams.singles.concat(jams.batches)).filter(jam => {
           /* check if it is true that:
               for some value in jam's values
               every part of the query is contained within that value*/
