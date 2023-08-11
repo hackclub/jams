@@ -1,19 +1,19 @@
 ---
-title: "Make your own PCB Hacker Card"
+title: 'Make your own PCB Hacker Card'
 description: Let's build a business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
-contributor: "maggie-j-liu"
-thumbnail: "https://cloud-lnokwbjfp-hack-club-bot.vercel.app/0hacker_card_jam_thumbnail.png"
-timeEstimate: "1 Hour"
-difficulty: "Beginner"
-keywords: "Hardware, PCB, EasyEDA, NFC, business card, OnBoard"
-language: "EasyEDA"
-presentation: ""
-presentationPlay: ""
-presentationPDF: ""
-notes: ""
-poster: ""
-video: ""
-slug: "hacker-card"
+contributor: 'maggie-j-liu'
+thumbnail: 'https://cloud-lnokwbjfp-hack-club-bot.vercel.app/0hacker_card_jam_thumbnail.png'
+timeEstimate: '1 Hour'
+difficulty: 'Beginner'
+keywords: 'Hardware, PCB, EasyEDA, NFC, business card, OnBoard'
+language: 'EasyEDA'
+presentation: ''
+presentationPlay: ''
+presentationPDF: ''
+notes: ''
+poster: ''
+video: ''
+slug: 'hacker-card'
 ---
 
 # Make your own PCB Hacker Card
@@ -78,7 +78,7 @@ The datasheet says
 
 So we'll connect the capacitor between `VOUT` and GND (the `VSS` pin).
 
-<video src="https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/1wire-tool.mp4" controls="controls" style="max-width: 480px;"></video>
+<video src="https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/1wire-tool.mp4" controls="controls" style={{ maxWidth: "480px" }}></video>
 
 - The pins `LA` and `LB` are for the antenna, so we'll wire up the antenna between those two pins.
 - > If NTAG I2C also powers the I2C bus, then VCC must be connected to VOUT
@@ -167,7 +167,7 @@ Zooooming in, we see that it's between the antenna loop and pin #8 on the NFC ch
 2. On the right sidebar, set `Routing Conflict` to `Ignore`. This step is generally not needed (for normal manual routing), but there's a small issue with the footprints that makes it necessary here.
 3. Click between the two pads that need to be connected. The thin blue line should disappear, and a red trace should connect the two pads.
 
-<video src="https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/0manual-routing.mp4" controls="controls" style="max-width: 480px;"></video>
+<video src="https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/0manual-routing.mp4" controls="controls" style={{ maxWidth: "480px" }}></video>
 
 Now, your PCB card is functional. Woooo! 🎉
 
