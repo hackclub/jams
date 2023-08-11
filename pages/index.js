@@ -584,9 +584,9 @@ export default function Index(props) {
           <Grid
             columns={[null, '1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
             gap={3}
-            sx={{ pt: 4 }}>
+            sx={{ pt: 4, position: 'relative' }}>
             {fallFeatures.map((fallFeature, idx) => (
-              <div>
+              <div style={{position: "relative"}}>
                 {fallFeature.sticker && (
                   <Box
                     sx={{
@@ -754,7 +754,7 @@ export default function Index(props) {
 
         <Box
           sx={{
-            display: ['none', 'none', 'flex'],
+            display: ['none', 'none', 'none', 'flex'],
             top: 84,
             backgroundColor: '#fff',
             zIndex: 2,
@@ -960,7 +960,7 @@ export default function Index(props) {
                   onClick={() => setTime('30 Min')}>
                   30 Min
                 </Text>
-                <Text
+                {/* <Text
                   sx={{
                     'backgroundColor': time === '45 Min' ? '#993CCF' : '#fff',
                     'margin': '0px',
@@ -975,7 +975,7 @@ export default function Index(props) {
                   }}
                   onClick={() => setTime('45 Min')}>
                   45 Min
-                </Text>
+                </Text> */}
                 <Text
                   sx={{
                     'backgroundColor': time === '60 Min' ? '#993CCF' : '#fff',
