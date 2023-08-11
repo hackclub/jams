@@ -5,6 +5,7 @@ batch: 'usb-hub'
 description: >
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'MaxWofford'
+contributorSlackID: 'U0C7B14Q3'
 thumbnail: 'https://sprig.hackclub.com/stories-tiny/sprig-front.jpeg'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'

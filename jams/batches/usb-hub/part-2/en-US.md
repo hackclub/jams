@@ -5,6 +5,7 @@ batch: 'usb-hub'
 description: >
     Use a schematic to start building your own USB hub!
 contributor: 'MaxWofford'
+contributorSlackID: 'U0C7B14Q3'
 thumbnail: 'https://sprig.hackclub.com/stories-tiny/sprig-front.jpeg'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
