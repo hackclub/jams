@@ -16,9 +16,9 @@ language: 'HTML & CSS'
 presentation: 'https://www.figma.com/file/PTWgxtPTUU5ZdEr8JZtH7X/webOSPart2?type=design&node-id=0%3A1&mode=design&t=BUR8qjk3lvlcygxO-1'
 presentationPlay: 'https://www.figma.com/proto/PTWgxtPTUU5ZdEr8JZtH7X/webOSPart2?page-id=0%3A1&type=design&node-id=1-2&viewport=-21176%2C281%2C0.38&t=CSTNNjzGHDS0y5ls-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
 presentationPDF: 'https://cloud-kw17t7ykp-hack-club-bot.vercel.app/0webospart2.pdf'
-notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
-poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
-video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
+notes: ''
+poster: ''
+video: ''
 totalParts: 5
 ---
 Mmm... Hacker, you are more brave than I thought. You're continuing on to the second Jam in the Batch. I commend your efforts.

@@ -16,9 +16,9 @@ language: 'HTML & CSS'
 presentation: 'https://www.figma.com/file/KxIYo80ojSHmEisOtn6MqC/webOSPart3?type=design&node-id=0%3A1&mode=design&t=oo06lQb0NF9vKcpc-1'
 presentationPlay: 'https://www.figma.com/proto/KxIYo80ojSHmEisOtn6MqC/webOSPart3?page-id=0%3A1&type=design&node-id=1-2&viewport=-3713%2C136%2C0.13&t=wIV03vQshi9kngPz-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
 presentationPDF: 'https://cloud-6elyts7vs-hack-club-bot.vercel.app/0webospart3.pdf'
-notes: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
-poster: 'https://cloud-o944bwtfx-hack-club-bot.vercel.app/0a_parent_s_guide_to_epoch.pdf'
-video: 'https://cloud-cq9o4h1mp-hack-club-bot.vercel.app/0movie_on_7-7-23_at_10.08_am.mp4'
+notes: ''
+poster: ''
+video: ''
 totalParts: 5
 ---
 

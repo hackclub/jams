@@ -12,9 +12,9 @@ language: 'Spline'
 presentation: 'https://www.figma.com/file/DYnMTevG5DWxHDcVstUzIE/Jam-Presentation---3D-Club-Village?type=design&node-id=0%3A1&mode=design&t=F8dabi5Vvsa5m6pz-1'
 presentationPlay: 'https://www.figma.com/proto/DYnMTevG5DWxHDcVstUzIE/Jam-Presentation---3D-Club-Village?type=design&node-id=1-2&t=F8dabi5Vvsa5m6pz-0&scaling=contain&page-id=0%3A1'
 presentationPDF: 'https://cloud-nd30iq2uv-hack-club-bot.vercel.app/0jam_presentation_-_3d_club_village__1_.pdf'
+video: ''
 notes: ''
 poster: ''
-video: 'https://cloud-2jto14u7d-hack-club-bot.vercel.app/0vid_20221230_184903086.mp4'
 slug: '3d-club-village'
 ---
 

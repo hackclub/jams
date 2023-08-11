@@ -141,6 +141,32 @@ function Slides({ router, initialFeatures }) {
           zIndex: 0
         }}>
         {/* <Text as="h2" sx={{ fontSize: 36, lineHeight: 1, color: '#000' }}>
+    <Box sx={{ py: 4, alignItems: "center", display: 'flex', flexWrap: 'nowrap' }}>
+<Card
+  key={2}
+  onClick={(event) => {
+    moveRight(); // Call your desired function
+  }}
+
+  sx={{
+    // backgroundImage: `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${features[1].thumbnail}")`,
+    backgroundImage: `url("${features[1].thumbnail}")`,
+    backgroundSize: 'cover',
+    cursor: "pointer",
+    backgroundPosition: 'center',
+    boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
+    color: 'white',
+    border: '4px solid white',
+    textAlign: 'left',
+    height: '12.5vw',
+    width: '22vw',
+    flexShrink: 0,
+    marginRight: '-12.5vw',
+    opacity: 0.5,
+    zIndex: 0,
+  }}
+>
+  {/* <Text as="h2" sx={{ fontSize: 36, lineHeight: 1, color: '#000' }}>
     {features[1].title}
   </Text> */}
       </Card>

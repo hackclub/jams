@@ -1,6 +1,4 @@
-// components/Dropdown.js
 import Icon from '@hackclub/icons'
-
 import { useState } from 'react';
 import { Box } from 'theme-ui'
 export default function Dropdown({ title, children }) {

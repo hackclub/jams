@@ -536,7 +536,7 @@ export default function JamComponent({ jam, jamsContent }) {
 
                 {jam.contributorSlackID && (
                   <div sx={{ display: 'flex', gap: '0.75rem', mt: '0.1rem' }}>
-                    <Link
+                    <a
                       href={`https://hackclub.slack.com/team/${jam.contributorSlackID}`}
                       sx={{
                         'display': 'flex',
@@ -571,7 +571,7 @@ export default function JamComponent({ jam, jamsContent }) {
                         style={{ textDecoration: 'none', lineHeight: '1rem' }}>
                         Message on Slack
                       </span>
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
@@ -601,7 +601,7 @@ export default function JamComponent({ jam, jamsContent }) {
                     marginTop: '6px'
                   }}>
                   {jam.presentation && (
-                    <Link sx={{ color: '#993CCF' }} href={jam.presentationPDF}>
+                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.presentation}>
                       <Box
                         sx={{
                           alignItems: 'center',
@@ -623,7 +623,7 @@ export default function JamComponent({ jam, jamsContent }) {
                     </Link>
                   )}
                   {jam.video && (
-                    <Link sx={{ color: '#993CCF' }} href={jam.video}>
+                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.video}>
                       <Box
                         sx={{
                           alignItems: 'center',
@@ -643,7 +643,7 @@ export default function JamComponent({ jam, jamsContent }) {
                     </Link>
                   )}
                   {jam.notes && (
-                    <Link sx={{ color: '#993CCF' }} href={jam.notes}>
+                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.notes}>
                       <Box
                         sx={{
                           alignItems: 'center',
@@ -663,7 +663,7 @@ export default function JamComponent({ jam, jamsContent }) {
                     </Link>
                   )}
                   {jam.poster && (
-                    <Link sx={{ color: '#993CCF' }} href={jam.poster}>
+                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.poster}>
                       <Box
                         sx={{
                           alignItems: 'center',
@@ -683,7 +683,7 @@ export default function JamComponent({ jam, jamsContent }) {
                     </Link>
                   )}
                   {jam.AITokenLink && (
-                    <Link sx={{ color: '#993CCF' }} href={jam.AITokenLink}>
+                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.AITokenLink}>
                       <Box
                         sx={{
                           alignItems: 'center',

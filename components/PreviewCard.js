@@ -15,6 +15,8 @@ export default function PreviewCard({
   part = 0,
   light = true,
   sticker,
+  presentation="",
+  video="",
   totalParts = null,
   parts = null,
   redirect = '/',
