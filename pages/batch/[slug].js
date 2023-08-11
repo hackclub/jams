@@ -153,7 +153,7 @@ export default function Page({ batch, params, jams }) {
           return false // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
           // return (Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
         })}
-        back={`/`}
+        back={`/`} // back is homepage regardless
       />
 
       <Container

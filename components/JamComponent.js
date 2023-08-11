@@ -115,7 +115,7 @@ export default function JamComponent({ jam, jamsContent }) {
           return false // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
           // return (Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
         })}
-        back={'/'}
+        back={jam.batch == null ? '/' : '/batch/' + jam.batch} // if no batch, back is index, otherwise it is batch page
       />
       <div sx={{ height: '5rem' }}></div>
 
