@@ -55,7 +55,7 @@ Here is Replit's Documentation for future Reference: https://docs.replit.com/
 ## Level 1: The Storyteller's Forge
 ### Create your Text-Based Adventure Game
 
-<video src="https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{width: "100%"}}></video>
 
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Beginner-CYOA?v=1
@@ -331,7 +331,7 @@ Once again, great job in finishing ***Level 1: The Storyteller's Forge***. Now w
 *sauce*! A cool add-on that gives a kick of flavor! In this level, we will be learning how to add background music, sound effects, text 
 animation, and color! 
 
-<video src="https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{width: "100%"}}></video>
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Intermediate-CYOA?v=1
 
@@ -560,7 +560,7 @@ Go to the next level now!
 Once again, great job in finishing **_Level 2: Sonic Sagas_**. Now we're moving on to the third and **final** layer of the **pizza**, 
 the *cheese*! It's the thing that all of our users will get to see and experience first before the storyline, music, etc. ***THE GUI!*** 
 
-<video src="https://cloud-o4r2cm0xj-hack-club-bot.vercel.app/0point_systems_were_created_at_the_end_of_the_level_1_jam_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cloud-o4r2cm0xj-hack-club-bot.vercel.app/0point_systems_were_created_at_the_end_of_the_level_1_jam_.mp4" controls="controls" style={{width: "100%"}}></video>
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Advanced-CYOA?v=1
 
