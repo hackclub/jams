@@ -479,7 +479,7 @@ export default function Index(props) {
           src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"
         />
         <Header
-          jams={jams}
+          jams={jams.concat(batches)}
           query={query}
           setQuery={setQuery}
           isHomePage={true}
