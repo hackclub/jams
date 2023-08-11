@@ -419,7 +419,6 @@ export default function Index(props) {
     return false // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
     // dont consider other attributes, since it's AND logic, and one of the conditions alr didnt work
   })
-
   const desiredSlugs = ['ai-travel', 'online-store', 'voxel-animation']
   const features = props.jamsContent.singles.filter(jam =>
     desiredSlugs.includes(jam.slug)
@@ -560,9 +559,9 @@ export default function Index(props) {
             columns={[null, '1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
             gap={3}
             sx={{ pt: 4 }}>
-            {fallFeatures.map((fallFeature, idx) => {
-              {
-                fallFeature.sticker && (
+            {fallFeatures.map((fallFeature, idx) => (
+              <div>
+                {fallFeature.sticker && (
                   <Box
                     sx={{
                       position: 'absolute',
@@ -575,16 +574,21 @@ export default function Index(props) {
                       style={{ width: '96px', height: '96px' }}
                     />
                   </Box>
-                )
-              }
-              ;<PreviewCard
-                style={{ cursor: 'pointer' }}
-                key={idx + fallFeature.title}
-                light={true}
-                {...fallFeature}
-                redirect={'/batch/' + fallFeature.slug}
-              />
-            })}
+                )}
+                <PreviewCard
+                  style={{ cursor: 'pointer' }}
+                  key={idx + fallFeature.title}
+                  light={true}
+                  {...fallFeature}
+                  redirect={'/batch/' + fallFeature.slug}
+                  isSortable={true}
+                  currentDifficulty={difficulty}
+                  currentTime={time}
+                  modifyDifficulty={setDifficulty}
+                  modifyTime={setTime}
+                />
+              </div>
+            ))}
           </Grid>
         </Box>
 
@@ -789,7 +793,7 @@ export default function Index(props) {
                   onClick={() =>
                     setSelectedCategories(currentCategories => {
                       if (currentCategories.includes(category)) {
-                        const  dCategories = currentCategories.filter(
+                        const dCategories = currentCategories.filter(
                           cat => cat !== category
                         )
                         console.log(updatedCategories)
@@ -1007,6 +1011,7 @@ export default function Index(props) {
               light={true}
               {...jam}
               redirect={'/jam/' + jam.slug}
+              isSortable={true}
               currentDifficulty={difficulty}
               currentTime={time}
               modifyDifficulty={setDifficulty}
@@ -1020,6 +1025,7 @@ export default function Index(props) {
               light={true}
               {...batch}
               redirect={'/batch/' + batch.slug}
+              isSortable={true}
               currentDifficulty={difficulty}
               currentTime={time}
               modifyDifficulty={setDifficulty}

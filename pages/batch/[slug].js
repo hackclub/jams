@@ -243,10 +243,19 @@ export default function Page({ batch, params, jams }) {
         style={{ maxWidth: '64rem !important' }}>
         <Grid columns={[null, '1fr 1fr 1fr']} sx={{ gap: '1rem' }}>
           {batch.parts.map(part => (
-            <PreviewCard
-              redirect={'/batch/' + params.slug + '/' + part.part}
-              {...part}
-            />
+            <Link
+              style={{ color: '#000', textDecoration: 'none' }}
+              href={`/batch/${params.slug}/${part.part}`}>
+              <PreviewCard
+                redirect={'/batch/' + params.slug + '/' + part.part}
+                {...part}
+                isSortable={false}
+                currentDifficulty={difficulty}
+                currentTime={time}
+                modifyDifficulty={setDifficulty}
+                modifyTime={setTime}
+              />
+            </Link>
           ))}
         </Grid>
 

@@ -18,6 +18,7 @@ export default function PreviewCard({
   totalParts = null,
   parts = null,
   redirect = '/',
+  isSortable,
   currentDifficulty,
   currentTime,
   modifyDifficulty,
@@ -33,7 +34,7 @@ export default function PreviewCard({
   const handleMouseLeave = () => {
     setIsHovered(false)
   }
-
+  
   return (
     <>
       <Box
@@ -109,12 +110,14 @@ export default function PreviewCard({
                   variant="outline"
                   color="#993CCF"
                   onClick={() => {
-                    if (currentDifficulty == difficulty.toLowerCase()) {
-                      console.log("Removing Difficulty Sort")
-                      modifyDifficulty('')
-                    } else {
-                      console.log("Changing to " + difficulty.toLowerCase())
-                      modifyDifficulty(difficulty.toLowerCase())
+                    if (isSortable) {
+                      if (currentDifficulty == difficulty.toLowerCase()) {
+                        console.log('Removing Difficulty Sort')
+                        modifyDifficulty('')
+                      } else {
+                        console.log('Changing to ' + difficulty.toLowerCase())
+                        modifyDifficulty(difficulty.toLowerCase())
+                      }
                     }
                   }}>
                   {difficulty}
@@ -133,12 +136,14 @@ export default function PreviewCard({
                   variant="outline"
                   color="#993CCF"
                   onClick={() => {
-                    if (currentTime == timeEstimate) {
-                      console.log("Removing Time Sort")
-                      modifyTime("")
-                    } else {
-                      console.log("Changing to " + timeEstimate)
-                      modifyTime(timeEstimate)
+                    if (isSortable) {
+                      if (currentTime == timeEstimate) {
+                        console.log('Removing Time Sort')
+                        modifyTime('')
+                      } else {
+                        console.log('Changing to ' + timeEstimate)
+                        modifyTime(timeEstimate)
+                      }
                     }
                   }}>
                   {timeEstimate}
