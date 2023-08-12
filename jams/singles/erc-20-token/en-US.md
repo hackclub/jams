@@ -3,6 +3,7 @@ title: 'Create your own Club Crypto Currency'
 description: >
   In this Jam, you'll be creating an awesome cryptocurrency which you will be able to personilize and share with others!
 contributor: 'briyandyju09'
+contributorSlackID: 'U04FS5WUXL3'
 thumbnail: 'https://cloud-lir0xp6or-hack-club-bot.vercel.app/0crypto_thumbnail.gif'
 timeEstimate: '30 Min'
 difficulty: 'Beginner'
