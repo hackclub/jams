@@ -3,6 +3,7 @@ import Icon from '@hackclub/icons'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { number } from 'prop-types'
+import { Modal } from '@react-pdf-viewer/core'
 
 export default function Header({
   isHomePage = false,
@@ -47,6 +48,13 @@ export default function Header({
       document.removeEventListener('mousedown', handleDocumentMouseDown)
     }
   }, [])
+
+  const easterEgg = (event) => {
+    // If enter key and input value is "raspberry jam"
+    if (event.keyCode === 13 && event.target.value === "raspberry jam") {
+      window.open("https://example.com", "blank")
+    }
+  }
 
   return (
     <Box
@@ -135,6 +143,7 @@ export default function Header({
             }}
             value={query}
             onChange={event => setQuery(event.target.value)}
+            onKeyDown={easterEgg}
             placeholder="Search for Raspberry Jam"
           />
 
