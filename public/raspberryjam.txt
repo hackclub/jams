@@ -3,7 +3,7 @@
 WELCOME HACKER... You have discovered the SECRET RECIPE that has been                  \
 passed down by generations of HACK CLUBBERS. This raspberry jam is                      \
 very powerful so be careful when consuming. After you finish making this recipe,        /
-make sure to go back to https://code-jams.hackclub.dev/ to find MORE jams to make!!!   /
+make sure to go back to https://jams.hackclub.com/ to find MORE jams to make!!!        /
 ______________________________________________________________________________________/
 
 
