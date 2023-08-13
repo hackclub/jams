@@ -72,7 +72,7 @@ export default function Header({
         })
 
         document.querySelectorAll('canvas').forEach(canvas => {
-          // fill canvas with raspberry jam image without using Image()
+          // fill canvas with raspberry jam image(for the thumbnails that have gifs)
           const ctx = canvas.getContext('2d')
           ctx.drawImage(
             document.querySelector('img'),
