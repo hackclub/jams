@@ -50,63 +50,60 @@ export default function Header({
 
   const easterEgg = event => {
     // If enter key and input value is "raspberry jam"
-    if (
-      event.keyCode === 13 &&
-      event.target.value.toLowerCase() === 'raspberry jam'
-    ) {
-      setQuery('')
-      // For now it just opens the gist in a new tab, in the future it would be cool to have like a modal pop up or something
-      window.open(
-        '/raspberryjam.txt',
-        'blank'
-      )
+    if (event.target.value.toLowerCase() === 'raspberry jam') {
+      setTimeout(_ => {
+        // Need to set query to nothing so the jam images load and can be turned into jam
+        setQuery('')
+        // For now it just opens the gist in a new tab, in the future it would be cool to have like a modal pop up or something
+        window.open('/raspberryjam.txt', 'blank')
 
-      alert('[===RASPBERRY=JAM=MODE=ACTIVATED===]')
+        alert('[===RASPBERRY=JAM=MODE=ACTIVATED===]')
 
-      setInterval(_ => {
-        document.querySelectorAll('img').forEach(img => {
-          // hack club banner thing at top breaks it so dont change that image
-          if (img.parentElement.href != 'https://hackclub.com/') {
-            img.src = 'jam.jpeg'
-          }
-        })
+        setInterval(_ => {
+          document.querySelectorAll('img').forEach(img => {
+            // hack club banner thing at top breaks it so dont change that image
+            if (img.parentElement.href != 'https://hackclub.com/') {
+              img.src = 'jam.jpeg'
+            }
+          })
 
-        document.querySelectorAll('canvas').forEach(canvas => {
-          // fill canvas with raspberry jam image(for the thumbnails that have gifs)
-          const ctx = canvas.getContext('2d')
-          ctx.drawImage(
-            document.querySelector('img'),
-            0,
-            0,
-            canvas.width,
-            canvas.height
-          )
-        })
-      }, 100)
+          document.querySelectorAll('canvas').forEach(canvas => {
+            // fill canvas with raspberry jam image(for the thumbnails that have gifs)
+            const ctx = canvas.getContext('2d')
+            ctx.drawImage(
+              document.querySelector('img'),
+              0,
+              0,
+              canvas.width,
+              canvas.height
+            )
+          })
+        }, 500)
 
-      // document.querySelectorAll("p, span, h1, h2, h3, h4, h5, h6").forEach((el) => {
-      //   el.innerText = "I love JAM";
-      //   setTimeout(_ => {
+        // document.querySelectorAll("p, span, h1, h2, h3, h4, h5, h6").forEach((el) => {
+        //   el.innerText = "I love JAM";
+        //   setTimeout(_ => {
 
-      //     el.animate(
-      //       [
-      //         // keyframes
-      //         { transform: "rotate(1deg)" },
-      //         {
-      //           transform: "rotate(-1deg)" ,
-      //           color: "tomato"
-      //         },
-      //         { transform: "rotate(1deg)" },
-      //       ],
-      //       {
-      //         // timing options
-      //         duration: 1000,
-      //         iterations: Infinity,
-      //         easing: "ease-in-out"
-      //       }
-      //     );
-      //   }, Math.random * 1000)
-      // });
+        //     el.animate(
+        //       [
+        //         // keyframes
+        //         { transform: "rotate(1deg)" },
+        //         {
+        //           transform: "rotate(-1deg)" ,
+        //           color: "tomato"
+        //         },
+        //         { transform: "rotate(1deg)" },
+        //       ],
+        //       {
+        //         // timing options
+        //         duration: 1000,
+        //         iterations: Infinity,
+        //         easing: "ease-in-out"
+        //       }
+        //     );
+        //   }, Math.random * 1000)
+        // });
+      }, 200)
     }
   }
 
@@ -196,7 +193,10 @@ export default function Header({
               }
             }}
             value={query}
-            onChange={event => setQuery(event.target.value)}
+            onChange={event => {
+              setQuery(event.target.value)
+              easterEgg(event)
+            }}
             onKeyDown={easterEgg}
             placeholder="Search for Raspberry Jam"
           />
