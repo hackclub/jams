@@ -177,12 +177,14 @@ export default function Page({ batch, params, jams }) {
             ) {
               // iterates through the words in query
               if (
+                (typeof jamValues[singleJamValue]) == "string" &&
                 jamValues[singleJamValue]
                   .toLowerCase()
                   .split(' ')
                   .indexOf(queryWords[singleWord]) == -1
               ) {
                 // if ANY word in query is not found in the values
+                // OR if it is a non-string value
                 successful = false // it is not working / not successful / wont be displayed
               }
             }

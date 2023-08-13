@@ -190,7 +190,13 @@ export default function Header({
                 }}>
                 {jams?.slice(0, numberAvailable)?.map(jam => (
                   <Grid
-                    onClick={() => router.push(`/jam/${jam.slug}`)}
+                    onClick={() => {
+                      if (jam.isBatch) {
+                        router.push(`/batch/${jam.slug}`)
+                      } else {
+                        router.push(`/jam/${jam.slug}`)
+                      }
+                    }}
                     columns={[null, '1fr 2fr']}
                     style={{
                       alignItems: 'start',
