@@ -9,4 +9,5 @@ timeEstimate: '4 Hours'
 difficulty: 'Beginner'
 slug: 'artificial-intelligence'
 sticker: 'https://cloud-5rfrigev6-hack-club-bot.vercel.app/0frame_101.png'
+isBatch: True
 ---

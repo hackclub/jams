@@ -9,6 +9,7 @@ timeEstimate: '2 Hours'
 difficulty: 'Beginner'
 slug: 'usb-hub'
 short: 'Get started making circuits!'
+isBatch: True
 ---
 
 

@@ -16,4 +16,5 @@ poster: ""
 video: "" 
 slug: '3d-armory'
 contributorSlackID: "U05E2FK240N"
+isBatch: True
 ---
