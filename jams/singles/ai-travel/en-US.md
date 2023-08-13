@@ -3,6 +3,7 @@ title: 'Make an AI Trip Planner for a Club Adventure'
 description: >  
   This Jam will teach you how to use ChatGPT and AI to create a trip itinerary planner. It is extremely customizable and gives a foundation for you to expand upon with your own ideas!
 contributor: 'ShubhamPatilsd'  
+contributorSlackID: 'U029D5FG8EN'
 thumbnail: 'https://cloud-7kw4nqs0s-hack-club-bot.vercel.app/0image.png'  
 timeEstimate: '60 Min'  
 difficulty: 'Intermediate'  
@@ -54,7 +55,7 @@ Then, you create a new project with the HTML, CSS, and JS template
 For our code to know the details of our club trip, we need to have some way to input the destination and dates of our trip.
 
 
-<Dropdown title="What are some ways we can do this?">
+<Dropdown title="How can we do this?">
 
 1. Making an `<input>` element for the location of the trip 
 2. Making another `<input>` element for the start date of the trip 
@@ -67,6 +68,7 @@ While there are many places we can visit in this world, the club must only selec
 ```html
 <input type="text" name="location" />
 ```
+You should put this between the `<body></body>` tags in your HTML!
 
 If you save and run your code, on the right side of your screen you should be able to see a textbox that you can type in!
 
@@ -478,7 +480,7 @@ fetch('https://api.openai.com/v1/chat/completions', {
 })
 ```
 
-### What should I put `body`?
+### What should I put in `body`?
 Remember, the code that we had earlier for the request body? We need to modify that a little bit.
 
 Here's what we're starting with:
@@ -731,7 +733,7 @@ Now, `event` represents each individual event in the itinerary. Here's an exampl
 },
 ```
 
-Let's edit the loop to give us back some 
+Let's edit the loop to give us back some HTML!
 ```js
 for(const event of events){
 	let htmlGenerated = `<div>
