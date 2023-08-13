@@ -3,7 +3,6 @@ import Icon from '@hackclub/icons'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { number } from 'prop-types'
-import { Modal } from '@react-pdf-viewer/core'
 
 export default function Header({
   isHomePage = false,
