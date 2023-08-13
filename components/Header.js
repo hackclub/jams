@@ -57,7 +57,7 @@ export default function Header({
       setQuery('')
       // For now it just opens the gist in a new tab, in the future it would be cool to have like a modal pop up or something
       window.open(
-        'https://gist.githubusercontent.com/NalinPlad/a07b5ade2b557d47513bf9306aeacd19/raw/f96049b05c6ec249bc55dad18c6f6b3808379dbd/raspberryjam.recipe',
+        '/raspberryjam.txt',
         'blank'
       )
 
