@@ -23,8 +23,10 @@ export default function PreviewCard({
   isSortable,
   currentDifficulty,
   currentTime,
+  currentCategories,
   modifyDifficulty,
   modifyTime,
+  modifyCategories,
   ...props
 }) {
   const [isHovered, setIsHovered] = useState(false)
@@ -98,6 +100,28 @@ export default function PreviewCard({
                     fontSize: ['14px', 'auto']
                   }}
                   variant="outline"
+                  onClick={() => {
+                    if (isSortable) {
+                      if (currentCategories.includes(keywords.split(', ')[0])) {
+                        console.log(
+                          'Removing ' + keywords.split(', ')[0] + ' from Sort'
+                        )
+                        modifyCategories(
+                          currentCategories.filter(
+                            current => current !== keywords.split(', ')[0]
+                          )
+                        )
+                      } else {
+                        console.log('Adding ' + keywords.split(', ')[0])
+                        const updatedCategories = [
+                          ...currentCategories,
+                          keywords.split(', ')[0]
+                        ]
+                        console.log(updatedCategories)
+                        modifyCategories(updatedCategories)
+                      }
+                    }
+                  }}
                   color="#993CCF">
                   {keywords.split(', ')[0]}
                 </Badge>
