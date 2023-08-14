@@ -1,8 +1,11 @@
 import { Container, Box, Grid, Input, Image, Link } from 'theme-ui'
 import Icon from '@hackclub/icons'
+import { FiGithub, FiArrowLeft } from 'react-icons/fi'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { number } from 'prop-types'
+
+/** @jsxImportSource theme-ui */
 
 export default function Header({
   isHomePage = false,
@@ -137,12 +140,15 @@ export default function Header({
         zIndex: 5,
         pb: 1,
         backdropFilter: 'blur(5px)',
-        backgroundColor: `rgba(240, 240, 240, ${Math.min(
-          scrollPosition / 75,
-          0.75
-        )})`,
-        width: '100vw'
-      }}>
+        width: '100vw',
+      }}
+      style={{
+        backgroundColor: scrollPosition<50 ? 'transparent' : 'rgba(240,240,240,0.75)',
+        transitionProperty: 'background-color',
+        transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        transitionDuration: '500ms'
+      }}
+    >
       <Container
         sx={{
           display: 'flex',
@@ -150,43 +156,42 @@ export default function Header({
           alignItems: 'center'
         }}>
         {isHomePage ? (
-          <Link style={{ height: '80px' }} href="https://hackclub.com/">
-            <Image src="/assets/flag.svg" />
+          <Link style={{ height: '4rem' }} href="https://hackclub.com/">
+            <Image
+              src="/assets/flag.svg"
+              sx={{ height:"100%" }}
+            />
           </Link>
         ) : (
           <a
-            style={{
-              color: '#000',
+            sx={{
+              my: '16px',
+              pl: '6px',
+              pr: '10px',
+              py: '4px',
+              display:'flex',
+              alignItems:'center',
+              gap:'4px',
               textDecoration: 'none',
-              margin: '0px',
-              padding: '0px'
+              '&:hover': {
+                borderRadius: '9999px',
+                outlineStyle: 'solid',
+                outlineWidth: '2px',
+              }
             }}
-            href={back}>
-            <Box
-              sx={{
-                height: '84px',
-                alignItems: 'center',
-                justifyContent: 'center',
-                display: 'flex'
-              }}>
-              <div
-                style={{
-                  display: 'flex',
-                  backgroundColor: '#fff',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  padding: '8px 16px',
-                  borderRadius: '32px',
-                  border: '1px solid #8492a6',
-                  cursor: 'pointer'
-                }}>
-                <Icon
-                  glyph="view-back"
-                  style={{ height: '24px', padding: '0px' }}
-                />
-                <span>Back</span>
-              </div>
-            </Box>
+            style={{
+              color: '#993CCF',
+              outlineColor: '#993CCF',
+              transitionProperty: 'color, outline-color',
+              transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+              transitionDuration: '500ms'
+            }}
+            href={back}
+          >
+            <FiArrowLeft
+              style={{ fontSize: "1.4rem" }}
+            />
+            <span>Back</span>
           </a>
         )}
         <Box
@@ -329,16 +334,26 @@ export default function Header({
         <Link
           href="https://github.com/hackclub/jams"
           target="_blank"
-          style={{ marginLeft: '110px' }}
+          rel="noopener noreferrer"
           sx={{
-            'color': isHomePage
-              ? `rgba(calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), calc(255 - ${scrollPosition}), 1)`
-              : '#000',
+            ml: '84px',
+            px: '4px',
+            pt: '5px',
             '&:hover': {
-              color: scrollPosition != 0 ? '#993CCF' : '#fff' // Set text color to purple on hover
+              borderRadius: '9999px',
+              outlineStyle: 'solid',
+              outlineWidth: '2px',
             }
-          }}>
-          <Icon glyph="github" />
+          }}
+          style={{
+            color: isHomePage && scrollPosition<50 ? '#fff' : '#993CCF',
+            outlineColor: isHomePage && scrollPosition<50 ? '#fff' : '#993CCF',
+            transitionProperty: 'color, outline-color',
+            transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+            transitionDuration: '500ms'
+          }}
+        >
+          <FiGithub sx={{ fontSize: 3, mb:"-5px" }}/>
         </Link>
       </Container>
     </Box>
