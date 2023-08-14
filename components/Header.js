@@ -207,7 +207,12 @@ export default function Header({
               easterEgg(event)
             }}
             onKeyDown={easterEgg}
-            placeholder={'Search for ' + placeholderText.charAt(0).toUpperCase() + placeholderText.substring(1) + ' Jam'}
+            placeholder={
+              'Search for ' +
+              placeholderText.charAt(0).toUpperCase() +
+              placeholderText.substring(1) +
+              ' Jam'
+            }
           />
 
           {searching && jams.length !== 0 && query !== '' && (
