@@ -460,8 +460,7 @@ export default function Index(props) {
   const desiredSlugsBatches = [
     'sprig',
     'webOS',
-    'artificial-intelligence',
-    'usb-hub'
+    'artificial-intelligence'
   ]
   const fallFeatures = props.jamsContent.batches.filter(batch =>
     desiredSlugsBatches.includes(batch.slug)
@@ -593,10 +592,10 @@ export default function Index(props) {
             🍂{' '}
           </Text>
           <Grid
-            columns={[null, '1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
+            columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
             gap={3}
             sx={{ pt: 4, position: 'relative' }}>
-            {fallFeatures.map((fallFeature, idx) => (
+            {fallFeatures.reverse().map((fallFeature, idx) => (
               <div style={{ position: 'relative' }}>
                 {fallFeature.sticker && (
                   <Box

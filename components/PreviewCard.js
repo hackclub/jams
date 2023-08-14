@@ -46,7 +46,10 @@ export default function PreviewCard({
         onMouseLeave={() => setIsHovered(false)}
         style={{ cursor: 'pointer' }}
         {...props}>
-        <Box sx={{ borderRadius: '16px' }}>
+        <Box 
+        
+        onMouseEnter={() => setIsHovered(true)}
+        sx={{ borderRadius: '16px' }}>
           <Box
             sx={{
               position: 'absolute',
@@ -77,6 +80,8 @@ export default function PreviewCard({
               <>
                 {part != '0' && (
                   <Badge
+                  onMouseEnter={() => setIsHovered(true)}
+
                     key="partFeature"
                     mr={2}
                     sx={{
@@ -91,6 +96,8 @@ export default function PreviewCard({
                   </Badge>
                 )}
                 <Badge
+                        onMouseEnter={() => setIsHovered(true)}
+
                   key="keywordFeature"
                   mr={2}
                   sx={{
@@ -136,6 +143,8 @@ export default function PreviewCard({
                 </Badge>
                 {part === 0 && (
                   <Badge
+                  onMouseEnter={() => setIsHovered(true)}
+
                     key="difficultyFeature"
                     mr={2}
                     sx={{
@@ -169,6 +178,8 @@ export default function PreviewCard({
                 )}
                 {!parts && (
                   <Badge
+                  onMouseEnter={() => setIsHovered(true)}
+
                     key="timeFeature"
                     mr={2}
                     sx={{
@@ -200,6 +211,8 @@ export default function PreviewCard({
 
           <a style={{ color: '#000', textDecoration: 'none' }} href={redirect}>
             <Box
+                    onMouseEnter={() => setIsHovered(true)}
+
               sx={{
                 borderRadius: '16px',
                 overflow: 'hidden',
@@ -209,8 +222,6 @@ export default function PreviewCard({
               }}>
               {thumbnail?.includes('.gif') && part == '0' ? (
                 <ReactFreezeframe
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
                   src={thumbnail}
                   options={{
                     overlay: false, // Optional: Show overlay play icon
