@@ -1,0 +1,33 @@
+
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\
+WELCOME HACKER... You have discovered the SECRET RECIPE that has been                  \
+passed down by generations of HACK CLUBBERS. This raspberry jam is                      \
+very powerful so be careful when consuming. After you finish making this recipe,        /
+make sure to go back to https://jams.hackclub.com/ to find MORE jams to make!!!        /
+______________________________________________________________________________________/
+
+
+
+Orpheus' Raspberry Jam
+----------------------
+
+[*] INGREDIENTS:
+
+ITEM                        COUNT
+-----------------------------------[*]
+Raspberry Pi 4 Model B:       1
+Raspberry Pi Zero:            3
+White Sugar(cups):            2
+Lemon Juice(ounces):          5
+Resistor(10kOhm):             13
+Brown Sugar(cups):            6
+
+[*] INSTRUCTIONS
+
+1. Preheat oven to 556.3° Celsius
+2. In a blender, combine the Raspberry Pi 4 Model B and White Sugar. Set Aside.
+3. In a bowl, mix together Brown Sugar and Lemon Juice, mix until resistivity reaches 130 Ohms
+4. Slowly sprinkle in the 10kOhms resistors into the bowl at a rate of 1 per minute
+5. Grind a Raspberry Pi Zero into a powder using a cheese grater. Add to bowl and mix
+6. Combine contents of bowl and blender in a octagonal baking sheet
+7. Cook for 60 seconds in oven. Serve with NGINX

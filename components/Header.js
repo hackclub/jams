@@ -16,6 +16,9 @@ export default function Header({
   const [numberAvailable, setNumberAvailable] = useState(5)
   const [showMoreVisible, setShowMoreVisible] = useState(false)
 
+  const fruits = ['raspberry', 'blueberry']
+  const placeholderText = fruits[Math.floor(Math.random() * fruits.length)]
+
   const router = useRouter()
 
   const handleMouseDown = event => {
@@ -47,6 +50,71 @@ export default function Header({
       document.removeEventListener('mousedown', handleDocumentMouseDown)
     }
   }, [])
+
+  const easterEgg = event => {
+    // If enter key and input value is preset jam
+    if (
+      event.target.value.toLowerCase().split(' ')[0] != '' &&
+      event.target.value.toLowerCase().split(' ')[1] == 'jam' &&
+      fruits.includes(event.target.value.toLowerCase().split(' ')[0])
+    ) {
+      setTimeout(_ => {
+        var typedtext = event.target.value.toLowerCase().split(' ')[0]
+        console.log(typedtext)
+        // Need to set query to nothing so the jam images load and can be turned into jam
+        setQuery('')
+        // For now it just opens the gist in a new tab, in the future it would be cool to have like a modal pop up or something
+        window.open('/txtfile/' + typedtext.toLowerCase() + '/jam.txt', 'blank')
+
+        alert('[===' + typedtext.toUpperCase() + '=JAM=MODE=ACTIVATED===]')
+
+        setInterval(_ => {
+          document.querySelectorAll('img').forEach(img => {
+            // hack club banner thing at top breaks it so dont change that image
+            if (img.parentElement.href != 'https://hackclub.com/') {
+              img.src = '/txtfile/' + typedtext.toLowerCase() + '/jam.jpeg'
+            }
+          })
+
+          document.querySelectorAll('canvas').forEach(canvas => {
+            // fill canvas with jam image(for the thumbnails that have gifs)
+            const ctx = canvas.getContext('2d')
+            ctx.drawImage(
+              document.querySelector('img'),
+              0,
+              0,
+              canvas.width,
+              canvas.height
+            )
+          })
+        }, 500)
+
+        // document.querySelectorAll("p, span, h1, h2, h3, h4, h5, h6").forEach((el) => {
+        //   el.innerText = "I love JAM";
+        //   setTimeout(_ => {
+
+        //     el.animate(
+        //       [
+        //         // keyframes
+        //         { transform: "rotate(1deg)" },
+        //         {
+        //           transform: "rotate(-1deg)" ,
+        //           color: "tomato"
+        //         },
+        //         { transform: "rotate(1deg)" },
+        //       ],
+        //       {
+        //         // timing options
+        //         duration: 1000,
+        //         iterations: Infinity,
+        //         easing: "ease-in-out"
+        //       }
+        //     );
+        //   }, Math.random * 1000)
+        // });
+      }, 200)
+    }
+  }
 
   return (
     <Box
@@ -134,8 +202,17 @@ export default function Header({
               }
             }}
             value={query}
-            onChange={event => setQuery(event.target.value)}
-            placeholder="Search for Raspberry Jam"
+            onChange={event => {
+              setQuery(event.target.value)
+              easterEgg(event)
+            }}
+            onKeyDown={easterEgg}
+            placeholder={
+              'Search for ' +
+              placeholderText.charAt(0).toUpperCase() +
+              placeholderText.substring(1) +
+              ' Jam'
+            }
           />
 
           {searching && jams.length !== 0 && query !== '' && (
