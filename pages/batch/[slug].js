@@ -346,6 +346,9 @@ export default function Page({ batch, params, jams }) {
               redirect={'/batch/' + params.slug + '/' + part.part}
               {...part}
               isSortable={false} // since this is false we really don't care about the 4 parameters used for sorting
+              currentDifficulty={""}
+              currentTime={""}
+              currentCategories={[]}
             />
           ))}
         </Grid>
