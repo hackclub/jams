@@ -13,7 +13,7 @@ import {
 import Footer from '@/components/Footer'
 import SearchControls from '@/components/Search'
 import PreviewCard from '@/components/PreviewCard'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Icon from '@hackclub/icons'
 import { useRouter } from 'next/router'
 
@@ -93,219 +93,221 @@ function getBatches(fs, directory) {
 }
 
 function Slides({ router, initialFeatures }) {
-  const [active, setActive] = useState(Math.floor(initialFeatures.length / 2))
+  // const [active, setActive] = useState(Math.floor(initialFeatures.length / 2))
 
-  const [features, setFeatures] = useState(initialFeatures)
+  const [features, setFeatures] = useState(initialFeatures);
+  const [active, setActive] = useState(0);
+  const containerRef = useRef(null);
+  const cardsRef = useRef([]);
 
-  function moveRight() {
-    const copyOfFeatures = [...features]
+  const handleScroll = () => {
+    const container = containerRef.current;
+    const scroll = container.getBoundingClientRect().left + container.getBoundingClientRect().width/2;
 
-    const firstValue = copyOfFeatures.shift()
-    copyOfFeatures.push(firstValue)
+    let minDistance = Infinity;
+    let currentIndex = 0;
 
-    setFeatures(copyOfFeatures)
-  }
+    cardsRef.current.forEach((card, i) => {
+      const rect = card.getBoundingClientRect();
+      const center = rect.left+rect.width/2;
+      const distance = Math.abs(center-scroll);
 
-  function moveLeft() {
-    const copyOfFeatures = [...features]
+      if (distance < minDistance) {
+        minDistance = distance;
+        currentIndex = i;
+      }
+    });
 
-    const lastValue = copyOfFeatures.pop()
-    copyOfFeatures.unshift(lastValue)
+    setActive(currentIndex);
+  };
 
-    setFeatures(copyOfFeatures)
-  }
+  useEffect(() => {
+    containerRef.current.addEventListener('scroll', handleScroll);
+    return () => {
+      containerRef.current.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
 
-  return (
-    <Container
-      sx={{ py: 4, alignItems: 'center', display: 'flex', flexWrap: 'nowrap' }}>
-      <Card
-        key={2}
-        onClick={event => {
-          moveRight() // Call your desired function
-        }}
-        sx={{
-          // backgroundImage: `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${features[1].thumbnail}")`,
-          backgroundImage: `url("${features[1].thumbnail}")`,
-          backgroundSize: 'cover',
-          cursor: 'pointer',
-          backgroundPosition: 'center',
-          boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
-          color: 'white',
-          border: '4px solid white',
-          textAlign: 'left',
-          height: '12.5vw',
-          width: '22vw',
-          flexShrink: 0,
-          marginRight: '-12.5vw',
-          opacity: 0.5,
-          zIndex: 0
-        }}>
-        {/* <Text as="h2" sx={{ fontSize: 36, lineHeight: 1, color: '#000' }}>
-    <Box sx={{ py: 4, alignItems: "center", display: 'flex', flexWrap: 'nowrap' }}>
-<Card
-  key={2}
-  onClick={(event) => {
-    moveRight(); // Call your desired function
-  }}
+  // function moveRight() {
+  //   const copyOfFeatures = [...features]
 
-  sx={{
-    // backgroundImage: `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${features[1].thumbnail}")`,
-    backgroundImage: `url("${features[1].thumbnail}")`,
-    backgroundSize: 'cover',
-    cursor: "pointer",
-    backgroundPosition: 'center',
-    boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
-    color: 'white',
-    border: '4px solid white',
-    textAlign: 'left',
-    height: '12.5vw',
-    width: '22vw',
-    flexShrink: 0,
-    marginRight: '-12.5vw',
-    opacity: 0.5,
-    zIndex: 0,
-  }}
->
-  {/* <Text as="h2" sx={{ fontSize: 36, lineHeight: 1, color: '#000' }}>
-    {features[1].title}
-  </Text> */}
-      </Card>
+  //   const firstValue = copyOfFeatures.shift()
+  //   copyOfFeatures.push(firstValue)
 
-      <Card
-        key={0}
-        onClick={() => router.push(`/jam/${features[0].slug}`)}
-        sx={{
-          backgroundImage: `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${features[0].thumbnail}")`,
-          backgroundSize: 'cover',
-          cursor: 'pointer',
+  //   setFeatures(copyOfFeatures)
+  // }
 
-          backgroundPosition: 'center',
-          boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
-          color: 'white',
-          border: '4px solid white',
-          textAlign: 'left',
-          height: ['50vw', '38vw', '32vw', '25vw'],
-          width: ['88vw', '66vw', '55vw', '44vw'],
-          flexShrink: '0',
-          zIndex: 1,
-          overflow: 'visible',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between'
-        }}>
-        <Box>
-          <Badge
-            key="keywordFeature"
-            mr={2}
-            sx={{
-              cursor: 'pointer',
-              fontSize: ['14px', 'auto'],
-              backgroundColor: '#fff'
-            }}
-            variant="outline"
-            color="#993CCF">
-            {features[0].keywords.split(', ')[0]}
-          </Badge>
-          <Badge
-            key="difficultyFeature"
-            mr={2}
-            sx={{
-              cursor: 'pointer',
-              fontSize: ['14px', 'auto'],
-              backgroundColor: '#fff'
-            }}
-            variant="outline"
-            color="#993CCF">
-            {features[0].difficulty}
-          </Badge>
-          <Badge
-            key="timeFeature"
-            mr={2}
-            sx={{
-              cursor: 'pointer',
-              fontSize: ['14px', 'auto'],
-              backgroundColor: '#fff'
-            }}
-            variant="outline"
-            color="#993CCF">
-            {features[0].timeEstimate}
-          </Badge>
-        </Box>
-        <Box
+  // function moveLeft() {
+  //   const copyOfFeatures = [...features]
+
+  //   const lastValue = copyOfFeatures.pop()
+  //   copyOfFeatures.unshift(lastValue)
+
+  //   setFeatures(copyOfFeatures)
+  // }
+
+  return <Box sx={{ position:"relative", width:"100%" }}>
+    <Box
+      sx={{
+        height:"18rem",
+        px:"calc(50% - 16rem + 6rem)",
+        display:"flex",
+        position:"relative",
+        overflowX:"auto",
+        scrollSnapType: "x mandatory",
+      }}
+      className="hide-scrollbar"
+      ref={containerRef}
+    >
+      {features.map((jam,i) =>
+        <div
           sx={{
-            display: 'flex',
-            cursor: 'pointer',
-            flexDirection: 'row',
-            marginLeft: ['-38px', '-56px'],
-            marginRight: ['-38px', '-56px'],
-            zIndex: 2,
-            justifyContent: 'space-between'
-          }}>
-          <Box
-            onClick={event => {
-              event.stopPropagation() // Stop event propagation
-              moveRight() // Call your desired function
-            }}
+            height:"100%",
+            aspectRatio:"16 / 9",
+            borderRadius:"16px",
+            scrollSnapAlign: "center",
+            scrollSnapStop: "always",
+            // backgroundImage: `url(${jam.thumbnail})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            mx:"-6rem",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            position:"relative",
+          }}
+          ref={el => cardsRef.current[i] = el}
+          style={{
+            zIndex: active === i ? 1 : 0,
+            filter: `brightness(${active === i ? 1 : 0.75})`,
+            transitionProperty: "filter",
+            transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+            transitionDuration: "200ms",
+          }}
+        >
+          <div
             sx={{
-              backgroundColor: '#fff',
-              height: '48px',
-              width: '48px',
-              borderRadius: '24px'
-            }}>
-            <Icon glyph="view-back" size={48} color="#3E4857" />
-          </Box>
-          <Box
-            onClick={event => {
-              event.stopPropagation() // Stop event propagation
-              moveLeft() // Call your desired function
+              width: "100%",
+              aspectRatio:"16 / 9",
+              maxWidth:"calc(100vw - 2rem)",
+              boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
+            style={{
+              backgroundImage: active === i ? `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${jam.thumbnail}")` : `url("${jam.thumbnail}")`,
+              border: active === i ? "4px solid #fff" : "none",
+              transform: `scale(${active === i ? 1 : 0.75})`,
+              transitionProperty: "transform, border, background-image",
+              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+              transitionDuration: "200ms",
+              borderRadius:"16px",
+            }}
+          />
+          
+          <Box
             sx={{
-              backgroundColor: '#fff',
-              cursor: 'pointer',
-              height: '48px',
-              width: '48px',
-              borderRadius: '24px'
-            }}>
-            <Icon glyph="view-forward" size={48} color="#3E4857" />
-          </Box>
-        </Box>
-        <Text
-          as="h2"
-          sx={{
-            fontSize: [22, 22, 24, 28, 32],
-            lineHeight: 1,
-            userSelect: 'none'
-          }}>
-          {features[0].title}
-        </Text>
-      </Card>
-      <Card
-        onClick={() => moveLeft()}
-        key={1}
-        sx={{
-          // backgroundImage: `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${features[2].thumbnail}")`,
-          backgroundImage: `url("${features[2].thumbnail}")`,
+              position: 'absolute',
+              top:"1rem",
+              left:"1.5rem",
+              right:"1.5rem",
+              zIndex: 1,
+              display: 'flex',
+              flexWrap: 'wrap'
+            }}
+            style={{
+              opacity: active === i ? 1 : 0,
+              transform: `scale(${active === i ? 1 : 0.75})`,
+              transitionProperty: "opacity, transform",
+              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+              transitionDuration: "200ms",
+            }}
+          >
+            {jam.parts?.length && (
+              <Badge
+                key="partFeature"
+                mr={2}
+                sx={{
+                  cursor: 'pointer',
+                  backgroundColor: '#993CCF',
+                  marginBottom: '8px',
+                  fontSize: ['14px', 'auto']
+                }}
+                variant="outline"
+                color="#fff">
+                {jam.parts.length} Parts
+              </Badge>
+            )}
 
-          backgroundSize: 'cover',
-          cursor: 'pointer',
-          backgroundPosition: 'center',
-          boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
-          color: 'white',
-          border: '4px solid white',
-          textAlign: 'left',
-          height: ['12.5vw'],
-          width: '22vw',
-          flexShrink: 0,
-          marginLeft: '-12vw',
-          opacity: 0.5,
-          zIndex: 0
-        }}>
-        {/* <Text as="h2" sx={{ fontSize: 36, lineHeight: 1, color: '#000' }}>
-    {features[2].title}
-  </Text> */}
-      </Card>
-    </Container>
-  )
+            <Badge
+              key="keywordFeature"
+              mr={2}
+              sx={{
+                cursor: 'pointer',
+                backgroundColor: '#fff',
+                marginBottom: '8px',
+                fontSize: ['14px', 'auto']
+              }}
+              variant="outline"
+              color="#993CCF">
+              {jam.keywords.split(', ')[0]}
+            </Badge>
+            <Badge
+              key="difficultyFeature"
+              mr={2}
+              sx={{
+                cursor: 'pointer',
+                backgroundColor: '#fff',
+                marginBottom: '8px',
+                fontSize: ['14px', 'auto']
+              }} // Adjust '4px' as needed
+              variant="outline"
+              color="#993CCF"
+            >
+              {jam.difficulty}
+            </Badge>
+            {!jam.parts && (
+              <Badge
+                key="timeFeature"
+                mr={2}
+                sx={{
+                  cursor: 'pointer',
+                  backgroundColor: '#fff',
+                  marginBottom: '8px',
+                  fontSize: ['14px', 'auto']
+                }} // Adjust '4px' as needed
+                variant="outline"
+                color="#993CCF"
+              >
+                {jam.timeEstimate}
+              </Badge>
+            )}
+          </Box>
+
+          <div
+            sx={{
+              position:"absolute",
+              bottom:"1rem",
+              left:"1.5rem",
+              right:"1.5rem",
+              zIndex: 1,
+            }}
+            style={{
+              opacity: active === i ? 1 : 0,
+              transform: `scale(${active === i ? 1 : 0.75})`,
+              transitionProperty: "opacity, transform",
+              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+              transitionDuration: "200ms",
+            }}
+          >
+            <h2 sx={{ fontSize:28, lineHeight:"2rem", my:0 }}>
+              {jam.title}
+            </h2>
+          </div>
+        </div>
+      )}
+    </Box>
+  </Box>;
 }
 
 function useStickyCategoryBar() {
@@ -471,6 +473,13 @@ export default function Index(props) {
 
   return (
     <>
+      <Header
+        jams={jams.concat(batches)}
+        query={query}
+        setQuery={setQuery}
+        isHomePage={true}
+      />
+
       <Box
         sx={{
           backgroundImage:
@@ -482,8 +491,9 @@ export default function Index(props) {
           alignItems: 'center',
           pb: 6,
           position: 'relative',
-          height: '100%'
-        }}>
+          height: '100%',
+        }}
+      >
         <Box
           sx={{
             background:
@@ -504,12 +514,6 @@ export default function Index(props) {
           }}
           src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"
         />
-        <Header
-          jams={jams.concat(batches)}
-          query={query}
-          setQuery={setQuery}
-          isHomePage={true}
-        />
 
         <Box
           sx={{
@@ -517,13 +521,14 @@ export default function Index(props) {
             textAlign: 'center',
             marginTop: '64px',
             position: 'relative',
-            zIndex: 2
-          }}>
+            zIndex: 2,
+          }}
+        >
           <Text
             as="h1"
             sx={{
               fontFamily: 'var(--heading)',
-              fontSize: [48, 56, 96],
+              fontSize: [48, 56, 56],
               textShadow: '0px 0px 64px 0px rgba(56, 10, 83, 0.75)',
               mb: 0,
               mt: 0,
@@ -534,28 +539,29 @@ export default function Index(props) {
           </Text>
           <Box
             sx={{
-              maxWidth: '100%',
+              maxWidth: '48rem',
               px: [2, 4],
-              py: [2, 3],
+              py: [2, 2],
               textAlign: 'center'
             }}>
             <Text
               sx={{
                 textShadow: '0px 0px 32px 0px rgba(56, 10, 83, 0.50)',
-                fontSize: [16, 18, 24],
+                fontSize: [16, 18, 22],
                 mt: 0,
                 lineHeight: 1.2,
                 pt: 0,
-                px: 3
+                px: 3,
               }}>
-              Collaborative coding workshops where sparks ignite, <br />
-              fears dissolve, and inventions come to life.
+              Collaborative coding workshops where sparks ignite, fears dissolve, and inventions come to life.
             </Text>
           </Box>
-          <Slides initialFeatures={features} router={router} />
         </Box>
+
+        <Slides initialFeatures={features} router={router} />
       </Box>
-      <Container sx={{ marginTop: '-132px', position: 'relative', zIndex: 1 }}>
+
+      <Container sx={{ marginTop: '-4rem', position: 'relative', zIndex: 1 }}>
         <Box
           sx={{
             backgroundColor: '#FDF5EC',
@@ -578,7 +584,7 @@ export default function Index(props) {
           <Text
             as="h2"
             sx={{ fontSize: 24, fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
-            Here are some Great Multi-part Jams to Kickoff Your Club this Fall
+            Here are some great multi-part jams to kickoff your club this fall
             🍂{' '}
           </Text>
           <Grid

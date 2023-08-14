@@ -22,3 +22,7 @@ html {
 pre {
   white-space: pre-wrap !important;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
