@@ -1,13 +1,13 @@
 // components/mdxComponents.js
 
-import Dropdown from './Dropdown';
-import Blockquote from './Blockquote';
-import Grid from './Grid';
-import GridItem from './GridItem';
-import Comment from './Comment';
-import Image from './Image';
-import { CodeBlock, InlineCode } from './Code';
-import StepHeader from './StepHeader';
+import Dropdown from './Dropdown'
+import Blockquote from './Blockquote'
+import Grid from './Grid'
+import GridItem from './GridItem'
+import Comment from './Comment'
+import Image from './Image'
+import { CodeBlock, InlineCode } from './Code'
+import StepHeader from './StepHeader'
 
 const mdxComponents = {
   Dropdown,
@@ -18,7 +18,7 @@ const mdxComponents = {
   pre: CodeBlock,
   inlineCode: InlineCode,
   h2: StepHeader,
-  blockquote: Blockquote,
-};
+  blockquote: Blockquote
+}
 
-export default mdxComponents;
+export default mdxComponents

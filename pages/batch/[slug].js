@@ -133,7 +133,7 @@ export async function getStaticProps({ params }) {
       },
       jams: {
         singles,
-        batches,
+        batches
       },
       params
     }
@@ -157,7 +157,7 @@ export default function Page({ batch, params, jams }) {
       <Header
         setQuery={setQuery}
         query={query}
-        jams={(jams.singles.concat(jams.batches)).filter(jam => {
+        jams={jams.singles.concat(jams.batches).filter(jam => {
           /* check if it is true that:
               for some value in jam's values
               every part of the query is contained within that value*/
@@ -177,7 +177,7 @@ export default function Page({ batch, params, jams }) {
             ) {
               // iterates through the words in query
               if (
-                (typeof jamValues[singleJamValue]) == "string" &&
+                typeof jamValues[singleJamValue] == 'string' &&
                 jamValues[singleJamValue]
                   .toLowerCase()
                   .split(' ')
@@ -301,7 +301,9 @@ export default function Page({ batch, params, jams }) {
               </Badge> */}
             </div>
 
-            <h1 sx={{ m: 0, lineHeight: '2.2rem', mt:"0.25rem" }}>{batch.title}</h1>
+            <h1 sx={{ m: 0, lineHeight: '2.2rem', mt: '0.25rem' }}>
+              {batch.title}
+            </h1>
 
             <Link
               href={`https://github.com/${batch.contributor}`}

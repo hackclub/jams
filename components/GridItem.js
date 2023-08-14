@@ -1,9 +1,5 @@
-import { Box } from 'theme-ui';
+import { Box } from 'theme-ui'
 
 export default function GridItem({ children }) {
-  return (
-    <Box>
-      {children}
-    </Box>
-  )
+  return <Box>{children}</Box>
 }

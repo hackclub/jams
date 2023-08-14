@@ -1,4 +1,4 @@
-import { Grid as ThemeGrid } from 'theme-ui';
+import { Grid as ThemeGrid } from 'theme-ui'
 
 export default function Grid({ cols, children }) {
   return (
