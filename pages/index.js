@@ -149,8 +149,8 @@ function Slides({ router, initialFeatures }) {
   return <Box sx={{ position:"relative", width:"100%" }}>
     <Box
       sx={{
-        height:"18rem",
-        px:"calc(50% - 16rem + 6rem)",
+        height:["12rem","18rem","18rem"],
+        px:["calc(50% - 10.667rem + 6rem)","calc(50% - 16rem + 6rem)","calc(50% - 16rem + 6rem)"],
         display:"flex",
         position:"relative",
         overflowX:"auto",
@@ -161,7 +161,14 @@ function Slides({ router, initialFeatures }) {
     >
       {features.map((jam,i) =>
         <a
-          href={`./jam/${jam.slug}`}
+          href={active===i ? `./jam/${jam.slug}` : null}
+          onClick={() => {
+            if (active === i) return;
+            containerRef.current.scrollTo({
+              left: cardsRef.current[i].offsetLeft - cardsRef.current[0].offsetLeft,
+              behavior: 'smooth'
+            });
+          }}
           sx={{
             height:"100%",
             aspectRatio:"16 / 9",
@@ -195,6 +202,7 @@ function Slides({ router, initialFeatures }) {
               boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
               backgroundSize: "cover",
               backgroundPosition: "center",
+              position:"relative",
             }}
             style={{
               backgroundImage: active === i ? `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${jam.thumbnail}")` : `url("${jam.thumbnail}")`,
@@ -205,72 +213,56 @@ function Slides({ router, initialFeatures }) {
               transitionDuration: "200ms",
               borderRadius:"16px",
             }}
-          />
-          
-          <Box
-            sx={{
-              position: 'absolute',
-              top:"1rem",
-              left:"1.5rem",
-              right:"1.5rem",
-              zIndex: 1,
-              display: 'flex',
-              flexWrap: 'wrap'
-            }}
-            style={{
-              opacity: active === i ? 1 : 0,
-              transform: `scale(${active === i ? 1 : 0.75})`,
-              transitionProperty: "opacity, transform",
-              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-              transitionDuration: "200ms",
-            }}
           >
-            {jam.parts?.length && (
+            <Box
+              sx={{
+                position: 'absolute',
+                top:["0.75rem","0.75rem","1rem"],
+                left:["1rem","1rem","1.5rem"],
+                right:["1rem","1rem","1.5rem"],
+                zIndex: 1,
+                display: 'flex',
+                flexWrap: 'wrap'
+              }}
+              style={{
+                opacity: active === i ? 1 : 0,
+                transform: `scale(${active === i ? 1 : 0.75})`,
+                transitionProperty: "opacity, transform",
+                transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                transitionDuration: "200ms",
+              }}
+            >
+              {jam.parts?.length && (
+                <Badge
+                  key="partFeature"
+                  mr={2}
+                  sx={{
+                    cursor: 'pointer',
+                    backgroundColor: '#993CCF',
+                    marginBottom: '8px',
+                    fontSize: ['14px', 'auto']
+                  }}
+                  variant="outline"
+                  color="#fff">
+                  {jam.parts.length} Parts
+                </Badge>
+              )}
+
               <Badge
-                key="partFeature"
+                key="keywordFeature"
                 mr={2}
                 sx={{
                   cursor: 'pointer',
-                  backgroundColor: '#993CCF',
+                  backgroundColor: '#fff',
                   marginBottom: '8px',
                   fontSize: ['14px', 'auto']
                 }}
                 variant="outline"
-                color="#fff">
-                {jam.parts.length} Parts
+                color="#993CCF">
+                {jam.keywords.split(', ')[0]}
               </Badge>
-            )}
-
-            <Badge
-              key="keywordFeature"
-              mr={2}
-              sx={{
-                cursor: 'pointer',
-                backgroundColor: '#fff',
-                marginBottom: '8px',
-                fontSize: ['14px', 'auto']
-              }}
-              variant="outline"
-              color="#993CCF">
-              {jam.keywords.split(', ')[0]}
-            </Badge>
-            <Badge
-              key="difficultyFeature"
-              mr={2}
-              sx={{
-                cursor: 'pointer',
-                backgroundColor: '#fff',
-                marginBottom: '8px',
-                fontSize: ['14px', 'auto']
-              }} // Adjust '4px' as needed
-              variant="outline"
-              color="#993CCF"
-            >
-              {jam.difficulty}
-            </Badge>
-            {!jam.parts && (
               <Badge
-                key="timeFeature"
+                key="difficultyFeature"
                 mr={2}
                 sx={{
                   cursor: 'pointer',
@@ -281,30 +273,46 @@ function Slides({ router, initialFeatures }) {
                 variant="outline"
                 color="#993CCF"
               >
-                {jam.timeEstimate}
+                {jam.difficulty}
               </Badge>
-            )}
-          </Box>
+              {!jam.parts && (
+                <Badge
+                  key="timeFeature"
+                  mr={2}
+                  sx={{
+                    cursor: 'pointer',
+                    backgroundColor: '#fff',
+                    marginBottom: '8px',
+                    fontSize: ['14px', 'auto']
+                  }} // Adjust '4px' as needed
+                  variant="outline"
+                  color="#993CCF"
+                >
+                  {jam.timeEstimate}
+                </Badge>
+              )}
+            </Box>
 
-          <div
-            sx={{
-              position:"absolute",
-              bottom:"1rem",
-              left:"1.5rem",
-              right:"1.5rem",
-              zIndex: 1,
-            }}
-            style={{
-              opacity: active === i ? 1 : 0,
-              transform: `scale(${active === i ? 1 : 0.75})`,
-              transitionProperty: "opacity, transform",
-              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-              transitionDuration: "200ms",
-            }}
-          >
-            <h2 sx={{ fontSize:28, lineHeight:"2rem", my:0 }}>
-              {jam.title}
-            </h2>
+            <div
+              sx={{
+                position:"absolute",
+                bottom:["0.75rem","0.75rem","1rem"],
+                left:["1rem","1rem","1.5rem"],
+                right:["1rem","1rem","1.5rem"],
+                zIndex: 1,
+              }}
+              style={{
+                opacity: active === i ? 1 : 0,
+                transform: `scale(${active === i ? 1 : 0.75})`,
+                transitionProperty: "opacity, transform",
+                transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                transitionDuration: "200ms",
+              }}
+            >
+              <h2 sx={{ fontSize:28, lineHeight:"2rem", my:0 }}>
+                {jam.title}
+              </h2>
+            </div>
           </div>
         </a>
       )}
