@@ -160,11 +160,13 @@ function Slides({ router, initialFeatures }) {
       ref={containerRef}
     >
       {features.map((jam,i) =>
-        <div
+        <a
+          href={`./jam/${jam.slug}`}
           sx={{
             height:"100%",
             aspectRatio:"16 / 9",
             borderRadius:"16px",
+            color: "#fff",
             scrollSnapAlign: "center",
             scrollSnapStop: "always",
             // backgroundImage: `url(${jam.thumbnail})`,
@@ -304,7 +306,7 @@ function Slides({ router, initialFeatures }) {
               {jam.title}
             </h2>
           </div>
-        </div>
+        </a>
       )}
     </Box>
   </Box>;
