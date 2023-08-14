@@ -96,7 +96,7 @@ function Slides({ router, initialFeatures }) {
   // const [active, setActive] = useState(Math.floor(initialFeatures.length / 2))
 
   const [features, setFeatures] = useState(initialFeatures)
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState(null)
   const containerRef = useRef(null)
   const cardsRef = useRef([])
 
@@ -124,8 +124,10 @@ function Slides({ router, initialFeatures }) {
   }
 
   useEffect(() => {
+    // set scroll position to the second card
+    containerRef.current.scrollLeft = cardsRef.current[1].offsetLeft + cardsRef.current[1].offsetWidth/2 - containerRef.current.offsetWidth/2;
+    
     containerRef.current.addEventListener('scroll', handleScroll);
-
     return () => {
       containerRef.current.removeEventListener('scroll', handleScroll)
     }
@@ -239,7 +241,7 @@ function Slides({ router, initialFeatures }) {
                   transform: `scale(${active === i ? 1 : 0.75})`,
                   transitionProperty: 'opacity, transform',
                   transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-                  transitionDuration: '200ms'
+                  transitionDelay: '100ms',
                 }}>
                 {jam.parts?.length && (
                   <Badge
@@ -313,7 +315,7 @@ function Slides({ router, initialFeatures }) {
                   transform: `scale(${active === i ? 1 : 0.75})`,
                   transitionProperty: 'opacity, transform',
                   transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-                  transitionDuration: '200ms'
+                  transitionDuration: '200ms',
                 }}>
                 <h2 sx={{ fontSize: 28, lineHeight: '2rem', my: 0 }}>
                   {jam.title}
