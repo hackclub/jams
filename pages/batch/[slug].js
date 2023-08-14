@@ -143,6 +143,10 @@ export async function getStaticProps({ params }) {
 export default function Page({ batch, params, jams }) {
   const [query, setQuery] = useState('')
 
+  const precision = 3.5 // 3.5 is a VERY ARBITRARY value that can be adjusted later, indicates precision for lev to check with
+  // the greater the number, the more precision is required
+  var levenshtein = require('fast-levenshtein')
+
   const router = useRouter()
   return (
     <>
@@ -158,43 +162,30 @@ export default function Page({ batch, params, jams }) {
         setQuery={setQuery}
         query={query}
         jams={jams.singles.concat(jams.batches).filter(jam => {
-          /* check if it is true that:
-              for some value in jam's values
-              every part of the query is contained within that value*/
-          var jamValues = Object.values(jam) // indicates each value that exists in the jam dict
-          var queryWords = query.toLowerCase().trim().split(' ') // splits query into separate words and elimiates prefix and suffix whitespaces
-          for (
-            let singleJamValue = 0;
-            singleJamValue < jamValues.length;
-            singleJamValue++
-          ) {
-            // iterates through the jam values
-            var successful = true // assume it works
-            for (
-              let singleWord = 0;
-              singleWord < queryWords.length;
-              singleWord++
+          var jamValues = [
+            jam.title,
+            jam.description,
+            jam.contributor,
+            jam.keywords,
+            jam.slug
+          ] // indicates each value that exists in the jam dict
+          // we want to search by title, description, contributor, keywords, and slug
+          for (var key in jamValues) {
+            var value = jamValues[key]
+            if (
+              levenshtein.get(value.toLowerCase(), query.toLowerCase(), {
+                useCollator: true
+              }) <=
+              (value.length + query.length) / precision
             ) {
-              // iterates through the words in query
-              if (
-                typeof jamValues[singleJamValue] == 'string' &&
-                jamValues[singleJamValue]
-                  .toLowerCase()
-                  .split(' ')
-                  .indexOf(queryWords[singleWord]) == -1
-              ) {
-                // if ANY word in query is not found in the values
-                // OR if it is a non-string value
-                successful = false // it is not working / not successful / wont be displayed
-              }
-            }
-            if (successful) {
-              // if it is confirmed to be successful
-              return true // display it
+              console.log((value.length + query.length) / precision)
+              console.log(levenshtein.get(value, query))
+              console.log(value.toLowerCase())
+              console.log(query.toLowerCase())
+              return true
             }
           }
           return false // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
-          // return (Object.values(jam).some((value) => value.toLowerCase().includes(query.toLowerCase().split(" "))))
         })}
         back={`/`} // back is homepage regardless
       />
@@ -348,8 +339,8 @@ export default function Page({ batch, params, jams }) {
               redirect={'/batch/' + params.slug + '/' + part.part}
               {...part}
               isSortable={false} // since this is false we really don't care about the 4 parameters used for sorting
-              currentDifficulty={""}
-              currentTime={""}
+              currentDifficulty={''}
+              currentTime={''}
               currentCategories={[]}
             />
           ))}
