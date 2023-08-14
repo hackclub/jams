@@ -1,5 +1,4 @@
 package.json
 package-lock.json
 .next/*
-*/*/*.mdx
-*/*/*/*.mdx
+jams/batches/*/*/*.md

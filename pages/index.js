@@ -95,38 +95,40 @@ function getBatches(fs, directory) {
 function Slides({ router, initialFeatures }) {
   // const [active, setActive] = useState(Math.floor(initialFeatures.length / 2))
 
-  const [features, setFeatures] = useState(initialFeatures);
-  const [active, setActive] = useState(0);
-  const containerRef = useRef(null);
-  const cardsRef = useRef([]);
+  const [features, setFeatures] = useState(initialFeatures)
+  const [active, setActive] = useState(0)
+  const containerRef = useRef(null)
+  const cardsRef = useRef([])
 
   const handleScroll = () => {
-    const container = containerRef.current;
-    const scroll = container.getBoundingClientRect().left + container.getBoundingClientRect().width/2;
+    const container = containerRef.current
+    const scroll =
+      container.getBoundingClientRect().left +
+      container.getBoundingClientRect().width / 2
 
-    let minDistance = Infinity;
-    let currentIndex = 0;
+    let minDistance = Infinity
+    let currentIndex = 0
 
     cardsRef.current.forEach((card, i) => {
-      const rect = card.getBoundingClientRect();
-      const center = rect.left+rect.width/2;
-      const distance = Math.abs(center-scroll);
+      const rect = card.getBoundingClientRect()
+      const center = rect.left + rect.width / 2
+      const distance = Math.abs(center - scroll)
 
       if (distance < minDistance) {
-        minDistance = distance;
-        currentIndex = i;
+        minDistance = distance
+        currentIndex = i
       }
-    });
+    })
 
-    setActive(currentIndex);
-  };
+    setActive(currentIndex)
+  }
 
   useEffect(() => {
-    containerRef.current.addEventListener('scroll', handleScroll);
+    containerRef.current.addEventListener('scroll', handleScroll)
     return () => {
-      containerRef.current.removeEventListener('scroll', handleScroll);
+      containerRef.current.removeEventListener('scroll', handleScroll)
     }
-  }, []);
+  }, [])
 
   // function moveRight() {
   //   const copyOfFeatures = [...features]
@@ -146,138 +148,129 @@ function Slides({ router, initialFeatures }) {
   //   setFeatures(copyOfFeatures)
   // }
 
-  return <Box sx={{ position:"relative", width:"100%" }}>
-    <Box
-      sx={{
-        height:["12rem","18rem","18rem"],
-        px:["calc(50% - 10.667rem + 6rem)","calc(50% - 16rem + 6rem)","calc(50% - 16rem + 6rem)"],
-        display:"flex",
-        position:"relative",
-        overflowX:"auto",
-        scrollSnapType: "x mandatory",
-      }}
-      className="hide-scrollbar"
-      ref={containerRef}
-    >
-      {features.map((jam,i) =>
-        <a
-          href={active===i ? `./jam/${jam.slug}` : null}
-          onClick={() => {
-            if (active === i) return;
-            containerRef.current.scrollTo({
-              left: cardsRef.current[i].offsetLeft - cardsRef.current[0].offsetLeft,
-              behavior: 'smooth'
-            });
-          }}
-          sx={{
-            height:"100%",
-            aspectRatio:"16 / 9",
-            borderRadius:"16px",
-            color: "#fff",
-            scrollSnapAlign: "center",
-            scrollSnapStop: "always",
-            // backgroundImage: `url(${jam.thumbnail})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            mx:"-6rem",
-            display:"flex",
-            justifyContent:"center",
-            alignItems:"center",
-            position:"relative",
-          }}
-          ref={el => cardsRef.current[i] = el}
-          style={{
-            zIndex: active === i ? 1 : 0,
-            filter: `brightness(${active === i ? 1 : 0.75})`,
-            transitionProperty: "filter",
-            transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-            transitionDuration: "200ms",
-          }}
-        >
-          <div
+  return (
+    <Box sx={{ position: 'relative', width: '100%' }}>
+      <Box
+        sx={{
+          height: ['12rem', '18rem', '18rem'],
+          px: [
+            'calc(50% - 10.667rem + 6rem)',
+            'calc(50% - 16rem + 6rem)',
+            'calc(50% - 16rem + 6rem)'
+          ],
+          display: 'flex',
+          position: 'relative',
+          overflowX: 'auto',
+          scrollSnapType: 'x mandatory'
+        }}
+        className="hide-scrollbar"
+        ref={containerRef}>
+        {features.map((jam, i) => (
+          <a
+            href={active === i ? `./jam/${jam.slug}` : null}
+            onClick={() => {
+              if (active === i) return
+              containerRef.current.scrollTo({
+                left:
+                  cardsRef.current[i].offsetLeft -
+                  cardsRef.current[0].offsetLeft,
+                behavior: 'smooth'
+              })
+            }}
             sx={{
-              width: "100%",
-              aspectRatio:"16 / 9",
-              maxWidth:"calc(100vw - 2rem)",
-              boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              position:"relative",
+              height: '100%',
+              aspectRatio: '16 / 9',
+              borderRadius: '16px',
+              color: '#fff',
+              scrollSnapAlign: 'center',
+              scrollSnapStop: 'always',
+              // backgroundImage: `url(${jam.thumbnail})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              mx: '-6rem',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              position: 'relative'
             }}
+            ref={el => (cardsRef.current[i] = el)}
             style={{
-              backgroundImage: active === i ? `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${jam.thumbnail}")` : `url("${jam.thumbnail}")`,
-              border: active === i ? "4px solid #fff" : "none",
-              transform: `scale(${active === i ? 1 : 0.75})`,
-              transitionProperty: "transform, border, background-image",
-              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-              transitionDuration: "200ms",
-              borderRadius:"16px",
-            }}
-          >
-            <Box
+              zIndex: active === i ? 1 : 0,
+              filter: `brightness(${active === i ? 1 : 0.75})`,
+              transitionProperty: 'filter',
+              transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+              transitionDuration: '200ms'
+            }}>
+            <div
               sx={{
-                position: 'absolute',
-                top:["0.75rem","0.75rem","1rem"],
-                left:["1rem","1rem","1.5rem"],
-                right:["1rem","1rem","1.5rem"],
-                zIndex: 1,
-                display: 'flex',
-                flexWrap: 'wrap'
+                width: '100%',
+                aspectRatio: '16 / 9',
+                maxWidth: 'calc(100vw - 2rem)',
+                boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                position: 'relative'
               }}
               style={{
-                opacity: active === i ? 1 : 0,
+                backgroundImage:
+                  active === i
+                    ? `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${jam.thumbnail}")`
+                    : `url("${jam.thumbnail}")`,
+                border: active === i ? '4px solid #fff' : 'none',
                 transform: `scale(${active === i ? 1 : 0.75})`,
-                transitionProperty: "opacity, transform",
-                transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-                transitionDuration: "200ms",
-              }}
-            >
-              {jam.parts?.length && (
+                transitionProperty: 'transform, border, background-image',
+                transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+                transitionDuration: '200ms',
+                borderRadius: '16px'
+              }}>
+              <Box
+                sx={{
+                  position: 'absolute',
+                  top: ['0.75rem', '0.75rem', '1rem'],
+                  left: ['1rem', '1rem', '1.5rem'],
+                  right: ['1rem', '1rem', '1.5rem'],
+                  zIndex: 1,
+                  display: 'flex',
+                  flexWrap: 'wrap'
+                }}
+                style={{
+                  opacity: active === i ? 1 : 0,
+                  transform: `scale(${active === i ? 1 : 0.75})`,
+                  transitionProperty: 'opacity, transform',
+                  transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+                  transitionDuration: '200ms'
+                }}>
+                {jam.parts?.length && (
+                  <Badge
+                    key="partFeature"
+                    mr={2}
+                    sx={{
+                      cursor: 'pointer',
+                      backgroundColor: '#993CCF',
+                      marginBottom: '8px',
+                      fontSize: ['14px', 'auto']
+                    }}
+                    variant="outline"
+                    color="#fff">
+                    {jam.parts.length} Parts
+                  </Badge>
+                )}
+
                 <Badge
-                  key="partFeature"
+                  key="keywordFeature"
                   mr={2}
                   sx={{
                     cursor: 'pointer',
-                    backgroundColor: '#993CCF',
+                    backgroundColor: '#fff',
                     marginBottom: '8px',
                     fontSize: ['14px', 'auto']
                   }}
                   variant="outline"
-                  color="#fff">
-                  {jam.parts.length} Parts
+                  color="#993CCF">
+                  {jam.keywords.split(', ')[0]}
                 </Badge>
-              )}
-
-              <Badge
-                key="keywordFeature"
-                mr={2}
-                sx={{
-                  cursor: 'pointer',
-                  backgroundColor: '#fff',
-                  marginBottom: '8px',
-                  fontSize: ['14px', 'auto']
-                }}
-                variant="outline"
-                color="#993CCF">
-                {jam.keywords.split(', ')[0]}
-              </Badge>
-              <Badge
-                key="difficultyFeature"
-                mr={2}
-                sx={{
-                  cursor: 'pointer',
-                  backgroundColor: '#fff',
-                  marginBottom: '8px',
-                  fontSize: ['14px', 'auto']
-                }} // Adjust '4px' as needed
-                variant="outline"
-                color="#993CCF"
-              >
-                {jam.difficulty}
-              </Badge>
-              {!jam.parts && (
                 <Badge
-                  key="timeFeature"
+                  key="difficultyFeature"
                   mr={2}
                   sx={{
                     cursor: 'pointer',
@@ -286,38 +279,51 @@ function Slides({ router, initialFeatures }) {
                     fontSize: ['14px', 'auto']
                   }} // Adjust '4px' as needed
                   variant="outline"
-                  color="#993CCF"
-                >
-                  {jam.timeEstimate}
+                  color="#993CCF">
+                  {jam.difficulty}
                 </Badge>
-              )}
-            </Box>
+                {!jam.parts && (
+                  <Badge
+                    key="timeFeature"
+                    mr={2}
+                    sx={{
+                      cursor: 'pointer',
+                      backgroundColor: '#fff',
+                      marginBottom: '8px',
+                      fontSize: ['14px', 'auto']
+                    }} // Adjust '4px' as needed
+                    variant="outline"
+                    color="#993CCF">
+                    {jam.timeEstimate}
+                  </Badge>
+                )}
+              </Box>
 
-            <div
-              sx={{
-                position:"absolute",
-                bottom:["0.75rem","0.75rem","1rem"],
-                left:["1rem","1rem","1.5rem"],
-                right:["1rem","1rem","1.5rem"],
-                zIndex: 1,
-              }}
-              style={{
-                opacity: active === i ? 1 : 0,
-                transform: `scale(${active === i ? 1 : 0.75})`,
-                transitionProperty: "opacity, transform",
-                transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-                transitionDuration: "200ms",
-              }}
-            >
-              <h2 sx={{ fontSize:28, lineHeight:"2rem", my:0 }}>
-                {jam.title}
-              </h2>
+              <div
+                sx={{
+                  position: 'absolute',
+                  bottom: ['0.75rem', '0.75rem', '1rem'],
+                  left: ['1rem', '1rem', '1.5rem'],
+                  right: ['1rem', '1rem', '1.5rem'],
+                  zIndex: 1
+                }}
+                style={{
+                  opacity: active === i ? 1 : 0,
+                  transform: `scale(${active === i ? 1 : 0.75})`,
+                  transitionProperty: 'opacity, transform',
+                  transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+                  transitionDuration: '200ms'
+                }}>
+                <h2 sx={{ fontSize: 28, lineHeight: '2rem', my: 0 }}>
+                  {jam.title}
+                </h2>
+              </div>
             </div>
-          </div>
-        </a>
-      )}
+          </a>
+        ))}
+      </Box>
     </Box>
-  </Box>;
+  )
 }
 
 function useStickyCategoryBar() {
@@ -361,11 +367,15 @@ export default function Index(props) {
   var levenshtein = require('fast-levenshtein')
 
   const batches = props.jamsContent.batches.filter(batch => {
-    if(!selectedCategories.some((keyword) => batch.keywords.split(", ").includes(keyword)) && selectedCategories != "") {
-      
+    if (
+      !selectedCategories.some(keyword =>
+        batch.keywords.split(', ').includes(keyword)
+      ) &&
+      selectedCategories != ''
+    ) {
       return false
     }
-    
+
     if (batch.difficulty.toLowerCase() != difficulty && difficulty != '') {
       return false
     }
@@ -373,9 +383,6 @@ export default function Index(props) {
     if (batch.timeEstimate != time && time != '') {
       return false
     }
-
-
-
 
     if (query.trim() == '') {
       // hasnt started search yet
@@ -399,7 +406,6 @@ export default function Index(props) {
         }) <=
         (value.length + query.length) / precision
       ) {
-
         return true
       }
     }
@@ -407,15 +413,18 @@ export default function Index(props) {
     return false
   })
   const jams = props.jamsContent.singles.filter(jam => {
+    if (jam.keywords.split(', ').includes('Beta')) {
+      return false
+    }
+    if (
+      !selectedCategories.some(keyword =>
+        jam.keywords.split(', ').includes(keyword)
+      ) &&
+      selectedCategories != ''
+    ) {
+      return false
+    }
 
-    if(jam.keywords.split(", ").includes("Beta")) {
-      return false
-    }
-    if(!selectedCategories.some((keyword) => jam.keywords.split(", ").includes(keyword)) && selectedCategories != "") {
-      
-      return false
-    }
-    
     if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
       return false
     }
@@ -446,7 +455,6 @@ export default function Index(props) {
         }) <=
         (value.length + query.length) / precision
       ) {
-
         return true
       }
     }
@@ -458,11 +466,7 @@ export default function Index(props) {
     desiredSlugs.includes(jam.slug)
   )
 
-  const desiredSlugsBatches = [
-    'sprig',
-    'webOS',
-    'artificial-intelligence'
-  ]
+  const desiredSlugsBatches = ['sprig', 'webOS', 'artificial-intelligence']
   const fallFeatures = props.jamsContent.batches.filter(batch =>
     desiredSlugsBatches.includes(batch.slug)
   )
@@ -496,9 +500,8 @@ export default function Index(props) {
           alignItems: 'center',
           pb: 6,
           position: 'relative',
-          height: '100%',
-        }}
-      >
+          height: '100%'
+        }}>
         <Box
           sx={{
             background:
@@ -527,9 +530,8 @@ export default function Index(props) {
             marginTop: '64px',
             position: 'relative',
             zIndex: 2,
-            maxWidth: "760px"
-          }}
-        >
+            maxWidth: '760px'
+          }}>
           <Text
             as="h1"
             sx={{
@@ -557,9 +559,10 @@ export default function Index(props) {
                 mt: 0,
                 lineHeight: 1.2,
                 pt: 0,
-                px: 3,
+                px: 3
               }}>
-              Collaborative coding workshops where sparks ignite, fears dissolve, and inventions come to life.
+              Collaborative coding workshops where sparks ignite, fears
+              dissolve, and inventions come to life.
             </Text>
           </Box>
         </Box>
@@ -589,7 +592,13 @@ export default function Index(props) {
           </Text>
           <Text
             as="h2"
-            sx={{ fontSize: [18, 18, 24], fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
+            sx={{
+              fontSize: [18, 18, 24],
+              fontWeight: 400,
+              margin: 0,
+              p: 0,
+              zIndex: 2
+            }}>
             Here are some great multi-part jams to kickoff your club this fall
             🍂{' '}
           </Text>
@@ -1038,15 +1047,13 @@ export default function Index(props) {
           columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
           gap={3}
           sx={{ pt: 3, pb: '4rem', mt: '1rem' }}>
-          {[... jams, ... batches]
-          
-          .map((jam, idx) => (
+          {[...jams, ...batches].map((jam, idx) => (
             <PreviewCard
               style={{ cursor: 'pointer' }}
               key={idx + jam.title}
               light={true}
               {...jam}
-              redirect={(jam?.isBatch ? ('/batch/') : ('/jam/')) + jam.slug}
+              redirect={(jam?.isBatch ? '/batch/' : '/jam/') + jam.slug}
               isSortable={true}
               currentDifficulty={difficulty}
               currentTime={time}
@@ -1056,7 +1063,6 @@ export default function Index(props) {
               modifyCategories={setSelectedCategories}
             />
           ))}
-
         </Grid>
       </Container>
       <Footer />

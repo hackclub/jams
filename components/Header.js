@@ -20,7 +20,6 @@ export default function Header({
   const [placeholderText, setPlaceholderText] = useState('')
   const [didEasterEgg, setDidEasterEgg] = useState(false)
 
-
   const router = useRouter()
 
   const handleMouseDown = event => {
@@ -61,24 +60,29 @@ export default function Header({
   const easterEgg = event => {
     // If input value is preset jam
     if (
-      event.target.value.toLowerCase() === placeholderText +' jam' &&
+      event.target.value.toLowerCase() === placeholderText + ' jam' &&
       !didEasterEgg
     ) {
-
       setDidEasterEgg(true)
       setTimeout(_ => {
         // Need to set query to nothing so the jam images load and can be turned into jam
         setQuery('')
         // For now it just opens the gist in a new tab, in the future it would be cool to have like a modal pop up or something
-        window.open('/txtfile/' + placeholderText.toLowerCase() + '/jam.txt', 'blank')
+        window.open(
+          '/txtfile/' + placeholderText.toLowerCase() + '/jam.txt',
+          'blank'
+        )
 
-        alert('[===' + placeholderText.toUpperCase() + '=JAM=MODE=ACTIVATED===]')
+        alert(
+          '[===' + placeholderText.toUpperCase() + '=JAM=MODE=ACTIVATED===]'
+        )
 
         setInterval(_ => {
           document.querySelectorAll('img').forEach(img => {
             // hack club banner thing at top breaks it so dont change that image
             if (img.parentElement.href != 'https://hackclub.com/') {
-              img.src = '/txtfile/' + placeholderText.toLowerCase() + '/jam.jpeg'
+              img.src =
+                '/txtfile/' + placeholderText.toLowerCase() + '/jam.jpeg'
               img.classList.add('xmd539850a193e8d4bba9857a3c05add295f')
             }
           })
