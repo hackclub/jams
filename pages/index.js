@@ -1038,13 +1038,15 @@ export default function Index(props) {
           columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
           gap={3}
           sx={{ pt: 3, pb: '4rem', mt: '1rem' }}>
-          {jams.map((jam, idx) => (
+          {[... jams, ... batches]
+          
+          .map((jam, idx) => (
             <PreviewCard
               style={{ cursor: 'pointer' }}
               key={idx + jam.title}
               light={true}
               {...jam}
-              redirect={'/jam/' + jam.slug}
+              redirect={(jam?.isBatch ? ('/batch/') : ('/jam/')) + jam.slug}
               isSortable={true}
               currentDifficulty={difficulty}
               currentTime={time}
@@ -1054,22 +1056,7 @@ export default function Index(props) {
               modifyCategories={setSelectedCategories}
             />
           ))}
-          {batches.map((batch, idx) => (
-            <PreviewCard
-              style={{ cursor: 'pointer' }}
-              key={idx + batch.title}
-              light={true}
-              {...batch}
-              redirect={'/batch/' + batch.slug}
-              isSortable={true}
-              currentDifficulty={difficulty}
-              currentTime={time}
-              currentCategories={selectedCategories}
-              modifyDifficulty={setDifficulty}
-              modifyTime={setTime}
-              modifyCategories={setSelectedCategories}
-            />
-          ))}
+
         </Grid>
       </Container>
       <Footer />
