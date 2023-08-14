@@ -13,8 +13,8 @@ Orpheus' Blueberry Jam
 
 [*] INGREDIENTS:
 
-ITEM                        COUNT
------------------------------------[*]
+ITEM                                    COUNT
+-----------------------------------------------[*]
 Blueberry script language (Files):       200
 Bugs:                                    0
 White Sugar(cups):                       2
