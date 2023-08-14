@@ -1,5 +1,5 @@
 import { Box, Text, Card, Badge, Image } from 'theme-ui'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import dynamic from 'next/dynamic'
 
 const ReactFreezeframe = dynamic(() => import('react-freezeframe'), {
@@ -29,6 +29,7 @@ export default function PreviewCard({
   modifyCategories,
   ...props
 }) {
+  const freezeFrame = useRef();
   const [isHovered, setIsHovered] = useState(false)
 
   const handleMouseEnter = () => {
@@ -48,26 +49,34 @@ export default function PreviewCard({
         {...props}>
         <Box 
         
-        onMouseEnter={() => setIsHovered(true)}
         sx={{ borderRadius: '16px' }}>
+          
           <Box
             sx={{
-              position: 'absolute',
-              zIndex: 1,
+             
+              zIndex: 2,
               marginLeft: '8px',
               maxWidth: '420px',
               marginTop: '8px',
               display: 'flex',
               flexWrap: 'wrap'
             }}>
-            {parts?.length && (
+
+
+            {isHovered && (
+              <Box style={{
+
+                marginBottom: isHovered || parts?.length ? ("-48px") : ("0px"),
+                paddingTop: "8px",
+                zIndex: 2
+              }}>
+                            {parts?.length && (
               <Badge
                 key="partFeature"
                 mr={2}
                 sx={{
                   cursor: 'pointer',
                   backgroundColor: '#993CCF',
-                  marginBottom: '8px',
                   fontSize: ['14px', 'auto']
                 }}
                 variant="outline"
@@ -75,12 +84,8 @@ export default function PreviewCard({
                 {parts.length} Parts
               </Badge>
             )}
-
-            {isHovered && (
-              <>
                 {part != '0' && (
                   <Badge
-                  onMouseEnter={() => setIsHovered(true)}
 
                     key="partFeature"
                     mr={2}
@@ -88,7 +93,8 @@ export default function PreviewCard({
                       cursor: 'pointer',
                       backgroundColor: '#993CCF',
                       marginBottom: '8px',
-                      fontSize: ['14px', 'auto']
+                      fontSize: ['14px', 'auto'],
+                      
                     }}
                     variant="outline"
                     color="#fff">
@@ -96,7 +102,6 @@ export default function PreviewCard({
                   </Badge>
                 )}
                 <Badge
-                        onMouseEnter={() => setIsHovered(true)}
 
                   key="keywordFeature"
                   mr={2}
@@ -143,7 +148,6 @@ export default function PreviewCard({
                 </Badge>
                 {part === 0 && (
                   <Badge
-                  onMouseEnter={() => setIsHovered(true)}
 
                     key="difficultyFeature"
                     mr={2}
@@ -178,7 +182,6 @@ export default function PreviewCard({
                 )}
                 {!parts && (
                   <Badge
-                  onMouseEnter={() => setIsHovered(true)}
 
                     key="timeFeature"
                     mr={2}
@@ -205,13 +208,12 @@ export default function PreviewCard({
                     {timeEstimate}
                   </Badge>
                 )}
-              </>
+              </Box>
             )}
           </Box>
 
           <a style={{ color: '#000', textDecoration: 'none' }} href={redirect}>
             <Box
-                    onMouseEnter={() => setIsHovered(true)}
 
               sx={{
                 borderRadius: '16px',
@@ -222,10 +224,11 @@ export default function PreviewCard({
               }}>
               {thumbnail?.includes('.gif') && part == '0' ? (
                 <ReactFreezeframe
+                  
                   src={thumbnail}
                   options={{
                     overlay: false, // Optional: Show overlay play icon
-                    trigger: 'hover' // Use 'hover' to trigger animation on hover
+                    trigger: 'hover', // Use 'hover' to trigger animation on hover
                   }}
                   sx={{
                     width: '100%',

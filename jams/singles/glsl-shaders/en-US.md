@@ -7,7 +7,7 @@ contributorSlackID: 'U03Q06DS8H2'
 thumbnail: 'https://cloud-d20e07zy6-hack-club-bot.vercel.app/0render.gif' 
 timeEstimate: '60 Min'  
 difficulty: 'Advanced'  
-keywords: 'shaders, GPU, graphics, fractals, art, math' 
+keywords: 'Shaders, GPU, graphics, fractals, art, math' 
 language: 'GLSL'  
 presentation: "https://www.figma.com/file/KTFep6bY1tTuoI72RPVKrJ/GLSL-Fractals?type=design&mode=design&t=QysD5HAdzeoScNMj-1"
 presentationPlay: "https://www.figma.com/proto/KTFep6bY1tTuoI72RPVKrJ/GLSL-Fractals?page-id=0%3A1&type=design&node-id=103-2&viewport=140%2C-1561%2C0.36&t=0Ze2BaKYdvrRsYn5-1&scaling=contain"

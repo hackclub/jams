@@ -6,7 +6,7 @@ contributor: 'NalinPlad'
 thumbnail: 'https://raw.githubusercontent.com/NalinPlad/GLSLFractals/main/Thumbnail.png' 
 timeEstimate: '60 Min'  
 difficulty: 'Advanced'  
-keywords: 'Art, shaders, GPU, graphics, fractals, art, math' 
+keywords: 'Art, Shaders, GPU, graphics, fractals, art, math' 
 language: 'GLSL'  
 presentation: ""
 presentationPlay: ""
