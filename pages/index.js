@@ -331,7 +331,7 @@ function useStickyCategoryBar() {
 export default function Index(props) {
   const isCategoryBarSticky = useStickyCategoryBar()
 
-  const categories = ["Web", "Game", "Crypto", "3D", "AI"]
+  const categories = ['Web', 'Game', 'Crypto', '3D', 'AI']
   const [selectedCategories, setSelectedCategories] = useState([])
   const [query, setQuery] = useState('')
   const [difficulty, setDifficulty] = useState('')
@@ -586,7 +586,7 @@ export default function Index(props) {
             gap={3}
             sx={{ pt: 4, position: 'relative' }}>
             {fallFeatures.map((fallFeature, idx) => (
-              <div style={{position: "relative"}}>
+              <div style={{ position: 'relative' }}>
                 {fallFeature.sticker && (
                   <Box
                     sx={{
@@ -610,8 +610,10 @@ export default function Index(props) {
                   isSortable={true}
                   currentDifficulty={difficulty}
                   currentTime={time}
+                  currentCategories={selectedCategories}
                   modifyDifficulty={setDifficulty}
                   modifyTime={setTime}
+                  modifyCategories={setSelectedCategories}
                 />
               </div>
             ))}
@@ -819,9 +821,7 @@ export default function Index(props) {
                   onClick={() =>
                     setSelectedCategories(currentCategories => {
                       if (currentCategories.includes(category)) {
-                        return currentCategories.filter(
-                          cat => cat !== category
-                        )
+                        return currentCategories.filter(cat => cat !== category)
                       } else {
                         const updatedCategories = [
                           ...currentCategories,
@@ -1038,8 +1038,10 @@ export default function Index(props) {
               isSortable={true}
               currentDifficulty={difficulty}
               currentTime={time}
+              currentCategories={selectedCategories}
               modifyDifficulty={setDifficulty}
               modifyTime={setTime}
+              modifyCategories={setSelectedCategories}
             />
           ))}
           {batches.map((batch, idx) => (
@@ -1052,8 +1054,10 @@ export default function Index(props) {
               isSortable={true}
               currentDifficulty={difficulty}
               currentTime={time}
+              currentCategories={selectedCategories}
               modifyDifficulty={setDifficulty}
               modifyTime={setTime}
+              modifyCategories={setSelectedCategories}
             />
           ))}
         </Grid>
