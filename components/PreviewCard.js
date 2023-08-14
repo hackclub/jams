@@ -15,8 +15,8 @@ export default function PreviewCard({
   part = 0,
   light = true,
   sticker,
-  presentation="",
-  video="",
+  presentation = '',
+  video = '',
   totalParts = null,
   parts = null,
   redirect = '/',
@@ -36,7 +36,7 @@ export default function PreviewCard({
   const handleMouseLeave = () => {
     setIsHovered(false)
   }
-  
+
   return (
     <>
       <Box
@@ -54,8 +54,7 @@ export default function PreviewCard({
               marginTop: '8px',
               display: 'flex',
               flexWrap: 'wrap'
-            }}
-          >
+            }}>
             {parts?.length && (
               <Badge
                 key="partFeature"
@@ -71,89 +70,91 @@ export default function PreviewCard({
                 {parts.length} Parts
               </Badge>
             )}
-            
-            {isHovered && <>
-              {part != '0' && (
+
+            {isHovered && (
+              <>
+                {part != '0' && (
+                  <Badge
+                    key="partFeature"
+                    mr={2}
+                    sx={{
+                      cursor: 'pointer',
+                      backgroundColor: '#993CCF',
+                      marginBottom: '8px',
+                      fontSize: ['14px', 'auto']
+                    }}
+                    variant="outline"
+                    color="#fff">
+                    Part {part.split('-')[1]}
+                  </Badge>
+                )}
                 <Badge
-                  key="partFeature"
+                  key="keywordFeature"
                   mr={2}
                   sx={{
                     cursor: 'pointer',
-                    backgroundColor: '#993CCF',
+                    backgroundColor: '#fff',
                     marginBottom: '8px',
                     fontSize: ['14px', 'auto']
                   }}
                   variant="outline"
-                  color="#fff">
-                  Part {part.split('-')[1]}
+                  color="#993CCF">
+                  {keywords.split(', ')[0]}
                 </Badge>
-              )}
-              <Badge
-                key="keywordFeature"
-                mr={2}
-                sx={{
-                  cursor: 'pointer',
-                  backgroundColor: '#fff',
-                  marginBottom: '8px',
-                  fontSize: ['14px', 'auto']
-                }}
-                variant="outline"
-                color="#993CCF">
-                {keywords.split(', ')[0]}
-              </Badge>
-              {part === 0 && (
-                <Badge
-                  key="difficultyFeature"
-                  mr={2}
-                  sx={{
-                    cursor: 'pointer',
-                    backgroundColor: '#fff',
-                    marginBottom: '8px',
-                    fontSize: ['14px', 'auto']
-                  }} // Adjust '4px' as needed
-                  variant="outline"
-                  color="#993CCF"
-                  onClick={() => {
-                    if (isSortable) {
-                      if (currentDifficulty == difficulty.toLowerCase()) {
-                        console.log('Removing Difficulty Sort')
-                        modifyDifficulty('')
-                      } else {
-                        console.log('Changing to ' + difficulty.toLowerCase())
-                        modifyDifficulty(difficulty.toLowerCase())
+                {part === 0 && (
+                  <Badge
+                    key="difficultyFeature"
+                    mr={2}
+                    sx={{
+                      cursor: 'pointer',
+                      backgroundColor: '#fff',
+                      marginBottom: '8px',
+                      fontSize: ['14px', 'auto']
+                    }} // Adjust '4px' as needed
+                    variant="outline"
+                    color="#993CCF"
+                    onClick={() => {
+                      if (isSortable) {
+                        if (currentDifficulty == difficulty.toLowerCase()) {
+                          console.log('Removing Difficulty Sort')
+                          modifyDifficulty('')
+                        } else {
+                          console.log('Changing to ' + difficulty.toLowerCase())
+                          modifyDifficulty(difficulty.toLowerCase())
+                        }
                       }
-                    }
-                  }}>
-                  {difficulty}
-                </Badge>
-              )}
-              {!parts && (
-                <Badge
-                  key="timeFeature"
-                  mr={2}
-                  sx={{
-                    cursor: 'pointer',
-                    backgroundColor: '#fff',
-                    marginBottom: '8px',
-                    fontSize: ['14px', 'auto']
-                  }} // Adjust '4px' as needed
-                  variant="outline"
-                  color="#993CCF"
-                  onClick={() => {
-                    if (isSortable) {
-                      if (currentTime == timeEstimate) {
-                        console.log('Removing Time Sort')
-                        modifyTime('')
-                      } else {
-                        console.log('Changing to ' + timeEstimate)
-                        modifyTime(timeEstimate)
+                    }}>
+                    {difficulty}
+                  </Badge>
+                )}
+                {!parts && (
+                  <Badge
+                    key="timeFeature"
+                    mr={2}
+                    sx={{
+                      cursor: 'pointer',
+                      backgroundColor: '#fff',
+                      marginBottom: '8px',
+                      fontSize: ['14px', 'auto']
+                    }} // Adjust '4px' as needed
+                    variant="outline"
+                    color="#993CCF"
+                    onClick={() => {
+                      if (isSortable) {
+                        if (currentTime == timeEstimate) {
+                          console.log('Removing Time Sort')
+                          modifyTime('')
+                        } else {
+                          console.log('Changing to ' + timeEstimate)
+                          modifyTime(timeEstimate)
+                        }
                       }
-                    }
-                  }}>
-                  {timeEstimate}
-                </Badge>
-              )}
-            </>}
+                    }}>
+                    {timeEstimate}
+                  </Badge>
+                )}
+              </>
+            )}
           </Box>
 
           <a style={{ color: '#000', textDecoration: 'none' }} href={redirect}>

@@ -14,46 +14,49 @@ import Meta from '@hackclub/meta'
 import Head from 'next/head'
 
 export default function JamComponent({ jam, jamsContent }) {
-
   const submitProject = async () => {
     try {
-      const response = await fetch(`https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${jam.slug}/${submissionURL}`);
+      const response = await fetch(
+        `https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${jam.slug}/${submissionURL}`
+      )
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('Network response was not ok')
       }
-      
-      const data = await response.json();
-      console.log('Fetched data:', data);
+
+      const data = await response.json()
+      console.log('Fetched data:', data)
       setApiResponse(data.message)
       // if(data.message == "Submission successful") {
       //   router.reload()
       // }
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error('Error fetching data:', error)
     }
-  };
+  }
 
   useEffect(() => {
     const fetchSubmissions = async () => {
       try {
-        const response = await fetch('https://jams-api-1daa6fb9f168.herokuapp.com/getSubmissions');
+        const response = await fetch(
+          'https://jams-api-1daa6fb9f168.herokuapp.com/getSubmissions'
+        )
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error('Network response was not ok')
         }
-        const data = await response.json();
-        console.log('Fetched data:', data);
-        setFinishedProjects(data.filter((project) => project.jam == jam.slug))
+        const data = await response.json()
+        console.log('Fetched data:', data)
+        setFinishedProjects(data.filter(project => project.jam == jam.slug))
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching data:', error)
       }
-    };
+    }
 
-    fetchSubmissions();
-  }, []);
+    fetchSubmissions()
+  }, [])
 
   const router = useRouter()
-  const [apiResponse, setApiResponse] = useState("")
-  const [submissionURL, setSubmissionURL] = useState("")
+  const [apiResponse, setApiResponse] = useState('')
+  const [submissionURL, setSubmissionURL] = useState('')
 
   const [presentationSelected, setPresentationSelected] = useState(true)
   const [finishedProjects, setFinishedProjects] = useState([])
@@ -500,8 +503,8 @@ export default function JamComponent({ jam, jamsContent }) {
               </span>
             </div>
           </Link>
-          
-          <Box sx={{pt: 16}}>
+
+          <Box sx={{ pt: 16 }}>
             {/* Finished Projects
             {finishedProjects.map((project) => 
             <a style={{display:"flex" }} href={project.url}>
@@ -522,7 +525,6 @@ export default function JamComponent({ jam, jamsContent }) {
             <button onClick={() => submitProject()}>Submit</button>
             <p>{apiResponse}</p>
           </Box> */}
-
         </div>
 
         <div sx={{ width: ['auto', 'auto', '20rem'], position: 'relative' }}>
@@ -659,7 +661,10 @@ export default function JamComponent({ jam, jamsContent }) {
                     marginTop: '6px'
                   }}>
                   {jam.presentation && (
-                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.presentation}>
+                    <Link
+                      target={'_blank'}
+                      sx={{ color: '#993CCF' }}
+                      href={jam.presentation}>
                       <Box
                         sx={{
                           alignItems: 'center',
@@ -681,7 +686,10 @@ export default function JamComponent({ jam, jamsContent }) {
                     </Link>
                   )}
                   {jam.video && (
-                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.video}>
+                    <Link
+                      target={'_blank'}
+                      sx={{ color: '#993CCF' }}
+                      href={jam.video}>
                       <Box
                         sx={{
                           alignItems: 'center',
@@ -701,7 +709,10 @@ export default function JamComponent({ jam, jamsContent }) {
                     </Link>
                   )}
                   {jam.notes && (
-                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.notes}>
+                    <Link
+                      target={'_blank'}
+                      sx={{ color: '#993CCF' }}
+                      href={jam.notes}>
                       <Box
                         sx={{
                           alignItems: 'center',
@@ -721,7 +732,10 @@ export default function JamComponent({ jam, jamsContent }) {
                     </Link>
                   )}
                   {jam.poster && (
-                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.poster}>
+                    <Link
+                      target={'_blank'}
+                      sx={{ color: '#993CCF' }}
+                      href={jam.poster}>
                       <Box
                         sx={{
                           alignItems: 'center',
@@ -741,7 +755,10 @@ export default function JamComponent({ jam, jamsContent }) {
                     </Link>
                   )}
                   {jam.AITokenLink && (
-                    <Link target={"_blank"} sx={{ color: '#993CCF' }} href={jam.AITokenLink}>
+                    <Link
+                      target={'_blank'}
+                      sx={{ color: '#993CCF' }}
+                      href={jam.AITokenLink}>
                       <Box
                         sx={{
                           alignItems: 'center',
