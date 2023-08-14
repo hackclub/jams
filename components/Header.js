@@ -59,8 +59,6 @@ export default function Header({
   }, [])
 
   const easterEgg = event => {
-    console.log(placeholderText)
-    console.log(didEasterEgg)
     // If input value is preset jam
     if (
       event.target.value.toLowerCase() === placeholderText +' jam' &&
