@@ -391,10 +391,7 @@ export default function Index(props) {
         }) <=
         (value.length + query.length) / precision
       ) {
-        console.log((value.length + query.length) / precision)
-        console.log(levenshtein.get(value, query))
-        console.log(value.toLowerCase())
-        console.log(query.toLowerCase())
+
         return true
       }
     }
@@ -406,7 +403,6 @@ export default function Index(props) {
     if(jam.keywords.split(", ").includes("Beta")) {
       return false
     }
-    console.log(selectedCategories)
     if(!selectedCategories.some((keyword) => jam.keywords.split(", ").includes(keyword)) && selectedCategories != "") {
       
       return false
@@ -442,10 +438,7 @@ export default function Index(props) {
         }) <=
         (value.length + query.length) / precision
       ) {
-        console.log((value.length + query.length) / precision)
-        console.log(levenshtein.get(value, query))
-        console.log(value.toLowerCase())
-        console.log(query.toLowerCase())
+
         return true
       }
     }
@@ -526,6 +519,7 @@ export default function Index(props) {
             marginTop: '64px',
             position: 'relative',
             zIndex: 2,
+            maxWidth: "760px"
           }}
         >
           <Text
@@ -570,13 +564,13 @@ export default function Index(props) {
           sx={{
             backgroundColor: '#FDF5EC',
             border: '1px solid #F0924B',
-            padding: '32px',
+            padding: ['16px', '24px', '32px'],
             borderRadius: '16px'
           }}>
           <Text
             as="h2"
             sx={{
-              fontSize: 42,
+              fontSize: [24, 32, 42],
               lineHeight: 1.2,
               fontWeight: 600,
               margin: 0,
@@ -587,7 +581,7 @@ export default function Index(props) {
           </Text>
           <Text
             as="h2"
-            sx={{ fontSize: 24, fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
+            sx={{ fontSize: [18, 18, 24], fontWeight: 400, margin: 0, p: 0, zIndex: 2 }}>
             Here are some great multi-part jams to kickoff your club this fall
             🍂{' '}
           </Text>
@@ -808,7 +802,6 @@ export default function Index(props) {
                 color={selectedCategories == '' ? '#fff' : '#993CCF'}
                 onClick={() => {
                   setSelectedCategories([])
-                  console.log(selectedCategories)
                 }}>
                 All
               </Badge>
@@ -837,7 +830,6 @@ export default function Index(props) {
                           ...currentCategories,
                           category
                         ]
-                        console.log(updatedCategories)
                         return updatedCategories
                       }
                     })

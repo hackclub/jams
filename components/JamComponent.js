@@ -25,7 +25,6 @@ export default function JamComponent({ jam, jamsContent }) {
       }
 
       const data = await response.json()
-      console.log('Fetched data:', data)
       setApiResponse(data.message)
       // if(data.message == "Submission successful") {
       //   router.reload()
