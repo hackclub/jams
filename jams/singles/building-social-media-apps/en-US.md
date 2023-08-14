@@ -3,6 +3,7 @@ title: 'Building Your Own Social Media w/ 🔥 Firebase 🏰'
 description: >
     At the end of this jam, you'll create your very own social media app that handles users and posts.
 contributor: "InternetRamen"
+contributorSlackID: "U03AUPJQKLN"
 thumbnail: "https://cloud-bo51u70qw-hack-club-bot.vercel.app/0slide_16_9_-_3.png"
 timeEstimate: "60 Min"
 difficulty: "Intermediate"
@@ -68,6 +69,8 @@ Then, click and enable `Authentication` and `Firestore Database`.
 1. Click `Get Started`
 2. Click `Sign-in method` and enable `Google`
 3. Enable and save
+
+If you're using Replit, add your domain by going into Settings > Authorized Domains and add your project's domain. If you don't add the domain (localhost is already added), the authentication pop-up will close instantly.
 
 **Firestore**
 
