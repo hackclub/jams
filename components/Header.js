@@ -17,7 +17,8 @@ export default function Header({
   const [showMoreVisible, setShowMoreVisible] = useState(false)
 
   const fruits = ['raspberry', 'blueberry']
-  const placeholderText = fruits[Math.floor(Math.random() * fruits.length)]
+  const [placeholderText, setPlaceholderText] = useState(fruits[Math.floor(Math.random() * fruits.length)])
+
 
   const router = useRouter()
 
