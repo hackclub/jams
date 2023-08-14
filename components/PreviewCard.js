@@ -209,6 +209,8 @@ export default function PreviewCard({
               }}>
               {thumbnail?.includes('.gif') && part == '0' ? (
                 <ReactFreezeframe
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
                   src={thumbnail}
                   options={{
                     overlay: false, // Optional: Show overlay play icon

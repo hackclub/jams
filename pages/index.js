@@ -359,6 +359,11 @@ export default function Index(props) {
       return false
     }
 
+
+    if(!selectedCategories.some((keyword) => selectedCategories.includes(keyword)) && selectedCategories) {
+      return false
+    }
+
     if (query.trim() == '') {
       // hasnt started search yet
       return true
@@ -392,15 +397,16 @@ export default function Index(props) {
     return false
   })
   const jams = props.jamsContent.singles.filter(jam => {
-    if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
-      console.log(jam.difficulty, difficulty)
 
+    if(jam.keywords.split(", ").includes("Beta")) {
+      return false
+    }
+    
+    if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
       return false
     }
 
     if (jam.timeEstimate != time && time != '') {
-      console.log(jam.timeEstimate, time)
-
       return false
     }
 
