@@ -161,7 +161,7 @@ export default function Page({ batch, params, jams }) {
       <Header
         setQuery={setQuery}
         query={query}
-        jams={jamsContent.singles.concat(jamsContent.batches).filter(jam => {
+        jams={jams.singles.concat(jams.batches).filter(jam => {
           var jamValues = [
             jam.title,
             jam.description,
