@@ -17,7 +17,9 @@ export default function Header({
   const [showMoreVisible, setShowMoreVisible] = useState(false)
 
   const fruits = ['raspberry', 'blueberry']
-  const placeholderText = fruits[Math.floor(Math.random() * fruits.length)]
+  const [placeholderText, setPlaceholderText] = useState('')
+  const [didEasterEgg, setDidEasterEgg] = useState(false)
+
 
   const router = useRouter()
 
@@ -51,28 +53,33 @@ export default function Header({
     }
   }, [])
 
+  // make the placeholder text a random fruit using useEffect. This ensures that the UI updates as well
+  useEffect(() => {
+    setPlaceholderText(fruits[Math.floor(Math.random() * fruits.length)])
+  }, [])
+
   const easterEgg = event => {
-    // If enter key and input value is preset jam
+    // If input value is preset jam
     if (
-      event.target.value.toLowerCase().split(' ')[0] != '' &&
-      event.target.value.toLowerCase().split(' ')[1] == 'jam' &&
-      fruits.includes(event.target.value.toLowerCase().split(' ')[0])
+      event.target.value.toLowerCase() === placeholderText +' jam' &&
+      !didEasterEgg
     ) {
+
+      setDidEasterEgg(true)
       setTimeout(_ => {
-        var typedtext = event.target.value.toLowerCase().split(' ')[0]
-        console.log(typedtext)
         // Need to set query to nothing so the jam images load and can be turned into jam
         setQuery('')
         // For now it just opens the gist in a new tab, in the future it would be cool to have like a modal pop up or something
-        window.open('/txtfile/' + typedtext.toLowerCase() + '/jam.txt', 'blank')
+        window.open('/txtfile/' + placeholderText.toLowerCase() + '/jam.txt', 'blank')
 
-        alert('[===' + typedtext.toUpperCase() + '=JAM=MODE=ACTIVATED===]')
+        alert('[===' + placeholderText.toUpperCase() + '=JAM=MODE=ACTIVATED===]')
 
         setInterval(_ => {
           document.querySelectorAll('img').forEach(img => {
             // hack club banner thing at top breaks it so dont change that image
             if (img.parentElement.href != 'https://hackclub.com/') {
-              img.src = '/txtfile/' + typedtext.toLowerCase() + '/jam.jpeg'
+              img.src = '/txtfile/' + placeholderText.toLowerCase() + '/jam.jpeg'
+              img.classList.add('xmd539850a193e8d4bba9857a3c05add295f')
             }
           })
 
@@ -80,7 +87,7 @@ export default function Header({
             // fill canvas with jam image(for the thumbnails that have gifs)
             const ctx = canvas.getContext('2d')
             ctx.drawImage(
-              document.querySelector('img'),
+              document.querySelector('.xmd539850a193e8d4bba9857a3c05add295f'),
               0,
               0,
               canvas.width,
