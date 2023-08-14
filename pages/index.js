@@ -351,6 +351,11 @@ export default function Index(props) {
   var levenshtein = require('fast-levenshtein')
 
   const batches = props.jamsContent.batches.filter(batch => {
+    if(!selectedCategories.some((keyword) => batch.keywords.split(", ").includes(keyword)) && selectedCategories != "") {
+      
+      return false
+    }
+    
     if (batch.difficulty.toLowerCase() != difficulty && difficulty != '') {
       return false
     }
@@ -360,9 +365,7 @@ export default function Index(props) {
     }
 
 
-    if(!selectedCategories.some((keyword) => selectedCategories.includes(keyword)) && selectedCategories) {
-      return false
-    }
+
 
     if (query.trim() == '') {
       // hasnt started search yet
@@ -399,6 +402,11 @@ export default function Index(props) {
   const jams = props.jamsContent.singles.filter(jam => {
 
     if(jam.keywords.split(", ").includes("Beta")) {
+      return false
+    }
+    console.log(selectedCategories)
+    if(!selectedCategories.some((keyword) => jam.keywords.split(", ").includes(keyword)) && selectedCategories != "") {
+      
       return false
     }
     
