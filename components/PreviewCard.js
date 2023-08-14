@@ -95,7 +95,11 @@ export default function PreviewCard({
                   mr={2}
                   sx={{
                     cursor: 'pointer',
-                    backgroundColor: '#fff',
+                    backgroundColor: currentCategories.includes(
+                      keywords.split(', ')[0]
+                    )
+                      ? '#993CCF'
+                      : '#fff', // indicates BG color
                     marginBottom: '8px',
                     fontSize: ['14px', 'auto']
                   }}
@@ -122,7 +126,12 @@ export default function PreviewCard({
                       }
                     }
                   }}
-                  color="#993CCF">
+                  color={
+                    currentCategories.includes(keywords.split(', ')[0])
+                      ? '#FFFFFF'
+                      : '#993CCF'
+                  } //indicates text color
+                >
                   {keywords.split(', ')[0]}
                 </Badge>
                 {part === 0 && (
@@ -131,12 +140,19 @@ export default function PreviewCard({
                     mr={2}
                     sx={{
                       cursor: 'pointer',
-                      backgroundColor: '#fff',
+                      backgroundColor:
+                        currentDifficulty == difficulty.toLowerCase()
+                          ? '#993CCF'
+                          : '#fff', // indicates BG color
                       marginBottom: '8px',
                       fontSize: ['14px', 'auto']
                     }} // Adjust '4px' as needed
                     variant="outline"
-                    color="#993CCF"
+                    color={
+                      currentDifficulty == difficulty.toLowerCase()
+                        ? '#FFFFFF'
+                        : '#993CCF'
+                    } //indicates text color
                     onClick={() => {
                       if (isSortable) {
                         if (currentDifficulty == difficulty.toLowerCase()) {
@@ -157,12 +173,13 @@ export default function PreviewCard({
                     mr={2}
                     sx={{
                       cursor: 'pointer',
-                      backgroundColor: '#fff',
+                      backgroundColor:
+                        currentTime == timeEstimate ? '#993CCF' : '#fff', // indicates BG color
                       marginBottom: '8px',
                       fontSize: ['14px', 'auto']
                     }} // Adjust '4px' as needed
                     variant="outline"
-                    color="#993CCF"
+                    color={currentTime == timeEstimate ? '#FFFFFF' : '#993CCF'} //indicates text color
                     onClick={() => {
                       if (isSortable) {
                         if (currentTime == timeEstimate) {
