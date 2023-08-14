@@ -124,7 +124,8 @@ function Slides({ router, initialFeatures }) {
   }
 
   useEffect(() => {
-    containerRef.current.addEventListener('scroll', handleScroll)
+    containerRef.current.addEventListener('scroll', handleScroll);
+
     return () => {
       containerRef.current.removeEventListener('scroll', handleScroll)
     }
@@ -330,7 +331,7 @@ function useStickyCategoryBar() {
   const [isCategoryBarSticky, setCategoryBarSticky] = useState(false)
 
   const handleScroll = () => {
-    const headerHeight = 100 // Adjust this value based on the header's height
+    const headerHeight = 950 // Adjust this value based on the header's height
     const scrollTop = window.scrollY
     setCategoryBarSticky(scrollTop >= headerHeight)
   }
@@ -774,20 +775,15 @@ export default function Index(props) {
             (one-part Jams)
           </Text>
         </Text> */}
-
+        
         <Box
           sx={{
             display: ['none', 'none', 'none', 'flex'],
-            top: 84,
+            top: "calc(4rem + 4px)",
             backgroundColor: '#fff',
-            zIndex: 2,
+            zIndex: 3,
             left: 0,
-            opacity: `${Math.min(scrollPosition / 500 - 1, 1)}`,
             backdropFilter: 'blur(5px)',
-            backgroundColor: `rgba(200, 200, 200, ${Math.min(
-              scrollPosition / 500 - 1,
-              0.75
-            )})`,
             right: 0,
             cursor: 'pointer',
             position: 'fixed',
@@ -795,14 +791,24 @@ export default function Index(props) {
             borderColor: '#e0e6ed',
             borderTop: '1px solid #e0e6ed',
             borderBottom: '1px solid #e0e6ed'
-          }}>
+          }}
+          style={{
+            pointerEvents: isCategoryBarSticky ? 'auto' : 'none',
+            opacity: isCategoryBarSticky ? 1 : 0,
+            backgroundColor: isCategoryBarSticky ? 'rgba(200,200,200,0.75)' : 'transparent',
+            transitionProperty: 'opacity, background-color',
+            transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+            transitionDuration: '500ms'
+          }}
+          >
           <Container
             style={{
               display: 'flex',
               flexDirection: 'row',
               justifyContent: 'space-between',
-              alignItems: 'center'
-            }}>
+              alignItems: 'center',
+            }}
+          >
             <Box>
               <Badge
                 key="all"
