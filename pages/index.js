@@ -172,25 +172,12 @@ function Slides({ router, initialFeatures }) {
         className="hide-scrollbar"
         ref={containerRef}>
         {features.map((jam, i) => (
-          <a
-            href={active === i ? `./jam/${jam.slug}` : null}
-            onClick={() => {
-              if (active === i) return
-              containerRef.current.scrollTo({
-                left:
-                  cardsRef.current[i].offsetLeft -
-                  cardsRef.current[0].offsetLeft,
-                behavior: 'smooth'
-              })
-            }}
-            sx={{
-            }}
+          <div
             ref={el => (cardsRef.current[i] = el)}
             style={{
               height: '100%',
               aspectRatio: '16 / 9',
               borderRadius: '16px',
-              color: '#fff',
               scrollSnapAlign: 'center',
               scrollSnapStop: 'always',
               backgroundSize: 'cover',
@@ -207,10 +194,19 @@ function Slides({ router, initialFeatures }) {
               transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
               transitionDuration: '200ms'
             }}>
-            <div
-              sx={{
+            <a
+              href={active === i ? `./jam/${jam.slug}` : null}
+              onClick={() => {
+                if (active === i) return
+                containerRef.current.scrollTo({
+                  left:
+                    cardsRef.current[i].offsetLeft -
+                    cardsRef.current[0].offsetLeft,
+                  behavior: 'smooth'
+                })
               }}
               style={{
+                color: '#fff',
                 width: '100%',
                 aspectRatio: '16 / 9',
                 maxWidth: 'calc(100vw - 2rem)',
@@ -306,8 +302,6 @@ function Slides({ router, initialFeatures }) {
               </Box>
 
               <div
-                sx={{
-                }}
                 style={{
                   position: 'absolute',
                   bottom: "1rem",
@@ -324,8 +318,68 @@ function Slides({ router, initialFeatures }) {
                   {jam.title}
                 </h2>
               </div>
-            </div>
-          </a>
+            </a>
+
+          <button
+              style={{
+                position: 'absolute',
+                left:0,
+                top:"50%",
+                transform: "translate(-50%, -50%)",
+                borderRadius:"9999px",
+                background:"#fff",
+                color: "#993CCF",
+                padding:0,
+                border:0,
+                pointerEvents: (active===i && i>0) ? 'auto' : 'none',
+                opacity: (active===i && i>0) ? 1 : 0,
+                transitionProperty: 'opacity',
+                transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+                transitionDuration: '200ms',
+              }}
+              onClick={() => {
+                if (!(active===i && i>0)) return
+                containerRef.current.scrollTo({
+                  left:
+                    cardsRef.current[i-1].offsetLeft -
+                    cardsRef.current[0].offsetLeft,
+                  behavior: 'smooth'
+                })
+              }}
+            >
+              <Icon glyph="view-back" size={42} style={{ display:"block" }}/>
+            </button>
+
+            <button
+              style={{
+                position: 'absolute',
+                right:0,
+                top:"50%",
+                transform: "translate(50%, -50%)",
+                borderRadius:"9999px",
+                background:"#fff",
+                color: "#993CCF",
+                padding:0,
+                border:0,
+                pointerEvents: (active===i && i<cardsRef.current.length-1) ? 'auto' : 'none',
+                opacity: (active===i && i<cardsRef.current.length-1) ? 1 : 0,
+                transitionProperty: 'opacity',
+                transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+                transitionDuration: '200ms',
+              }}
+              onClick={() => {
+                if (!(active===i && i<cardsRef.current.length-1)) return
+                containerRef.current.scrollTo({
+                  left:
+                    cardsRef.current[i+1].offsetLeft -
+                    cardsRef.current[0].offsetLeft,
+                  behavior: 'smooth'
+                })
+              }}
+            >
+              <Icon glyph="view-forward" size={42} style={{ display:"block" }}/>
+            </button>
+          </div>
         ))}
       </Box>
     </Box>
