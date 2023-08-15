@@ -20,7 +20,7 @@ slug: '3d-club-village'
 
 Imagine a world where you have the power to shape the landscape and design your dream buildings. **Today, we'll dive into the fundamentals of 3D modeling by building our own sky islands and collaborate by merging them into a community sky village.**
 
-Here's an example of what you will make:
+Here's an example of what you'll be able to make:
 ![Individual demo](https://cloud-b1g9hwiu1-hack-club-bot.vercel.app/0image.png)
 [Demo](https://app.spline.design/file/dd7decef-bf50-4ca5-bff5-d76ba64513c4)
 

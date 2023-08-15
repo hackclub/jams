@@ -167,7 +167,7 @@ function Slides({ router, initialFeatures }) {
           display: 'flex',
           position: 'relative',
           overflowX: 'auto',
-          scrollSnapType: 'x mandatory'
+          scrollSnapType: 'x mandatory',
         }}
         className="hide-scrollbar"
         ref={containerRef}>
@@ -184,23 +184,23 @@ function Slides({ router, initialFeatures }) {
               })
             }}
             sx={{
+            }}
+            ref={el => (cardsRef.current[i] = el)}
+            style={{
               height: '100%',
               aspectRatio: '16 / 9',
               borderRadius: '16px',
               color: '#fff',
               scrollSnapAlign: 'center',
               scrollSnapStop: 'always',
-              // backgroundImage: `url(${jam.thumbnail})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              mx: '-6rem',
+              marginLeft: '-6rem',
+              marginRight: '-6rem',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              position: 'relative'
-            }}
-            ref={el => (cardsRef.current[i] = el)}
-            style={{
+              position: 'relative',
               zIndex: active === i ? 1 : 0,
               filter: `brightness(${active === i ? 1 : 0.75})`,
               transitionProperty: 'filter',
@@ -209,15 +209,15 @@ function Slides({ router, initialFeatures }) {
             }}>
             <div
               sx={{
+              }}
+              style={{
                 width: '100%',
                 aspectRatio: '16 / 9',
                 maxWidth: 'calc(100vw - 2rem)',
                 boxShadow: '0px -4px 64px 0px rgba(240, 146, 75, 0.50)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                position: 'relative'
-              }}
-              style={{
+                position: 'relative',
                 backgroundImage:
                   active === i
                     ? `linear-gradient(180deg, rgba(70, 10, 105, 0.60) 0%, rgba(70, 10, 105, 0.00) 36.98%, rgba(49, 7, 74, 0.39) 59.90%, rgba(56, 10, 83, 0.60) 100%), url("${jam.thumbnail}")`
@@ -307,20 +307,20 @@ function Slides({ router, initialFeatures }) {
 
               <div
                 sx={{
-                  position: 'absolute',
-                  bottom: ['0.75rem', '0.75rem', '1rem'],
-                  left: ['1rem', '1rem', '1.5rem'],
-                  right: ['1rem', '1rem', '1.5rem'],
-                  zIndex: 1
                 }}
                 style={{
+                  position: 'absolute',
+                  bottom: "1rem",
+                  left: "1.5rem",
+                  right: "1.5rem",
+                  zIndex: 1,
                   opacity: active === i ? 1 : 0,
                   transform: `scale(${active === i ? 1 : 0.75})`,
                   transitionProperty: 'opacity, transform',
                   transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-                  transitionDuration: '200ms'
+                  transitionDuration: '200ms',
                 }}>
-                <h2 sx={{ fontSize: 28, lineHeight: '2rem', my: 0 }}>
+                <h2 style={{ fontSize: 28, lineHeight: '2rem', margin: 0 }}>
                   {jam.title}
                 </h2>
               </div>
