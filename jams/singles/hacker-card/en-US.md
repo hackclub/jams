@@ -101,7 +101,7 @@ Your schematic should look something like this when completed!
 
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/3completed-schematic.png)
 
-> Friendly reminder to save your work! You can also click `Project` > `Save Project` to save your schematic. 
+> Friendly reminder to save (`command + s` or `control + s`) your work! You can also click `Project` > `Save Project` to save your schematic. 
 
 # Designing the PCB
 
