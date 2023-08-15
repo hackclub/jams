@@ -97,7 +97,7 @@ So we'll connect the capacitor between `VOUT` and GND (the `VSS` pin).
 
 Your schematic should look something like this when completed!
 
-> Note that your schematic may look a bit different from mine -- that's okay! As long as the connections are the same, it should work. So feel free to experiment with different layouts, maybe keep the antenna on the right, change the position of LEDs and resistors, or even add some more LEDs? It's up to you!
+> Note that your schematic may look a bit different from mine -- that's okay! As long as the connections are the same, it should work. So feel free to experiment with different layouts, maybe keep the antenna on the right or change the position of LEDs and resistors? It's up to you!
 
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/3completed-schematic.png)
 
