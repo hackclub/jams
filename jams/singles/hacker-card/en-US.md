@@ -31,7 +31,13 @@ For our card, we'll be using
 - A [47Ω resistor](https://jlcpcb.com/partdetail/23909-0603WAF470JT5E/C23182)
 - A [220nF capacitor](https://jlcpcb.com/partdetail/21832-CL10B224KA8NNNC/C21120)
 
-First, let's open up [EasyEDA](https://easyeda.com). This is a browser based PCB designer, so all you need is an account.
+First, let's open up [EasyEDA](https://easyeda.com). This is a browser based PCB designer, so all you need is an account. 
+
+When you go to the website, you should see a screen like this. Click `Sign Up` to create an account. (If you already have an account, you can skip this step.)
+
+![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
+
+You'd want to click on the `EasyEDA Designer` button in the Navbar to open up the schematic editor. 
 
 Once you've logged in, select `File` > `New` > `Project` to create a new project.
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
@@ -53,6 +59,8 @@ Select the part, then hit the `Place` button to add it to your schematic. Repeat
 
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/9parts-on-schematic.png)
 
+> Note: The EasyEDA parts library may not be the most helpful when finding parts for your own projects, so feel free to search the internet for parts that you want to use and their codes. You can also create your own parts, but that's a bit more advanced.
+
 ### Adding the antenna
 
 The NFC chip needs an antenna to work. We'll be using a PCB trace (a line of copper in the board) as the antenna, so we'll need to add that to our schematic.
@@ -69,7 +77,7 @@ Now that all of our components are placed, let's connect them together! Make sur
 
 We'll use the `Wire` tool to indicate an electrical connection between the different parts -- this is similar to how you would connect wires on a breadboard. On the actual PCB, copper traces will go where we added wires, to form those electrical connections.
 
-We'll reference the NFC Chip's Datasheet, specifically [this explanation](https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf#page=38) for creating an energy harvesting circuit.
+We'll reference the NFC Chip's Datasheet (yes, that obscure, horrifyingly detailed document), specifically [this explanation](https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf#page=38) for creating an energy harvesting circuit.
 
 The datasheet says
 
@@ -89,7 +97,11 @@ So we'll connect the capacitor between `VOUT` and GND (the `VSS` pin).
 
 Your schematic should look something like this when completed!
 
+> Note that your schematic may look a bit different from mine -- that's okay! As long as the connections are the same, it should work. So feel free to experiment with different layouts, maybe keep the antenna on the right, change the position of LEDs and resistors, or even add some more LEDs? It's up to you!
+
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/3completed-schematic.png)
+
+> Friendly reminder to save your work! You can also click `Project` > `Save Project` to save your schematic. 
 
 # Designing the PCB
 
