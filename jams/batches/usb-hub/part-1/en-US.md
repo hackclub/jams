@@ -17,6 +17,7 @@ presentationPDF: ""
 notes: "" 
 poster: ""
 video: ""
+totalParts: 2
 ---
 
 _Want to just see the result? See the [Schematic](https://cloud-1we5i4we0-hack-club-bot.vercel.app/1schematic_schematic-usb-hub-2-port-jam_2023-08-10.pdf) and the [EasyEDA source](https://cloud-1we5i4we0-hack-club-bot.vercel.app/0sch_schematic-usb-hub-2-port-jam_2023-08-10.json)._

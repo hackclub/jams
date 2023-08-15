@@ -17,6 +17,7 @@ presentationPDF: ""
 notes: "" 
 poster: ""
 video: ""
+totalParts: 2
 ---
 
 _If you haven't built a schematic yet, do so in [part 1](/usb-hub/part-1). Just in case you can start with the [Schematic](https://cloud-1we5i4we0-hack-club-bot.vercel.app/1schematic_schematic-usb-hub-2-port-jam_2023-08-10.pdf) and the [EasyEDA source](https://cloud-1we5i4we0-hack-club-bot.vercel.app/0sch_schematic-usb-hub-2-port-jam_2023-08-10.json) we're starting with. Want to see the final result of this project? Here's a link to the final [EasyEDA Design](https://example.com)_
