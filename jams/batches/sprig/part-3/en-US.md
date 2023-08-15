@@ -31,7 +31,7 @@ This jam should take two one-hour sessions to complete when run in a club.
   - [Traps](https://sprig-nocode.hackclub.dev/maze_traps)
 - Intermediate
   - [Portals](https://sprig-nocode.hackclub.dev/maze_portals)
-  - [Fragile tiles](https://sprig-nocode.hackclub.dev/maze_fragile_tiles)
+<!--  - [Fragile tiles](https://sprig-nocode.hackclub.dev/maze_fragile_tiles) -->
   - [Two player](https://sprig-nocode.hackclub.dev/maze_twoplayers)
 - Advanced
   - [Moving obstacles](https://sprig-nocode.hackclub.dev/maze_moving_obstacles)
