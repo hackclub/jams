@@ -125,9 +125,12 @@ function Slides({ router, initialFeatures }) {
 
   useEffect(() => {
     // set scroll position to the second card
-    containerRef.current.scrollLeft = cardsRef.current[1].offsetLeft + cardsRef.current[1].offsetWidth/2 - containerRef.current.offsetWidth/2;
-    
-    containerRef.current.addEventListener('scroll', handleScroll);
+    containerRef.current.scrollLeft =
+      cardsRef.current[1].offsetLeft +
+      cardsRef.current[1].offsetWidth / 2 -
+      containerRef.current.offsetWidth / 2
+
+    containerRef.current.addEventListener('scroll', handleScroll)
     return () => {
       containerRef.current.removeEventListener('scroll', handleScroll)
     }
@@ -241,7 +244,7 @@ function Slides({ router, initialFeatures }) {
                   transform: `scale(${active === i ? 1 : 0.75})`,
                   transitionProperty: 'opacity, transform',
                   transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-                  transitionDelay: '100ms',
+                  transitionDelay: '100ms'
                 }}>
                 {jam.parts?.length && (
                   <Badge
@@ -315,7 +318,7 @@ function Slides({ router, initialFeatures }) {
                   transform: `scale(${active === i ? 1 : 0.75})`,
                   transitionProperty: 'opacity, transform',
                   transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-                  transitionDuration: '200ms',
+                  transitionDuration: '200ms'
                 }}>
                 <h2 sx={{ fontSize: 28, lineHeight: '2rem', my: 0 }}>
                   {jam.title}
@@ -777,11 +780,11 @@ export default function Index(props) {
             (one-part Jams)
           </Text>
         </Text> */}
-        
+
         <Box
           sx={{
             display: ['none', 'none', 'none', 'flex'],
-            top: "calc(4rem + 4px)",
+            top: 'calc(4rem + 4px)',
             backgroundColor: '#fff',
             zIndex: 3,
             left: 0,
@@ -797,20 +800,20 @@ export default function Index(props) {
           style={{
             pointerEvents: isCategoryBarSticky ? 'auto' : 'none',
             opacity: isCategoryBarSticky ? 1 : 0,
-            backgroundColor: isCategoryBarSticky ? 'rgba(200,200,200,0.75)' : 'transparent',
+            backgroundColor: isCategoryBarSticky
+              ? 'rgba(200,200,200,0.75)'
+              : 'transparent',
             transitionProperty: 'opacity, background-color',
             transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
             transitionDuration: '500ms'
-          }}
-          >
+          }}>
           <Container
             style={{
               display: 'flex',
               flexDirection: 'row',
               justifyContent: 'space-between',
-              alignItems: 'center',
-            }}
-          >
+              alignItems: 'center'
+            }}>
             <Box>
               <Badge
                 key="all"

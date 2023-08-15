@@ -10,9 +10,9 @@ timeEstimate: '100-120 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
 language: 'JavaScript'
-presentation: "" 
-presentationPlay: "" 
-presentationPDF: "" 
+presentation: "https://www.figma.com/file/9BNjIY4eHfIaCEtt5wDRem/Sprig-%232?type=design&node-id=236%3A1250&mode=design&t=fM4vMhLXBrrgOLgn-1" 
+presentationPlay: "https://www.figma.com/proto/9BNjIY4eHfIaCEtt5wDRem/Sprig-%232?page-id=236%3A2&type=design&node-id=236-1250&viewport=2326%2C360%2C0.42&t=n9VGx7fjXaaTsujH-1&scaling=contain&starting-point-node-id=236%3A1250&mode=design" 
+presentationPDF: "https://cloud-dhrlob55r-hack-club-bot.vercel.app/0sprig__2.pdf" 
 notes: "" 
 poster: ""
 video: "" 

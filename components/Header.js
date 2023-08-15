@@ -140,15 +140,15 @@ export default function Header({
         zIndex: 5,
         pb: 1,
         backdropFilter: 'blur(5px)',
-        width: '100vw',
+        width: '100vw'
       }}
       style={{
-        backgroundColor: scrollPosition<50 ? 'transparent' : 'rgba(240,240,240,0.75)',
+        backgroundColor:
+          scrollPosition < 50 ? 'transparent' : 'rgba(240,240,240,0.75)',
         transitionProperty: 'background-color',
         transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
         transitionDuration: '500ms'
-      }}
-    >
+      }}>
       <Container
         sx={{
           display: 'flex',
@@ -157,26 +157,23 @@ export default function Header({
         }}>
         {isHomePage ? (
           <Link style={{ height: '4rem' }} href="https://hackclub.com/">
-            <Image
-              src="/assets/flag.svg"
-              sx={{ height:"100%" }}
-            />
+            <Image src="/assets/flag.svg" sx={{ height: '100%' }} />
           </Link>
         ) : (
           <a
             sx={{
-              my: '16px',
-              pl: '6px',
-              pr: '10px',
-              py: '4px',
-              display:'flex',
-              alignItems:'center',
-              gap:'4px',
-              textDecoration: 'none',
+              'my': '16px',
+              'pl': '6px',
+              'pr': '10px',
+              'py': '4px',
+              'display': 'flex',
+              'alignItems': 'center',
+              'gap': '4px',
+              'textDecoration': 'none',
               '&:hover': {
                 borderRadius: '9999px',
                 outlineStyle: 'solid',
-                outlineWidth: '2px',
+                outlineWidth: '2px'
               }
             }}
             style={{
@@ -186,11 +183,8 @@ export default function Header({
               transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
               transitionDuration: '500ms'
             }}
-            href={back}
-          >
-            <FiArrowLeft
-              style={{ fontSize: "1.4rem" }}
-            />
+            href={back}>
+            <FiArrowLeft style={{ fontSize: '1.4rem' }} />
             <span>Back</span>
           </a>
         )}
@@ -336,24 +330,24 @@ export default function Header({
           target="_blank"
           rel="noopener noreferrer"
           sx={{
-            ml: '84px',
-            px: '4px',
-            pt: '5px',
+            'ml': '84px',
+            'px': '4px',
+            'pt': '5px',
             '&:hover': {
               borderRadius: '9999px',
               outlineStyle: 'solid',
-              outlineWidth: '2px',
+              outlineWidth: '2px'
             }
           }}
           style={{
-            color: isHomePage && scrollPosition<50 ? '#fff' : '#993CCF',
-            outlineColor: isHomePage && scrollPosition<50 ? '#fff' : '#993CCF',
+            color: isHomePage && scrollPosition < 50 ? '#fff' : '#993CCF',
+            outlineColor:
+              isHomePage && scrollPosition < 50 ? '#fff' : '#993CCF',
             transitionProperty: 'color, outline-color',
             transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
             transitionDuration: '500ms'
-          }}
-        >
-          <FiGithub sx={{ fontSize: 3, mb:"-5px" }}/>
+          }}>
+          <FiGithub sx={{ fontSize: 3, mb: '-5px' }} />
         </Link>
       </Container>
     </Box>
