@@ -50,7 +50,8 @@ export default function PreviewCard({
         <Box sx={{ borderRadius: '16px' }}>
           <Box
             sx={{
-              zIndex: 2,
+             
+              zIndex: 1,
               marginLeft: '8px',
               maxWidth: '420px',
               marginTop: '8px',

@@ -6,7 +6,7 @@ import PresentationSlider from '@/components/presentationSlider'
 import BatchPartSlider from '@/components/BatchPartSlider'
 import { MDXRemote } from 'next-mdx-remote'
 import mdxComponents from '@/components/mdxComponents'
-import { Container, Text, Link, Box, Grid, Badge } from 'theme-ui'
+import { Container, Button, Input, Text, Link, Box, Grid, Badge } from 'theme-ui'
 import Header from '@/components/Header'
 import levenshtein from 'fast-levenshtein'
 
@@ -18,7 +18,7 @@ export default function JamComponent({ jam, jamsContent }) {
   const submitProject = async () => {
     try {
       const response = await fetch(
-        `https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${jam.slug}/${submissionURL}`
+        `https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${jam.slug}/${submissionURL}/${projectName}`
       )
       if (!response.ok) {
         throw new Error('Network response was not ok')
@@ -57,6 +57,7 @@ export default function JamComponent({ jam, jamsContent }) {
   const router = useRouter()
   const [apiResponse, setApiResponse] = useState('')
   const [submissionURL, setSubmissionURL] = useState('')
+  const [projectName, setProjectName] = useState('')
 
   const [presentationSelected, setPresentationSelected] = useState(true)
   const [finishedProjects, setFinishedProjects] = useState([])
@@ -495,13 +496,31 @@ export default function JamComponent({ jam, jamsContent }) {
           </Link>
 
           <Box sx={{ pt: 16 }}>
-            {/* Finished Projects
+            Finished Projects <br/>
+
             {finishedProjects.map((project) => 
-            <a style={{display:"flex" }} href={project.url}>
-              {project.title.includes("Figma") && "F "}
+            <a  href={project.url}>
+              {/* {project.title.includes("Figma") && "F "}
               {project.title.includes("GitHub") && "GH "}
-              {project.title}
-            </a>)} */}
+              {project.title} */}
+              <Badge
+              key="difficultyFeature"
+              mr={2}
+              sx={{
+                cursor: 'pointer',
+                backgroundColor: '#fff',
+                marginBottom: '8px',
+                fontSize: ['14px', 'auto'],
+                textDecoration: "none",
+              }}
+              variant="outline"
+              color="#993CCF">
+                
+              <abbr style={{textDecoration: "none"}} title={project.title.length > 32 ? (project.title) : ("")}>{project.title.slice(0, 32)} {project.title.length > 32 ? ("...") : ("")}</abbr>
+            </Badge>
+            </a>
+            
+            )}
           </Box>
 
           <Box
@@ -509,12 +528,23 @@ export default function JamComponent({ jam, jamsContent }) {
             <MDXRemote components={mdxComponents} {...jam.source} />
           </Box>
 
-          {/* <Box>
-            Submit Your Project URL<br/>
-            <input onChange={(e) => setSubmissionURL(e.target.value)}/>
-            <button onClick={() => submitProject()}>Submit</button>
+          <Box style={{border: "2px solid rgba(0, 0, 0, 0.25)", boxShadow: "0px 0px 24px 0px rgba(153, 60, 207, 0.50)",backgroundColor: '#E1E6EC', display: "flex", flexDirection: "column", padding: "24px 24px", borderRadius: "16px"}}>
+            <Text sx={{color: "#993CCF", fontSize: 32, lineHeight: 1.125, fontWeight: 700}}>You finished the Jam. <br/>
+Congratulations!  🎉  🎉   🎉</Text>
+
+            <Text sx={{mt: 3}}>Share your final project with the community</Text>
+            <Box sx={{marginTop: "8px", width: ["100%", "100%", "75%"]}}>
+            <Text>Project Name</Text>
+            <Input placeholder={"MarshaMellow - SwampLofiAnimation"} value={projectName} onChange={(e) => setProjectName(e.target.value)}/>
+            </Box>
+            <Box sx={{marginTop: "8px", width: ["100%", "100%", "75%"]}}>
+            <Text>Project URL</Text>
+            <Input placeholder={"https://swamplofi.marshamellow.repl.co/"} value={submissionURL} onChange={(e) => setSubmissionURL(e.target.value)}/>
+            </Box>
+
+            <Button sx={{marginTop: "24px", borderRadius: "12px", padding: "12px", backgroundColor: "#993CCF", width: ["100%", "100%", "50%"]}} onClick={() => submitProject()}>Share Project with Community</Button>
             <p>{apiResponse}</p>
-          </Box> */}
+          </Box>
         </div>
 
         <div sx={{ width: ['auto', 'auto', '20rem'], position: 'relative' }}>
