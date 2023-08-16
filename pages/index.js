@@ -1135,7 +1135,7 @@ export default function Index(props) {
               const close = (jam, viewed) => {
                 let match = 0
                 let keywords = jam.keywords.split(', ')
-                viewed.map(viewedJam => {
+                viewed.map((viewedJam, i) => {
                   if (viewedJam.difficulty === jam.difficulty) match++
                   if (viewedJam.language === jam.language) match++
                   if (viewedJam.timeEstimate === jam.timeEstimate) match++

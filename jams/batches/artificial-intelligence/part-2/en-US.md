@@ -8,7 +8,7 @@ contributor: 'sahitid'
 thumbnail: 'https://cloud-1xtor5uxe-hack-club-bot.vercel.app/0thumbnail_2.png'
 timeEstimate: '45 Min'  
 difficulty: 'Beginner'
-keywords: 'AI, ML, Machine Learning, Artificial Intelligence'  
+keywords: 'Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'  
 language: 'JavaScript, HTML'
 presentation: "" # TODO
 presentationPlay: "" # TODO
@@ -139,10 +139,10 @@ recognizer.listen(
   result => {
     const orpheusNoise = result.scores[1]
     if (orpheusNoise > THRESHOLD) {
-          speak('Hey').then(() => {
-            console.log("Done speaking")
-          })
-        }
+      speak('Hey').then(() => {
+        console.log("Done speaking")
+      })
+    }
   },
   {
     includeSpectrogram: true,
@@ -150,7 +150,7 @@ recognizer.listen(
     invokeCallbackOnNoiseAndUnknown: true,
     overlapFactor: 0.5
   }
-)}
+)
 ```
 
 In case it wasn't obvious enough, here is what we changed:
@@ -173,12 +173,12 @@ recognizer.listen(
   result => {
     const orpheusNoise = result.scores[1]
     if (orpheusNoise > THRESHOLD && !listening) {
-          listening = true
-          speak('Hey').then(() => {
-            console.log("Done speaking")
-            listening = false
-          })
-        }
+      listening = true
+      speak('Hey').then(() => {
+        console.log("Done speaking")
+        listening = false
+      })
+    }
   },
   {
     includeSpectrogram: true,
@@ -186,7 +186,7 @@ recognizer.listen(
     invokeCallbackOnNoiseAndUnknown: true,
     overlapFactor: 0.5
   }
-)}
+)
 ```
 
 And finally we need to call the `init` function at the end!
@@ -211,7 +211,6 @@ async function speak(message) {
       const voices = synth.getVoices()
       utterance.voice = voices[voices.findIndex(voice => voice.name === 'Good News')]
       utterance.rate = 1
-
       synth.cancel()
       synth.speak(utterance)
       utterance.onend = resolve
