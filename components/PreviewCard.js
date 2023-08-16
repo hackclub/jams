@@ -41,7 +41,7 @@ export default function PreviewCard({
   }
 
   return (
-    <a style={{ color: '#000', textDecoration: 'none' }} href={redirect}>
+    <>
       <Box
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -201,7 +201,7 @@ export default function PreviewCard({
             )}
           </Box>
 
-
+          <a style={{ color: '#000', textDecoration: 'none' }} href={redirect}>
             <Box
               sx={{
                 borderRadius: '16px',
@@ -239,8 +239,10 @@ export default function PreviewCard({
                 />
               )}
             </Box>
+            </a>
          
         </Box>
+        <a style={{ color: '#000', textDecoration: 'none' }} href={redirect}>
         <Text
           as="h2"
           sx={{
@@ -251,7 +253,8 @@ export default function PreviewCard({
           }}>
           {title}
         </Text>
+        </a>
       </Box>
-    </a>
+    </>
   )
 }

@@ -535,7 +535,7 @@ export default function JamComponent({ jam, jamsContent }) {
           </Link>
 
           <Box sx={{ pt: 16 }}>
-            Finished Projects <br />
+            {finishedProjects.length > 0 ? (<div>Finished Projects <br /></div>) : (<div></div>)}
             {finishedProjects.map(project => (
               <a href={project.url}>
                 {/* {project.title.includes("Figma") && "F "}
