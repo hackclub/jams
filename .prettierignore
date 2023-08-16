@@ -2,3 +2,5 @@ package.json
 package-lock.json
 .next/*
 jams/batches/*/*/*.md
+jams/broken/*/*.md
+jams/singles/*/*.md

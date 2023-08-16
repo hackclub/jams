@@ -2,6 +2,7 @@
 <h1 align="center"><a href="https://jams.hackclub.com">Hack Club Jams</a></h1>
 
 Hack Club Jams: Collaborative coding workshops where sparks ignite, fears dissolve, and inventions come to life. We're jamming away at Hack Club here!
+
 ## 🎉 Getting started
 
 Head over to [the Jams website](https://jams.hackclub.com) to get started with your first jam!
@@ -16,7 +17,7 @@ Once you've read the guidelines, you can get started by forking this repository 
 
 <details>
     <summary>How do I fork this repository?</summary>
-
+<br/>
 Click on the "Fork" button in the top right corner of this page and follow the prompts to create your own copy of this repo.
 
 Afterwards, clone your copy:
@@ -45,28 +46,27 @@ Fill in the title, maybe add a little description, and click that big green butt
 
 Depending on what the jam is, it will belong in either one of two categories:
 
-* Batches are jams that are meant to be run over multiple club meetings, such as the lovely [AI assistant jam](https://jams.hackclub.dev/batch/artificial-intelligence) or the super fun [WebOS jam](https://jams.hackclub.dev/batch/webOS). These jams belong in the `batches` folder.
-* Singles are jams that are, well, meant to be run over a single club meeting, such as the useful [AI trip planner jam](https://jams.hackclub.dev/jam/ai-travel) or the [Hacker Card jam](https://jams.hackclub.dev/jam/hacker-card). These jams belong in the `singles` folder.
+- Batches are jams that are meant to be run over multiple club meetings, such as the lovely [AI assistant jam](https://jams.hackclub.dev/batch/artificial-intelligence) or the super fun [WebOS jam](https://jams.hackclub.dev/batch/webOS). These jams belong in the `batches` folder.
+- Singles are jams that are, well, meant to be run over a single club meeting, such as the useful [AI trip planner jam](https://jams.hackclub.dev/jam/ai-travel) or the [Hacker Card jam](https://jams.hackclub.dev/jam/hacker-card). These jams belong in the `singles` folder.
 
 Instructions for the two categories are as follows:
 
 <details>
     <summary>Creating a batch jam</summary>
-
+<br/>
 Head over to `jams/batches`, and create a new folder with the name of your jam. Inside that folder, create a `readMe` folder, and create a new file inside `readMe` called `en-US.md` (or whatever your locale is) with the following content:
 
 ```markdown
 ---
-title: 'Create Your Own Smart AI Voice Companion'
-contributor: 'sahitid'
-description: "Let's build our own AI companion! My companion is going to be Orpheus (you might have heard of her ;) but by the end of this jam, you'll have your own AI best friend."
-video: ''
-thumbnail: 'https://cloud-jvr4qrnaz-hack-club-bot.vercel.app/0overall_thumbnail.png'
-keywords: 'AI, ML, Machine Learning, Artificial Intelligence'
+title: 'your title'
+contributor: 'your github username'
+description: 'description of your batch jam'
+video: 'video (demo) of your batch jam'
+thumbnail: 'thumbail image link'
+keywords: 'a, lis of, keywords separated by comma space'
 timeEstimate: '4 Hours'
-difficulty: 'Beginner'
-slug: 'artificial-intelligence'
-sticker: 'https://cloud-5rfrigev6-hack-club-bot.vercel.app/0frame_101.png'
+difficulty: '(Beginner, Intermediate, Difficult)'
+slug: 'a unique slug for people visiting your jam'
 isBatch: True
 ---
 ```
@@ -75,51 +75,73 @@ We use this info for this page:
 
 ![Batch info](https://cloud-qitwm6rk9-hack-club-bot.vercel.app/0screenshot_2023-08-16_at_14-45-22_create_your_own_smart_ai_voice_companion.png)
 
-Now you can start writing the parts for your jam! For every part of your jam, create a folder inside your jam folder titled `jam`
+Now you can start writing the parts for your jam! For every part of your jam, create a folder inside your jam folder titled `part-<part #>`. Create a file inside that folder called `en-US.md` (or whatever your locale is) and will it with the following content:
+
+```markdown
+---
+title: 'your title'
+description: 'a quick description!'
+contributor: 'your GitHub username'
+contributorSlackID: 'your Slack ID'
+thumbnail: 'thumbnail image link'
+timeEstimate: ''
+difficulty: '(Beginner, Intermediate, Difficult)'
+keywords: 'a, list, of, keywords separated by comma space'
+presentation: 'link to figma slides'
+presentationPlay: 'link to figma slides in presentation mode'
+presentationPDF: 'link to pdf of slides'
+notes: 'link to notes (optional)'
+poster: 'link to poster (optional)'
+video: 'link to video (optional)'
+slug: 'a unique slug for people visiting your jam'
+---
+```
+
+Now start writing your batch jam!
 
 </details>
 
 <details>
     <summary>Creating a single jam</summary>
-
+<br/>
 Head over to `jams/singles`, and create a new folder with the name of your jam. Inside that folder, create a file called `en-US.md` (or whatever your locale is) with the following content:
 
 ```markdown
----  
-title: 'Make an AI Trip Planner for a Club Adventure'  
-description: >  
-  This Jam will teach you how to use ChatGPT and AI to create a trip itinerary planner. It is extremely customizable and gives a foundation for you to expand upon with your own ideas!
-contributor: 'ShubhamPatilsd'  
-contributorSlackID: 'U029D5FG8EN'
-thumbnail:
-timeEstimate: '60 Min'  
-difficulty: 'Intermediate'  
-keywords: ''
-presentation: ''
-presentationPlay: ''
-presentationPDF: ''  
-notes: ''  
-poster: ''  
-video: ''  
-slug: 'ai-travel'  
-AITokenLink: "https://hackclub.slack.com/archives/C05L8BSDJJ3"
+---
+title: 'your title'
+description: 'a quick description!'
+contributor: 'your GitHub username'
+contributorSlackID: 'your Slack ID'
+thumbnail: 'thumbnail image link'
+timeEstimate: ''
+difficulty: '(Beginner, Intermediate, Difficult)'
+keywords: 'a, list, of, keywords separated by comma space'
+presentation: 'link to figma slides'
+presentationPlay: 'link to figma slides in presentation mode'
+presentationPDF: 'link to pdf of slides'
+notes: 'link to notes (optional)'
+poster: 'link to poster (optional)'
+video: 'link to video (optional)'
+slug: 'a unique slug for people visiting your jam'
 ---
 ```
+
+Now start writing your jam!
 
 </details>
 
 ### Extra tips
 
-* Remember: every jam at the very least needs a presentation (preferably in Figma) to go along with it!
-* Save images, videos, and other assets using the `#cdn` channel on [Slack](https://hackclub.com/slack/)!
-* Please make sure to check for spelling and grammar mistakes before you make a PR! That'll save all of us some headaches and hassle.
+- Remember: every jam at the very least needs a presentation (preferably in Figma) to go along with it!
+- Save images, videos, and other assets using the `#cdn` channel on [Slack](https://hackclub.com/slack/)!
+- Please make sure to check for spelling and grammar mistakes before you make a PR! That'll save all of us some headaches and hassle.
 
 ## Other ways to contribute
 
 There are other ways to contribute besides writing a jam! We'd love some help with:
 
-* Translating the jams!
-* Helping us review jams!
-* Helping us make the jams website better, especially by helping us fix [issues](https://github.com/hackclub/jams/issues)!
+- Translating the jams!
+- Helping us review jams!
+- Helping us make the jams website better, especially by helping us fix [issues](https://github.com/hackclub/jams/issues)!
 
 Feel free to start poking around the codebase and join the `#jams` channel on [Slack](https://hackclub.com/slack/)!
