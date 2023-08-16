@@ -544,12 +544,13 @@ export default function Index(props) {
 
   const [scrollPosition, setScrollPosition] = useState(0)
   useEffect(() => {
-    setViewed(
-      JSON.parse(localStorage.getItem('viewed')).map(jam => ({
-        ...jam,
-        keywords: jam.keywords.split(', ')
-      }))
-    )
+    if (localStorage.getItem('viewed'))
+      setViewed(
+        JSON.parse(localStorage.getItem('viewed')).map(jam => ({
+          ...jam,
+          keywords: jam.keywords.split(', ')
+        }))
+      )
     const onScroll = () => setScrollPosition(window.pageYOffset)
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)

@@ -113,7 +113,6 @@ export default function JamComponent({ jam, jamsContent }) {
         localStorage.setItem('viewed', JSON.stringify(viewed))
       }
     }
-    console.log(JSON.parse(localStorage.getItem('viewed')))
 
     const handleScroll = () => {
       let newActiveSection = null
