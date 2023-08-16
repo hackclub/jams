@@ -18,7 +18,6 @@ video: ""
 slug: "voxel-animation"
 ---
 
-# Creating your own ✨ unique Voxel Animation
 
 ~60+ Minutes, Basic javascript and html knowledge needed
 ![demo_dot_webm](https://cloud-1duz1dnxo-hack-club-bot.vercel.app/0demo.gif)
