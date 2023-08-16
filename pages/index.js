@@ -637,7 +637,7 @@ export default function Index(props) {
                 pt: 0,
                 px: 3
               }}>
-              Learn How to Build Cool Projects with our Collaborative Coding Workshops! 
+              Learn to Build Cool Projects with our Collaborative Coding Workshops! 
             </Text>
           </Box>
         </Box>
