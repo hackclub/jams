@@ -12,6 +12,7 @@ import { useState } from 'react'
 import JamComponent from '@/components/JamComponent'
 import Meta from '@hackclub/meta'
 import Head from 'next/head'
+import lunr from 'lunr'
 
 /** @jsxImportSource theme-ui */
 
@@ -143,9 +144,51 @@ export async function getStaticProps({ params }) {
 export default function Page({ batch, params, jams }) {
   const [query, setQuery] = useState('')
 
-  const precision = 3.5 // 3.5 is a VERY ARBITRARY value that can be adjusted later, indicates precision for lev to check with
-  // the greater the number, the more precision is required
-  var levenshtein = require('fast-levenshtein')
+  const precision = 0.5 // arbitrary number to indicate precision of lunr
+
+  var searchAlgorithmLunr = lunr(function () {
+    this.field('title')
+    this.field('description')
+    this.field('body')
+    this.field('contributor')
+    this.field('keywords')
+    this.field('slug')
+
+    let concatenatedJamBatch = jams.singles.concat(jams.batches)
+
+    for (let jindex in concatenatedJamBatch) {
+      let jam = concatenatedJamBatch[jindex]
+      this.add({
+        title: jam.title,
+        description: jam.description,
+        body: jam.body,
+        contributor: jam.contributor,
+        keywords: jam.keywords,
+        slug: jam.slug,
+        object: jam,
+        id: jindex
+      })
+    }
+  })
+
+  function returnResultsLunr(query) {
+    let bestList = searchAlgorithmLunr.search(query.toString())
+
+    console.log(bestList)
+
+    let results = []
+
+    let concatenatedJamBatch = jams.singles.concat(jams.batches)
+
+    for (let returnedquery in bestList) {
+      if (bestList[returnedquery]['score'] >= precision) {
+        console.log(bestList[returnedquery]['ref'])
+        results.push(concatenatedJamBatch[bestList[returnedquery]['ref']])
+      }
+    }
+
+    return results
+  }
 
   const router = useRouter()
   return (
@@ -161,32 +204,7 @@ export default function Page({ batch, params, jams }) {
       <Header
         setQuery={setQuery}
         query={query}
-        jams={jams.singles.concat(jams.batches).filter(jam => {
-          var jamValues = [
-            jam.title,
-            jam.description,
-            jam.contributor,
-            jam.keywords,
-            jam.slug
-          ] // indicates each value that exists in the jam dict
-          // we want to search by title, description, contributor, keywords, and slug
-          for (var key in jamValues) {
-            var value = jamValues[key]
-            if (
-              levenshtein.get(value.toLowerCase(), query.toLowerCase(), {
-                useCollator: true
-              }) <=
-              (value.length + query.length) / precision
-            ) {
-              console.log((value.length + query.length) / precision)
-              console.log(levenshtein.get(value, query))
-              console.log(value.toLowerCase())
-              console.log(query.toLowerCase())
-              return true
-            }
-          }
-          return false // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
-        })}
+        jams={returnResultsLunr(query)}
         back={`/`} // back is homepage regardless
       />
 

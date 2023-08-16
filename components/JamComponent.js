@@ -6,9 +6,18 @@ import PresentationSlider from '@/components/presentationSlider'
 import BatchPartSlider from '@/components/BatchPartSlider'
 import { MDXRemote } from 'next-mdx-remote'
 import mdxComponents from '@/components/mdxComponents'
-import { Container, Button, Input, Text, Link, Box, Grid, Badge } from 'theme-ui'
+import {
+  Container,
+  Button,
+  Input,
+  Text,
+  Link,
+  Box,
+  Grid,
+  Badge
+} from 'theme-ui'
 import Header from '@/components/Header'
-import levenshtein from 'fast-levenshtein'
+import lunr from 'lunr'
 
 /** @jsxImportSource theme-ui */
 import Meta from '@hackclub/meta'
@@ -104,11 +113,53 @@ export default function JamComponent({ jam, jamsContent }) {
     }
   }, [])
 
-  const [query, setQuery] = useState('')
+  const precision = 0.5 // arbitrary number to indicate precision of lunr
 
-  const precision = 3.5 // 3.5 is a VERY ARBITRARY value that can be adjusted later, indicates precision for lev to check with
-  // the greater the number, the more precision is required
-  var levenshtein = require('fast-levenshtein')
+  var searchAlgorithmLunr = lunr(function () {
+    this.field('title')
+    this.field('description')
+    this.field('body')
+    this.field('contributor')
+    this.field('keywords')
+    this.field('slug')
+
+    let concatenatedJamBatch = jamsContent.singles.concat(jamsContent.batches)
+
+    for (let jindex in concatenatedJamBatch) {
+      let jam = concatenatedJamBatch[jindex]
+      this.add({
+        title: jam.title,
+        description: jam.description,
+        body: jam.body,
+        contributor: jam.contributor,
+        keywords: jam.keywords,
+        slug: jam.slug,
+        object: jam,
+        id: jindex
+      })
+    }
+  })
+
+  function returnResultsLunr(query) {
+    let bestList = searchAlgorithmLunr.search(query.toString())
+
+    console.log(bestList)
+
+    let results = []
+
+    let concatenatedJamBatch = jamsContent.singles.concat(jamsContent.batches)
+
+    for (let returnedquery in bestList) {
+      if (bestList[returnedquery]['score'] >= precision) {
+        console.log(bestList[returnedquery]['ref'])
+        results.push(concatenatedJamBatch[bestList[returnedquery]['ref']])
+      }
+    }
+
+    return results
+  }
+
+  const [query, setQuery] = useState('')
 
   return (
     <>
@@ -124,32 +175,7 @@ export default function JamComponent({ jam, jamsContent }) {
       <Header
         query={query}
         setQuery={setQuery}
-        jams={jamsContent.singles.concat(jamsContent.batches).filter(jam => {
-          var jamValues = [
-            jam.title,
-            jam.description,
-            jam.contributor,
-            jam.keywords,
-            jam.slug
-          ] // indicates each value that exists in the jam dict
-          // we want to search by title, description, contributor, keywords, and slug
-          for (var key in jamValues) {
-            var value = jamValues[key]
-            if (
-              levenshtein.get(value.toLowerCase(), query.toLowerCase(), {
-                useCollator: true
-              }) <=
-              (value.length + query.length) / precision
-            ) {
-              console.log((value.length + query.length) / precision)
-              console.log(levenshtein.get(value, query))
-              console.log(value.toLowerCase())
-              console.log(query.toLowerCase())
-              return true
-            }
-          }
-          return false // it went here if no part of its values are successful, therefore it doesnt fit search criteria and is not shown
-        })}
+        jams={returnResultsLunr(query)}
         back={jam.batch == null ? '/' : '/batch/' + jam.batch} // if no batch, back is index, otherwise it is batch page
       />
       <div sx={{ height: '5rem' }}></div>
@@ -496,31 +522,33 @@ export default function JamComponent({ jam, jamsContent }) {
           </Link>
 
           <Box sx={{ pt: 16 }}>
-            Finished Projects <br/>
-
-            {finishedProjects.map((project) => 
-            <a  href={project.url}>
-              {/* {project.title.includes("Figma") && "F "}
+            Finished Projects <br />
+            {finishedProjects.map(project => (
+              <a href={project.url}>
+                {/* {project.title.includes("Figma") && "F "}
               {project.title.includes("GitHub") && "GH "}
               {project.title} */}
-              <Badge
-              key="difficultyFeature"
-              mr={2}
-              sx={{
-                cursor: 'pointer',
-                backgroundColor: '#fff',
-                marginBottom: '8px',
-                fontSize: ['14px', 'auto'],
-                textDecoration: "none",
-              }}
-              variant="outline"
-              color="#993CCF">
-                
-              <abbr style={{textDecoration: "none"}} title={project.title.length > 32 ? (project.title) : ("")}>{project.title.slice(0, 32)} {project.title.length > 32 ? ("...") : ("")}</abbr>
-            </Badge>
-            </a>
-            
-            )}
+                <Badge
+                  key="difficultyFeature"
+                  mr={2}
+                  sx={{
+                    cursor: 'pointer',
+                    backgroundColor: '#fff',
+                    marginBottom: '8px',
+                    fontSize: ['14px', 'auto'],
+                    textDecoration: 'none'
+                  }}
+                  variant="outline"
+                  color="#993CCF">
+                  <abbr
+                    style={{ textDecoration: 'none' }}
+                    title={project.title.length > 32 ? project.title : ''}>
+                    {project.title.slice(0, 32)}{' '}
+                    {project.title.length > 32 ? '...' : ''}
+                  </abbr>
+                </Badge>
+              </a>
+            ))}
           </Box>
 
           <Box
@@ -528,21 +556,58 @@ export default function JamComponent({ jam, jamsContent }) {
             <MDXRemote components={mdxComponents} {...jam.source} />
           </Box>
 
-          <Box style={{border: "2px solid rgba(0, 0, 0, 0.25)", boxShadow: "0px 0px 24px 0px rgba(153, 60, 207, 0.50)",backgroundColor: '#E1E6EC', display: "flex", flexDirection: "column", padding: "24px 24px", borderRadius: "16px"}}>
-            <Text sx={{color: "#993CCF", fontSize: 32, lineHeight: 1.125, fontWeight: 700}}>You finished the Jam. <br/>
-Congratulations!  🎉  🎉   🎉</Text>
+          <Box
+            style={{
+              border: '2px solid rgba(0, 0, 0, 0.25)',
+              boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
+              backgroundColor: '#E1E6EC',
+              display: 'flex',
+              flexDirection: 'column',
+              padding: '24px 24px',
+              borderRadius: '16px'
+            }}>
+            <Text
+              sx={{
+                color: '#993CCF',
+                fontSize: 32,
+                lineHeight: 1.125,
+                fontWeight: 700
+              }}>
+              You finished the Jam. <br />
+              Congratulations! 🎉 🎉 🎉
+            </Text>
 
-            <Text sx={{mt: 3}}>Share your final project with the community</Text>
-            <Box sx={{marginTop: "8px", width: ["100%", "100%", "75%"]}}>
-            <Text>Project Name</Text>
-            <Input placeholder={"MarshaMellow - SwampLofiAnimation"} value={projectName} onChange={(e) => setProjectName(e.target.value)}/>
+            <Text sx={{ mt: 3 }}>
+              Share your final project with the community
+            </Text>
+            <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
+              <Text>Project Name</Text>
+              <Input
+                placeholder={'MarshaMellow - SwampLofiAnimation'}
+                value={projectName}
+                onChange={e => setProjectName(e.target.value)}
+              />
             </Box>
-            <Box sx={{marginTop: "8px", width: ["100%", "100%", "75%"]}}>
-            <Text>Project URL</Text>
-            <Input placeholder={"https://swamplofi.marshamellow.repl.co/"} value={submissionURL} onChange={(e) => setSubmissionURL(e.target.value)}/>
+            <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
+              <Text>Project URL</Text>
+              <Input
+                placeholder={'https://swamplofi.marshamellow.repl.co/'}
+                value={submissionURL}
+                onChange={e => setSubmissionURL(e.target.value)}
+              />
             </Box>
 
-            <Button sx={{marginTop: "24px", borderRadius: "12px", padding: "12px", backgroundColor: "#993CCF", width: ["100%", "100%", "50%"]}} onClick={() => submitProject()}>Share Project with Community</Button>
+            <Button
+              sx={{
+                marginTop: '24px',
+                borderRadius: '12px',
+                padding: '12px',
+                backgroundColor: '#993CCF',
+                width: ['100%', '100%', '50%']
+              }}
+              onClick={() => submitProject()}>
+              Share Project with Community
+            </Button>
             <p>{apiResponse}</p>
           </Box>
         </div>

@@ -16,6 +16,7 @@ import PreviewCard from '@/components/PreviewCard'
 import { useEffect, useState, useRef } from 'react'
 import Icon from '@hackclub/icons'
 import { useRouter } from 'next/router'
+import lunr from 'lunr'
 
 import path from 'path'
 import matter from 'gray-matter'
@@ -167,7 +168,7 @@ function Slides({ router, initialFeatures }) {
           display: 'flex',
           position: 'relative',
           overflowX: 'auto',
-          scrollSnapType: 'x mandatory',
+          scrollSnapType: 'x mandatory'
         }}
         className="hide-scrollbar"
         ref={containerRef}>
@@ -304,15 +305,15 @@ function Slides({ router, initialFeatures }) {
               <div
                 style={{
                   position: 'absolute',
-                  bottom: "1rem",
-                  left: "1.5rem",
-                  right: "1.5rem",
+                  bottom: '1rem',
+                  left: '1.5rem',
+                  right: '1.5rem',
                   zIndex: 1,
                   opacity: active === i ? 1 : 0,
                   transform: `scale(${active === i ? 1 : 0.75})`,
                   transitionProperty: 'opacity, transform',
                   transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-                  transitionDuration: '200ms',
+                  transitionDuration: '200ms'
                 }}>
                 <h2 style={{ fontSize: 28, lineHeight: '2rem', margin: 0 }}>
                   {jam.title}
@@ -323,63 +324,69 @@ function Slides({ router, initialFeatures }) {
             <button
               style={{
                 position: 'absolute',
-                left:0,
-                top:"50%",
-                transform: "translate(-50%, -50%)",
-                borderRadius:"9999px",
-                background:"#fff",
-                color: "#993CCF",
-                padding:0,
-                border:0,
+                left: 0,
+                top: '50%',
+                transform: 'translate(-50%, -50%)',
+                borderRadius: '9999px',
+                background: '#fff',
+                color: '#993CCF',
+                padding: 0,
+                border: 0,
                 filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
-                pointerEvents: (active===i && i>0) ? 'auto' : 'none',
-                opacity: (active===i && i>0) ? 1 : 0,
+                pointerEvents: active === i && i > 0 ? 'auto' : 'none',
+                opacity: active === i && i > 0 ? 1 : 0,
                 transitionProperty: 'opacity',
                 transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-                transitionDuration: '200ms',
+                transitionDuration: '200ms'
               }}
               onClick={() => {
-                if (!(active===i && i>0)) return
+                if (!(active === i && i > 0)) return
                 containerRef.current.scrollTo({
                   left:
-                    cardsRef.current[i-1].offsetLeft -
+                    cardsRef.current[i - 1].offsetLeft -
                     cardsRef.current[0].offsetLeft,
                   behavior: 'smooth'
                 })
-              }}
-            >
-              <Icon glyph="view-back" size={42} style={{ display:"block" }}/>
+              }}>
+              <Icon glyph="view-back" size={42} style={{ display: 'block' }} />
             </button>
 
             <button
               style={{
                 position: 'absolute',
-                right:0,
-                top:"50%",
-                transform: "translate(50%, -50%)",
-                borderRadius:"9999px",
-                background:"#fff",
-                color: "#993CCF",
-                padding:0,
-                border:0,
+                right: 0,
+                top: '50%',
+                transform: 'translate(50%, -50%)',
+                borderRadius: '9999px',
+                background: '#fff',
+                color: '#993CCF',
+                padding: 0,
+                border: 0,
                 filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
-                pointerEvents: (active===i && i<cardsRef.current.length-1) ? 'auto' : 'none',
-                opacity: (active===i && i<cardsRef.current.length-1) ? 1 : 0,
+                pointerEvents:
+                  active === i && i < cardsRef.current.length - 1
+                    ? 'auto'
+                    : 'none',
+                opacity:
+                  active === i && i < cardsRef.current.length - 1 ? 1 : 0,
                 transitionProperty: 'opacity',
                 transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-                transitionDuration: '200ms',
+                transitionDuration: '200ms'
               }}
               onClick={() => {
-                if (!(active===i && i<cardsRef.current.length-1)) return
+                if (!(active === i && i < cardsRef.current.length - 1)) return
                 containerRef.current.scrollTo({
                   left:
-                    cardsRef.current[i+1].offsetLeft -
+                    cardsRef.current[i + 1].offsetLeft -
                     cardsRef.current[0].offsetLeft,
                   behavior: 'smooth'
                 })
-              }}
-            >
-              <Icon glyph="view-forward" size={42} style={{ display:"block" }}/>
+              }}>
+              <Icon
+                glyph="view-forward"
+                size={42}
+                style={{ display: 'block' }}
+              />
             </button>
           </div>
         ))}
@@ -424,105 +431,105 @@ export default function Index(props) {
 
   const router = useRouter()
 
-  const precision = 3.5 // 3.5 is a VERY ARBITRARY value that can be adjusted later, indicates precision for lev to check with
-  // the greater the number, the more precision is required
-  var levenshtein = require('fast-levenshtein')
+  const precision = 1 // indicates lunr precision
 
-  const batches = props.jamsContent.batches.filter(batch => {
-    if (
-      !selectedCategories.some(keyword =>
-        batch.keywords.split(', ').includes(keyword)
-      ) &&
-      selectedCategories != ''
-    ) {
-      return false
-    }
+  function searchLunr(query, list) {
+    var searchAlgorithmLunr = lunr(function () {
+      this.field('title')
+      this.field('description')
+      this.field('body')
+      this.field('contributor')
+      this.field('keywords')
+      this.field('slug')
 
-    if (batch.difficulty.toLowerCase() != difficulty && difficulty != '') {
-      return false
-    }
+      for (let jindex in list) {
+        let jam = list[jindex]
+        this.add({
+          title: jam.title,
+          description: jam.description,
+          body: jam.body,
+          contributor: jam.contributor,
+          keywords: jam.keywords,
+          slug: jam.slug,
+          object: jam,
+          id: jindex
+        })
+      }
+    })
 
-    if (batch.timeEstimate != time && time != '') {
-      return false
-    }
+    let bestList = searchAlgorithmLunr.search(query.toString())
 
-    if (query.trim() == '') {
-      // hasnt started search yet
-      return true
-    }
+    console.log(bestList)
 
-    var batchValues = [
-      batch.title,
-      batch.description,
-      batch.contributor,
-      batch.keywords,
-      batch.slug
-    ] // indicates each value that exists in the jam dict
-    // we want to search by title, description, contributor, keywords, and slug
+    let results = []
 
-    for (var key in batchValues) {
-      var value = batchValues[key]
-      if (
-        levenshtein.get(value.toLowerCase(), query.toLowerCase(), {
-          useCollator: true
-        }) <=
-        (value.length + query.length) / precision
-      ) {
-        return true
+    for (let returnedquery in bestList) {
+      if (bestList[returnedquery]['score'] >= precision) {
+        results.push(list[bestList[returnedquery]['ref']])
       }
     }
 
-    return false
-  })
-  const jams = props.jamsContent.singles.filter(jam => {
-    if (jam.keywords.split(', ').includes('Beta')) {
-      return false
-    }
-    if (
-      !selectedCategories.some(keyword =>
-        jam.keywords.split(', ').includes(keyword)
-      ) &&
-      selectedCategories != ''
-    ) {
-      return false
-    }
+    return results
+  }
 
-    if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
-      return false
-    }
+  const batches =
+    query.trim() == '' // if query is blank
+      ? props.jamsContent.batches // hasnt started search yet, return all
+      : searchLunr(query, props.jamsContent.batches).filter(batch => {
+          // otherwise use lunr and then filter additionally
+          // additional false conditions:
+          if (
+            !selectedCategories.some(keyword =>
+              batch.keywords.split(', ').includes(keyword)
+            ) &&
+            selectedCategories != ''
+          ) {
+            return false
+          }
 
-    if (jam.timeEstimate != time && time != '') {
-      return false
-    }
+          if (
+            batch.difficulty.toLowerCase() != difficulty &&
+            difficulty != ''
+          ) {
+            return false
+          }
 
-    if (query.trim() == '') {
-      // hasnt started search yet
-      return true
-    }
+          if (batch.timeEstimate != time && time != '') {
+            return false
+          }
 
-    var jamValues = [
-      jam.title,
-      jam.description,
-      jam.contributor,
-      jam.keywords,
-      jam.slug
-    ] // indicates each value that exists in the jam dict
-    // we want to search by title, description, contributor, keywords, and slug
+          return true
+        })
 
-    for (var key in jamValues) {
-      var value = jamValues[key]
-      if (
-        levenshtein.get(value.toLowerCase(), query.toLowerCase(), {
-          useCollator: true
-        }) <=
-        (value.length + query.length) / precision
-      ) {
-        return true
-      }
-    }
+  const jams =
+    query.trim() == '' // if query is blank
+      ? props.jamsContent.singles // hasnt started search yet, return all
+      : searchLunr(query, props.jamsContent.singles).filter(jam => {
+          // otherwise use lunr and then filter additionally
+          // additional false conditions:
+          if (jam.keywords.split(', ').includes('Beta')) {
+            return false
+          }
+          if (
+            !selectedCategories.some(keyword =>
+              jam.keywords.split(', ').includes(keyword)
+            ) &&
+            selectedCategories != ''
+          ) {
+            return false
+          }
 
-    return false
-  })
+          if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
+            return false
+          }
+
+          if (jam.timeEstimate != time && time != '') {
+            return false
+          }
+
+          return true
+        })
+
   const desiredSlugs = ['ai-travel', 'online-store', 'voxel-animation']
   const features = props.jamsContent.singles.filter(jam =>
     desiredSlugs.includes(jam.slug)
