@@ -19,40 +19,42 @@ slug: 'hacker-card'
 
 # Make your own PCB Hacker Card
 
-PCBs are in nearly all electronics, from phones to cars! It's super easy to make your own, and make them not just functional, but also fun. In this jam, you'll design your own business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard. With these skills, you'll be able to tackle even more complex boards, such as a custom macropad or fidget toy.
+Printed Circuit Boards - PCBs -  are in nearly all electronics, from phones to cars! It's super easy to make your own, and make them not just functional, but also you can get creative with how they look. 
+
+In this jam, you'll design your own business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with [Hack Club's OnBoard grant](https://hackclub.com/onboard). With these skills, you'll be able to tackle even more complex boards, such as a custom macropad or fidget toy.
 
 ## Schematic
 
-The first step is creating a schematic for your PCB design. A schematic shows the components that will be used in the circuit, as well as how each of these components connect to each other. An important thing to note -- a schematic is only a diagram of what connects to what, not where the components are actually placed on the board.
+The first step is creating a schematic for your PCB design. A schematic shows the components that will be used in the circuit, as well as how each of these components connect to each other. An important thing to note -- a schematic is only a diagram of what connects to what, not where the components are actually placed on the board, so don't worry about placement at this stage!
 
-For our card, we'll be using
+For our card, we'll want a capacitor, a resistor, a 2V LED and a NFC chip. Specifically, we'll be using the components listed below:
 
-- A [NT3H2111W0FHKH](https://jlcpcb.com/partdetail/NxpSemicon-NT3H2111W0FHKH/C710403) NFC Chip: this will be the main component of our card -- it handles the NFC functionality as well as harvesting energy from the phone to light up the LED
+- A [NT3H2111W0FHKH](https://jlcpcb.com/partdetail/NxpSemicon-NT3H2111W0FHKH/C710403) NFC Chip: this will be the main component of our card -- it both handles the NFC functionality as well as harvests energy from the phone to light up the LED
 - An ~2V LED. I'm using [C2296](https://jlcpcb.com/partdetail/Hubei_KentoElec-17_21SUYCTR8/C2296), but feel free to pick a different color (note: this part may also be called 17-21SUYC/TR8)
 - A [47Ω resistor](https://jlcpcb.com/partdetail/23909-0603WAF470JT5E/C23182)
 - A [220nF capacitor](https://jlcpcb.com/partdetail/21832-CL10B224KA8NNNC/C21120)
 
 First, let's open up [EasyEDA](https://easyeda.com). This is a browser based PCB designer, so all you need is an account. 
 
-When you go to the website, you should see a screen like this. Click `Sign Up` to create an account. (If you already have an account, you can skip this step.)
+When you go to the website, you should see a screen like this. Click `Sign Up` to create an account, if you don't already have one.
 
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
 
-You'd want to click on the `EasyEDA Designer` button in the Navbar to open up the schematic editor. 
+Click on the `EasyEDA Designer` button in the Navbar to open up the schematic editor. 
 
 Once you've logged in, select `File` > `New` > `Project` to create a new project.
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
 
 This will open up the schematic editor. Some important parts:
 
-- `Library` on the left toolbar: This is where we will search for components and import them.
+- `Library` on the left toolbar: This is where we will search for components and place them into our schematic.
 - `Wiring Tools` panel: We'll be using the wire tool to connect the components together.
 
 ![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/3schematic.png)
 
-## Adding components to the schematic
+## Placing components into the schematic
 
-Click the `Library` button to open the parts picker. Search for a part (the part number works best), and make sure `JLCPCB Assembled` is selected. This will make sure we're choosing parts from JLCPCB's parts library, so that JLCPCB can assemble the boards when we order them.
+Click the `Library` button to open the parts picker. Search for a part (the part number works best), and make sure `JLCPCB Assembled` is selected. This will make sure we're choosing parts from JLCPCB's parts library, as this is currently Hack Club's Onboard PCB manufacturer. 
 
 ![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/4searching-for-parts.png)
 
@@ -60,7 +62,7 @@ Select the part, then hit the `Place` button to add it to your schematic. Repeat
 
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/9parts-on-schematic.png)
 
-> Note: The EasyEDA parts library may not be the most helpful when finding parts for your own projects, so feel free to search the internet for parts that you want to use and their codes. You can also create your own parts, but that's a bit more advanced.
+> Note: The EasyEDA parts library may not always be helpful when finding parts for your own future projects, so feel free to search the internet for parts and their codes. You can also create your own parts, but that's a bit more advanced.
 
 ### Adding the antenna
 
@@ -76,7 +78,7 @@ To add the antenna, search for `25X48MM_NFC_ANTENNA` in the Library, and instead
 
 Now that all of our components are placed, let's connect them together! Make sure to save your work (command-s or control-s) as you go along.
 
-We'll use the `Wire` tool to indicate an electrical connection between the different parts -- this is similar to how you would connect wires on a breadboard. On the actual PCB, copper traces will go where we added wires, to form those electrical connections.
+The `Wire` tool indicates an electrical connection between the different parts -- this is similar to how you would connect wires on a breadboard. On the actual PCB, copper traces will go where we added wires, to form those electrical connections.
 
 We'll reference the NFC Chip's Datasheet (yes, that obscure, horrifyingly detailed document), specifically [this explanation](https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf#page=38) for creating an energy harvesting circuit.
 
@@ -96,7 +98,7 @@ So we'll connect the capacitor between `VOUT` and GND (the `VSS` pin).
 
 - Finally, to complete the circuit and light up the LED, we'll connect the LED and resistor between `VOUT` and GND (the `VSS` pin).
 
-Your schematic should look something like this when completed!
+Your schematic should look something like this when completed:
 
 > Note that your schematic may look a bit different from mine -- that's okay! As long as the connections are the same, it should work. So feel free to experiment with different layouts, maybe keep the antenna on the right or change the position of LEDs and resistors? It's up to you!
 
@@ -106,7 +108,7 @@ Your schematic should look something like this when completed!
 
 # Designing the PCB
 
-Now that the schematic is complete, we can start designing the PCB. In this step, we'll place the components onto the board, in the exact shape and configuration that the final board will be. The schematic will help guide us in connecting the components together.
+Now that the schematic is complete, we can start designing the actual PCB. In this step, we'll place the components onto the board, in the exact shape and configuration that the final board will be. The schematic is our guide to how to connect the components together.
 
 ## Converting the schematic to a PCB
 
