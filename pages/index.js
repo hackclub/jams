@@ -16,6 +16,7 @@ import PreviewCard from '@/components/PreviewCard'
 import { useEffect, useState, useRef } from 'react'
 import Icon from '@hackclub/icons'
 import { useRouter } from 'next/router'
+import lunr from 'lunr'
 
 import path from 'path'
 import matter from 'gray-matter'
@@ -433,105 +434,105 @@ export default function Index(props) {
 
   const router = useRouter()
 
-  const precision = 3.5 // 3.5 is a VERY ARBITRARY value that can be adjusted later, indicates precision for lev to check with
-  // the greater the number, the more precision is required
-  var levenshtein = require('fast-levenshtein')
+  const precision = 1 // indicates lunr precision
 
-  const batches = props.jamsContent.batches.filter(batch => {
-    if (
-      !selectedCategories.some(keyword =>
-        batch.keywords.split(', ').includes(keyword)
-      ) &&
-      selectedCategories != ''
-    ) {
-      return false
-    }
+  function searchLunr(query, list) {
+    var searchAlgorithmLunr = lunr(function () {
+      this.field('title')
+      this.field('description')
+      this.field('body')
+      this.field('contributor')
+      this.field('keywords')
+      this.field('slug')
 
-    if (batch.difficulty.toLowerCase() != difficulty && difficulty != '') {
-      return false
-    }
+      for (let jindex in list) {
+        let jam = list[jindex]
+        this.add({
+          title: jam.title,
+          description: jam.description,
+          body: jam.body,
+          contributor: jam.contributor,
+          keywords: jam.keywords,
+          slug: jam.slug,
+          object: jam,
+          id: jindex
+        })
+      }
+    })
 
-    if (batch.timeEstimate != time && time != '') {
-      return false
-    }
+    let bestList = searchAlgorithmLunr.search(query.toString())
 
-    if (query.trim() == '') {
-      // hasnt started search yet
-      return true
-    }
+    console.log(bestList)
 
-    var batchValues = [
-      batch.title,
-      batch.description,
-      batch.contributor,
-      batch.keywords,
-      batch.slug
-    ] // indicates each value that exists in the jam dict
-    // we want to search by title, description, contributor, keywords, and slug
+    let results = []
 
-    for (var key in batchValues) {
-      var value = batchValues[key]
-      if (
-        levenshtein.get(value.toLowerCase(), query.toLowerCase(), {
-          useCollator: true
-        }) <=
-        (value.length + query.length) / precision
-      ) {
-        return true
+    for (let returnedquery in bestList) {
+      if (bestList[returnedquery]['score'] >= precision) {
+        results.push(list[bestList[returnedquery]['ref']])
       }
     }
 
-    return false
-  })
-  const jams = props.jamsContent.singles.filter(jam => {
-    if (jam.keywords.split(', ').includes('Beta')) {
-      return false
-    }
-    if (
-      !selectedCategories.some(keyword =>
-        jam.keywords.split(', ').includes(keyword)
-      ) &&
-      selectedCategories != ''
-    ) {
-      return false
-    }
+    return results
+  }
 
-    if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
-      return false
-    }
+  const batches =
+    query.trim() == '' // if query is blank
+      ? props.jamsContent.batches // hasnt started search yet, return all
+      : searchLunr(query, props.jamsContent.batches).filter(batch => {
+          // otherwise use lunr and then filter additionally
+          // additional false conditions:
+          if (
+            !selectedCategories.some(keyword =>
+              batch.keywords.split(', ').includes(keyword)
+            ) &&
+            selectedCategories != ''
+          ) {
+            return false
+          }
 
-    if (jam.timeEstimate != time && time != '') {
-      return false
-    }
+          if (
+            batch.difficulty.toLowerCase() != difficulty &&
+            difficulty != ''
+          ) {
+            return false
+          }
 
-    if (query.trim() == '') {
-      // hasnt started search yet
-      return true
-    }
+          if (batch.timeEstimate != time && time != '') {
+            return false
+          }
 
-    var jamValues = [
-      jam.title,
-      jam.description,
-      jam.contributor,
-      jam.keywords,
-      jam.slug
-    ] // indicates each value that exists in the jam dict
-    // we want to search by title, description, contributor, keywords, and slug
+          return true
+        })
 
-    for (var key in jamValues) {
-      var value = jamValues[key]
-      if (
-        levenshtein.get(value.toLowerCase(), query.toLowerCase(), {
-          useCollator: true
-        }) <=
-        (value.length + query.length) / precision
-      ) {
-        return true
-      }
-    }
+  const jams =
+    query.trim() == '' // if query is blank
+      ? props.jamsContent.singles // hasnt started search yet, return all
+      : searchLunr(query, props.jamsContent.singles).filter(jam => {
+          // otherwise use lunr and then filter additionally
+          // additional false conditions:
+          if (jam.keywords.split(', ').includes('Beta')) {
+            return false
+          }
+          if (
+            !selectedCategories.some(keyword =>
+              jam.keywords.split(', ').includes(keyword)
+            ) &&
+            selectedCategories != ''
+          ) {
+            return false
+          }
 
-    return false
-  })
+          if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
+            return false
+          }
+
+          if (jam.timeEstimate != time && time != '') {
+            return false
+          }
+
+          return true
+        })
+
   const desiredSlugs = ['ai-travel', 'online-store', 'voxel-animation']
   const features = props.jamsContent.singles.filter(jam =>
     desiredSlugs.includes(jam.slug)
