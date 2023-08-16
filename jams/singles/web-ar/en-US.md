@@ -1,7 +1,7 @@
 ---
 title: 'Mastering the Matrix: Crafting Your Own Web-based AR App'
 description: >
-  In this guide outlines how to create a virtual reality scene using A-Frame, a web framework for building VR experiences. It discusses a component-based architecture to manage complexity and improve reusability.
+  This guide outlines how to create a virtual reality scene using A-Frame, a web framework for building VR experiences. It discusses a component-based architecture to manage complexity and improve reusability.
 contributor: 'DevIos01'
 thumbnail: 'https://cloud-m1akzju4c-hack-club-bot.vercel.app/0thumbnail-jam.png'
 timeEstimate: '60 Min'
@@ -26,7 +26,7 @@ In this workshop, we'll not only dive into the futuristic world of Augmented Rea
 
 ## Prerequisites
 
-You should have a basic understanding of HTML, CSS, and JavaScript. You know what they say, if you can say "Hello, World!" in these languages, you're ready to conquer the AR world.
+You should have a basic understanding of HTML, CSS, and JavaScript. If you can say "Hello, World!" in these languages, you're ready to conquer the AR world.
 
 ![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/6image__1_.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/6image__1_.gif)
 
@@ -64,7 +64,7 @@ You should have a basic understanding of HTML, CSS, and JavaScript. You know wha
 - Click on a filename to open it in the editor.
 - Right-click a file for more options like rename, move, delete, and more.
 
-**Right sidebar:** Debug console, shows output of your executed scripts.
+**Right sidebar:** Debug console, shows the output of your executed scripts.
 
 - Use the "Clear" button to clear the console.
 
@@ -111,13 +111,13 @@ Picture this - you're a wizard, and you're about to cast your first spell. You r
 
 ![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/2image__3_.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/2image__3_.gif)
 
-We're essentially incorporating these 'spells' into our web page to breathe interactivity into it. Without them, our web page would be a static set. But with JS (our magic ink), we make the elements come alive, move, disappear, change colours, and much more!
+We're essentially incorporating these 'spells' into our web page to breathe interactivity into it. Without them, our web page would be a static set. But with JS (our magic ink), we make the elements come alive, move, disappear, change colors, and much more!
 
 Now, we've prepared our magical stage. It's invisible for now, but we're just getting started. Hold onto your wizard hats as we dive deeper into the mystical world of AR!
 
 ### 2. Unveiling the AR Scene
 
-Now that we've prepared our magical spell book, it's time to set our stage for the grand performance! Imagine you're a magician, and you want to conjure a magical creature for your audience. In our digital magic show, that creature is a 3D duck.🦆✨
+Now that we've prepared our magical spell book, it's time to set the stage for the grand performance! Imagine you're a magician, and you want to conjure a magical creature for your audience. In our digital magic show, that creature is a 3D duck.🦆✨
 
 **The Magical Treasure Chest**
 

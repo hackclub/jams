@@ -25,7 +25,7 @@ slug: 'online-store'
 
 
 <Dropdown title="psst">
-here's an example of what a finished product might look like! however, your project is going to be completely unique. the feel and flow of your project should be very different ;)
+Here's an example of what a finished product might look like! however, your project is going to be completely unique. The feel and flow of your project should be very different ;)
 </Dropdown>
 ---
 
@@ -34,7 +34,7 @@ here's an example of what a finished product might look like! however, your proj
 
 ---
 
-This is **Part 1** of a two-part workshop in creating your very own store on the web! You'll design everything from the products you'll sell to the colors and feel of the website. At the end, you'll get a chance to pitch your design to the workshop hosts and compete for the title of <font color="#7CFC00">Best Designer</font>!
+This is **Part 1** of a two-part workshop on creating your very own store on the web! You'll design everything from the products you'll sell to the colors and feel of the website. At the end, you'll get a chance to pitch your design to the workshop hosts and compete for the title of <font color="#7CFC00">Best Designer</font>!
 
 If your website looks like something you would make, you did a great job 🎉
 Otherwise, go back and brainstorm ways to make your project ✨ unique ✨
@@ -48,8 +48,8 @@ There are **6** important steps in this Jam! Feel free to backtrack and referenc
 #### Outline:
 
 1. **Embark on your journey.** (create your first Figma file)
-2. **Open your inventory**. (learn about the tools in your hot-bar & Figma structure)
-3. **Make your first painting.** (create the landing page to your store)
+2. **Open your inventory**. (learn about the tools in your hot bar & Figma structure)
+3. **Make your first painting.** (create the landing page for your store)
 4. **SO MANY DUPLICATES.** (simplify repetitive elements with components)
 5. **Make it ✨ Magical ✨** (connect your pages with interactions)
 6. **Your next adventure awaits...** (next steps)
@@ -64,7 +64,7 @@ Packed your things? Let's rock this.
 
 ### Create an Account
 
-Head over to [Figma.com](https://www.figma.com/) and create an account! Afterwards, complete the onboarding portion of registration. Select the **Free** plan, and choose to "**Design with Figma**" first.
+Head over to [figma.com](https://www.figma.com/) and create an account! Afterwards, complete the onboarding portion of registration. Select the **Free** plan, and choose "**Design with Figma**" first.
 
 You should be instantly booted into a new design file!
 
@@ -83,11 +83,11 @@ You're all set now! ≧(´▽｀)≦
 
 ## Open your inventory ⚒️
 
-<Dropdown title="a weirdly shaped creature takes off its hood">
+<Dropdown title="A weirdly shaped creature takes off its hood">
 Hey there. I'm Orpheus, your humble guide to Figma!
 
 We're about to go over a lot of info, so don't worry if you forget some of it.
-I suggest you read through this section and then use it as a cheat-sheet if you ever get stuck!
+I suggest you read through this section and then use it as a cheat sheet if you ever get stuck!
 </Dropdown>
 
 It _speaks_:
@@ -100,7 +100,7 @@ Okay! So, let's go over the structure of the Figma editor.
 
 ### Left Sidebar
 
-Here, you'll keep track the current objects in your design (text, shapes, images), and be able to access assets & pages (we'll go over this later).
+Here, you'll keep track of the current objects in your design (text, shapes, images), and be able to access assets & pages (we'll go over this later).
 
 ![Toolbar](https://cloud-i2t8xhz0p-hack-club-bot.vercel.app/0pasted_image_20230716011117.png)
 
@@ -112,7 +112,7 @@ Situated at the top of your screen, this contains every tool you need to start d
 
 ### Right Sidebar
 
-This section opens properties of the currently selected layer or tool. You can edit attributes such as font size, stroke, etc. and prototype!
+This section opens the properties of the currently selected layer or tool. You can edit attributes such as font size, stroke, etc., and prototype!
 
 ---
 
@@ -140,7 +140,7 @@ Layers are the building blocks in any Figma Design. They can be anything from im
 
 Let's have a quick rundown of the tools we'll be using in our design.
 
-Your workshop host should have given you a cheat-sheet for Figma's tools; this is your chance to read through it!
+Your workshop host should have given you a cheat sheet for Figma's tools; this is your chance to read through it!
 
 You can view the digital copy [here](https://cloud-brvsdgazn-hack-club-bot.vercel.app/0figma_tools.pdf)
 
@@ -174,7 +174,7 @@ Can you believe it? You've created your first layer in Figma. 🎉
 >
 > ~ the cow charm ~
 
-Inside your frame, we'll create a _text object_! Once the tool is selected, click anywhere in your frame to create a text box. You may type whatever you'd like in here.
+Inside your frame, we'll create a _text object_! Once the tool is selected, click anywhere in your frame to create a text box. You may type whatever you'd like here.
 
 wait a minute...
 ![Text is too small naurr](https://cloud-6gf9bcrd6-hack-club-bot.vercel.app/0pasted_image_20230716031051.png)
@@ -192,9 +192,9 @@ We can also select it using the **Move Tool (V)** and edit the font size in the 
 </Dropdown>
 </Dropdown>
 
-Let's try adding stars to our page. We can do this by selecting the **Star Tool** and placing them as we want. If a sharp grey star isn't what I want, I can choose the _Fill Color_ and the _Corner Radius_ in the layer's properties after selecting it. In fact, I can also change the amount of angles and the size of each angle of the star. If you ever want to edit some property of an object, you always check the right sidebar!
+Let's try adding stars to our page. We can do this by selecting the **Star Tool** and placing them as we want. If a sharp grey star isn't what I want, I can choose the _Fill Color_ and the _Corner Radius_ in the layer's properties after selecting it. In fact, I can also change the number of angles and the size of each angle of the star. If you ever want to edit some property of an object, you always check the right sidebar!
 
-> Might there be some property to smite.
+> Might there be some property to smite?
 > Veer your eyes to the right.
 
 #### Quiz Time!
@@ -210,7 +210,7 @@ I want the background to resemble a dark sky with a bright moon, so I'll set it 
 
 ![Gradient](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/1pasted_image_20230718011436.png)
 
-It's time to create the ✨ charm ✨! I'll make an Circle with the **Ellipse Tool** and import the images I want to use for the design.
+It's time to create the ✨ charm ✨! I'll make a Circle with the **Ellipse Tool** and import the images I want to use for the design.
 
 ![First charm](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/2pasted_image_20230718011702.png)
 
@@ -245,7 +245,7 @@ These are Figma's boolean operators!! 😍😍
 You have four options:
 
 1. Union selection.
-   - Merges two layers together. If the objects overlap, then the shape's outline consists of the it's sublayers not including segments that overlap.
+   - Merges two layers together. If the objects overlap, then the shape's outline consists of it's sublayers, not including segments that overlap.
    - Think of it as a bitwise OR operator — `A | B`
 2. Subtract selection.
    - Removes a layer's intersection (and itself!) from another layer. This is the opposite of a union.
@@ -305,7 +305,7 @@ Try creating the Navbar by yourself :)
 
 ---
 
-Looks like you've got the hang of it! Remember to look back at the tool cheat-sheet from earlier and start to build out your store.
+Looks like you've got the hang of it! Remember to look back at the tool cheat sheet from earlier and start to build out your store.
 
 Here are the pages you should build out **right now**:
 
@@ -322,11 +322,11 @@ Good luck hacker! We'll see you on the other side.
 
 ## SO MANY DUPLICATES 😱
 
-While you were designing your pages, you may have realized how many reused components are in each page. So, if you wanted to add an extra button or link, you had to go through every single page and edit it.
+While you were designing your pages, you may have realized how many reused components are on each page. So, if you wanted to add an extra button or link, you had to go through every single page and edit it.
 
 Fear not, Figma has a wonderful tool called: **Assets**!
 
-These are layers that reference another layer instead of having its own value. If your familiar with pointers and references, these are basically the same thing.
+These are layers that reference another layer instead of having its own value. If you are familiar with pointers and references, these are basically the same thing.
 
 ### Layer
 
@@ -342,7 +342,7 @@ Now, we'll copy over the elements that we want to turn into components.
 
 ![Copied Elements](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/0pasted_image_20230717003414.png)
 
-Now, select the entire asset, right click, and select "**Create Component**"
+Now, select the entire asset, right-click, and select "**Create Component**"
 
 ![Create Component](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/1pasted_image_20230717003457.png)
 
@@ -358,11 +358,11 @@ You did it hacker!
 
 ## Make it ✨ Magical ✨
 
-Well we have our pages, but it doesn't feel right. What's missing?
+Well, we have our pages, but it doesn't feel right. What's missing?
 
 Right. It just feels like we're scrolling through images. Let's make this an actual prototype.
 
-You might have noticed a **Prototype** tab in the right sidebar; this tab helps us make interactions from clicking different areas of the page.
+You might have noticed a **Prototype** tab in the right sidebar; this tab helps us make interactions by clicking different areas of the page.
 
 For example, if we click an element on our **About** page, we'll get options to create an interaction.
 
@@ -384,9 +384,9 @@ For example, I set the transition between the home and about page to "**Smart An
 
 ---
 
-Once your finished, click the present icon on the top right corner (looks like a play button) and enjoy the show! Make sure you're on the final prototype page and not the assets page!
+Once you're finished, click the present icon on the top right corner (looks like a play button) and enjoy the show! Make sure you're on the final prototype page and not the assets page!
 
-Splendid! Here's are my interactions in my example design:
+Splendid! Here are my interactions in my example design:
 ![Final prototype](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/7pasted_image_20230717005112.png)
 
 Hopefully, your design looks totally unique and different!
@@ -400,7 +400,7 @@ There's a really awesome tool in your toolbar that I haven't mentioned.
 
 The **Plugins** tab :00
 
-It's a community run store with a lot of amazing pre-made components/tools to help with your Figma design.
+It's a community-run store with a lot of amazing pre-made components/tools to help with your Figma design.
 
 Feel free to browse through and find something awesome for your design. One that I thought was really cool is called "_MeshFlow Gradients_".
 

@@ -36,7 +36,7 @@ So without further ado, let's get started!
 
 2. Play around with the UI and controls!
 ![Getting started - Step 2](https://cloud-cmkhxafch-hack-club-bot.vercel.app/0gettingstarted-2.png)
-**Toolbar:** add shapes, select/view modes, and edit tools.
+**Toolbar:** Add shapes, select/view modes, and edit tools.
 - Press “+” for more tools and objects to add to the scene.
 - Press “▷” to access Play mode.  
 **Left sidebar:** objects and layers in the scene.  
@@ -244,7 +244,7 @@ Add rounding and color to them as well. Try using a Depth material for a gradien
 > Let’s add a green glow effect coming from the trees!
 
 <Comment githubUser="linkai101">
-Materials can consist of multiple layers! See how the **Depth** layer adds a green glow to the house illuminating from the tree.
+Materials can consist of multiple layers! See how the **Depth** layer adds a green glow to the house illuminating the tree.
 </Comment>
 
 Select (left-click) the body of the house. In Material:
@@ -266,7 +266,7 @@ Drag the origin of the layer to the tree and adjust the end position.
 ![Creating your island - Step 7](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/1creatingisland-7.gif)
 </GridItem>
 <GridItem>
-> Let’s build a stone path towards the door!
+> Let’s build a stone path toward the door!
 
 In the toolbar, select the `Vector` tool. Draw the vertices to form a stone step. Adjust settings:
 - Corner: 8
@@ -315,7 +315,7 @@ Note: Spline's free tier currently only has 2 additional editor seats. (file own
 
 ## What's next 🔮
 3D modeling literally has limitless possibilities. Here are a few:
-- Visualize and manipulate 3D models on in HTML with [three.js](https://threejs.org/)
+- Visualize and manipulate 3D models in HTML with [three.js](https://threejs.org/)
 - 3D printing and inventing
 - Use them in Unity, Unreal Engine, or other 3D game development applications
 - Augmented/visual reality (AR/VR)
@@ -340,4 +340,4 @@ Keep in mind that some export options are only available to the paid tiers. 😐
 Deploy your 3D models into the metaverse! Learn how to make a web-based AR app in which you can display and manipulate your 3D models from Spline.
 
 **[Crafting Weapons, Shields, and Armor in TinkerCAD](/batch/3d-armory)**  
-TinkerCAD is a great web-based beginner CAD software. Computer aided design (CAD) is often used for designing 3D models for engineering purposes!
+TinkerCAD is a great web-based beginner CAD software. Computer-aided design (CAD) is often used for designing 3D models for engineering purposes!
