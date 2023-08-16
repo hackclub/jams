@@ -324,6 +324,7 @@ function Slides({ router, initialFeatures }) {
             <button
               style={{
                 position: 'absolute',
+                cursor: 'pointer',
                 left: 0,
                 top: '50%',
                 transform: 'translate(-50%, -50%)',
@@ -354,6 +355,7 @@ function Slides({ router, initialFeatures }) {
             <button
               style={{
                 position: 'absolute',
+                cursor: 'pointer',
                 right: 0,
                 top: '50%',
                 transform: 'translate(50%, -50%)',
@@ -423,6 +425,7 @@ export default function Index(props) {
   const [query, setQuery] = useState('')
   const [difficulty, setDifficulty] = useState('')
   const [time, setTime] = useState('')
+  const [viewed, setViewed] = useState([])
 
   const [filter, setFilter] = useState('')
   const [language, setLanguage] = useState('')
@@ -542,9 +545,14 @@ export default function Index(props) {
 
   const [scrollPosition, setScrollPosition] = useState(0)
   useEffect(() => {
-    const onScroll = () => {
-      setScrollPosition(window.pageYOffset)
-    }
+    if (localStorage.getItem('viewed'))
+      setViewed(
+        JSON.parse(localStorage.getItem('viewed')).map(jam => ({
+          ...jam,
+          keywords: jam.keywords.split(', ')
+        }))
+      )
+    const onScroll = () => setScrollPosition(window.pageYOffset)
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -1121,22 +1129,43 @@ export default function Index(props) {
           columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
           gap={3}
           sx={{ pt: 3, pb: '4rem', mt: '1rem' }}>
-          {[...jams, ...batches].map((jam, idx) => (
-            <PreviewCard
-              style={{ cursor: 'pointer' }}
-              key={idx + jam.title}
-              light={true}
-              {...jam}
-              redirect={(jam?.isBatch ? '/batch/' : '/jam/') + jam.slug}
-              isSortable={true}
-              currentDifficulty={difficulty}
-              currentTime={time}
-              currentCategories={selectedCategories}
-              modifyDifficulty={setDifficulty}
-              modifyTime={setTime}
-              modifyCategories={setSelectedCategories}
-            />
-          ))}
+          {[...jams, ...batches]
+            .sort((a, b) => {
+              // Determine which one is closer to the user's viewed jams
+              if (!viewed.length) return 0 // Don't sort if no jams have been viewed
+              const close = (jam, viewed) => {
+                let match = 0
+                let keywords = jam.keywords.split(', ')
+                viewed.map((viewedJam, i) => {
+                  if (viewedJam.difficulty === jam.difficulty) match++
+                  if (viewedJam.language === jam.language) match++
+                  if (viewedJam.timeEstimate === jam.timeEstimate) match++
+                  if (viewedJam.title !== jam.title)
+                    viewedJam.keywords.map((kw, i) => {
+                      if (keywords.includes(kw)) match += i
+                    })
+                })
+                return match
+              }
+              if (close(a, viewed) > close(b, viewed)) return -1 // a is closer to viewed jams than b is
+              return 1
+            })
+            .map((jam, idx) => (
+              <PreviewCard
+                style={{ cursor: 'pointer' }}
+                key={idx + jam.title}
+                light={true}
+                {...jam}
+                redirect={(jam?.isBatch ? '/batch/' : '/jam/') + jam.slug}
+                isSortable={true}
+                currentDifficulty={difficulty}
+                currentTime={time}
+                currentCategories={selectedCategories}
+                modifyDifficulty={setDifficulty}
+                modifyTime={setTime}
+                modifyCategories={setSelectedCategories}
+              />
+            ))}
         </Grid>
       </Container>
       <Footer />

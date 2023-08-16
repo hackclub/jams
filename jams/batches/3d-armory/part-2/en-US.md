@@ -8,7 +8,7 @@ contributor: 'thesuperRL'
 thumbnail: 'https://cloud-ft14x3slq-hack-club-bot.vercel.app/1image.png'
 timeEstimate: '30 Min'  
 difficulty: 'Beginner'
-keywords: '3D, Sword, CAD, 3D Design, Model, TinkerCAD, 3D Printing'  
+keywords: 'Sword, CAD, 3D Design, Model, TinkerCAD, 3D Printing, 3D, 3d'  
 language: 'N/A'
 presentation: "https://www.figma.com/file/tjUONBV4t7nCGpdYqXHfe0/Forge-of-Legends-Part-2-Presentation?type=design&node-id=0%3A1&mode=design&t=Rj7r7AQCUkpHkSFB-1" 
 presentationPlay: "https://www.figma.com/proto/tjUONBV4t7nCGpdYqXHfe0/Forge-of-Legends-Part-2-Presentation?type=design&node-id=2-14&t=PAhbnoBq1Sn0zbae-0&scaling=contain&page-id=0%3A1" 

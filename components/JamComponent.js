@@ -53,7 +53,6 @@ export default function JamComponent({ jam, jamsContent }) {
           throw new Error('Network response was not ok')
         }
         const data = await response.json()
-        console.log('Fetched data:', data)
         setFinishedProjects(data.filter(project => project.jam == jam.slug))
       } catch (error) {
         console.error('Error fetching data:', error)
@@ -84,6 +83,37 @@ export default function JamComponent({ jam, jamsContent }) {
   }
 
   useEffect(() => {
+    // User visits jam page - store title in localStorage
+    let viewed = localStorage.getItem('viewed')
+    if (!viewed) {
+      localStorage.setItem(
+        'viewed',
+        JSON.stringify([
+          {
+            title: jam.title,
+            date: Date.now(),
+            difficulty: jam.difficulty,
+            keywords: jam.keywords,
+            language: jam.language,
+            timeEstimate: jam.timeEstimate
+          }
+        ])
+      )
+    } else {
+      viewed = JSON.parse(viewed)
+      if (!viewed.find(viewedJam => viewedJam.title === jam.title)) {
+        viewed.push({
+          title: jam.title,
+          date: Date.now(),
+          difficulty: jam.difficulty,
+          keywords: jam.keywords,
+          language: jam.language,
+          timeEstimate: jam.timeEstimate
+        })
+        localStorage.setItem('viewed', JSON.stringify(viewed))
+      }
+    }
+
     const handleScroll = () => {
       let newActiveSection = null
       let passedSections = []
@@ -522,7 +552,13 @@ export default function JamComponent({ jam, jamsContent }) {
           </Link>
 
           <Box sx={{ pt: 16 }}>
-            Finished Projects <br />
+            {finishedProjects.length > 0 ? (
+              <div>
+                Finished Projects <br />
+              </div>
+            ) : (
+              <div></div>
+            )}
             {finishedProjects.map(project => (
               <a href={project.url}>
                 {/* {project.title.includes("Figma") && "F "}

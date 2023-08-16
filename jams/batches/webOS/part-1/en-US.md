@@ -15,7 +15,7 @@ keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
 presentation: 'https://www.figma.com/file/GKrLB0EfGWDcErrbrO1Wre/webOSPart1?type=design&node-id=0%3A1&mode=design&t=0HHMIeSDMmAzH864-1'
 presentationPlay: 'https://www.figma.com/proto/GKrLB0EfGWDcErrbrO1Wre/webOSPart1?page-id=0%3A1&type=design&node-id=1-14&viewport=-22828%2C193%2C0.29&t=Zv6vemAJ3hYlLn6Q-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
-presentationPDF: 'https://cloud-1kxf64v4t-hack-club-bot.vercel.app/0webospart1.pdf'
+presentationPDF: 'https://cloud-esbedol6s-hack-club-bot.vercel.app/20webospart1-min.pdf'
 notes: ''
 poster: ''
 video: ''
@@ -26,7 +26,7 @@ totalParts: 5
 [Live Demo ](https://step8.thomasstubblef2.repl.co/) & 
 [Sample Code](https://replit.com/@ThomasStubblef2/Step8#index.html)  
 
-  *(p.s. this is a sample of what your OS might look like at the end of the entire batch, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all. Yours will also have a totally different set of apps by the end of the batch.)*
+  *(P.S. This is a sample of what your OS might look like at the end of the entire batch, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all. Yours will also have a totally different set of apps by the end of the batch.)*
 
 The Operating System (OS) will be entirely web-based (using HTML, CSS, and JS). An Operating System is the interface & set of logic you use to interact with applications. You'll be the designer and developer of your OS (so you'll have complete creative freedom). You'll decide the content, style, features, etc. If your website looks totally different from mine by the end of the batch jam, then you've done the Jam well. If it looks the same, go back to the drawing board. Your Personal Operating System will be a website you can share with people (friends, club members, people you meet at hackathons, etc) to allow them to easily get a sense of who you are and the type of things you like to do.
 
@@ -50,7 +50,7 @@ Hey there Hacker! Let's get you setup
 Head over to the [Replit Website](https://replit.com/languages/html) and create an account
 
 <Dropdown title="What is Replit?">
-Replit is a web-based independent development environment (IDE). Basically Replit allows you to write code in your browser and instantly deploy your site to the entire world. I suppose you could say its *magical*. 
+Replit is a web-based independent development environment (IDE). Basically, Replit allows you to write code in your browser and instantly deploy your site to the entire world. I suppose you could say it's *magical*. 
 </Dropdown>
 
 
@@ -64,7 +64,7 @@ All the code is the same regardless of the code editor you use.😉
 
 
 ### 2. Create a new Repl/Project
-Welcome to your Replit Dashboard! Once inside, tap create a Repl and then select **HTML, CSS, and Javascript** as your template. 
+Welcome to your Replit Dashboard! Once inside, tap Create a Repl and then select **HTML, CSS, and Javascript** as your template. 
 
 Replit will kindly start you off with some boilerplate code (starter code). 
 
@@ -74,7 +74,7 @@ Replit will kindly start you off with some boilerplate code (starter code).
 ## Build with Elements
 
 ### What are elements?
-Every site you've ever visited has elements. Elements are the building blocks that come together to create websites. For example, this block of text is an element. The gif you'll see below is also an element. Even the container that holds the text you are reading is an element. Try right clicking this site and tapping Inspect, you'll see a bunch of elements. HTML is the file format for these elements.
+Every site you've ever visited has elements. Elements are the building blocks that come together to create websites. For example, this block of text is an element. The gif you'll see below is also an element. Even the container that holds the text you are reading is an element. Try right-clicking this site and tapping Inspect, you'll see a bunch of elements. HTML is the file format for these elements.
 
 ![Inspect Screen](https://cloud-8ywcul7zm-hack-club-bot.vercel.app/0inspect.gif)
 
@@ -88,7 +88,7 @@ Elements consist of an opening tag, the content in the middle, and a closing tag
 
 ### Where can I place them?
 
-Let's begin by deleting all the starter code that replit gave you.
+Let's begin by deleting all the starter code that Replit gave you.
 
 ![delete starter code](https://cloud-884himjr3-hack-club-bot.vercel.app/0nameswitch.gif)
 
@@ -98,16 +98,16 @@ Orpheus the Dinosaur *(don't ask who [Orpheus](https://workshops.hackclub.com/or
 <!DOCTYPE html>
 <html>
 
-	<body>
+  <body>
   
-	</body>
+  </body>
 
 </html>
 ```
 
 The body of your site is contained inside of an opening tag (`<body>`) and a closing tag (`</body>`). The content of your site goes inside the body.  **Inside your body is where you'll place your elements.**
 
-It's sort of like how cream cheese goes inside of a bagel. A bagel has a top and bottom and all of the tasty cream cheese in the middle.
+It's sort of like how cream cheese goes inside a bagel. A bagel has a top and bottom and all of the tasty cream cheese in the middle.
 
 Let's fill your body tag sandwich with some tasty content! 🥯
 
@@ -140,8 +140,8 @@ Awesome. We can also make smaller headings. `h1` is the largest heading, but you
 </body>
 ```
 
-Text is neat, but let's add an image:
-First we need to drag an image into Replit file manager.
+The text is neat, but let's add an image:
+First, we need to drag an image into the Replit file manager.
 
 ![Drag & Drop](https://cloud-id4r1tr7g-hack-club-bot.vercel.app/0drag_drop.gif)
 
@@ -154,7 +154,7 @@ First we need to drag an image into Replit file manager.
 </body>
 ```
 
-You can also do a direct link to the image (has .png, .jpeg, etc at the end of the url), so for example here's code for placing an image of a Capybara 
+You can also do a direct link to the image (as .png, .jpeg, etc at the end of the URL), so for example here's code for placing an image of a Capybara 
 
 `<img src="./imageOfMe.png" />`
 
@@ -165,7 +165,7 @@ The image tag has a property of `src` which stands for source. You can pass in t
 ### Let's link to another page
 HTML (HyperText Markup Language) was built for scientists to be able to share research documents (& is now used on every website on the internet). If you know anything about scientists, then you know they LOVE to reference other pages. 
 
-For this reason, HTML makes it easy for you to hyper-link to other pages.
+For this reason, HTML makes it easy for you to hyperlink to other pages.
 
 ```
 <body>
@@ -174,14 +174,14 @@ For this reason, HTML makes it easy for you to hyper-link to other pages.
 </body>
 ```
 
-Replace label with the label of the button (so for example [Instagram](https://www.instagram.com/starthackclub/)) and link with the url (like https://www.instagram.com/starthackclub/).
+Replace the label with the label of the button (so for example [Instagram](https://www.instagram.com/starthackclub/)) and link with the URL (like https://www.instagram.com/starthackclub/).
 
-You can use this to link to a personal social media, a GitHub, a random website about your favorite creature, or just not make an a tag at the moment. It's totally up to you. 
+You can use this to link to a personal social media, a GitHub, a random website about your favorite creature, or just not make a tag at the moment. It's totally up to you. 
 
 ## Personalize Your Content
-Soo... surprise, you didn't realize but you just started your onboarding screen for you operating system.
+Soo... surprise, you didn't realize but you just started your onboarding screen for your operating system.
 
-**Go ahead and fill it up with your own content.** 
+**Go ahead and fill it up with your content.** 
 
 Don't know what to add? Perhaps try:
 * Linking to your favorite playlist
@@ -216,13 +216,13 @@ Your content most likely looks rather bland and uninteresting which leads us int
 ### What's a style?
 A style is a property-value pair that changes the way an element looks.
 
-Styles can exist within an html file when written in-line, but can also be in a separate file (styles.css). For now, we're going to write the styles inside of our HTML file (inside of opening tags)
+Styles can exist within an HTML file when written in-line, but can also be in a separate file (styles.css). For now, we're going to write the styles inside of our HTML file (inside of opening tags)
 
 To apply a style, it's as simple as:
 `<tag style="property: value"> content </tag>`
 
 **Every style has a property and a value.** 
-For example a style may be color with the value of red (to turn the text red)
+For example, a style may be color with the value of red (to turn the text red)
 
 ### Styling Color 🎨
 To change the color text you would simply write
@@ -231,7 +231,7 @@ To change the color text you would simply write
 You can also add a background color: 
 ```
 <body style="background-color: #c9ffcf">
-	// your content//
+  // your content//
 </body>
 ```
 
@@ -253,7 +253,7 @@ Simply go to the image and apply a style property that sets the width and height
 
 I chose to make the width and height 64px, but you don't have to! Pick your own size, play with it, and have fun!
 
-*Note: Semicolons are used to separate css properties*
+*Note: Semicolons are used to separate CSS properties*
 
 ##### *\*Crunch*\*
 Your image might be a bit crunched up. Try to Google how to fix this (maybe even ask GPT). Even a very basic search term such as What is the CSS Property for making an image not crunch, would probably work.
@@ -269,9 +269,9 @@ Your image might be a bit crunched up. Try to Google how to fix this (maybe even
 Optionally, you can round your corners. Try googling this! (maybe you can even turn your image into a circle shape if you'd like)
 
 <Dropdown title="Solution">
-You probably found a nifty little CSS property called border radius. 
+You probably found a nifty little CSS property called border-radius. 
 simply write style="border-radius: 16px; object-fit: cover" on your image tag.
-Note: Semicolons are used to separate css properties
+Note: Semicolons are used to separate CSS properties
 </Dropdown>
 
 
@@ -286,7 +286,7 @@ Once you pick out your favorite font(s), go to the body and put a style property
 
 `<body style="font-family: Helvetica, Noto Sans, sans-serif">`
 
-*Note: If you want cooler fonts, checkout [Google Fonts](https://fonts.google.com/) and [this document for learning how to integrate a google font into your project](https://developers.google.com/fonts/docs/getting_started).*  *You'll need to put a link inside `head` tags (which includes content that is not visible on the site, but that the browser uses to configure the site)*
+*Note: If you want cooler fonts, checkout [Google Fonts](https://fonts.google.com/) and [this document for learning how to integrate a Google font into your project](https://developers.google.com/fonts/docs/getting_started).*  *You'll need to put a link inside `head` tags (which includes content that is not visible on the site, but that the browser uses to configure the site)*
 
 *Additional Note: not all computers have access to the same fonts, so if a computer does not have access to a font, it will go to the next one in the list. For this reason, I suggest putting selecting your favorite three fonts and putting them in order from most-liked to least-liked.*
 
@@ -295,7 +295,7 @@ Once you pick out your favorite font(s), go to the body and put a style property
 ### Styling Space ✨
 Space is created by a combination of Margin (not margarine, MARGIN) and padding (fluff).
 
-Margin is your space between your picture frames on your wall. 
+Margin is the space between your picture frames on your wall. 
 
 Padding is the gap between the photo and the frame. If you had a box with an item in the middle, the space between the object in the center and the walls of the box is padding. 
 
@@ -328,7 +328,7 @@ If you wanted to add some space within your heading, you could add padding, so p
 
 Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
 
-This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style in the moment of writing the Jam.
+This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style at the moment of writing the Jam.
 ![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
 
 
@@ -339,11 +339,11 @@ Alright, lovely! Here's my finished site for this episode of the batch. I hope y
 
 ![Finished Site](https://cloud-423oznftn-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.27.35_pm.png)
 
-*Note: You'll notice I added some unique looking tags inside the paragraph text, YOU CAN DO THAT TOO BY CHECKING OUT THE SOMEWHAT OPTIONAL ADDITIONAL CHALLENGE BELOW.*
+*Note: You'll notice I added some unique-looking tags inside the paragraph text, YOU CAN DO THAT TOO BY CHECKING OUT THE SOMEWHAT OPTIONAL ADDITIONAL CHALLENGE BELOW.*
 
 
 ## Next time on building your own PersonalOS...
-In the next episode we will build the foundation of our OS by:
+In the next episode, we will build the foundation of our OS by:
 * Adding a wallpaper
 * Creating Your Window
 * Creating the top bar

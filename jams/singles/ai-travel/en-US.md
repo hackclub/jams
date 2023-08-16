@@ -7,7 +7,7 @@ contributorSlackID: 'U029D5FG8EN'
 thumbnail: 'https://cloud-7kw4nqs0s-hack-club-bot.vercel.app/0image.png'  
 timeEstimate: '60 Min'  
 difficulty: 'Intermediate'  
-keywords: 'AI, API, chatgpt, openai, ai, ai api, trip itinerary, itinerary planner ai, planner ai, website, javascript, HTML, CSS, replit'  
+keywords: 'replit, API, trip itinerary, itinerary planner ai, planner ai, website, javascript, HTML, CSS, AI, chatgpt, openai, ai, ai api'  
 language: 'HTML, JS'  
 presentation: 'https://www.figma.com/file/eT0znn6hYdESlhCSfmmwBG/Untitled?type=design&node-id=1%3A2&mode=design&t=6KWZTxjPBdL20osY-1'  
 presentationPlay: 'https://www.figma.com/proto/eT0znn6hYdESlhCSfmmwBG/Untitled?type=design&node-id=1-2&t=jECJDbIDCUZQwKjc-1&scaling=contain&page-id=0%3A1&mode=design'  
@@ -19,9 +19,9 @@ slug: 'ai-travel'
 AITokenLink: "https://hackclub.slack.com/archives/C05L8BSDJJ3"
 ---
 
-As a club, it's time to have a 5 day club retreat! Y'all can go on vacation anywhere, but the question is, where?
+As a club, it's time to have a 5-day club retreat! Y'all can go on vacation anywhere, but the question is, where?
 
-Take some time as a club to brainstorm the greatest place to take a vacation. Maybe it could be San Francisco, Los Angeles, New York City? Whatever it is, take a minute to think of what this vacation would look like and what you all would do.
+Take some time as a club to brainstorm the greatest place to take a vacation. Maybe it could be San Francisco, Los Angeles, or New York City. Whatever it is, take a minute to think of what this vacation would look like and what you all would do.
 
 However, you might have run into a problem: you can't think of things to do! For example, in San Francisco, you might think of going to the Golden Gate Bridge, but what else?
 
@@ -40,7 +40,7 @@ Try it out [here](https://replit.com/@ShubhamPatilsd/AI-Trip-Itinerary)!
 8. Go on your next trip
 
 ## Humble beginnings
-So, you decide to get started! You log onto your laptop then realize that your school has disabled downloading _anything_ to your computer.
+So, you decide to get started! You log onto your laptop and then realize that your school has disabled downloading _anything_ to your computer.
 
 You take two deep breaths and realize that you can just use Replit to do this.
 
@@ -64,7 +64,7 @@ For our code to know the details of our club trip, we need to have some way to i
 </Dropdown>
 
 ### Inputting trip location
-While there are many places we can visit in this world, the club must only select one. To do that, we have to add an `<input/>` element of type `text` to your HTML code and give it an easy to remember `name`:
+While there are many places we can visit in this world, the club must only select one. To do that, we have to add an `<input/>` element of type `text` to your HTML code and give it an easy-to-remember `name`:
 ```html
 <input type="text" name="location" />
 ```
@@ -93,7 +93,7 @@ At this stage, you should have something like this:
 Hey, sometimes we need more customization for our trips. We can do this by adding more `<input/>` elements that serve different purposes!
 
 <Dropdown title="Here are some ideas for more inputs:">
-1. Specifiying the types of activities (e.g. outdoors, museums, food only)
+1. Specifying the types of activities (e.g. outdoors, museums, food only)
 2. Specifying the budget that your club has for this trip
 3. Having one club member plan meals and have another club member plan activities
 </Dropdown>
@@ -117,7 +117,7 @@ API Textbook Definition:
 
 Our Cool And Easy to Digest™ Definition:
 > A · P · I <br/>
-> **An API is the way our code can talk to someone else's code.** Sounds weird right? In this case OpenAI has their ChatGPT code running in some server somewhere, and our app needs to use ChatGPT. Many people like us also want to use ChatGPT in our code, so OpenAI created something called the "ChatGPT API" so we can use ChatGPT's code in our app.
+> **An API is the way our code can talk to someone else's code.** Sounds weird right? In this case, OpenAI has their ChatGPT code running in some server somewhere, and our app needs to use ChatGPT. Many people like us also want to use ChatGPT in our code, so OpenAI created something called the "ChatGPT API" so we can use ChatGPT's code in our app.
 
 
 <Dropdown
@@ -154,11 +154,11 @@ We can select which type of request we want to send from our client!
 ### Communicating with the ChatGPT API
 The ChatGPT API that we're using (`https://api.openai.com/v1/chat/completions`) requires a `POST` request.
 
-<Dropdown title="But hey! POST is for creating data right? Shouldn't we use GET instead, because we're asking data from the API?">
+<Dropdown title="But hey! POST is for creating data right? Shouldn't we use GET instead, because we're asking for data from the API?">
 
-Well, the truth is that API developers set the request type arbitrarily. There's no hard rule whether to set your API endpoint to use `GET`, `POST`, `PUT`, or `DELETE`, it's completely up to the person making that API.
+Well, the truth is that API developers set the request type arbitrarily. There's no hard rule on whether to set your API endpoint to use `GET`, `POST`, `PUT`, or `DELETE`, it's completely up to the person making that API.
 
-And since the person making that API wants to build it quickly, they choose the easiest/best option to use, in this case it is a `POST` request.
+And since the person making that API wants to build it quickly, they choose the easiest/best option to use, in this case, it is a `POST` request.
 </Dropdown>
 
 <Dropdown
@@ -181,8 +181,6 @@ Here's the request body that we use to communicate with the ChatGPT API:
         {
           'role': 'user',
           'content': `What US state is Shelburne in?`
-
-
         }
     ],
 }
@@ -192,8 +190,8 @@ Let's break this down:
 - `model` is selecting which "brain" ChatGPT uses. Some brains are specialized in things other than text, such as image processing or writing code, but we want to use the one that's the smartest and has an overarching view of the world: `gpt-3.5-turbo`. This is the model that the ChatGPT website uses, so it's always a good choice.
 - `messages` is an array of the JSON objects (the messages) that you want to sent to this "brain" of ChatGPT. The main use of having this array is to add previous responses in order to ask ChatGPT follow-up questions (e.g. "What US state is Shelburne in?", "What country is that state in?")
 - The structure of a message:
-	- `role` is the person who is saying the message. In this case, since we are the sending the message, we will assume the role of `user`
-	- `content` is the actual message that you want to send to ChatGPT (*psst: This is what you type in on the ChatGPT website*)
+  - `role` is the person who is saying the message. In this case, since we are sending the message, we will assume the role of `user`
+  - `content` is the actual message that you want to send to ChatGPT (*psst: This is what you type in on the ChatGPT website*)
 
 ## Let's get back to coding!
 ![we've got an app to code meme](https://i.imgflip.com/7t49qs.jpg)
@@ -242,7 +240,7 @@ You know how all of our current input elements have a `type` attached to them? W
 <Dropdown
 title={`Think with your club, how could we create a button that says "Submit"?`}
 >
-  So here is how that would look like:
+  So here is what that would look like:
   ```html
    <input type="submit" value="Submit" />
   ```
@@ -278,7 +276,7 @@ We can add this to the opening form tag like so:
 <form onsubmit="">
 ```
 
-Ideally this form should be able to pass the values of our `<input/>` parameters to our JavaScript code, so we can set the `onsubmit` property to the name of our function in the `script.js` file. In my case, it would look like this:
+Ideally, this form should be able to pass the values of our `<input/>` parameters to our JavaScript code, so we can set the `onsubmit` property to the name of our function in the `script.js` file. In my case, it would look like this:
 
 ```html
 <form onsubmit="getItinerary()"
@@ -307,7 +305,7 @@ Hmm, it seems like the browser is refreshing without even running the code!
 We could sit here for hours trying to think of our solutions, but how about we save some time and Google it! 
 </Dropdown>
 
-After a little seaching, I found [this](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault). Maybe it could help us?
+After a little searching, I found [this](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault). Maybe it could help us?
 
 The form's default action is to just refresh the page, but we need to prevent that (since we need it to run our JavaScript code).
 
@@ -326,8 +324,8 @@ function getItinerary(event) {...}
 Then, we can run `event.preventDefault()` to prevent the form from just refreshing the page:
 ```js
 function getItinerary(event) {
-	event.preventDefault()
-	console.log("Hello there")
+  event.preventDefault()
+  console.log("Hello there")
 }
 ```
 
@@ -369,7 +367,7 @@ function getItinerary(event) {
 
 **Also remember to add any additional input elements that you made at the start!**
 
-Run your code, type in your location and dates, click submit and check in the console! This is what I got:
+Run your code, type in your location and dates, click submit, and check in the console! This is what I got:
 ![result with everything printed](https://cloud-giko7ueoa-hack-club-bot.vercel.app/0image.png)
 
 ## Interacting with the ChatGPT API
@@ -403,7 +401,7 @@ Sure!
 - `headers` is meant for authentication data such as an API key. It basically allows us to put information so that the API can verify if we are allowed to access an endpoint! This is not always required, but the ChatGPT API requires us to add this information.
 - `body` is the body of the request (the stuff that we put inside it)
 
-**Let's add this skeleton into our code**
+**Let's add this skeleton to our code**
 Copy paste that and put it underneath all the `console.log` statements that we had. 
 
 > Don't mind the red squiggly lines/errors that come up, we'll resolve those! 
@@ -472,7 +470,7 @@ fetch('https://api.openai.com/v1/chat/completions', {
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer OPENAI_API_KEY'
-	},
+  },
     //NOT needed with GET request
     body: JSON.stringify({
      ...
@@ -491,8 +489,6 @@ Here's what we're starting with:
         {
           'role': 'user',
           'content': `What US state is Shelburne in?`
-
-
         }
     ],
 }
@@ -530,7 +526,7 @@ If you need some inspiration here is what my prompt looks like:
 }
 ```
 
-Here, we're asking a response in `JSON` format so that we can parse it later on. In this array of `JSON` objects, it will have the date, title, start time, and end time of each event in our trip itinerary. It will give us about 3-4 events per day, which will be great for our users!
+Here, we're asking for a response in `JSON` format so that we can parse it later on. In this array of `JSON` objects, it will have the date, title, start time, and end time of each event in our trip itinerary. It will give us about 3-4 events per day, which will be great for our users!
 
 Notice how we are asking ChatGPT to return certain values in our JSON. Think about what else we could ask it to return.
 
@@ -591,7 +587,7 @@ fetch('...',{
 ...    
 ).then(result => result.json()) //convert to JSON
  .then(eventsResponse =>{
-	 console.log(eventsResponse)
+   console.log(eventsResponse)
  })
 ```
 
@@ -626,8 +622,8 @@ fetch('...',{
 ...    
 ).then(result => result.json()) //convert to JSON
  .then(eventsResponse =>{
-	 console.log(eventsResponse)
-	 console.log(eventsResponse.choices[0].message.content)
+   console.log(eventsResponse)
+   console.log(eventsResponse.choices[0].message.content)
  })
 ```
 
@@ -639,9 +635,9 @@ fetch('...',{
 ...    
 ).then(result => result.json()) //convert to JSON
  .then(eventsResponse =>{
-	const events = JSON.parse(eventsResponse.choices[0].message.content)
+  const events = JSON.parse(eventsResponse.choices[0].message.content)
 
-	console.log(events)
+  console.log(events)
  })
 ```
 Now, the variable `events` is a JavaScript object, and we can access the data that it has!
@@ -689,9 +685,9 @@ If we `console.log(events)`, it should look something like this:
 ```
 
 ## Adding itinerary events to the page
-This has been going great so far! We're so close, we just need to add a couple things.
+This has been going great so far! We're so close, we just need to add a couple of things.
 
-Now we need to show the itinerary on the main page. We can do this is by adding a new HTML "card" for each event in the itinerary.
+Now we need to show the itinerary on the main page. We can do this by adding a new HTML "card" for each event in the itinerary.
 
 Go to `index.html` again and add a `<div>` element with any `id`. This is how our JavaScript code identifies which element to add the itinerary to.
 
@@ -708,9 +704,9 @@ fetch('...',{
 ...    
 ).then(result => result.json()) //convert to JSON
  .then(eventsResponse =>{
-	const events = JSON.parse(eventsResponse.choices[0].message.content)
+  const events = JSON.parse(eventsResponse.choices[0].message.content)
 
-	console.log(events)
+  console.log(events)
  })
 ```
 
@@ -736,7 +732,7 @@ Now, `event` represents each individual event in the itinerary. Here's an exampl
 Let's edit the loop to give us back some HTML!
 ```js
 for(const event of events){
-	let htmlGenerated = `<div>
+  let htmlGenerated = `<div>
 
       <h3>${event.eventTitle}</h3>
       <p>${new Date(event.date).toLocaleDateString(undefined, { dateStyle: "medium" })}</p>
@@ -763,7 +759,7 @@ It looks scary, I know. Let's break that down:
 
 <Dropdown title="Remember to add anything else we requested from ChatGPT. Here are some ideas we can do with that data:">
 1. With the estimated cost of the trip/each event, express that cost in terms of Starbucks frappucinos (for example, a $20 ticket to a museum would be 4-5 Starbucks fraps)
-2. Convert the distance from each itinerary event and express it in terms of Subway sandwitches
+2. Convert the distance from each itinerary event and express it in terms of Subway sandwiches
 3. Express the time needed to drive between destinations in terms of dog days (i.e. it would take 1 dog day to drive between Vermont and New Hampshire) 
 </Dropdown>
 
@@ -781,9 +777,9 @@ fetch('...',{
 ...    
 ).then(result => result.json()) //convert to JSON
  .then(eventsResponse =>{
-	const events = JSON.parse(eventsResponse.choices[0].message.content)
-	for(const event of events){
-		let htmlGenerated = `<div>
+  const events = JSON.parse(eventsResponse.choices[0].message.content)
+  for(const event of events){
+    let htmlGenerated = `<div>
 
       <h3>${event.eventTitle}</h3>
       <p>${new Date(event.date).toLocaleDateString(undefined, {dateStyle: "medium" })}</p>
@@ -791,18 +787,18 @@ fetch('...',{
       <p>${event.startTime} - ${event.endTime}</p>
 
       </div>`
-	}
+  }
  })
 ```
 
 Now, `htmlGenerated` needs to be added to the website.
 
-1. Let's move the `htmlGenerated` declaration to outside the `for` loop like so:
+1. Let's move the `htmlGenerated` declaration outside the `for` loop like so:
 ```js
 let htmlGenerated=""
 
 for(const events of events){
-	...
+  ...
 }
 ```
 2. Then, tack on each generated string to this `htmlGenerated variable` like so:
@@ -810,8 +806,8 @@ for(const events of events){
 let htmlGenerated=""
 
 for(const events of events){
-	//add it on
-	htmlGenerated += `<div>
+  //add it on
+  htmlGenerated += `<div>
 
       <h3>${event.eventTitle}</h3>
       <p>${new Date(event.date).toLocaleDateString(undefined, {dateStyle: "medium" })}</p>
@@ -839,7 +835,7 @@ Let's break this down:
 This would mimic writing HTML like this, for example:
 ```html
 <div id="eventlist">
-	<div> <h3>Cable Car Ride</h3> <p>Jul 19, 2023</p> <p>3:30 PM - 5:30 PM</p> </div>
+  <div> <h3>Cable Car Ride</h3> <p>Jul 19, 2023</p> <p>3:30 PM - 5:30 PM</p> </div>
 </div>
 ```
 
@@ -920,7 +916,7 @@ And this is my `index.html` file:
 
 ## Done! 🎉
 
-Now, if you run this code, type in some inputs, you should get a trip itinerary beautifully displayed on your screen!
+Now, if you run this code, and type in some inputs, you should get a trip itinerary beautifully displayed on your screen!
 
 **Result:**
 ![result](https://cloud-r7dc1z25v-hack-club-bot.vercel.app/0image.png)
@@ -938,4 +934,7 @@ And now we have our club trip planned! You might be wondering what we should do 
 Maybe we can add some functionality to only go to Starbucks or only go to boba shops on the trip? Maybe we can make it look a bit nicer! The possibilities are endless.
 
 ![you're a wizard](https://media.tenor.com/IoIn9W74-lcAAAAC/youre-a-wizard-hagrid.gif)
-We hope that you've built this and came out with more knowledge about ChatGPT! Now you're truly an AI wizard 😎
+
+We hope that you've built this and came out with more knowledge about ChatGPT! 
+
+Now you're truly an AI wizard 😎

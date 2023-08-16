@@ -8,7 +8,7 @@ contributor: 'sahitid'
 thumbnail: 'https://cloud-pn240umd6-hack-club-bot.vercel.app/0thumbnail_3.png'
 timeEstimate: '45 Min'  
 difficulty: 'Beginner'
-keywords: 'AI, ML, Machine Learning, Artificial Intelligence'  
+keywords: 'Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'  
 language: 'JavaScript, HTML'
 presentation: "" # TODO
 presentationPlay: "" # TODO

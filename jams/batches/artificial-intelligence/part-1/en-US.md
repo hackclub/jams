@@ -8,7 +8,7 @@ contributor: 'sahitid'
 thumbnail: 'https://cloud-aatku17lm-hack-club-bot.vercel.app/0thumbnail_1.png'
 timeEstimate: '45 Min'  
 difficulty: 'Beginner'
-keywords: 'AI, ML, Machine Learning, Artificial Intelligence'  
+keywords: 'Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'  
 language: 'JavaScript, HTML'
 presentation: "" # TODO
 presentationPlay: "" # TODO
@@ -172,7 +172,7 @@ If you're having difficulty using the site try https://firewalledreplit.com/ or 
 
 Welcome to your Replit Dashboard. Once inside, tap "+ Creat a Repl" and then select the HTML, CSS, and JavaScript template.  
 
-![Replit Signup][https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif]
+![Replit Signup](https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif)
 
 You should now have three files. Rename them to be: index.html, script.js, and style.css respectively.
 
@@ -195,8 +195,7 @@ Yay! We've just created the following two constants:
 Now we are going to create one big function that all the other functions + our teachable machine code will sit inside. It's an event handler that runs once the window is finished loading to ensure that the code inside only runs after all the HTML content has been loaded:
 ```js
 window.onload = () => {
-	let recognizer;
-
+  let recognizer;
 }
 ```
 
@@ -212,7 +211,6 @@ Now we're going to create a `createModel()` function that's responsible for load
 
 ```js
 async function createModel() {
-
   const checkpointURL = URL + 'model.json'
   const metadataURL = URL + 'metadata.json'
 
@@ -223,9 +221,7 @@ async function createModel() {
     metadataURL
   )
 
-
   await recognizer.ensureModelLoaded()
-
   return recognizer
 }
 ```
@@ -237,9 +233,7 @@ And next, we can create the `init()` function for initializing the speech recogn
 ```js
 async function init() {
   recognizer = await createModel()
-  
-  )}
-
+}
 ```
 
 The `listen()` function will reside in the `init()` function and takes two arguments. The first argument is a callback function that is invoked when a word is recognized. In this case, it checks the score of the recognized word at index 1 (index 1 corresponds to the trigger word in the Teachable Machine model) and compares it with the `THRESHOLD` value. If the score is higher than the threshold, it logs "Hey" to the console.
@@ -268,7 +262,6 @@ recognizer.listen(
       invokeCallbackOnNoiseAndUnknown: true,
       overlapFactor: 0.5
     }
-    
 )}
 ```
 *(These are just what I put as the options, but feel free to mess around with them! I also suggest that you keep the `overlapFactor` between 0.5 and 0.75 for best accuracy & speed!)*
@@ -340,7 +333,8 @@ Open the index.html file! Replit will give you some template code already, but r
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-  
+    <div>
+      <div>
         <script src="/script.js"></script>
       </div>
     </div>
