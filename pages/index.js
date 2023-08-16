@@ -332,7 +332,6 @@ function Slides({ router, initialFeatures }) {
                 color: '#993CCF',
                 padding: 0,
                 border: 0,
-                cursor: 'pointer',
                 filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
                 pointerEvents: active === i && i > 0 ? 'auto' : 'none',
                 opacity: active === i && i > 0 ? 1 : 0,
@@ -364,7 +363,6 @@ function Slides({ router, initialFeatures }) {
                 color: '#993CCF',
                 padding: 0,
                 border: 0,
-                cursor: 'pointer',
                 filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
                 pointerEvents:
                   active === i && i < cardsRef.current.length - 1
