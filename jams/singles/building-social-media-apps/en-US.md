@@ -28,7 +28,7 @@ Here's a demo of something you could build:
 
 <Dropdown title="Leader notes">
 
-This jam is more suited toward a collaborative environment, so try to divide jammers into teams. One group could focus on designing the app, another could focus on the front-end, and another could focus on the back-end.
+This jam is more suited toward a collaborative environment, so try to divide jammers into teams. One group could focus on designing the app, another could focus on the front end, and another could focus on the back end.
 
 </Dropdown>
 
@@ -102,7 +102,7 @@ Here is what the code snippet looks like and what each line does:
         storageBucket: "jammer-7b6da.appspot.com",
         messagingSenderId: "789182152948",
         appId: "1:789182152948:web:380ac8c7beb26882569ea1",
-    }; // specific details unique to your web app. this lets Firebase know that you want to access your services and not someone else's
+    }; // specific details unique to your web app. This lets Firebase know that you want to access your services and not someone else's
     const app = initializeApp(firebaseConfig); // load the Firebase app
 </script>
 ```
@@ -142,8 +142,7 @@ const auth = getAuth();
 const provider = new GoogleAuthProvider();
 ```
 
-Now, we can add an event listener to the `login` button. Try making it so when the user clicks the button, we call `signInWithPopup`.
-
+Now, we can add an event listener to the `login` button. Try making it so that when the user clicks the button, we call `signInWithPopup`.
 
 <Dropdown title="Solution!">
 
@@ -220,7 +219,7 @@ First, create a form for users to enter their information.
 
 This is just a basic form with 2 inputs and a submit button. Adding IDs to each input allows us to access the values on submit. Adding an ID to the form allows us to add an event listener to it.
 
-To add these fields to the database, we have to import some new packages! First, add the **Firebase code snippet** from before to the `<script>`. Then, import both the **authentication functions from before** and the `getFirestore`, `setDoc`, and `doc` functions from **Firestore** as following.
+To add these fields to the database, we have to import some new packages! First, add the **Firebase code snippet** from before to the `<script>`. Then, import both the **authentication functions from before** and the `getFirestore`, `setDoc`, and `doc` functions from **Firestore** as follows.
 
 ```js
 import {

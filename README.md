@@ -17,7 +17,7 @@ Once you've read the guidelines, you can get started by forking this repository 
 
 <details>
     <summary>How do I fork this repository?</summary>
-<br/>
+
 Click on the "Fork" button in the top right corner of this page and follow the prompts to create your own copy of this repo.
 
 Afterwards, clone your copy:
