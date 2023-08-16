@@ -2,6 +2,7 @@
 title: 'Make your own PCB Hacker Card'
 description: Let's build a business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
 contributor: 'maggie-j-liu'
+contributorSlackID: U026XSMKEDC
 thumbnail: 'https://cloud-1cgzd4n0b-hack-club-bot.vercel.app/0hacker_card_jam_thumbnail.png'
 timeEstimate: '1 Hour'
 difficulty: 'Beginner'
@@ -12,7 +13,7 @@ presentationPlay: 'https://www.figma.com/proto/0ucrvtjExgBSEJ6WkTvegZ/hacker-car
 presentationPDF: 'https://cloud-4gfgew7yj-hack-club-bot.vercel.app/00hacker_card_jam-min.pdf'
 notes: ''
 poster: ''
-video: 'https://www.youtube.com/watch?v=p66vcZnLWYo'
+video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_with_maggie.mp4'
 slug: 'hacker-card'
 ---
 
