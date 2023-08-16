@@ -230,5 +230,3 @@ Here are some examples -- try incorporating these techniques into your board.
 Now that you've got an amazing design, you can actually get your card manufactured and have it in your hands in a few weeks!
 
 Hack Club's [OnBoard grant](https://hackclub.com/onboard/) gives high schoolers $100 to manufacture their own PCB designs, and you can use it to get your own card manufactured.
-
-[TODO: Add more about onboard and link to more projects to try out]
