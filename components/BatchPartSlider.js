@@ -14,8 +14,6 @@ const BatchPartSlider = ({ jam, currentPart, maxParts }) => {
 
   /* When the page gets loaded successfully */
   useEffect(() => {
-    console.log(currentPartInt)
-    console.log(maxParts)
     if (currentPartInt >= 2) {
       setPrevPage(
         '/batch/' + jam.batch + '/part-' + (currentPartInt - 1).toString()
