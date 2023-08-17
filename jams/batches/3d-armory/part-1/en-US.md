@@ -27,7 +27,7 @@ contributorSlackID: "U05E2FK240N"
 
 *(A sample completed sword blade, made with no details so you can customize it all!)*
 
-# **Outline:**
+## **Outline:**
 
 1. **An Introduction to Smithing** *(what is CAD?)*
 2. **Enter The Virtual Forge** *(setting up TinkerCAD in your browser)*

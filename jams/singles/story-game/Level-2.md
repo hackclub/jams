@@ -22,7 +22,7 @@ Before we learn how to incorporate music it is important to know where to *find*
 
 Always remember that when publishing your work make sure the music or even graphics you use are *not* copyrighted because that can give you a headache in the legal department. Instead, try to find *royalty free* music or have a license to use it commercially. 
 
-You can even make your own music! Here are some example options:
+You can even   music! Here are some example options:
 - Create a music generator!
 - Use an existing music software on your device (ex. GarageBand)
 - Make music on MuseScore

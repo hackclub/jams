@@ -38,7 +38,7 @@ I'm also going to stop giving you rigid length measurements, to force you to be 
 
 Remember to use the handout from last time!
 
-# **Outline:**
+##  **Outline:**
 
 1. **Deconstructing the Hilt** *(planning how to model the hilt)*
 2. **Fusing the Pieces** *(finally putting everything together)*
