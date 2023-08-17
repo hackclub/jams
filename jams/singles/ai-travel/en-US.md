@@ -416,6 +416,9 @@ We should replace it with `https://api.openai.com/v1/chat/completions`
 We should replace it with `POST`
 </Dropdown>
 
+
+> 👋 _Psst:_ If you're a club leader, check out [`#open-ai-token`](https://hackclub.slack.com/archives/C05L8BSDJJ3/p1692286725598219) in the [Slack](https://hackclub.com/slack) for an alternative to the OpenAI API!
+
 Let's make some of those changes:
 ```js
 fetch('https://api.openai.com/v1/chat/completions', {
