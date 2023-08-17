@@ -477,8 +477,58 @@ export default function Index(props) {
 
   const batches =
     query.trim() == '' // if query is blank
-      ? props.jamsContent.batches // hasnt started search yet, return all
-      : searchLunr(query, props.jamsContent.batches).filter(batch => {
+      ? props.jamsContent.batches.filter(batch => {
+          
+        if (batch.keywords.split(', ').includes('Beta')) {
+          return false
+        }
+        if (
+          !selectedCategories.some(keyword =>
+            batch.keywords.split(', ').includes(keyword)
+          ) &&
+          selectedCategories != ''
+        ) {
+          return false
+        }
+
+          // otherwise use lunr and then filter additionally
+          // additional false conditions:
+          if (
+            !selectedCategories.some(keyword =>
+              batch.keywords.split(', ').includes(keyword)
+            ) &&
+            selectedCategories != ''
+          ) {
+            return false
+          }
+
+          if (
+            batch.difficulty.toLowerCase() != difficulty &&
+            difficulty != ''
+          ) {
+            return false
+          }
+
+          if (batch.timeEstimate != time && time != '') {
+            return false
+          }
+
+          return true
+        }) // hasnt started search yet, return all
+      : searchLunr(query, props.jamsContent.batches.filter(batch => {
+          
+        if (jam.keywords.split(', ').includes('Beta')) {
+          return false
+        }
+        if (
+          !selectedCategories.some(keyword =>
+            jam.keywords.split(', ').includes(keyword)
+          ) &&
+          selectedCategories != ''
+        ) {
+          return false
+        }
+
           // otherwise use lunr and then filter additionally
           // additional false conditions:
           if (
@@ -503,11 +553,39 @@ export default function Index(props) {
 
           return true
         })
+        
+        
+        )
 
   const jams =
     query.trim() == '' // if query is blank
-      ? props.jamsContent.singles // hasnt started search yet, return all
-      : searchLunr(query, props.jamsContent.singles).filter(jam => {
+      ? props.jamsContent.singles.filter(jam => {
+        // otherwise use lunr and then filter additionally
+        // additional false conditions:
+        if (jam.keywords.split(', ').includes('Beta')) {
+          return false
+        }
+        if (
+          !selectedCategories.some(keyword =>
+            jam.keywords.split(', ').includes(keyword)
+          ) &&
+          selectedCategories != ''
+        ) {
+          return false
+        }
+
+        if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
+          return false
+        }
+
+        if (jam.timeEstimate != time && time != '') {
+          return false
+        }
+
+        return true
+      }) // hasnt started search yet, return all
+      : searchLunr(query, props.jamsContent.singles
+        .filter(jam => {
           // otherwise use lunr and then filter additionally
           // additional false conditions:
           if (jam.keywords.split(', ').includes('Beta')) {
@@ -532,6 +610,7 @@ export default function Index(props) {
 
           return true
         })
+        )
 
   const desiredSlugs = ['ai-travel', 'online-store', 'voxel-animation']
   const features = props.jamsContent.singles.filter(jam =>
