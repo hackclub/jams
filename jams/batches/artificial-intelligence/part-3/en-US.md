@@ -5,6 +5,7 @@ batch: 'artificial-intelligence'
 description: >  
   This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
 contributor: 'sahitid'  
+contributorSlackID: 'U03RU99SGKA'
 thumbnail: 'https://cloud-pn240umd6-hack-club-bot.vercel.app/0thumbnail_3.png'
 timeEstimate: '45 Min'  
 difficulty: 'Beginner'
