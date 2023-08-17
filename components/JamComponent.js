@@ -26,8 +26,18 @@ import Head from 'next/head'
 export default function JamComponent({ jam, jamsContent }) {
   const submitProject = async () => {
     try {
+      let slug = ""
+      if (jam?.slug != undefined) {
+        slug = jam?.slug
+        console.log(slug)
+
+      } else {
+        slug = jam?.batch + jam?.part
+        console.log(slug)
+      } 
+
       const response = await fetch(
-        `https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${jam.slug}/${submissionURL}/${projectName}`
+        `https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${slug}/${submissionURL}/${projectName}`
       )
       if (!response.ok) {
         throw new Error('Network response was not ok')
@@ -53,7 +63,13 @@ export default function JamComponent({ jam, jamsContent }) {
           throw new Error('Network response was not ok')
         }
         const data = await response.json()
+        if (jam?.slug != undefined) {
+
+        
         setFinishedProjects(data.filter(project => project.jam == jam.slug))
+        } else {
+          setFinishedProjects(data.filter(project => project.jam == (jam.batch + jam.part)))
+        }
       } catch (error) {
         console.error('Error fetching data:', error)
       }
@@ -641,7 +657,8 @@ export default function JamComponent({ jam, jamsContent }) {
                 backgroundColor: '#993CCF',
                 width: ['100%', '100%', '50%']
               }}
-              onClick={() => submitProject()}>
+              onClick={() => submitProject()
+              }>
               Share Project with Community
             </Button>
             <p>{apiResponse}</p>
