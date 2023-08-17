@@ -144,7 +144,7 @@ export async function getStaticProps({ params }) {
 export default function Page({ batch, params, jams }) {
   const [query, setQuery] = useState('')
 
-  const precision = 0.5 // arbitrary number to indicate precision of lunr
+  const precision = 0.4 // arbitrary number to indicate precision of lunr
 
   var searchAlgorithmLunr = lunr(function () {
     this.field('title')

@@ -434,7 +434,7 @@ export default function Index(props) {
 
   const router = useRouter()
 
-  const precision = 1 // indicates lunr precision
+  const precision = 0.4 // indicates lunr precision
 
   function searchLunr(query, list) {
     var searchAlgorithmLunr = lunr(function () {
