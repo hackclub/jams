@@ -5,6 +5,7 @@ batch: 'sprig'
 description: >
   Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
+contributorSlackId: 'U02UYFZQ0G0'
 thumbnail: 'https://cloud-mswaasys4-hack-club-bot.vercel.app/0screen_recording_2023-07-13_at_11.12.28.gif'
 timeEstimate: '100-120 Min'
 difficulty: 'Beginner'
@@ -31,7 +32,6 @@ This jam should take two one-hour sessions to complete when run in a club.
   - [Traps](https://sprig-nocode.hackclub.dev/maze_traps)
 - Intermediate
   - [Portals](https://sprig-nocode.hackclub.dev/maze_portals)
-  - [Fragile tiles](https://sprig-nocode.hackclub.dev/maze_fragile_tiles)
   - [Two player](https://sprig-nocode.hackclub.dev/maze_twoplayers)
 - Advanced
   - [Moving obstacles](https://sprig-nocode.hackclub.dev/maze_moving_obstacles)

@@ -5,6 +5,7 @@ batch: 'sprig'
 description: >  
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
+contributorSlackId: 'U02UYFZQ0G0'
 thumbnail: 'https://cloud-ctbvwlpse-hack-club-bot.vercel.app/0sprig.gif'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
@@ -37,7 +38,11 @@ The tutorial includes hidden hints that you can use if you need. Try your best t
 
 [Click here](https://sprig-nocode.hackclub.dev/maze) for a demo of what you could make today.
 
-Important note: If you’re interested in getting a free Sprig game console for a Game submission, you’ll need to make unique gameplay mechanics beyond the scope of this tutorial. (link to rules). We suggest expanding this game to make it more original, or creating a new one once you’ve learned the basics here!
+Important note: If you’re interested in getting a free Sprig game console for a Game submission, you’ll need to make unique gameplay mechanics beyond the scope of this tutorial (click [here](https://github.com/hackclub/sprig/blob/main/docs/GET_A_SPRIG.md) for the criteria to get a console). We suggest expanding this game to make it more original, or creating a new one once you’ve learned the basics here!
+
+## Brainstorming & sketching
+Let's think about how you can make your game unique while following this tutorial! After you take a look at the [demo](https://sprig-nocode.hackclub.dev/maze), take a few minutes with a piece of paper and make some sketches for what your game's characters and objects could look like, what kind of story/theme could be crafted around them, and how you can make your own maze game that is unique to you.
+
 ## Starting the tutorial
 Let's head to [this page](https://sprig.hackclub.com/gallery/maze_game_starter) and get started with the tutorial! It's in the bottom right corner, just like the getting started tutorial was in session 1. Make sure to click the "Remix" button in the top right corner so your code changes will be saved.
 

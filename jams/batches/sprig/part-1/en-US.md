@@ -5,7 +5,8 @@ batch: 'sprig'
 description: >
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
-thumbnail: 'https://sprig.hackclub.com/stories-tiny/sprig-front.jpeg'
+contributorSlackId: 'U02UYFZQ0G0'
+thumbnail: 'https://cloud-injns3luf-hack-club-bot.vercel.app/0untitled.gif'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
