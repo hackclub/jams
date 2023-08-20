@@ -517,12 +517,12 @@ export default function Index(props) {
         }) // hasnt started search yet, return all
       : searchLunr(query, props.jamsContent.batches.filter(batch => {
           
-        if (jam.keywords.split(', ').includes('Beta')) {
+        if (batch.keywords.split(', ').includes('Beta')) {
           return false
         }
         if (
           !selectedCategories.some(keyword =>
-            jam.keywords.split(', ').includes(keyword)
+            batch.keywords.split(', ').includes(keyword)
           ) &&
           selectedCategories != ''
         ) {
