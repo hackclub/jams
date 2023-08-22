@@ -19,7 +19,7 @@ slug: 'hacker-card'
 
 Printed Circuit Boards - PCBs -  are in nearly all electronics, from phones to cars! It's super easy to make your own, and make them not just functional, but also you can get creative with how they look. 
 
-In this jam, you'll design your own business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with [Hack Club's OnBoard grant](https://hackclub.com/onboard). With these skills, you'll be able to tackle even more complex boards, such as a custom macropad or fidget toy.
+In this jam, you'll design your own business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with [Hack Club's $100 OnBoard grant](https://hackclub.com/onboard). With these skills, you'll be able to tackle even more complex boards, such as a custom macropad or fidget toy.
 
 ## Schematic
 
