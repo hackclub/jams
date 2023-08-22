@@ -25,14 +25,9 @@ In this jam, you'll design your own business card -- but with a twist -- it can 
 
 The first step is creating a schematic for your PCB design. A schematic shows the components that will be used in the circuit, as well as how each of these components connect to each other. An important thing to note -- a schematic is only a diagram of what connects to what, not where the components are actually placed on the board, so don't worry about placement at this stage!
 
-For our card, we'll want a capacitor, a resistor, a 2V LED and a NFC chip. Specifically, we'll be using the components listed below:
 
-- A [NT3H2111W0FHKH](https://jlcpcb.com/partdetail/NxpSemicon-NT3H2111W0FHKH/C710403) NFC Chip: this will be the main component of our card -- it both handles the NFC functionality as well as harvests energy from the phone to light up the LED
-- An ~2V LED. I'm using [C2296](https://jlcpcb.com/partdetail/Hubei_KentoElec-17_21SUYCTR8/C2296), but feel free to pick a different color (note: this part may also be called 17-21SUYC/TR8)
-- A [47Ω resistor](https://jlcpcb.com/partdetail/23909-0603WAF470JT5E/C23182)
-- A [220nF capacitor](https://jlcpcb.com/partdetail/21832-CL10B224KA8NNNC/C21120)
-
-First, let's open up [EasyEDA](https://easyeda.com). This is a browser based PCB designer, so all you need is an account. 
+First, let's open up [EasyEDA](https://easyeda.com), which is a browser-based (and free) PCB design tool. 
+It can be a little bit tricky to get used to, so we made a [very short video](https://www.youtube.com/watch?v=_rCso8og2wg).
 
 When you go to the website, you should see a screen like this. Click `Sign Up` to create an account, if you don't already have one.
 
@@ -51,6 +46,13 @@ This will open up the schematic editor. Some important parts:
 ![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/3schematic.png)
 
 ## Placing components into the schematic
+
+For our card, we'll want a capacitor, a resistor, a 2V LED and a NFC chip:
+
+- A [NT3H2111W0FHKH](https://jlcpcb.com/partdetail/NxpSemicon-NT3H2111W0FHKH/C710403) NFC Chip: this will be the main component of our card -- it both handles the NFC functionality as well as harvests energy from the phone to light up the LED
+- An ~2V LED. I'm using [C2296](https://jlcpcb.com/partdetail/Hubei_KentoElec-17_21SUYCTR8/C2296), but feel free to pick a different color (note: this part may also be called 17-21SUYC/TR8)
+- A [47Ω resistor](https://jlcpcb.com/partdetail/23909-0603WAF470JT5E/C23182)
+- A [220nF capacitor](https://jlcpcb.com/partdetail/21832-CL10B224KA8NNNC/C21120)
 
 Click the `Library` button to open the parts picker. Search for a part (the part number works best), and make sure `JLCPCB Assembled` is selected. This will make sure we're choosing parts from JLCPCB's parts library, as this is currently Hack Club's Onboard PCB manufacturer. 
 
