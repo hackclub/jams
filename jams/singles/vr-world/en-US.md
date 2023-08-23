@@ -179,7 +179,8 @@ Another thing that is very important when making a world is, lightning. What if 
 
 There are 3 types of lights that we can use, `ambient`, `directional`, and `point`. Check these 3 examples:
 
-<details><summary>Ambient lights</summary>
+<details>
+<summary>Ambient lights</summary>
 Ambient lights affects all the primitives in the scene, if you chose a dark color then all the elements would look darker, same thing for lighter colors. We can use the `intensity` attribute to change the way this light affects the scene.
 
 ```html
@@ -191,7 +192,8 @@ This is how ambient lights affect the scene and its components:
 ![Ambient light](https://cloud-821gtbu0s.vercel.app/0screen_recording_2020-11-17_at_5.18.31_pm.gif)
 
 </details>
-<details><summary>Directional lights</summary>
+<details>
+<summary>Directional lights</summary>
 Directional lights are like a light source that is infinitely far away, but shining from a specific direction, like the sun. We must specify where the light is pointing to, we do that using the attribute `target`, which points to the position of the child object.
 
 ```html
@@ -205,7 +207,8 @@ You can see here that this type of light acts just like the sun, you can also se
 ![Directional light](https://cloud-g8qe1cxw5.vercel.app/0screen_recording_2020-11-17_at_5.26.33_pm__1_.gif)
 
 </details>
-<details><summary>Point lights</summary>
+<details>
+<summary>Point lights</summary>
 Point lights are like light bulbs; we can position them around the scene, the closer the light bulb gets to an object, the greater the object is lit.
 
 ```html

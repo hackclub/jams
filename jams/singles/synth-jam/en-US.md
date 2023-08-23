@@ -21,7 +21,7 @@ Note to club leaders: This workshop is noisy, so **remind people to bring headph
 
 ## Getting Started
 
-Open up a new HTML project here: <https://repl.it/languages/html>
+Open up a new HTML project here: https://repl.it/languages/html
 
 Delete _everything_. You should be left with a blank `index.html` file and that's it:
 
