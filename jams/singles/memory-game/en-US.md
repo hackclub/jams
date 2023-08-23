@@ -536,9 +536,9 @@ After customizing, do share with me on slack as [@Giridhar](https://hackclub.sla
 
 These are some other projects to inspire you.
 
-- **Memory Game:** Full functionality Memory Game.<br>
+- **Memory Game:** Full functionality Memory Game.<br />
   [Demo](https://full-functional-memory-game.giridharhackclu.repl.co/). [Source Code](https://repl.it/@Giridharhackclu/Full-functional-Memory-Game#index.html).
-- **Memory game using animations:** The cards animate while flipping, making them 3D. Advanced CSS3 is used in this project.<br>
+- **Memory game using animations:** The cards animate while flipping, making them 3D. Advanced CSS3 is used in this project.<br />
   [Demo](https://memory-card.giridharhackclu.repl.co/). [Source Code](https://repl.it/@Giridharhackclu/Memory-Card#script.js).
-- **Two player Memory Game:** This memory card game can be played by two players.<br>
+- **Two player Memory Game:** This memory card game can be played by two players.<br />
   [Demo](https://two-player-memory-game.giridharhackclu.repl.co/). [Source Code](https://repl.it/@Giridharhackclu/Two-Player-Memory-Game#script.js).
