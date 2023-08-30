@@ -69,12 +69,33 @@ APIs are really simple! there's 4 main requests for HTTP request methods:
 
 ![digital restaurant gif](https://cloud-lk53rqdly-hack-club-bot.vercel.app/0bb312c00-400b-4da4-bc6a-6fbd2a91cca4.gif)
 
-| Method | |
-| -------- | -------- |
-| get | retrieve information |  
-| post | send information |
-| put/patch | update information |
-| delete | delete information |
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>Retrieve information</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>Send information</td>
+    </tr>
+    <tr>
+      <td>PUT/PATCH</td>
+      <td>Update information</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>Delete information</td>
+    </tr>
+  </tbody>
+</table>
+
 
 2. Here we are fetching the API and using the post method to send information:
 
