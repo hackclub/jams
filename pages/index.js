@@ -133,7 +133,7 @@ function Slides({ router, initialFeatures }) {
 
     containerRef.current.addEventListener('scroll', handleScroll)
     return () => {
-      containerRef.current.removeEventListener('scroll', handleScroll)
+      containerRef.current?.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
