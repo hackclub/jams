@@ -28,15 +28,15 @@ slug: "voxel-animation"
 [Source Code of Demo](https://replit.com/@GalaxyGamingBoy/HCJam)
 
 **Note for leaders!**
-This jam will include a **gallery** so you can **publish** your members animations in a form of a **playlist**. It will also include an online **tool** for merging **all** of the videos together and adding music, till the website get's released you **must** create the playlist yourself.
+This jam will include a **gallery,** so you can **publish** your members animations in a form of a **playlist**. It will also include an online **tool** for merging **all** the videos together and adding music, till the website gets released you **must** create the playlist yourself.
 
 **Note for learners!**
-Creating your own lofi animation may seem **tidious and hard** at the start but after setting up the renderer everything after is a breeze ( like literaly ).
+Creating your own lofi animation may seem **tedious and hard** at the start but after setting up the renderer everything after is a breeze ( like literally ).
 You will have so much fun! You **can do it!**
 
 **Table Of Contents - Project Outline**:
 
--   Forking the template, replit fundementals
+-   Forking the template, replit fundamentals
 -   Quick explanation of the template
 -   THREE.JS Basics
 -   Adding a camera, sample cubes and cube animation!
@@ -66,7 +66,7 @@ After clicking enter your voxel animation name and click `FORK REPL`.
 Here is a quick GIF of the proccess, if you want to verify! :D
 ![replit-fork-dot-gif](https://cloud-hz6v4e4i3-hack-club-bot.vercel.app/0replit-fork-dot-gif.gif)
 
-Well now congratulations! You are a **master** of forking projects, here is a celebrationary meme for you!
+Well now congratulations! You are a **master** of forking projects, here is a celebratory meme for you!
 <img src="https://cloud-lnspzc1vi-hack-club-bot.vercel.app/0meme_fork.jpg" width="35%"/>
 
 ### Explaining Replit
@@ -109,16 +109,16 @@ Shall we get started with the template?
 ## Quick explanation of the provided template
 
 Phew I hope forking the project wasn't that hard because we got more to do! :D
-Let's start with a quick explaination of what the templatet provides us with:
+Let's start with a quick explanation of what the template provides us with:
 
--   The necessary libraries, such us CCapture or gifworker so we can record the video
+-   The necessary libraries, such us CCapture or gif worker, so we can record the video
 -   The bare necessary html code to get up and running fast and quick
 -   The assets folder where you can add your own assets to use
 -   Loading THREE.JS
 
 ### The `index.html`
 
-Lets quickly dissect the `index.html` so we have a basic understanding.
+Let's quickly dissect the `index.html` so we have a basic understanding.
 **Feel free to skim this session if you have (or even don't have) time constraints!**
 
 ```html
@@ -177,7 +177,7 @@ Here we import the CCapture which is found on the `lib/`
 ></script>
 ```
 
-We add the `Made with REPLIT` badge on the bottom right corner
+Then we add the `Made with REPLIT` badge in the bottom right corner
 
 ```html
 <!-- You script -->
@@ -196,7 +196,7 @@ const statusRec = document.getElementById("rec-status");
 stopRec.disabled = true // This will disabled the stop recording button, since we haven't started a recording
 ```
 
-Here we just get the HTML elements so we can use them.
+Here we just get the HTML elements, so we can use them.
 
 ```js
 // () => {} This is a arrow function
@@ -229,11 +229,11 @@ Now let's get to the **meat of this jam!**
 
 ## THREE.JS Basics
 
-This section will cover the basics of three.js so you can start with the rendering.
+This section will cover the basics of three.js, so you can start with the rendering.
 
 ### Importing it
 
-Yes, its time! This is where we import THREE.JS for rendering. :D
+Yes, it's time! This is where we import THREE.JS for rendering. :D
 If you had previous experience with Javascript you may already know how to import things but for those who don't, here is an explanatory Image.
 ![image](https://cloud-oe00kf8q6-hack-club-bot.vercel.app/0image.png)
 For those who have figured it out by the image congrats!
@@ -265,7 +265,7 @@ document.body.appendChild(renderer.domElement);
 ```
 
 In the first line we initialize the THREE WebGL renderer, it will handle the rendering job.
-In the second line we set the rendering size and we pass the window width and height.
+In the second line we set the rendering size, and we pass the window width and height.
 In the third line we append the renderer, so we can actually see.
 <img src="https://cloud-lnspzc1vi-hack-club-bot.vercel.app/1meme_magic.jpg" width="40%"/>
 
@@ -284,10 +284,10 @@ Now, it's finally time to do the main part! :)
 
 ### Adding a camera
 
-We first need to add a camera so we can render the scene!
+We first need to add a camera, so we can render the scene!
 To create the camera we will also need a scene first, so let's add that!
 
-Copy this line above the render code, in order to intialize a new scene
+Copy this line above the render code, in order to initialize a new scene
 
 ```js
 const scene = new THREE.Scene(); // Init Scene
@@ -333,13 +333,13 @@ const cube = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), cubeMaterial); // We
 
 #### BoxGeometry
 Okay I did that, but what is THREE.BoxGeometry, you might say?  
-Box geometry is the size of the cube, each paramater each paramater is another dimension.
+Box geometry is the size of the cube, each parameter is another dimension.
 i.e. This cube is 1x1x1  
 
 #### Material
 Okay okay, we got that figured out but what exactly does the `MeshBasicMaterial` do?  
 The `MeshBasicMaterial` is the **material** that the object will have.  
-The material will define it's **texture and color**, so it is pretty important to know how to use it!  
+The material will define its **texture and color**, so it is pretty important to know how to use it!  
 
 In three.js **colors** are stored in the **HEX format**, that is that they are made up from 3 different sections.  
 The first 2 decide the **red** value, the other 2 the **green** and the final 2 the **blue**!
@@ -355,11 +355,11 @@ i.e. All wood blocks would use a woodMaterial but glass will use a glass materia
 If you click the run button now tho, you will see that the cube we made isn't visible in the scene! But why is that?
 
 Well that issue occurs because we **initialized** our cube, but not **added it** to the scene.
-You see by intializing something, you just create it in the computers **memory** but not added it to our virtual animation **world** also known as **scene**.
+You see by initalizing something, you just create it in the computers **memory** but not added it to our virtual animation **world** also known as **scene**.
 
 Here is a quick real life analogy, so we can understand it better.
 
-If you think about it a pizza perfectly **resembles** our cube, because we can define it's shape,  the `BoxGeometry` in our cube, and it's toppings, the `MeshBasicMaterial` in our cube.
+If you think about it a pizza perfectly **resembles** our cube, because we can define it' shape,  the `BoxGeometry` in our cube, and it's toppings, the `MeshBasicMaterial` in our cube.
 But if we don't put it in the oven how are we going to bake it!
 
 Just like pizza we must "bake" our cube, to "bake" our cube we need to put it in our virtual oven, the scene!
@@ -376,7 +376,7 @@ Try changing the THREE.BoxGeometry and the color of the material, do you see the
 ### Changing the position and rotation
 
 Now let's try to change the cube position and rotation.
-Each Three object has a position and rotation field, which each of them contains an xyz property.
+Each Three object has a position and rotation field, which each of them contains a xyz property.
 
 After adding the cube to the scene copy this code before the `renderer.render`:
 
@@ -412,7 +412,7 @@ cube.rotation.z = THREE.MathUtils.degToRad(45) // Rotate the Z axis by 45 degree
 ### Animating the cube
 
 The final piece of this section is the actual animation.
-In the function seen below, which has already been implemented for your convienience, thank me later :)
+In the function seen below, which has already been implemented for your convenience, thank me later :)
 
 ```js
 // Animate Scene
@@ -455,7 +455,7 @@ This code changes the cubes x position by 0.1 and then by -0.1. But why is that?
 This might be a boring but necessary explanation, please **bare with me for a bit.**.
 
 Well behind the `tick % 64 > 31` formula is a really smart way to do consistent rotation.  
-Let's start by dissecting the first part, `tick % 64`.  If you think about it, the animation goes on forever, each frame the `tick` variable will be increased by 1. That is great for animations that stop after a while but for continous animations there is a flaw, because we can't check if the tick is less than a value, let's say `32` more than one time.  
+Let's start by dissecting the first part, `tick % 64`.  If you think about it, the animation goes on forever, each frame the `tick` variable will be increased by 1. That is great for animations that stop after a while but for continuous animations there is a flaw, because we can't check if the tick is less than a value, let's say `32` more than one time.  
 
 **But!** with the modulo(`%`) operator we can, since every time we use it with a number, i.e. `64`, the values will **always** be from the range of 0 to 63, no other exceptions. We can use that to our **advantage**, since half of the time (0 to 30) we will be going right and the other half of the time (31 to 63) we will go the other way, cancelling each other out!
 
@@ -575,7 +575,7 @@ Phew it is almost time for your solo adventure.
 
 ### Adding the capturer
 
-Well the first thing we need to do is add the capturer so we can use it. Copy this code just after the imports:
+Well the first thing we need to do is add the capturer, so we can use it. Copy this code just after the imports:
 
 ```js
 var capturer = new CCapture({
@@ -696,14 +696,14 @@ modelLoader.load(
 ```
 
 Well that is it for loading 3D models!
-You should now see it but we have a slight problem, uhhh, it is a bit oversized isn't it, let's fix that.
+You should now see it, but we have a slight problem, uhhh, it is a bit oversized isn't it, let's fix that.
 
 ## Object Lighting and Scaling
 
 ### Scaling
 
-As you saw the model is a bit **too large** to fit in to the scene, so let's change it's scale.
-On the arrow function change you can manipulate it's position, rotation or scale!
+As you saw the model is a bit **too large** to fit in to the scene, so let's change its scale.
+On the arrow function change you can manipulate its position, rotation or scale!
 
 To scale you will use the `.scale.set(x, y, z)` method.
 i.e.
