@@ -17,7 +17,7 @@ video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_
 slug: 'hacker-card'
 ---
 
-> This workshop will take about 60 minutes to design. After that, in a seperate 60 minute session you can order your board for manufacturing using [the OnBoard grant tutorial](https://jams.hackclub.com/jam/order-onboard).
+> This workshop will take about 60 minutes to design. After that, in a seperate 60 minute session you can order your board for manufacturing using [the OnBoard grant tutorial](https://jams.hackclub.com/jam/onboard-grant).
 
 Printed Circuit Boards - PCBs -  are in nearly all electronics, from phones to cars! It's super easy to make your own, and make them not just functional, but also you can get creative with how they look. 
 

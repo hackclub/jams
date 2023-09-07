@@ -1,42 +1,44 @@
 ---
 title: 'Get a PCB Grant'
 description: Let's build a business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
-contributor: 'msw'
-contributorSlackID: U026XSMKEDC
-thumbnail: 'https://cloud-1cgzd4n0b-hack-club-bot.vercel.app/0hacker_card_jam_thumbnail.png'
+contributor: 'MaxWofford'
+contributorSlackID: U0C7B14Q3
+thumbnail: 'https://camo.githubusercontent.com/bd49fe87b1833c2856e8c9da45eb340b159be057e1f7ee317e36e08e8b775003/68747470733a2f2f636c6f75642d62336838316f3064662d6861636b2d636c75622d626f742e76657263656c2e6170702f306f6e626f6172645f6769746875622e706e67'
 timeEstimate: '1 Hour'
 difficulty: 'Beginner'
 keywords: 'Hardware, PCB, EasyEDA, NFC, business card, OnBoard, Beta'
 language: 'EasyEDA'
-# presentation: 'https://www.figma.com/file/0ucrvtjExgBSEJ6WkTvegZ/hacker-card-jam?type=design&mode=design&t=f8tg0SGZ0aMs0SFo-1'
-# presentationPlay: 'https://www.figma.com/proto/0ucrvtjExgBSEJ6WkTvegZ/hacker-card-jam?type=design&node-id=1-4&t=f8tg0SGZ0aMs0SFo-0&scaling=contain&page-id=0%3A1'
-# presentationPDF: 'https://cloud-4gfgew7yj-hack-club-bot.vercel.app/00hacker_card_jam-min.pdf'
+presentation: ''
+presentationPlay: ''
+presentationPDF: ''
 notes: ''
 poster: ''
-# video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_with_maggie.mp4'
+video: ''
 slug: 'onboard-grant'
 ---
 
-It's easier than ever for high school students to get involved with programming; all you need is a computing device and internet access. Yet, it's not the same for hardware. While PCB fabs have greatly increased the accessibility for professionally done boards, there is still no clear way for high school students to jump in. This is where OnBoard comes in.
-
-Every student will receive up to $100 to cover PCB manufacturing costs, and join a community of peers– some more beginner and some more experienced.
-
 In this jam you'll take an existing design you've made and submit it to the OnBoard repo, an open-source collection of other designs, to request your $100 manufacturing grant.
+
+If you don't already have a design, go to [jams.hackclub.com/jam/hacker-card](https://jams.hackclub.com/jam/hacker-card) to make one!
+
+This is a shortened version of the full [submission instructions for the grant](https://github.com/hackclub/onboard#requirements).
+
+![](https://camo.githubusercontent.com/bd49fe87b1833c2856e8c9da45eb340b159be057e1f7ee317e36e08e8b775003/68747470733a2f2f636c6f75642d62336838316f3064662d6861636b2d636c75622d626f742e76657263656c2e6170702f306f6e626f6172645f6769746875622e706e67)
 
 ## Required Materials
 
-- *A PCB design*: If you don't have one you can make one here: https://jams.hackclub.com/jam/hacker-card
-- *A GitHub account*: If you don't have one, create one here: https://github.com/join
-- *60 minutes*: It'll take a bit less time if you have experience with GitHub, but if you're new to it, it'll take a bit longer.
-- *A good time*: This one's on you
+- **A PCB design**: If you don't have one you can make one here: https://jams.hackclub.com/jam/hacker-card
+- **A GitHub account**: If you don't have one, create one here: https://github.com/join
+- **60 minutes**: It'll take a bit less time if you have experience with GitHub, but if you're new to it, it'll take a bit longer. If you don't have enough go to the time store.
+- **A good time**: This one's on you~
 
 ## Star the repo (Optional)
 
-To follow the repo for updates and show you're participating, click the "star" button on the [`onboard`](https://github.com/hackclub/OnBoard/) repo.
+To follow the repo for updates and show you're participating, click the "star" button on the [`hackclub/onboard`](https://github.com/hackclub/OnBoard/) repo.
 
 ![Star the OnBoard repo](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/3star-repo.png)
 
-## 1. Join the Slack!
+## 1. Join the Slack! (Optional)
 
 Our [`#onboard`](https://hackclub.slack.com/archives/C056AMWSFKJ) channel is where the party is getting started! If you haven't already joined, make sure to add yourself to the channel. And for those who are new to the Hack Club slack, sign up to our community of 13k+ makers through [here](https://hackclub.com/slack/?event=onboard) (don't worry, there isn't an application).
 
@@ -44,12 +46,9 @@ Perhaps ping a little hello to `@Kevin Yang`?
 
 ## 2. Upload to JLCPCB and Take a Screenshot
 
-Upload your Gerber files to JLCPCB.com and add them to you cart. JLCPCB is the default PCB manufacturer, but you can shop around [^3] if there's a specific alternative you want to use [^4]. Once completed, take a screenshot with cost included!
+Upload your Gerber files to JLCPCB.com and add them to you cart. Once completed, take a screenshot with cost included!
 
 **Note:** Your screenshot is **VITAL** since your project cannot be approved without it. You'll include the screenshot in your PR later.
-
-[^3]: Don't know which ones you can use? Check out [`VENDORS.md`](docs/VENDORS.md) for more info!
-[^4]: If outside the US you may be charged customs which aren't covered by the grant! Check beforehand.
 
 ## 3. Fork!
 
