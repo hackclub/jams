@@ -494,43 +494,31 @@ export default function JamComponent({ jam, jamsContent }) {
           )}
 
           <Box style={{ marginTop: 8 }}>
-            <Badge
+          <Badge
               key="keywordFeature"
               mr={2}
               sx={{
                 cursor: 'pointer',
-                backgroundColor: '#fff',
+                backgroundColor: '#993CCF',
                 marginBottom: '8px',
                 fontSize: ['14px', 'auto']
               }}
               variant="outline"
-              color="#993CCF">
+              color="#fff">
               {jam?.keywords.split(', ')[0]}
             </Badge>
-            <Badge
-              key="difficultyFeature"
-              mr={2}
-              sx={{
-                cursor: 'pointer',
-                backgroundColor: '#fff',
-                marginBottom: '8px',
-                fontSize: ['14px', 'auto']
-              }}
-              variant="outline"
-              color="#993CCF">
-              {jam.difficulty}
-            </Badge>
+
             <Badge
               key="timeFeature"
               mr={2}
               sx={{
                 cursor: 'pointer',
-                backgroundColor: '#fff',
+                backgroundColor: '#993CCF',
                 marginBottom: '8px',
                 fontSize: ['14px', 'auto']
               }}
               variant="outline"
-              color="#993CCF">
+              color="#fff">
               {jam.timeEstimate}
             </Badge>
           </Box>
