@@ -5,7 +5,7 @@ description: "Get started making your very first game with the Sprig game engine
 description: "Level up your PCB skills with this Arduino-nano compatible digital level. You can use it to measure angles, decorate your room, or do anything you can with an Arduino!"
 video: ''
 thumbnail: 'https://cloud-3iqwzeixd-hack-club-bot.vercel.app/01.webp'
-keywords: 'PCB, Circuit, Electronics, Soldering, Schematic, Design, KiCAD, EDA, Difficult'
+keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
 timeEstimate: '6 Hours' # ????? IDK
 difficulty: 'Difficult'
 slug: 'sparkletilt-pcb'
