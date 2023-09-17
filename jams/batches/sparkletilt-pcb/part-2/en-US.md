@@ -7,19 +7,22 @@ thumbnail: 'https://cloud-r3x168b9x-hack-club-bot.vercel.app/5552.webp'
 timeEstimate: '1 hour' # ??
 difficulty: 'Intermediate'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
-# TODO? I don't think I have the time to make these ATM. I'd love if someone else could?
-#presentation: 'link to figma slides'
-#presentationPlay: 'link to figma slides in presentation mode'
-#presentationPDF: 'link to pdf of slides'
-#notes: 'link to notes (optional)'
-#poster: 'link to poster (optional)'
-#video: 'link to video (optional)'
-slug: 'sparkletilt-2'
+# TODO? I don't have the time to make these ATM. I'd love if someone else could
+presentation: ''
+presentationPlay: ''
+presentationPDF: ''
+notes: ''
+poster: ''
+video: ''
+totalParts: 4
+part: part-2
+batch: sparkltilt-pcb
 ---
 
 In this workshop, we will turn our schematic from Part 1 into an actual PCB layout.
 
 <details>
+
 <summary>Prerequisites</summary>
 
 The rest of the workshop assumes you understand PCB Basics like:
@@ -78,11 +81,11 @@ Some footprints, like the Arduino Nano outline, which is not a real component in
 
 ### Generics
 
-0402, 0603, 0805, and 1206 are common sizes of small two-terminal SMD components like resistors, capacitors, and diodes. 0805 is very common and still somewhat hand solderable, so we will use 0805 for all our components [^1].
+0402, 0603, 0805, and 1206 are common sizes of small two-terminal SMD components like resistors, capacitors, and diodes. 0805 is very common and still somewhat hand solderable, so we will use 0805 for all our components[^1].
 
-<a title="Zerodamage, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SMT_sizes,_based_on_original_by_Zureks.svg"><img style="background-color: white;" width="256" alt="SMT sizes, based on original by Zureks" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/SMT_sizes%2C_based_on_original_by_Zureks.svg/256px-SMT_sizes%2C_based_on_original_by_Zureks.svg.png"></a>
+<a title="Zerodamage, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SMT_sizes,_based_on_original_by_Zureks.svg"><img style={{backgroundColor: "white"}} width="256" alt="SMT sizes, based on original by Zureks" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/SMT_sizes%2C_based_on_original_by_Zureks.svg/256px-SMT_sizes%2C_based_on_original_by_Zureks.svg.png"/></a>
 
-To find our first capacitor, go to <https://jlcpcb.com/parts>. In this case, we will search for 100nF, our first capacitor.
+To find our first capacitor, go to [jlcpcb.com/parts](https://jlcpcb.com/parts). In this case, we will search for 100nF, our first capacitor.
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/40.4.png.webp)
 
@@ -232,7 +235,7 @@ Make sure you're in properties for the whole component, not just one pad or silk
 
 These may vary based on your version of KiCAD.
 
-<!--could I put this somewhere more suitable, where?-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significantly easier to see what's going on.
+{/*could I put random tips somewhere more suitable, where?*/}Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significantly easier to see what's going on.
 
 
 ### Routing
@@ -338,7 +341,9 @@ This is what all the grounds look like.
 
 ## (Optional) Header Pins
 <details>
+
 <summary>If you want your PCB manufacturer to install Arduino Header Pins on your board.</summary>
+
 This could be useful if you want to mount your board onto a breadboard but don't have soldering equipment.
 
 Go back to your schematic and add these two `Conn_01x15_Pin` symbols and connect them to the correct nets.

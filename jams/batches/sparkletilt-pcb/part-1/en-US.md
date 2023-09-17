@@ -7,15 +7,16 @@ thumbnail: 'https://cloud-k9knyyk0j-hack-club-bot.vercel.app/00thumb.jpg'
 timeEstimate: '1 hour' # ???
 difficulty: 'Intermediate'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
-# TODO? I don't think I have the time to make these ATM. I'd love if someone else could
+# TODO? I don't have the time to make these ATM. I'd love if someone else could
 presentation: ''
 presentationPlay: ''
 presentationPDF: ''
 notes: ''
 poster: ''
 video: ''
-totalParts: 3
+totalParts: 4
 part: part-1
+batch: sparkltilt-pcb
 ---
 
 In this workshop, we will design an Arduino Nano-compatible microcontroller board using KiCAD.

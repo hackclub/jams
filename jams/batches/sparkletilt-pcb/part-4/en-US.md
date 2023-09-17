@@ -7,14 +7,16 @@ thumbnail: 'https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/514.webp'
 timeEstimate: '1 hour' # ???
 difficulty: 'Intermediate'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
-# TODO? I don't think I have the time to make these ATM. I'd love if someone else could?
-#presentation: 'link to figma slides'
-#presentationPlay: 'link to figma slides in presentation mode'
-#presentationPDF: 'link to pdf of slides'
-#notes: 'link to notes (optional)'
-#poster: 'link to poster (optional)'
-#video: 'link to video (optional)'
-slug: 'sparkletilt-4'
+# TODO? I don't have the time to make these ATM. I'd love if someone else could
+presentation: ''
+presentationPlay: ''
+presentationPDF: ''
+notes: ''
+poster: ''
+video: ''
+totalParts: 4
+part: part-4
+batch: sparkltilt-pcb
 ---
 
 In this workshop, we will take a KiCAD PCB and order it through JLCPCB with assembly[^2].
