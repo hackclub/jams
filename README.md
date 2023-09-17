@@ -79,6 +79,8 @@ Now you can start writing the parts for your jam! For every part of your jam, cr
 
 ```markdown
 ---
+part: "part-#"
+totalParts: 'total number of parts in the jam'
 title: 'your title'
 description: 'a quick description!'
 contributor: 'your GitHub username'
@@ -93,7 +95,6 @@ presentationPDF: 'link to pdf of slides'
 notes: 'link to notes (optional)'
 poster: 'link to poster (optional)'
 video: 'link to video (optional)'
-slug: 'a unique slug for people visiting your jam'
 ---
 ```
 
