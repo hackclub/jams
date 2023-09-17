@@ -215,7 +215,7 @@ To add symbols, see the [CH340N from Part 1](../pcb_level_1/#usb-interface). Jus
 | ------------ | ---------------------- | ----------- | --- |
 | TP4057       | TSOT-23-6              | C12044      | | 
 | Battery Cell (Connector, not actual batery) | jst ph-k 1x02 vertical | C131337     | You can also pick SMD connectors to trade a bit of strength for a clean back surface |
-| 100uF Capacitor | 1206 | C131337     | Such a big capacitor is only available in 1206|
+| 100uF Capacitor | 1206 | C15008     | Such a big capacitor is only available in 1206|
 | Resistors/Capacitors around battery charger, accelerometer | 0402 | | I tend to avoid tiny components because they're difficult to rework in case of an error, but these chips have such small pin spacing that it's only convinient to use matching components. + I was running out of space on my board |
 | Power Diode | SMA | C8678 | |
 | DIP Switch | x06 1.27 7.62 kingtek | C40737 | Matched w/ datasheet of chip| 
