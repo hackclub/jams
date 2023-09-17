@@ -7,31 +7,35 @@ thumbnail: 'https://cloud-k9knyyk0j-hack-club-bot.vercel.app/00thumb.jpg'
 timeEstimate: '1 hour' # ???
 difficulty: 'Intermediate'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
-# TODO? I don't think I have the time to make these ATM? I'd love if someone else could
-#presentation: 'link to figma slides'
-#presentationPlay: 'link to figma slides in presentation mode'
-#presentationPDF: 'link to pdf of slides'
-#notes: 'link to notes (optional)'
-#poster: 'link to poster (optional)'
-#video: 'link to video (optional)'
+# TODO? I don't think I have the time to make these ATM. I'd love if someone else could
+presentation: ''
+presentationPlay: ''
+presentationPDF: ''
+notes: ''
+poster: ''
+video: ''
 totalParts: 3
 part: part-1
 ---
 
 In this workshop, we will design an Arduino Nano-compatible microcontroller board using KiCAD.
 
-
 A finished SparkleTilt looks something like this (with your design customizations, of course):
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/31picture.jpg)
 
+
 <details>
+
 <summary>Video Demo</summary>
+
 <iframe width="560" height="315" rel="0" src="https://www.youtube-nocookie.com/embed/px2V8bZMeLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 <details open>
+
 <summary>Prerequisites</summary>
+
 If you are not already familiar with the basics of using an ECAD tool like EasyEDA or KiCAD, check out @maggie's workshop on designing a PCB Business card in EasyEDA:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/enMtMOgimm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -88,6 +92,7 @@ Now that our MCU is powered, it needs a clock to tick to. We can configure the A
 This crystal needs an accompanying capacitor connected to ground on each pin. 
 
 <details>
+
 <summary>How did I come up with the value of these capacitors?</summary>
 
 ```
