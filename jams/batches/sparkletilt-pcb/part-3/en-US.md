@@ -63,7 +63,7 @@ The rest of the parts are:
 4. Voltage Regulator - XC6206P332MR. A small (SOT-23) basic LDO (Low DropOut) voltage regulator on JLCPCB Basic Parts that outputs 3.3V. This has a 250mV dropout, so it needs 3.55V in to output 3.3V, and it can take in up to 6V.
 5. Switches - C40737. Just a nice small DIP switch[^4] to set different modes on our MCU.
 5. P-Channel MOSFET - AO3401A. This will switch the battery onto VDrive when USB is disconnected. Same story, the best of the three available basic parts of JLCPCB; adequate current capacity and low resistance.
-6. Diodes - C8678. So, we want to drop our ~5V USB input to <4.5V. While they are not perfectly linear like Ohmic resistors, diodes do vary the voltage they drop based on the current going through them. To stay in spec with both the LDO and the LEDs, we want the lowest voltage on VDrive to be >3.7V. So, our drop ranges from .5V to 1.3V (varying based on current draw). We will use two diodes (explained later), so each should have a current drop between 0.25V to 0.65V. This SS34 Diode fits the bill and can dissipate all that heat.
+6. Diodes - C8678. So, we want to drop our ~5V USB input to `<4.5V`. While they are not perfectly linear like Ohmic resistors, diodes do vary the voltage they drop based on the current going through them. To stay in spec with both the LDO and the LEDs, we want the lowest voltage on VDrive to be `>3.7V`. So, our drop ranges from .5V to 1.3V (varying based on current draw). We will use two diodes (explained later), so each should have a current drop between 0.25V to 0.65V. This SS34 Diode fits the bill and can dissipate all that heat.
 
 ## Modifications
 
@@ -128,14 +128,16 @@ The voltage regulator and LEDs are powered from VDrive, which may be powered by 
 The battery charger runs exclusively off of VBUS.
 
 <details>
+
 <summary>How does the MOSFET switch VBat onto VDrive?</summary>
+
 This is called a Power ORing circuit.
 
 So, I have a battery (say +3V min) and USB (nominally +5V). I want to drive VDrive from the USB when it's connected, else the battery. This is the simplest way to do that:
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/314.webp)
 
-Here, the VBat Diode has one job: Protect the battery from charging directly through USB. This is because when VDrive (the junction point) is at 5V due to USB (maybe 4.6V due to the diodes), the potential at VDrive is higher than the potential at VBat. Since current flows from higher to lower potential (voltage), it won't flow from the battery (<4.2V) to VDrive (>4.5V). The diode (being a one-way valve) won't allow USB current into the battery.
+Here, the VBat Diode has one job: Protect the battery from charging directly through USB. This is because when VDrive (the junction point) is at 5V due to USB (maybe 4.6V due to the diodes), the potential at VDrive is higher than the potential at VBat. Since current flows from higher to lower potential (voltage), it won't flow from the battery (`<4.2V`) to VDrive (`>4.5V`). The diode (being a one-way valve) won't allow USB current into the battery.
 
 The VBUS Diode prevents the battery from powering the charger, possible power LEDs or any other USB-only components.
 
@@ -144,13 +146,12 @@ Now, why is our MOSFET design better? It seems far more complicated. But, the tr
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/415.webp)
 
 There are 3 states to this MOSFET arrangement[^10]:
-1. VBUS is 5V, VBAT is 4V. (G - S) > -1. MOSFET does not conduct. Additionally, since S > D, no potential gets applied backward onto the battery.
-2. VBUS is 0V (stable because of the pull-down), VBAT (D) is 4V. G = S = 0. Now, since S < D, current can flow across the body diode. This brings S up to 3V.
-3. Now, S = 3V, G = 0V, (G - S) < -1V and the MOSFET is enabled.
+1. VBUS is 5V, VBAT is 4V. `(G - S) > -1`. MOSFET does not conduct. Additionally, since `S > D`, no potential gets applied backward onto the battery.
+2. VBUS is 0V (stable because of the pull-down), VBAT (D) is 4V. G = S = 0. Now, since `S < D`, current can flow across the body diode. This brings S up to 3V.
+3. Now, S = 3V, G = 0V, `(G - S) < -1V` and the MOSFET is enabled.
 4. If VUSB is enabled again now, go back to step 1.
-</details>
 
-<br>
+</details>
 
 Additionally, the USB interface should already be protected in case VBUS is powered by the header pin.
 
@@ -211,17 +212,17 @@ To add symbols, see the [CH340N from Part 1](../pcb_level_1/#usb-interface). Jus
 
 
 
-| Name         | Footprint              | LCSC Number | Reasoning |
-| ------------ | ---------------------- | ----------- | --- |
-| TP4057       | TSOT-23-6              | C12044      | | 
-| Battery Cell (Connector, not actual batery) | jst ph-k 1x02 vertical | C131337     | You can also pick SMD connectors to trade a bit of strength for a clean back surface |
-| 100uF Capacitor | 1206 | C15008     | Such a big capacitor is only available in 1206|
-| Resistors/Capacitors around battery charger, accelerometer | 0402 | | I tend to avoid tiny components because they're difficult to rework in case of an error, but these chips have such small pin spacing that it's only convinient to use matching components. + I was running out of space on my board |
-| Power Diode | SMA | C8678 | |
-| DIP Switch | x06 1.27 7.62 kingtek | C40737 | Matched w/ datasheet of chip| 
-| SK6812SIDE | SK6812-SIDE  | C2890037 | Custom made footprint, download above|
-| WS2812D-F5 | WS2812 F5  | C5149201 |same|
-| AO3401A | SOT-23 | C15127 | |
+| Name                                                       | Footprint              | LCSC Number | Reasoning                                                                                                                                                                                                                           |
+| ---------------------------------------------------------- | ---------------------- | ----------- | --- |
+| TP4057                                                     | TSOT-23-6              | C12044      |                                                                                                                                                                                                                                     |
+| Battery Cell (Connector, not actual batery)                | jst ph-k 1x02 vertical | C131337     | You can also pick SMD connectors to trade a bit of strength for a clean back surface                                                                                                                                                |
+| 100uF Capacitor                                            | 1206                   | C15008      | Such a big capacitor is only available in 1206                                                                                                                                                                                      |
+| Resistors/Capacitors around battery charger, accelerometer | 0402                   |             | I tend to avoid tiny components because they're difficult to rework in case of an error, but these chips have such small pin spacing that it's only convinient to use matching components + I was running out of space on my board |
+| Power Diode                                                | SMA                    | C8678       |                                                                                                                                                                                                                                     |
+| DIP Switch                                                 | x06 1.27 7.62 kingtek  | C40737      | Matched w/ datasheet of chip                                                                                                                                                                                                        |
+| SK6812SIDE                                                 | SK6812-SIDE            | C2890037    | Custom made footprint, download above                                                                                                                                                                                               |
+| WS2812D-F5                                                 | WS2812 F5              | C5149201    | same                                                                                                                                                                                                                                |
+| AO3401A                                                    | SOT-23                 | C15127      |                                                                                                                                                                                                                                     |
 
 ## PCB Design
 
@@ -273,17 +274,17 @@ This is what my board looks like (the CH340N is missing because I messed up the 
 
 I can't wait to see how you remix this. You can share your designs and get feedback in [#onboard on Slack](https://hackclub.slack.com/archives/C056AMWSFKJ). We'll discuss programming this board in Part 5 of this workshop! (Coming Soon)
 
-<!--the markdown renderer for GFM Workshops ought to automatically add a "Footnotes" header right around here-->
+{/* the markdown renderer for GFM ought to automatically add a "Footnotes" header right around here */}
 [^1]: https://learn.adafruit.com/li-ion-and-lipoly-batteries/voltages
 [^2]: In practice, you may see Neopixels running happily from 3.3V microcontrollers, but can't rely on that. The MCU's voltage might be on the lower end and output slightly under 3.3V, your USB line might be outputting 5.2V and now the limit is at 3.65V, etc. It's best to keep a margin of error.
 [^3]: https://youtu.be/osfgkFyq7lA?t=127
-[^4]: A DIP switch is a package with multiple individual switches like this: ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/301.jpg){:width="50%"}
+[^4]: A DIP switch is a package with multiple individual switches like this: <img src="https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/301.jpg" width="50%" />
 [^5]: These interrupts would be useful if you needed an event notification from the IC (is acceleration > *n*?), or you wanted every single value immediately after it was measured (integrate acceleration to velocity) (AKA Pushing data). In our case, we'll just ask the chip for the acceleration every few hundred milliseconds (AKA Polling data).
 [^6]: See table on page 8 for more info.
 [^7]: I used 1.5k because 1.6ks were unavailable in my size on JLCPCB, anything around that ought to work. Similarly, I used a 4.7k instead of a 5k on the battery pin pull-up.
 [^8]: Slower charging is fine, it'll just take more time, whereas faster could overheat the battery, reducing capacity.
 [^9]: This ORing design was inspired by [Unexpected Maker's Feather S3](https://github.com/UnexpectedMaker/esp32s3/blob/4aa7ebb8e56a60362dc5455193b5c223e020a28b/schematics/schematic-feathers3_p7.pdf). Open Source Hardware FTW!
-[^10]: This video on reverse voltage protection might help understand these states: <https://youtu.be/IrB-FPcv1Dc?t=116>. We are doing practically the same thing, just checking another power supply instead of the direction of the one battery.
+[^10]: This video on reverse voltage protection might help understand these states: [YouTube](https://youtu.be/IrB-FPcv1Dc?t=116). We are doing practically the same thing, just checking another power supply instead of the direction of the one battery.
 [^11]: It's unlikely to have a disconnected power supply but active data pin on a PCB, but the cost of adding the resistor is negligible, so might as well. It's not a big deal if you remove it.
 [^12]: https://electronics.stackexchange.com/a/466498/344964 
 [^13]: I learned that the hard way.
