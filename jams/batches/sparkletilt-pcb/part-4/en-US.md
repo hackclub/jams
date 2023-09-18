@@ -21,15 +21,15 @@ batch: sparkletilt-pcb
 
 In this workshop, we will take a KiCAD PCB and order it through JLCPCB with assembly[^2].
 
-If you're just jumping in, make sure you have your [DRC checked](../pcb_level_2/#design-rules-checker) from Part 2 of this workshop series.
+If you're just jumping in, make sure you have your [DRC checked](./part-2#design-rules-checker) from Part 2 of this workshop series.
 
 
-Here are some component notes by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B):
+Here are some component notes[^3]:
 - The grant allows you to purchase anything from one of the allowed suppliers, including JLCPCB.
 - One of JLCPCB's sister/partner companies, LCSC, stocks virtually every generic component you'd ever need, and all of them can be assembled.
 - Keep in mind that JLCPCB charges a $3 fee for every "extended component" type that they assemble.
 - You will not be able to get specialized components from Adafruit or similar companies through the grant.
-- A complete library of JLCPCB/LCSC components is available at <https://jlcpcb.com/parts>.
+- A complete library of JLCPCB/LCSC components is available at [jlcpcb.com/parts](https://jlcpcb.com/parts).
 - If following the ATMega328P workshop, you will need an Arduino, FTDI board, or any other AVR programmer to flash the bootloader before you can use the board's USB port. Verify what you need for your chip. ESP32s and RP2040s typically work out of the box.
 
 ## Install the Extension
@@ -55,7 +55,7 @@ In the Field Editor window, click on 'Add Field' and add the field `LCSC`. It do
 
 ![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/146.webp)
 
-Then, search for your components at <https://jlcpcb.com/parts> and fill in the LCSC id.
+Then, search for your components at [jlcpcb.com/parts](https://jlcpcb.com/parts) and fill in the LCSC id.
 
 For generic components, search for the Value and Footprint - `100nF 0805` - and check basic parts. You'll see a couple of different voltages, pick the lower (cheaper) one since we are only at 5V.
 
@@ -97,7 +97,7 @@ Everything you need to order your board will now be in `your_kicad_project/produ
 
 ![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/312.webp)
 
-Now, log in to <https://jlcpcb.com>. Go to <https://cart.jlcpcb.com/quote> and upload `gerber.zip` into "Add Gerber file".
+Now, log in to [jlcpcb.com](https://jlcpcb.com). Go to [cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote) and upload `gerber.zip` into "Add Gerber file".
 
 You should see something like this:
 ![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/413.webp)
@@ -138,3 +138,4 @@ With shipping, that's $45.
 
 [^1]: You might want to edit the footprints of components you are hand-soldering. For example, to hand solder the USB-C connector, make the pads longer and remove unused ones like SBUS.
 [^2]: There are a million different ways to export your files and order with different manufacturers, but for simplicity, this workshop only focuses on one.
+[^3]: by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B) 
