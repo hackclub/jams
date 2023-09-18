@@ -4,7 +4,7 @@ description: 'Turn a microcontroller schematic into a real PCB layout'
 contributor: 'karmanyaahm'
 contributorSlackID: 'U04CNFV0T4M'
 thumbnail: 'https://cloud-r3x168b9x-hack-club-bot.vercel.app/5552.webp'
-timeEstimate: '2 hour' # ??
+timeEstimate: '2 hours' # ??
 difficulty: 'Intermediate'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
 # TODO? I don't have the time to make these ATM. I'd love if someone else could

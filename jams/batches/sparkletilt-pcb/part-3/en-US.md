@@ -270,7 +270,7 @@ This is the full schematic:
 ![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/4longhorn_leds-DEVICES_PAGE-LED-stick0.svg)
 
 This is what my board looks like (the CH340N is missing because I messed up the traces in v1):
-![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/31picture.jpg)
+![](https://cloud-izep2lpej-hack-club-bot.vercel.app/031picture.jpg)
 
 I can't wait to see how you remix this. You can share your designs and get feedback in [#onboard on Slack](https://hackclub.slack.com/archives/C056AMWSFKJ). We'll discuss programming this board in Part 5 of this jam! (Coming Soon)
 
