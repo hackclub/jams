@@ -21,9 +21,7 @@ batch: sparkletilt-pcb
 
 In this jam, we will turn our schematic from Part 1 into an actual PCB layout.
 
-<details>
-
-<summary>Prerequisites</summary>
+## Prerequisites
 
 The rest of the workshop assumes you understand PCB Basics like:
 
@@ -54,10 +52,6 @@ Reminders:
 - You can use a combination of layers to design the look of your board.
 - You almost always want to have the traces of your board covered with soldermask, but it's typically ok to have other copper regions exposed, just remember it might tarnish.
 - JLCPCB engineers will review your design before production, if they spot any issues they'll send you an email to check it.
-
-
-</details>
-
 
 ## Footprint assignment
 
