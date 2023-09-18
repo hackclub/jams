@@ -21,9 +21,9 @@ batch: sparkletilt-pcb
 
 In this workshop, we will design an Arduino Nano-compatible microcontroller board using KiCAD.
 
-A finished SparkleTilt looks something like this (with your design customizations, of course):
+A finished SparkleTilt looks something like this (with your very own design customizations!):
 
-![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/31picture.jpg)
+![](https://cloud-izep2lpej-hack-club-bot.vercel.app/031picture.jpg)
 
 
 <details>
@@ -163,7 +163,7 @@ RXD and TXD (USB directionality), are connected to their microcontroller pins D1
 
 ## Done!
 
-Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 4 to add more features to this board.
+Now you have a simple Arduino Nano-compatible board schematic! Check out Part 2 to turn this into a PCB, or Part 4 to add more features to this board.
 
 ![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/01full-kicad.svg)
 
