@@ -117,9 +117,9 @@ This is the final schematic:
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/212.webp)
 
-> KiCAD doesn't have a TP4057 symbol by default, see the [Component Listing](#component-listing) to download it.
+> KiCAD doesn't have a TP4057 symbol by default, see the [Component Listing](#Component Listing) to download it.
 
-As covered in [the voltage dilemma](#the-voltage-dilemma), we need several voltage rails for different applications.
+As covered in [the voltage dilemma](#The Voltage Dilemma), we need several voltage rails for different applications.
 
 The accelerometer, USB interface, and microcontroller all run off of 3.3V VCC from the voltage regulator.
 
@@ -205,7 +205,7 @@ If you copy and paste them, the blocks will be linked and making a change to one
 
 ## Component Listing
 
-To add symbols, see the [CH340N from Part 1](./part-1#usb-interface). Just like that, in the PCB view, you can add custom footprint libraries. My custom symbols (TP4057) and footprints (LEDs) are in [custom-leds.pretty.zip](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/2custom-leds.pretty.zip), which you need can extract into your KiCAD project folder. You could also find such footprints elsewhere on the internet, or create them from the datasheet.
+To add symbols, see the [CH340N from Part 1](part-1#USB Interface). Just like that, in the PCB view, you can add custom footprint libraries. My custom symbols (TP4057) and footprints (LEDs) are in [custom-leds.pretty.zip](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/2custom-leds.pretty.zip), which you need can extract into your KiCAD project folder. You could also find such footprints elsewhere on the internet, or create them from the datasheet.
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2131.webp)
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2232.webp)
@@ -252,7 +252,7 @@ The switch is oriented (and wired in the schematic) in such a way that the switc
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1829.webp)
 
-And my overly complicated parallel LEDs were laid out as shown. Of course, you can't use both at the same time due to color encoding differences (see the [LEDs section on grouping](#leds)). The through-holes provide a free via to run VDrive on the other side and access the ground plane. If you have a peninsula like this, double-check that the ground plane isn't constricted through a bottleneck. There's no harm in running traces on top of the plane to ensure there's enough capacity. 
+And my overly complicated parallel LEDs were laid out as shown. Of course, you can't use both at the same time due to color encoding differences (see the [LEDs section on grouping](#LEDs)). The through-holes provide a free via to run VDrive on the other side and access the ground plane. If you have a peninsula like this, double-check that the ground plane isn't constricted through a bottleneck. There's no harm in running traces on top of the plane to ensure there's enough capacity.
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2030.webp)
 
 
