@@ -287,7 +287,7 @@ You can click on the blue `B.Cu` layer in the Layers sidebar to visually bring t
 
 ![](https://cloud-5127rirqc-hack-club-bot.vercel.app/130.webp)
 
-Just like that, use vias and thoughtful crossings to connect D0/D1 to the USB chip and D11/12/13 to the ICSP header. However try to minimize the length of traces on the back, because of the [ground plane](#Ground Plane) we will later put in.
+Just like that, use vias and thoughtful crossings to connect D0/D1 to the USB chip and D11/12/13 to the ICSP header. However try to minimize the length of traces on the back, because of the [ground plane](#Ground%20Plane) we will later put in.
 
 
 ### The other tracks

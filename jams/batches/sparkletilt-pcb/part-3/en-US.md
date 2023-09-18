@@ -117,9 +117,9 @@ This is the final schematic:
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/212.webp)
 
-> KiCAD doesn't have a TP4057 symbol by default, see the [Component Listing](#Component Listing) to download it.
+> KiCAD doesn't have a TP4057 symbol by default, see the [Component Listing](#Component%20Listing) to download it.
 
-As covered in [the voltage dilemma](#The Voltage Dilemma), we need several voltage rails for different applications.
+As covered in [the voltage dilemma](#The%20Voltage%20Dilemma), we need several voltage rails for different applications.
 
 The accelerometer, USB interface, and microcontroller all run off of 3.3V VCC from the voltage regulator.
 
