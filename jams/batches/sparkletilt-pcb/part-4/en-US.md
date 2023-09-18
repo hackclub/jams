@@ -16,7 +16,7 @@ poster: ''
 video: ''
 totalParts: 4
 part: part-4
-batch: sparkltilt-pcb
+batch: sparkletilt-pcb
 ---
 
 In this workshop, we will take a KiCAD PCB and order it through JLCPCB with assembly[^2].

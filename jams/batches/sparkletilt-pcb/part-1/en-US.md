@@ -16,7 +16,7 @@ poster: ''
 video: ''
 totalParts: 4
 part: part-1
-batch: sparkltilt-pcb
+batch: sparkletilt-pcb
 ---
 
 In this workshop, we will design an Arduino Nano-compatible microcontroller board using KiCAD.

@@ -16,7 +16,7 @@ poster: ''
 video: ''
 totalParts: 4
 part: part-3
-batch: sparkltilt-pcb
+batch: sparkletilt-pcb
 ---
 
 In this workshop, we will add an accelerometer, battery charger, and LEDs to our microcontroller board.

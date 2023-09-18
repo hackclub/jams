@@ -16,7 +16,7 @@ poster: ''
 video: ''
 totalParts: 4
 part: part-2
-batch: sparkltilt-pcb
+batch: sparkletilt-pcb
 ---
 
 In this workshop, we will turn our schematic from Part 1 into an actual PCB layout.
