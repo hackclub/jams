@@ -33,24 +33,18 @@ A finished SparkleTilt looks something like this (with your design customization
 <iframe width="560" height="315" rel="0" src="https://www.youtube-nocookie.com/embed/px2V8bZMeLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
-<details open>
+## Prerequisites
 
-<summary>Prerequisites</summary>
+If you are not already familiar with the basics of using an ECAD tool like EasyEDA or KiCAD, check out another jam like [the PCB Hacker card](../../../jam/hacker-card). The rest of this workshop will assume you know how to draw a schematic from pictures.
 
-If you are not already familiar with the basics of using an ECAD tool like EasyEDA or KiCAD, check out @maggie's workshop on designing a PCB Business card in EasyEDA:
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/enMtMOgimm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-This video demonstrates the basics of navigating around KiCAD.
 {/* Ideally a better version of this video will be made by a Hack Clubber, but this is the best basic video we have now */}
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EPH23zhPg50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[This YouTube video](https://www.youtube.com/watch?v=EPH23zhPg50) demonstrates the basics of navigating around KiCAD.
 
 In addition, the rest of the workshop assumes you know basic electronics terms like:
 1. Resistor: A resistor limits the electric current that flows through a circuit. Resistance is the restriction of current.
 2. Capacitor: A capacitor stores charge, and thus energy. It's like a tiny battery that charges and discharges very quickly.
 3. Diode: A diode only allows current to flow in one direction. It also drops a little bit of voltage, turning that energy into heat.
 2. Microcontroller: A microcontroller (aka MCU) is a system on a chip that contains an integrated processor, memory, and input/output peripherals, which are used to interact with other electronic components.
-
-</details>
 
 ## Part Selection
 
