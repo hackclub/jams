@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
-import { serialize } from 'next-mdx-remote/serialize'
+import  serialize  from '@/components/mdSerializer'
 import { MDXRemote } from 'next-mdx-remote'
 import mdxComponents from '../../../components/mdxComponents'
 import { Container } from 'theme-ui'
