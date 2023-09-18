@@ -60,7 +60,7 @@ Step 1 of designing a board is selecting your core components:
 
 1. Microcontroller: ATmega328P. The ATmega series is the most robust and common 8-bit MCUs, being used in many Arduinos since the beginning. Additionally, it requires very few external components and runs over a wide range of voltages (1.8V-5.5V). It's also one of the very few microcontrollers that is a *Basic Part* on JLCPCB. And, it's available in a QFP package so it can be hand-soldered. It doesn't have many fancy features, but it's simple and robust.
 
-2. USB-Serial Interface: CH340N. Because the ATmega328P doesn't have a built-in USB interface, we need a USB-UART IC. @hugo said that the CH340C worked well for him, and it's very cheap, so I'm using it too. The CH340N is the cheapest IC from the CH340 series that has an integrated clock, meaning fewer components are needed.
+2. USB-Serial Interface: CH340N. Because the ATmega328P doesn't have a built-in USB interface, we need a USB-UART IC. The CH340C worked well for @Hugo, and it's very cheap, so I'm using the CH340N. The CH340N is the cheapest IC from the CH340 series that has an integrated clock, meaning fewer components are needed.
 
 3. Pinout: While not technically a component, we will follow the standard Arduino Nano pinout. This really doesn't matter— unless you value your future self's sanity when trying to wire up new components.
 
