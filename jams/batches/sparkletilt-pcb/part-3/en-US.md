@@ -205,7 +205,7 @@ If you copy and paste them, the blocks will be linked and making a change to one
 
 ## Component Listing
 
-To add symbols, see the [CH340N from Part 1](part-1#USB Interface). Just like that, in the PCB view, you can add custom footprint libraries. My custom symbols (TP4057) and footprints (LEDs) are in [custom-leds.pretty.zip](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/2custom-leds.pretty.zip), which you need can extract into your KiCAD project folder. You could also find such footprints elsewhere on the internet, or create them from the datasheet.
+To add symbols, see the [CH340N from Part 1](./part-1#USB%20Interface). Just like that, in the PCB view, you can add custom footprint libraries. My custom symbols (TP4057) and footprints (LEDs) are in [custom-leds.pretty.zip](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/2custom-leds.pretty.zip), which you need can extract into your KiCAD project folder. You could also find such footprints elsewhere on the internet, or create them from the datasheet.
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2131.webp)
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2232.webp)

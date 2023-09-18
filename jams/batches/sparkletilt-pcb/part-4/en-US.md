@@ -21,7 +21,7 @@ batch: sparkletilt-pcb
 
 In this workshop, we will take a KiCAD PCB and order it through JLCPCB with assembly[^2].
 
-If you're just jumping in, make sure you have your [DRC checked](./part-2#Design Rules Checker) from Part 2 of this workshop series.
+If you're just jumping in, make sure you have your [DRC checked](./part-2#Design%20Rules%20Checker) from Part 2 of this workshop series.
 
 
 Here are some component notes[^3]:

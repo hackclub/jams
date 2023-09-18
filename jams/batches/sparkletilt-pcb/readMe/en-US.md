@@ -1,5 +1,5 @@
 ---
-title: 'Build a Digital Level board'
+title: 'SparkleTilt: Design a Digital Level PCB'
 contributor: 'karmanyaahm'
 description: "Level up your PCB skills with this Arduino-nano compatible digital level. You can use it to measure angles, decorate your room, or do anything you can with an Arduino!"
 video: ''
