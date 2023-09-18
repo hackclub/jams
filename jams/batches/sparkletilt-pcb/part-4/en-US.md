@@ -19,9 +19,9 @@ part: part-4
 batch: sparkletilt-pcb
 ---
 
-In this workshop, we will take a KiCAD PCB and order it through JLCPCB with assembly[^2].
+In this jam, we will take a KiCAD PCB and order it through JLCPCB with assembly[^2].
 
-If you're just jumping in, make sure you have your [DRC checked](./part-2#Design%20Rules%20Checker) from Part 2 of this workshop series.
+If you're just jumping in, make sure you have your [DRC checked](./part-2#Design%20Rules%20Checker) from Part 2 of this jam series.
 
 
 Here are some component notes[^3]:
@@ -137,5 +137,5 @@ With shipping, that's $45.
 
 
 [^1]: You might want to edit the footprints of components you are hand-soldering. For example, to hand solder the USB-C connector, make the pads longer and remove unused ones like SBUS.
-[^2]: There are a million different ways to export your files and order with different manufacturers, but for simplicity, this workshop only focuses on one.
+[^2]: There are a million different ways to export your files and order with different manufacturers, but for simplicity, this jam only focuses on one.
 [^3]: by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B) 

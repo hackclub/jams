@@ -19,9 +19,9 @@ part: part-1
 batch: sparkletilt-pcb
 ---
 
-In this workshop, we will design an Arduino Nano-compatible microcontroller board using KiCAD.
+Let's design an Arduino Nano-compatible microcontroller board using KiCAD!
 
-A finished SparkleTilt looks something like this (with your very own design customizations!):
+If you follow through these 4 jams, your finished SparkleTilt will look something like this - but with your very own design customizations!
 
 ![](https://cloud-izep2lpej-hack-club-bot.vercel.app/031picture.jpg)
 

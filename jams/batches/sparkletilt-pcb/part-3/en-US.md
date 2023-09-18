@@ -19,7 +19,7 @@ part: part-3
 batch: sparkletilt-pcb
 ---
 
-In this workshop, we will add an accelerometer, battery charger, and LEDs to our microcontroller board.
+In this jam, we will add an accelerometer, battery charger, and LEDs to our microcontroller board.
 
 ## Part selection
 
@@ -272,7 +272,7 @@ This is the full schematic:
 This is what my board looks like (the CH340N is missing because I messed up the traces in v1):
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/31picture.jpg)
 
-I can't wait to see how you remix this. You can share your designs and get feedback in [#onboard on Slack](https://hackclub.slack.com/archives/C056AMWSFKJ). We'll discuss programming this board in Part 5 of this workshop! (Coming Soon)
+I can't wait to see how you remix this. You can share your designs and get feedback in [#onboard on Slack](https://hackclub.slack.com/archives/C056AMWSFKJ). We'll discuss programming this board in Part 5 of this jam! (Coming Soon)
 
 {/* the markdown renderer for GFM ought to automatically add a "Footnotes" header right around here */}
 [^1]: https://learn.adafruit.com/li-ion-and-lipoly-batteries/voltages

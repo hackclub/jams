@@ -19,7 +19,7 @@ part: part-2
 batch: sparkletilt-pcb
 ---
 
-In this workshop, we will turn our schematic from Part 1 into an actual PCB layout.
+In this jam, we will turn our schematic from Part 1 into an actual PCB layout.
 
 <details>
 
@@ -173,8 +173,8 @@ you can go to File > Import > Graphics to import a custom SVG. You can pick what
 
 
 
-> *Note*: In future workshops with this board, we will be adding more features such as an LED strip and accelerometer to make a level. Make sure your design will support the physical realities of being a level, such as having two points to balance on, which do not have any ports. Also, consider how your LEDs will physically and aesthetically fit.  Make a rough paper sketch if that helps.  
-> Of course, none of this applies to you if you are not building a level.
+> *Note*: In part 3 of this jam, we will be adding more features such as an LED strip and accelerometer to make a level. Make sure your design will support the physical realities of being a level, such as having two points to balance on, which do not have any ports. Also, consider how your LEDs will physically and aesthetically fit.  Make a rough paper sketch if that helps.
+> Of course, none of this applies to you if you have different plans for your board.
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1312.webp)
 
