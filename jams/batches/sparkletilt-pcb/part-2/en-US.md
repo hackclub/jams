@@ -258,7 +258,9 @@ And then, connect the microcontroller pins. In my layout A0-A5, D0, D1, D5-D13 c
 
 ### Two-layer routing
 
-Now because there is no way to connect D4 of the microcontroller to the header pin, we will have to jump layers. First, press 'X' to start running a trace away from D4, towards the inside of the microcontroller.
+Now because there is no way to connect D4 of the microcontroller to the header pin, we will have to jump layers. A via is a tiny hole in your board that connects traces on two sides. It's drilled into the PCB and filled (or plated) with copper to connect the two sides. You don't want vias too close to small pads because sometimes they can suck up some of the solder from the SMD manufacturing process.
+
+First, press 'X' to start running a trace away from D4, towards the inside of the microcontroller.
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/3026.webp)
 
