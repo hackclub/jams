@@ -135,10 +135,11 @@ In the PCB editor, click on 'Edit board setup'. This is where we will set the co
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/606.webp)
 
-Then, in Design Rules > Pre-defined Sizes, specify how wide you want your traces, vias, and differential pairs will be. KiCAD will let you pick between the options here when designing your board. We will set a track width of 0.3mm for signal traces, 0.5mm for power traces, and 0.7mm diameter vias with a 0.3mm hole. 
+Then, in Design Rules > Pre-defined Sizes, specify how wide you want your traces, vias, and differential pairs will be. KiCAD will let you pick between the options here when designing your board. We will set a track width of 0.3mm for signal traces, 0.5mm for power traces, and 0.7mm diameter vias with a 0.3mm hole[^6]. 
 
 Then, press OK to save and exit board setup.
 
+[^6]: These sizes are just arbritary sane defaults. The point I'm illustrating is that your power traces should be big to reduce their resistance, and signal traces can be smaller. Things get more complicated if you're doing AC power, RF or audio signals, but that's way beyond the scope of this jam (and my knowlege :)).
 
 ### Set Up Components
 
