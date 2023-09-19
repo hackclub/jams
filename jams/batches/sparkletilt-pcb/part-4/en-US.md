@@ -73,9 +73,8 @@ For more specific components, like the Atmega328P-AU, you should only have a cou
 Try doing this yourself before you look at my version below.
 
 <details>
-<summary>
-This is what your table should look like, and then Apply and Save.
-</summary>
+
+<summary>This is what your table should look like, and then Apply and Save.</summary>
 
 ![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/179.webp)
 

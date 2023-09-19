@@ -54,7 +54,7 @@ Step 1 of designing a board is selecting your core components:
 
 1. Microcontroller: ATmega328P. The ATmega series is the most robust and common 8-bit MCUs, being used in many Arduinos since the beginning. Additionally, it requires very few external components and runs over a wide range of voltages (1.8V-5.5V). It's also one of the very few microcontrollers that is a *Basic Part* on JLCPCB. And, it's available in a QFP package so it can be hand-soldered. It doesn't have many fancy features, but it's simple and robust.
 
-2. USB-Serial Interface: CH340N. Because the ATmega328P doesn't have a built-in USB interface, we need a USB-UART IC. The CH340C worked well for @Hugo, and it's very cheap, so I'm using the CH340N. The CH340N is the cheapest IC from the CH340 series that has an integrated clock, meaning fewer components are needed.
+2. USB-Serial Interface: CH340N. Because the ATmega328P doesn't have a built-in USB interface, we need a USB-UART IC. The CH340C worked well for @Hugo[^1], and it's very cheap, so I'm using the CH340N. The CH340N is the cheapest IC from the CH340 series that has an integrated clock, meaning fewer components are needed.
 
 3. Pinout: While not technically a component, we will follow the standard Arduino Nano pinout. This really doesn't matter— unless you value your future self's sanity when trying to wire up new components.
 
@@ -81,8 +81,7 @@ Then, we need to connect the power pins to power *nets* and place *decoupling ca
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/32.webp)
 The datasheet for our crystal, C13738, shows that pins 2 and 4 are connected to ground. So, import the part "Crystal_GND24".
 
-
-Now that our MCU is powered, it needs a clock to tick to. We can configure the ATmega328P to use this 16MHz crystal rather than run at its default of 1MHz.
+Now that our MCU is powered, it needs a clock to tick to[^3]. We can configure the ATmega328P to use this 16MHz crystal rather than run at its default of 1MHz.
 
 This crystal needs an accompanying capacitor connected to ground on each pin. 
 
@@ -97,6 +96,8 @@ Here, C is the capacitor we need, CL is the load capacitance specified by the cr
 
 So, we use 12pF capacitors.
 </details>
+
+[^3]: Yes, while the ATmega328P does have an internal clock, it's kinda inaccurate and could cause issues with serial communications. The simple and safe choice is to use an external crystal which are typically accurate to 20 parts per million, a opposed to the 5% (5 parts per hundred) of the ATmega's intenal clock.
 
 ### Reset
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/43.webp)
@@ -163,10 +164,12 @@ RXD and TXD (USB directionality), are connected to their microcontroller pins D1
 
 ## Done!
 
-Now you have a simple Arduino Nano-compatible board schematic! Check out Part 2 to turn this into a PCB, or Part 4 to add more features to this board.
+Now you have a simple Arduino Nano-compatible board schematic! Check out Part 2 to turn this into a PCB, or Part 3 to add more features to this board[^2].
 
 ![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/01full-kicad.svg)
 
-### Footnotes
-1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
-2. **WARNING**: You will need another microcontroller board to flash the bootloader on this ATmega328P before you can program it with USB.
+{/* footnotes */}
+
+[^1]: Thanks to Hugo Hu for his instructable, this schematic is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
+
+[^2]: **WARNING**: You will need another microcontroller board to flash the bootloader on this ATmega328P before you can program this board. Ask in Slack if you have ANY questions about this.
