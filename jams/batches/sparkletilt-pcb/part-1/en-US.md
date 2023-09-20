@@ -123,7 +123,6 @@ These are global labels. Unlike the RESET label, these work on all pages of the 
 ![](https://cloud-nbfq15yho-hack-club-bot.vercel.app/15.png)
 
 
-
 First, we have the traditional Arduino Nano pinout connected to our labels, telling the ECAD software we want these headers connected to the prespecified microcontroller pins. Since this whole board is running at 5V, just mark 3V3 as NC (No Connect).
 
 
