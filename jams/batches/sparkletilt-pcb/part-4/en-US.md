@@ -126,15 +126,15 @@ When it prompts you about unselected parts, just click 'Do not place'.
 
 Zoom into your components on the 'Component Placements' screen and rotate them to the correct orientation if they're wrong.
 
+If you get all parts assembled, this board (from part 2)[^4] ends up being around $33.
 
-If you get all parts assembled, this board (just the microcontroller and PCB) ends up being around $33.
 ![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/918.webp)
 
-With shipping, that's $45.
+With shipping, that's $45 for me.
 
 ![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/1019.webp)
 
-
 [^1]: You might want to edit the footprints of components you are hand-soldering. For example, to hand solder the USB-C connector, make the pads longer and remove unused ones like SBUS.
 [^2]: There are a million different ways to export your files and order with different manufacturers, but for simplicity, this jam only focuses on one.
-[^3]: by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B) 
+[^3]: by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B)
+[^4]: This is just the microcontroller board from parts 1 and 2. It does not include any of the peripherals such as th LEDs and accelerometer.
