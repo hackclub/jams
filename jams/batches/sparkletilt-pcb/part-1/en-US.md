@@ -73,7 +73,9 @@ Then, we need to connect the power pins to power *nets* and place *decoupling ca
 
 **Nets**: Nets like VCC and GND serve as abstractions for actual connections in our schematic. If we connected every single chip to a central VCC and GND point in our schematic, it would be very messy. These symbols tell the PCB Designer that we need to connect those pins while keeping the schematic clean.
 
-**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. It also absorbs noise and voltage spikes from the power source. So, these have to be as close to their parent IC as possible. In the KiCAD parts list, search `C` and after placing it change the value to the correct number and units (as shown in the image).
+**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. It also absorbs noise and voltage spikes from the power source. So, these have to be as physically close to their parent IC as possible in the PCB layout (in Part 2).
+
+In the KiCAD parts list, search `C` and after placing it change the *value* field to the correct number and units, 100nF in this case.
 
 Your *reference designator* numbers for C may be different from the image (C1 and C2). VCC and GND are also parts that can be imported like any other parts. And feel free to delete the labels on GND to reduce clutter.
 
@@ -107,7 +109,7 @@ The bar on top of RESET means that it is active low, GND (0V) will reset the MCU
 
 The resistor R6 [Search: R] is a pull-up resistor, a high-resistance resistor that gently pulls the RESET pin HIGH without passing too much current through it. This allows the switch to pull the RESET pin down without causing a short circuit, while preventing random noise from pulling RESET down.
 
-Labeling this wire as RESET connects it to the RESET *net*. If we place another RESET label somewhere else on this page, our ECAD tool will understand that these two points have to be connected, just like the GND and VCC nets.
+Labeling this wire as RESET connects it to the RESET *net*. If we place another RESET label somewhere else on this page, our ECAD tool will understand that these two points have to be connected, just like the GND and VCC nets. Press "L" to activate the label tool.
 
 
 ### Label Pinout
@@ -116,18 +118,17 @@ Labeling this wire as RESET connects it to the RESET *net*. If we place another 
 
 After this, we need labels telling us which MCU pin is which Arduino Nano pin.
 
-These are global labels. Unlike the RESET label, these work on all pages of the schematic.
+These are global labels. Unlike the RESET label, these work on all pages of the schematic. You can press "CTRL+L" to create a gloabl label.
 
 ## Headers
 
-
 ![](https://cloud-nbfq15yho-hack-club-bot.vercel.app/15.png)
 
+First, we have the traditional Arduino Nano pinout [Search: Arduino_Nano_v3] connected to our labels, telling the ECAD software we want these headers connected to the prespecified microcontroller pins. Since this whole board is running at 5V, just mark 3V3 as NC (No Connect).
 
-First, we have the traditional Arduino Nano pinout connected to our labels, telling the ECAD software we want these headers connected to the prespecified microcontroller pins. Since this whole board is running at 5V, just mark 3V3 as NC (No Connect).
+We also have the ICSP header [Search: Conn_02x03_Odd_Even], which is used for flashing the Arduino's bootloader. It has all the SPI pins in one neat package, MISO, MOSI, SCK, RESET, VCC, GND.
 
-
-We also have the ICSP header, which is used for flashing the Arduino's bootloader. It has all the SPI pins in one neat package, MISO, MOSI, SCK, RESET, VCC, GND.
+Once you have a label, you can press 'x' to flip it horizontally.
 
 ## USB
 
@@ -139,28 +140,24 @@ NC: SBU1/2 and Shield/Shell (shield is only for hosts).
 
 GND goes to our ground net.
 
-Mark VBUS with a net, and then run it through a diode to the VCC net, which powers everything else on this board. 
+Mark VBUS with a net, and then run it through a diode [Search: D] to the VCC net, which powers everything else on this board. 
 
-Since we will be powering a bunch of LEDs, I picked a big diode JLCPCB had as a basic part, C35722. This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
+Since we will be powering a bunch of LEDs, I picked a big diode JLCPCB had as a basic part, C35722. Set the *value* field to the part number so you can find it later. This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
 
-Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
-
-
+Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground[^4]. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
 You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/0ch340n.kicad_sym). Then, put it in your project folder and add it to your symbol library in Preferences > Manage Symbol Libraries > Project Specific Libraries.
 
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/87.1.webp)
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/97.2.webp)
 
-
-
 ![image](https://cloud-iztw9b588-hack-club-bot.vercel.app/17.webp)
-
-
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB-C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low instead of staying low forever (avoiding bootlooping the MCU).
 
-RXD and TXD (USB directionality), are connected to their microcontroller pins D1 (MCU's TX) and D0 (MCU's RX) respectively with some status LEDs.
+RXD and TXD (USB directionality), are connected to their microcontroller pins D1 (MCU's TX) and D0 (MCU's RX) respectively with some status LEDs [Search: LED, Value: GREEN/YELLOW].
+
+[^4]: 5k1 is just a concise and clear EE way of saying 5.1k. The units are context dependent, so here it means kilo - ohms.
 
 ## Done!
 
