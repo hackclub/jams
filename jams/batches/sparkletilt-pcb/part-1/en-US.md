@@ -63,7 +63,7 @@ Make sure you have KiCAD downloaded, then set up a new project, and open the sch
 
 ## Core (Microcontroller)
 
-First, we place the heart of our system, the ATmega328P-AU, in a TQFP package. This is NOT the ATmega328PB, which is not backward compatible with the ATmega328P.
+First, we place the heart of our system, the ATmega328P-AU, in a TQFP package [Search: ATmega328P-A]. This is NOT the ATmega328PB, which is not backward compatible with the ATmega328P.
 
 ### Power
 
@@ -73,13 +73,14 @@ Then, we need to connect the power pins to power *nets* and place *decoupling ca
 
 **Nets**: Nets like VCC and GND serve as abstractions for actual connections in our schematic. If we connected every single chip to a central VCC and GND point in our schematic, it would be very messy. These symbols tell the PCB Designer that we need to connect those pins while keeping the schematic clean.
 
-**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. It also absorbs noise and voltage spikes from the power source. So, these have to be as close to their parent IC as possible.
+**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. It also absorbs noise and voltage spikes from the power source. So, these have to be as close to their parent IC as possible. In the KiCAD parts list, search `C` and after placing it change the value to the correct number and units (as shown in the image).
 
+Your *reference designator* numbers for C may be different from the image (C1 and C2). VCC and GND are also parts that can be imported like any other parts. And feel free to delete the labels on GND to reduce clutter.
 
 ### Clock
 
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/32.webp)
-The datasheet for our crystal, C13738, shows that pins 2 and 4 are connected to ground. So, import the part "Crystal_GND24".
+The datasheet for our crystal, C13738, shows that pins 2 and 4 are connected to ground [Search: Crystal_GND24].
 
 Now that our MCU is powered, it needs a clock to tick to[^3]. We can configure the ATmega328P to use this 16MHz crystal rather than run at its default of 1MHz.
 
@@ -102,9 +103,9 @@ So, we use 12pF capacitors.
 ### Reset
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/43.webp)
 
-The bar or hash next to RESET means that it is active low, 0V will reset the MCU and it should be at 5V during normal operation. The SPST button here is JLCPCB's basic push button which connects RESET to ground when pressed. 
+The bar on top of RESET means that it is active low, GND (0V) will reset the MCU and it should be at VCC (5V) during normal operation. The SPST button here is JLCPCB's basic push button which connects RESET to ground when pressed [Search: SW_SPST]. 
 
-The resistor R6 is a pull-up resistor, a high-resistance resistor that gently pulls the RESET pin HIGH without passing too much current through it. This allows the switch to pull the RESET pin down without causing a short circuit, while preventing random noise from pulling RESET down.
+The resistor R6 [Search: R] is a pull-up resistor, a high-resistance resistor that gently pulls the RESET pin HIGH without passing too much current through it. This allows the switch to pull the RESET pin down without causing a short circuit, while preventing random noise from pulling RESET down.
 
 Labeling this wire as RESET connects it to the RESET *net*. If we place another RESET label somewhere else on this page, our ECAD tool will understand that these two points have to be connected, just like the GND and VCC nets.
 
