@@ -176,7 +176,7 @@ You can use the shape tools to draw the outline of the board, or...
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1211.webp)
 
-you can go to File > Import > Graphics to import a custom SVG. You can pick whatever shape you like here.
+you can go to File > Import > Graphics to import a custom **SVG**. You can **pick whatever shape you like here**.
 
 > *Note*: In part 3 of this jam, we will be adding more features such as an LED strip and accelerometer to make a level. Make sure your design will support the physical realities of being a level, such as having two points to balance on, which do not have any ports. Also, consider how your LEDs will physically and aesthetically fit.  Make a rough paper sketch if that helps.
 > Of course, none of this applies to you if you have different plans for your board.
@@ -186,6 +186,8 @@ you can go to File > Import > Graphics to import a custom SVG. You can pick what
 By default, your drawing probably won't fit the Arduino Nano template.
 
 Delete the first import and go back to File > Import > Graphics. Play with the scale setting until your design snugly fits the Arduino Nano template (while leaving space for other components).
+
+> This step will take some trial and error.
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1413.webp)
 
@@ -213,23 +215,36 @@ Double-click the shape and set it up like the image above.
 After you position the Board Edge and Arduino Template, lock them in place (Select Both > Right Click > Locking > Lock) to avoid accidentally moving them.
 
 Then, start placing the major components: USB Port, ICs, Microcontroller, buttons, etc. 
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1917.webp)
-Rotate them to a position that'll make running traces convenient. For example, you want the D+ and D- pins of the USB controller to be facing the port, and the TX, RX pins to be facing your microcontroller. You can rotate things 90 degrees by pressing 'R' on your keyboard, or set a 45 degree offset by going to properties.
 
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2018.webp)
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2219.webp)
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2119.5.webp)
+**Have your schematic split screened with the PCB layout**. Whenever you click on a component in one, it will be focused in the other. This way, you see what passives[^20] go with which major components and you can place them logically near each other. The decoupling capacitors for an IC must be right next to it.
+
+[^20]: Resistors, capacitors, diodes, etc. In this context, equivalent to minor/support components.
+
+Rotate them to a position that'll make running traces convenient. For example, you want the D+ and D- pins of the USB controller to be facing the port, and the TX, RX pins to be facing your microcontroller. You can rotate things 90 degrees by pressing 'R' on your keyboard, or set a 45 degree offset for the MCU by going to properties.
+
+![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1917.webp)
 
 This is how I roughly laid out the core components within the Arduino Nano footprint. Some large components like the reset switch and diode are outside the main nano footprint. The red pads indicate that these are all on the `F.Cu` layer. This is the front of the PCB. While a typical Nano design needs to be two-sided (have components on both the front and back) to fit within that footprint, here, we will make a larger, one-sided board to keep assembly costs down.
 
-> Note: This layout took several rounds of iteration between layout and trace routing to generate. It's absolutely fine to come back to rearrange your components if you find your layout doesn't work when routing traces - especially if this is your first complex board.
+> You have to be clever and very deliberate with the placement for your components so minimize the amount of wiring going around other things. Spending a little bit more time on this step will make your routing life sooo much easier. Take inspiration from my layout, but you can't just copy it becase my reference numbers are different. Look at the schematic and see which component connects to what.
+
+![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2018.webp)
+
+![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2219.webp)
+
+![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2119.5.webp)
+
+
+> Note: This layout took several rounds of iteration between layout and trace routing to generate. It's absolutely fine, and in fact, necessary to come back to rearrange your components if you find your layout doesn't work when routing traces. If this is your first complex board, you'll quickly find that learning routing is the most tedious part of your board, but obviously necessary to get your board working.
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2420.webp)
 
-While laying out your board, the 3D viewer is a very useful tool (especially if you are hand-soldering and need more space between components). Use 'Alt+3' to open it.
+While laying out your board, the 3D viewer is a very useful tool. Use "Alt+3" to open it.
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2521.webp)
+
 If some components are not visible, go back to your board design and double-click the part to open properties.
+
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2622.webp)
 
 Make sure you're in properties for the whole component, not just one pad or silkscreen, and then open the '3D Models' tab. Click on the file browser for the 3D model line. These are the correct models:
@@ -240,23 +255,23 @@ Make sure you're in properties for the whole component, not just one pad or silk
 
 These may vary based on your version of KiCAD.
 
-{/*could I put random tips somewhere more suitable, where?*/}Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significantly easier to see what's going on.
-
-
 ### Routing
 
-To route tracks, just follow the Rat's Nest (thin blue lines connecting matching nets), and connect the pads. Start with data signals, and do power and ground later. Try to use the higher thickness .5mm trace for sensitive or high load applications if you can fit it.
+To route tracks, follow the Ratsnest (thin blue lines connecting matching nets), and connect the pads. Look at the schematic to see which parts should go where. **Start with data signals, and do power and ground later**. An efficient layout, one that uses less wires, is often the mostly aesthetically pleasing too.
 
-The following images are one way to do this:
+Try to use the higher thickness .5mm trace for sensitive or high load applications if you can fit it.
 
-Note: You can press 'X' when hovering over a pad to start a trace.
+The following images are how I did it:
+
+Note: You can press "x" when hovering over a pad to start a trace.
 
 In the Appearance sidebar go to Objects > Locked Item Shadow, and hide it to clean up your layout a little bit. Feel free to play with the opacities of other elements to get to a point that you are comfortable with.
 
 ![](https://cloud-5127rirqc-hack-club-bot.vercel.app/023.webp)
+
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2824.webp)
 
-The decoupling capacitors for an IC must be right next to it. The purple lines are the 'Courtyard' - they show you how close two components can be without physically interfering, so, you keep the decoupling capacitor and IC's courtyards very close to each other.
+The purple lines are the 'Courtyard' - they show you how close two components can be without physically interfering, so, you keep the decoupling capacitor and IC's courtyards very close to each other.
 
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2925.webp)
@@ -268,7 +283,7 @@ And then, connect the microcontroller pins. In my layout A0-A5, D0, D1, D5-D13 c
 
 ### Two-layer routing
 
-Now because there is no way to connect D4 of the microcontroller to the header pin, we will have to jump layers. A via is a tiny hole in your board that connects traces on two sides. It's drilled into the PCB and filled (or plated) with copper to connect the two sides. You don't want vias too close to small pads because sometimes they can suck up some of the solder from the SMD manufacturing process.
+Now because there is no way to connect D4 of the microcontroller to the header pin, we will have to jump layers. A via is a tiny hole in your board that connects traces on two sides. It's drilled into the PCB and filled (or plated) with copper to connect the two sides.
 
 First, press 'X' to start running a trace away from D4, towards the inside of the microcontroller.
 
