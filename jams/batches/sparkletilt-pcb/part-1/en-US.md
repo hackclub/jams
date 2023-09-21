@@ -134,7 +134,7 @@ Once you have a label, you can press 'x' to flip it horizontally.
 
 We start with the 16 Pin USB 2.0 Type C receptacle, C165948.
 
-![image](https://cloud-iztw9b588-hack-club-bot.vercel.app/06.webp)
+![image](https://cloud-mu5k1d6dk-hack-club-bot.vercel.app/1usb.png)
 
 NC: SBU1/2 and Shield/Shell (shield is only for hosts).
 
@@ -151,7 +151,7 @@ You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](https://clo
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/87.1.webp)
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/97.2.webp)
 
-![image](https://cloud-iztw9b588-hack-club-bot.vercel.app/17.webp)
+![image](https://cloud-mu5k1d6dk-hack-club-bot.vercel.app/0ch.png)
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB-C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low instead of staying low forever (avoiding bootlooping the MCU).
 
@@ -163,7 +163,7 @@ RXD and TXD (USB directionality), are connected to their microcontroller pins D1
 
 Now you have a simple Arduino Nano-compatible board schematic! Check out Part 2 to turn this into a PCB, or jump to Part 3 to add more features to this board[^2].
 
-![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/01full-kicad.svg)
+![](https://cloud-mu5k1d6dk-hack-club-bot.vercel.app/201full-kicad.svg)
 
 {/* footnotes */}
 

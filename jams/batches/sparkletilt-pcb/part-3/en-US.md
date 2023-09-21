@@ -72,7 +72,7 @@ There are 3 modifications you need to make to the old design to suit the new pow
 1. Connect the new power rails to the right pins.  
    ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/192.webp)
 2. The USB chip now runs off 3.3V VCC, and according to [the datasheet](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF), V3 and VCC need to be connected together to 3.3V. Also, lower the resistance for the LEDs because of the lower voltage. ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/233.webp)
-3. Change the Diode to our new one, and USB is now powering VBUS (5V rail). ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/244.webp)
+3. Change the Diode to our new one, and USB is now powering VBUS and USB_P (5V rail). ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/244.webp)
 
 
 ## Other peripherals

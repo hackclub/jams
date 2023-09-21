@@ -145,7 +145,7 @@ Click 'Open PCB in board editor' in the schematic view.
 
 In the PCB editor, click on 'Edit board setup'. This is where we will set the constraints of our design.
 
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/606.webp)
+![](https://cloud-h0ccsbxz9-hack-club-bot.vercel.app/06.png)
 
 Then, in Design Rules > Pre-defined Sizes, specify how wide you want your traces, vias, and differential pairs will be. KiCAD will let you pick between the options here when designing your board. We will set a track width of 0.3mm for signal traces, 0.5mm for power traces, and 0.7mm diameter vias with a 0.3mm hole[^6]. 
 
@@ -259,9 +259,11 @@ These may vary based on your version of KiCAD.
 
 To route tracks, follow the Ratsnest (thin blue lines connecting matching nets), and connect the pads. Look at the schematic to see which parts should go where. **Start with data signals, and do power and ground later**. An efficient layout, one that uses less wires, is often the mostly aesthetically pleasing too.
 
-Try to use the higher thickness .5mm trace for sensitive or high load applications if you can fit it.
+Try to use the higher thickness 0.5mm trace for sensitive applications like the decoupling capacitors, clock, power lines, etc if you can fit it, and 0.3mm for regular data lines[^6].
 
-The following images are how I did it:
+![](https://cloud-mu5k1d6dk-hack-club-bot.vercel.app/4screenshot_20230921_041203.png)
+
+The following images are how router the traces:
 
 Note: You can press "x" when hovering over a pad to start a trace.
 
@@ -272,7 +274,6 @@ In the Appearance sidebar go to Objects > Locked Item Shadow, and hide it to cle
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2824.webp)
 
 The purple lines are the 'Courtyard' - they show you how close two components can be without physically interfering, so, you keep the decoupling capacitor and IC's courtyards very close to each other.
-
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2925.webp)
 
