@@ -87,8 +87,10 @@ Then, scroll down and **select "Basic Parts"** to find the parts that don't have
 
 You should find that all of the components have 0805 parts available and in stock.
 
-Specifically, all capacitors will be: `Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder` 
+Specifically, all capacitors will be: `Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder`[^21]
 all LEDs will be `LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder`, and all resistors will be `Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`.
+
+[^21]: These HandSolder footprints do not mean that you have to hand solder them. JLCPCB will still assemble these components for you. HandSolder footprints simply give you more space under component - just in case you need it to fix stuff. Picking the non-handsolder versions of these footprints is perfectly fine.
 
 ### Specific Components
 
