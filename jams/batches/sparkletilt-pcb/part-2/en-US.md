@@ -51,11 +51,11 @@ Reminders:
 - Remember separate conductive traces cannot touch each other.
 - You can use a combination of layers to design the look of your board.
 - You almost always want to have the traces of your board covered with soldermask, but it's typically ok to have other copper regions exposed, just remember it might tarnish.
-- JLCPCB engineers will review your design before production, if they spot any issues they'll send you an email to check it.
+- JLCPCB engineers will review manufacturing details of your design before production, if they spot any issues they'll send you an email to check it. However, don't rely on this to catch circuit issues.
 
 ## Footprint assignment
 
-Footprints are the exposed copper pads on the PCB for each component.
+Footprints are the exposed copper pads on the PCB for each component. They represent the physical size and shape of the components.
 
 First, click on 'Run footprint assignment tool'.
 
@@ -75,7 +75,7 @@ Some footprints, like the Arduino Nano outline, which is not a real component in
 
 ### Generics
 
-0402, 0603, 0805, and 1206 are common sizes of small two-terminal SMD components like resistors, capacitors, and diodes. 0805 is very common and still somewhat hand solderable, so we will use 0805 for all our components[^1].
+0402, 0603, 0805, and 1206 are common sizes of small two-terminal SMD components like resistors, capacitors, and diodes. 0805 is very common and somewhat convenient to place by hand, so we will use **0805** for all our components[^1].
 
 <a title="Zerodamage, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SMT_sizes,_based_on_original_by_Zureks.svg"><img style={{backgroundColor: "white"}} width="256" alt="SMT sizes, based on original by Zureks" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/SMT_sizes%2C_based_on_original_by_Zureks.svg/256px-SMT_sizes%2C_based_on_original_by_Zureks.svg.png"/></a>
 
@@ -83,7 +83,12 @@ To find our first capacitor, go to [jlcpcb.com/parts](https://jlcpcb.com/parts).
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/40.4.png.webp)
 
-Then, select "Basic Parts" to find the parts that don't have the extended fee and we see that they do have 0805 available. So, we can select `Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder` for all our 100nF capacitors in KiCAD. You can similarly go through each capacitor and resistor value on JLCPCB Parts and find that they have 0805 versions available. So, all capacitors will be `Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder`, all LEDs will be `LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder`, and all resistors will be `Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`.
+Then, scroll down and **select "Basic Parts"** to find the parts that don't have the extended fee and we see that they do have 0805 available. So, click on the component and search for 0805 in footprint selection. Do this for each component.
+
+You should find that all of the components have 0805 parts available and in stock.
+
+Specifically, all capacitors will be: `Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder` 
+all LEDs will be `LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder`, and all resistors will be `Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`.
 
 ### Specific Components
 
@@ -99,7 +104,15 @@ Then, in KiCAD, after selecting the diode, we can search for the package. While 
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/70.7.webp)
 
-Doing the same with the Crystal will get you its package `SMD3225`, and footprint `Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering`.
+Do the same reseach with the Crystal to get the footprint/package.
+
+<details>
+
+<summary>Did you try it yourself? Click here for the Crystal's footprint.</summary>
+
+Looking up the part number, C13738, for the crystal on [jlcpcb.com/parts](https://jlcpcb.com/parts) should give the package, `SMD3225`, which is the KiCAD footprint `Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering`.
+
+</details>
 
 Similarly, for the ICSP header, you will get the right result by searching for `2.54mm` (i.e. 0.1 inch pin spacing), and `2x03` (6 pins arranged in 2x3): `Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical`.
 
@@ -113,7 +126,6 @@ You might've noticed that my original footprint assignment window had some compo
 Others, like the switch, were found by searching for their part number, `1187A`, in the footprint window.
 
 Lastly, some components like the USB-C Receptacle can be weird. While there are hundreds of different manufacturers of USB-C ports and receptacles, there are only a few common designs. However, there is no way to confirm which part uses which design without manually checking each dimension, so I just used the popular `HRO_TYPE-C-31-M-12`.
-
 
 ---
 
@@ -166,8 +178,6 @@ You can use the shape tools to draw the outline of the board, or...
 
 you can go to File > Import > Graphics to import a custom SVG. You can pick whatever shape you like here.
 
-
-
 > *Note*: In part 3 of this jam, we will be adding more features such as an LED strip and accelerometer to make a level. Make sure your design will support the physical realities of being a level, such as having two points to balance on, which do not have any ports. Also, consider how your LEDs will physically and aesthetically fit.  Make a rough paper sketch if that helps.
 > Of course, none of this applies to you if you have different plans for your board.
 
@@ -175,13 +185,13 @@ you can go to File > Import > Graphics to import a custom SVG. You can pick what
 
 By default, your drawing probably won't fit the Arduino Nano template.
 
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1413.webp)
-
 Delete the first import and go back to File > Import > Graphics. Play with the scale setting until your design snugly fits the Arduino Nano template (while leaving space for other components).
 
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1615.webp)
+![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1413.webp)
 
 Clean up the drawing to only leave one continuous board shape.
+
+![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1615.webp)
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1514.webp)
 
@@ -415,9 +425,9 @@ You can solve other DRC issues pretty easily.
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/5552.webp)
 
-## Further Reading
-
+{/* will automatically have footnotes header */}
 [^1]: More info at https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
+      Also, we're only using 0805 in Part 2, not Part 3.
 
 [^2]: Ideally, the ground plane would be a continuous, mostly unobstructed chunk, but that would require either spreading out the components or more layers. Both would result in more complexity and cost, which is not good for this workshop.
 

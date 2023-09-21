@@ -161,7 +161,7 @@ RXD and TXD (USB directionality), are connected to their microcontroller pins D1
 
 ## Done!
 
-Now you have a simple Arduino Nano-compatible board schematic! Check out Part 2 to turn this into a PCB, or Part 3 to add more features to this board[^2].
+Now you have a simple Arduino Nano-compatible board schematic! Check out Part 2 to turn this into a PCB, or jump to Part 3 to add more features to this board[^2].
 
 ![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/01full-kicad.svg)
 
