@@ -21,6 +21,14 @@ batch: sparkletilt-pcb
 
 In this jam, we will turn our schematic from Part 1 into an actual PCB layout.
 
+   <Announcement
+            copy="This Jam is in Beta"
+            caption="We need your help and feedback on the clarity of this jam."
+            href="https://github.com/hackclub/jams/blob/main/jams/batches/sparkletilt-pcb/part-2/en-US.md"
+            iconLeft="help"
+            color="primary"
+          />
+
 ## Prerequisites
 
 The rest of the workshop assumes you understand PCB Basics like:
