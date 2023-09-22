@@ -4,7 +4,7 @@ description: 'Turn a microcontroller schematic into a real PCB layout'
 contributor: 'karmanyaahm'
 contributorSlackID: 'U04CNFV0T4M'
 thumbnail: 'https://cloud-r3x168b9x-hack-club-bot.vercel.app/5552.webp'
-timeEstimate: '2 hours' # ??
+timeEstimate: '3 hours' # ??
 difficulty: 'Intermediate'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
 # TODO? I don't have the time to make these ATM. I'd love if someone else could
@@ -433,7 +433,7 @@ And now our board is electrically done!
 You can solve other DRC issues pretty easily.
 - For trace clearance issues, just move the trace away from the specified component. These sometimes pop up when rearranging components.
 - You can ignore/exclude all the Courtyard Overlaps with A1. That just points out that there are components inside the Arduino template [^3].
-- Through-hole has 'Thermal relief connection incomplete': if the connection looks good enough, it's good enough. 
+- Through-hole has 'Thermal relief connection incomplete': if the connection looks good enough, it's good enough.
 - Ignore most 'Footprint doesn't match copy' and Silkscreen warnings. Manually fix the silkscreens that you want to see.
 
 

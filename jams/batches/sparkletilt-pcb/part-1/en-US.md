@@ -73,7 +73,7 @@ Then, we need to connect the power pins to power *nets* and place *decoupling ca
 
 **Nets**: Nets like VCC and GND serve as abstractions for actual connections in our schematic. If we connected every single chip to a central VCC and GND point in our schematic, it would be very messy. These symbols tell the PCB Designer that we need to connect those pins while keeping the schematic clean.
 
-**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. It also absorbs noise and voltage spikes from the power source. So, these have to be as physically close to their parent IC as possible in the PCB layout (in Part 2).
+**Decoupling Capacitors**: AKA Bypass Capacitors. A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up, essentially like a dam controls a river. When there are voltage spikes or noise, it absorbs them, while letting normal DC power pass along. So, these have to be as physically close to their parent IC as possible in the PCB layout (in Part 2).
 
 In the KiCAD parts list, search `C` and after placing it change the *value* field to the correct number and units, 100nF in this case.
 

@@ -4,7 +4,7 @@ description: 'Add useful sensors, chargers, and lights to your dev board'
 contributor: 'karmanyaahm'
 contributorSlackID: 'U04CNFV0T4M'
 thumbnail: 'https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/32thumb.jpg'
-timeEstimate: '2 hours' # ???
+timeEstimate: '3 hours' # ???
 difficulty: 'Difficult'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
 # TODO? I don't have the time to make these ATM. I'd love if someone else could
@@ -18,16 +18,22 @@ totalParts: 4
 part: part-3
 batch: sparkletilt-pcb
 ---
+In this jam, we will add an accelerometer, battery charger, and LEDs to our microcontroller board. Because we're adding a lot of complicated components here, this could be a litle confusing. Especially for the terminology, Google is your friend. If you're confused about any concepts, asking questions on Slack is highly encouraged, we all learn better together! Asking questions will also help me make this jam better for future jammers.
 
-In this jam, we will add an accelerometer, battery charger, and LEDs to our microcontroller board.
+   <Announcement
+            copy="This Jam is in Beta"
+            caption="We need your help and feedback on the clarity of this jam."
+            href="https://github.com/hackclub/jams/blob/main/jams/batches/sparkletilt-pcb/part-3/en-US.md"
+            iconLeft="help"
+            color="primary"
+          />
 
 ## Part selection
 
-
 1. Battery Charger - TP4057 - It's a basic part on JLCPCB, fairly small (SOT-23), and has two separate LEDs for charging and battery full.
-2. LEDs - WS2812 or SK6812 - There are several addressable options in the WS2812 and Sk6812 series. Most of them are rated for 3.7V-5.3V and require 70% of VDD to read a logic high. Your main deciding factor here will be physical and assembly constraints. In my design, I wanted the LEDs on the opposite side of the rest of the circuit which further increased complications (getting both sides assembled is super expensive). 
+2. LEDs - WS2812 or SK6812 - There are several addressable options in the WS2812 and SK6812 series. Most of them are rated for 3.7V-5.3V and require 70% of VDD to read a logic high. Your main deciding factor here will be physical and assembly constraints. In my design, I wanted the LEDs on the opposite side of the rest of the circuit which further increased complications (getting both sides assembled is super expensive). 
    
-    I ended up installing a combination of the `SK6812SIDE-A-RVS` which shines at a right angle from JLCPCB, and the `WS2812D-F5` for the back of my board, that I could solder myself. Honorable mentions go to the `SK6812MINI-E`, a reverse-mounted LED that I would've totally used if my board was wide enough. There is no right answer here; everyone's design and aesthetic preferences will differ.
+    I ended up installing a combination of the `SK6812SIDE-A-RVS` which shines at a right angle from JLCPCB, and the `WS2812D-F5` for the back of my board, that I could solder myself[^13]. Honorable mentions go to the `SK6812MINI-E`, a reverse-mounted LED that I would've totally used if my board was wide enough. There is no right answer here; everyone's design and aesthetic preferences will differ.
 3. Accelerometer - LIS3DHTR - We don't need anything too fancy as we're just measuring the orientation of 1G relative to the board. Unfortunately, there are no popular and cheap 5V-compatible accelerometers. The LIS3DHTR is 1.8V to 3.6V and Arduino libraries from Adafruit and Sparkfun exist for it.
 
 
@@ -287,4 +293,4 @@ I can't wait to see how you remix this. You can share your designs and get feedb
 [^10]: This video on reverse voltage protection might help understand these states: [YouTube](https://youtu.be/IrB-FPcv1Dc?t=116). We are doing practically the same thing, just checking another power supply instead of the direction of the one battery.
 [^11]: It's unlikely to have a disconnected power supply but active data pin on a PCB, but the cost of adding the resistor is negligible, so might as well. It's not a big deal if you remove it.
 [^12]: https://electronics.stackexchange.com/a/466498/344964 
-[^13]: I learned that the hard way.
+[^13]: You can't connect the SK6812SIDE-A-RVS and WS2812D-F5 in parallel, because the data encoding for one is RGB, the other is GRB. I learned that the hard way.

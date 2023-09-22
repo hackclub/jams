@@ -4,7 +4,7 @@ description: 'Learn how to convert a board design into an actual order'
 contributor: 'karmanyaahm'
 contributorSlackID: 'U04CNFV0T4M'
 thumbnail: 'https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/514.webp'
-timeEstimate: '1 hour' # ???
+timeEstimate: '1 hour'
 difficulty: 'Intermediate'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
 # TODO? I don't have the time to make these ATM. I'd love if someone else could
