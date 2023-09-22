@@ -8,8 +8,10 @@ import Comment from './Comment'
 import Image from './Image'
 import { CodeBlock, InlineCode } from './Code'
 import StepHeader from './StepHeader'
+import Announcement from './Announcement'
 
 const mdxComponents = {
+  Announcement,
   Dropdown,
   Grid,
   GridItem,
@@ -18,7 +20,7 @@ const mdxComponents = {
   pre: CodeBlock,
   inlineCode: InlineCode,
   h2: StepHeader,
-  blockquote: Blockquote
+  blockquote: Blockquote,
 }
 
 export default mdxComponents
