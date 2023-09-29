@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fullstory/browser": "^1.7.1",
     "@hackclub/icons": "^0.0.12",
     "@hackclub/meta": "^1.1.32",
     "@hackclub/theme": "^0.3.3",

@@ -6,11 +6,17 @@ import '@hackclub/icons'
 import '@hackclub/theme/fonts/reg.css'
 import '@hackclub/theme/fonts/reg-bold.css'
 import '@/styles/globals.scss'
+import * as FullStory from '@fullstory/browser';
+import { useEffect } from 'react';
+
 
 export default function App({
   Component,
   pageProps: { session, ...pageProps }
 }) {
+  useEffect(() => {
+    FullStory.init({ orgId: 'ARN0J'});
+  }, []);
   return (
     <ThemeUIProvider
       theme={{

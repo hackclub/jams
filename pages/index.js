@@ -133,7 +133,7 @@ function Slides({ router, initialFeatures }) {
 
     containerRef.current.addEventListener('scroll', handleScroll)
     return () => {
-      containerRef.current.removeEventListener('scroll', handleScroll)
+      containerRef.current?.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
@@ -612,7 +612,7 @@ export default function Index(props) {
         })
         )
 
-  const desiredSlugs = ['ai-travel', 'online-store', 'voxel-animation']
+  const desiredSlugs = ['ai-travel', 'hacker-card', 'voxel-animation']
   const features = props.jamsContent.singles.filter(jam =>
     desiredSlugs.includes(jam.slug)
   )

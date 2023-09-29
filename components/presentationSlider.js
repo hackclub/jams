@@ -73,7 +73,7 @@ const PresentationSlider = ({ pdfPath, presentationPlay, presentation }) => {
             fontSize: '16px',
             borderRadius: '8px'
           }}>
-          Play in Figma
+          Present
         </Link>
         <Link
           target={'_blank'}
@@ -86,7 +86,7 @@ const PresentationSlider = ({ pdfPath, presentationPlay, presentation }) => {
             fontSize: '16px',
             borderRadius: '8px'
           }}>
-          Remix In Figma
+          Edit In Figma
         </Link>
       </div>
       <Box
