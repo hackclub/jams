@@ -4,7 +4,7 @@ description: >
     At the end of this jam, you'll create your very own social media app that handles users and posts.
 contributor: "InternetRamen"
 contributorSlackID: "U03AUPJQKLN"
-thumbnail: "https://cloud-bo51u70qw-hack-club-bot.vercel.app/0slide_16_9_-_3.png"
+thumbnail: "https://cloud-ezdkiz302-hack-club-bot.vercel.app/00slide_16_9_-_3__1_.png"
 timeEstimate: "60 Min"
 difficulty: "Intermediate"
 keywords: "Web, App, Website, JavaScript"

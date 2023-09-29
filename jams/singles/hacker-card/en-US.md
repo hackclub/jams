@@ -3,7 +3,7 @@ title: 'Make your own PCB Hacker Card'
 description: Let's build a business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
 contributor: 'maggie-j-liu'
 contributorSlackID: U026XSMKEDC
-thumbnail: 'https://cloud-1cgzd4n0b-hack-club-bot.vercel.app/0hacker_card_jam_thumbnail.png'
+thumbnail: 'https://cloud-mplus2pef-hack-club-bot.vercel.app/00hacker_card_jam_thumbnail__1_.png'
 timeEstimate: '1 Hour'
 difficulty: 'Beginner'
 keywords: 'Hardware, PCB, EasyEDA, NFC, business card, OnBoard'
