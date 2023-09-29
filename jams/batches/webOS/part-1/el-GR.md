@@ -2,6 +2,7 @@
 part: part-1
 title: 'Build Your Welcome Screen'
 batch: webOS
+languages: 'en-US, el-GR'
 description: >
   Σε αυτό το Jam, θα δημιουργήσεις μια καταπληκτική οθόνη καλωσορίσματος για το δικό σου λειτουργικό σύστημα.
   θα είναι πολύ διασκεδαστικό και θα έχεις ένα μοναδικό και πολύ ωραίο αποτέλεσμα
@@ -21,6 +22,7 @@ poster: ''
 video: ''
 totalParts: 5
 ---
+<div style={{"font-family": "Helvetica, Noto Sans, sans-serif"}}>
 
 ![Capybara OS demo](https://cloud-ir4w2s05f-hack-club-bot.vercel.app/0screenrecording.gif)
 [Live Demo ](https://step8.thomasstubblef2.repl.co/) &
@@ -351,3 +353,4 @@ Padding είναι το κενό μεταξύ της εικόνας σου απ�
 * Τα παράθυρά σου
 * Ένα top bar
 * Να βλέπουμε την ώρα με τη JS
+</div>

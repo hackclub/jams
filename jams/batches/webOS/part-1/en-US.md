@@ -2,6 +2,7 @@
 part: part-1
 title: 'Build Your Welcome Screen'
 batch: webOS
+languages: 'en-US, el-GR'
 description: >
   In this Jam, you'll be creating an awesome welcome screen for your personalOS.
   It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product
