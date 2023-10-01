@@ -9,6 +9,6 @@ keywords: 'AI, ML, Machine Learning, Artificial Intelligence'
 timeEstimate: '4 Hours'
 difficulty: 'Beginner'
 slug: 'artificial-intelligence'
-sticker: 'https://cloud-f3gqmb577-hack-club-bot.vercel.app/00frame_101__1_.png'
+sticker: 'https://cloud-1xxc6ussy-hack-club-bot.vercel.app/000frame_101__1_.webp'
 isBatch: True
 ---

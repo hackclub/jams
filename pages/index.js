@@ -732,7 +732,10 @@ export default function Index(props) {
             backgroundColor: '#FDF5EC',
             border: '1px solid #F0924B',
             padding: ['16px', '24px', '32px'],
-            borderRadius: '16px'
+            borderRadius: '16px',
+            transition: 'box-shadow 0.3s', '&:hover': {
+            boxShadow: '0px 4px 24px 0px rgba(225, 150, 89, 0.25)',
+            }
           }}>
           <Text
             as="h2"

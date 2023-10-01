@@ -4,7 +4,7 @@ description: >
   In this Jam, you'll be designing and creating a fun platformer-style game and sharing it with your friends.
 contributor: 'ajs256'
 contributorSlackID: 'U04MDFEBL2U'
-thumbnail: 'https://cloud-5kma4td0d-hack-club-bot.vercel.app/0kaboom.gif'
+thumbnail: 'https://cloud-rlear1o0d-hack-club-bot.vercel.app/00kaboom.webp'
 timeEstimate: '30 Min'  
 difficulty: 'Intermediate'  
 keywords: 'Web, Game, js, JavaScript, glitch, kaboom, gamedev' 

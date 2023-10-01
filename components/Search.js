@@ -34,7 +34,7 @@ export default function SearchControls({
               backgroundColor: 'white',
               border: '1px solid',
               borderColor: 'muted',
-              borderRadius: 6
+              borderRadius: 6,
             }}>
             <Icon color="muted" glyph="search" size={24} />
             <Input

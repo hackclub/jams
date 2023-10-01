@@ -4,7 +4,7 @@ description: >
   In this jam, you'll be designing your own online store with Figma! In the next jam, we'll be using the Shopify API to turn this into a real store.
 contributor: 'ryanchou-dev'
 contributorSlackID: 'U033ER629RD'
-thumbnail: 'https://cloud-g5pzu1n70-hack-club-bot.vercel.app/00image__3___1_.png'
+thumbnail: 'https://cloud-4k92u802a-hack-club-bot.vercel.app/000image__3___1_.webp'
 timeEstimate: '45 Min'
 difficulty: 'Easy'
 keywords: 'Design, Figma, website, store, design, ux, ui'
