@@ -12,7 +12,8 @@ const Image = ({ src, alt }) => (
       // maxWidth: "calc(100vw - 32px)",
       objectFit: 'contain',
       borderRadius: '8px',
-      display: 'block'
+      display: 'block',
+      loading: 'lazy',
     }}
   />
 )
