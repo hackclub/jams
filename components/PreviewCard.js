@@ -230,7 +230,8 @@ export default function PreviewCard({
               ) : (
                 <Image
                   src={thumbnail}
-                  sx={{
+                    sx={{
+                    loading: 'lazy',
                     width: '100%',
                     objectFit: 'cover',
                     height: "100%",

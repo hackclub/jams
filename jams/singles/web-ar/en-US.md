@@ -3,7 +3,7 @@ title: 'Mastering the Matrix: Crafting Your Own Web-based AR App'
 description: >
   This guide outlines how to create a virtual reality scene using A-Frame, a web framework for building VR experiences. It discusses a component-based architecture to manage complexity and improve reusability.
 contributor: 'DevIos01'
-thumbnail: 'https://cloud-8lno4kd18-hack-club-bot.vercel.app/000thumbnail-jam__1_.webp'
+thumbnail: 'https://cloud-otgp3nnas-hack-club-bot.vercel.app/0000thumbnail-jam__1__50.webp'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
 keywords: 'Web, Magic, AR, Ar.js'

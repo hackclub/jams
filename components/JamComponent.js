@@ -767,7 +767,7 @@ export default function JamComponent({ jam, jamsContent }) {
               jam.video ||
               jam.notes ||
               jam.poster ||
-              jam.AITokenLink) && (
+              jam.aitokenlink) && (
               <>
                 <h2
                   sx={{
@@ -880,11 +880,11 @@ export default function JamComponent({ jam, jamsContent }) {
                       </Box>
                     </Link>
                   )}
-                  {jam.AITokenLink && (
+                  {jam.aitokenlink && (
                     <Link
                       target={'_blank'}
                       sx={{ color: '#993CCF' }}
-                      href={jam.AITokenLink}>
+                      href={jam.aitokenlink}>
                       <Box
                         sx={{
                           alignItems: 'center',

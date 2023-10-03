@@ -7,6 +7,7 @@ const Image = ({ src, alt }) => (
     src={src}
     alt={alt}
     style={{
+      loading: 'lazy',
       maxWidth: '100%',
       maxHeight: '50vh',
       // maxWidth: "calc(100vw - 32px)",

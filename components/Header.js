@@ -144,9 +144,9 @@ export default function Header({
       }}
       style={{
         backgroundColor:
-          scrollPosition < 50 ? 'transparent' : 'rgba(240,240,240,0.75)',
+          scrollPosition < 50 ? 'transparent' : 'rgba(240,240,240,0.45)',
         transitionProperty: 'background-color',
-        transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 0.5)',
         transitionDuration: '500ms'
       }}>
       <Container
@@ -157,10 +157,10 @@ export default function Header({
         }}>
         {isHomePage ? (
           <Link style={{ height: '4rem' }} href="https://hackclub.com/">
-            <Image src="/assets/flag.svg" draggable={false} sx={{ height: '100%' }} />
+            <Image src="/assets/flag.svg" height='280' width='158' alt='hackclub-flag' draggable={false} sx={{ height: '100%' }} />
           </Link>
         ) : (
-          <a
+          <span
             sx={{
               'my': '16px',
               'pl': '6px',
@@ -186,7 +186,7 @@ export default function Header({
             href={back}>
             <FiArrowLeft style={{ fontSize: '1.4rem' }} />
             <span>Back</span>
-          </a>
+          </span>
         )}
         <Box
           sx={{

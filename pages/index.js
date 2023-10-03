@@ -10,6 +10,7 @@ import {
   Text,
   Card
 } from 'theme-ui'
+
 import Footer from '@/components/Footer'
 import SearchControls from '@/components/Search'
 import PreviewCard from '@/components/PreviewCard'
@@ -658,26 +659,7 @@ export default function Index(props) {
           position: 'relative',
           height: '100%'
         }}>
-        <Box
-          sx={{
-            background:
-              'url(/assets/main-texture.svg), lightgray 0% 0% / 40.00000059604645px 40.00000059604645px repeat',
-            backgroundBlendMode: 'color-burn',
-            position: 'absolute',
-            top: 0,
-            left: '0',
-            zIndex: -1
-          }}
-        />
-        <Image
-          sx={{
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-            mixBlendMode: 'color-burn'
-          }}
-          src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"
-        />
+
 
         <Box
           sx={{

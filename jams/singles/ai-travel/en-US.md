@@ -4,7 +4,7 @@ description: >
   This Jam will teach you how to use ChatGPT and AI to create a trip itinerary planner. It is extremely customizable and gives a foundation for you to expand upon with your own ideas!
 contributor: 'ShubhamPatilsd'  
 contributorSlackID: 'U029D5FG8EN'
-thumbnail: 'https://cloud-lzv14la1n-hack-club-bot.vercel.app/000image__2___1_.webp'  
+thumbnail: 'https://cloud-obssy416r-hack-club-bot.vercel.app/00000image__2___1_-2_50.webp'  
 timeEstimate: '60 Min'  
 difficulty: 'Intermediate'  
 keywords: 'replit, API, trip itinerary, itinerary planner ai, planner ai, website, javascript, HTML, CSS, AI, chatgpt, openai, ai, ai api'  

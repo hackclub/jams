@@ -6,7 +6,7 @@ description: >
     features! The most important part is to use your imagination since there is no limit to what YOU can create!
 contributor: 'necode2'
 contributorSlackID: 'U05E5U2D91P'
-thumbnail: 'https://cloud-kw86q5jtd-hack-club-bot.vercel.app/00ezgif-4-92cc368f0d.webp'
+thumbnail: 'https://cloud-ersuy6g9f-hack-club-bot.vercel.app/000ezgif-4-92cc368f0d_50.webp'
 timeEstimate: '30 Min'
 difficulty: 'Beginner'
 keywords: 'Game, Adventure, Pythons, CYOA, replit, storytelling, interactive'
