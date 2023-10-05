@@ -1,16 +1,15 @@
 ---
 part: part-1
-title: 'Getting familiar with designing PCBs + Make your own USB hub!'
+title: 'Get familiar with PCBs + Make a blueprint!'
 batch: 'usb-hub'
 description: >
-    Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
+    Get started making your schematic for your very own USB hub! Even if you're a beginner, you'll walk out of this jam with your very own schematic.
 contributor: 'MaxWofford'
 contributorSlackID: 'U0C7B14Q3'
-thumbnail: 'https://sprig.hackclub.com/stories-tiny/sprig-front.jpeg'
+thumbnail: 'https://cloud-d5i0seddy-hack-club-bot.vercel.app/1usb_hub_jam_part_1_thumbnail.png'
 timeEstimate: '45-60 Min'
-difficulty: 'Beginner'
-keywords: 'Sprig, Games, Game'
-language: 'JavaScript'
+difficulty: 'Intermediate'
+keywords: 'PCB, Circuit, PCB, Hub, Electronics, Schematic, Design, EasyEDA, EDA, Beginner'
 presentation: "" 
 presentationPlay: "" 
 presentationPDF: "" 
