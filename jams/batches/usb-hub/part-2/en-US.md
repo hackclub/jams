@@ -1,14 +1,14 @@
 ---
 part: part-2
-title: 'Getting familiar with designing PCBs + Make your own USB hub!'
+title: 'Turn your blueprint into a board and order it!'
 batch: 'usb-hub'
 description: >
     Use a schematic to start building your own USB hub!
 contributor: 'MaxWofford'
 contributorSlackID: 'U0C7B14Q3'
-thumbnail: 'https://sprig.hackclub.com/stories-tiny/sprig-front.jpeg'
+thumbnail: 'https://cloud-d5i0seddy-hack-club-bot.vercel.app/0usb_hub_jam_part_2_thumbnail.png'
 timeEstimate: '45-60 Min'
-difficulty: 'Beginner'
+difficulty: 'Intermediate'
 keywords: 'PCB, circuit, board, electrical components'
 language: 'JavaScript'
 presentation: "" 
