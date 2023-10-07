@@ -4,7 +4,7 @@ description: >
     In this jam, we'll be using ChatGPT to generate the text of a children's comic, and use Stable Diffusion to create pictures for the comic. Both ChatGPT and Stable Diffusion are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 contributor: 'ganning127'
 contributorSlackID: 'U03336QJ21H'
-thumbnail: 'https://cloud-am3ohsqbm-hack-club-bot.vercel.app/00thumbnail__2___1_.png'
+thumbnail: 'https://cloud-9f9dwksme-hack-club-bot.vercel.app/00000thumbnail__2___1_-2_70_50.webp'
 timeEstimate: '60 Min'
 difficulty: 'Easy'
 keywords: 'AI, ChatGPT, Stable Diffusion, HTML, CSS, Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'

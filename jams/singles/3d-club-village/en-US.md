@@ -4,7 +4,7 @@ description: >
   In this jam, you'll create your very own virtual sky village with Spline, a web-based 3D modeling software.
 contributor: 'linkai101'
 contributorSlackID: 'U01R8RSGYUV'
-thumbnail: 'https://cloud-deg2i15e8-hack-club-bot.vercel.app/00680a6b28-7504-46b3-90d5-04cd1057640e__1_.png'
+thumbnail: 'https://cloud-c73eqxeoz-hack-club-bot.vercel.app/00village_thumbnail_50.webp'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
 keywords: 'Web, 3D, Spline'
