@@ -127,11 +127,21 @@ To prevent mistakes, try to keep your nets looking like mine for this tutorial, 
 
 ![](https://cloud-j8bxr01tm-hack-club-bot.vercel.app/0gnd_nets.png)
 
+## Ground the Shield
+
+Go ahead and connect MH1 & MH2 to GND also. These aren't really ports- they're just the parts where the metal cover of the USB sticks into the board. We'll connect them to ground in case there's any static electricity.
+
+![](https://cloud-7u8ahczmz-hack-club-bot.vercel.app/0screenshot_2023-10-11_at_13.27.24.png)
+
+![](https://cloud-1vlpmdjo8-hack-club-bot.vercel.app/0screenshot_2023-10-11_at_13.30.41.png)
+
 ## Add the other USBs
 
 Next up let's connect the other USB-A connectors!
 
 I'll position my USB-A female ports and hook them up to the main chip's `DP` and `DM` pins. `DP1` goes to USB-1's `D+`. After getting the data lines wired, we'll connect the power using nets!
+
+On these USBs, ports 5 & 6 are the same as ports MH1 & MH2. They're just the metal shield, so we'll connect them to `GND` as well.
 
 ![](https://cloud-6cwv1d324-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_15.16.16.png)
 
@@ -139,7 +149,7 @@ _Remember, with nets you can connect from a distance!_
 
 ## Power surges
 
-The design is almost complete, and in a perfect world it would work just fine. [:But we aren't in a perfect world](https://example.com)- we live in a world with static electricty and power surges. We'll need to now protect our circuit. If we don't, we could fry our hub or even our computer's USB port!
+The design is almost complete, and in a perfect world it would work just fine. But we aren't in a perfect world- we live in a world with static electricty and power surges. We'll need to now protect our circuit. If we don't, we could fry our hub or even our computer's USB port!
 
 Knowing where these protective components go can be an art and hotly debated on many stackoverflow forms. Fortunately, the spec sheets we're using contain some example circuits for us to use. Let's take a look at the CoreChips SL2.1A spec sheet again:
 
@@ -149,13 +159,13 @@ _This is a little hard to see, so we'll go through it step by step. For now, jus
 
 First up we'll add a diode to protect from a surge coming _from the laptop_. That's a case where the laptop sends too much power and goes beyond the 5V we want. The Schottky (pronounced "shot-key") diode with part number [`C48192`](https://www.lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_onsemi-NSR0320MW2T1G_C48192.html) is perfect or this. Let's drop it in right after we take on the 5V power from the USB-A male.
 
-_Diodes can also ensure power flows in 1 direction, but we aren't using it for that property right now- we just want it to slightly resist the flow of electricity. If you google around for diodes, keep in mind most people are using it for a different reason than we are!_
+_Diodes ensure power flows in 1 direction. We don't want an accidental spike to flow back into our laptop! This Schottky diode will also slightly resist the flow of electricity, which is good for protecting against power surges._
 
 Now let's protect from power surges that make it past the diode. We'll use a capacitor for this– it's kinda like a resevior for power. It can store up power and then release it when it's needed. If there's a power fluctuation, this capacitor will let the extra power blead out to `GND` harmlessly. We'll use a 10uF capacitor with part number [`C19702`](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.html). Let's drop it in right after the diode, and connect it to `GND`.
 
 ![](https://cloud-e0ekzo8gw-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.37.55.png)
 
-_When using a capacitor to prevent overflows like this it's called a "decoupling capacitor"._
+_When using a capacitor to prevent overflows like this it's called a ["decoupling capacitor"](https://components101.com/articles/decoupling-capacitor-vs-bypass-capacitors-working-and-applications). I'll admit I don't 100% understand why, but this won't short 5V to GND._
 
 Go ahead and use the same capacitors to protect the other USB-A ports. You can copy & paste the components, and then move them into place.
 
@@ -164,6 +174,8 @@ Go ahead and use the same capacitors to protect the other USB-A ports. You can c
 ## Unused ports
 
 The SL2.1A chip we're using supports up to 4 USB ports, but we're making a smaller board for the tutorial so we won't be using the ports for "3" or "4". Go ahead and use the "no connection" tool to show in the schematic that these pins aren't being used.
+
+_Making a 4-port USB hub is left as a challenge for you to do if you want to!_
 
 ![](https://cloud-4sab6gwqz-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.51.45.png)
 
