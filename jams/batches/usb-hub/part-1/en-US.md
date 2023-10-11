@@ -35,11 +35,11 @@ We're starting with a schematic. They're like the blueprint for a PCB. It's a go
 
 > Schematics correspond to the parts of your PCB.
 
-### Start a new project
+## Start a new project
 
 Go to [EasyEDA](https://easyeda.com/editor) and create a new project (File > New > Project...). Name it `usb-hub`.
 
-### Add the parts
+## Add the parts
 
 For our design, we're going to need a USB-A connector that plugs into our computer. Click the `Libraries` button on the left toolbar, and search for `usb-a`.
 
@@ -57,11 +57,14 @@ Next up we need a main board to connect everything together. There are a bunch o
 
 Now that we've got a great big pile of parts in our sandbox, the next step is to connect them together!
 
-### Connect it together
+## Connect it together
 
 We've got a whole list of parts to hook up now. Let's start with the USB-A male connector to the CoreChips SL2.1A. But what do we need to wire together?
 
-### <i><s>Connect it together</s></i> Read the spec!
+<h2>~~*Connect it together*~~ <ins>Read the spec</ins>!</h2>
+<div style={{display: "none"}}>
+## Read the spec!
+</div>
 
 Let's find the spec for the CoreChips SL2.1A. A spec is kinda like a README for a part. Every part has one, and it's a great place to start when you're trying to figure out how to use a part.
 
@@ -88,7 +91,7 @@ Great, now we know what we need to do on the chip side, let's find the spec for 
 
 The part I chose also had a spec in chinese, but it's a common part so I found [this by googling "USB-A pinout spec"](https://components101.com/connectors/usb-type-a-male-connector). It's a bit different than our pin numbers, but the names are the same. The only difference is that our ports HM1 & HM2 are also `GND` ports. You don't need to know why right now, but for the curious, google "grounded USB shield".
 
-### Connect it together, for real this time!
+## Connect it together, for real this time!
 
 Move the parts around so they're facing eachother (you can rotate them with the `R` key), the go ahead and connect `GND` on the usb to `GND` on the chip.
 
@@ -104,7 +107,7 @@ Hmmmm, this is looking a little like a bowl of spaghetti. Let's clean it up with
 
 ![](https://cloud-j8bxr01tm-hack-club-bot.vercel.app/2spaghetti.png)
 
-#### Nets
+### Nets
 
 Nets are a way to group together wires that are connected to eachother. They're a great way to make your schematic look cleaner and easier to read. Go ahead and remove the VCC & GND lines, then choose the GND net from the toolbar on the right.
 
@@ -124,7 +127,7 @@ To prevent mistakes, try to keep your nets looking like mine for this tutorial, 
 
 ![](https://cloud-j8bxr01tm-hack-club-bot.vercel.app/0gnd_nets.png)
 
-### Add the female USBs
+## Add the other USBs
 
 Next up let's connect the other USB-A connectors!
 
@@ -134,9 +137,9 @@ I'll position my USB-A female ports and hook them up to the main chip's `DP` and
 
 _Remember, with nets you can connect from a distance!_
 
-### Power surges
+## Power surges
 
-The design is almost complete, and in a perfect world it would work just fine. But we aren't in a perfect world- we live in a world with static electricty and power surges. We'll need to now protect our circuit. If we don't, we could fry our hub or even our computer's USB port!
+The design is almost complete, and in a perfect world it would work just fine. [:But we aren't in a perfect world](https://example.com)- we live in a world with static electricty and power surges. We'll need to now protect our circuit. If we don't, we could fry our hub or even our computer's USB port!
 
 Knowing where these protective components go can be an art and hotly debated on many stackoverflow forms. Fortunately, the spec sheets we're using contain some example circuits for us to use. Let's take a look at the CoreChips SL2.1A spec sheet again:
 
@@ -158,7 +161,7 @@ Go ahead and use the same capacitors to protect the other USB-A ports. You can c
 
 ![](https://cloud-lr6vmvrrj-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.44.21.png)
 
-### Unused ports
+## Unused ports
 
 The SL2.1A chip we're using supports up to 4 USB ports, but we're making a smaller board for the tutorial so we won't be using the ports for "3" or "4". Go ahead and use the "no connection" tool to show in the schematic that these pins aren't being used.
 
@@ -177,6 +180,8 @@ Lastly, our chip provides clock circuitry through `XIN` and `XOUT` for advanced 
 ![](https://cloud-np517gxwl-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_18.02.06.png)
 
 Now, let's check if all the pins are connected. Try converting the schematic to a PCB. If you see a warning pop up that means a net is missing or not connected. ![](https://cloud-dmskkj3bl-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_18.36.08.png)
+
+## Finished!
 
 If all the schematic is connected you've done it!
 
