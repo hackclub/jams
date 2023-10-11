@@ -122,7 +122,7 @@ Now we can route our traces on the bottom layer. Go ahead and connect the 2 vias
 
 Nice! Now the ratline has disappeared- that means we're all done with those pins!
 
-Try doing the rest of them on your own before continuing. Or don't... I'm a tutorial not a cop.
+Try doing the rest of them on your own before continuing. Or don't... I'm just text on a website, I can't stop you from scrolling down to see the finished version.
 
 ![](https://cloud-isdsylawg-hack-club-bot.vercel.app/0screenshot_2023-08-11_at_14.00.12.png)
 ![](https://cloud-isdsylawg-hack-club-bot.vercel.app/1screenshot_2023-08-11_at_14.00.24.png)
