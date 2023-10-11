@@ -183,7 +183,7 @@ All finished should have pins connected to some label or wire, even if it's just
 
 ![](https://cloud-me27qfpwb-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.51.54.png)
 
-Next up are pins `VDD33` and `VDD18`. Sometimes components will have these to provide lower voltages for their internal circuitry. We don't need to worry about them for this design, so we'll just harmlessly bleed off the power to `GND` using a 10uF capacitor.
+Next up are pins `VDD33` and `VDD18`. Sometimes components will have these to provide lower voltages for their internal circuitry. We don't need to worry about them for this design, but the spec shows that we need to bleed off the power to `GND` using another 10uF capacitor.
 
 ![](https://cloud-p9cf2w5jg-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.58.13.png)
 
