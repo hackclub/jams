@@ -199,4 +199,12 @@ If all the schematic is connected you've done it!
 
 ![](https://cloud-4dr6xa7qz-hack-club-bot.vercel.app/0yay.gif)
 
+   <Announcement
+            copy="Now make your board"
+            caption="Take your board and build a working USB hub."
+            href="/batch/usb-hub/part-2"
+            iconLeft="enter"
+            color="primary"
+          />
+
 Now let's move into the PCB editor to make our board.
