@@ -98,9 +98,7 @@ export default function PreviewCard({
                   mr={2}
                   sx={{
                     cursor: 'pointer',
-                    backgroundColor: currentCategories.includes(
-                      keywords.split(', ')[0]
-                    )
+                    backgroundColor: currentCategories.includes(keywords[0])
                       ? '#993CCF'
                       : '#fff', // indicates BG color
                     marginBottom: '8px',
@@ -109,20 +107,18 @@ export default function PreviewCard({
                   variant="outline"
                   onClick={() => {
                     if (isSortable) {
-                      if (currentCategories.includes(keywords.split(', ')[0])) {
-                        console.log(
-                          'Removing ' + keywords.split(', ')[0] + ' from Sort'
-                        )
+                      if (currentCategories.includes(keywords[0])) {
+                        console.log('Removing ' + keywords[0] + ' from Sort')
                         modifyCategories(
                           currentCategories.filter(
-                            current => current !== keywords.split(', ')[0]
+                            current => current !== keywords[0]
                           )
                         )
                       } else {
-                        console.log('Adding ' + keywords.split(', ')[0])
+                        console.log('Adding ' + keywords[0])
                         const updatedCategories = [
                           ...currentCategories,
-                          keywords.split(', ')[0]
+                          keywords[0]
                         ]
                         console.log(updatedCategories)
                         modifyCategories(updatedCategories)
@@ -130,12 +126,12 @@ export default function PreviewCard({
                     }
                   }}
                   color={
-                    currentCategories.includes(keywords.split(', ')[0])
+                    currentCategories.includes(keywords[0])
                       ? '#FFFFFF'
                       : '#993CCF'
                   } //indicates text color
                 >
-                  {keywords.split(', ')[0]}
+                  {keywords[0]}
                 </Badge>
                 {part === 0 && (
                   <Badge
@@ -222,7 +218,7 @@ export default function PreviewCard({
                     aspectRatio: '16/9',
                     zIndex: 0,
                     objectFit: 'cover',
-                    height: "100%",
+                    height: '100%',
                     background:
                       'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat'
                   }}
@@ -233,7 +229,7 @@ export default function PreviewCard({
                   sx={{
                     width: '100%',
                     objectFit: 'cover',
-                    height: "100%",
+                    height: '100%',
 
                     background:
                       'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat'
