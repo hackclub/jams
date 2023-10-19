@@ -43,7 +43,7 @@ export function getSingleJams() {
       ...data, // Spread the properties from the data object
       keywords: parseKeywords(data.keywords),
       type: 'single',
-      path: '/single/' + data.slug,
+      path: '/jam/' + data.slug,
       content
     }
   })
