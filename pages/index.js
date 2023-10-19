@@ -18,79 +18,18 @@ import Icon from '@hackclub/icons'
 import { useRouter } from 'next/router'
 import lunr from 'lunr'
 
-import path from 'path'
-import matter from 'gray-matter'
-
 /** @jsxImportSource theme-ui */
 
 export async function getStaticProps() {
-  const fs = require('fs')
-
-  const jamsDir = path.join(process.cwd(), 'jams')
+  const { getBatchJams, getSingleJams } = await import('@/libs/JamsData')
 
   const jamsContent = {
-    singles: getJams(fs, path.join(jamsDir, 'singles')),
-    batches: getBatches(fs, path.join(jamsDir, 'batches'))
+    singles: getSingleJams(),
+    batches: getBatchJams()
   }
   return {
     props: { jamsContent }
   }
-}
-
-function getJams(fs, directory) {
-  const filenames = fs.readdirSync(directory)
-
-  return filenames.map(filename => {
-    const fileContent = fs.readFileSync(
-      path.join(directory, filename, 'en-US.md'),
-      'utf8'
-    )
-    const { data, content } = matter(fileContent)
-
-    return {
-      ...data, // Spread the properties from the data object
-      content
-    }
-  })
-}
-
-function getBatches(fs, directory) {
-  const batchNames = fs.readdirSync(directory)
-
-  return batchNames.map(batchName => {
-    const batchDirectory = path.join(directory, batchName)
-    const readMeFileContent = fs.readFileSync(
-      path.join(batchDirectory, 'readMe', 'en-US.md'),
-      'utf8'
-    )
-    const { data: readMeData, content: readMeContent } =
-      matter(readMeFileContent)
-
-    const partsDirectory = path.join(batchDirectory)
-    const partsNames = fs
-      .readdirSync(partsDirectory)
-      .filter(part => part.startsWith('part'))
-    partsNames.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-
-    const parts = partsNames.map(partName => {
-      const partContent = fs.readFileSync(
-        path.join(partsDirectory, partName, 'en-US.md'),
-        'utf8'
-      )
-      const { data, content } = matter(partContent)
-
-      return {
-        ...data, // Spread the properties from the data object
-        content
-      }
-    })
-
-    return {
-      ...readMeData, // Spread the properties from the readMeData object
-      content: readMeContent,
-      parts
-    }
-  })
 }
 
 function Slides({ router, initialFeatures }) {
@@ -270,7 +209,7 @@ function Slides({ router, initialFeatures }) {
                   }}
                   variant="outline"
                   color="#993CCF">
-                  {jam.keywords.split(', ')[0]}
+                  {jam.keywords[0]}
                 </Badge>
                 <Badge
                   key="difficultyFeature"
@@ -479,12 +418,12 @@ export default function Index(props) {
     query.trim() == '' // if query is blank
       ? props.jamsContent.batches.filter(batch => {
           
-        if (batch.keywords.split(', ').includes('Beta')) {
+        if (batch.keywords.includes('Beta')) {
           return false
         }
         if (
           !selectedCategories.some(keyword =>
-            batch.keywords.split(', ').includes(keyword)
+            batch.keywords.includes(keyword)
           ) &&
           selectedCategories != ''
         ) {
@@ -495,7 +434,7 @@ export default function Index(props) {
           // additional false conditions:
           if (
             !selectedCategories.some(keyword =>
-              batch.keywords.split(', ').includes(keyword)
+              batch.keywords.includes(keyword)
             ) &&
             selectedCategories != ''
           ) {
@@ -517,12 +456,12 @@ export default function Index(props) {
         }) // hasnt started search yet, return all
       : searchLunr(query, props.jamsContent.batches.filter(batch => {
           
-        if (batch.keywords.split(', ').includes('Beta')) {
+        if (batch.keywords.includes('Beta')) {
           return false
         }
         if (
           !selectedCategories.some(keyword =>
-            batch.keywords.split(', ').includes(keyword)
+            batch.keywords.includes(keyword)
           ) &&
           selectedCategories != ''
         ) {
@@ -533,7 +472,7 @@ export default function Index(props) {
           // additional false conditions:
           if (
             !selectedCategories.some(keyword =>
-              batch.keywords.split(', ').includes(keyword)
+              batch.keywords.includes(keyword)
             ) &&
             selectedCategories != ''
           ) {
@@ -562,12 +501,12 @@ export default function Index(props) {
       ? props.jamsContent.singles.filter(jam => {
         // otherwise use lunr and then filter additionally
         // additional false conditions:
-        if (jam.keywords.split(', ').includes('Beta')) {
+        if (jam.keywords.includes('Beta')) {
           return false
         }
         if (
           !selectedCategories.some(keyword =>
-            jam.keywords.split(', ').includes(keyword)
+            jam.keywords.includes(keyword)
           ) &&
           selectedCategories != ''
         ) {
@@ -588,12 +527,12 @@ export default function Index(props) {
         .filter(jam => {
           // otherwise use lunr and then filter additionally
           // additional false conditions:
-          if (jam.keywords.split(', ').includes('Beta')) {
+          if (jam.keywords.includes('Beta')) {
             return false
           }
           if (
             !selectedCategories.some(keyword =>
-              jam.keywords.split(', ').includes(keyword)
+              jam.keywords.includes(keyword)
             ) &&
             selectedCategories != ''
           ) {
@@ -628,7 +567,7 @@ export default function Index(props) {
       setViewed(
         JSON.parse(localStorage.getItem('viewed')).map(jam => ({
           ...jam,
-          keywords: jam.keywords.split(', ')
+          keywords: (Array.isArray(jam.keywords) ? jam.keywords : [])
         }))
       )
     const onScroll = () => setScrollPosition(window.pageYOffset)
@@ -1214,7 +1153,7 @@ export default function Index(props) {
               if (!viewed.length) return 0 // Don't sort if no jams have been viewed
               const close = (jam, viewed) => {
                 let match = 0
-                let keywords = jam.keywords.split(', ')
+                let keywords = jam.keywords
                 viewed.map((viewedJam, i) => {
                   if (viewedJam.difficulty === jam.difficulty) match++
                   if (viewedJam.language === jam.language) match++
