@@ -98,9 +98,7 @@ export default function PreviewCard({
                   mr={2}
                   sx={{
                     cursor: 'pointer',
-                    backgroundColor: currentCategories.includes(
-                      keywords.split(', ')[0]
-                    )
+                    backgroundColor: currentCategories.includes(keywords.split(', ')[0])
                       ? '#993CCF'
                       : '#fff', // indicates BG color
                     marginBottom: '8px',
@@ -110,9 +108,7 @@ export default function PreviewCard({
                   onClick={() => {
                     if (isSortable) {
                       if (currentCategories.includes(keywords.split(', ')[0])) {
-                        console.log(
-                          'Removing ' + keywords.split(', ')[0] + ' from Sort'
-                        )
+                        console.log('Removing ' + keywords.split(', ')[0] + ' from Sort')
                         modifyCategories(
                           currentCategories.filter(
                             current => current !== keywords.split(', ')[0]
@@ -222,7 +218,7 @@ export default function PreviewCard({
                     aspectRatio: '16/9',
                     zIndex: 0,
                     objectFit: 'cover',
-                    height: "100%",
+                    height: '100%',
                     background:
                       'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat'
                   }}
@@ -233,7 +229,7 @@ export default function PreviewCard({
                   sx={{
                     width: '100%',
                     objectFit: 'cover',
-                    height: "100%",
+                    height: '100%',
 
                     background:
                       'linear-gradient(180deg, rgba(70, 10, 105, 0.40) 0%, rgba(70, 10, 105, 0.17) 24.48%, rgba(70, 10, 105, 0.00) 71.88%, rgba(70, 10, 105, 0.08) 100%), lightgray -99.453px -68.488px / 151.798% 131.707% no-repeat'
