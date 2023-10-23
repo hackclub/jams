@@ -103,7 +103,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       keyword: params.keyword,
-      emoji: getPageEmoji(params.keyword),
+      emoji: getPageEmoji(params.keyword) || null,
       jams: getFilteredJams(params.keyword)
     }
   }
