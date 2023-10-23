@@ -14,7 +14,7 @@ export default function KeywordPage({ jams, keyword, emoji }) {
 
   return (
     <>
-      <Header jams={jams} />
+      <Header jams={jams} isHomePage={false} back={'/'} setQuery={setQuery} />
 
       <Box sx={{ pt: '4rem' }}></Box>
 
