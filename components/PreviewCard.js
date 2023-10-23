@@ -98,7 +98,7 @@ export default function PreviewCard({
                   mr={2}
                   sx={{
                     cursor: 'pointer',
-                    backgroundColor: currentCategories.includes(keywords[0])
+                    backgroundColor: currentCategories.includes(keywords.split(', ')[0])
                       ? '#993CCF'
                       : '#fff', // indicates BG color
                     marginBottom: '8px',
@@ -107,18 +107,18 @@ export default function PreviewCard({
                   variant="outline"
                   onClick={() => {
                     if (isSortable) {
-                      if (currentCategories.includes(keywords[0])) {
-                        console.log('Removing ' + keywords[0] + ' from Sort')
+                      if (currentCategories.includes(keywords.split(', ')[0])) {
+                        console.log('Removing ' + keywords.split(', ')[0] + ' from Sort')
                         modifyCategories(
                           currentCategories.filter(
-                            current => current !== keywords[0]
+                            current => current !== keywords.split(', ')[0]
                           )
                         )
                       } else {
-                        console.log('Adding ' + keywords[0])
+                        console.log('Adding ' + keywords.split(', ')[0])
                         const updatedCategories = [
                           ...currentCategories,
-                          keywords[0]
+                          keywords.split(', ')[0]
                         ]
                         console.log(updatedCategories)
                         modifyCategories(updatedCategories)
@@ -126,12 +126,12 @@ export default function PreviewCard({
                     }
                   }}
                   color={
-                    currentCategories.includes(keywords[0])
+                    currentCategories.includes(keywords.split(', ')[0])
                       ? '#FFFFFF'
                       : '#993CCF'
                   } //indicates text color
                 >
-                  {keywords[0]}
+                  {keywords.split(', ')[0]}
                 </Badge>
                 {part === 0 && (
                   <Badge

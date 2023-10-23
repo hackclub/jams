@@ -10,6 +10,7 @@ export default function KeywordPage({ jams, keyword, emoji }) {
   const [selectedCategories, setSelectedCategories] = useState([])
   const [difficulty, setDifficulty] = useState('')
   const [time, setTime] = useState('')
+  const [query, setQuery] = useState('')
 
   return (
     <>
@@ -74,6 +75,7 @@ export default function KeywordPage({ jams, keyword, emoji }) {
                   key={idx + jam.title}
                   light={true}
                   {...jam}
+                  keywords={jam.keywords.join(', ')}
                   redirect={jam.path}
                   currentDifficulty={difficulty}
                   currentTime={time}
