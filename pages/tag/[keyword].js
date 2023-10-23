@@ -94,7 +94,7 @@ export default function KeywordPage({ jams, keyword, emoji }) {
 
 export async function getStaticPaths() {
   const { getAllTags } = await import('@/libs/JamsData')
-  const paths = getAllTags().map(tag => `/${tag}`)
+  const paths = getAllTags().map(tag => `/tag/${tag}`)
   return { paths, fallback: false } // <= goes to 404 if nothing is found
 }
 export async function getStaticProps({ params }) {
