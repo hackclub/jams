@@ -1,7 +1,6 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Icon from '@hackclub/icons'
-import { Link as ScrollLink, Element } from 'react-scroll'
 import PresentationSlider from '@/components/presentationSlider'
 import BatchPartSlider from '@/components/BatchPartSlider'
 import { MDXRemote } from 'next-mdx-remote'
@@ -23,7 +22,7 @@ import lunr from 'lunr'
 import Meta from '@hackclub/meta'
 import Head from 'next/head'
 
-export default function JamComponent({ jam, jamsContent }) {
+export default function JamComponent({ jam, jams }) {
   const submitProject = async () => {
     try {
       let slug = ""
@@ -169,10 +168,8 @@ export default function JamComponent({ jam, jamsContent }) {
     this.field('keywords')
     this.field('slug')
 
-    let concatenatedJamBatch = jamsContent.singles.concat(jamsContent.batches)
-
-    for (let jindex in concatenatedJamBatch) {
-      let jam = concatenatedJamBatch[jindex]
+    for (let jindex in jams) {
+      let jam = jams[jindex]
       this.add({
         title: jam.title,
         description: jam.description,
@@ -193,18 +190,15 @@ export default function JamComponent({ jam, jamsContent }) {
 
     let results = []
 
-    let concatenatedJamBatch = jamsContent.singles.concat(jamsContent.batches)
-
     for (let returnedquery in bestList) {
       if (bestList[returnedquery]['score'] >= precision) {
         console.log(bestList[returnedquery]['ref'])
-        results.push(concatenatedJamBatch[bestList[returnedquery]['ref']])
+        results.push(jams[bestList[returnedquery]['ref']])
       }
     }
 
     return results
   }
-
   const [query, setQuery] = useState('')
 
   return (
@@ -225,68 +219,6 @@ export default function JamComponent({ jam, jamsContent }) {
         back={jam.batch == null ? '/' : '/batch/' + jam.batch} // if no batch, back is index, otherwise it is batch page
       />
       <div sx={{ height: '5rem' }}></div>
-
-      {/* <Container as="nav" sx={{
-        maxWidth:"80rem",
-        position:"sticky",
-        top:0,
-        px:"1.5rem",
-        display:"flex",
-        alignItems:"center",
-        justifyContent:"space-between",
-        gap:"2rem",
-        bg:"rgb(255,255,255,0.50)",
-        backdropFilter:"blur(16px)",
-        zIndex: 40
-      }}>
-        <button sx={{
-          border:"none",
-          font:"inherit",
-          background:"none",
-          px:"0.625rem",
-          py:"0.25rem",
-          display:"flex",
-          alignItems:"center",
-          gap:"0.25rem",
-          color:"#993CCF",
-          borderRadius:"9999px",
-          my:"1rem",
-          ":hover": { outlineStyle:"solid", outlineColor:"#993CCF", outlineWidth:"2px" }
-        }}>
-          ← Back
-        </button>
-
-        <input 
-          sx={{
-            width:"16rem",
-            border:"none",
-            font:"inherit",
-            background:"none",
-            px:"1rem",
-            py:"0.5rem",
-            bg:"white",
-            borderRadius:"9999px",
-            outlineStyle:"solid",
-            outlineWidth:"2px",
-            outlineColor: "#d4d4d4",
-            my:"1rem",
-            ":focus": { outlineColor:"#993CCF" },
-          }}
-          placeholder="Search for Raspberry Jam"
-        />
-
-        <button sx={{
-          border:"none",
-          font:"inherit",
-          background:"none",
-          p:"0.25rem",
-          color:"#993CCF",
-          borderRadius:"9999px",
-          ":hover": { outlineStyle:"solid", outlineColor:"#993CCF", outlineWidth:"2px" }
-        }}>
-          GH
-        </button>
-      </Container> */}
 
       {/* So what this code does is checks if batch is null or not. upon null renders the singles breadcrumbs ver, upon non null renders the batch ver */}
       {jam.batch != null ? (
@@ -505,7 +437,7 @@ export default function JamComponent({ jam, jamsContent }) {
               }}
               variant="outline"
               color="#fff">
-              {jam?.keywords.split(', ')[0]}
+              {jam?.keywords?.[0]}
             </Badge>
 
             <Badge

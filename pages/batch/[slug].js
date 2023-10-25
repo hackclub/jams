@@ -1,141 +1,28 @@
-import path from 'path'
-import fs from 'fs'
-import matter from 'gray-matter'
-import { useRouter } from 'next/router'
-import { MDXRemote } from 'next-mdx-remote'
 import Header from '@/components/Header'
 import { Container, Grid, Link, Badge } from 'theme-ui'
 import PreviewCard from '@/components/PreviewCard'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
-import JamComponent from '@/components/JamComponent'
 import Meta from '@hackclub/meta'
 import Head from 'next/head'
 import lunr from 'lunr'
 
 /** @jsxImportSource theme-ui */
 
-function getJams(fs, directory) {
-  const filenames = fs.readdirSync(directory)
-
-  return filenames.map(filename => {
-    const fileContent = fs.readFileSync(
-      path.join(directory, filename, 'en-US.md'),
-      'utf8'
-    )
-    const { data, content } = matter(fileContent)
-
-    return {
-      ...data, // Spread the properties from the data object
-      content
-    }
-  })
-}
-
-function getBatches(fs, directory) {
-  const batchNames = fs.readdirSync(directory)
-
-  return batchNames.map(batchName => {
-    const batchDirectory = path.join(directory, batchName)
-    const readMeFileContent = fs.readFileSync(
-      path.join(batchDirectory, 'readMe', 'en-US.md'),
-      'utf8'
-    )
-    const { data: readMeData, content: readMeContent } =
-      matter(readMeFileContent)
-
-    const partsDirectory = path.join(batchDirectory)
-    const partsNames = fs
-      .readdirSync(partsDirectory)
-      .filter(part => part.startsWith('part'))
-    partsNames.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-
-    const parts = partsNames.map(partName => {
-      const partContent = fs.readFileSync(
-        path.join(partsDirectory, partName, 'en-US.md'),
-        'utf8'
-      )
-      const { data, content } = matter(partContent)
-
-      return {
-        ...data, // Spread the properties from the data object
-        content
-      }
-    })
-
-    return {
-      ...readMeData, // Spread the properties from the readMeData object
-      content: readMeContent,
-      parts
-    }
-  })
-}
-
 export async function getStaticPaths() {
-  const jamsDir = path.join(process.cwd(), 'jams', 'batches')
-  const batchNames = fs.readdirSync(jamsDir)
+  const { getBatchJams } = await import('@/libs/JamsData')
 
-  const paths = batchNames.map(batchName => {
-    return {
-      params: { slug: batchName }
-    }
-  })
+  const paths = getBatchJams().map(b => b.path)
 
   return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
-  const batchDirectory = path.join(
-    process.cwd(),
-    'jams',
-    'batches',
-    params.slug
-  )
-
-  const readMeFileContent = fs.readFileSync(
-    path.join(batchDirectory, 'readMe', 'en-US.md'),
-    'utf8'
-  )
-  const { data: readMeData, content: readMeContent } = matter(readMeFileContent)
-
-  const partsDirectory = path.join(batchDirectory)
-  const partsNames = fs
-    .readdirSync(partsDirectory)
-    .filter(part => part.startsWith('part'))
-  partsNames.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-  const jamDirectory = path.join(process.cwd(), 'jams', 'singles', params.slug)
-
-  const jamsDir = path.join(process.cwd(), 'jams')
-
-  const singlesDir = path.join(jamsDir, 'singles')
-
-  const singles = getJams(fs, singlesDir)
-  const batches = getBatches(fs, path.join(jamsDir, 'batches'))
-
-  const parts = partsNames.map(partName => {
-    const partContent = fs.readFileSync(
-      path.join(partsDirectory, partName, 'en-US.md'),
-      'utf8'
-    )
-    const { data, content } = matter(partContent)
-
-    return {
-      ...data,
-      content
-    }
-  })
+  const { getBatch, getAllJams } = await import('@/libs/JamsData')
   return {
     props: {
-      batch: {
-        ...readMeData,
-        content: readMeContent,
-        parts
-      },
-      jams: {
-        singles,
-        batches
-      },
-      params
+      batch: getBatch(params.slug),
+      jams: getAllJams()
     }
   }
 }
@@ -153,10 +40,8 @@ export default function Page({ batch, params, jams }) {
     this.field('keywords')
     this.field('slug')
 
-    let concatenatedJamBatch = jams.singles.concat(jams.batches)
-
-    for (let jindex in concatenatedJamBatch) {
-      let jam = concatenatedJamBatch[jindex]
+    for (let jindex in jams) {
+      let jam = jams[jindex]
       this.add({
         title: jam.title,
         description: jam.description,
@@ -177,19 +62,18 @@ export default function Page({ batch, params, jams }) {
 
     let results = []
 
-    let concatenatedJamBatch = jams.singles.concat(jams.batches)
+    // let concatenatedJamBatch = jams.singles.concat(jams.batches)
 
     for (let returnedquery in bestList) {
       if (bestList[returnedquery]['score'] >= precision) {
         console.log(bestList[returnedquery]['ref'])
-        results.push(concatenatedJamBatch[bestList[returnedquery]['ref']])
+        results.push(jams[bestList[returnedquery]['ref']])
       }
     }
 
     return results
   }
 
-  const router = useRouter()
   return (
     <>
       <Meta
@@ -279,7 +163,7 @@ export default function Page({ batch, params, jams }) {
                 }}
                 variant="outline"
                 color="#993CCF">
-                {batch?.keywords.split(', ')[0]}
+                {batch?.keywords[0]}
               </Badge>
               <Badge
                 key="difficultyFeature"
@@ -353,7 +237,7 @@ export default function Page({ batch, params, jams }) {
         <Grid columns={[null, '1fr 1fr 1fr']} sx={{ gap: '1rem' }}>
           {batch.parts.map(part => (
             <PreviewCard
-              redirect={'/batch/' + params.slug + '/' + part.part}
+              redirect={batch.path+ '/' + part.part}
               {...part}
               isSortable={false} // since this is false we really don't care about the 4 parameters used for sorting
               currentDifficulty={''}
