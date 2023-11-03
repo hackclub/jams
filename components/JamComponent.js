@@ -289,6 +289,12 @@ export default function JamComponent({ jam, jamsContent }) {
       </Container> */}
 
       {/* So what this code does is checks if batch is null or not. upon null renders the singles breadcrumbs ver, upon non null renders the batch ver */}
+      
+      <Container style={{position: "fixed", bottom: 32, left: 16}}>
+        <Link href={jam.batch == null ? (`https://github.com/hackclub/jams/edit/main/jams/singles/${jam.slug}/en-US.md`) : (`https://github.com/hackclub/jams/edit/main/jams/batches/${jam.batch}/${jam.part}/en-US.md`)} style={{backgroundColor: "#fff", fontSize: 16, color: "#993CCF", border: "1px solid #993CCF", borderRadius: 32, padding: "12px 24px", textDecoration: "none"}}>Edit on GitHub</Link>
+      </Container>
+
+
       {jam.batch != null ? (
         <Container
           sx={{ p: '0px 1rem' }}
