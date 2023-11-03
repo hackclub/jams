@@ -49,6 +49,7 @@ export default function PreviewCard({
         {...props}>
         <Box sx={{ borderRadius: '16px' }}>
           <Box
+          onClick={() => console.log(part)}
             sx={{
               zIndex: 1,
               marginLeft: '8px',
@@ -57,27 +58,30 @@ export default function PreviewCard({
               display: 'flex',
               flexWrap: 'wrap'
             }}>
-            {isHovered && (
+            {(isHovered || (part != 0 && part != undefined)) && (
               <Box
                 style={{
-                  marginBottom: isHovered || parts?.length ? '-48px' : '0px',
+                  marginBottom: isHovered || (part != 0 && part != undefined) || parts?.length ? '-48px' : '0px',
                   paddingTop: '8px',
                   zIndex: 2
                 }}>
-                {parts?.length && (
+
+{(parts?.length != 0 && parts?.length != undefined) && (
                   <Badge
                     key="partFeature"
                     mr={2}
                     sx={{
                       cursor: 'pointer',
                       backgroundColor: '#993CCF',
+                      marginBottom: '8px',
                       fontSize: ['14px', 'auto']
                     }}
                     variant="outline"
                     color="#fff">
-                    {parts.length} Parts
+                    {parts?.length} Parts
                   </Badge>
-                )}
+                )}        
+
                 {part != '0' && (
                   <Badge
                     key="partFeature"
@@ -93,6 +97,7 @@ export default function PreviewCard({
                     Part {part.split('-')[1]}
                   </Badge>
                 )}
+            {isHovered && (
                 <Badge
                   key="keywordFeature"
                   mr={2}
@@ -132,8 +137,8 @@ export default function PreviewCard({
                   } //indicates text color
                 >
                   {keywords.split(', ')[0]}
-                </Badge>
-                {part === 0 && (
+                </Badge>)}
+                {(part === 0 && isHovered) && (
                   <Badge
                     key="difficultyFeature"
                     mr={2}
@@ -166,7 +171,7 @@ export default function PreviewCard({
                     {difficulty}
                   </Badge>
                 )}
-                {!parts && (
+                {(!parts && isHovered) && (
                   <Badge
                     key="timeFeature"
                     mr={2}
