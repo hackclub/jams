@@ -15,7 +15,7 @@ presentation: "https://www.figma.com/file/Csn3pewJwcY5zk1mD8TnKS/Sprig-%232?type
 presentationPlay: "https://www.figma.com/proto/Csn3pewJwcY5zk1mD8TnKS/Sprig-%232?page-id=236%3A2&type=design&node-id=236-1250&viewport=884%2C360%2C0.15&t=Guxr4TgtI1gYXnGc-1&scaling=contain&starting-point-node-id=236%3A1250&mode=design" 
 presentationPDF: "https://cloud-9yb2ef0ar-hack-club-bot.vercel.app/0sprig__1.pdf" 
 notes: "" 
-poster: ""
+poster: "https://github.com/hackclub/posters#:~:text=Author-,Download,-Download"
 video: "" 
 totalParts: 4
 ---

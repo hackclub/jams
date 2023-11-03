@@ -12,7 +12,7 @@ presentation: ''
 presentationPlay: ''
 presentationPDF: ''
 notes: ''
-poster: ''
+poster: 'https://github.com/hackclub/posters#:~:text=%40Krishna%20Bansal-,Download,-Go%20to%20Figma'
 video: ''
 totalParts: 4
 part: part-2

@@ -12,7 +12,7 @@ presentation: 'https://www.figma.com/file/0ucrvtjExgBSEJ6WkTvegZ/hacker-card-jam
 presentationPlay: 'https://www.figma.com/proto/0ucrvtjExgBSEJ6WkTvegZ/hacker-card-jam?type=design&node-id=1-4&t=f8tg0SGZ0aMs0SFo-0&scaling=contain&page-id=0%3A1'
 presentationPDF: 'https://cloud-4gfgew7yj-hack-club-bot.vercel.app/00hacker_card_jam-min.pdf'
 notes: ''
-poster: ''
+poster: 'https://github.com/hackclub/posters#:~:text=%40Krishna%20Bansal-,Download,-Go%20to%20Figma'
 video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_with_maggie.mp4'
 slug: 'hacker-card'
 ---
