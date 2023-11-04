@@ -285,21 +285,38 @@ function Slides({ router, initialFeatures }) {
                   color="#993CCF">
                   {jam.difficulty}
                 </Badge>
-                {!jam.parts && (
-                  <Badge
-                    key="timeFeature"
+                
+                <Badge
+                  key="timeFeature"
+                  mr={2}
+                  sx={{
+                  cursor: 'pointer',
+                  backgroundColor: '#fff',
+                  marginBottom: '8px',
+                  fontSize: ['14px', 'auto']
+                  
+                  }} // Adjust '4px' as needed
+                  variant="outline"
+                  color="#993CCF">
+                  {jam.timeEstimate}
+                </Badge>
+                
+                
+                <Badge
+                    key="hotFeature"
                     mr={2}
                     sx={{
                       cursor: 'pointer',
-                      backgroundColor: '#fff',
+                      backgroundColor: '#f77',
                       marginBottom: '8px',
                       fontSize: ['14px', 'auto']
                     }} // Adjust '4px' as needed
                     variant="outline"
                     color="#993CCF">
-                    {jam.timeEstimate}
+                    {"HOT!"}
                   </Badge>
-                )}
+                
+                
               </Box>
 
               <div
@@ -785,6 +802,7 @@ export default function Index(props) {
                   {...fallFeature}
                   redirect={'/batch/' + fallFeature.slug}
                   isSortable={true}
+                  isHot = {true}
                   currentDifficulty={difficulty}
                   currentTime={time}
                   currentCategories={selectedCategories}
