@@ -304,7 +304,7 @@ function Slides({ router, initialFeatures }) {
                 
                 <Badge
                     key="hotFeature"
-                    ml={'19.38%'}
+                    ml={'25%'}
                     sx={{
                       cursor: 'pointer',
                       backgroundColor: '#993CCF',
