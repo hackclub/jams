@@ -1,62 +1,96 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, useLayoutEffect} from 'react'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/github-dark.css'
 import { Box, Button, Flex } from 'theme-ui'
 
-export const InlineCode = ({ children }) => {
-  const codeRef = useRef(null)
 
-  useEffect(() => {
-    hljs.highlightElement(codeRef.current)
-  }, [children])
-
-  return (
-    <pre style={{ borderRadius: '8px', overflow: 'hidden' }}>
-      <code
-        ref={codeRef}
-        style={{ color: '#c9d1d9', backgroundColor: '#0d1117' }}>
-        {children}
-      </code>
-    </pre>
-  )
-}
-
+function isOverflown(element) {
+  console.log(element.scrollHeight)
+  console.log(element.clientHeight)
+  return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+ }
 export const CodeBlock = ({ children, className }) => {
   const codeRef = useRef(null)
-  const language = className ? className.replace('language-', '') : ''
-  const [expand, setExpand] = useState(true)
+  const preRef = useRef(null)
+  const language = className ? className.replace('super-', '') : ''
+  const [expand, setExpand] = useState(false)
+
+  var [close_text, updateClose] = useState('')
+ 
+  var [expand_text, updateExpand] = useState('')
+
+
 
   useEffect(() => {
+    const element = document.getElementById('Button');
+    const parent = document.getElementById('Flex');
     hljs.highlightElement(codeRef.current)
-  }, [children, language])
+    
+    if(preRef != null){
+      
+     if(isOverflown(preRef.current)){
 
-  return (
-    <Flex sx={{ position: 'relative', flexDirection: 'column' }}>
-      <pre
-        style={{
-          borderRadius: '8px',
-          fontSize: 16,
-          overflow: 'hidden',
-          maxHeight: expand ? '100%' : '75vh'
-        }}>
-        <code ref={codeRef} className={language}>
-          {children}
-        </code>
-      </pre>
-      {/*
-      <Button
-        variant="primary"
-        backgroundColor="slate"
-        onClick={() => setExpand(!expand)}
-        sx={{
-          alignSelf: 'center',
-          paddingY: 0,
-          width: 'fit-content',
-          position: 'absolute',
-          bottom: '40px'
-        }}>
-        {expand ? 'Close' : 'Expand'}
-      </Button>*/}
-    </Flex>
-  )
-}
+      updateClose('Close')
+      updateExpand('Expand'  )
+
+     }
+    }
+    
+    
+  
+
+  }, [children, language, close_text, expand_text])
+  
+ 
+    //console.log(isOverflowing)
+    return (
+      
+      <Flex id = 'Flex' sx={{ position: 'relative', flexDirection: 'column' }}>
+      { (
+        <Button
+          variant="primary"
+          backgroundColor="slate"
+          id = 'Button'
+          onClick={() => setExpand(!expand)}
+          sx={{
+            alignSelf: 'end',
+            paddingY: 0,
+            width: 'fit-content',
+            position: 'absolute',
+            right: '20px',
+            top: '20px',
+          }}>
+          {expand ? close_text : expand_text} 
+        </Button>
+      )}
+       
+        <pre
+          style={{
+            marginTop : '10px',
+            borderRadius: '8px',
+            fontSize: 16,
+            overflow: expand ? 'clip' : 'scroll', //change to 'clip' if needed
+            maxHeight: expand ? '5%' : '75vh'
+          }}
+          id = {'ref'}
+          ref = {preRef}
+          
+          >
+        
+              <code id={'code'} ref={codeRef} className={language}>
+                {children}
+              </code>
+            
+            
+          
+        </pre>
+        
+      </Flex>
+    )
+
+    
+  }
+  
+
+
+
