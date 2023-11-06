@@ -13,9 +13,8 @@ presentationPlay: 'https://www.figma.com/proto/0ucrvtjExgBSEJ6WkTvegZ/hacker-car
 presentationPDF: 'https://cloud-4gfgew7yj-hack-club-bot.vercel.app/00hacker_card_jam-min.pdf'
 notes: ''
 poster: 'https://github.com/hackclub/posters#:~:text=%40Krishna%20Bansal-,Download,-Go%20to%20Figma'
-video: 'https://www.youtube.com/embed/jfKfPfyJRdk?si=dYynv6FaTLUq5m1q'
+video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_with_maggie.mp4'
 slug: 'hacker-card'
-youtube: 'https://www.youtube.com/embed/jfKfPfyJRdk?si=dYynv6FaTLUq5m1q'
 ---
 
 > This workshop will take about 60 minutes to design. After that, in a seperate 60 minute session you can order your board for manufacturing using [the OnBoard grant tutorial](https://jams.hackclub.com/jam/onboard-grant).

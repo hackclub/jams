@@ -304,7 +304,7 @@ function Slides({ router, initialFeatures }) {
                 
                 <Badge
                     key="hotFeature"
-                    ml={'25%'}
+                    ml={'20%'}
                     sx={{
                       cursor: 'pointer',
                       backgroundColor: '#993CCF',
@@ -313,7 +313,7 @@ function Slides({ router, initialFeatures }) {
                     }} // Adjust '4px' as needed
                     variant="outline"
                     color="#FFFFFF">
-                    {"HOT!"}
+                    {"Trending"}
                   </Badge>
                 
                 
