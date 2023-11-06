@@ -307,6 +307,7 @@ function Slides({ router, initialFeatures }) {
                     ml={'20%'}
                     sx={{
                       cursor: 'pointer',
+                      display: ['none', 'block'],
                       backgroundColor: '#993CCF',
                       marginBottom: '8px',
                       fontSize: ['14px', 'auto']
