@@ -314,6 +314,8 @@ function addWindowTapHandling(element) {
   )
 }
 ```
+
+Remember to call the addWindowTapHandling for each of your elements (so for example addWindowTapHandling(welcomeScreen) and addWindowTapHandling(notesScreen)
 #### Making the Window to the Top On Move on Tap
 We're now lifting the window up to the top by incrementing the biggestIndex and setting the zIndex to that new `biggestIndex`
 
