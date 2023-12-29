@@ -735,8 +735,7 @@ export default function Index(props) {
                 pt: 0,
                 px: 3
               }}>
-              Collaborative coding workshops where sparks ignite, fears
-              dissolve, and inventions come to life.
+              Learn to Build Cool Projects with our Collaborative Coding Workshops! 
             </Text>
           </Box>
         </Box>
@@ -773,7 +772,7 @@ export default function Index(props) {
               p: 0,
               zIndex: 2
             }}>
-            Here are some great multi-part jams to kickoff your club this fall
+            Beginners? Start your programming journey with these multi-part jams! Club Leaders? Kickoff your Club this Fall with these jams! 
             🍂{' '}
           </Text>
           <Grid
