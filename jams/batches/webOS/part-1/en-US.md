@@ -24,7 +24,7 @@ totalParts: 5
 ---
 
 ![Capybara OS demo](https://cloud-ir4w2s05f-hack-club-bot.vercel.app/0screenrecording.gif)
-[Live Demo ](https://step8.thomasstubblef2.repl.co/) & 
+[Live Demo ](https://ecd6d5e2-03cd-4131-ac4a-9e4cf22bb73b-00-28qahbc8n17eh.worf.replit.dev/) & 
 [Sample Code](https://replit.com/@ThomasStubblef2/Step8#index.html)  
 
   *(P.S. This is a sample of what your OS might look like at the end of the entire batch, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all. Yours will also have a totally different set of apps by the end of the batch.)*
