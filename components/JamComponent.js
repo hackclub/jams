@@ -206,7 +206,7 @@ export default function JamComponent({ jam, jamsContent }) {
   }
 
   const [query, setQuery] = useState('')
-  if(jam.video.includes("youtube")){
+  if(jam.video?.includes("youtube")){
     return (
       <>
         <Meta
@@ -939,7 +939,7 @@ export default function JamComponent({ jam, jamsContent }) {
                             color:
                               header === activeSection
                                 ? '#000'
-                                : passedSections.includes(header)
+                                : passedSections?.includes(header)
                                 ? 'muted'
                                 : '#000',
                             textDecoration:
@@ -1699,7 +1699,7 @@ export default function JamComponent({ jam, jamsContent }) {
                             color:
                               header === activeSection
                                 ? '#000'
-                                : passedSections.includes(header)
+                                : passedSections?.includes(header)
                                 ? 'muted'
                                 : '#000',
                             textDecoration:
