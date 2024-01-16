@@ -556,20 +556,20 @@ export default function JamComponent({ jam, jamsContent }) {
                 </span>
               </div>
             </Link>
-  
+{/*   
             <Box sx={{ pt: 16 }}>
-              {/* {finishedProjects.length > 0 ? (
+              {finishedProjects.length > 0 ? (
                 <div>
                   Finished Projects <br />
                 </div>
               ) : (
                 <div></div>
-              )} */}
+              )}
               {finishedProjects.map(project => (
                 <a href={project.url}>
-                  {/* {project.title.includes("Figma") && "F "}
+                  {project.title.includes("Figma") && "F "}
                 {project.title.includes("GitHub") && "GH "}
-                {project.title} */}
+                {project.title}
                   <Badge
                     key="difficultyFeature"
                     mr={2}
@@ -591,7 +591,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   </Badge>
                 </a>
               ))}
-            </Box>
+            </Box> */}
   
             <Box
               sx={{ fontSize: 18, lineHeight: '200%', pb: [32, 32], mt: '1rem' }}>
@@ -1317,19 +1317,19 @@ export default function JamComponent({ jam, jamsContent }) {
               </div>
             </Link>
   
-            <Box sx={{ pt: 16 }}>
-              {/* {finishedProjects.length > 0 ? (
+            {/* <Box sx={{ pt: 16 }}>
+              {finishedProjects.length > 0 ? (
                 <div>
                   Finished Projects <br />
                 </div>
               ) : (
                 <div></div>
-              )} */}
+              )}
               {finishedProjects.map(project => (
                 <a href={project.url}>
-                  {/* {project.title.includes("Figma") && "F "}
+                  {project.title.includes("Figma") && "F "}
                 {project.title.includes("GitHub") && "GH "}
-                {project.title} */}
+                {project.title}
                   <Badge
                     key="difficultyFeature"
                     mr={2}
@@ -1351,7 +1351,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   </Badge>
                 </a>
               ))}
-            </Box>
+            </Box> */}
   
             <Box
               sx={{ fontSize: 18, lineHeight: '200%', pb: [32, 32], mt: '1rem' }}>
