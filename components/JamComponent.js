@@ -1548,11 +1548,11 @@ export default function JamComponent({ jam, jamsContent }) {
                       gap: '8px',
                       marginTop: '6px'
                     }}>
-                    {jam.presentation && (
+                    {jam.presentationPlay && (
                       <Link
                         target={'_blank'}
                         sx={{ color: '#993CCF' }}
-                        href={jam.presentation}>
+                        href={jam.presentationPlay}>
                         <Box
                           sx={{
                             alignItems: 'center',
