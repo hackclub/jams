@@ -29,7 +29,7 @@ The first step is creating a schematic for your PCB design. A schematic shows th
 
 
 First, let's open up [EasyEDA](https://easyeda.com), which is a browser-based (and free) PCB design tool. 
-It can be a little bit tricky to get used to, so we made a [very short video](https://www.youtube.com/watch?v=_rCso8og2wg).
+It can be a little bit tricky to get used to, so we made a [very short video](https://youtu.be/lEcN3JnTge4).
 
 When you go to the website, you should see a screen like this. Click `Sign Up` to create an account, if you don't already have one.
 
