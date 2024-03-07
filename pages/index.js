@@ -199,7 +199,7 @@ function Slides({ router, initialFeatures }) {
               href={active === i ? `./jam/${jam.slug}` : null}
               onClick={() => {
                 if (active === i) return
-                containerRef.current.scrollTo({
+                containerRef?.current?.scrollTo({
                   left:
                     cardsRef.current[i].offsetLeft -
                     cardsRef.current[0].offsetLeft,
@@ -360,7 +360,7 @@ function Slides({ router, initialFeatures }) {
               }}
               onClick={() => {
                 if (!(active === i && i > 0)) return
-                containerRef.current.scrollTo({
+                containerRef?.current?.scrollTo({
                   left:
                     cardsRef.current[i - 1].offsetLeft -
                     cardsRef.current[0].offsetLeft,
@@ -395,7 +395,7 @@ function Slides({ router, initialFeatures }) {
               }}
               onClick={() => {
                 if (!(active === i && i < cardsRef.current.length - 1)) return
-                containerRef.current.scrollTo({
+                containerRef?.current?.scrollTo({
                   left:
                     cardsRef.current[i + 1].offsetLeft -
                     cardsRef.current[0].offsetLeft,
