@@ -1,12 +1,12 @@
 ---
 title: 'Make an AI Game in 40 Lines'
 description: >
-  This guide outlines how to create a virtual reality scene using A-Frame, a web framework for building VR experiences. It discusses a component-based architecture to manage complexity and improve reusability.
+    In this Jam, you will make your own AI Game in 40 lines of code using Wizard Orpheus! Wizard Orpheus is a JavaScript library that makes it easy peasy to build AI apps in JavaScript with minimal prior knowledge!
 contributor: 'zachlatta'
 thumbnail: 'https://cloud-7d7w42080-hack-club-bot.vercel.app/0rugmerchant.png'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
-keywords: 'AI, Web'
+keywords: 'Beta, AI, Web'
 language: 'JavaScript'
 presentation: ''
 presentationPlay: 'https://www.figma.com/proto/NbF4B2LzkN1GSYEEuSFkpp/AI-Orpheus?page-id=0%3A1&type=design&node-id=1-2&viewport=411%2C392%2C0.3&t=lAQeAkJIJzYIFPzn-1&scaling=scale-down-width&mode=design'
@@ -23,7 +23,7 @@ In this Jam, you will make your own AI Game in 40 lines of code using Wizard Orp
 You will get to come up with your own story, game variables, and fun mechanics. The Jam concept & library was made by [Zach Latta](https://hackclub.slack.com/team/U0266FRGP) (founder of Hack Club) and the slides / document were produced by [Thomas](https://hackclub.slack.com/team/U041FQB8VK2).
 
 **Outline:**
-1. **Fork & Run Replit**
+1. **Fork and Run Replit**
 2. **Add ability for users to send a message**
 3. **Add ability for bot to respond**
 4. **Create a variable to keep score**
