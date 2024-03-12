@@ -15,11 +15,15 @@ As a bonus, **you** should have:
 
 - A bunch of post-it notes or shreds of paper (around 2-3 per attendee)
 - 2 funny looking hats (or equally funny container)
+- Seen [this video](https://www.youtube.com/watch?v=bumzyz2advg) of what it looks like to run this workshop
 - 5 green balloons [^1]
+<!-- - Made your own slides based on TODO: SLIDE LINK HERE -->
 
 [^1]: (you don't really need this but I want to see if anyone tries getting them)
 
 ## Intro
+
+> Appreciate the ends without understanding the means.
 
 In this jam, you'll design a small trinket. Don't know what it is yet, but discovering it will be part of the activity.
 
