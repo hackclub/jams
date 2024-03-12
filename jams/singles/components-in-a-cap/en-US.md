@@ -33,7 +33,7 @@ Instead of "Learn to make a hacker card" or "Learn to make a digital level", we'
 
 > If you're a club leader, I'd encourage you to get 2 funny looking hats and label them "input" and "output". Then people can pick their components out of there.
 >
-> Someone won't quick talking during your presentation? Give'em a third component– that'll keep them busy.
+> Someone won't quit talking during your presentation? Give'em a third component– that'll keep them busy.
 
 You're going to randomly select an input component and an output component.
 
@@ -77,7 +77,7 @@ Now you're going to make this into a project by putting your components together
 
 ### No problems, Only solutions
 
-Your pitches are going to be solutions to things that aren't problems. It's kinda like web3. That's a good thing though!
+Your pitches are going to be solutions to things that aren't problems. <sup>_It's kinda like web3._</sup> That's a good thing for us though!
 
 No one has ever sat down to learn web dev & made the next facebook. Similarly, if you sit down thinking "I'm going to make something as helpful as an iPhone", you're destined for failure.
 
@@ -96,6 +96,13 @@ Now that you have your parts, let's design what the board looks like!
 Use your art tool of choice (figma / mspaint / crayola / photoshop /finger paints) to draw what you want your board to look like.
 
 Make a shape for the board you like, and kinda lay it all out in the editor of your choice.
+
+You can have colors too! There are a couple colors available:
+
+1. silk screen: this is the white ink
+2. solder mask: this is the green stuff
+3. copper layer: this is pretty subtle, but you can create textures and subtle bumps on your board with copper hidden by the solder mask
+4. exposed copper: if you put copper, then remove solder mask, you get a nice shiny gold color!
 
 ## Intermission
 
