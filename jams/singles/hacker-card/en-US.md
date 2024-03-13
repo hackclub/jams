@@ -188,6 +188,48 @@ Zooooming in, we see that it's between the antenna loop and pin #8 on the NFC ch
 
 Now, your PCB card is functional. Woooo! 🎉
 
+_WARNING: Make sure your design has no short circuits_
+<Dropdown title="Hey, what's a short circuit and how can I prevent it?">  
+           Short circuits is a circuits that allow current to travel along an unintended path. 
+
+          Heres a simple example:
+          ![](https://cloud-m5qt0nitx-hack-club-bot.vercel.app/0image.png)
+          In this circuit, the path of least resistance is the path in red. It flows through the led and the battery, thus the LED will light up
+
+          However, in this circuit:
+          ![](https://cloud-dyvwmu13k-hack-club-bot.vercel.app/0image.png)
+          The wires cross paths and make a new path of least resistance, that does not go through the battery. This causes the led to not light up.
+        
+</Dropdown>
+ <Dropdown title="We don't want that! How can I see if I have a short circuit?">  
+          The first thing to check for is if you have any traces(wires) that intersect or overlap, such as these 2 examples
+          ![](https://cloud-5hfwliwe8-hack-club-bot.vercel.app/0image.png) ![](https://cloud-2hhbo4z62-hack-club-bot.vercel.app/0image.png)
+          If you don't see any of these, you should be fine. However, if you want to be extra careful, do a Design Rule Check, by going to Design -> Check DRC
+          
+          Most of the errors are not actual issues, but if you click through them and find something that unsure of, consider asking around on the #Onboard channel on slack.
+</Dropdown>
+<Dropdown title="I have a short circuit! How do I get rid of it?">  
+  You should check to see if there is a different path the wire could take so it doesn't intersect, kind of like the battery and led example from above. If this is not   possible, then don't worry. This is why our board as multiple layers!
+
+The PCB below has many shorts
+![](https://cloud-nggsler3h-hack-club-bot.vercel.app/0image.png)
+The solution is to move the wire from the top layer to the bottom layer!
+First, select the wire you want to move
+![](https://cloud-grp5qt7qm-hack-club-bot.vercel.app/0image.png)
+Next, in the top right, select TopLayer, and change it to BottomLayer
+![](https://cloud-ny3wmd3c4-hack-club-bot.vercel.app/0image.png)
+The wire should turn blue, or another color.
+
+The last step is to change the pads to multilayer. First select the area where the wire and component intersect
+![](https://cloud-hzdm59xgm-hack-club-bot.vercel.app/0image.png)
+
+Select top layer, and change it to multilayer
+![](https://cloud-k7tdushgc-hack-club-bot.vercel.app/0image.png)
+
+Finnally, repeat for the other pad. 
+
+</Dropdown>
+
 Remember to save your progress! We can check out a preview by clicking the `3D` button in the top toolbar. Hmmm... doesn't look like a business card yet. Let's add some personality to it!
 
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/2card-preview.png)
