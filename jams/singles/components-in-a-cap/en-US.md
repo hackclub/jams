@@ -1,5 +1,5 @@
 ---
-title: 'Make Your Own Electronics Out Of A Hat'
+title: 'Make Your Own Electronic Trash Out Of A Magical Hat'
 description: Let's build a hacky electronics gizmo -- but with a twist -- you can only use three components that you draw out of a cap! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
 contributor: 'maxwofford'
 contributorSlackID: U0C7B14Q3
@@ -17,26 +17,6 @@ video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_
 slug: 'components-in-a-cap'
 ---
 
-## Running this workshop
-
-_Not a club leader? You can [skip ahead](#intro)_
-
-> This workshop will take about 60 minutes to design. After that, in a seperate 60 minute session you can order your board for manufacturing.
-
-What do your club members need?
-
-- Access to easyeda.com (check on your school's network!) & an account
-- Creativity (this one's kinda on them)
-
-As a bonus, **you** should have:
-
-- A bunch of post-it notes or shreds of paper (around 2-3 per attendee)
-- 2 funny looking hats (or equally funny container)
-- Seen [this video](https://www.youtube.com/watch?v=bumzyz2advg) of what it looks like to run this workshop
-- 5 green balloons [^1]
-
-[^1]: (you don't really need this but I want to see if anyone tries getting them)
-
 ## Intro
 > Appreciate the ends without understanding the means.
 
@@ -46,77 +26,102 @@ Instead of "Learn to make a hacker card" or "Learn to make a digital level", we'
 
 ## Random part picker!
 
-> If you're a club leader, I'd encourage you to get 2 funny looking hats and label them "input" and "output". Then people can pick their components out of there.
->
-> Someone won't quit talking during your presentation? Give'em a third component– that'll keep them busy.
+You're going to go to this [magical part picker site](https://component-hat-site.hackclub.dev/), 
 
-Alternatively, you can send your leaders to our [Part Picker Website](https://component-hat-site.hackclub.dev/) to help your members pick their parts out of a digital hat and create their art on the site.
+1. **First roll the dice** get a random input, output, and power source.
+2. **Come up with an idea** that combines the components into a fun useless gadget.
+3. **Draw some art** to put on your board
 
-Here are some **inputs**:
+Here's an example of what you might end up with (EXCEPT YOU'RE NOT GOING TO HAVE THIS SAME IDEA & THE SAME COMPONENTS):
 
-1. Dial
-2. Button
-3. Switch
-4. Light sensor
+Combine a **Light Sensor**, **Rumble Motor**, and **Battery** to make a rattle snake that rumbles whenever you put it in the light.
 
-Here are some **outputs**:
+![rattleSnake](https://cloud-62nxyioni-hack-club-bot.vercel.app/0drawing__7_.png)
 
-1. Buzzer (like a speaker but more annoying)
-2. LED (for lighting!)
-3. Rumble motor (what makes your Switch Controller feel alive)
-
-Here are some source of **power**:
-
-1. Battery
-2. USB (type-a or type-c)
-
-Why not take a personality test while we're at it. Here are some houses: [^0]
-
-[^0]: idk, i've never actually ready hairy otter
-
-1. snakepeople
-2. huff'n stuff
-3. rarvencaw
-4. griffydoor
-
-Now you're going to make this into a project by putting your components together.
-
-> 🤔 Hmmm, how do I make something with my components?
-
-#### Examples
-
-1. I got a dial and an LED– I'll make a flashlight, but instead of an on/off button, it has a dial
-2. I got a light sensor and a rumble motor. I'll make an annoying wrist watch to wake me up in the morning b/c an apple watch is too expensive
-
-### No problems, Only solutions
-
-Your pitches are going to be solutions to things that aren't problems. <sup>_It's kinda like web3._</sup> That's a good thing for us though!
 
 No one has ever sat down to learn web dev & made the next facebook. Similarly, if you sit down thinking "I'm going to make something as helpful as an iPhone", you're destined for failure.
 
-> Hey there club leader! If someone makes a good pitch you can award their house 10 points. Points don't really matter, but they don't _not_ matter. Go ahead and think about that.
+## Get In Your Workspace
 
-## Shopping spree
+Now it's the time to open up good ol' [easyeda](https://easyeda.com/)
 
-You can search for parts on [lcsc.com](https://lcsc.com) by typing their part number into the search bar. We aren't going to buy them yet, but you can do this to get a sense of the size of the part you're going to get.
+Step 1: create an account or login with google (tapping Register in the top right corner)
+![loginWithGoogle](https://cloud-8c6bzxhxx-hack-club-bot.vercel.app/0registereda.gif)
 
-Do this to get a good idea of your parts. Are they big or small? Transparent or colorful?
+Step 2: Tap on Easy EDA Designer Open the "STD" (student) edition of EasyEDA
+![STDEdition](https://cloud-8lt1ycvzx-hack-club-bot.vercel.app/0easyeda_designer.gif)
 
-## Form over function!
+Step 3: Start A New Project
+![NewProject](https://cloud-3oval3xig-hack-club-bot.vercel.app/0newproject.gif)
 
-Now that you have your parts, let's design what the board looks like!
+## Add In Your Components
 
-Use your art tool of choice (figma / mspaint / crayola / photoshop /finger paints) to draw what you want your board to look like.
+Add your components to the schematic zone (the non-creative zone).
 
-Make a shape for the board you like, and kinda lay it all out in the editor of your choice.
+You can do this by pulling up [this component library](https://hackclub.github.io/OnBoard/site/index.html) we made and then selecting the components you drew out of the hat. 
 
-You can have colors too! There are a couple colors available:
+Once you select a component
+1. Get the part number from the markdown 
+2. Open up EasyEDA Library (on the side bar)
+3. Search for your component (tap search icon)
+4. Select your component and place it anywhere on your schematic
 
-1. silk screen: this is the white ink
-2. solder mask: this is the green stuff
-3. copper layer: this is pretty subtle, but you can create textures and subtle bumps on your board with copper hidden by the solder mask
-4. exposed copper: if you put copper, then remove solder mask, you get a nice shiny gold color!
+![Light Sensor](https://cloud-lvwqcxzv9-hack-club-bot.vercel.app/0getcomponentid.gif)
 
-## Intermission
+Repeat this step for all 3 of your components
 
-If you're in a club, now's a good time to take a break. If you're not, you can take a break too. I'm a website, not your mom.
+![your components](https://cloud-ecs518tqh-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.48.02_pm.png)
+
+## Wire the components up
+
+Look at the documentation for each component in the [component library](https://hackclub.github.io/OnBoard/site/index.html), and see how it is wired up. Follow the documentation examples to wire up your input, output, and power source.
+
+Use R to rotate your elements and drag them around. Remember this is the NO CREATIVITY ZONE because your design will be totally moved around when you convert it to a PCB. 
+
+[wired up](https://cloud-gsil8fuxg-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.48.14_pm.png)
+
+
+## Convert to PCB
+
+Save your design (control S or CMD S)
+
+Tap Convert To PCB under Design -> "Convert To PCB"
+![conver to schematic](https://cloud-g1kkox8xj-hack-club-bot.vercel.app/0converttoschematic.gif)
+
+Rotate your components to minimize the rat lines (these subtle blue lines) crossing over each other. It's okay if it happens sometimes, but minimize the amount of times. 
+
+![noRatsCrossing](https://cloud-3ts8mn0bw-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.57.23_pm.png)
+
+Then use the Track Tool (W) to begin connecting the rat lines
+
+![connectRats](https://cloud-q6a3ktc2y-hack-club-bot.vercel.app/0connectrats.gif)
+
+## Getting Artistic 
+
+Now, throw you are into the schematic! This will be on a silk layer, so it will not impact your wiring.
+
+![Make First Pcb](https://cloud-l9r67m3n3-hack-club-bot.vercel.app/0add_in_the_art.gif)
+
+You now need to make you art into a silk layer
+
+![makeYellow](https://cloud-pihem7ix9-hack-club-bot.vercel.app/0silklayer.gif)
+
+Next, move your components to make them fit your design.
+
+![movedAround](https://cloud-d4z0ripa1-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.18.18_pm.png)
+
+It's time to cut out your board! 
+
+![cut out](https://cloud-7kaunz432-hack-club-bot.vercel.app/0outline.gif)
+
+Now you may have some loose wires or some rat lines that are not connected yet. Connect all of your loose wires to components and fix any of the yellow xs (that means your lines are crossing in a way that will cause a problem)
+
+![Here is a snake](https://cloud-8uy971i40-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.45.18_pm.png)
+
+Boom... now you have a PCB!
+
+![board color](https://cloud-plhykfmfn-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.23.48_pm.png)
+
+You should now go & order this board! 
+
+*(you can also change the board color on the side bar)*
