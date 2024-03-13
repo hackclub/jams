@@ -1,3 +1,22 @@
+---
+title: 'Make Your Own Electronics Out Of A Hat'
+description: Let's build a hacky electronics gizmo -- but with a twist -- you can only use three components that you draw out of a cap! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
+contributor: 'maxwofford'
+contributorSlackID: U0C7B14Q3
+thumbnail: 'https://cloud-n5ors8qhb-hack-club-bot.vercel.app/0componentsinhat.png'
+timeEstimate: '1 Hour'
+difficulty: 'Beginner'
+keywords: 'Hardware, PCB, EasyEDA, Business Card, OnBoard'
+language: 'EasyEDA'
+presentation: 'https://www.figma.com/file/5kXADOfqHzoV6kaA9xNl1T/components-jam?type=design&node-id=154%3A341&mode=design&t=pHzt7QifMykaDnCB-1'
+presentationPlay: 'https://www.figma.com/proto/5kXADOfqHzoV6kaA9xNl1T/components-jam?page-id=154%3A341&type=design&node-id=154-343&viewport=-11%2C1340%2C0.07&t=2LfA5bNVMXiFqIyP-1&scaling=contain&mode=design'
+presentationPDF: 'https://cloud-ilc21h8ot-hack-club-bot.vercel.app/0components-jam.pdf'
+notes: ''
+poster: 'https://github.com/hackclub/posters#:~:text=%40Krishna%20Bansal-,Download,-Go%20to%20Figma'
+video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_with_maggie.mp4'
+slug: 'components-in-a-cap'
+---
+
 ## Running this workshop
 
 _Not a club leader? You can [skip ahead](#intro)_
@@ -6,9 +25,7 @@ _Not a club leader? You can [skip ahead](#intro)_
 
 What do your club members need?
 
-- Access to jlcpcb.com (check on your school's network!) & an account
-- Drawing tools (figma is great for this, but other tools like ms paint online end up being really funny)
-  - A pencil and paper work for this too, but digital is preferred!
+- Access to easyeda.com (check on your school's network!) & an account
 - Creativity (this one's kinda on them)
 
 As a bonus, **you** should have:
@@ -17,12 +34,10 @@ As a bonus, **you** should have:
 - 2 funny looking hats (or equally funny container)
 - Seen [this video](https://www.youtube.com/watch?v=bumzyz2advg) of what it looks like to run this workshop
 - 5 green balloons [^1]
-<!-- - Made your own slides based on TODO: SLIDE LINK HERE -->
 
 [^1]: (you don't really need this but I want to see if anyone tries getting them)
 
 ## Intro
-
 > Appreciate the ends without understanding the means.
 
 In this jam, you'll design a small trinket. Don't know what it is yet, but discovering it will be part of the activity.
@@ -35,9 +50,7 @@ Instead of "Learn to make a hacker card" or "Learn to make a digital level", we'
 >
 > Someone won't quit talking during your presentation? Give'em a third component– that'll keep them busy.
 
-You're going to randomly select an input component and an output component.
-
-> ✋ Stop right there! Are you an individual not in a club? it's ok, I don't have friends either. You can instead roll a virtual dice by googling "Roll d4". Also good if you have _internet friends_ and want to play a game of _internet dungeons & internet dragons_.
+Alternatively, you can send your leaders to our [Part Picker Website](https://component-hat-site.hackclub.dev/) to help your members pick their parts out of a digital hat and create their art on the site.
 
 Here are some **inputs**:
 
