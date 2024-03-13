@@ -38,7 +38,7 @@ To follow the repo for updates and show you're participating, click the "star" b
 
 ![Star the OnBoard repo](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/3star-repo.png)
 
-## 1. Join the Slack! (Optional)
+## 1. Join the Slack! 
 
 Our [`#onboard`](https://hackclub.slack.com/archives/C056AMWSFKJ) channel is where the party is getting started! If you haven't already joined, make sure to add yourself to the channel. And for those who are new to the Hack Club slack, sign up to our community of 13k+ makers through [here](https://hackclub.com/slack/?event=onboard) (don't worry, there isn't an application).
 
@@ -82,7 +82,8 @@ In all, you should have the following files under your project folder:
 - [ ] `README.md`: A filled out [`TEMPLATE.md`](./projects/!Template/TEMPLATE.md?plain=1), renamed to `README.md`
 - [ ] `cart.png`: A screen shot of your vendor approving your board
 - [ ] `Gerbers.zip`: This should be the file that you send off to the vendor.
-- [ ] Design files (`design.json`, `design.sch`, `design.brd`, etc). Whatever format your designer outputs to should be included.
+- [ ] Design files(`design.json`, `design.sch`, `design.brd`, etc) in `src` folder . Whatever format your designer outputs to should be included.
+- [ ] `Schematic.pdf`: A pdf of your schematic, obtained from you're designer.
 
 If you have all the above, you're done with this step!
 
