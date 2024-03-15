@@ -6,7 +6,7 @@ contributorSlackID: U0C7B14Q3
 thumbnail: 'https://camo.githubusercontent.com/bd49fe87b1833c2856e8c9da45eb340b159be057e1f7ee317e36e08e8b775003/68747470733a2f2f636c6f75642d62336838316f3064662d6861636b2d636c75622d626f742e76657263656c2e6170702f306f6e626f6172645f6769746875622e706e67'
 timeEstimate: '1 Hour'
 difficulty: 'Beginner'
-keywords: 'Hardware, PCB, EasyEDA, NFC, business card, OnBoard, Beta'
+keywords: 'Hardware, EasyEDA, NFC, business card, OnBoard, Beta'
 language: 'EasyEDA'
 presentation: ''
 presentationPlay: ''
