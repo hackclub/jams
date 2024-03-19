@@ -129,8 +129,6 @@ Boom... now you have a PCB!
 
 You should now go & order this board! 
 
-<!-- *(you can also change the board color on the side bar)* -->
-
 ## Ready to buy?
 
 You can get your board made for free with Hack Club's OnBoard project.
