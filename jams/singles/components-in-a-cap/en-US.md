@@ -39,7 +39,6 @@ Combine a **Light Sensor**, **Rumble Motor**, and **Battery** to make a rattle s
 
 ![rattleSnake](https://cloud-62nxyioni-hack-club-bot.vercel.app/0drawing__7_.png)
 
-
 No one has ever sat down to learn web dev & made the next facebook. Similarly, if you sit down thinking "I'm going to make something as helpful as an iPhone", you're destined for failure...
 
 But sit down to make some trash, and you'll end up with this treasure:
