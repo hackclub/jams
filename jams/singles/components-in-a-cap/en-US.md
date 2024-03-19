@@ -18,6 +18,7 @@ slug: 'components-in-a-cap'
 ---
 
 ## Intro
+
 > Appreciate the ends without understanding the means.
 
 In this jam, you'll design a small trinket. Don't know what it is yet, but discovering it will be part of the activity.
@@ -39,7 +40,11 @@ Combine a **Light Sensor**, **Rumble Motor**, and **Battery** to make a rattle s
 ![rattleSnake](https://cloud-62nxyioni-hack-club-bot.vercel.app/0drawing__7_.png)
 
 
-No one has ever sat down to learn web dev & made the next facebook. Similarly, if you sit down thinking "I'm going to make something as helpful as an iPhone", you're destined for failure.
+No one has ever sat down to learn web dev & made the next facebook. Similarly, if you sit down thinking "I'm going to make something as helpful as an iPhone", you're destined for failure...
+
+But sit down to make some trash, and you'll end up with this treasure:
+
+![board color](https://cloud-plhykfmfn-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.23.48_pm.png)
 
 ## Get In Your Workspace
 
@@ -78,7 +83,7 @@ Look at the documentation for each component in the [component library](https://
 
 Use R to rotate your elements and drag them around. Remember this is the NO CREATIVITY ZONE because your design will be totally moved around when you convert it to a PCB. 
 
-[wired up](https://cloud-gsil8fuxg-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.48.14_pm.png)
+![wired up](https://cloud-gsil8fuxg-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.48.14_pm.png)
 
 
 ## Convert to PCB
@@ -98,7 +103,7 @@ Then use the Track Tool (W) to begin connecting the rat lines
 
 ## Getting Artistic 
 
-Now, throw you are into the schematic! This will be on a silk layer, so it will not impact your wiring.
+Now, throw your art into the schematic! This will be on a silk layer, so it will not impact your wiring.
 
 ![Make First Pcb](https://cloud-l9r67m3n3-hack-club-bot.vercel.app/0add_in_the_art.gif)
 
@@ -124,4 +129,10 @@ Boom... now you have a PCB!
 
 You should now go & order this board! 
 
-*(you can also change the board color on the side bar)*
+<!-- *(you can also change the board color on the side bar)* -->
+
+## Ready to buy?
+
+You can get your board made for free with Hack Club's OnBoard project.
+
+Check out the steps for getting your board for free [here](https://onboard.hackclub.com/).
