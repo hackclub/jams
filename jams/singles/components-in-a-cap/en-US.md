@@ -13,7 +13,7 @@ presentationPlay: 'https://www.figma.com/proto/5kXADOfqHzoV6kaA9xNl1T/components
 presentationPDF: 'https://cloud-ilc21h8ot-hack-club-bot.vercel.app/0components-jam.pdf'
 notes: ''
 poster: 'https://github.com/hackclub/posters#:~:text=%40Krishna%20Bansal-,Download,-Go%20to%20Figma'
-video: ''
+video: 'https://www.youtube.com/embed/bumzyz2advg?si=oLItGZB1qI2EQN1m'
 slug: 'components-in-a-cap'
 ---
 
