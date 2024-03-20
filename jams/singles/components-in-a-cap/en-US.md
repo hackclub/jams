@@ -3,7 +3,7 @@ title: 'Make Your Own Electronic Trash Out Of A Magical Hat'
 description: Let's build a hacky electronics gizmo -- but with a twist -- you can only use three components that you draw out of a cap! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
 contributor: 'maxwofford'
 contributorSlackID: U0C7B14Q3
-thumbnail: 'https://cloud-n5ors8qhb-hack-club-bot.vercel.app/0componentsinhat.png'
+thumbnail: 'https://cloud-f9qeb5d02-hack-club-bot.vercel.app/00componentsinhat__1_.png'
 timeEstimate: '1 Hour'
 difficulty: 'Beginner'
 keywords: 'Hardware, PCB, EasyEDA, Business Card, OnBoard'
