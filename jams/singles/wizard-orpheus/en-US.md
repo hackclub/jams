@@ -3,7 +3,7 @@ title: 'Make an AI Game in 40 Lines'
 description: >
     In this Jam, you will make your own AI Game in 40 lines of code using Wizard Orpheus! Wizard Orpheus is a JavaScript library that makes it easy peasy to build AI apps in JavaScript with minimal prior knowledge!
 contributor: 'zachlatta'
-thumbnail: 'https://cloud-7d7w42080-hack-club-bot.vercel.app/0rugmerchant.png'
+thumbnail: 'https://cloud-njbdwayky-hack-club-bot.vercel.app/00rugmerchant__1_.png'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
 keywords: 'AI, Web'
