@@ -17,6 +17,8 @@ video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_
 slug: 'hacker-card'
 ---
 
+Reva went through this workshop & the components in a hat workshop and ended up making a custom pcb project for her club! For a bit of inspiration: check it out [the slides](https://www.canva.com/design/DAF_cqpJG9U/DPYFvBbpFErhEzrQPm4iwQ/view?utm_content=DA[…]G9U&utm_campaign=designshare&utm_medium=link&utm_source=editor).
+
 > This workshop will take about 60 minutes to design. After that, in a seperate 60 minute session you can order your board for manufacturing using [the OnBoard grant tutorial](https://jams.hackclub.com/jam/onboard-grant).
 
 Printed Circuit Boards - PCBs -  are in nearly all electronics, from phones to cars! It's super easy to make your own, and make them not just functional, but also you can get creative with how they look. 
