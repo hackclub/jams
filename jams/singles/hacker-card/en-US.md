@@ -199,8 +199,8 @@ _WARNING: Make sure your design has no short circuits_
           In this circuit, the path of least resistance is the path in red. It flows through the led and the battery, thus the LED will light up
 
           However, in this circuit:
-          ![](https://cloud-dyvwmu13k-hack-club-bot.vercel.app/0image.png)
-          The wires cross paths and make a new path of least resistance, that does not go through the battery. This causes the led to not light up.
+          ![](https://cloud-abtjpv714-hack-club-bot.vercel.app/0image.png)
+          The wires cross paths and make a new path of least resistance, that does not go through the LED. This causes the led to not light up.
         
 </Dropdown>
  <Dropdown title="We don't want that! How can I see if I have a short circuit?">  
