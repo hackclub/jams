@@ -79,11 +79,11 @@ With your README filled out, head over to add files to begin uploading your Gerb
 ![Upload gerber files](https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/1adding-gerbers.png)
 
 In all, you should have the following files under your project folder:
-- [ ] `README.md`: A filled out [`TEMPLATE.md`](./projects/!Template/TEMPLATE.md?plain=1), renamed to `README.md`
-- [ ] `cart.png`: A screen shot of your vendor approving your board
+- [ ] `README.md`: A filled out [`TEMPLATE.md`](./projects/!Template/TEMPLATE.md?plain=1), renamed to `README.md`.
+- [ ] `cart.png`: A screen shot of your vendor approving your board.
 - [ ] `Gerbers.zip`: This should be the file that you send off to the vendor.
 - [ ] Design files(`design.json`, `design.sch`, `design.brd`, etc) in `src` folder . Whatever format your designer outputs to should be included.
-- [ ] `Schematic.pdf`: A pdf of your schematic, obtained from you're designer.
+- [ ] `Schematic.pdf`: A pdf of your schematic, obtained from your designer.
 
 If you have all the above, you're done with this step!
 
@@ -93,7 +93,7 @@ Once you've uploaded your files, you can merge them to the main repo through a p
 
 ![Open a PR](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/0open-pr.png)
 
-That will bring you to the main repo, where you'll initiate a pull request. Follow the checklist, we'll then review your PR and you'll be off to the races!
+That will bring you to the main repo, where you'll initiate a pull request. All you need to do is to follow the checklist. Then, we'll review your PR, and you'll be off to the races!
 ![Submission checklist](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/4submission-checklist.png)
 
 
