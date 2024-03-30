@@ -1,5 +1,5 @@
 ---
-title: 'Tier List w/ React'
+title: 'Create Your Own Tier List In React'
 description: 'Create a tier list with React!'
 contributor: 'KeenanOH'
 contributorSlackID: 'U05SNTKIW0N'
