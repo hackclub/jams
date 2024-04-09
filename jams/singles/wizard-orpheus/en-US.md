@@ -31,7 +31,7 @@ You will get to come up with your own story, game variables, and fun mechanics. 
 6. **Customize prompt to make your own game**
 
 ## Fork & Run Replit 
-Visit [hack.af/wow-starter](https://hack.af/wow-starter
+Visit [hack.club/wow-starter](https://hack.club/wow-starter
 ) and tap Fork & Run. You'll need to create a Replit account for this to work. 
 
 ![Wizard Orpheus Fork & Run Gif](https://cloud-rfnb1efui-hack-club-bot.vercel.app/0wizard-orpheus-fork-and-run.gif)
