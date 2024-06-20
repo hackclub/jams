@@ -2,7 +2,7 @@
 title: Making 3D Worlds in HTML
 description: 
 contributor: shubhampatilsd
-thumbnail: 'https://cloud-8ugwd9jwp-hack-club-bot.vercel.app/0slide_16_9_-_1thumbnail.png'
+thumbnail: 'https://cloud-mh2cnr5di-hack-club-bot.vercel.app/0slide_16_9_-_1thumbnail.png'
 timeEstimate: 90 Min
 difficulty: Beginner
 keywords: 3D, Web, VR
