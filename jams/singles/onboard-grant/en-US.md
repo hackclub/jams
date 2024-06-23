@@ -81,9 +81,15 @@ With your README filled out, head over to add files to begin uploading your Gerb
 In all, you should have the following files under your project folder:
 - [ ] `README.md`: A filled out [`TEMPLATE.md`](./projects/!Template/TEMPLATE.md?plain=1), renamed to `README.md`.
 - [ ] `cart.png`: A screen shot of your vendor approving your board.
-- [ ] `Gerbers.zip`: This should be the file that you send off to the vendor.
+- [ ] `gerber.zip`: This should be the file that you send off to the vendor.
 - [ ] Design files(`design.json`, `design.sch`, `design.brd`, etc) in `src` folder . Whatever format your designer outputs to should be included.
-- [ ] `Schematic.pdf`: A pdf of your schematic, obtained from your designer.
+- [ ] `schematic.pdf`: A pdf of your schematic, obtained from your designer.
+
+`cart.png`, `gerber.zip`, and `schematic.pdf` are all very important to be named EXACTLY that; all lowercase and with the correct file types. This helps our bot to know what they are.
+
+Your files should look roughly like this:
+
+![Ideal PR structure](https://i.imgur.com/ix7t2nJ.png)
 
 If you have all the above, you're done with this step!
 
