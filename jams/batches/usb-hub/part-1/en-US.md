@@ -41,17 +41,17 @@ Go to [EasyEDA](https://easyeda.com/editor) and create a new project (File > New
 
 ## Add the parts
 
-For our design, we're going to need a USB-A connector that plugs into our computer. Click the `Libraries` button on the left toolbar, and search for `usb-a`.
+For our design, we're going to need a USB-A connector that plugs into our computer. Click the `Libraries` button on the left toolbar, and search for `HCC386752`.
 
-![](https://cloud-mjv8qcmxc-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.12.42.png)
+![image](https://github.com/hackclub/jams/assets/28641114/6647842c-149f-4180-af34-657db88afc62)
 
-A bunch of options will show up with options like price, stock, and mounting type. You won't understand all the options yet & <b>that's ok</b>! I ended up using part number [`C404965`](https://www.lcsc.com/product-detail/USB-Connectors_SHOU-HAN-AM90_C404965.html). Once you select it, click the `Place` button to add the part to our project.
+Once you select it, click the `Place` button to add the part to our project. It might look a little different than the images in this tutorial, but that's okay.
 
 ![](https://cloud-b1al1d09c-hack-club-bot.vercel.app/00screenshot_2023-08-08_at_12.20.04.png)
 
 Yeah! You did it. Now let's add the other parts we'll need!
 
-We'll need another USB-A connector, but this time a female connector for the devices we charge / plug in. Do another search for `usb-a`, but this time I used part number [`C46407`](https://www.lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-903-131A1011D10100_C46407.html). This time, place 2 of them on the board.
+We'll need another USB-A connector, but this time a female connector for the devices we charge / plug in. Do another search for `usb-a`. A bunch of options will show up with options like price, stock, and mounting type. You won't understand all the options yet & <b>that's ok</b>! I ended up using part number [`C46407`](https://www.lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-903-131A1011D10100_C46407.html). This time, place 2 of them on the board.
 
 Next up we need a main board to connect everything together. There are a bunch out there, but I ended up using the CoreChips SL2.1A with part number [`C192893`](https://www.lcsc.com/product-detail/USB-ICs_CoreChips-SL2-1A_C192893.html).
 
