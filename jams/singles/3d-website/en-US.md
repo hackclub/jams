@@ -33,7 +33,7 @@ If you've ever wanted to make your own immersive and expansive 3D worlds, you've
 9. Getting a free Frappuccino
 10. Wrapping up
 ## Setting up Replit 
-Go to (https://replit.com)[https://replit.com] and create/log into an account:
+Go to [https://replit.com](https://replit.com) and create/log into an account:
 ![Replit authentication page](https://cloud-99ig98peo-hack-club-bot.vercel.app/0image.png)
 
 Then, go ahead and create a project by going to "Create Repl" on the sidebar > selecting HTML, CSS, JS > giving it a title > hitting "Create Repl"
