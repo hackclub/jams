@@ -281,5 +281,8 @@ Hack Club's [OnBoard grant](https://hackclub.com/onboard/) gives high schoolers 
 
 > If you're in a club or afterschool group that meets for an hour you're probably reaching the end of your meeting around now. Next meeting you can get started with [the OnBoard grant tutorial](https://jams.hackclub.com/jam/onboard-grant) to order your board for manufacturing.
 
-### Flashing NFC
-Some NFC RFID readers such as the ones on iPhones, may have trouble traditionally writing or reading the card, this is because the card hasn't been initialized from the factory yet. Installing an app with the capability to use custom NFC commands, such as [NFC Tools](https://apps.apple.com/us/app/nfc-tools/id1252962749) then flashing the NFC card with this custom NFC command, `A2:03:E1:10:6D:00,A2:04:03:04:D8:00,A2:05:00:00:FE:00` will format the chip and allow it to be written to. [More info](https://github.com/Hugoyhu/NTAG-I2C-Eval-Board)
+## After receiving your PCB...
+Test out your NFC card by flashing a URL to your personal website, or your personal phone number, or even create your own NFC scavenger hunt game by encoding text to NFC.
+
+### Flashing data to NFC
+Some NFC RFID readers such as the ones on iPhones, may have trouble reading or writing the card, this is because the card hasn't been initialized from the factory yet. To initialize the chip, start off by installing an app with the capability to use custom NFC commands, such as [NFC Tools IOS](https://apps.apple.com/us/app/nfc-tools/id1252962749) or [NFC Tools Android](https://play.google.com/store/apps/details?id=com.wakdev.wdnfc&hl=en_CA&pli=1) then flash the NFC card with this custom NFC command, `A2:03:E1:10:6D:00,A2:04:03:04:D8:00,A2:05:00:00:FE:00` this then will format the chip and allow it to be written to. [More info](https://github.com/Hugoyhu/NTAG-I2C-Eval-Board)
