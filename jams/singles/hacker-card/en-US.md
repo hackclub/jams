@@ -280,3 +280,9 @@ Now that you've got an amazing design, you can actually get your card manufactur
 Hack Club's [OnBoard grant](https://hackclub.com/onboard/) gives high schoolers $100 to manufacture their own PCB designs, and you can use it to get your own card manufactured.
 
 > If you're in a club or afterschool group that meets for an hour you're probably reaching the end of your meeting around now. Next meeting you can get started with [the OnBoard grant tutorial](https://jams.hackclub.com/jam/onboard-grant) to order your board for manufacturing.
+
+## After receiving your PCB...
+Test out your NFC card by flashing a URL to your personal website, or your personal phone number, or even create your own NFC scavenger hunt game by encoding text to NFC.
+
+### Flashing data to NFC
+Some NFC RFID readers, such as the ones on iPhones, may have trouble reading or writing the card - this is because the card hasn't been initialized from the factory yet. To initialize the chip, start off by installing an app with the capability to use custom NFC commands, such as [NFC Tools IOS](https://apps.apple.com/us/app/nfc-tools/id1252962749) or [NFC Tools Android](https://play.google.com/store/apps/details?id=com.wakdev.wdnfc&hl=en_CA&pli=1). Then, flash the NFC card with this Advanced NFC command, `A2:03:E1:10:6D:00,A2:04:03:04:D8:00,A2:05:00:00:FE:00` . This will format the chip and allow it to be written to. You can find more information about the flashing process here on [GitHub](https://github.com/Hugoyhu/NTAG-I2C-Eval-Board).
