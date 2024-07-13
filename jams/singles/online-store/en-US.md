@@ -34,7 +34,7 @@ Here's an example of what a finished product might look like! however, your proj
 
 ---
 
-This is **Part 1** of a two-part workshop on creating your very own store on the web! You'll design everything from the products you'll sell to the colors and feel of the website. At the end, you'll get a chance to pitch your design to the workshop hosts and compete for the title of <font color="#7CFC00">Best Designer</font>!
+This is a Hack Club Jam that helps you create **your very own store** on the web! You'll design everything from the products you'll sell to the colors and feel of the website. In the end, you'll get a chance to pitch your design to the workshop hosts and compete for the title of <font color="#7CFC00">Best Designer</font>!
 
 If your website looks like something you would make, you did a great job 🎉
 Otherwise, go back and brainstorm ways to make your project ✨ unique ✨
@@ -179,9 +179,8 @@ Inside your frame, we'll create a _text object_! Once the tool is selected, clic
 wait a minute...
 ![Text is too small naurr](https://cloud-6gf9bcrd6-hack-club-bot.vercel.app/0pasted_image_20230716031051.png)
 
-#### Quiz Time!
+What do you think we should do?
 
-<Dropdown title="What do you think we should do?">
 <Dropdown title="Hint">
 Hmm... Think back to the tools we learned about earlier, maybe something in the "Move Tools" section?
 </Dropdown>
@@ -190,7 +189,8 @@ Luckily we can scale this up with the **Scale Tool (K)**. Scale the text to your
 
 We can also select it using the **Move Tool (V)** and edit the font size in the text box's properties.
 </Dropdown>
-</Dropdown>
+
+---
 
 Let's try adding stars to our page. We can do this by selecting the **Star Tool** and placing them as we want. If a sharp grey star isn't what I want, I can choose the _Fill Color_ and the _Corner Radius_ in the layer's properties after selecting it. In fact, I can also change the number of angles and the size of each angle of the star. If you ever want to edit some property of an object, you always check the right sidebar!
 
@@ -406,14 +406,8 @@ Feel free to browse through and find something awesome for your design. One that
 
 ## Your next adventure.
 
-> You thought it was over?
-> sorry
 
-Onward to the next island! Here we'll learn how to integrate the Shopify API with Next.JS to make our site **REAL**!
-
-Before you head over, you should implement your design in code! (preferably in Next.JS or similar).
-
-Check out the jam "**Wielding the Elemental Magic of the Web (not evil)**" to figure out how to implement your design in HTML and CSS! Also, try enabling "**Dev Mode**" in Figma (a switch on the top right corner) to see property values in CSS and example code for some objects! If you have no idea what Next.JS is, I suggest you check out their <a href="https://nextjs.org/docs">Official Tutorial</a> to get started.
+If you'd like to implement this prototype into a working website, check out the jam "**Wielding the Elemental Magic of the Web (not evil)**" to figure out how to implement your design in HTML and CSS! Also, try enabling "**Dev Mode**" in Figma (a switch on the top right corner) to see property values in CSS and example code for some objects!
 
 It's been a blast jamming out with you! Catch you later :>
 <video controls style={{width: "400px"}}> <source src="https://cloud-f39p2nwab-hack-club-bot.vercel.app/00718.mp4" type="video/mp4"/> </video>
