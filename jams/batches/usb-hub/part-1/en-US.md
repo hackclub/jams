@@ -41,9 +41,9 @@ Go to [EasyEDA](https://easyeda.com/editor) and create a new project (File > New
 
 ## Add the parts
 
-For our design, we're going to need a USB-A connector that plugs into our computer. Click the `Libraries` button on the left toolbar, and search for `HCC386752`.
+For our design, we're going to need a USB-A connector that plugs into our computer. Click the `Libraries` button on the left toolbar, and search for `C98125`.
 
-![image](https://github.com/hackclub/jams/assets/28641114/6647842c-149f-4180-af34-657db88afc62)
+![Screenshot 2024-07-14 022430](https://github.com/user-attachments/assets/52e27925-0a72-4a68-a602-4311b9e291ee)
 
 Once you select it, click the `Place` button to add the part to our project. It might look a little different than the images in this tutorial, but that's okay.
 
