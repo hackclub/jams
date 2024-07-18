@@ -139,6 +139,13 @@ _You might already have a pink rectangle lying around from when you first import
 
 ![](https://cloud-dmke8w78v-hack-club-bot.vercel.app/1screenshot_2023-08-11_at_14.06.12.png)
 
+
+If your male USB port has a pink line in the footprint, make sure it's **outside** of the board outline. Some USB ports are "sink components," which means that they go below the board. This makes sure to give them ample room.
+
+<img src="https://github.com/user-attachments/assets/ab60dfac-8d52-4314-9388-d7945c2770b0" width=50% height=50%><img src="https://github.com/user-attachments/assets/d746092d-cd29-41b9-9dc7-de4a335959eb" width=50% height=50%>
+
+
+
 I made my trace look like this, but yours can look different! Just make sure that it's a closed shape and has enough padding around the edges that we don't trim of anything important. Sometimes the cutting machine will be a little off, so it's good to have a little extra space on the sides.
 
 Also, don't forget to even out your corners!
