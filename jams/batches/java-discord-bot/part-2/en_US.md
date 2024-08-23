@@ -44,7 +44,7 @@ You know how it works now, let's make it B).
 
 Open SlashCommandManager, it should like like this:
 
-```
+``` java
 public class SlashCommandManager {
 
 }
@@ -52,7 +52,7 @@ public class SlashCommandManager {
 
 add extends ListenerAdapter behind SlashCommandManager, like this!
 
-```
+``` java
 public class SlashCommandManager extends ListenerAdapter {
 }
 ```
@@ -68,7 +68,7 @@ Remove super.onGuildReady(event);
 
 It should now look like this:
 
-```
+``` java
 public class SlashCommandManager extends ListenerAdapter {
     @Override
     public void onGuildReady(GuildReadyEvent event) {
@@ -89,7 +89,7 @@ If anything becomes red click on it then Alt + Enter, please remember this, you 
 
 Now it should look like this:
 
-```
+``` java
 public class SlashCommandManager extends ListenerAdapter {
     @Override
     public void onGuildReady(GuildReadyEvent event) {
@@ -122,7 +122,7 @@ If you add more classes to the main make sure to sepperate them with ,
 
 Like this
 
-```
+``` java
 new pongcommand(),
 new xcommand
 ```
@@ -160,7 +160,7 @@ Remove super.onSlashCommandInteraction(event);
 Okay this will get pretty complicated so read very good.
 
 In onSlashCommand add:
-```
+``` java
 if (event.getName().equals("ping")) {
 
 }
@@ -170,7 +170,7 @@ If it does we can reply!
 
 With:
 
-```
+``` java
 event.reply("Message what you want to reply with!").queue;
 ```
 
