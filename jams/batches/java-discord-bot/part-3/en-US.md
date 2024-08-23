@@ -25,7 +25,8 @@ In *programmer language* we call that **Embeds**.
 
 Here's an example of an embed.
 
-![Embed Example](https://files.slack.com/files-tmb/T0266FRGM-F07JD8P1B3N-5d817dd6fe/image_360.png)
+![image](https://github.com/user-attachments/assets/94f3d9b6-daa0-4c66-9fda-efa4d3bd57f2)
+
 
 To create an embed we use this:
 
