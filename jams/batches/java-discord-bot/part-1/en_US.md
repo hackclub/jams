@@ -140,7 +140,7 @@ Also make sure that the bot token is between "" example: "dwah8esfsehfhsnvcb"
 
 Now you can try running the main.java file and seeing if the bot boots.
 
-If it boots, then the hardest part is behind you! If it doesn't try to retrace the steps to see if you maybe went somewhere wrong.
+If it boots, then the hardest part is behind you! If it doesn't try to retrace the steps to see if you maybe went somewhere wrong. Feel fry to dm me on Discord @kippenboutske or tag me/dm me on the Hack Club Slack: @Kipp-ie.
 
 Ready for the next step? If so you can follow part 2!
 
