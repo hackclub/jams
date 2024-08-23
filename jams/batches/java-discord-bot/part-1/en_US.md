@@ -24,43 +24,43 @@ You might have heard of Discord Bots before, if you don't i will give a short de
 
 First go to [Discord Developer Applications](https://discord.com/developers/applications). You'll probably need to sign in.
 
-![Discord Developer Home Page](https://cloud-6p1pvbaeh-hack-club-bot.vercel.app/0image.png)
-
 Click on **New Application**
 
-![Application Creation](https://cloud-cqn2d1ojp-hack-club-bot.vercel.app/0image.png)
+![Discord Developer Home Page](https://cloud-6p1pvbaeh-hack-club-bot.vercel.app/0image.png)
 
 You can choose any name wou want here. Proceed by clicking the **check box** to accepts Discord's TOS (You should read them!).
 
-![Bot page](https://cloud-ief8tg9tb-hack-club-bot.vercel.app/0image.png)
+![Application Creation](https://cloud-cqn2d1ojp-hack-club-bot.vercel.app/0image.png)
 
 Click on the page **Bot**. On this page you can customize the bot anyway you want!
 
-![Resetting bot token](https://cloud-69uxismjr-hack-club-bot.vercel.app/0image.png)
+![Bot page](https://cloud-ief8tg9tb-hack-club-bot.vercel.app/0image.png)
 
 A bot token is how you can communicate with a Discord Bot, think of it like an account password. You need to keep this code safe, otherwise if someone else gets the code they can hijack your bot. Save this token for now in a notepad/word file.
 
-![Permissions](https://cloud-j9k09iazm-hack-club-bot.vercel.app/0image.png)
+![Resetting bot token](https://cloud-69uxismjr-hack-club-bot.vercel.app/0image.png)
 
 You need to enable all these Privileged Gateway Intents, otherwise your bot won't function!
 
-You have now changed all the settings needed, let's invite this bot to our server!
+![Permissions](https://cloud-j9k09iazm-hack-club-bot.vercel.app/0image.png)
 
-![OAuth](https://cloud-4upqdgtaj-hack-club-bot.vercel.app/0image.png)
+You have now changed all the settings needed, let's invite this bot to our server!
 
 Click on the tab **OAuth2**
 
-![Bot](https://cloud-1y24aht1v-hack-club-bot.vercel.app/0image.png)
+![OAuth](https://cloud-4upqdgtaj-hack-club-bot.vercel.app/0image.png)
 
 Check **bot**
 
-![Check administrator](https://cloud-fitsonnil-hack-club-bot.vercel.app/0image.png)
+![Bot](https://cloud-1y24aht1v-hack-club-bot.vercel.app/0image.png)
 
 Check **Administrator**
 
-![Copy LINK](https://cloud-5ze8tu4h1-hack-club-bot.vercel.app/0image.png)
+![Check administrator](https://cloud-fitsonnil-hack-club-bot.vercel.app/0image.png)
 
 On the bottom click on **Copy**
+
+![Copy LINK](https://cloud-5ze8tu4h1-hack-club-bot.vercel.app/0image.png)
 
 Paste this link in a new tab and proceed by following the instructions.
 
@@ -76,9 +76,9 @@ Now, let's create a new project.
 
 You can give the bot/project any name you want. When you chose a name make sure the project is set on Maven instead of Gradle. Click on **Create**.
 
-![IntellIJ](https://cloud-f4tqhukr8-hack-club-bot.vercel.app/0image.png)
-
 At the left your files should look something like this.
+
+![IntellIJ](https://cloud-f4tqhukr8-hack-club-bot.vercel.app/0image.png)
 
 Open pom.xml.
 
@@ -96,9 +96,9 @@ And add this to the file:
 
 Press Ctrl + Shift + Q
 
-![Example pom](https://cloud-8k7a2wspb-hack-club-bot.vercel.app/0image.png)
+It should like like this.
 
-It should look like this.
+![Example pom](https://cloud-8k7a2wspb-hack-club-bot.vercel.app/0image.png)
 
 In main.java delete everything except package (your name).
 
