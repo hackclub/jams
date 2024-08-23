@@ -84,14 +84,14 @@ Open pom.xml.
 
 And add this to the file:
 
-```
+``` xml
 <dependencies>
     <dependency>
         <groupId>net.dv8tion</groupId>
         <artifactId>JDA</artifactId>
         <version>5.0.2</version> <!-- replace $version with the latest version -->
     </dependency>
-    </dependencies>
+</dependencies>
 ```
 
 Press Ctrl + Shift + Q
@@ -104,7 +104,7 @@ In main.java delete everything except package (your name).
 
 Paste this in your main.java, make sure to replace BOT_TOKEN with the bot token we got earlier.
 
-```
+``` java
 public class Main {
 
 
