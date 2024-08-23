@@ -1,4 +1,3 @@
-
 ---
 part: "part-4"
 batch: 'java-discord-bot'
@@ -7,13 +6,13 @@ title: 'Examples.'
 description: 'In this final (Optional) step we will make some example commands :)'
 contributor: 'Kipp-ie'
 contributorSlackID: 'Kipp-ie'
-thumbnail: 'https://cloud-9wqwm2von-hack-club-bot.vercel.app/0image.png'
+thumbnail: 'https://github.com/user-attachments/assets/1678411f-a278-4883-a053-155c5e8bed70'
 timeEstimate: '1 hour'
 difficulty: 'Beginner'
 keywords: 'java, discord-bot'
-presentation: 'link to figma slides'
-presentationPlay: 'link to figma slides in presentation mode'
-presentationPDF: 'link to pdf of slides'
+presentation: 'https://www.figma.com/slides/zmb4kWADcE6d8rKWsG0GIe/Untitled?node-id=1-32&t=E11NlCiFb5enyqGi-1'
+presentationPlay: 'https://www.figma.com/deck/zmb4kWADcE6d8rKWsG0GIe/Untitled?node-id=1-32&t=E11NlCiFb5enyqGi-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'
+presentationPDF: 'https://github.com/Kipp-ie/jamassets/blob/main/part-4.pdf'
 ---
 
 # Welcome! (for the last time :()
