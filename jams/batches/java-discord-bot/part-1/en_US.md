@@ -46,7 +46,7 @@ You need to enable all these Privileged Gateway Intents, otherwise your bot won'
 
 You have now changed all the settings needed, let's invite this bot to our server!
 
-![OAuth](https://cloud-j9k09iazm-hack-club-bot.vercel.app/0image.png)
+![OAuth](https://cloud-4upqdgtaj-hack-club-bot.vercel.app/0image.png)
 
 Click on the tab **OAuth2**
 
