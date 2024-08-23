@@ -6,13 +6,13 @@ title: 'Fancy Messages (Embeds)'
 description: 'Making ✨*fancy*✨ messages (Embeds)'
 contributor: 'Kipp-ie'
 contributorSlackID: 'Kipp-ie'
-thumbnail: 'https://cloud-9wqwm2von-hack-club-bot.vercel.app/0image.png'
-timeEstimate: '30 Minutes'
+thumbnail: 'https://github.com/user-attachments/assets/23ed59d0-4399-4058-a38d-c6d1da922c0b'
+timeEstimate: '1 Hour'
 difficulty: 'Beginner'
 keywords: 'java, discord-bot'
-presentation: 'link to figma slides'
-presentationPlay: 'link to figma slides in presentation mode'
-presentationPDF: 'link to pdf of slides'
+presentation: 'https://www.figma.com/slides/NEKjZ1qZwYBTTCSc5DUVdC/Untitled?node-id=1-32&t=E11NlCiFb5enyqGi-1'
+presentationPlay: 'https://www.figma.com/deck/NEKjZ1qZwYBTTCSc5DUVdC/Untitled?node-id=1-32&t=E11NlCiFb5enyqGi-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'
+presentationPDF: 'https://github.com/Kipp-ie/jamassets/blob/main/part-3.pdf'
 ---
 
 # Welcome back! 👋
