@@ -134,10 +134,15 @@ public class Main {
     }
 }
 ```
+Click on the things that are red, then Alt + Enter and Import Class.
+
+Also make sure that the bot token is between "" example: "dwah8esfsehfhsnvcb"
 
 Now you can try running the main.java file and seeing if the bot boots.
 
 If it boots, then the hardest part is behind you! If it doesn't try to retrace the steps to see if you maybe went somewhere wrong.
+
+Ready for the next step? If so you can follow part 2!
 
 
 
