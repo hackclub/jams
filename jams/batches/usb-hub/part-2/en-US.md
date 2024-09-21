@@ -142,7 +142,8 @@ _You might already have a pink rectangle lying around from when you first import
 
 If your male USB port has a pink line in the footprint, make sure it's **outside** of the board outline. Some USB ports are "sink components," which means that they go below the board. This makes sure to give them ample room.
 
-<img src="https://github.com/user-attachments/assets/ab60dfac-8d52-4314-9388-d7945c2770b0" width=50% height=50%><img src="https://github.com/user-attachments/assets/d746092d-cd29-41b9-9dc7-de4a335959eb" width=50% height=50%>
+![](https://github.com/user-attachments/assets/ab60dfac-8d52-4314-9388-d7945c2770b0)
+![](https://github.com/user-attachments/assets/d746092d-cd29-41b9-9dc7-de4a335959eb)
 
 
 
