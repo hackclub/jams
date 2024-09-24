@@ -9,6 +9,7 @@ import Image from './Image'
 import { CodeBlock, InlineCode } from './Code'
 import StepHeader from './StepHeader'
 import Announcement from './Announcement'
+import Link from './Link'
 
 const mdxComponents = {
   Announcement,
@@ -16,6 +17,7 @@ const mdxComponents = {
   Grid,
   GridItem,
   Comment,
+  a: Link,
   img: Image,
   pre: CodeBlock,
   inlineCode: InlineCode,
