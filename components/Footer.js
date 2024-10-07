@@ -83,7 +83,7 @@ const Footer = ({ dark = true, children, ...props }) => (
           </Heading>
           <Link href="https://hackclub.com/philosophy">Philosophy</Link>
           <Link href="https://hackclub.com/team">Our Team & Board</Link>
-          <Link href="https://hackclub.com/job">Jobs</Link>
+          <Link href="https://hackclub.com/jobs">Jobs</Link>
           <Link href="https://hackclub.com/branding">Branding</Link>
           <Link href="https://hackclub.com/press">Press Inquiries</Link>
           <Link href="https://hackclub.com/donate">Donate</Link>
