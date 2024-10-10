@@ -12,6 +12,7 @@ difficulty: 'Beginner'
 keywords: 'linux, mint, github, wakatime'
 notes: "" 
 video: ""
+presentation: "https://docs.google.com/presentation/d/1Ylu0s3rYZtJDM3jLzw-lcCXl166I5ArJ/edit?usp=drive_link&ouid=118013894948049836904&rtpof=true&sd=true"
 totalParts: 4
 ---
 

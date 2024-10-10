@@ -10,7 +10,7 @@ thumbnail: 'https://static-00.iconduck.com/assets.00/linux-mint-icon-512x459-nza
 timeEstimate: '15-30 Min'
 difficulty: 'Beginner'
 keywords: 'linux, mint, setup, wakatime'
-# presentation: "https://www.figma.com/file/mYayY1K4DjZxj8cGsWLdAC/Sprig-%231?type=design&node-id=236%3A2&mode=design&t=tBVyzkkMF86LCUGx-1" 
+presentation: "https://docs.google.com/presentation/d/1wL0310I3xCqIHYiEAi8PYISchrtT8pSw/edit?usp=drive_link&ouid=118013894948049836904&rtpof=true&sd=true"
 # presentationPlay: "https://www.figma.com/proto/mYayY1K4DjZxj8cGsWLdAC/Sprig-%231?page-id=236%3A2&type=design&node-id=236-1250&viewport=346%2C360%2C0.06&t=5XhFfrVWyRo8L9CB-1&scaling=contain&starting-point-node-id=236%3A1250&mode=design" 
 # presentationPDF: "https://cloud-pxftj80n6-hack-club-bot.vercel.app/0sprig__1.pdf" 
 notes: "" 

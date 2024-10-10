@@ -12,6 +12,7 @@ difficulty: 'Beginner'
 keywords: 'linux, mint, setup'
 notes: "" 
 video: ""
+presentation: "https://docs.google.com/presentation/d/10Yj_BIW-6VobCFlLzKskmXRBgTJgqXfJ/edit?usp=sharing&ouid=118013894948049836904&rtpof=true&sd=true" 
 totalParts: 4
 ---
 
