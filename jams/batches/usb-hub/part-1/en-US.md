@@ -117,7 +117,7 @@ Connect the GND net to the GND pins on the USB-A and the CoreChips SL2.1A. See h
 
 ![](https://cloud-7pzslk6qe-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_13.04.24.png)
 
-Nets are kinda like portals– you can connect them from a distance as a way to keep from crossing your wires on your schematic. They're also good or connecting lots of things together– we're going to need to wire a lot of things to `GND` in a sec, and nets are a great way to do that.
+Nets are kinda like portals– you can connect them from a distance as a way to keep from crossing your wires on your schematic. They're also good for connecting lots of things together– we're going to need to wire a lot of things to `GND` in a sec, and nets are a great way to do that.
 
 Keep in mind though with nets, there are a lot of ways to write things. All the following are a way to say PIN 4 and PIN 5 are connected to `GND`:
 
@@ -157,7 +157,7 @@ Knowing where these protective components go can be an art and hotly debated on 
 
 _This is a little hard to see, so we'll go through it step by step. For now, just know we're getting the following instructions from reading this image & adapting it a little for our own design._
 
-First up we'll add a diode to protect from a surge coming _from the laptop_. That's a case where the laptop sends too much power and goes beyond the 5V we want. The Schottky (pronounced "shot-key") diode with part number [`C48192`](https://www.lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_onsemi-NSR0320MW2T1G_C48192.html) is perfect or this. Let's drop it in right after we take on the 5V power from the USB-A male.
+First up we'll add a diode to protect from a surge coming _from the laptop_. That's a case where the laptop sends too much power and goes beyond the 5V we want. The Schottky (pronounced "shot-key") diode with part number [`C48192`](https://www.lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_onsemi-NSR0320MW2T1G_C48192.html) is perfect for this. Let's drop it in right after we take on the 5V power from the USB-A male.
 
 _Diodes ensure power flows in 1 direction. We don't want an accidental spike to flow back into our laptop! This Schottky diode will also slightly resist the flow of electricity, which is good for protecting against power surges._
 
