@@ -4,7 +4,7 @@ description: 'This jam will show you how to make simple animations using just pl
 contributor: 'AlanikREDAWN'
 contributorSlackID: 'U07AZFQLPQ8'
 thumbnail: 'https://cloud-et8riq7k3-hack-club-bot.vercel.app/0thumbnail.gif'
-timeEstimate: ''
+timeEstimate: '30-45 Min'
 difficulty: 'Beginner'
 keywords: 'CSS, HTML, animation, art, create, web, design'
 presentation: 'https://www.figma.com/design/a3b7gsLw3sh6T6LLeM7d0M/Untitled?node-id=0-1&t=xldTu2D7BVmYo7bw-1'
@@ -13,7 +13,7 @@ presentationPDF: 'https://cloud-9xyvziq2w-hack-club-bot.vercel.app/0exported-fra
 notes: 'link to notes (optional)'
 poster: 'link to poster (optional)'
 video: 'link to video (optional)'
-slug: 'Make an animation using just CSS and a bit of HTML'
+slug: 'css-art-animation
 ---
 
 This jam will take you through creating a simple animation using just plain HTML and CSS, no JavaScript at all! It will also provide the foundational knowledge that you need to continue to expirement and create your own animations.
@@ -65,14 +65,6 @@ CSS stands for Cascading Style Sheets
 
 </Dropdown>
 
-<!-- <details markdown="1"> -->
-<!-- <summary>
-Okay, I'm done, what does it really mean?
-</summary>
-
-CSS stands for Cascading Style Sheets
-</details> -->
-
 Now, before we start customizing our divs, we need to get some basic setup out of the way by assigning a class to our div. By assigning a class, we allow the CSS file to communicate with our divs in our HTML file.
 
 To assign a class to a div, simply put `class="classNameHere"` inside the div tag, like this:
@@ -113,24 +105,6 @@ Tada! You now have a background image!
 
 </Dropdown>
 
-<!-- <details><summary>Add an image</summary>
-So, you want to add an image to your div! First, find an image that you want to use. I'm going to use this one:
-
-![Carly kitty](https://cloud-l5rmdnp6x-hack-club-bot.vercel.app/0img_7625.jpg)
-
-Once you have your image, upload it to your project. Then, in your .CSS file, add the `background-image` property to your class, like this:
-
-```css
-.className {
-    background-image: url("./fileName");
-}
-```
-
-Tada! You now have a background image!
-
-[background-image docs](https://www.w3schools.com/cssref/pr_background-image.php)
-</details> -->
-
 <Dropdown title="Add a background color">
 
 So, you want to add a background color to your div! In your class, add the `background-color` property. It should look something like this:
@@ -145,19 +119,6 @@ So, you want to add a background color to your div! In your class, add the `back
 
 </Dropdown>
 
-<!-- <details><summary>Add a background color</summary>
-
-So, you want to add a background color to your div! In your class, add the `background-color` property. It should look something like this:
-
-```css
-.className {
-    background-color: hex code or color name here;
-}
-```
-
-[background-color docs](https://www.w3schools.com/cssref/pr_background-color.php)
-</details> -->
-
 <Dropdown title="Add curvy corners">
 
 So, you want to add curvy corners to your div! In your class, add the `border-radius` property. It should look something like this:
@@ -171,20 +132,6 @@ So, you want to add curvy corners to your div! In your class, add the `border-ra
 [border-radius docs](https://www.w3schools.com/cssref/css3_pr_border-radius.php)
 
 </Dropdown>
-
-
-<!-- <details><summary>Add curvy corners</summary>
-
-So, you want to add curvy corners to your div! In your class, add the `border-radius` property. It should look something like this:
-
-```css
-.className {
-    border-radius: number value here;
-}
-```
-
-[border-radius docs](https://www.w3schools.com/cssref/css3_pr_border-radius.php)
-</details> -->
 
 <Dropdown title="Add an outline">
 
@@ -206,19 +153,6 @@ So, you want to add an outline to your div! In your class, add the `border-width
 
 </Dropdown>
 
-
-<!-- <details><summary>Add an outline</summary>
-
-So, you want to add an outline to your div! In your class, add the `border-width`, `border-style`, and `border-color`properties. It should look something like this:
-
-```css
-.className {
-    border-width: #px;
-    border-style: style name here;
-    border-color: color name here;
-}
-```
-
 [border-width docs](https://www.w3schools.com/cssref/pr_border-width.php)
 
 [border-style docs](https://www.w3schools.com/cssref/pr_border-style.php)
@@ -237,18 +171,6 @@ So, you want to add some text to your div! To do this, open up your .html file. 
 ```
 
 </Dropdown>
-
-<!-- 
-<details><summary>Add some text</summary>
-So, you want to add some text to your div! To do this, open up your .html file. Then, inside of the div, add a p tag with your text in it. It should look something like this:
-
-```html
-<div>
-    <p>Your text here</p>
-</div>
-```
-
-</details> -->
 
 ## Step 4: Animate it
 
