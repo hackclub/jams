@@ -10,10 +10,10 @@ keywords: 'CSS, HTML, animation, art, create, web, design'
 presentation: 'https://www.figma.com/design/a3b7gsLw3sh6T6LLeM7d0M/Untitled?node-id=0-1&t=xldTu2D7BVmYo7bw-1'
 presentationPlay: 'https://www.figma.com/proto/a3b7gsLw3sh6T6LLeM7d0M/Untitled?node-id=0-1&t=xldTu2D7BVmYo7bw-1'
 presentationPDF: 'https://cloud-9xyvziq2w-hack-club-bot.vercel.app/0exported-frames.pdf.zip'
-notes: 'link to notes (optional)'
-poster: 'link to poster (optional)'
-video: 'link to video (optional)'
-slug: 'css-art-animation
+# notes: 'link to notes (optional)'
+# poster: 'link to poster (optional)'
+# video: 'link to video (optional)'
+slug: 'css-art-animation'
 ---
 
 This jam will take you through creating a simple animation using just plain HTML and CSS, no JavaScript at all! It will also provide the foundational knowledge that you need to continue to expirement and create your own animations.
