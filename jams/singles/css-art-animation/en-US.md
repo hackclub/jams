@@ -158,7 +158,6 @@ So, you want to add an outline to your div! In your class, add the `border-width
 [border-style docs](https://www.w3schools.com/cssref/pr_border-style.php)
 
 [border-color docs](https://www.w3schools.com/cssref/pr_border-color.php)
-</details> -->
 
 <Dropdown title="Add some text">
 
