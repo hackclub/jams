@@ -20,7 +20,9 @@ This jam will take you through creating a simple animation using just plain HTML
 
 ## Step 1: Create the framework
 
-The first thing you need to do is to create the bare bones of your project. Start by putting this code into your .html file (this code is the starting point for every html file)
+First, create two files, one called `index.html`, and another called `styles.css`
+
+The next thing you need to do is to create the bare bones of your project. Start by putting this code into your .html file (this code is the starting point for every html file)
 
 ```html
 <!DOCTYPE html>
@@ -28,6 +30,7 @@ The first thing you need to do is to create the bare bones of your project. Star
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         
@@ -67,7 +70,7 @@ CSS stands for Cascading Style Sheets
 
 Now, before we start customizing our divs, we need to get some basic setup out of the way by assigning a class to our div. By assigning a class, we allow the CSS file to communicate with our divs in our HTML file.
 
-To assign a class to a div, simply put `class="classNameHere"` inside the div tag, like this:
+To assign a class to a div, simply put `class="classNameHere"` (of course, you should replace `"classNameHere"` with whatever you want to call your class) inside the div tag, like this:
 
 ```html
 <div class="className"></div>
@@ -85,17 +88,37 @@ Now that you've added a class name to your div, you need to apply some styles to
 
 We're now going to put our styles within those brackets. What you put depends on what you want your final div to look like
 
+First, we need to specify a width and height for our div using css. We do this using the `width` and `height` properties, like this:
+
+```css
+.className {
+    width: #px;
+    height: #px;
+}
+```
+
+Be sure to replace the `#` symbol with the number value you want to set the width and height to
+
 <Dropdown title="Add an image">
 
 So, you want to add an image to your div! First, find an image that you want to use. I'm going to use this one:
 
 ![Carly kitty](https://cloud-l5rmdnp6x-hack-club-bot.vercel.app/0img_7625.jpg)
 
-Once you have your image, upload it to your project. Then, in your .CSS file, add the `background-image` property to your class, like this:
+Once you have your image, upload it to your project. Then, in your .CSS file, add the `background-image` property to your class, like this (make sure to replace `fileName` with the name of your image file):
 
 ```css
 .className {
     background-image: url("./fileName");
+}
+```
+
+You'll also want to add the `background-size` property and set it to `cover`, so your final code should look something like this (again, making sure to replace `fileName` with the name of your image file):
+
+```css
+.className {
+    background-image: url("./fileName");
+    background-size: cover;
 }
 ```
 
@@ -117,6 +140,10 @@ So, you want to add a background color to your div! In your class, add the `back
 
 [background-color docs](https://www.w3schools.com/cssref/pr_background-color.php)
 
+Here's an example of what it could look like:
+
+![Pink square](https://cloud-68deru8q4-hack-club-bot.vercel.app/0screenshot_2024-10-24_at_12.54.15___pm.png)
+
 </Dropdown>
 
 <Dropdown title="Add curvy corners">
@@ -125,9 +152,15 @@ So, you want to add curvy corners to your div! In your class, add the `border-ra
 
 ```css
 .className {
-    border-radius: number value here;
+    border-radius: #px;
 }
 ```
+
+Make sure that you replace `#` with the number value of the border radius that you want
+
+Here's an example of what it could look like:
+
+![Border radius example](https://cloud-peno8zstf-hack-club-bot.vercel.app/0screenshot_2024-10-24_at_12.57.28___pm.png)
 
 [border-radius docs](https://www.w3schools.com/cssref/css3_pr_border-radius.php)
 
@@ -144,6 +177,12 @@ So, you want to add an outline to your div! In your class, add the `border-width
     border-color: color name here;
 }
 ```
+
+Don't forget to replace `#` with the number value of the border radius that you want
+
+Here's an example of what it could look like:
+
+![border example](https://cloud-ofo6aspw7-hack-club-bot.vercel.app/0screenshot_2024-10-24_at_1.00.17___pm.png)
 
 [border-width docs](https://www.w3schools.com/cssref/pr_border-width.php)
 
@@ -168,6 +207,10 @@ So, you want to add some text to your div! To do this, open up your .html file. 
     <p>Your text here</p>
 </div>
 ```
+
+Here's an example of what it could look like:
+
+![text example](https://cloud-iq5sh5hpp-hack-club-bot.vercel.app/0screenshot_2024-10-24_at_1.02.19___pm.png)
 
 </Dropdown>
 
@@ -232,6 +275,21 @@ Now that you've created an animation, you still need to tell your div to run it.
 }
 ```
 
+To make your animation run infinitely, add this line of code:
+
+```css
+    animation-iteration-count: infinite;
+```
+
 There are also other properties you can use to customize your animation futher. You can find them in [this documentation](https://www.w3schools.com/css/css3_animations.asp).
 
 Tada!! You just made your very own animation with just CSS and only a little bit of HTML!!
+
+
+<Dropdown title="What should my animation look like?">
+
+Your animaton should be unique to you! You can pick whatever features you want to add to your animation! Here's an example of one I made:
+
+[Click here to see](https://cloud-1xxfod1t0-hack-club-bot.vercel.app/0screen_recording_2024-10-24_at_12.46.43___pm.mp4 'Demo animation')
+
+</Dropdown>
