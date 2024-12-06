@@ -135,7 +135,9 @@ After it uploads, click "Open production deploy" to see your live site!
 
 ## Getting a free frappuccino
 
-You've put in all this effort into getting your site up and running—we think you should get a little treat after all that. Head over to https://fraps.hackclub.com and submit your Replit link and your live site's link to get a free frappuccino! 
+You've put so much effort into getting your site up and running—we think you deserve a little treat after all that. Head over to https://github.com/hackclub/hackaccino, submit your pull request for review, and get a free Frappuccino!
+
+<!-- If you don't know how to make a pull request, don't worry! Here's a video on how you can create your pull request and submit it. -->
 
 ![frap spinning gif](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3B3M2xkM3FyczZhY2lrdzkxd3dycHA5Mzc0MW1laHF6Nzh1MGNhZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2FazplK2PyGh3Rjby/giphy.webp)
 
