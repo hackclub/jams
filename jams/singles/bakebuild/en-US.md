@@ -18,7 +18,7 @@ slug: 'bakebuild'
 
 # 🎉 BakeBuild: Shape Your Sweet Wonder! 🍪
 
-**BakeBuild** is your chance to turn imagination into a snackable reality! In this Hack Club YSWS (*Yes, Start With Something*) event, you’ll design a custom cookie cutter, see it come to life through 3D printing, and have it shipped to your doorstep—complete with a cookie made using your unique design.
+**BakeBuild** is your chance to turn imagination into a snackable reality! In this Hack Club YSWS (*You Ship We Ship*) event, you’ll design a custom cookie cutter, see it come to life through 3D printing, and have it shipped to your doorstep—complete with a cookie made using your unique design.
 
 ## What you will be doing here
 * You will
