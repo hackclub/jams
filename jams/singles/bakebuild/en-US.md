@@ -112,10 +112,8 @@ slug: 'bakebuild'
 * You should now have a STEP file of your cookie cutter saved to your computer
 
 ## Submitting
-* Go to the [BakeBuild website](https://bakebuild.hackclub.com )​
-* Click on “Submit Your File”​
-* Fill out the form
+* Fill out the [form](https://airtable.com/apphIjW8QTCISm6tv/pagbs9wcZpDTyQ8cZ/form).
 <br></br>
 <br></br>
 <br></br>
-# Bye
+# Your're Done
