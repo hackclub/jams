@@ -1,7 +1,7 @@
 ---
 title: 'Make Your First 2D Game with Sprig'
-contributor: 'recursiveforte'
-contributorSlackId: 'U02UYFZQ0G0'
+contributor: 'Kaympe20'
+contributorSlackId: 'U07HY92M9GA'
 description: 'You ship a linux distro, we ship a HC skirt (or pants) and a DVD with your ISO'
 video: ''
 thumbnail: 'https://wallpapers.com/images/featured-full/linux-desktop-nf65sk0rdgsvfl3u.jpg'
