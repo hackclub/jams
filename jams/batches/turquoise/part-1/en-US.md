@@ -1,15 +1,13 @@
 ---
 part: "part-1"
 batch: 'turquoise'
-totalParts: 4
 title: 'Turquoise'
-description: 'You ship a linux distro, we ship a HC skirt (or pants) and a DVD with your ISO'
 timeEstimate: '60 Min'
 contributor: 'Kaympe20'
 contributorSlackId: 'U07HY92M9GA'
 thumbnail: 'https://wallpapers.com/images/featured-full/linux-desktop-nf65sk0rdgsvfl3u.jpg'
 difficulty: 'Intermediate'
-keywords: 'riceathon, help me, oh dear god, help me please, linux, distro, ysws, you ship we ship, turquoise'
+keywords: 'turquoise, help me, oh dear god, help me please, linux, distro, ysws, you ship we ship'
 presentation: ''
 presentationPlay: ''
 presentationPDF: ''
@@ -17,8 +15,11 @@ notes: ''
 poster: ''
 video: ''
 ---
-# Setup
+## Preface
+There are many ways to create a Linux distro. Many people will end up deciding to use [LinuxFromScratch](https://www.linuxfromscratch.org/), [NixOS](https://nixos.org/), or [Cubic](https://github.com/PJ-Singh-001/Cubic). This guide will go over creating a Fedora Silverblue derivative using [blue-build](https://blue-build.org/).
 (If at any point you get stuck, please use the [blue-build docs](https://blue-build.org/learn/getting-started/))
+
+# Setup
 
 ## Development Environment
 
@@ -36,3 +37,4 @@ The Workshop is a currently work-in-progress part of BlueBuild that allows manag
 5. When prompted with setting up container signing, it is recommended to do it **automatically**.
     - If you have security concerns, skipping is an option too. Read more about this in the wizard.
 6. After that step is completed, you're done! You can now clone your repository, open `recipes/recipe.yml` and start customizing! The [reference section](/reference/recipe/) of the documentation is your friend here.
+
