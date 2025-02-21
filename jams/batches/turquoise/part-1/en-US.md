@@ -7,7 +7,6 @@ description: 'You ship a linux distro, we ship a HC skirt (or pants) and a DVD w
 timeEstimate: '60 Min'
 contributor: 'Kaympe20'
 contributorSlackId: 'U07HY92M9GA'
-thumbnail: 'thumbnail image link'
 thumbnail: 'https://wallpapers.com/images/featured-full/linux-desktop-nf65sk0rdgsvfl3u.jpg'
 difficulty: 'Intermediate'
 keywords: 'riceathon, help me, oh dear god, help me please, linux, distro, ysws, you ship we ship, turquoise'
