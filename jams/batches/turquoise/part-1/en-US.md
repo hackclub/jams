@@ -17,7 +17,7 @@ video: ''
 ---
 ## Preface
 There are many ways to create a Linux distro. Many people will end up deciding to use [LinuxFromScratch](https://www.linuxfromscratch.org/), [NixOS](https://nixos.org/), or [Cubic](https://github.com/PJ-Singh-001/Cubic). This guide will go over creating a Fedora Silverblue derivative using [blue-build](https://blue-build.org/).
-(If at any point you get stuck, please use the [blue-build docs](https://blue-build.org/learn/getting-started/))
+If at any point you get stuck, please use the [blue-build docs](https://blue-build.org/learn/getting-started/). If you are still stuck, feel free to ask in [#turquoise](https://hackclub.slack.com/archives/C08BAEP4SCX) on the [Hack Club Slack](https://hackclub.com/slack)
 
 # Setup
 

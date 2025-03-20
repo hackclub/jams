@@ -1,5 +1,5 @@
 ---
-title: 'Make Your First 2D Game with Sprig'
+title: 'Turquoise - Make a linux distro for a free skirt'
 contributor: 'Kaympe20'
 contributorSlackId: 'U07HY92M9GA'
 description: 'You ship a linux distro, we ship a HC skirt (or pants) and a DVD with your ISO'
