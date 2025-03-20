@@ -54,3 +54,4 @@ The Workshop is a currently work-in-progress part of BlueBuild that allows manag
 
 7. After that step is completed, you're done! You can now clone your repository, open `recipes/recipe.yml` and start customizing! The [reference section](https://blue-build.org/reference/recipe/) of the documentation is your friend here.
 
+![](https://hc-cdn.hel1.your-objectstorage.com/s/v3/03ab6db02580fe19c60d1bf05884bd19a9af8d87_image.png)
