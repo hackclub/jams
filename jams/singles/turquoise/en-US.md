@@ -3,7 +3,7 @@ title: 'Turquoise'
 description: 'You ship a linux distro, we ship a HC skirt (or pants) and a DVD with your ISO'
 contributor: 'Kaympe20'
 contributorSlackId: 'U07HY92M9GA'
-thumbnail: 'https://i.ibb.co/p0LHv5g/Slide-16-9-1.png'
+thumbnail: 'https://wallpapers.com/images/featured-full/linux-desktop-nf65sk0rdgsvfl3u.jpg'
 timeEstimate: '60 Min'
 difficulty: 'Intermediate'
 keywords: 'turquoise, help me, oh dear god, help me please, linux, distro, ysws, you ship we ship'
@@ -15,12 +15,14 @@ poster: ''
 video: ''
 slug: 'turquoise'
 ---
+# Turquoise
+
 
 ## Preface
 There are many ways to create a Linux distro. Many people will end up deciding to use [LinuxFromScratch](https://www.linuxfromscratch.org/), [NixOS](https://nixos.org/), or [Cubic](https://github.com/PJ-Singh-001/Cubic). This guide will go over creating a Fedora Silverblue derivative using [blue-build](https://blue-build.org/).
 If at any point you get stuck, please use the [blue-build docs](https://blue-build.org/learn/getting-started/). If you are still stuck, feel free to ask in [#turquoise](https://hackclub.slack.com/archives/C08BAEP4SCX) on the [Hack Club Slack](https://hackclub.com/slack)
 
-# Development Environment Setup
+## Development Environment Setup
 
 ### Automatic setup using the BlueBuild Workshop
 
