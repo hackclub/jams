@@ -1,3 +1,23 @@
+---
+part: "part-7"
+batch: 'oscillart'
+totalParts: '7'
+title: 'Styling and Shipping'
+description: 'In this part of the Jam, you'll finalize your app design with CSS and ship it using GitHub pages.'
+contributor: 'celesteroselli'
+contributorSlackID: 'U06TV3F4HEU'
+thumbnail: 'thumbnail image link'
+timeEstimate: '30-45 min'
+difficulty: '(Beginner, Intermediate)'
+keywords: 'shipping, deploying, github pages, CSS, style'
+presentation: 'https://docs.google.com/presentation/d/1RaRz1FgwdmI8gWgqsin43zvOVKRINS00O1hmpGoY6EA/edit?usp=sharing'
+presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQEpKgVJrdNELwuw0aKsybsVr3wqiwLfYXtCyF4UG6DgZNNvDQRQx21ArDxOezNMvz70wOvyul5jQkc/pub?start=true&loop=false&delayms=30000'
+presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/7d752bbaa132749c540ec1a33ec765eb37beacbb_oscillart_7__1_.pdf'
+notes: 'link to notes (optional)'
+poster: 'link to poster (optional)'
+video: 'link to video (optional)'
+---
+
 # Part 6: 30 min
 
 ## Table of Contents:
@@ -75,9 +95,10 @@ Now that I’ve gone through my suggestions, here are some ideas on what you cou
 
 ## Section 2: time to ship!
 
-[dancing orpheus gif]
+![dancing-orpheus-gif](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f606f18cca43d719f3e9aecaa9a6c23fd37baade_orpheus.gif)
 
-WHOOP WHOOP PARTY TIME PARTY PARTY TIME
+WHOOP WHOOP PARTY TIME PARTY PARTY TIME 
+(full credit to @msw for the gif)
 
 You’ve done it! You’ve made an amazing web app, customized it, and now you’re about to ship it! If you’re new to Hack Club, shipping is a term for when you don’t just code a project, but you publish it on the internet for all the world to see!
 

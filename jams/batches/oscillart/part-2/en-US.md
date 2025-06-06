@@ -1,18 +1,18 @@
 ---
 part: "part-2"
 batch: 'oscillart'
-totalParts: '6'
-title: 'Playing Sounds with Sine-Waves'
+totalParts: '7'
+title: 'Playing Sounds with Sine Waves'
 description: 'In this part of the Jam, you'll use Javascript's Web Audio API to play sounds from your browser given by user-input. Let's get this dance party started!'
 contributor: 'celesteroselli'
 contributorSlackID: 'U06TV3F4HEU'
 thumbnail: 'thumbnail image link'
 timeEstimate: '30-45 min'
-difficulty: '(Beginner, Intermediate, Difficult)'
-keywords: 'a, list, of, keywords separated by comma space'
-presentation: 'link to figma slides'
-presentationPlay: 'link to figma slides in presentation mode'
-presentationPDF: 'link to pdf of slides'
+difficulty: '(Beginner, Intermediate)'
+keywords: 'music, wave, frequency, javascript, art'
+presentation: 'https://docs.google.com/presentation/d/1lsLhOlWDG8-TqOrePhdvSv6wSeo_Yy8gXMchTDO8NFc/edit?usp=sharing'
+presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vRW3b88SHrTuJbhvA4mc6eLQwTFVRUvQ5TihV-RMyS2CmJ65OOOe04AbEvDz6-SAZuDivct97Shcut_/pub?start=true&loop=false&delayms=30000'
+presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/a151d631cff6f899994414bba065131e5405a202_oscillart_2.pdf'
 notes: 'link to notes (optional)'
 poster: 'link to poster (optional)'
 video: 'link to video (optional)'
@@ -39,7 +39,7 @@ First, go to the left side of the codespaces environment, where all your project
 
 Pssst, here’s a quick screenshare if you missed any of that:
 
-[screenshare of creating a file]
+<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/a79a5c581fa7530cdf1688c0a9a519238c63de71_indexscreenshare.mp4" width="80%" controls></video>
 
 Yay!! You have an HTML file! Let’s start adding some elements to it. First, add the following code inside of the `<body>...</body>` tags:
 

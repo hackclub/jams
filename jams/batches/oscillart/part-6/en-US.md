@@ -1,3 +1,23 @@
+---
+part: "part-6"
+batch: 'oscillart'
+totalParts: '7'
+title: 'Recording your Art'
+description: 'In this part of the Jam, you'll create a button to record your art and download it, so you can share it online.'
+contributor: 'celesteroselli'
+contributorSlackID: 'U06TV3F4HEU'
+thumbnail: 'thumbnail image link'
+timeEstimate: '30-45 min'
+difficulty: '(Beginner, Intermediate)'
+keywords: 'art, media, recording, javascript, share'
+presentation: 'https://docs.google.com/presentation/d/1zMGHjS1sUSZEhI7SAlY4shvY8p1a34Q124KN_rJQ2lM/edit?usp=sharing'
+presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQ-LWou5utq3u1FvZzBGJjP5fDLWCXAn8Oec_uJWN-FLuItkunRTNN-RLrgo1PMcw74ciulutWJn2RN/pub?start=true&loop=false&delayms=30000'
+presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/9c215e64b498d8998a335d890d58578ffc0b8919_oscillart_6.pdf'
+notes: 'link to notes (optional)'
+poster: 'link to poster (optional)'
+video: 'link to video (optional)'
+---
+
 # Part 5: 30-45 min
 
 ## Table of Contents:

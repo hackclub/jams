@@ -1,3 +1,23 @@
+---
+part: "part-4"
+batch: 'oscillart'
+totalParts: '7'
+title: 'Write Full Songs and Melodies'
+description: 'In this part of the Jam, you'll use loops to use your app to create full songs and complex melodies.'
+contributor: 'celesteroselli'
+contributorSlackID: 'U06TV3F4HEU'
+thumbnail: 'thumbnail image link'
+timeEstimate: '1 hr'
+difficulty: '(Beginner, Intermediate)'
+keywords: 'music, songs, melodies, javascript'
+presentation: 'https://docs.google.com/presentation/d/1Sk-eSM5_Zws0qJZhbt3SCYFH5sa1oJqrVOW7JmYgkm4/edit?usp=sharing'
+presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQaN2SI3I-VU8xkmmHZW-GFCfbKcBb41hES5A1X8GHNVzX8FuFgqmHGg8qByI9aHbXSI-zo9w7pN0mM/pub?start=true&loop=false&delayms=30000'
+presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/2909e090af86673a48c75989bb1dcb5178594f3e_oscillart_4.pdf'
+notes: 'link to notes (optional)'
+poster: 'link to poster (optional)'
+video: 'link to video (optional)'
+---
+
 # Part 3: 1 hr - 90 min
 
 ## Table of Contents:

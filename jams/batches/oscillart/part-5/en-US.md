@@ -1,3 +1,23 @@
+---
+part: "part-5"
+batch: 'oscillart'
+totalParts: '7'
+title: 'Add in User Input and Customization'
+description: 'In this part of the Jam, you'll add sliders and inputs so your user can customize your art and music.'
+contributor: 'celesteroselli'
+contributorSlackID: 'U06TV3F4HEU'
+thumbnail: 'thumbnail image link'
+timeEstimate: '30-45 min'
+difficulty: '(Beginner, Intermediate)'
+keywords: 'art, color, input, button, javascript'
+presentation: 'https://docs.google.com/presentation/d/1WRlCvMdoDzEGJVhwT4rmlttOnyMA7LoUupTkIt_aJk8/edit?usp=sharing'
+presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQpdcyvms7hpq8kA6UP_7bqGD0eN5IlTr_jZwuOufzI14TBCN-Xk-rQ3VvESoTlA0GEiZS4DPb6CZ8-/pub?start=true&loop=false&delayms=30000'
+presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/dffc136f4ebd25d14b14b3a76b94b0ae7602c00f_oscillart_5.pdf'
+notes: 'link to notes (optional)'
+poster: 'link to poster (optional)'
+video: 'link to video (optional)'
+---
+
 # Part 4: 30-45 min
 
 ## Table of Contents:
@@ -61,7 +81,7 @@ That’s right! Your line is changing color! You’re one step closer to an awes
 
 Ok, we’ve gotten it all artsy up in here with our majestic palettes of customizable colors.
 
-[art orpheus gif]
+![art-orpheus](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2d121580ca3c44438bfd1068158f93f1cab58bed_artorpheus.jpeg)
 
 But let’s get it funky up in here.
 
