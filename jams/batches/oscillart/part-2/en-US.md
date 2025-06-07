@@ -3,8 +3,8 @@ part: "part-2"
 batch: 'oscillart'
 totalParts: '7'
 title: 'Playing Sounds with Sine Waves'
-description: 'In this part of the Jam, you'll use Javascript's Web Audio API to play sounds from your browser given by user-input. Let's get this dance party started!'
-contributor: 'celesteroselli'
+description: "In this part of the Jam, you'll use Javascript's Web Audio API to play sounds from your browser given by user-input."
+contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
 thumbnail: 'thumbnail image link'
 timeEstimate: '30-45 min'

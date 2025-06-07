@@ -3,8 +3,8 @@ part: "part-4"
 batch: 'oscillart'
 totalParts: '7'
 title: 'Write Full Songs and Melodies'
-description: 'In this part of the Jam, you'll use loops to use your app to create full songs and complex melodies.'
-contributor: 'celesteroselli'
+description: "In this part of the Jam, you'll use loops to use your app to create full songs and complex melodies."
+contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
 thumbnail: 'thumbnail image link'
 timeEstimate: '1 hr'

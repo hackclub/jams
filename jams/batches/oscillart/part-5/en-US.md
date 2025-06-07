@@ -3,8 +3,8 @@ part: "part-5"
 batch: 'oscillart'
 totalParts: '7'
 title: 'Add in User Input and Customization'
-description: 'In this part of the Jam, you'll add sliders and inputs so your user can customize your art and music.'
-contributor: 'celesteroselli'
+description: "In this part of the Jam, you'll add sliders and inputs so your user can customize your art and music."
+contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
 thumbnail: 'thumbnail image link'
 timeEstimate: '30-45 min'
@@ -85,7 +85,13 @@ Ok, we’ve gotten it all artsy up in here with our majestic palettes of customi
 
 But let’s get it funky up in here.
 
-[DJ orpheus gif]
+![dj-1](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a0ad58660dc0575aa0043fe166733ce65981a742_dj1.jpg)
+
+Credit to @Space_Duck (Navya M)
+
+![dj-2](https://hc-cdn.hel1.your-objectstorage.com/s/v3/0d62c4789fd87525a4ace7ae7b4e3b0b56d11629_dj2.jpeg)
+
+Credit to @Jordi (Jordan)
 
 In this section, we’re going to be giving users the ability to change the volume of the sound that comes out of their laptop. In addition, this change will also affect the drawn sine waves, because in real-life, waves with higher volumes have higher amplitudes! So, when the user increases volume on a slider, not only will the sound come out louder, but their waves will be taller
 

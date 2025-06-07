@@ -3,8 +3,8 @@ part: "part-6"
 batch: 'oscillart'
 totalParts: '7'
 title: 'Recording your Art'
-description: 'In this part of the Jam, you'll create a button to record your art and download it, so you can share it online.'
-contributor: 'celesteroselli'
+description: "In this part of the Jam, you'll create a button to record your art and download it, so you can share it online."
+contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
 thumbnail: 'thumbnail image link'
 timeEstimate: '30-45 min'

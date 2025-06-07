@@ -2,9 +2,9 @@
 part: "part-1"
 batch: 'oscillart'
 totalParts: '7'
-title: 'Getting Started/Setup'
-description: 'Setup GitHub Codespaces to code your web app, and install Live Server and Hackatime'
-contributor: 'celesteroselli'
+title: 'Setup and Getting Started'
+description: "Setup GitHub Codespaces to code your web app, and install Live Server and Hackatime"
+contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
 thumbnail: 'thumbnail image link'
 timeEstimate: '15 min'

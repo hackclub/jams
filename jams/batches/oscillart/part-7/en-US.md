@@ -3,8 +3,8 @@ part: "part-7"
 batch: 'oscillart'
 totalParts: '7'
 title: 'Styling and Shipping'
-description: 'In this part of the Jam, you'll finalize your app design with CSS and ship it using GitHub pages.'
-contributor: 'celesteroselli'
+description: "In this part of the Jam, you'll finalize your app design with CSS and ship it using GitHub pages."
+contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
 thumbnail: 'thumbnail image link'
 timeEstimate: '30-45 min'

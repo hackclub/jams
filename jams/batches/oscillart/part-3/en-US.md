@@ -2,9 +2,9 @@
 part: "part-3"
 batch: 'oscillart'
 totalParts: '7'
-title: 'Draw Sine Waves on the JS Canvas'
-description: 'In this part of the Jam, you'll draw the sine waves that you're hearing on JS's canvas, creating your first art designs.'
-contributor: 'celesteroselli'
+title: 'Drawing Sine Waves on the JS Canvas'
+description: "In this part of the Jam, you'll draw the sine waves that you're hearing on JS's canvas, creating your first art designs."
+contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
 thumbnail: 'thumbnail image link'
 timeEstimate: '30-45 min'
