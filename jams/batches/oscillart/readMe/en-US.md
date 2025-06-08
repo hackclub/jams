@@ -6,7 +6,7 @@ video: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/51c6f8cd3eff6b9eebe8eb9d
 thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/b92f3ffecfeeb0acde9165070908c1a026265752_untitled_design__23_.png'
 keywords: 'music, art, javascript, audio, web-app, creative'
 timeEstimate: '5 Hours'
-difficulty: '(Beginner, Intermediate)'
+difficulty: 'Beginner, Intermediate'
 slug: 'oscillart'
 isBatch: True
 ---

@@ -6,19 +6,18 @@ title: 'Styling and Shipping'
 description: "In this part of the Jam, you'll finalize your app design with CSS and ship it using GitHub pages."
 contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
-thumbnail: 'thumbnail image link'
+thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/a775a91ea2c5e600296aae5274a84ed1a8e85188_1__3_.png'
 timeEstimate: '30-45 min'
-difficulty: '(Beginner, Intermediate)'
+difficulty: 'Beginner, Intermediate'
 keywords: 'shipping, deploying, github pages, CSS, style'
 presentation: 'https://docs.google.com/presentation/d/1RaRz1FgwdmI8gWgqsin43zvOVKRINS00O1hmpGoY6EA/edit?usp=sharing'
 presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQEpKgVJrdNELwuw0aKsybsVr3wqiwLfYXtCyF4UG6DgZNNvDQRQx21ArDxOezNMvz70wOvyul5jQkc/pub?start=true&loop=false&delayms=30000'
 presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/7d752bbaa132749c540ec1a33ec765eb37beacbb_oscillart_7__1_.pdf'
-notes: 'link to notes (optional)'
-poster: 'link to poster (optional)'
-video: 'link to video (optional)'
 ---
 
 # Part 6: 30 min
+
+<br />
 
 ## Table of Contents:
 Let’s do a quick rundown on what we’re gonna do in this section. We are going to:
@@ -27,13 +26,15 @@ Let’s do a quick rundown on what we’re gonna do in this section. We are goin
 2. Centering your divs, changing fonts, adding a colorful background
 3. Go through how to submit your project on the form to earn artifacts
 
+<br />
+
 ## Section 1: fancy schmancy
 
-I am so proud of you, acolyte. You are AL. MOST. THERE! Now that you have most of the requirements for your app, we’ve approached the super fun part, with very little instruction from me: design.
+I am so proud of you, acolyte. You are AL. MOST. THERE! Now that you have most of the requirements for your app, we’ve approached the super fun part, with **very little instruction from me: design**.
 
-Your app needs to be your own. I’m gonna go through how to:
-Make the content on your app centered
-Add a title and change fonts and colors
+Your app needs to **be your own.** I’m gonna go through how to:
+1. Make the content on your app centered
+2. Add a title and change fonts and colors
 
 First, we’re going to center all of our elements by changing CSS on our container div - remember that from Part 1? All of your elements (canvas, buttons, inputs, etc.) should be inside that div:
 
@@ -55,22 +56,30 @@ Answer:
 ```
 </Dropdown>
 
+<br />
+
 Now, inside of that section, we’re going to use the following methods:
 
 `display: flex;`
-:this sets up the div using CSS’s flex framework. It’s a layout module for arranging things in columns or grids.
+> this sets up the div using CSS’s flex framework. It’s a layout module for arranging things in columns or grids.
+
 `height: 100vh;`
-:sets the height of the div to 100% of the screen height
+> sets the height of the div to 100% of the screen height
+
 `justify-content: center;`
-:centers objects horizontally
+> centers objects horizontally
+
 `align-items: center;`
-:centers objects vertically
+> centers objects vertically
+
 `text-align: center;`
-:makes all of the text inside the div centered
+> makes all of the text inside the div centered
+
 `flex-direction: column;`
-:aligns all the objects in the div in one column, instead of one row
+> aligns all the objects in the div in one column, instead of one row
+
 `gap: 10px;`
-:puts a gap in between all of our elements so they’re not squished together
+>puts a gap in between all of our elements so they’re not squished together
 
 I’m not going to give you the exact CSS code to use here… think of this as a challenge to use the methods I’ve given you and play around. Learn the Hack Club way: by figuring it out.
 
@@ -79,10 +88,12 @@ Next, we’re going to add a title for our app and change its font and color to 
 To refer to an entire type of element in CSS, not just the ID or class, you’ll just add the element's name in styles.css, and then {} with your style code inside.
 
 The styles you might want to use use here: 
+
 `color: blue;`
-:this sets text color to whatever you want it to be. You can use a hex code, rgb(), or a common color string like “red”, “blue”, etc.
+> this sets text color to whatever you want it to be. You can use a hex code, rgb(), or a common color string like “red”, “blue”, etc.
+
 `font-family: Arial, Helvetica, sans-serif;`
-:use this to choose fonts for elements on your site. To figure out what fonts come automatic with your browser, check here. You can also choose general font-types such as sans-serif, serif, monospace, etc
+> use this to choose fonts for elements on your site. To figure out what fonts come automatic with your browser, check here. You can also choose general font-types such as sans-serif, serif, monospace, etc
 
 I used all of the methods above in my stylesheet to customize my site. Here’s my end result!
 
@@ -93,18 +104,21 @@ Now that I’ve gone through my suggestions, here are some ideas on what you cou
 - Canvas background colors
 - Types of text/headings
 
+<br />
+
 ## Section 2: time to ship!
 
 ![dancing-orpheus-gif](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f606f18cca43d719f3e9aecaa9a6c23fd37baade_orpheus.gif)
 
-WHOOP WHOOP PARTY TIME PARTY PARTY TIME 
+🎉🥳 ***WHOOP WHOOP WHOOP PARTY TIME PARTY PARTY TIME*** 🥳🎉
+
 (full credit to @msw for the gif)
 
-You’ve done it! You’ve made an amazing web app, customized it, and now you’re about to ship it! If you’re new to Hack Club, shipping is a term for when you don’t just code a project, but you publish it on the internet for all the world to see!
+You’ve done it! You’ve made an amazing web app, customized it, and now you’re about to ship it! If you’re new to Hack Club, **shipping is a term for when you don’t just code a project, but you publish it on the internet for all the world to see!**
 
-In addition, if you’re completing this project for the Athena awards, by shipping this project, you’ll earn artifacts (which you can redeem for laptops, iPads, etc…) not to mention hours towards your certificate and flight to NYC [plane emoji]
+In addition, if you’re completing this project for the Athena awards, by shipping this project, you’ll earn **artifacts** (which you can redeem for laptops, iPads, etc…) not to mention hours towards your certificate and flight to NYC 🛩️🏙️
 
-We’re going to publish our sites to a URL using GitHub Pages. To do so, follow these steps:
+We’re going to publish our sites to a URL using **GitHub Pages**. To do so, follow these steps:
 
 ![instructions #1](https://hc-cdn.hel1.your-objectstorage.com/s/v3/6134cbcedc6488f68621ebd8d2443c889f56a190_screenshot_2025-06-06_at_1.11.44___pm.png)
 
@@ -128,6 +142,10 @@ We’re going to publish our sites to a URL using GitHub Pages. To do so, follow
 
 6. Congrats! You have successfully shipped your very-own web app!!
 
+<br />
+
 ## Section 3: Athena Awards
 
 If you have done this project as on the Athena Awards guided track, go to [oscillart.athena.hackclub.com](oscillart.athena.hackclub.com) to find the form to submit your project for artifacts!
+
+<br />

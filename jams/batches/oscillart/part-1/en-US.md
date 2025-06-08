@@ -6,19 +6,17 @@ title: 'Setup and Getting Started'
 description: "Setup GitHub Codespaces to code your web app, and install Live Server and Hackatime"
 contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
-thumbnail: 'thumbnail image link'
+thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/2a82a54a8edc96175f7f76897c65ad114866b5a9_screenshot_2025-06-08_at_12.20.55___pm.png'
 timeEstimate: '15 min'
-difficulty: '(Beginner, Intermediate)'
+difficulty: 'Beginner, Intermediate'
 keywords: 'github, codespaces, music, art'
 presentation: 'https://docs.google.com/presentation/d/1Vr1id4Q2w1oz3aTjogHqKPceZ-94JW8d6SFVkeYbPZk/edit?usp=sharing'
 presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQVB77QMGHL9rb9U_GC1ZJDIOv42UWwoKfk7Il-cd0qo098dYOIQHNxJmFjCCeoTJ5mGYr5oAkkRqvR/pub?start=true&loop=false&delayms=30000'
 presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/fd4973bb54e03b930b4eeae749cbe9472dc5777b_oscillart_1.pdf'
-notes: 'link to notes (optional)'
-poster: 'link to poster (optional)'
-video: 'link to video (optional)'
 ---
+<br />
 
-## Introduction:
+## Introduction
 
 Welcome to Oscillart! My name’s Celeste, and I’m a 16-year old Hack Clubber from Atlanta, Georgia. I’m gonna be helping you through this Jam, which was created as a guided project for the Athena Awards.
 
@@ -26,18 +24,18 @@ This project allows you to combine art, music, and computer science together to 
 
 ![Demo gif](https://hc-cdn.hel1.your-objectstorage.com/s/v3/290e71abdd7c64ea5e31b2a70ae02f5ed8027e27_demo__1_.gif)
 
-What’s more? You’ll be able to add unique user inputs that allow you to customize your art and music every time you run it! You’re like your own technological DJ. Then, when you’ve created a song you love, you can record it straight from the web app (and upload it to the gallery on oscillart.athena.hackclub.com).
+What’s more? You’ll be able to add unique user inputs that allow you to customize your art and music every time you run it! You’re like your own technological DJ. Then, when you’ve created a song you love, you can record it straight from the web app (and upload it to the gallery on [oscillart.athena.hackclub.com](oscillart.athena.hackclub.com)).
+<br />
 
 ## Context
 
-But hold on, what even are sine waves? And why are we using them to write songs? Let’s go full physics-mode for a sec (bear with me [smiley]).
+But hold on, what even are sine waves? And why are we using them to write songs? Let’s go full physics-mode for a sec (bear with me 😁).
 
 ![Gif of sine waves](https://hc-cdn.hel1.your-objectstorage.com/s/v3/e3a1fb0f9f3c25f0a986f0d9a6631747d1cb7b05_gif.gif)
 
 So, you see the waves above? When sound waves travel through the air, a pure tone moves the air in the same way that this sine wave travels: air vibrating, and thus compressing. At the top of the wave, that’s when the air pressure is highest. At the bottom of the wave, that’s when the air pressure is lowest. How high/low the wave goes - that’s called the amplitude. It controls how loud or soft the sound is.
 
-There’s way more to learn about acoustics, but all you really need to understand is that a sine wave is the mathematical depiction of a pure tone. Thus, when we tell our computer to play that pure tone, we’re telling it to activate the speakers according to a sine wave!
-
+There’s way more to learn about acoustics, but all you really need to understand is that **a sine wave is the mathematical depiction of a pure tone**. Thus, when we tell our computer to play that pure tone, we’re telling it to activate the speakers according to a sine wave!
 
 <Dropdown title="Pssst: wanna know more about acoustics and harmonics? Check out these sites linked below:">
 
@@ -46,10 +44,12 @@ There’s way more to learn about acoustics, but all you really need to understa
 3. [Fun little app to play around with waves :)](https://musiclab.chromeexperiments.com/Harmonics/)
 
 </Dropdown>
+<br />
+<br />
 
-## Jam Layout:
+## Jam Layout
 
-This jam is laid out in 6 main parts (including deployment). Each part should take about an hour to complete, meaning if you’re running this through a Hack Club, you’ll probably wanna dedicate at least 6 club meetings to this project. If you’re doing this on your own, this YSWS should take about 6 hours.
+This jam is laid out in **6 main parts (excluding intro)** (including deployment). Each part should take about an hour to complete, meaning if you’re running this through a Hack Club, you’ll probably wanna dedicate at least 6 club meetings to this project. If you’re doing this on your own, this YSWS should take about 6 hours. The parts will include:
 
 1. Using sine-wave frequencies to play sounds from our computer
 2. Drawing those sine-waves on the Javascript canvas
@@ -58,23 +58,24 @@ This jam is laid out in 6 main parts (including deployment). Each part should ta
 5. Recording your submissions
 6. Deploying the app (and earning artifacts for the Athena Award!)
 
-Throughout this whole jam, I want to give as much help as possible while still letting you be creative! This jam expects you to have a beginner knowledge of programming itself (for example: you know what an if-statement is, you know what a loop is, etc.) but doesn’t require any knowledge of Javascript or any of the APIs we're gonna be using. In addition, a basic knowledge of music might be helpful (like knowing what the notes on the scale are) but is not required :)
+Throughout this whole jam, I want to give as much help as possible while still letting you be creative! This jam expects you to have a **beginner knowledge of programming itself** (for example: you know what an if-statement is, you know what a loop is, etc.) but doesn’t require any knowledge of Javascript or any of the APIs we're gonna be using. In addition, a basic knowledge of music might be helpful (like knowing what the notes on the scale are) but is not required. :)
 
-If you get stuck, that’s totally fine!! Check out #athena-award, #oscillart, #code, or even dm me at @thegrammarpolice. I’d be happy to hop on a call or message with you while you figure it out. 
+If you get stuck, that’s totally fine!! Check out **#athena-award**, **#oscillart**, **#code**, or even dm me at **@thegrammarpolice**. I’d be happy to hop on a call or message with you while you figure it out. 
 
-That said, if you have some more coding or Javascript experience, I totally encourage you to do this jam - and go above and beyond! [space orpheus]. Throughout the Jam, there will be dropdowns with extra challenges. These challenges were often inspired by you all asking questions during #oscillart calls or slack parties, so if the challenge was inspired by someone’s question or exploration, I’ll give them credit in the subtitle.
+That said, if you have some more coding or Javascript experience, I totally encourage you to do this jam - and go above and beyond! 🚀 Throughout the Jam, there will be dropdowns with extra challenges. These challenges were often inspired by you all asking questions during **#oscillart** calls or slack parties, so if the challenge was inspired by someone’s question or exploration, I’ll give them credit.
 
 Remember, to get your submission approved, your site must do the following:
-1. Play music based on user inputted notes
-2. Create art based on user inputted notes
-3. Allow for user input in addition to typing in notes (think… changing volume, changing color of the waves, etc.) for both music and art elements
+1. Play music based on user-inputted notes
+2. Create art based on user-inputted notes
+3. Allow for user input in addition to typing in notes (think… changing volume, changing color of the waves, etc.) for both music *and* art elements
 4. Add at least one personal touch that is not in this tutorial :)
 
 And that’s it! Let’s get started, shall we?
+<br />
 
-## Setup:
+## Setup
 
-We’re going to be coding our site in GitHub Codespaces, which is completely free and completely online - so no downloading software required. To do this, you need a GitHub account. If you don’t have one yet, go to Github.com and create one! It’s super easy.
+We’re going to be coding our site in GitHub Codespaces, which is completely free and completely online - so no downloading software required. To do this, you need a GitHub account. If you don’t have one yet, go to [Github.com](https://github.com/) and create one! It’s super easy.
 
 Now that you’re logged into your GitHub account, let’s create a repository. A repository is where you can store code online, so that other people can view it (and/or make changes to it if you’re collaborating on a project.)
 
@@ -88,26 +89,29 @@ Enter a name, description, make sure it’s a public repo, click the “Add a Re
 
 ![New blank repository with codespace button](https://hc-cdn.hel1.your-objectstorage.com/s/v3/ce61ee5229467a67054a0891acc2439efe25fae9_screenshot_2025-06-06_at_11.52.24___am.png)
 
-Congrats on creating your repository! Now, click the green button on the left that says “Code”, click to the left tab that pops up that says “Codespaces”, and finally hit the plus button. 
+Congrats on creating your repository! Now, click the green button on the left that says “Code”, click to the rightmost tab that pops up that says “Codespaces”, and finally hit the plus button. 
 
 ![Codespaces blank open](https://hc-cdn.hel1.your-objectstorage.com/s/v3/17a5cf57a782ddb549bb6d65d9bd4a271081387d_screenshot_2025-06-06_at_11.52.56___am.png)
 
 Then, click on the name of your codespace. This is where you’re gonna do all your programming!
 
-One last thing: to edit your site in real-time, before you’ve fully deployed it, we’re going to use an extension called Live Server. In Codespaces, go to the left and click the extensions button.
+One last thing: to edit your site in real-time, before you’ve fully deployed it, we’re going to use an extension called **Live Server**. In Codespaces, go to the left and click the extensions button.
 
 ![Live server extension selected](https://hc-cdn.hel1.your-objectstorage.com/s/v3/0430e210f2b91644e0dd63cd9331b629ce9db3fb_screenshot_2025-06-06_at_11.53.17___am.png)
 
 Then, search for Live Server, click on it, and hit install
 
 Now, at the bottom right of your screen, you should see a button in your toolbar that says “Go Live”. Don’t press it yet, but when you have some code, you’ll press it to be redirected to a preview of your site!
+<br />
 
-## Athena Awards and Hackatime:
+## Athena Awards and Hackatime
 
-If you are doing this project for the Athena Awards, you have to set up Hackatime on your Codespaces environment, so that you can earn artifacts for each hour you spend coding. Luckily, Codespaces is identical to Visual Studio Code, so I will link the instructions for installing Hackatime for VSCode and you should be able to follow those exactly. 
+If you are doing this project for the **Athena Awards**, you have to set up **Hackatime** on your Codespaces environment, so that you can earn artifacts for each hour you spend coding. Luckily, Codespaces is identical to Visual Studio Code, so I will link [the instructions for installing Hackatime for VSCode](https://hackatime.hackclub.com/docs/editors/vs-code) and you should be able to follow those exactly. 
 
 Note - because Codespaces is online, after you install Hackatime and the Wakatime extension, you may have to wait a few minutes, and then refresh the Codespaces browser. When you see a clock in the bottom left corner of your toolbar, like this:
 
 ![Hackatime-ready toolbar in VSCode](https://hc-cdn.hel1.your-objectstorage.com/s/v3/717164df1373f666887ed3faefb3df68b29f73a2_screenshot_2025-06-06_at_11.48.28___am.png)
 
 Even if the clock says 0 minutes or “start coding to get started”, then you have successfully installed Hackatime!
+
+<br />
