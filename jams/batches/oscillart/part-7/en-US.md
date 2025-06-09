@@ -144,8 +144,32 @@ We’re going to publish our sites to a URL using **GitHub Pages**. To do so, fo
 
 <br />
 
-## Section 3: Athena Awards
+## Section 3: Pick Me. Choose Me. ReadMe.
 
-If you have done this project as on the Athena Awards guided track, go to [oscillart.athena.hackclub.com](oscillart.athena.hackclub.com) to find the form to submit your project for artifacts!
+Remember that pesky README file we created when we initialized our repository? Now's our time to use it!
+
+Go back to your GitHub repository, and click on the file README.md.
+
+![readme file](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2bd1375419f0a4daf5dff26aa1da88d95c33f485_screenshot_2025-06-09_at_11.21.22___am.png)
+
+Inside it, include some info about your project! README's are written in Markdown, so you can include plain text here, but if you want some extra features (like headers, bolding text, links, etc.) check out this [link](https://www.markdownguide.org/). Here are some ideas to get started:
+
+1. a creative title for your project
+2. how long it took you to create the project
+3. what languages/tools you used to create your project
+4. how a user should use your web app
+5. contact information in case someone has questions about your project
+6. why this project interested you
+7. specific features that you want to highlight
+
+Then, when you're done, don't forget to click the green "Commit Changes" button in the top righthand corner!
+
+![readme file open](https://hc-cdn.hel1.your-objectstorage.com/s/v3/bd3a4af0d7c73843a02fcf86778574ed9ec44c4e_screenshot_2025-06-09_at_11.22.35___am.png)
+
+<br />
+
+## Section 4: Athena Awards
+
+If you have done this project as on the Athena Awards guided track, go to [oscillart.athena.hackclub.com](https://oscillart.athena.hackclub.com/) to find the form to submit your project for artifacts!
 
 <br />
