@@ -12,7 +12,7 @@ difficulty: 'Beginner, Intermediate'
 keywords: 'shipping, deploying, github pages, CSS, style'
 presentation: 'https://docs.google.com/presentation/d/1RaRz1FgwdmI8gWgqsin43zvOVKRINS00O1hmpGoY6EA/edit?usp=sharing'
 presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQEpKgVJrdNELwuw0aKsybsVr3wqiwLfYXtCyF4UG6DgZNNvDQRQx21ArDxOezNMvz70wOvyul5jQkc/pub?start=true&loop=false&delayms=30000'
-presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/7d752bbaa132749c540ec1a33ec765eb37beacbb_oscillart_7__1_.pdf'
+presentationPDF: '/assets/oscillartfiles/7.pdf'
 ---
 
 # Part 6: 30 min

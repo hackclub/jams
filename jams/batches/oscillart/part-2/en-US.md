@@ -12,7 +12,7 @@ difficulty: 'Beginner, Intermediate'
 keywords: 'music, wave, frequency, javascript, art'
 presentation: 'https://docs.google.com/presentation/d/1lsLhOlWDG8-TqOrePhdvSv6wSeo_Yy8gXMchTDO8NFc/edit?usp=sharing'
 presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vRW3b88SHrTuJbhvA4mc6eLQwTFVRUvQ5TihV-RMyS2CmJ65OOOe04AbEvDz6-SAZuDivct97Shcut_/pub?start=true&loop=false&delayms=30000'
-presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/a151d631cff6f899994414bba065131e5405a202_oscillart_2.pdf'
+presentationPDF: '/assets/oscillartfiles/2.pdf'
 ---
 
 # *Part 1: 30-35 min*

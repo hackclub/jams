@@ -12,7 +12,7 @@ difficulty: 'Beginner, Intermediate'
 keywords: 'art, color, input, button, javascript'
 presentation: 'https://docs.google.com/presentation/d/1WRlCvMdoDzEGJVhwT4rmlttOnyMA7LoUupTkIt_aJk8/edit?usp=sharing'
 presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQpdcyvms7hpq8kA6UP_7bqGD0eN5IlTr_jZwuOufzI14TBCN-Xk-rQ3VvESoTlA0GEiZS4DPb6CZ8-/pub?start=true&loop=false&delayms=30000'
-presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/dffc136f4ebd25d14b14b3a76b94b0ae7602c00f_oscillart_5.pdf'
+presentationPDF: '/assets/oscillartfiles/5.pdf'
 ---
 
 # Part 4: 30-45 min

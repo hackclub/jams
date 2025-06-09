@@ -12,7 +12,7 @@ difficulty: 'Beginner, Intermediate'
 keywords: 'github, codespaces, music, art'
 presentation: 'https://docs.google.com/presentation/d/1Vr1id4Q2w1oz3aTjogHqKPceZ-94JW8d6SFVkeYbPZk/edit?usp=sharing'
 presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQVB77QMGHL9rb9U_GC1ZJDIOv42UWwoKfk7Il-cd0qo098dYOIQHNxJmFjCCeoTJ5mGYr5oAkkRqvR/pub?start=true&loop=false&delayms=30000'
-presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/fd4973bb54e03b930b4eeae749cbe9472dc5777b_oscillart_1.pdf'
+presentationPDF: '/assets/oscillartfiles/1.pdf'
 ---
 <br />
 

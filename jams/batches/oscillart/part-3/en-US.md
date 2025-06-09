@@ -12,7 +12,7 @@ difficulty: 'Beginner, Intermediate'
 keywords: 'art, music, waves, javascript, canvas'
 presentation: 'https://docs.google.com/presentation/d/13dTQ7iSx2wbZs541FnZ0gt3nSn_y_ao5FyoquPoJzcU/edit?usp=sharing'
 presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vRzBt1oDLSe8ypZVy82HSZqRk22NMIPNeSD5CU9odXhqz9wRBKllo2oIMpujmgS4ZUukBIvsJ6Fdx5X/pub?start=true&loop=false&delayms=30000'
-presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/8ec1c38691a7f22b63da37eb6bd589c0a4238670_oscillart_3.pdf'
+presentationPDF: '/assets/oscillartfiles/3.pdf'
 ---
 
 # Part 2: 30-45 min

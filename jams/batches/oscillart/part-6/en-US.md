@@ -12,7 +12,7 @@ difficulty: 'Beginner, Intermediate'
 keywords: 'art, media, recording, javascript, share'
 presentation: 'https://docs.google.com/presentation/d/1zMGHjS1sUSZEhI7SAlY4shvY8p1a34Q124KN_rJQ2lM/edit?usp=sharing'
 presentationPlay: 'https://docs.google.com/presentation/d/e/2PACX-1vQ-LWou5utq3u1FvZzBGJjP5fDLWCXAn8Oec_uJWN-FLuItkunRTNN-RLrgo1PMcw74ciulutWJn2RN/pub?start=true&loop=false&delayms=30000'
-presentationPDF: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/9c215e64b498d8998a335d890d58578ffc0b8919_oscillart_6.pdf'
+presentationPDF: '/assets/oscillartfiles/6.pdf'
 ---
 
 # Part 5: 30-45 min
