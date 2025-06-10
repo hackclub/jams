@@ -189,7 +189,7 @@ if(counter > 50) {
 
 <br />
 
-Now we need to add a few lines of code to drawWave to start up our pointer/paint-brush:
+Now we need to add a few lines of code at the *beginning* of drawWave to start up our pointer/paint-brush. The reason we're adding this code at the beginning is because we need to clear our screen and "start the ctx paintrbush" before we start drawing our line in the line function:
 
 ```
 ctx.clearRect(0, 0, width, height);  -> clears everything inside of our canvas, so that we get rid of any past sine waves
