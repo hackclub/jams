@@ -249,8 +249,6 @@ Now, if we press our button after inputting a lot more notes, like 4 or 5…
 
 There we go! We’ve sized out our sine waves so they’ll always fit within our canvas!! Go and find some note combinations you like, or go to [https://www.mintmusic.co.uk/](https://www.mintmusic.co.uk/) to find the melodies to your favorite songs. Type them in, and watch your creations go! Nice job!
 
-<br />
-
 ### Advanced Challenge: becuase of the way our setInterval function works, the user has to wait the length of timepernote until the first wave is drawn... is there a way we could change the code to fix this? <br/><br/> I'm leaving you to play with that on your own right now, but ask around on the #oscillart channel for help if you take it on!
 
 <br />
