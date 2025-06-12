@@ -142,7 +142,7 @@ function drawWave() {
 }
 ```
 
-Great! Now, to keep track of how long our interval has been running (because we don’t want to keep drawing one sine wave for all of eternity, no matter how cool that would look), we’re going to initialize a counter variable **outside of both functions**, and set it equal to 0 again in our handler function (so everytime we run drawWave the counter is back at 0.)
+Great! Now, to keep track of how long our interval has been running (because we don’t want to keep drawing one sine wave for all of eternity, no matter how cool that would look), we’re going to initialize a counter variable **outside of both functions**, and set it equal to 0 again in our drawWave function (so everytime we run drawWave the counter is back at 0.)
 
 ```
 var counter = 0;
