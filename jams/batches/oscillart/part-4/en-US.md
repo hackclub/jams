@@ -109,7 +109,7 @@ Add the following code *after your first for-loop* in your handle() function. Fo
        }
 
 
-   }, 1000)
+   }, 2000)
 ```
 
 Some methods you should take away from this:
