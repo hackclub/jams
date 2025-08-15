@@ -1,0 +1,17 @@
+---
+title: 'Build a Godot Platformer Game (Jumpstart)'
+description: 'create a platformer game using Godot, beginner-friendly'
+contributor: 'themagicfrog'
+contributorSlackID: 'U06UYA4AH6F'
+thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/c1d182e6d55d6d472b94f9e29c54eb572e2fa99e_screenshot_2025-08-14_at_9.16.19___pm.png'
+timeEstimate: '100 min'
+difficulty: 'Beginner'
+keywords: 'game, game dev, platformer, godot, beginner, easy, fun, jumpstart, daydream, game development'
+presentation: 'link to figma slides'
+presentationPlay: 'link to figma slides in presentation mode'
+presentationPDF: 'link to pdf of slides'
+notes: 'link to notes (optional)'
+poster: 'link to poster (optional)'
+video: 'https://www.youtube.com/watch?v=6V6sAGBowL0'
+slug: 'godot-platformer'
+---
