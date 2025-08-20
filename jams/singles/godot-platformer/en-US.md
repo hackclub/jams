@@ -7,7 +7,7 @@ thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/c1d182e6d55d6d472b94
 timeEstimate: '100 min'
 difficulty: 'Beginner'
 keywords: 'game, game dev, platformer, godot, beginner, easy, fun, jumpstart, daydream, game development'
-presentation: 'https://www.figma.com/slides/j0xld5JL1PLVmndZPV6YSi/Godot-Platformer-Guide--Jumpstart-?node-id=20-175&t=IsgUoTHva6dshmSd-1'
+presentation: 'https://www.figma.com/slides/j0xld5JL1PLVmndZPV6YSi/Godot-Platformer-Guide--Jumpstart-?node-id=1-42&t=ltJEo7jXg8uKAkPk-0'
 presentationPlay: 'https://www.figma.com/deck/j0xld5JL1PLVmndZPV6YSi/Godot-Platformer-Guide--Jumpstart-?node-id=1-42&t=IsgUoTHva6dshmSd-1'
 presentationPDF: 'https://drive.google.com/file/d/1bbt2VDOZMVd7H8hwsGAknGL2x7eW59PF/view?usp=sharing'
 notes: 'link to notes (optional)'
