@@ -18,7 +18,7 @@ slug: 'godot-platformer'
 
 # Build a Godot Platformer Game
 
-Welcome to [Jumpstart](https://jumpstart.hackclub.com/), a Hack Club game dev program! I'm Estella Gu, a 15-year old Hack Clubber from Massachusetts. Last year, I spent 100 hours building my first game, a space platformer called [Signal Lost](https://themagicfrog.itch.io/signal-lost). I'll be guiding you today through building a 2D game with a character that can run and jump around. There is also a slideshow presentation and a video going through this process on this page!
+Welcome to [Jumpstart](https://jumpstart.hackclub.com/), a Hack Club game dev program! I'm Estella Gu, a 15-year old Hack Clubber from Massachusetts. Last year, I spent 100 hours building my first game, a space platformer called [Signal Lost](https://themagicfrog.itch.io/signal-lost). I'll be guiding you today through building a 2D game with a character that can run and jump around. There is also a slideshow presentation and a super helpful video going through this process on this Jam page!
 
 You will use [Godot](https://godotengine.org/), a game engine that is super easy to learn. By the end (about 100 mins), you will have an AWESOME, UNIQUE game to share to your friends! You'll also know the basics of using [Github](https://github.com/) (a code-storing platform), and [Itch](https://itch.io/) (a website to share and play games). If you have any questions or problems, email estella@hackclub.com or ask your club leader.
 
