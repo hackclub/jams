@@ -7,18 +7,18 @@ thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/c1d182e6d55d6d472b94
 timeEstimate: '100 min'
 difficulty: 'Beginner'
 keywords: 'game dev, platformer, godot, beginner, easy, jumpstart'
-presentation: 'https://www.figma.com/slides/j0xld5JL1PLVmndZPV6YSi/Godot-Platformer-Guide--Jumpstart-?node-id=1-42&t=ltJEo7jXg8uKAkPk-0'
-presentationPlay: 'https://www.figma.com/deck/j0xld5JL1PLVmndZPV6YSi/Godot-Platformer-Guide--Jumpstart-?node-id=1-42&t=IsgUoTHva6dshmSd-1'
+presentation: 'https://www.figma.com/slides/j0xld5JL1PLVmndZPV6YSi/Godot-Platformer-Guide--Jumpstart-?node-id=1-42&t=YvoFRsTHrLei0iRJ-1'
+presentationPlay: 'https://www.figma.com/deck/j0xld5JL1PLVmndZPV6YSi'
 presentationPDF: 'https://drive.google.com/file/d/1bbt2VDOZMVd7H8hwsGAknGL2x7eW59PF/view?usp=sharing'
 notes: 'link to notes (optional)'
 poster: 'link to poster (optional)'
-video: 'https://www.youtube.com/watch?v=6V6sAGBowL0'
+video: 'https://youtu.be/G7iZHazD4wo?si=5D9utj8Dh03p6VCY'
 slug: 'godot-platformer'
 ---
 
 # Build a Godot Platformer Game
 
-Welcome to [Jumpstart](https://jumpstart.hackclub.com/), a Hack Club game dev program! I'm Estella Gu, a 15-year old Hack Clubber from Massachusetts. Last year, I spent 100 hours building my first game, a space platformer called [Signal Lost](https://themagicfrog.itch.io/signal-lost). I'll be guiding you today through building a 2D game with a character that can run and jump around. There is also a slideshow presentation and a video going through this process on this page!
+Welcome to [Jumpstart](https://jumpstart.hackclub.com/), a Hack Club game dev program! I'm Estella Gu, a 15-year old Hack Clubber from Massachusetts. Last year, I spent 100 hours building my first game, a space platformer called [Signal Lost](https://themagicfrog.itch.io/signal-lost). I'll be guiding you today through building a 2D game with a character that can run and jump around. There is also a slideshow presentation and a super helpful video going through this process on this Jam page!
 
 You will use [Godot](https://godotengine.org/), a game engine that is super easy to learn. By the end (about 100 mins), you will have an AWESOME, UNIQUE game to share to your friends! You'll also know the basics of using [Github](https://github.com/) (a code-storing platform), and [Itch](https://itch.io/) (a website to share and play games). If you have any questions or problems, email estella@hackclub.com or ask your club leader.
 
@@ -130,7 +130,7 @@ Some ideas include:
 - Anything else you can think of - There are tons of great tutorials online to help you! Do some searching :). Make your game like no other.
 
 ### Need inspiration?
-Check out the awesome games that Hack Clubbers created as part of Jumpstart in the past! [Here](https://www.v2.jumpstart.hackclub.com/games).
+Check out the awesome games that Hack Clubbers created as part of Jumpstart in the past! [Here](http://v2.jumpstart.hackclub.com/games/index.html).
 ![v2games](https://hc-cdn.hel1.your-objectstorage.com/s/v3/513a185633e1be49_v2gamse.gif)
 
 ## Publish on Itch.io
@@ -156,7 +156,7 @@ CONGRATULATIONS!! You've built an AMAZING game in Godot.
 - Your code is on Github and the repository is public. There are .gd and .tscn files.
 - You've tested your game and it runs without any errors.
 
-Submit your game to [this](submit.hackclub.com/jumpstart) form!! Your game will be reviewed soon and you'll be emailed with information about the prize. :)
+Submit your game to [this](https://forms.hackclub.com/jumpstart-beginner) form!! Your game will be reviewed soon and you'll be emailed with information about the prize. :)
 
 
 
