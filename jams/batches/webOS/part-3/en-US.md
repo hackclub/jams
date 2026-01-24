@@ -526,3 +526,14 @@ Congrats, your operating system is starting to feel quite real. You can now move
 You need to make your first app, and that's exactly what we'll be doing in our next episode.
 
 I'll see you there!
+
+<Announcement
+  copy="Join Hack Club Flavortown!"
+  caption="Congratulations on making your very own WebOS — now ship it with Flavortown and earn free prizes!"
+  href="https://flavortown.hackclub.com?ref=webos-announcement"
+  sx={{
+    'p > span': { pl: 0 },
+    fontSize: 21,
+    color: '#ec3750'
+  }}
+/>

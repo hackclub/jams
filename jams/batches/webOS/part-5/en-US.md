@@ -213,3 +213,13 @@ Thanks for coming along this journey. I honestly was not expecting you to make i
 
 I hope you continue building apps for your personalOS & just generally have fun with it, but more importantly I hope you leave this batch with the urge to develop sites not just for yourself, but for other people! Building tools that help make the lives of others better is a task within reach given the fact that you made it all the way through this rigorous batch of Jams. I'm proud of you, and I hope you're proud of yourself. Have a great day, and keep Jamming!
 
+<Announcement
+  copy="Join Hack Club Flavortown!"
+  caption="Congratulations on making your very own WebOS — now ship it with Flavortown and earn free prizes!"
+  href="https://flavortown.hackclub.com?ref=webos-announcement"
+  sx={{
+    'p > span': { pl: 0 },
+    fontSize: 21,
+    color: '#ec3750'
+  }}
+/>
