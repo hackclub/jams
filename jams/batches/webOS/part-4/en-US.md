@@ -698,3 +698,14 @@ Next time you'll build your own App (based on your own idea). It's going to be a
 Take some rest & return back ready to CONQUER THE WORLDDDD (& build an awesome App that will be fully determined by your own interests for your OS).
 
 (Seriously though, great job!)
+
+<Announcement
+  copy="Join Hack Club Flavortown!"
+  caption="Congratulations on making your very own WebOS — now ship it with Flavortown and earn free prizes!"
+  href="https://flavortown.hackclub.com?ref=webos-announcement"
+  sx={{
+    'p > span': { pl: 0 },
+    fontSize: 21,
+    color: '#ec3750'
+  }}
+/>
