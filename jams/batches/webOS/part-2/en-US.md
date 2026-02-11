@@ -8,14 +8,13 @@ description: >
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
 contributorSlackID: 'U041FQB8VK2'
-thumbnail: 'https://cloud-1j1hqciuo-hack-club-bot.vercel.app/0desktopadded.png'
+thumbnail: ''
 timeEstimate: '30 Min'
 difficulty: Intermediate
-keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
+keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, codespaces'
 language: 'HTML & CSS'
 presentation: 'https://www.figma.com/file/PTWgxtPTUU5ZdEr8JZtH7X/webOSPart2?type=design&node-id=0%3A1&mode=design&t=BUR8qjk3lvlcygxO-1'
 presentationPlay: 'https://www.figma.com/proto/PTWgxtPTUU5ZdEr8JZtH7X/webOSPart2?page-id=0%3A1&type=design&node-id=1-2&viewport=-21176%2C281%2C0.38&t=CSTNNjzGHDS0y5ls-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
-presentationPDF: 'https://cloud-esbedol6s-hack-club-bot.vercel.app/10webospart2-min.pdf'
 notes: ''
 poster: ''
 video: ''
@@ -27,7 +26,7 @@ Today we're going to be diving into JavaScript and combining it with the HTML & 
 
 You'll be adding your outlining your window, creating your desktop, and adding a top bar.
 
-![ending with](https://cloud-d6rlms9ox-hack-club-bot.vercel.app/0image.png)
+![ending with](https://files.catbox.moe/jfisg8.png)
 
 While we will be writing JavaScript, all code will still remain in the HTML file *(until next time on WebOS Jams)*
 
@@ -39,8 +38,6 @@ While we will be writing JavaScript, all code will still remain in the HTML file
 ## Defining the "Window"
 Alrighty, so you ended off last time with the start of your welcome screen. Hopefully, it looks nothing like mine. As a reminder, here's what mine looked like:
 
-![Window where we left off](https://cloud-p1jqe7wd2-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_1.24.32_pm.png)
-
 ### What is a window?
 A window is a box that defines where an application on your user interface (UI) starts and ends. I suppose a div could be any shape (if you want your windows to be circles, go for it!). 
 
@@ -48,7 +45,7 @@ As web developers, we refer to groupings/boxes as divs. You can create divs insi
 
 The walls inside the box define where the content (tasty food) starts & ends & the walls along the edge of the box define where the box begins & ends. 
 
-![Bento Box of Divs](https://cloud-e63a9spt4-hack-club-bot.vercel.app/0divbento.png)
+![Bento Box of Divs](https://files.catbox.moe/a17w21.png)
 
 ### Why do we need a window?
 Having multiple windows will allow you to make users feel in control of their experience (by choosing which windows to open and focus on and which to ignore) and provide a novel/fun experience.
@@ -70,7 +67,7 @@ That should look something like...
 
 Cool... well you're site hopefully looks the same & you may be thinking you did something wrong. 
 
-![grouped in a div](https://cloud-czlk8j3wo-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_1.57.38_pm.png)
+![grouped in a div](https://files.catbox.moe/rh0o6l.png)
 
 Fear not, you're on the right path. The group has no style attributes that would make it visually distinct from the rest of the page **yet**.
 
@@ -85,7 +82,7 @@ Alrighty, let's apply a style on our div (yeah... you can apply styles to divs)
 
 Simple! Now we can see that we outlined our content. 
 
-![stroke added](https://cloud-cn54hr3si-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.04.50_pm.png)
+![stroke added](https://files.catbox.moe/62a2w5.png)
 
 *Hey... wanna have some fun? Visit [this site of border styles](https://developer.mozilla.org/en-US/docs/Web/CSS/border) and try adding some cool border effects (+ also your own width and color)*
 
@@ -111,7 +108,7 @@ Also, remember how last time how we rounded the corners of our image using borde
 
 I chose 16px, but you can also make it much rounder by increasing that number! Experiment with it!
 
-![image of it without space](https://cloud-25a3olvni-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.21.27_pm.png)
+![image of it without space](https://files.catbox.moe/ni77uo.png)
 
 AHH THE TEXT IS VERY *CLAUSTROPHOBIC*. YOU PUT IT IN A BOX AND IT HAS NOOOO BREATHING ROOM!
 
@@ -143,7 +140,6 @@ You don't totally need to understand position absolute right now. As we go deepe
 
 Awesome and with the `position: absolute` property, we unlock four more properties (top, bottom, left, right). Each one defines the distance that our window will be from the edges of the screen.
 
-![This is the screen](https://cloud-rn4u95i7l-hack-club-bot.vercel.app/0thisisthescreen.gif)
 
 To place it in the center, we can simply write
 
@@ -162,13 +158,11 @@ transform: translate(-50%, -50%); (additional styles)">
     </div>
 ```
 
-![Image centered correctly](https://cloud-d0am8h8gg-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.42.10_pm.png)
 
 Alrighty great this is looking lovely.
 
 This may be a good time to take a stretch break. You've been doing a lot of coding & your site is looking beautiful!
 
-![Break](https://cloud-5gpc0802p-hack-club-bot.vercel.app/0ezgif-2-da8e476e69.gif)
 
 ## Designing Our Desktop
 You're back. You're refreshed. Maybe you even ate a strawberry or two 
@@ -178,7 +172,7 @@ You're back. You're refreshed. Maybe you even ate a strawberry or two
 Adding the background is surprisingly easy! 
 
 1. Find your image (I'll be using a photo I took in Michigan)
-2. Drag it into Replit (the file manager)
+2. Drag it into the Codespaces file explorer
 3. On your body tag as the style property of `background-image: url(./NAME_OF_YOUR_IMAGE.png)`
 4. Adding `background-size: cover;` to the body to make the size of the image fit the screen.
 5. If your image still isn't quite fitting, add height: 100vh as a property to your body. This will make the height of the background 100% of the vertical height of your browser.
@@ -190,7 +184,6 @@ Alright well, this is looking beautiful!
 
 Let's add a background color to our window so it looks visually distinct from the desktop. 
 
-![background color added](https://cloud-4xp54hvar-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_3.31.34_pm.png)
 
 ## Creating Our Top Bar
 A top bar is generally used to display the name of the OS, key functions of a selected application, and the time. You can choose to display all or none of these pieces of information. You may also decide to give it different functions! 
@@ -228,7 +221,6 @@ Note: Aye... I heard you want to master Flex. Is that right? If so, I CHALLENGE 
 
 We can optionally space out the content by applying justify-content (check out [this justify-content testing site](https://www.w3schools.com/cssref/playdemo.php?filename=playcss_justify-content) to see how you can use justify-content to space out content)
 
-![justify-content](https://cloud-e3m7dz3v0-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_3.52.01_pm.png)
 based on this demo, I decided I want to use space-between in the example below, but I encourage you to check out the testing site and pick what justify-content style works best for your design! 
 
 ```html
@@ -266,7 +258,6 @@ At this point, you don't need your hand held. Let's take off the training wheels
 
 Here's how I decided to make mine look
 
-![my top bar](https://cloud-5ozikpqtx-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.19.33_pm.png)
 
 I hope yours looks totally different!
 Here's my code in case you want to take some inspiration from it. (but again, DON'T MAKE AN EXACT STYLE COPY) 
@@ -319,7 +310,6 @@ You can include your script tag in the HTML file.
 
 **At the moment we're going to be writing our code inside of our HTML file. We're not touching the script.js file yet *(until next Jam)***
 
-![Write it in index.html](https://cloud-jajja5k48-hack-club-bot.vercel.app/0cat.png)
 
 #### How Do I Get the Time? 
 
@@ -378,7 +368,6 @@ Finally, we can set the innerHTML (the peanut butter in the bagel sandwich) and 
 </script>   
 ```
 
-![time being displayed](https://cloud-rl0do8tyh-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.44.46_pm.png)
 
 Boom, now we get the current time, but don't be too quick to celebrate. You'll notice the time doesn't update. This is because the code inside the script tag only runs a single time (when the page is first opened).
 
@@ -419,7 +408,6 @@ setInterval(function () {
 
 Lovely, here's what we've ended up with:
 
-![PersonalOS](https://cloud-r3drmd84c-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.59.32_pm.png)
 
 For your final bonus challenge, try adding something interesting to your background. Maybe make it a gif?
 

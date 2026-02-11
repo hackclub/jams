@@ -8,10 +8,10 @@ description: >
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
 contributorSlackID: 'U041FQB8VK2'
-thumbnail: https://cloud-21jzd6k06-hack-club-bot.vercel.app/0animatedversion.gif
+thumbnail: 
 timeEstimate: '30 Min'
 difficulty: Intermediate
-keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
+keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, codespaces'
 language: 'HTML & CSS'
 presentation: ''
 presentationPlay: ''
@@ -24,13 +24,13 @@ totalParts: 5
 
 You didn't know it, but you've been riding a bike with training wheels. It's time we take off those training wheels and let you ride into the wind...
 
-![riding into the wind](https://cloud-1cmmfb0q5-hack-club-bot.vercel.app/0the-penny-farthing-bike-race-vintage.gif)
+
 
 Today you're going to be building an app for your personalOS and you'll be given pretty little guidance. **YOU GET TO DECIDE THE CONTENT AND FEATURES FOR THIS APP.** You're probably a bit nervous.
 
 Don't worry, I'll be riding alongside you. I also don't know what app I am going to build. Fear not young one, we'll figure it out together. Be brave. You've been so brave up to this point and I am so proud of what you've built. Here's what I built, but I assure you that your final product will be nothing like this:
 
-![final product](https://cloud-1ovz11fvq-hack-club-bot.vercel.app/0photo.gif)
+
 
 Make sure you have some paper! Let's do this!
 
@@ -55,24 +55,19 @@ A mind map is basically a visualization of a bunch of your ideas. It helps you b
 A question/prompt in the center of the map will provide us with some degree of direction and ideas will radiate from the center of our sheet. 
 
 I found this example for you by browsing the internet:
-![example of a mind map](https://cloud-i3lmaxn11-hack-club-bot.vercel.app/0image.png)
 image from an [IDEO article about Mind Maps](https://www.ideo.com/blog/build-your-creative-confidence-mindmaps)
 
 Your Mind Map doesn't have to be quite as big and crazy. Let's put in the center of our sheet of paper "What do I want people who visit my site to walk away knowing about me?." 
 
-![question in the circle](https://cloud-dfm3s8clg-hack-club-bot.vercel.app/0img_1302-2.png)
 
 When an answer comes to mind, draw it around the circle and then connect it to the center. Write down as many ideas as possible
 
-![a new idea](https://cloud-ff7mcajxn-hack-club-bot.vercel.app/0img_1304.jpg)
 
 Create a string of ideas & be sure to go for quantity over quality (no idea is too crazy for the mind map)
 
-![question with some answers](https://cloud-on92ke5el-hack-club-bot.vercel.app/0img_1306.jpg)
 
 & then go wild with it!
 
-![complete mind map](https://cloud-bg351r0tv-hack-club-bot.vercel.app/0img_1309.jpg)
 
 (your answers should & will be quite different than mine, and that's good) (have fun with it)
 
@@ -86,24 +81,20 @@ I decided to try to create an image that contains almost every element of my lif
 
 To begin, let's map out what a typical user experience will look like in terms of how they will flow through your App (this will vary depending on your App)
 
- ![App Flow](https://cloud-dxudaq5de-hack-club-bot.vercel.app/0img_1311.jpg)
 
 Let's create a wireframe to flesh out our ideas a bit more.
 
 ## Wireframe
 A wireframe is sort of a sketch of your app. You can sketch however you'd like, but the way I do it is by drawing shapes (like rectangles, circles, etc) that represent text, images, etc. 
 
-![Insert image of the wireframe](https://cloud-1ungcc4hw-hack-club-bot.vercel.app/0img_1314.jpg)
 
 Sketches are really just for you, so do whatever you like. Just make sure you can draw them as fast as possible.
 
 I am also going to take a moment to ideate what items I would like to include in the image. This is a higher fidelity version of the initial wireframe. 
 
-![](https://cloud-i8dp56cio-hack-club-bot.vercel.app/0img_1317.jpg)
 
 Because I am not currently at home (I am at a Cafe across from Hack Club HQ), I am going to work with a prototype image. This will also just make it much easier to build the first version & then scale from there. 
 
-![Empty Table](https://cloud-649y4sz8h-hack-club-bot.vercel.app/0img_1315.jpg)
 
 I hope your app is totally different. If your app requires a lot of content that you don't have, try making it placeholder content for the time being. 
 
@@ -114,13 +105,11 @@ Next up, we'll be making the app icon & window (but it will be fast because of t
 
 #### Creating App Icon
 If we copy our previous icon and paste it beneath the previous icon...
-![copy & paste](https://cloud-nl08nicka-hack-club-bot.vercel.app/0copypaste.gif)
 
 wow, that was easy! Now we have our second icon on the screen!
 
 Let's customize it to the name & image of our app! (import an image you'd like to use as your icon) (feel free to steal an image off the internet or create your own beautiful icon (or anything in-between))
 
-![not tappable](https://cloud-p2xdz2i3j-hack-club-bot.vercel.app/0tap_icon.gif)
 
 ```
     <div id="photoIcon"
@@ -201,7 +190,6 @@ initializeWindow("photo")
 ```
 
 BOOOYAHHHH, OUR SECOND WINDOW IS LIVEEEEEEEEEEEEE!!! WE'RE FULLY SETUP!
-![new icon](https://cloud-96f6252ll-hack-club-bot.vercel.app/0newicon.gif)
 
 ## Build Your App
 Okay now for the fun part... build your app. No hand holding here, you've built an app before and I know you can do it again. I encourage you to have fun & try to make an amazing app for your personalOS!
@@ -209,7 +197,7 @@ Okay now for the fun part... build your app. No hand holding here, you've built 
 ## You Built It, Congrats! 
 Thanks for coming along this journey. I honestly was not expecting you to make it this far. Here's what my app ended up looking like:
 
-![final product](https://cloud-1ovz11fvq-hack-club-bot.vercel.app/0photo.gif)
+
 
 I hope you continue building apps for your personalOS & just generally have fun with it, but more importantly I hope you leave this batch with the urge to develop sites not just for yourself, but for other people! Building tools that help make the lives of others better is a task within reach given the fact that you made it all the way through this rigorous batch of Jams. I'm proud of you, and I hope you're proud of yourself. Have a great day, and keep Jamming!
 

@@ -8,10 +8,10 @@ description: >
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
 contributorSlackID: 'U041FQB8VK2'
-thumbnail: 'https://cloud-8w65kztfg-hack-club-bot.vercel.app/0gifnotes.gif'
+thumbnail: ''
 timeEstimate: '30 Min'
 difficulty: Intermediate
-keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
+keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, codespaces'
 language: 'HTML & CSS'
 presentation: ''
 presentationPlay: ''
@@ -25,7 +25,6 @@ Aye there mate, welcome to the forth Jam in this Batch. We're quite impressed by
 
 Our first app is going to be a text-based app where you can create little text-based posts about yourself or whatever you'd like to post about. Your app is going to look totally different from mine, so prepare to get your creative thinking cap on and begin your first app. 
 
-![Content Selection](https://cloud-cxohec4p9-hack-club-bot.vercel.app/0notesselector.gif)
 
 You could make the theme of your blog/article app about whatever you'd like! For example, you could use this as a place to store reviews of/notes about your favorite restaurants, cafes, recipes, books, etc. 
 
@@ -74,7 +73,7 @@ I took a photo of a friend's notebook *(note from Thomas's "friend", Sahiti: "WH
 
 ![notebook image](https://iili.io/HPLAlyP.md.png)
 
-Take your own image that fits your app and send it to your computer using email or AirDrop and then drag it into Replit (just as we did for the background). Make sure the file format is .png or .jpg (otherwise find an online file converter). 
+Take your own image that fits your app and send it to your computer using email or AirDrop and then drag it into the Codespaces file explorer (just as we did for the background). Make sure the file format is .png or .jpg (otherwise find an online file converter).
 
 You can also you can icon you create or find online. I really don't mind, this is your operating system after all and you're the chief designing, so you make the call pal. 
 
@@ -97,7 +96,6 @@ Note: PLEASE DO NOT COPY THIS CODE! Do your own app and style your icon in your 
 
 Here's what my icon is currently looking like inside my application
 
-![Icon in my personalOS](https://cloud-9y8sc20z9-hack-club-bot.vercel.app/0screenshot_2023-06-26_at_4.39.55_pm.png)
 
 Currently when we tap on the icon... nothing happens. Let's select the icon when we tap on it! 
 
@@ -241,7 +239,6 @@ Boommmm, we have our second window!
 
 Now we're able to move it around, but we cannot yet close it. 
 
-![Draggable](https://cloud-j9a1i26ly-hack-club-bot.vercel.app/0draggable.gif)
 
 ### Making our App Closable
 
@@ -267,7 +264,6 @@ notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
 
 </Dropdown>
 
-![make the window closable](https://cloud-76crcv3i9-hack-club-bot.vercel.app/0closable.gif)
 
 Soo... this is quite annoying... repeating code that is...
 
@@ -287,7 +283,6 @@ notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
 ### Making Our Window Closed By Default
 This is quite simple! Just add the `display: none;` style property inline to your notes div. 
 
-![closed by default](https://cloud-8h1gc5y7n-hack-club-bot.vercel.app/0closed_default_.gif)
 
 ### Making our Rise To The Top
 You'll notice on that last gif that when we tap on the notes window, it doesn't rise on top of the welcome screen. 
@@ -368,7 +363,6 @@ function handleWindowTap(element) {
 ### Celebrate it works
 Awesome! Now we're able to tap on our windows and see them ov
 
-![overlapping fixed](https://cloud-fok3p0igt-hack-club-bot.vercel.app/0overlapfix.gif)
 
 
 ### Putting All Of This Into One Function to Initialize a Window
@@ -397,7 +391,6 @@ It's totally up to you. There's only one app you cannot make (& that is Hacker N
 ### Making Initial View
 The initial view for my site will be introducing the concept of Hacker Notes. If you would like, you can make an initial view that represents your site well. I changed the font, added some text, and just generally had fun with it. I encourage you to do the same (& add your own unique style with images, awesome styles, etc).
 
-![initial screen](https://cloud-5atxrow99-hack-club-bot.vercel.app/0screenshot_2023-06-28_at_11.30.46_am.png)
 
 ### Adding Content Selection
 Having one piece of content on your app is sort of boring. We should make it so the user can select between multiple pieces of content.
@@ -405,7 +398,6 @@ Having one piece of content on your app is sort of boring. We should make it so 
 #### Creating a side bar, bottom bar, top bar, or whatever you'd like 
 You need a space to store your content selection options. I put this in a side bar. You can put this in whatever you'd like. 
 
-![side bar added](https://cloud-9djehu11s-hack-club-bot.vercel.app/0screenshot_2023-06-28_at_11.44.56_am.png)
 
 I encourage you to create something other than a sidebar to display your content selection options. Get creative, and be unique.
 
@@ -439,7 +431,7 @@ If you're stuck and want to see my code, take a look (but please don't copy and 
           <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
             </br>
             </br>
-            <img src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/0img_0837.jpg"
+            <img src=""
               style="width: 96px; border-radius: 16px" />
             </br>
             </br>
@@ -499,7 +491,7 @@ var content = [
           <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
             </br>
             </br>
-            <img src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/0img_0837.jpg"
+            <img src=""
               style="width: 96px; border-radius: 16px" />
             </br>
             </br>
@@ -615,7 +607,6 @@ for (let i = 0; i < content.length; i++) {
 *(a for loop runs a segment of code a given number of times and passes in a number that increments each time the code segment runs)*
 
 Woooo, it's working!!!
-![wow correctly displays content](https://cloud-muubvyfhr-hack-club-bot.vercel.app/0notesimprovement.gif)
 
 btw if you got confused, here's the complete set of code
 
@@ -635,7 +626,7 @@ var content = [
           <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
             </br>
             </br>
-            <img src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/0img_0837.jpg"
+            <img src=""
               style="width: 96px; border-radius: 16px" />
             </br>
             </br>
@@ -672,7 +663,6 @@ var content = [
 ]
 ```
 
-![Content Selection](https://cloud-cxohec4p9-hack-club-bot.vercel.app/0notesselector.gif)
 
 WAHOOOOOOOOOOOOO
 

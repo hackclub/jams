@@ -12,20 +12,16 @@ contributorSlackID: 'U041FQB8VK2'
 thumbnail: 'https://cloud-78mhgjste-hack-club-bot.vercel.app/0welcomescreen.png'
 timeEstimate: '30 Min'
 difficulty: Intermediate
-keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
+keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, codespaces'
 language: 'HTML & CSS'
 presentation: 'https://www.figma.com/file/GKrLB0EfGWDcErrbrO1Wre/webOSPart1?type=design&node-id=0%3A1&mode=design&t=0HHMIeSDMmAzH864-1'
 presentationPlay: 'https://www.figma.com/proto/GKrLB0EfGWDcErrbrO1Wre/webOSPart1?page-id=0%3A1&type=design&node-id=1-14&viewport=-22828%2C193%2C0.29&t=Zv6vemAJ3hYlLn6Q-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
-presentationPDF: 'https://cloud-esbedol6s-hack-club-bot.vercel.app/20webospart1-min.pdf'
+presentationPDF: ''
 notes: ''
 poster: ''
 video: ''
 totalParts: 5
 ---
-
-![Capybara OS demo](https://cloud-ir4w2s05f-hack-club-bot.vercel.app/0screenrecording.gif)
-[Live Demo ](https://ecd6d5e2-03cd-4131-ac4a-9e4cf22bb73b-00-28qahbc8n17eh.worf.replit.dev/) & 
-[Sample Code](https://replit.com/@ThomasStubblef2/Step8#index.html)  
 
   *(P.S. This is a sample of what your OS might look like at the end of the entire batch, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all. Yours will also have a totally different set of apps by the end of the batch.)*
 
@@ -33,7 +29,7 @@ The Operating System (OS) will be entirely web-based (using HTML, CSS, and JS). 
 
 **Today you'll be creating an awesome welcome screen for your personalOS. It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product that you'll build upon in subsequent Jams.**
 
-![this is what today's build may look like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
+![this is what today's build may look like](https://files.catbox.moe/oqgqam.png)
 
 There are six steps/headings in this Jam! Go through each and begin building your personalOS.
 
@@ -48,28 +44,20 @@ There are six steps/headings in this Jam! Go through each and begin building you
 Hey there Hacker! Let's get you setup
 
 ### Create an Account
-Head over to the [Replit Website](https://replit.com/languages/html) and create an account
+Head over to [GitHub](https://github.com/) and create an account
 
-<Dropdown title="What is Replit?">
-Replit is a web-based independent development environment (IDE). Basically, Replit allows you to write code in your browser and instantly deploy your site to the entire world. I suppose you could say it's *magical*. 
+<Dropdown title="What is GitHub Codespaces?">
+GitHub Codespaces is a cloud-based development environment. It lets you edit code in a full VS Code editor in your browser and run your project without installing anything locally.
 </Dropdown>
 
-
-
-<Dropdown title="If you're unable to use Replit or would rather not use Replit">
-If for whatever reason you have difficulty accessing Replit, visit <a href="https://firewalledreplit.com/">Firewalled Replit</a>.
-I also recommend checking out GitHub code spaces or running a local development environment in VS Code.
-All the code is the same regardless of the code editor you use.😉
+<Dropdown title="If you're unable to use GitHub Codespaces">
+If you can't access Codespaces, you can run the same code locally in VS Code, or use GitHub.dev to edit files in the browser. The code is identical regardless of editor.
 </Dropdown>
 
+### 2. Create a new Repository + Codespace
+Create a new GitHub repository (public or private). Open it, click **Code**, go to the **Codespaces** tab, and choose **Create codespace on main**.
 
-
-### 2. Create a new Repl/Project
-Welcome to your Replit Dashboard! Once inside, tap Create a Repl and then select **HTML, CSS, and Javascript** as your template. 
-
-Replit will kindly start you off with some boilerplate code (starter code). 
-
-![Replit-Signup](https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif)
+Codespaces will open a browser-based VS Code editor connected to your repo.
 
 
 ## Build with Elements
@@ -77,21 +65,16 @@ Replit will kindly start you off with some boilerplate code (starter code).
 ### What are elements?
 Every site you've ever visited has elements. Elements are the building blocks that come together to create websites. For example, this block of text is an element. The gif you'll see below is also an element. Even the container that holds the text you are reading is an element. Try right-clicking this site and tapping Inspect, you'll see a bunch of elements. HTML is the file format for these elements.
 
-![Inspect Screen](https://cloud-8ywcul7zm-hack-club-bot.vercel.app/0inspect.gif)
+![Inspect Screen](https://files.catbox.moe/bd91qd.png)
 
 #### What makes an element?
 Elements consist of three parts. 
 
 Elements consist of an opening tag, the content in the middle, and a closing tag. So for example `<p>Sample Content</p>` creates paragraph text because there is an opening tag (`<p>`), with content in the middle (`Sample Content`), and a closing tag (`</p>`) indicating where the content ends 
 
-![bagel](https://cloud-rd8lvcrjx-hack-club-bot.vercel.app/0video.gif)
-*(bagels are a lot like tags or I suppose you could say tags are a lot like bagels... depending on your perspective)*
-
 ### Where can I place them?
 
-Let's begin by deleting all the starter code that Replit gave you.
-
-![delete starter code](https://cloud-884himjr3-hack-club-bot.vercel.app/0nameswitch.gif)
+Let's begin by creating (or opening) an `index.html` file and deleting any starter code inside it.
 
 Orpheus the Dinosaur *(don't ask who [Orpheus](https://workshops.hackclub.com/orpheus/) is)* asks that you please copy and paste the code below into your project
 
@@ -142,9 +125,7 @@ Awesome. We can also make smaller headings. `h1` is the largest heading, but you
 ```
 
 The text is neat, but let's add an image:
-First, we need to drag an image into the Replit file manager.
-
-![Drag & Drop](https://cloud-id4r1tr7g-hack-club-bot.vercel.app/0drag_drop.gif)
+First, we need to drag an image into the Codespaces file explorer.
 
 ```
 <body>
@@ -161,7 +142,7 @@ You can also do a direct link to the image (as .png, .jpeg, etc at the end of th
 
 The image tag has a property of `src` which stands for source. You can pass in the direct link to the image or import an image and set the src as `"./imageName.png"`.
 
-![Website with text on top and a Capybara image](https://cloud-33eico6lp-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_11.54.32_am.png)
+![Website with text on top and a Capybara image](https://files.catbox.moe/ftn9hd.png)
 
 ### Let's link to another page
 HTML (HyperText Markup Language) was built for scientists to be able to share research documents (& is now used on every website on the internet). If you know anything about scientists, then you know they LOVE to reference other pages. 
@@ -211,8 +192,6 @@ Okay, so you should now have the content for your "Welcome to My OS" screen and 
 
 Your content most likely looks rather bland and uninteresting which leads us into our next topic... styling our content!
 
-![content styling in progress](https://cloud-9jc9u3xyy-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_3.51.07_pm.png)
-
 ## Style Your Elements
 ### What's a style?
 A style is a property-value pair that changes the way an element looks.
@@ -250,7 +229,7 @@ Your image is probably very large. Let's change the size & shape.
 
 Simply go to the image and apply a style property that sets the width and height: 
 
-`<img style="width: 64px; height: 64px" src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/1img_1181.jpg" />`
+`<img style="width: 64px; height: 64px" src="" />`
 
 I chose to make the width and height 64px, but you don't have to! Pick your own size, play with it, and have fun!
 
@@ -258,8 +237,6 @@ I chose to make the width and height 64px, but you don't have to! Pick your own 
 
 ##### *\*Crunch*\*
 Your image might be a bit crunched up. Try to Google how to fix this (maybe even ask GPT). Even a very basic search term such as What is the CSS Property for making an image not crunch, would probably work.
-
-![crunched image](https://cloud-4cdvjzqmo-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_12.43.50_pm.png)
 
 <Dropdown title="Solution">
   Upon scrubbing through the results, I found the `object-fit: cover` property. Let's try applying that to our image. Ah lovely, and just like that our image is uncrunched. Whenever you run into something that looks ugly and you want to make it look beautiful, just google it and Google will help you out.
@@ -275,8 +252,6 @@ simply write style="border-radius: 16px; object-fit: cover" on your image tag.
 Note: Semicolons are used to separate CSS properties
 </Dropdown>
 
-
-![rounded image](https://cloud-b43epg4q2-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_3.59.41_pm.png)
 
 ### Styling Font
 Adding a font in CSS is easy!
@@ -302,16 +277,12 @@ Padding is the gap between the photo and the frame. If you had a box with an ite
 
 Also... here's a comedy skit by Shubham at Epoch Bay Area to learn about Margin and Padding
 
-<video src="https://cloud-2jto14u7d-hack-club-bot.vercel.app/0vid_20221230_184903086.mp4" controls="controls" style={{maxWidth: "480px"}}>
+<video src="" controls="controls" style={{maxWidth: "480px"}}>
 </video>
 
 We'll get more into this later, but right now I would just like to bring our items closer together. 
 
-![spaced out](https://cloud-5txt6wpqn-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.12.11_pm.png)
-
 So if we open the inspect window...
-
-![Margin is the problem](https://cloud-p8iio5lh4-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.19.38_pm.png)
 
 We can see that the default margin on the h1 is quite large and it's making the site look a bit awkward. Let's correct that. 
 
@@ -330,15 +301,10 @@ If you wanted to add some space within your heading, you could add padding, so p
 Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
 
 This is what mine looked like after some tinkering. Go for whatever makes you smile! This was just my style at the moment of writing the Jam.
-![what mine looked like](https://cloud-nzaoewszc-hack-club-bot.vercel.app/0screenshot_2023-07-23_at_2.31.58_pm.png)
-
-
 
 *Note: with both padding and margin, you can change the spacing in a specific direction by appending -top, -bottom, -right, or -left. For example you could add margin-top: 4px; or padding-left: 16px;*
 
 Alright, lovely! Here's my finished site for this episode of the batch. I hope your site looks nothing like this! Please take the opportunity to have fun with this site and do something wild!
-
-![Finished Site](https://cloud-423oznftn-hack-club-bot.vercel.app/0screenshot_2023-06-16_at_4.27.35_pm.png)
 
 *Note: You'll notice I added some unique-looking tags inside the paragraph text, YOU CAN DO THAT TOO BY CHECKING OUT THE SOMEWHAT OPTIONAL ADDITIONAL CHALLENGE BELOW.*
 
