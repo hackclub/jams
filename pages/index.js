@@ -57,7 +57,9 @@ function getJams(fs, directory) {
 function getBatches(fs, directory) {
   const batchNames = fs.readdirSync(directory)
 
-  return batchNames.map(batchName => {
+  return batchNames
+    .map(batchName => {
+      if (batchName.startsWith('.')) return null
     const batchDirectory = path.join(directory, batchName)
     const readMeFileContent = fs.readFileSync(
       path.join(batchDirectory, 'readMe', 'en-US.md'),
@@ -85,12 +87,13 @@ function getBatches(fs, directory) {
       }
     })
 
-    return {
-      ...readMeData, // Spread the properties from the readMeData object
-      content: readMeContent,
-      parts
-    }
-  })
+      return {
+        ...readMeData, // Spread the properties from the readMeData object
+        content: readMeContent,
+        parts
+      }
+    })
+    .filter(Boolean)
 }
 
 function Slides({ router, initialFeatures }) {

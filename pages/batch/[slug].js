@@ -37,6 +37,8 @@ function getBatches(fs, directory) {
 
   return batchNames.map(batchName => {
     const batchDirectory = path.join(directory, batchName)
+    if (batchName.startsWith('.')) return null
+
     const readMeFileContent = fs.readFileSync(
       path.join(batchDirectory, 'readMe', 'en-US.md'),
       'utf8'
@@ -157,6 +159,7 @@ export default function Page({ batch, params, jams }) {
 
     for (let jindex in concatenatedJamBatch) {
       let jam = concatenatedJamBatch[jindex]
+      if (!jam) continue;
       this.add({
         title: jam.title,
         description: jam.description,

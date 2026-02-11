@@ -35,6 +35,8 @@ function getBatches(fs, directory) {
   const batchNames = fs.readdirSync(directory)
 
   return batchNames.map(batchName => {
+    if (batchName.startsWith('.')) return null
+
     const batchDirectory = path.join(directory, batchName)
     const readMeFileContent = fs.readFileSync(
       path.join(batchDirectory, 'readMe', 'en-US.md'),
