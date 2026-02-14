@@ -6,7 +6,7 @@ import Grid from './Grid'
 import GridItem from './GridItem'
 import Comment from './Comment'
 import Image from './Image'
-import { CodeBlock, InlineCode } from './Code'
+import { CodeBlock } from './Code'
 import StepHeader from './StepHeader'
 import Announcement from './Announcement'
 import Link from './Link'
@@ -20,7 +20,6 @@ const mdxComponents = {
   a: Link,
   img: Image,
   pre: CodeBlock,
-  inlineCode: InlineCode,
   h2: StepHeader,
   blockquote: Blockquote,
 }
