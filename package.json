@@ -36,10 +36,14 @@
     "react-dom": "^18.2.0",
     "react-freezeframe": "^5.0.2",
     "react-icons": "^4.10.1",
+    "react-pdf": "^10.3.0",
     "react-router-dom": "^6.30.3",
     "react-scroll": "^1.8.9",
     "remark-gfm": "^4.0.0",
     "theme-ui": "^0.16.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   },
   "devDependencies": {
     "prettier": "^3.0.0",

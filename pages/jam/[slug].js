@@ -11,7 +11,6 @@ import { useEffect, useState, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Icon from '@hackclub/icons'
 import { Link as ScrollLink, Element } from 'react-scroll'
-import PresentationSlider from '@/components/presentationSlider'
 import JamComponent from '@/components/JamComponent'
 
 function getJams(fs, directory) {

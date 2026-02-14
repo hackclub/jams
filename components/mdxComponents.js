@@ -10,6 +10,23 @@ import { CodeBlock } from './Code'
 import StepHeader from './StepHeader'
 import Announcement from './Announcement'
 import Link from './Link'
+import { Box } from 'theme-ui'
+
+const InlineCode = (props) => (
+  <Box
+    as="code"
+    sx={{
+      fontFamily: 'monospace',
+      fontSize: 'inherit',
+      color: 'black',
+      bg: 'sunken',
+      borderRadius: 'small',
+      mx: 1,
+      px: 1,
+    }}
+    {...props}
+  />
+)
 
 const mdxComponents = {
   Announcement,
@@ -20,6 +37,7 @@ const mdxComponents = {
   a: Link,
   img: Image,
   pre: CodeBlock,
+  code: InlineCode,
   h2: StepHeader,
   blockquote: Blockquote,
 }
