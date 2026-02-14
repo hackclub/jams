@@ -106,7 +106,7 @@ Now, at the bottom right of your screen, you should see a button in your toolbar
 
 ## Athena Awards and Hackatime
 
-If you are doing this project for the **Athena Awards**, you have to set up **Hackatime** on your Codespaces environment, so that you can earn artifacts for each hour you spend coding. Luckily, Codespaces is identical to Visual Studio Code, so I will link [the instructions for installing Hackatime for VSCode](https://hackatime.hackclub.com/docs/editors/vs-code) and you should be able to follow those exactly. 
+If you are doing this project for the **Athena Awards**, you have to set up **Hackatime** on your Codespaces environment, so that you can earn artifacts for each hour you spend coding. Luckily, Codespaces is identical to Visual Studio Code, so I will link [the instructions for installing Hackatime for VSCode](https://hackatime.hackclub.com/docs/editors/vs-code) and you should be able to follow those exactly. (To set up Hackatime for Codespaces, **follow the instructions for Mac/Linux**, even if you're using a Windows device!)
 
 Note - because Codespaces is online, after you install Hackatime and the Wakatime extension, you may have to wait a few minutes, and then refresh the Codespaces browser. When you see a clock in the bottom left corner of your toolbar, like this:
 

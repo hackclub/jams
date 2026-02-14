@@ -172,7 +172,7 @@ Answer:
 gainNode.gain.setValueAtTime(vol_slider.value, audioCtx.currentTime);
 setting = setInterval(() => {gainNode.gain.value = vol_slider.value}, 1);
 oscillator.frequency.setValueAtTime(pitch, audioCtx.currentTime);
-setTimeout(() => { clearInterval(setting); gainNode.gain.value = 0; }, ((timepernote)-10));
+setTimeout(() => { clearInterval(setting); gainNode.gain.value = 0; }, ((timepernote)-100));
 ```
 </Dropdown>
 
