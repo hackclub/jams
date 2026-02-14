@@ -29,7 +29,7 @@
     "instantsearch.js": "^4.56.9",
     "levenshtein": "~1.0",
     "lunr": "^2.3.9",
-    "next": "^13.4.9",
+    "next": "^16.1.6",
     "next-mdx-remote": "^6.0.0",
     "nprogress": "^0.2.0",
     "pdfjs-dist": "^3.8.162",
