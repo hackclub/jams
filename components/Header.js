@@ -93,13 +93,22 @@ export default function Header({
           document.querySelectorAll('canvas').forEach(canvas => {
             // fill canvas with jam image(for the thumbnails that have gifs)
             const ctx = canvas.getContext('2d')
-            ctx.drawImage(
-              document.querySelector('.xmd539850a193e8d4bba9857a3c05add295f'),
-              0,
-              0,
-              canvas.width,
-              canvas.height
+            const jamImage = document.querySelector(
+              '.xmd539850a193e8d4bba9857a3c05add295f'
             )
+            if (
+              !(jamImage instanceof HTMLImageElement) ||
+              !jamImage.complete ||
+              jamImage.naturalWidth === 0 ||
+              jamImage.naturalHeight === 0
+            ) {
+              return
+            }
+            try {
+              ctx.drawImage(jamImage, 0, 0, canvas.width, canvas.height)
+            } catch (error) {
+              return
+            }
           })
         }, 500)
 

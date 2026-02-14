@@ -8,14 +8,14 @@ description: >
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
 contributorSlackID: 'U041FQB8VK2'
-thumbnail: 'https://cloud-krjyl66w8-hack-club-bot.vercel.app/0ezgif-4-16a8db518b.gif'
+thumbnail: ''
 timeEstimate: '30 Min'
 difficulty: Intermediate
-keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
+keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, codespaces'
 language: 'HTML & CSS'
 presentation: 'https://www.figma.com/file/KxIYo80ojSHmEisOtn6MqC/webOSPart3?type=design&node-id=0%3A1&mode=design&t=oo06lQb0NF9vKcpc-1'
 presentationPlay: 'https://www.figma.com/proto/KxIYo80ojSHmEisOtn6MqC/webOSPart3?page-id=0%3A1&type=design&node-id=1-2&viewport=-3713%2C136%2C0.13&t=wIV03vQshi9kngPz-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
-presentationPDF: 'https://cloud-esbedol6s-hack-club-bot.vercel.app/00webospart3-min.pdf'
+presentationPDF: ''
 notes: ''
 poster: ''
 video: ''
@@ -26,7 +26,6 @@ Surpassed my expectations, young one, you have. Confront your fears, you must, f
  
 Today we're going to be making our windows movable and throwing in some JavaScript magic (you'll see later what I mean by this).  Here's what that looks like:
 
-![Sample Outcome Gif](https://cloud-1v30rbp0i-hack-club-bot.vercel.app/00gif.gif)
 
 **Outline:**
 1. **Organizing Our Logic**
@@ -38,7 +37,6 @@ Today we're going to be making our windows movable and throwing in some JavaScri
 ## Organizing Our Logic
 Our index.html file is getting a bit messy. Let's try splitting our Logic (JavaScript) from our Content (HTML) by moving the JavaScript code to it's own `script.js` file.
 
-![splitting files](https://cloud-pfegd9qpz-hack-club-bot.vercel.app/0twofiles.gif)
 
 As a reminder, this is what my code looked like at the end of the last Jam:
 <Dropdown title="My Code (pls don't copy paste)">
@@ -51,7 +49,7 @@ As a reminder, this is what my code looked like at the end of the last Jam:
   <div style=" border: solid; padding: 16px; border-radius: 16px; width: fit-content; position: absolute; top: 50%; left:
   50%; transform: translate(-50%, -50%); background: #fff; justify-content: center;">
 
-    <img src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/1img_1181.jpg"
+    <img src=""
       style="width: 64px; height: 64px; border-radius: 32px; object-fit: cover;" />
     <h1 style="margin: 4px;">thomasOS</h1>
     <p style="margin: 0px;">
@@ -108,12 +106,10 @@ Inside of our HTML file we display what the user sees in the body tags. To make 
 
 
 ### Celebration
-![time works](https://cloud-9pbmhw7on-hack-club-bot.vercel.app/0screenshot_2023-06-22_at_3.21.44_pm.png)
 Great, it worked! Now going forward we'll write our JavaScript code in script.js and our HTML in index.html.
 
 ## Making The Window Movable
 
-![Draggable](https://cloud-1didasla4-hack-club-bot.vercel.app/0draggable.gif)
 Making the window move is honestly one of the more difficult parts of this Batch. Let's see if we can find an online resource that can help us out...
 
 *one google search later*
@@ -200,7 +196,6 @@ The awesome `dragElement` function lets you drag and move the window around. It 
 
 If there's a header element (like a handle), it hooks up the magic of dragging to it (but not the rest of your window). But even without a header, you can still grab and move that window from anywhere inside it. 
 
-![Handle Draggable](https://cloud-ojqjpbzs3-hack-club-bot.vercel.app/0handledraggable.gif)
 *(in the example above, the pencil if your window's handle)*
 
 The `startDragging` function is in charge of getting things rolling, capturing the initial mouse position and setting up the moves and release. 
@@ -247,7 +242,6 @@ Let's see if it actually works
 
 Awesome
 
-![Handle Added](https://cloud-l4ck638kz-hack-club-bot.vercel.app/0osmove.gif)
 
 <Comment githubUser="jianmin-chen">
 Hey... the creator of this Jam missed out on a huge upgrade to the site, but dw, I'll let you in on the inside scoop. You can avoid annoying underlining of the handle text on drag by adding `user-select: none;` & `cursor: grab;`
@@ -263,7 +257,6 @@ Now it's time for you to customize your handle and make it look hover you'd like
 
 
 Here's what I decided to do (I hope yours looks nothing like this)
-![Window Screen Effect](https://cloud-n6ytrol13-hack-club-bot.vercel.app/0gif.gif)
 
 <Dropdown title="My Code (please don't copy!)">
 ```html
@@ -274,7 +267,7 @@ Here's what I decided to do (I hope yours looks nothing like this)
       <p style="margin: 0px; color: #fff; font-weight: 500">Welcome</p>
     </div>
     <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 360px; padding: 16px;">
-      <img src="https://cloud-pc8imajxj-hack-club-bot.vercel.app/1img_1181.jpg"
+      <img src=""
         style="width: 64px; height: 64px; border-radius: 32px; object-fit: cover;" />
       <h1 style="margin: 4px;">thomasOS</h1>
       <p style="margin: 0px;">
@@ -326,7 +319,6 @@ Let's break this down.
 
 First we're declaring that we're creating a function with the `function` keyword. Next, we're naming this function as `closeWindow` and passing in a parameter of `element`.
 
-![function explained](https://cloud-fe4ozqgl1-hack-club-bot.vercel.app/0functionsexplained.gif)
 
 Still not sure what a function is?
 <Dropdown title="Explanation for the mathematical Hackers">
@@ -355,7 +347,6 @@ function openWindow(element) {
 ### Creating Window Buttons
 
 #### Creating Close Button
-![closeButton](https://cloud-ez4upags8-hack-club-bot.vercel.app/0ezgif-4-aa4608bdb3.gif)
 
 Let's create a close button inside of our window:
 ```html
@@ -364,7 +355,6 @@ Let's create a close button inside of our window:
 For now, I just created some text that says "Close".
 
 #### Creating Open Button
-![make Appear](https://cloud-k7h5sxshx-hack-club-bot.vercel.app/0makeappear.gif)
 
 I am going to use the "ThomasOS" text in my top-bar to open the Welcome Screen, so I already have that button. 
 
@@ -384,7 +374,6 @@ var welcomeScreenOpen = document.querySelector("#welcomeopen")
 ```
 
 #### Adding Event Listeners
-![event listener](https://cloud-iddmheipf-hack-club-bot.vercel.app/0ezgif-4-a94447ecbc.gif)
 An event listener waits for a specific action to happen and then runs a function when said action happens. In this case, we're waiting for a click to trigger a function.
 
 ```javascript
@@ -405,7 +394,6 @@ I made by button a red circle (this is a div with a set width and height, a bord
 
 You can make a circle or whatever else you'd like. You can even keep it as text if you'd like to.
 
-![my close button](https://cloud-ei3yo5kb7-hack-club-bot.vercel.app/0currentversion.gif)
 <Dropdown title="My Code (don't steal">
 ```html
     <div id="welcomeheader"
@@ -443,7 +431,6 @@ So you didn't know it, but all along you've been writing in-line CSS. There's an
 *Note: you can place classes on any element, not just divs*
 
 3) We need to go into our style.css file (which already exists btw) *(dw about dragElement.js, that shouldn't be on your screen)*
-![image of select style](https://cloud-9ll11kgre-hack-club-bot.vercel.app/0selectstyles.gif)
 
 4) Inside of the style.css file we need to write . and then the name of the class and then place styles inside of the curly brackets `{}` on separate lines separated by a semicolon.
 ```css

@@ -173,6 +173,8 @@ export default function JamComponent({ jam, jamsContent }) {
 
     for (let jindex in concatenatedJamBatch) {
       let jam = concatenatedJamBatch[jindex]
+      if (!jam) continue; 
+
       this.add({
         title: jam.title,
         description: jam.description,

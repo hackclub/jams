@@ -73,6 +73,7 @@ export async function getStaticPaths() {
   
     const paths = [];
     batchNames.forEach(batchName => {
+      if (batchName.startsWith('.')) return;
       const batchDirectory = path.join(batchesDir, batchName);
       const partsDirectory = path.join(batchDirectory);
       const partsNames = fs
