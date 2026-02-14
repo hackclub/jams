@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
 import Icon from '@hackclub/icons'
 import { Link, Box } from 'theme-ui'
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
 
 const PresentationSlider = ({ pdfPath, presentationPlay, presentation }) => {
   const [numPages, setNumPages] = useState(null)
