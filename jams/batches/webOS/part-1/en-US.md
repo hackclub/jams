@@ -277,7 +277,7 @@ Padding is the gap between the photo and the frame. If you had a box with an ite
 
 Also... here's a comedy skit by Shubham at Epoch Bay Area to learn about Margin and Padding
 
-<video src="" controls="controls" style={{maxWidth: "480px"}}>
+<video src="https://cloud-2jto14u7d-hack-club-bot.vercel.app/0vid_20221230_184903086.mp4" controls="controls" style={{maxWidth: "480px"}}>
 </video>
 
 We'll get more into this later, but right now I would just like to bring our items closer together. 
