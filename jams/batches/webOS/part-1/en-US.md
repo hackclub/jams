@@ -181,7 +181,7 @@ Discover some unique tags on the [W3 Tags Site](https://www.w3schools.com/TAGS/d
 
 here are some tags we really like:
 * `<s>Strike Through</s>`
-* `<p>break the </br> line like this</p>`
+* `<p>break the <br> line like this</p>`
 * `<p>use strong to <strong>bold text</strong></p>`
 * `<p> <dfn>DFN Tag</dfn> is a tag that marks something being defined</p>`
 * `<p><abbr title="abbreviation">abbr</abbr> is a tag that marks an abbreviated term</p>`
