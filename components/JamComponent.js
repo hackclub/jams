@@ -24,15 +24,14 @@ import Head from 'next/head'
 export default function JamComponent({ jam, jamsContent }) {
   const submitProject = async () => {
     try {
-      let slug = ""
+      let slug = ''
       if (jam?.slug != undefined) {
         slug = jam?.slug
         console.log(slug)
-
       } else {
         slug = jam?.batch + jam?.part
         console.log(slug)
-      } 
+      }
 
       const response = await fetch(
         `https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${slug}/${submissionURL}/${projectName}`
@@ -62,11 +61,11 @@ export default function JamComponent({ jam, jamsContent }) {
         }
         const data = await response.json()
         if (jam?.slug != undefined) {
-
-        
-        setFinishedProjects(data.filter(project => project.jam == jam.slug))
+          setFinishedProjects(data.filter(project => project.jam == jam.slug))
         } else {
-          setFinishedProjects(data.filter(project => project.jam == (jam.batch + jam.part)))
+          setFinishedProjects(
+            data.filter(project => project.jam == jam.batch + jam.part)
+          )
         }
       } catch (error) {
         console.error('Error fetching data:', error)
@@ -170,7 +169,7 @@ export default function JamComponent({ jam, jamsContent }) {
 
     for (let jindex in concatenatedJamBatch) {
       let jam = concatenatedJamBatch[jindex]
-      if (!jam) continue; 
+      if (!jam) continue
 
       this.add({
         title: jam.title,
@@ -202,7 +201,7 @@ export default function JamComponent({ jam, jamsContent }) {
   }
 
   const [query, setQuery] = useState('')
-  if(jam.video?.includes("youtube")){
+  if (jam.video?.includes('youtube')) {
     return (
       <>
         <Meta
@@ -213,7 +212,7 @@ export default function JamComponent({ jam, jamsContent }) {
           image={jam.thumbnail}
           color="#ec3750"
         />
-  
+
         <Header
           query={query}
           setQuery={setQuery}
@@ -221,7 +220,7 @@ export default function JamComponent({ jam, jamsContent }) {
           back={jam.batch == null ? '/' : '/batch/' + jam.batch} // if no batch, back is index, otherwise it is batch page
         />
         <div sx={{ height: '5rem' }}></div>
-  
+
         {/* <Container as="nav" sx={{
           maxWidth:"80rem",
           position:"sticky",
@@ -283,14 +282,29 @@ export default function JamComponent({ jam, jamsContent }) {
             GH
           </button>
         </Container> */}
-  
+
         {/* So what this code does is checks if batch is null or not. upon null renders the singles breadcrumbs ver, upon non null renders the batch ver */}
-        
-        <Container style={{position: "fixed", bottom: 32, left: 16}}>
-          <Link href={jam.batch == null ? (`https://github.com/hackclub/jams/edit/main/jams/singles/${jam.slug}/en-US.md`) : (`https://github.com/hackclub/jams/edit/main/jams/batches/${jam.batch}/${jam.part}/en-US.md`)} style={{backgroundColor: "#fff", fontSize: 16, color: "#993CCF", border: "1px solid #993CCF", borderRadius: 32, padding: "12px 24px", textDecoration: "none"}}>Edit on GitHub</Link>
+
+        <Container style={{ position: 'fixed', bottom: 32, left: 16 }}>
+          <Link
+            href={
+              jam.batch == null
+                ? `https://github.com/hackclub/jams/edit/main/jams/singles/${jam.slug}/en-US.md`
+                : `https://github.com/hackclub/jams/edit/main/jams/batches/${jam.batch}/${jam.part}/en-US.md`
+            }
+            style={{
+              backgroundColor: '#fff',
+              fontSize: 16,
+              color: '#993CCF',
+              border: '1px solid #993CCF',
+              borderRadius: 32,
+              padding: '12px 24px',
+              textDecoration: 'none'
+            }}>
+            Edit on GitHub
+          </Link>
         </Container>
-  
-  
+
         {jam.batch != null ? (
           <Container
             sx={{ p: '0px 1rem' }}
@@ -331,9 +345,13 @@ export default function JamComponent({ jam, jamsContent }) {
             )}
           </Container>
         ) : (
-          <Container sx={{ p: '1rem' }} style={{ maxWidth: '64rem !important' }}>
+          <Container
+            sx={{ p: '1rem' }}
+            style={{ maxWidth: '64rem !important' }}>
             {/* Structure: root / jam name */}
-            <Link href="/" sx={{ color: '#993CCF', textDecoration: 'underline' }}>
+            <Link
+              href="/"
+              sx={{ color: '#993CCF', textDecoration: 'underline' }}>
               jam
             </Link>{' '}
             /{' '}
@@ -344,7 +362,7 @@ export default function JamComponent({ jam, jamsContent }) {
             </Link>
           </Container>
         )}
-  
+
         <Container
           as="main"
           sx={{
@@ -384,21 +402,30 @@ export default function JamComponent({ jam, jamsContent }) {
                   borderRadius: '24px',
                   overflow: 'hidden'
                 }}>
-                if(true){
-                  <iframe width="560" height="315" src={jam.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                }else{
-                  <video
-                  style={{
-                    width: '100%',
-                    borderRadius: '0px 0px 24px 24px',
-                    aspectRatio: '16/9',
-                    backgroundColor: '#000'
-                  }}
-                  controls
-                  src={jam.video}
-                 />
+                if(true)
+                {
+                  <iframe
+                    width="560"
+                    height="315"
+                    src={jam.video}
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 }
-                
+                else
+                {
+                  <video
+                    style={{
+                      width: '100%',
+                      borderRadius: '0px 0px 24px 24px',
+                      aspectRatio: '16/9',
+                      backgroundColor: '#000'
+                    }}
+                    controls
+                    src={jam.video}
+                  />
+                }
               </div>
             )}
             {jam.presentationPDF != '' && jam.video != '' && (
@@ -486,13 +513,20 @@ export default function JamComponent({ jam, jamsContent }) {
                     />
                   </div>
                 ) : (
-                  <iframe width="625" height="350" src={jam.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe
+                    width="625"
+                    height="350"
+                    src={jam.video}
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 )}
               </Box>
             )}
-  
+
             <Box style={{ marginTop: 8 }}>
-            <Badge
+              <Badge
                 key="keywordFeature"
                 mr={2}
                 sx={{
@@ -505,7 +539,7 @@ export default function JamComponent({ jam, jamsContent }) {
                 color="#fff">
                 {jam?.keywords.split(', ')[0]}
               </Badge>
-  
+
               <Badge
                 key="timeFeature"
                 mr={2}
@@ -523,7 +557,7 @@ export default function JamComponent({ jam, jamsContent }) {
             <h1 sx={{ mt: '0.5rem', marginBottom: 0, lineHeight: '2.2rem' }}>
               {jam.title}
             </h1>
-  
+
             <Link
               href={`https://github.com/${jam.contributor}`}
               target="_blank"
@@ -552,7 +586,7 @@ export default function JamComponent({ jam, jamsContent }) {
                 </span>
               </div>
             </Link>
-{/*   
+            {/*   
             <Box sx={{ pt: 16 }}>
               {finishedProjects.length > 0 ? (
                 <div>
@@ -588,70 +622,74 @@ export default function JamComponent({ jam, jamsContent }) {
                 </a>
               ))}
             </Box> */}
-  
+
             <Box
-              sx={{ fontSize: 18, lineHeight: '200%', pb: [32, 32], mt: '1rem' }}>
+              sx={{
+                fontSize: 18,
+                lineHeight: '200%',
+                pb: [32, 32],
+                mt: '1rem'
+              }}>
               <MDXRemote components={mdxComponents} {...jam.source} />
             </Box>
             {jam.slug !== 'bakebuild' && (
-        <div
-          style={{
-            border: '2px solid rgba(0, 0, 0, 0.25)',
-            boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
-            backgroundColor: '#E1E6EC',
-            display: 'flex',
-            flexDirection: 'column',
-            padding: '24px 24px',
-            borderRadius: '16px'
-          }}>
-          <Text
-            sx={{
-              color: '#993CCF',
-              fontSize: 32,
-              lineHeight: 1.125,
-              fontWeight: 700
-            }}>
-            You finished the Jam. <br />
-            Congratulations! 🎉 🎉 🎉
-          </Text>
+              <div
+                style={{
+                  border: '2px solid rgba(0, 0, 0, 0.25)',
+                  boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
+                  backgroundColor: '#E1E6EC',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  padding: '24px 24px',
+                  borderRadius: '16px'
+                }}>
+                <Text
+                  sx={{
+                    color: '#993CCF',
+                    fontSize: 32,
+                    lineHeight: 1.125,
+                    fontWeight: 700
+                  }}>
+                  You finished the Jam. <br />
+                  Congratulations! 🎉 🎉 🎉
+                </Text>
 
-          <Text sx={{ mt: 3 }}>
-            Share your final project with the community
-          </Text>
-          <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
-            <Text>Project Name</Text>
-            <Input
-              placeholder={'MarshaMellow - SwampLofiAnimation'}
-              value={projectName}
-              onChange={e => setProjectName(e.target.value)}
-            />
-          </Box>
-          <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
-            <Text>Project URL</Text>
-            <Input
-              placeholder={'https://swamplofi.marshamellow.repl.co/'}
-              value={submissionURL}
-              onChange={e => setSubmissionURL(e.target.value)}
-            />
-          </Box>
+                <Text sx={{ mt: 3 }}>
+                  Share your final project with the community
+                </Text>
+                <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
+                  <Text>Project Name</Text>
+                  <Input
+                    placeholder={'MarshaMellow - SwampLofiAnimation'}
+                    value={projectName}
+                    onChange={e => setProjectName(e.target.value)}
+                  />
+                </Box>
+                <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
+                  <Text>Project URL</Text>
+                  <Input
+                    placeholder={'https://swamplofi.marshamellow.repl.co/'}
+                    value={submissionURL}
+                    onChange={e => setSubmissionURL(e.target.value)}
+                  />
+                </Box>
 
-          <Button
-            sx={{
-              marginTop: '24px',
-              borderRadius: '12px',
-              padding: '12px',
-              backgroundColor: '#993CCF',
-              width: ['100%', '100%', '50%']
-            }}
-            onClick={() => submitProject()}
-          >
-            Share Project with Community
-          </Button>
-          <p>{apiResponse}</p>
-        </div>
-      )}
-           </div>
-  
+                <Button
+                  sx={{
+                    marginTop: '24px',
+                    borderRadius: '12px',
+                    padding: '12px',
+                    backgroundColor: '#993CCF',
+                    width: ['100%', '100%', '50%']
+                  }}
+                  onClick={() => submitProject()}>
+                  Share Project with Community
+                </Button>
+                <p>{apiResponse}</p>
+              </div>
+            )}
+          </div>
+
           <div sx={{ width: ['auto', 'auto', '20rem'], position: 'relative' }}>
             <div
               sx={{
@@ -669,7 +707,7 @@ export default function JamComponent({ jam, jamsContent }) {
                 }}>
                 Author
               </h2>
-  
+
               <div
                 sx={{
                   px: '1.25rem',
@@ -711,14 +749,14 @@ export default function JamComponent({ jam, jamsContent }) {
                         }}>
                         {jam.contributor}
                       </span>
-  
+
                       <Icon
                         glyph="github"
                         style={{ height: '20px', width: '20px' }}
                       />
                     </div>
                   </Link>
-  
+
                   {jam.contributorSlackID && (
                     <div sx={{ display: 'flex', gap: '0.75rem', mt: '0.1rem' }}>
                       <a
@@ -753,7 +791,10 @@ export default function JamComponent({ jam, jamsContent }) {
                           }}
                         />
                         <span
-                          style={{ textDecoration: 'none', lineHeight: '1rem' }}>
+                          style={{
+                            textDecoration: 'none',
+                            lineHeight: '1rem'
+                          }}>
                           Message on Slack
                         </span>
                       </a>
@@ -761,7 +802,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   )}
                 </div>
               </div>
-  
+
               {(jam.presentation ||
                 jam.video ||
                 jam.notes ||
@@ -777,7 +818,7 @@ export default function JamComponent({ jam, jamsContent }) {
                     }}>
                     Resources
                   </h2>
-  
+
                   <Box
                     sx={{
                       display: 'flex',
@@ -907,7 +948,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   </Box>
                 </>
               )}
-  
+
               <div sx={{ display: ['none', 'none', 'block'] }}>
                 <h2
                   sx={{
@@ -918,7 +959,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   }}>
                   Outline
                 </h2>
-  
+
                 <ul
                   style={{
                     paddingLeft: 16,
@@ -937,8 +978,8 @@ export default function JamComponent({ jam, jamsContent }) {
                               header === activeSection
                                 ? '#000'
                                 : passedSections?.includes(header)
-                                ? 'muted'
-                                : '#000',
+                                  ? 'muted'
+                                  : '#000',
                             textDecoration:
                               header === activeSection ? 'underline' : 'none'
                           }}>
@@ -954,7 +995,7 @@ export default function JamComponent({ jam, jamsContent }) {
         </Container>
       </>
     )
-  }else{
+  } else {
     return (
       <>
         <Meta
@@ -965,7 +1006,7 @@ export default function JamComponent({ jam, jamsContent }) {
           image={jam.thumbnail}
           color="#ec3750"
         />
-  
+
         <Header
           query={query}
           setQuery={setQuery}
@@ -973,7 +1014,7 @@ export default function JamComponent({ jam, jamsContent }) {
           back={jam.batch == null ? '/' : '/batch/' + jam.batch} // if no batch, back is index, otherwise it is batch page
         />
         <div sx={{ height: '5rem' }}></div>
-  
+
         {/* <Container as="nav" sx={{
           maxWidth:"80rem",
           position:"sticky",
@@ -1035,14 +1076,29 @@ export default function JamComponent({ jam, jamsContent }) {
             GH
           </button>
         </Container> */}
-  
+
         {/* So what this code does is checks if batch is null or not. upon null renders the singles breadcrumbs ver, upon non null renders the batch ver */}
-        
-        <Container style={{position: "fixed", bottom: 32, left: 16}}>
-          <Link href={jam.batch == null ? (`https://github.com/hackclub/jams/edit/main/jams/singles/${jam.slug}/en-US.md`) : (`https://github.com/hackclub/jams/edit/main/jams/batches/${jam.batch}/${jam.part}/en-US.md`)} style={{backgroundColor: "#fff", fontSize: 16, color: "#993CCF", border: "1px solid #993CCF", borderRadius: 32, padding: "12px 24px", textDecoration: "none"}}>Edit on GitHub</Link>
+
+        <Container style={{ position: 'fixed', bottom: 32, left: 16 }}>
+          <Link
+            href={
+              jam.batch == null
+                ? `https://github.com/hackclub/jams/edit/main/jams/singles/${jam.slug}/en-US.md`
+                : `https://github.com/hackclub/jams/edit/main/jams/batches/${jam.batch}/${jam.part}/en-US.md`
+            }
+            style={{
+              backgroundColor: '#fff',
+              fontSize: 16,
+              color: '#993CCF',
+              border: '1px solid #993CCF',
+              borderRadius: 32,
+              padding: '12px 24px',
+              textDecoration: 'none'
+            }}>
+            Edit on GitHub
+          </Link>
         </Container>
-  
-  
+
         {jam.batch != null ? (
           <Container
             sx={{ p: '0px 1rem' }}
@@ -1083,9 +1139,13 @@ export default function JamComponent({ jam, jamsContent }) {
             )}
           </Container>
         ) : (
-          <Container sx={{ p: '1rem' }} style={{ maxWidth: '64rem !important' }}>
+          <Container
+            sx={{ p: '1rem' }}
+            style={{ maxWidth: '64rem !important' }}>
             {/* Structure: root / jam name */}
-            <Link href="/" sx={{ color: '#993CCF', textDecoration: 'underline' }}>
+            <Link
+              href="/"
+              sx={{ color: '#993CCF', textDecoration: 'underline' }}>
               jam
             </Link>{' '}
             /{' '}
@@ -1096,7 +1156,7 @@ export default function JamComponent({ jam, jamsContent }) {
             </Link>
           </Container>
         )}
-  
+
         <Container
           as="main"
           sx={{
@@ -1136,21 +1196,30 @@ export default function JamComponent({ jam, jamsContent }) {
                   borderRadius: '24px',
                   overflow: 'hidden'
                 }}>
-                if(true){
-                  <iframe width="560" height="315" src={jam.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                }else{
-                  <video
-                  style={{
-                    width: '100%',
-                    borderRadius: '0px 0px 24px 24px',
-                    aspectRatio: '16/9',
-                    backgroundColor: '#000'
-                  }}
-                  controls
-                  src={jam.video}
-                 />
+                if(true)
+                {
+                  <iframe
+                    width="560"
+                    height="315"
+                    src={jam.video}
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 }
-                
+                else
+                {
+                  <video
+                    style={{
+                      width: '100%',
+                      borderRadius: '0px 0px 24px 24px',
+                      aspectRatio: '16/9',
+                      backgroundColor: '#000'
+                    }}
+                    controls
+                    src={jam.video}
+                  />
+                }
               </div>
             )}
             {jam.presentationPDF != '' && jam.video != '' && (
@@ -1251,9 +1320,9 @@ export default function JamComponent({ jam, jamsContent }) {
                 )}
               </Box>
             )}
-  
+
             <Box style={{ marginTop: 8 }}>
-            <Badge
+              <Badge
                 key="keywordFeature"
                 mr={2}
                 sx={{
@@ -1266,7 +1335,7 @@ export default function JamComponent({ jam, jamsContent }) {
                 color="#fff">
                 {jam?.keywords.split(', ')[0]}
               </Badge>
-  
+
               <Badge
                 key="timeFeature"
                 mr={2}
@@ -1284,7 +1353,7 @@ export default function JamComponent({ jam, jamsContent }) {
             <h1 sx={{ mt: '0.5rem', marginBottom: 0, lineHeight: '2.2rem' }}>
               {jam.title}
             </h1>
-  
+
             <Link
               href={`https://github.com/${jam.contributor}`}
               target="_blank"
@@ -1313,7 +1382,7 @@ export default function JamComponent({ jam, jamsContent }) {
                 </span>
               </div>
             </Link>
-  
+
             {/* <Box sx={{ pt: 16 }}>
               {finishedProjects.length > 0 ? (
                 <div>
@@ -1349,70 +1418,74 @@ export default function JamComponent({ jam, jamsContent }) {
                 </a>
               ))}
             </Box> */}
-  
+
             <Box
-              sx={{ fontSize: 18, lineHeight: '200%', pb: [32, 32], mt: '1rem' }}>
+              sx={{
+                fontSize: 18,
+                lineHeight: '200%',
+                pb: [32, 32],
+                mt: '1rem'
+              }}>
               <MDXRemote components={mdxComponents} {...jam.source} />
             </Box>
             {jam.slug !== 'bakebuild' && (
-        <div
-          style={{
-            border: '2px solid rgba(0, 0, 0, 0.25)',
-            boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
-            backgroundColor: '#E1E6EC',
-            display: 'flex',
-            flexDirection: 'column',
-            padding: '24px 24px',
-            borderRadius: '16px'
-          }}>
-          <Text
-            sx={{
-              color: '#993CCF',
-              fontSize: 32,
-              lineHeight: 1.125,
-              fontWeight: 700
-            }}>
-            You finished the Jam. <br />
-            Congratulations! 🎉 🎉 🎉
-          </Text>
+              <div
+                style={{
+                  border: '2px solid rgba(0, 0, 0, 0.25)',
+                  boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
+                  backgroundColor: '#E1E6EC',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  padding: '24px 24px',
+                  borderRadius: '16px'
+                }}>
+                <Text
+                  sx={{
+                    color: '#993CCF',
+                    fontSize: 32,
+                    lineHeight: 1.125,
+                    fontWeight: 700
+                  }}>
+                  You finished the Jam. <br />
+                  Congratulations! 🎉 🎉 🎉
+                </Text>
 
-          <Text sx={{ mt: 3 }}>
-            Share your final project with the community
-          </Text>
-          <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
-            <Text>Project Name</Text>
-            <Input
-              placeholder={'MarshaMellow - SwampLofiAnimation'}
-              value={projectName}
-              onChange={e => setProjectName(e.target.value)}
-            />
-          </Box>
-          <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
-            <Text>Project URL</Text>
-            <Input
-              placeholder={'https://swamplofi.marshamellow.repl.co/'}
-              value={submissionURL}
-              onChange={e => setSubmissionURL(e.target.value)}
-            />
-          </Box>
+                <Text sx={{ mt: 3 }}>
+                  Share your final project with the community
+                </Text>
+                <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
+                  <Text>Project Name</Text>
+                  <Input
+                    placeholder={'MarshaMellow - SwampLofiAnimation'}
+                    value={projectName}
+                    onChange={e => setProjectName(e.target.value)}
+                  />
+                </Box>
+                <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
+                  <Text>Project URL</Text>
+                  <Input
+                    placeholder={'https://swamplofi.marshamellow.repl.co/'}
+                    value={submissionURL}
+                    onChange={e => setSubmissionURL(e.target.value)}
+                  />
+                </Box>
 
-          <Button
-            sx={{
-              marginTop: '24px',
-              borderRadius: '12px',
-              padding: '12px',
-              backgroundColor: '#993CCF',
-              width: ['100%', '100%', '50%']
-            }}
-            onClick={() => submitProject()}
-          >
-            Share Project with Community
-          </Button>
-          <p>{apiResponse}</p>
-        </div>
-      )}
+                <Button
+                  sx={{
+                    marginTop: '24px',
+                    borderRadius: '12px',
+                    padding: '12px',
+                    backgroundColor: '#993CCF',
+                    width: ['100%', '100%', '50%']
+                  }}
+                  onClick={() => submitProject()}>
+                  Share Project with Community
+                </Button>
+                <p>{apiResponse}</p>
+              </div>
+            )}
           </div>
-  
+
           <div sx={{ width: ['auto', 'auto', '20rem'], position: 'relative' }}>
             <div
               sx={{
@@ -1430,7 +1503,7 @@ export default function JamComponent({ jam, jamsContent }) {
                 }}>
                 Author
               </h2>
-  
+
               <div
                 sx={{
                   px: '1.25rem',
@@ -1472,14 +1545,14 @@ export default function JamComponent({ jam, jamsContent }) {
                         }}>
                         {jam.contributor}
                       </span>
-  
+
                       <Icon
                         glyph="github"
                         style={{ height: '20px', width: '20px' }}
                       />
                     </div>
                   </Link>
-  
+
                   {jam.contributorSlackID && (
                     <div sx={{ display: 'flex', gap: '0.75rem', mt: '0.1rem' }}>
                       <a
@@ -1514,7 +1587,10 @@ export default function JamComponent({ jam, jamsContent }) {
                           }}
                         />
                         <span
-                          style={{ textDecoration: 'none', lineHeight: '1rem' }}>
+                          style={{
+                            textDecoration: 'none',
+                            lineHeight: '1rem'
+                          }}>
                           Message on Slack
                         </span>
                       </a>
@@ -1522,7 +1598,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   )}
                 </div>
               </div>
-  
+
               {(jam.presentation ||
                 jam.video ||
                 jam.notes ||
@@ -1538,7 +1614,7 @@ export default function JamComponent({ jam, jamsContent }) {
                     }}>
                     Resources
                   </h2>
-  
+
                   <Box
                     sx={{
                       display: 'flex',
@@ -1668,7 +1744,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   </Box>
                 </>
               )}
-  
+
               <div sx={{ display: ['none', 'none', 'block'] }}>
                 <h2
                   sx={{
@@ -1679,7 +1755,7 @@ export default function JamComponent({ jam, jamsContent }) {
                   }}>
                   Outline
                 </h2>
-  
+
                 <ul
                   style={{
                     paddingLeft: 16,
@@ -1698,8 +1774,8 @@ export default function JamComponent({ jam, jamsContent }) {
                               header === activeSection
                                 ? '#000'
                                 : passedSections?.includes(header)
-                                ? 'muted'
-                                : '#000',
+                                  ? 'muted'
+                                  : '#000',
                             textDecoration:
                               header === activeSection ? 'underline' : 'none'
                           }}>
@@ -1716,6 +1792,4 @@ export default function JamComponent({ jam, jamsContent }) {
       </>
     )
   }
-
-  
 }

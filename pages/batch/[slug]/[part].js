@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
-import  serialize  from '@/components/mdSerializer'
+import serialize from '@/components/mdSerializer'
 import JamComponent from '@/components/JamComponent'
 
 function getJams(fs, directory) {
@@ -67,7 +67,7 @@ export async function getStaticPaths() {
 
   const paths = []
   batchNames.forEach(batchName => {
-    if (batchName.startsWith('.')) return;
+    if (batchName.startsWith('.')) return
     const batchDirectory = path.join(batchesDir, batchName)
     const partsDirectory = path.join(batchDirectory)
     const partsNames = fs

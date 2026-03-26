@@ -79,7 +79,7 @@ Now you can start writing the parts for your jam! For every part of your jam, cr
 
 ```markdown
 ---
-part: "part-#"
+part: 'part-#'
 batch: 'slug of the parent batch for this jam'
 totalParts: 'total number of parts in the jam'
 title: 'your title'

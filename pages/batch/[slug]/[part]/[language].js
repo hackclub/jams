@@ -5,11 +5,12 @@ import { serialize } from 'next-mdx-remote/serialize'
 import JamComponent from '@/components/JamComponent'
 
 function getLanguagesForPart(directory) {
-    const files = fs.readdirSync(directory);
-    // Assuming your languages follow the format 'xx-XX.md'
-    return files.filter(file => /^[a-z]{2}-[A-Z]{2}\.md$/.test(file)).map(file => file.replace('.md', ''));
-  }
-  
+  const files = fs.readdirSync(directory)
+  // Assuming your languages follow the format 'xx-XX.md'
+  return files
+    .filter(file => /^[a-z]{2}-[A-Z]{2}\.md$/.test(file))
+    .map(file => file.replace('.md', ''))
+}
 
 function getJams(fs, directory) {
   const filenames = fs.readdirSync(directory)
@@ -68,35 +69,34 @@ function getBatches(fs, directory) {
 }
 
 export async function getStaticPaths() {
-    const batchesDir = path.join(process.cwd(), 'jams', 'batches');
-    const batchNames = fs.readdirSync(batchesDir);
-  
-    const paths = [];
-    batchNames.forEach(batchName => {
-      if (batchName.startsWith('.')) return;
-      const batchDirectory = path.join(batchesDir, batchName);
-      const partsDirectory = path.join(batchDirectory);
-      const partsNames = fs
-        .readdirSync(partsDirectory)
-        .filter(part => part.startsWith('part'));
-  
-      partsNames.forEach(partName => {
-        const languages = getLanguagesForPart(path.join(partsDirectory, partName));
-        languages.forEach(language => {
-          paths.push({
-            params: {
-              slug: batchName,
-              part: partName,
-              language: language
-            }
-          });
-        });
-      });
-    });
-  
-    return { paths, fallback: false };
-  }
-  
+  const batchesDir = path.join(process.cwd(), 'jams', 'batches')
+  const batchNames = fs.readdirSync(batchesDir)
+
+  const paths = []
+  batchNames.forEach(batchName => {
+    if (batchName.startsWith('.')) return
+    const batchDirectory = path.join(batchesDir, batchName)
+    const partsDirectory = path.join(batchDirectory)
+    const partsNames = fs
+      .readdirSync(partsDirectory)
+      .filter(part => part.startsWith('part'))
+
+    partsNames.forEach(partName => {
+      const languages = getLanguagesForPart(path.join(partsDirectory, partName))
+      languages.forEach(language => {
+        paths.push({
+          params: {
+            slug: batchName,
+            part: partName,
+            language: language
+          }
+        })
+      })
+    })
+  })
+
+  return { paths, fallback: false }
+}
 
 export async function getStaticProps({ params }) {
   const partDirectory = path.join(

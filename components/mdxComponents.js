@@ -22,7 +22,7 @@ const mdxComponents = {
   pre: CodeBlock,
   inlineCode: InlineCode,
   h2: StepHeader,
-  blockquote: Blockquote,
+  blockquote: Blockquote
 }
 
 export default mdxComponents

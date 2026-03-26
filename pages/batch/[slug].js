@@ -159,7 +159,7 @@ export default function Page({ batch, params, jams }) {
 
     for (let jindex in concatenatedJamBatch) {
       let jam = concatenatedJamBatch[jindex]
-      if (!jam) continue;
+      if (!jam) continue
       this.add({
         title: jam.title,
         description: jam.description,

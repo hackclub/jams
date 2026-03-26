@@ -1,12 +1,5 @@
 import Header from '@/components/Header'
-import {
-  Box,
-  Image,
-  Badge,
-  Container,
-  Grid,
-  Text,
-} from 'theme-ui'
+import { Box, Image, Badge, Container, Grid, Text } from 'theme-ui'
 import Footer from '@/components/Footer'
 import PreviewCard from '@/components/PreviewCard'
 import { useEffect, useState, useRef } from 'react'
@@ -56,32 +49,34 @@ function getBatches(fs, directory) {
   return batchNames
     .map(batchName => {
       if (batchName.startsWith('.')) return null
-    const batchDirectory = path.join(directory, batchName)
-    const readMeFileContent = fs.readFileSync(
-      path.join(batchDirectory, 'readMe', 'en-US.md'),
-      'utf8'
-    )
-    const { data: readMeData, content: readMeContent } =
-      matter(readMeFileContent)
-
-    const partsDirectory = path.join(batchDirectory)
-    const partsNames = fs
-      .readdirSync(partsDirectory)
-      .filter(part => part.startsWith('part'))
-    partsNames.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-
-    const parts = partsNames.map(partName => {
-      const partContent = fs.readFileSync(
-        path.join(partsDirectory, partName, 'en-US.md'),
+      const batchDirectory = path.join(directory, batchName)
+      const readMeFileContent = fs.readFileSync(
+        path.join(batchDirectory, 'readMe', 'en-US.md'),
         'utf8'
       )
-      const { data, content } = matter(partContent)
+      const { data: readMeData, content: readMeContent } =
+        matter(readMeFileContent)
 
-      return {
-        ...data, // Spread the properties from the data object
-        content
-      }
-    })
+      const partsDirectory = path.join(batchDirectory)
+      const partsNames = fs
+        .readdirSync(partsDirectory)
+        .filter(part => part.startsWith('part'))
+      partsNames.sort((a, b) =>
+        a.localeCompare(b, undefined, { numeric: true })
+      )
+
+      const parts = partsNames.map(partName => {
+        const partContent = fs.readFileSync(
+          path.join(partsDirectory, partName, 'en-US.md'),
+          'utf8'
+        )
+        const { data, content } = matter(partContent)
+
+        return {
+          ...data, // Spread the properties from the data object
+          content
+        }
+      })
 
       return {
         ...readMeData, // Spread the properties from the readMeData object
@@ -284,39 +279,35 @@ function Slides({ router, initialFeatures }) {
                   color="#993CCF">
                   {jam.difficulty}
                 </Badge>
-                
+
                 <Badge
                   key="timeFeature"
                   mr={2}
                   sx={{
-                  cursor: 'pointer',
-                  backgroundColor: '#fff',
-                  marginBottom: '8px',
-                  fontSize: ['14px', 'auto']
-                  
+                    cursor: 'pointer',
+                    backgroundColor: '#fff',
+                    marginBottom: '8px',
+                    fontSize: ['14px', 'auto']
                   }} // Adjust '4px' as needed
                   variant="outline"
                   color="#993CCF">
                   {jam.timeEstimate}
                 </Badge>
-                
-                
+
                 <Badge
-                    key="hotFeature"
-                    ml={'20%'}
-                    sx={{
-                      cursor: 'pointer',
-                      display: ['none', 'block'],
-                      backgroundColor: '#993CCF',
-                      marginBottom: '8px',
-                      fontSize: ['14px', 'auto']
-                    }} // Adjust '4px' as needed
-                    variant="outline"
-                    color="#FFFFFF">
-                    {"Trending"}
-                  </Badge>
-                
-                
+                  key="hotFeature"
+                  ml={'20%'}
+                  sx={{
+                    cursor: 'pointer',
+                    display: ['none', 'block'],
+                    backgroundColor: '#993CCF',
+                    marginBottom: '8px',
+                    fontSize: ['14px', 'auto']
+                  }} // Adjust '4px' as needed
+                  variant="outline"
+                  color="#FFFFFF">
+                  {'Trending'}
+                </Badge>
               </Box>
 
               <div
@@ -487,18 +478,17 @@ export default function Index(props) {
   const batches =
     query.trim() == '' // if query is blank
       ? props.jamsContent.batches.filter(batch => {
-          
-        if (batch.keywords.split(', ').includes('Beta')) {
-          return false
-        }
-        if (
-          !selectedCategories.some(keyword =>
-            batch.keywords.split(', ').includes(keyword)
-          ) &&
-          selectedCategories != ''
-        ) {
-          return false
-        }
+          if (batch.keywords.split(', ').includes('Beta')) {
+            return false
+          }
+          if (
+            !selectedCategories.some(keyword =>
+              batch.keywords.split(', ').includes(keyword)
+            ) &&
+            selectedCategories != ''
+          ) {
+            return false
+          }
 
           // otherwise use lunr and then filter additionally
           // additional false conditions:
@@ -524,77 +514,50 @@ export default function Index(props) {
 
           return true
         }) // hasnt started search yet, return all
-      : searchLunr(query, props.jamsContent.batches.filter(batch => {
-          
-        if (batch.keywords.split(', ').includes('Beta')) {
-          return false
-        }
-        if (
-          !selectedCategories.some(keyword =>
-            batch.keywords.split(', ').includes(keyword)
-          ) &&
-          selectedCategories != ''
-        ) {
-          return false
-        }
+      : searchLunr(
+          query,
+          props.jamsContent.batches.filter(batch => {
+            if (batch.keywords.split(', ').includes('Beta')) {
+              return false
+            }
+            if (
+              !selectedCategories.some(keyword =>
+                batch.keywords.split(', ').includes(keyword)
+              ) &&
+              selectedCategories != ''
+            ) {
+              return false
+            }
 
-          // otherwise use lunr and then filter additionally
-          // additional false conditions:
-          if (
-            !selectedCategories.some(keyword =>
-              batch.keywords.split(', ').includes(keyword)
-            ) &&
-            selectedCategories != ''
-          ) {
-            return false
-          }
+            // otherwise use lunr and then filter additionally
+            // additional false conditions:
+            if (
+              !selectedCategories.some(keyword =>
+                batch.keywords.split(', ').includes(keyword)
+              ) &&
+              selectedCategories != ''
+            ) {
+              return false
+            }
 
-          if (
-            batch.difficulty.toLowerCase() != difficulty &&
-            difficulty != ''
-          ) {
-            return false
-          }
+            if (
+              batch.difficulty.toLowerCase() != difficulty &&
+              difficulty != ''
+            ) {
+              return false
+            }
 
-          if (batch.timeEstimate != time && time != '') {
-            return false
-          }
+            if (batch.timeEstimate != time && time != '') {
+              return false
+            }
 
-          return true
-        })
-        
-        
+            return true
+          })
         )
 
   const jams =
     query.trim() == '' // if query is blank
       ? props.jamsContent.singles.filter(jam => {
-        // otherwise use lunr and then filter additionally
-        // additional false conditions:
-        if (jam.keywords.split(', ').includes('Beta')) {
-          return false
-        }
-        if (
-          !selectedCategories.some(keyword =>
-            jam.keywords.split(', ').includes(keyword)
-          ) &&
-          selectedCategories != ''
-        ) {
-          return false
-        }
-
-        if (jam.difficulty.toLowerCase() != difficulty && difficulty != '') {
-          return false
-        }
-
-        if (jam.timeEstimate != time && time != '') {
-          return false
-        }
-
-        return true
-      }) // hasnt started search yet, return all
-      : searchLunr(query, props.jamsContent.singles
-        .filter(jam => {
           // otherwise use lunr and then filter additionally
           // additional false conditions:
           if (jam.keywords.split(', ').includes('Beta')) {
@@ -618,7 +581,37 @@ export default function Index(props) {
           }
 
           return true
-        })
+        }) // hasnt started search yet, return all
+      : searchLunr(
+          query,
+          props.jamsContent.singles.filter(jam => {
+            // otherwise use lunr and then filter additionally
+            // additional false conditions:
+            if (jam.keywords.split(', ').includes('Beta')) {
+              return false
+            }
+            if (
+              !selectedCategories.some(keyword =>
+                jam.keywords.split(', ').includes(keyword)
+              ) &&
+              selectedCategories != ''
+            ) {
+              return false
+            }
+
+            if (
+              jam.difficulty.toLowerCase() != difficulty &&
+              difficulty != ''
+            ) {
+              return false
+            }
+
+            if (jam.timeEstimate != time && time != '') {
+              return false
+            }
+
+            return true
+          })
         )
 
   const desiredSlugs = ['ai-travel', 'components-in-a-cap', 'voxel-animation']
@@ -794,7 +787,7 @@ export default function Index(props) {
                   {...fallFeature}
                   redirect={'/batch/' + fallFeature.slug}
                   isSortable={true}
-                  isHot = {true}
+                  isHot={true}
                   currentDifficulty={difficulty}
                   currentTime={time}
                   currentCategories={selectedCategories}

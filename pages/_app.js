@@ -6,19 +6,18 @@ import '@hackclub/icons'
 import '@hackclub/theme/fonts/reg.css'
 import '@hackclub/theme/fonts/reg-bold.css'
 import '@/styles/globals.scss'
-import * as FullStory from '@fullstory/browser';
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
-import { useEffect } from 'react';
-
+import * as FullStory from '@fullstory/browser'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/react'
+import { useEffect } from 'react'
 
 export default function App({
   Component,
   pageProps: { session, ...pageProps }
 }) {
   useEffect(() => {
-    FullStory.init({ orgId: 'ARN0J'});
-  }, []);
+    FullStory.init({ orgId: 'ARN0J' })
+  }, [])
   return (
     <ThemeUIProvider
       theme={{

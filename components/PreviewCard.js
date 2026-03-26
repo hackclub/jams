@@ -49,7 +49,7 @@ export default function PreviewCard({
         {...props}>
         <Box sx={{ borderRadius: '16px' }}>
           <Box
-          onClick={() => console.log(part)}
+            onClick={() => console.log(part)}
             sx={{
               zIndex: 1,
               marginLeft: '8px',
@@ -61,12 +61,16 @@ export default function PreviewCard({
             {(isHovered || (part != 0 && part != undefined)) && (
               <Box
                 style={{
-                  marginBottom: isHovered || (part != 0 && part != undefined) || parts?.length ? '-48px' : '0px',
+                  marginBottom:
+                    isHovered ||
+                    (part != 0 && part != undefined) ||
+                    parts?.length
+                      ? '-48px'
+                      : '0px',
                   paddingTop: '8px',
                   zIndex: 2
                 }}>
-
-{(parts?.length != 0 && parts?.length != undefined) && (
+                {parts?.length != 0 && parts?.length != undefined && (
                   <Badge
                     key="partFeature"
                     mr={2}
@@ -80,7 +84,7 @@ export default function PreviewCard({
                     color="#fff">
                     {parts?.length} Parts
                   </Badge>
-                )}        
+                )}
 
                 {part != '0' && (
                   <Badge
@@ -97,48 +101,55 @@ export default function PreviewCard({
                     Part {part.split('-')[1]}
                   </Badge>
                 )}
-            {isHovered && (
-                <Badge
-                  key="keywordFeature"
-                  mr={2}
-                  sx={{
-                    cursor: 'pointer',
-                    backgroundColor: currentCategories.includes(keywords.split(', ')[0])
-                      ? '#993CCF'
-                      : '#fff', // indicates BG color
-                    marginBottom: '8px',
-                    fontSize: ['14px', 'auto']
-                  }}
-                  variant="outline"
-                  onClick={() => {
-                    if (isSortable) {
-                      if (currentCategories.includes(keywords.split(', ')[0])) {
-                        console.log('Removing ' + keywords.split(', ')[0] + ' from Sort')
-                        modifyCategories(
-                          currentCategories.filter(
-                            current => current !== keywords.split(', ')[0]
+                {isHovered && (
+                  <Badge
+                    key="keywordFeature"
+                    mr={2}
+                    sx={{
+                      cursor: 'pointer',
+                      backgroundColor: currentCategories.includes(
+                        keywords.split(', ')[0]
+                      )
+                        ? '#993CCF'
+                        : '#fff', // indicates BG color
+                      marginBottom: '8px',
+                      fontSize: ['14px', 'auto']
+                    }}
+                    variant="outline"
+                    onClick={() => {
+                      if (isSortable) {
+                        if (
+                          currentCategories.includes(keywords.split(', ')[0])
+                        ) {
+                          console.log(
+                            'Removing ' + keywords.split(', ')[0] + ' from Sort'
                           )
-                        )
-                      } else {
-                        console.log('Adding ' + keywords.split(', ')[0])
-                        const updatedCategories = [
-                          ...currentCategories,
-                          keywords.split(', ')[0]
-                        ]
-                        console.log(updatedCategories)
-                        modifyCategories(updatedCategories)
+                          modifyCategories(
+                            currentCategories.filter(
+                              current => current !== keywords.split(', ')[0]
+                            )
+                          )
+                        } else {
+                          console.log('Adding ' + keywords.split(', ')[0])
+                          const updatedCategories = [
+                            ...currentCategories,
+                            keywords.split(', ')[0]
+                          ]
+                          console.log(updatedCategories)
+                          modifyCategories(updatedCategories)
+                        }
                       }
-                    }
-                  }}
-                  color={
-                    currentCategories.includes(keywords.split(', ')[0])
-                      ? '#FFFFFF'
-                      : '#993CCF'
-                  } //indicates text color
-                >
-                  {keywords.split(', ')[0]}
-                </Badge>)}
-                {(part === 0 && isHovered) && (
+                    }}
+                    color={
+                      currentCategories.includes(keywords.split(', ')[0])
+                        ? '#FFFFFF'
+                        : '#993CCF'
+                    } //indicates text color
+                  >
+                    {keywords.split(', ')[0]}
+                  </Badge>
+                )}
+                {part === 0 && isHovered && (
                   <Badge
                     key="difficultyFeature"
                     mr={2}
@@ -171,7 +182,7 @@ export default function PreviewCard({
                     {difficulty}
                   </Badge>
                 )}
-                {(!parts && isHovered) && (
+                {!parts && isHovered && (
                   <Badge
                     key="timeFeature"
                     mr={2}

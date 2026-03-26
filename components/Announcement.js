@@ -21,28 +21,27 @@ const Announcement = ({
     as={props.href ? 'a' : 'div'}
     variant="interactive"
     sx={{
-      variant: 'cards.primary',
-      mx: 'auto',
-      maxWidth: 'narrow',
-      width: '100%',
-      textAlign: 'left',
-      textDecoration: 'none',
-      lineHeight: 'caption',
-      display: 'flex',
-      alignItems: 'center',
-      p: [2, 2],
-      px: 3,
-      mb: [3, 4],
-      mt: null,
-      transform: 'scale(1)',
+      'variant': 'cards.primary',
+      'mx': 'auto',
+      'maxWidth': 'narrow',
+      'width': '100%',
+      'textAlign': 'left',
+      'textDecoration': 'none',
+      'lineHeight': 'caption',
+      'display': 'flex',
+      'alignItems': 'center',
+      'p': [2, 2],
+      'px': 3,
+      'mb': [3, 4],
+      'mt': null,
+      'transform': 'scale(1)',
       '@media (prefers-reduced-motion: no-preference)': {
         animation: `${unfold} 0.5s ease-out`
       },
-      svg: { flexShrink: 'none' },
+      'svg': { flexShrink: 'none' },
       ...sx
     }}
-    {...props}
-  >
+    {...props}>
     {iconLeft && (
       <Icon
         glyph={iconLeft}
@@ -51,11 +50,10 @@ const Announcement = ({
     )}
     <Text
       as="p"
-      sx={{ flex: '1 1 auto', strong: { display: ['inline', 'block'] } }}
-    >
+      sx={{ flex: '1 1 auto', strong: { display: ['inline', 'block'] } }}>
       <strong>{copy}</strong>
       {caption && (
-        <Text as="span" variant="caption" color="secondary" sx={{pl: '.5em'}}>
+        <Text as="span" variant="caption" color="secondary" sx={{ pl: '.5em' }}>
           {caption}
         </Text>
       )}
