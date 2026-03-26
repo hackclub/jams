@@ -16,7 +16,7 @@
     "@fullstory/browser": "^2.0.8",
     "@hackclub/icons": "^0.2.1",
     "@hackclub/meta": "^1.1.32",
-    "@hackclub/theme": "^0.3.3",
+    "@hackclub/theme": "^1.1.0",
     "@mdx-js/mdx": "^3.0.0",
     "@react-pdf-viewer/core": "^3.12.0",
     "@theme-ui/core": "^0.16.0",
