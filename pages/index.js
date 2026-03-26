@@ -2,16 +2,12 @@ import Header from '@/components/Header'
 import {
   Box,
   Image,
-  Flex,
   Badge,
   Container,
   Grid,
-  Heading,
   Text,
-  Card
 } from 'theme-ui'
 import Footer from '@/components/Footer'
-import SearchControls from '@/components/Search'
 import PreviewCard from '@/components/PreviewCard'
 import { useEffect, useState, useRef } from 'react'
 import Icon from '@hackclub/icons'
@@ -99,7 +95,7 @@ function getBatches(fs, directory) {
 function Slides({ router, initialFeatures }) {
   // const [active, setActive] = useState(Math.floor(initialFeatures.length / 2))
 
-  const [features, setFeatures] = useState(initialFeatures)
+  const [features] = useState(initialFeatures)
   const [active, setActive] = useState(null)
   const containerRef = useRef(null)
   const cardsRef = useRef([])
@@ -447,12 +443,6 @@ export default function Index(props) {
   const [difficulty, setDifficulty] = useState('')
   const [time, setTime] = useState('')
   const [viewed, setViewed] = useState([])
-
-  const [filter, setFilter] = useState('')
-  const [language, setLanguage] = useState('')
-  const [timeEstimate, settimeEstimate] = useState('')
-  const [selected, setSelected] = useState('')
-
   const router = useRouter()
 
   const precision = 0.4 // indicates lunr precision

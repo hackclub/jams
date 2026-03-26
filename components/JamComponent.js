@@ -1,7 +1,5 @@
-import { useEffect, useState, useRef } from 'react'
-import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 import Icon from '@hackclub/icons'
-import { Link as ScrollLink, Element } from 'react-scroll'
 import PresentationSlider from '@/components/presentationSlider'
 import BatchPartSlider from '@/components/BatchPartSlider'
 import { MDXRemote } from 'next-mdx-remote'
@@ -78,17 +76,16 @@ export default function JamComponent({ jam, jamsContent }) {
     fetchSubmissions()
   }, [])
 
-  const router = useRouter()
   const [apiResponse, setApiResponse] = useState('')
   const [submissionURL, setSubmissionURL] = useState('')
   const [projectName, setProjectName] = useState('')
 
   const [presentationSelected, setPresentationSelected] = useState(true)
-  const [finishedProjects, setFinishedProjects] = useState([])
+  const [setFinishedProjects] = useState([])
 
   const [activeSection, setActiveSection] = useState()
   const [passedSections, setPassedSections] = useState([])
-  const [upcomingSections, setUpcomingSections] = useState([])
+  const [setUpcomingSections] = useState([])
 
   const handleSectionClick = sectionId => {
     // router.push(`#${sectionId}`, undefined, { scroll: false });

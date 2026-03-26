@@ -1,7 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { Document, Page, pdfjs } from 'react-pdf'
-import Icon from '@hackclub/icons'
-import { Container, Text, Link, Box, Grid, Badge } from 'theme-ui'
+import React, { useState, useEffect } from 'react'
+import { Container, Link } from 'theme-ui'
 
 const BatchPartSlider = ({ jam, currentPart, maxParts }) => {
   /* jam is the jam object */

@@ -28,26 +28,14 @@ export const CodeBlock = ({ children, className }) => {
 
 
   useEffect(() => {
-    const element = document.getElementById('Button');
-    const parent = document.getElementById('Flex');
     hljs.highlightElement(codeRef.current)
-    
     if(preRef != null){
-      
      if(isOverflown(preRef.current)){
-
       updateClose('Close')
       updateExpand('Expand'  )
-
      }
     }
-    
-    
-  
-
   }, [children, language, close_text, expand_text])
-  
- 
     //console.log(isOverflowing)
     return (
       
@@ -80,23 +68,11 @@ export const CodeBlock = ({ children, className }) => {
           }}
           id = {'ref'}
           ref = {preRef}
-          
           >
-        
               <code id={'code'} ref={codeRef} className={language}>
                 {children}
               </code>
-            
-            
-          
         </pre>
-        
       </Flex>
     )
-
-    
   }
-  
-
-
-

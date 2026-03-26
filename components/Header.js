@@ -3,7 +3,6 @@ import Icon from '@hackclub/icons'
 import { FiGithub, FiArrowLeft } from 'react-icons/fi'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { number } from 'prop-types'
 
 /** @jsxImportSource theme-ui */
 
@@ -17,7 +16,7 @@ export default function Header({
   const [scrollPosition, setScrollPosition] = useState(0)
   const [searching, setSearching] = useState(false)
   const [numberAvailable, setNumberAvailable] = useState(5)
-  const [showMoreVisible, setShowMoreVisible] = useState(false)
+  const [setShowMoreVisible] = useState(false)
 
   const fruits = ['raspberry', 'blueberry']
   const [placeholderText, setPlaceholderText] = useState('')
