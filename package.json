@@ -19,7 +19,7 @@
     "@mdx-js/mdx": "^3.0.0",
     "@react-pdf-viewer/core": "^3.12.0",
     "@theme-ui/core": "^0.16.0",
-    "@vercel/speed-insights": "^1.3.1",
+    "@vercel/speed-insights": "^2.0.0",
     "algoliasearch": "^4.19.1",
     "fast-levenshtein": "^3.0.0",
     "freezeframe": "^5.0.2",
