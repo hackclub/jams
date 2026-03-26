@@ -22,7 +22,7 @@
     "@theme-ui/core": "^0.16.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "algoliasearch": "^4.19.1",
+    "algoliasearch": "^5.50.0",
     "fast-levenshtein": "^3.0.0",
     "freezeframe": "^5.0.2",
     "fs": "^0.0.1-security",
