@@ -130,7 +130,7 @@ The current code works, but the player's movement is rather slow. We can make so
 To make the camera follow the Player as it walks through the game, add a Camera2D node under Player. Edit its position in the main view so it is centered on the player. You can also add a cool camera lag effect in Inspector, enabling Position Smoothing, and setting the speed to be around 7. The lower the speed, the more camera lag there. 
 ![camera](https://cdn.hackclub.com/019d2a8a-a460-75a8-877e-fd11a3f5b9e7/Add%20Camera.gif)
 
-### 12. Congrats!
+### 12. Congrats
 
 The base of your platformer game is finished! You can run the game and see.
 
@@ -140,9 +140,9 @@ Now that you have all the base pieces, it's time to customize your game! Pick a 
 
 ### 1. Change Player, Background, and Tileset
 
-You can draw your own player, background, and tileset image, or also find assets online. 
+You can draw your own player, background, and tileset image, or also find assets online.
 
-### 2. Add more!
+### 2. Add more
 
 Some ideas include:
 
@@ -154,34 +154,35 @@ Some ideas include:
 
 ### Need inspiration?
 
-Check out the awesome games that Hack Clubbers created as part of Jumpstart in the past! [Here](http://v2.jumpstart.hackclub.com/games/index.html).
-![v2games](https://hc-cdn.hel1.your-objectstorage.com/s/v3/513a185633e1be49_v2gamse.gif)
+Check out the [awesome games](http://v2.jumpstart.hackclub.com/games/index.html) that Hack Clubbers created as part of Jumpstart in the past!
+
+![v2games](https://cdn.hackclub.com/019d2aaa-30ce-713b-9fd6-4d80456f00b0/v2gamse.gif)
 
 ## Publish on Itch.io
 
-Once you're done buildling you game, it's time to upload it online so other people can experience it! Itch.io is a popular platform where games are shared. 
+Once you're done buildling you game, it's time to upload it online so other people can experience it! Itch.io is a popular platform where games are shared.
 
 ### Exporting from Godot
 
 In the top bar, go to Projects, Export, Add, Web. Then, Manage Export Templates, Download and Install. When it is down installing, go back to Export, select the Web preset and click Export Project. Make a folder called Exports and save the index.index.html to it. In your File Explorer, compress all the contents in the Export folder into a .zip. Name it your-game-web.zip.
 
-### Publish on Itch.io
+### Publishing
 
 Go to [itch.io](https://itch.io/) and make an account. In Itch.io's dashboard, click Create New Project. Title it, add a description. For Kind of Project, choose HTML. Upload the .zip file you made. Check the This file will be played in the browser box. Change Viewport Dimensions to the ones in Godot that you can find by going to Project, Project Settings, and Window.
 
-Check the Fullscreen button and the SharedArrayBuffersupport box. Add tags, a cover image, and anything else you want. You can also edit the theme (colors and font) on your game page. 
+Check the Fullscreen button and the SharedArrayBuffersupport box. Add tags, a cover image, and anything else you want. You can also edit the theme (colors and font) on your game page.
 
-### *IMPORTANT* 
+### *IMPORTANT*
 
 You need to Save the page before making it Public. It is currently a Draft, so click Save & view page, then go back, and select Public under Visibility and Access. Make sure your itch.io page is public!!
 
 Finally, you can share your game page's url for others to play. If you make updates in Godot, you just need to reupload a new .zip.
 
-## Submit your Game!
+## Submit your Game
 
 CONGRATULATIONS!! You've built an AMAZING game in Godot.
 
-### Submission Checklist!
+### Submission Checklist
 
 Make sure that:
 
