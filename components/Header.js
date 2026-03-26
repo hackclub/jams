@@ -16,7 +16,7 @@ export default function Header({
   const [scrollPosition, setScrollPosition] = useState(0)
   const [searching, setSearching] = useState(false)
   const [numberAvailable, setNumberAvailable] = useState(5)
-  const [setShowMoreVisible] = useState(false)
+  const [showMoreVisible, setShowMoreVisible] = useState(false)
 
   const fruits = ['raspberry', 'blueberry']
   const [placeholderText, setPlaceholderText] = useState('')

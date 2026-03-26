@@ -1,4 +1,5 @@
 import { Box, Text, Badge, Image } from 'theme-ui'
+import { useState, useRef } from 'react'
 import dynamic from 'next/dynamic'
 
 const ReactFreezeframe = dynamic(() => import('react-freezeframe'), {
@@ -28,6 +29,16 @@ export default function PreviewCard({
   modifyCategories,
   ...props
 }) {
+  const freezeFrame = useRef()
+  const [isHovered, setIsHovered] = useState(false)
+
+  const handleMouseEnter = () => {
+    setIsHovered(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsHovered(false)
+  }
 
   return (
     <>

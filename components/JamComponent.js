@@ -81,11 +81,11 @@ export default function JamComponent({ jam, jamsContent }) {
   const [projectName, setProjectName] = useState('')
 
   const [presentationSelected, setPresentationSelected] = useState(true)
-  const [setFinishedProjects] = useState([])
+  const [finishedProjects, setFinishedProjects] = useState([])
 
   const [activeSection, setActiveSection] = useState()
   const [passedSections, setPassedSections] = useState([])
-  const [setUpcomingSections] = useState([])
+  const [upcomingSections, setUpcomingSections] = useState([])
 
   const handleSectionClick = sectionId => {
     // router.push(`#${sectionId}`, undefined, { scroll: false });
