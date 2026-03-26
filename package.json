@@ -46,7 +46,7 @@
     "react-scroll": "^1.8.9",
     "react-syntax-highlighter": "^16.1.1",
     "remark-gfm": "^4.0.0",
-    "theme-ui": "^0.16.0"
+    "theme-ui": "^0.17.4"
   },
   "devDependencies": {
     "eslint": "9",
