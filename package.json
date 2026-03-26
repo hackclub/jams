@@ -34,7 +34,7 @@
     "next": "^16.2.1",
     "next-mdx-remote": "^6.0.0",
     "nprogress": "^0.2.0",
-    "pdfjs-dist": "^3.8.162",
+    "pdfjs-dist": "^5.5.207",
     "prop-types": "^15.8.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
