@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState, useLayoutEffect} from 'react'
+import React, { useEffect, useRef, useState} from 'react'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/github-dark.css'
-import { Box, Button, Flex } from 'theme-ui'
+import { Button, Flex } from 'theme-ui'
 
 
 function isOverflown(element) {
@@ -9,6 +9,12 @@ function isOverflown(element) {
   console.log(element.clientHeight)
   return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
  }
+export const InlineCode = ({ children }) => (
+  <code style={{ background: 'rgba(135,131,120,0.15)', borderRadius: '3px', padding: '0.2em 0.4em', fontSize: '85%' }}>
+    {children}
+  </code>
+)
+
 export const CodeBlock = ({ children, className }) => {
   const codeRef = useRef(null)
   const preRef = useRef(null)
