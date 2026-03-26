@@ -8,6 +8,7 @@ import '@hackclub/theme/fonts/reg-bold.css'
 import '@/styles/globals.scss'
 import * as FullStory from '@fullstory/browser';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 import { useEffect } from 'react';
 
 
@@ -74,6 +75,7 @@ export default function App({
       />
       <Component {...pageProps} />
       <SpeedInsights />
+      <Analytics />
     </ThemeUIProvider>
   )
 }
