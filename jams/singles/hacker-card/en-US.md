@@ -3,17 +3,17 @@ title: 'Make your own PCB Hacker Card'
 description: Let's build a business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
 contributor: 'maggie-j-liu'
 contributorSlackID: U026XSMKEDC
-thumbnail: 'https://cloud-r8rjrxk4j-hack-club-bot.vercel.app/0000hacker_card_jam_thumbnail__1__50.webp'
+thumbnail: 'https://cdn.hackclub.com/019d2a9c-2b04-75a5-9dbe-dca14b0452d5/000hacker_card_jam_thumbnail__1__50.webp'
 timeEstimate: '1 Hour'
 difficulty: 'Beginner'
 keywords: 'Hardware, PCB, EasyEDA, NFC, business card, OnBoard'
 language: 'EasyEDA'
 presentation: 'https://www.figma.com/proto/0ucrvtjExgBSEJ6WkTvegZ/hacker-card-jam?type=design&node-id=1-4&t=f8tg0SGZ0aMs0SFo-0&scaling=contain&page-id=0%3A1'
 presentationPlay: 'https://www.figma.com/proto/0ucrvtjExgBSEJ6WkTvegZ/hacker-card-jam?type=design&node-id=1-4&t=f8tg0SGZ0aMs0SFo-0&scaling=contain&page-id=0%3A1'
-presentationPDF: 'https://cloud-4gfgew7yj-hack-club-bot.vercel.app/00hacker_card_jam-min.pdf'
+presentationPDF: 'https://cdn.hackclub.com/019d2a9b-c6f1-75e3-8e1b-1f4fbe630250/0hacker_card_jam-min.pdf'
 notes: ''
 poster: 'https://github.com/hackclub/posters#:~:text=%40Krishna%20Bansal-,Download,-Go%20to%20Figma'
-video: 'https://cloud-baw5pw456-hack-club-bot.vercel.app/0build_a_circuit_board_with_maggie.mp4'
+video: 'https://cdn.hackclub.com/019d2a9d-4afc-7eb9-9d6d-a6337d1795e0/Build%20a%20Circuit%20Board%20with%20Maggie.mp4'
 slug: 'hacker-card'
 ---
 
@@ -21,14 +21,13 @@ Reva went through this workshop & the components in a hat workshop and ended up 
 
 > This workshop will take about 60 minutes to design. After that, in a seperate 60 minute session you can order your board for manufacturing using [the OnBoard grant tutorial](https://jams.hackclub.com/jam/onboard-grant).
 
-Printed Circuit Boards - PCBs -  are in nearly all electronics, from phones to cars! It's super easy to make your own, and make them not just functional, but also you can get creative with how they look. 
+Printed Circuit Boards - PCBs -  are in nearly all electronics, from phones to cars! It's super easy to make your own, and make them not just functional, but also you can get creative with how they look.
 
 In this jam, you'll design your own business card -- but with a twist -- it can transmit a URL on tap and light up! You'll learn the basics of designing a PCB, and you can get the cards made for free, with [Hack Club's $100 OnBoard grant](https://hackclub.com/onboard). With these skills, you'll be able to tackle even more complex boards, such as a custom macropad or fidget toy.
 
 ## Schematic
 
 The first step is creating a schematic for your PCB design. A schematic shows the components that will be used in the circuit, as well as how each of these components connect to each other. An important thing to note -- a schematic is only a diagram of what connects to what, not where the components are actually placed on the board, so don't worry about placement at this stage!
-
 
 First, let's open up [EasyEDA](https://easyeda.com), which is a browser-based (and free) PCB design tool. 
 It can be a little bit tricky to get used to, so we made a [very short video](https://youtu.be/lEcN3JnTge4).
@@ -37,7 +36,7 @@ When you go to the website, you should see a screen like this. Click `Sign Up` t
 
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
 
-Click on the `EasyEDA Designer` button in the Navbar to open up the schematic editor. 
+Click on the `EasyEDA Designer` button in the Navbar to open up the schematic editor.
 
 Once you've logged in, select `File` > `New` > `Project` to create a new project.
 ![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
@@ -58,7 +57,7 @@ For our card, we'll want a capacitor, a resistor, a 2V LED and a NFC chip:
 - A [47Ω resistor](https://jlcpcb.com/partdetail/23909-0603WAF470JT5E/C23182)
 - A [220nF capacitor](https://jlcpcb.com/partdetail/21832-CL10B224KA8NNNC/C21120)
 
-Click the `Library` button to open the parts picker. Search for a part (the part number works best), and make sure `JLCPCB Assembled` is selected. This will make sure we're choosing parts from JLCPCB's parts library, as this is currently Hack Club's Onboard PCB manufacturer. 
+Click the `Library` button to open the parts picker. Search for a part (the part number works best), and make sure `JLCPCB Assembled` is selected. This will make sure we're choosing parts from JLCPCB's parts library, as this is currently Hack Club's Onboard PCB manufacturer.
 
 ![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/4searching-for-parts.png)
 
