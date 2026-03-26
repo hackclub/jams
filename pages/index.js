@@ -125,9 +125,10 @@ function Slides({ router, initialFeatures }) {
       cardsRef.current[1].offsetWidth / 2 -
       containerRef.current.offsetWidth / 2
 
-    containerRef.current.addEventListener('scroll', handleScroll)
+    const container = containerRef.current
+    container.addEventListener('scroll', handleScroll)
     return () => {
-      containerRef.current?.removeEventListener('scroll', handleScroll)
+      container?.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
@@ -166,8 +167,10 @@ function Slides({ router, initialFeatures }) {
         }}
         className="hide-scrollbar"
         ref={containerRef}>
+        {/* eslint-disable-next-line react-hooks/refs */}
         {features.map((jam, i) => (
           <div
+            key={jam.slug || i}
             ref={el => (cardsRef.current[i] = el)}
             style={{
               height: '100%',
@@ -765,7 +768,7 @@ export default function Index(props) {
             gap={3}
             sx={{ pt: 4, position: 'relative' }}>
             {fallFeatures.reverse().map((fallFeature, idx) => (
-              <div style={{ position: 'relative' }}>
+              <div key={idx + fallFeature.title} style={{ position: 'relative' }}>
                 {fallFeature.sticker && (
                   <Box
                     sx={{

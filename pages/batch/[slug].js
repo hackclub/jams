@@ -351,8 +351,9 @@ export default function Page({ batch, params, jams }) {
         sx={{ mt: '3rem', pb: '4rem' }}
         style={{ maxWidth: '64rem !important' }}>
         <Grid columns={[null, '1fr 1fr 1fr']} sx={{ gap: '1rem' }}>
-          {batch.parts.map(part => (
+          {batch.parts.map((part, idx) => (
             <PreviewCard
+              key={part.part || idx}
               redirect={'/batch/' + params.slug + '/' + part.part}
               {...part}
               isSortable={false} // since this is false we really don't care about the 4 parameters used for sorting

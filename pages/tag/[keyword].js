@@ -36,7 +36,7 @@ export default function KeywordPage({ jams, keyword, emoji }) {
               p: 0,
               zIndex: 2
             }}>
-            Start jamming out on "{keyword}" projects {emoji}
+            Start jamming out on &ldquo;{keyword}&rdquo; projects {emoji}
           </Text>
           <Text
             as="h2"
@@ -55,7 +55,7 @@ export default function KeywordPage({ jams, keyword, emoji }) {
             gap={3}
             sx={{ pt: 4, position: 'relative' }}>
             {jams.map((jam, idx) => (
-              <div style={{ position: 'relative' }}>
+              <div key={idx + jam.title} style={{ position: 'relative' }}>
                 {jam?.sticker && (
                   <Box
                     sx={{

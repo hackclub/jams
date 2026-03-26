@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useMemo } from 'react'
 import { Container, Link } from 'theme-ui'
 
 const BatchPartSlider = ({ jam, currentPart, maxParts }) => {
@@ -7,23 +7,21 @@ const BatchPartSlider = ({ jam, currentPart, maxParts }) => {
 
   const currentPartInt = parseInt(currentPart.substring(5))
 
-  const [prevPage, setPrevPage] = useState(null)
-  const [nextPage, setNextPage] = useState(null)
+  const prevPage = useMemo(
+    () =>
+      currentPartInt >= 2
+        ? '/batch/' + jam.batch + '/part-' + (currentPartInt - 1).toString()
+        : null,
+    [currentPartInt, jam.batch]
+  )
 
-  /* When the page gets loaded successfully */
-  useEffect(() => {
-    if (currentPartInt >= 2) {
-      setPrevPage(
-        '/batch/' + jam.batch + '/part-' + (currentPartInt - 1).toString()
-      )
-    }
-
-    if (currentPartInt < maxParts) {
-      setNextPage(
-        '/batch/' + jam.batch + '/part-' + (currentPartInt + 1).toString()
-      )
-    }
-  }, [])
+  const nextPage = useMemo(
+    () =>
+      currentPartInt < maxParts
+        ? '/batch/' + jam.batch + '/part-' + (currentPartInt + 1).toString()
+        : null,
+    [currentPartInt, jam.batch, maxParts]
+  )
 
   return (
     <div style={{ textAlign: 'center' }}>

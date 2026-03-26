@@ -57,7 +57,7 @@ export default function Header({
   // make the placeholder text a random fruit using useEffect. This ensures that the UI updates as well
   useEffect(() => {
     setPlaceholderText(fruits[Math.floor(Math.random() * fruits.length)])
-  }, [])
+  }, [fruits])
 
   const easterEgg = event => {
     // If input value is preset jam
@@ -165,7 +165,7 @@ export default function Header({
         }}>
         {isHomePage ? (
           <Link style={{ height: '4rem' }} href="https://hackclub.com/">
-            <Image src="/assets/flag.svg" sx={{ height: '100%' }} />
+            <Image src="/assets/flag.svg" alt="Hack Club flag" sx={{ height: '100%' }} />
           </Link>
         ) : (
           <a
@@ -283,8 +283,9 @@ export default function Header({
                   overflowY: 'scroll',
                   border: '2px solid #e0e6ed'
                 }}>
-                {jams?.slice(0, numberAvailable)?.map(jam => (
+                {jams?.slice(0, numberAvailable)?.map((jam, idx) => (
                   <Grid
+                    key={jam.slug || idx}
                     onClick={() => {
                       if (jam.isBatch) {
                         router.push(`/batch/${jam.slug}`)
@@ -301,6 +302,7 @@ export default function Header({
                       paddingTop: '8px'
                     }}>
                     <img
+                      alt={jam.title || 'Jam thumbnail'}
                       style={{
                         maxWidth: '100%',
                         aspectRatio: '16/9',
