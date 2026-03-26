@@ -23,27 +23,30 @@ video: ''
 totalParts: 5
 ---
 
-  *(P.S. This is a sample of what your OS might look like at the end of the entire batch, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all. Yours will also have a totally different set of apps by the end of the batch.)*
+*(P.S. This is a sample of what your OS might look like at the end of the entire batch, except HA NO it's going to be about you and fit your vibe so not look/feel like this at all. Yours will also have a totally different set of apps by the end of the batch.)*
 
 The Operating System (OS) will be entirely web-based (using HTML, CSS, and JS). An Operating System is the interface & set of logic you use to interact with applications. You'll be the designer and developer of your OS (so you'll have complete creative freedom). You'll decide the content, style, features, etc. If your website looks totally different from mine by the end of the batch jam, then you've done the Jam well. If it looks the same, go back to the drawing board. Your Personal Operating System will be a website you can share with people (friends, club members, people you meet at hackathons, etc) to allow them to easily get a sense of who you are and the type of things you like to do.
 
 **Today you'll be creating an awesome welcome screen for your personalOS. It will be plenty of fun and you'll have an awesome-looking one-of-a-kind product that you'll build upon in subsequent Jams.**
 
-![this is what today's build may look like](https://files.catbox.moe/oqgqam.png)
+![this is what today's build may look like](https://cdn.hackclub.com/019d2a8f-6ce5-7ba6-9262-e363b207f96e/web.png)
 
 There are six steps/headings in this Jam! Go through each and begin building your personalOS.
 
 **Outline:**
+
 1. **Enter The Code Editor** *(start coding in your browser)*
 2. **Build with Elements** *(create elements for your welcome screen)*
 3. **Personalize Your Content** *(make the content personally relevant to you)*
 4. **Style Your Elements** *(make your elements fit your aesthetic)*
-6. **Next Time on Building Your Personal OS**
+5. **Next Time on Building Your Personal OS**
   
 ## Enter the Code Editor
+
 Hey there Hacker! Let's get you setup
 
 ### Create an Account
+
 Head over to [GitHub](https://github.com/) and create an account
 
 <Dropdown title="What is GitHub Codespaces?">
@@ -55,22 +58,24 @@ If you can't access Codespaces, you can run the same code locally in VS Code, or
 </Dropdown>
 
 ### 2. Create a new Repository + Codespace
+
 Create a new GitHub repository (public or private). Open it, click **Code**, go to the **Codespaces** tab, and choose **Create codespace on main**.
 
 Codespaces will open a browser-based VS Code editor connected to your repo.
 
-
 ## Build with Elements
 
 ### What are elements?
+
 Every site you've ever visited has elements. Elements are the building blocks that come together to create websites. For example, this block of text is an element. The gif you'll see below is also an element. Even the container that holds the text you are reading is an element. Try right-clicking this site and tapping Inspect, you'll see a bunch of elements. HTML is the file format for these elements.
 
-![Inspect Screen](https://files.catbox.moe/bd91qd.png)
+![Inspect Screen](https://cdn.hackclub.com/019d2a8d-b1c8-76d2-b81e-66b7a7900c38/2026_03_26_0hi_Kleki%20(1).png)
 
 #### What makes an element?
-Elements consist of three parts. 
 
-Elements consist of an opening tag, the content in the middle, and a closing tag. So for example `<p>Sample Content</p>` creates paragraph text because there is an opening tag (`<p>`), with content in the middle (`Sample Content`), and a closing tag (`</p>`) indicating where the content ends 
+Elements consist of three parts.
+
+Elements consist of an opening tag, the content in the middle, and a closing tag. So for example `<p>Sample Content</p>` creates paragraph text because there is an opening tag (`<p>`), with content in the middle (`Sample Content`), and a closing tag (`</p>`) indicating where the content ends
 
 ### Where can I place them?
 
@@ -78,7 +83,7 @@ Let's begin by creating (or opening) an `index.html` file and deleting any start
 
 Orpheus the Dinosaur *(don't ask who [Orpheus](https://workshops.hackclub.com/orpheus/) is)* asks that you please copy and paste the code below into your project
 
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -96,9 +101,10 @@ It's sort of like how cream cheese goes inside a bagel. A bagel has a top and bo
 Let's fill your body tag sandwich with some tasty content! 🥯
 
 ### How can I make elements for my welcome screen?
+
 Inside of your body tags, let's write some code
 
-```
+```html
 <body>
   <p>Hello world!</p>
 </body>
@@ -107,16 +113,17 @@ Inside of your body tags, let's write some code
 You've created your first element & it's a `<p>` element (p stands for paragraph)! Congratulations!
 
 Let's try making a heading! Simply create a new element with h1 tags.
-```
+
+```html
 <body>
   <h1>Welcome to my OS</h1>
   <p>Hello world!</p>
 </body>
 ```
 
-Awesome. We can also make smaller headings. `h1` is the largest heading, but you can also create an `h2`, `h3`, `h4`, & so on. 
+Awesome. We can also make smaller headings. `h1` is the largest heading, but you can also create an `h2`, `h3`, `h4`, & so on.
 
-```
+```html
 <body>
   <h1>Welcome to my OS</h1>
   <h2>Introduction</h2>
@@ -127,7 +134,7 @@ Awesome. We can also make smaller headings. `h1` is the largest heading, but you
 The text is neat, but let's add an image:
 First, we need to drag an image into the Codespaces file explorer.
 
-```
+```html
 <body>
   <h1>Welcome to my OS</h1>
   <h2>Introduction</h2>
@@ -136,20 +143,21 @@ First, we need to drag an image into the Codespaces file explorer.
 </body>
 ```
 
-You can also do a direct link to the image (as .png, .jpeg, etc at the end of the URL), so for example here's code for placing an image of a Capybara 
+You can also do a direct link to the image (as .png, .jpeg, etc at the end of the URL), so for example here's code for placing an image of a Capybara
 
 `<img src="./imageOfMe.png" />`
 
 The image tag has a property of `src` which stands for source. You can pass in the direct link to the image or import an image and set the src as `"./imageName.png"`.
 
-![Website with text on top and a Capybara image](https://files.catbox.moe/ftn9hd.png)
+![Website with text on top and a Capybara image](https://cdn.hackclub.com/019d2a90-4077-7026-aaeb-226301f2d0a9/2026_03_26_0hk_Kleki%20(1).png)
 
 ### Let's link to another page
-HTML (HyperText Markup Language) was built for scientists to be able to share research documents (& is now used on every website on the internet). If you know anything about scientists, then you know they LOVE to reference other pages. 
+
+HTML (HyperText Markup Language) was built for scientists to be able to share research documents (& is now used on every website on the internet). If you know anything about scientists, then you know they LOVE to reference other pages.
 
 For this reason, HTML makes it easy for you to hyperlink to other pages.
 
-```
+```html
 <body>
   (rest of your content)
   <a href="https://example.com/">label</a>
@@ -161,39 +169,46 @@ Replace the label with the label of the button (so for example [Instagram](https
 You can use this to link to a personal social media, a GitHub, a random website about your favorite creature, or just not make a tag at the moment. It's totally up to you. 
 
 ## Personalize Your Content
+
 Soo... surprise, you didn't realize but you just started your onboarding screen for your operating system.
 
-**Go ahead and fill it up with your content.** 
+**Go ahead and fill it up with your content.**
 
 Don't know what to add? Perhaps try:
+
 * Linking to your favorite playlist
 * Adding a picture of a pet
 * Writing a bit about your favorite hobbies
 * etc
 
 ### Customize the text content and image
-Make the text content whatever you would like users to see when they first land on your site. Be creative and have fun with it! 
 
-Select an image for your site that represents you (either literally like a selfie or metaphorically like your favorite creature) by changing the src of the image to a URL or path to your image. 
+Make the text content whatever you would like users to see when they first land on your site. Be creative and have fun with it!
 
-### Additional Challenge 
-Discover some unique tags on the [W3 Tags Site](https://www.w3schools.com/TAGS/default.asp). There are 100+  tags for you to experiment with. Go dive into the W3 Tags Directory and find some random tags and experiment with them on your site. Have fun :) 
+Select an image for your site that represents you (either literally like a selfie or metaphorically like your favorite creature) by changing the src of the image to a URL or path to your image.
 
-here are some tags we really like:
+### Additional Challenge
+
+Discover some unique tags on the [W3 Tags Site](https://www.w3schools.com/TAGS/default.asp). There are 100+  tags for you to experiment with. Go dive into the W3 Tags Directory and find some random tags and experiment with them on your site. Have fun :)
+
+Here are some tags we really like:
+
 * `<s>Strike Through</s>`
 * `<p>break the <br> line like this</p>`
 * `<p>use strong to <strong>bold text</strong></p>`
 * `<p> <dfn>DFN Tag</dfn> is a tag that marks something being defined</p>`
 * `<p><abbr title="abbreviation">abbr</abbr> is a tag that marks an abbreviated term</p>`
 
-
 ### Content Complete
+
 Okay, so you should now have the content for your "Welcome to My OS" screen and it should feel totally unique to you (i.e. if a friend saw your welcome screen, they would immediately know it was your OS).
 
 Your content most likely looks rather bland and uninteresting which leads us into our next topic... styling our content!
 
 ## Style Your Elements
+
 ### What's a style?
+
 A style is a property-value pair that changes the way an element looks.
 
 Styles can exist within an HTML file when written in-line, but can also be in a separate file (styles.css). For now, we're going to write the styles inside of our HTML file (inside of opening tags)
@@ -201,33 +216,35 @@ Styles can exist within an HTML file when written in-line, but can also be in a 
 To apply a style, it's as simple as:
 `<tag style="property: value"> content </tag>`
 
-**Every style has a property and a value.** 
+**Every style has a property and a value.**
 For example, a style may be color with the value of red (to turn the text red)
 
 ### Styling Color 🎨
+
 To change the color text you would simply write
 `<p style="color: red">This text is red</p>`
 
-You can also add a background color: 
-```
+You can also add a background color:
+
+```html
 <body style="background-color: #c9ffcf">
   // your content//
 </body>
 ```
 
-Easy, right? 
+Easy, right?
 
 *p.s. you'll notice I used hex (#c9ffcf) instead of the name of a color (red) for the second example. Hex is a format for representing color. You can use either the name of a color or the hex value. To find hex values, try googling "hex color picker"
 
 ### Styling Shape & Size
+
 Images can have styles too!
 
 Your image is probably very large. Let's change the size & shape.
 
+**IF YOUR IMAGE IS TOO LARGE OR TOO SMALL, BE SURE TO ADJUST THE HEIGHT AND WIDTH AS IS DONE BELOW**
 
-**IF YOUR IMAGE IS TOO LARGE OR TOO SMALL, BE SURE TO ADJUST THE HEIGHT AND WIDTH AS IS DONE BELOW** 
-
-Simply go to the image and apply a style property that sets the width and height: 
+Simply go to the image and apply a style property that sets the width and height:
 
 `<img style="width: 64px; height: 64px" src="" />`
 
@@ -236,12 +253,12 @@ I chose to make the width and height 64px, but you don't have to! Pick your own 
 *Note: Semicolons are used to separate CSS properties*
 
 ##### *\*Crunch*\*
+
 Your image might be a bit crunched up. Try to Google how to fix this (maybe even ask GPT). Even a very basic search term such as What is the CSS Property for making an image not crunch, would probably work.
 
 <Dropdown title="Solution">
   Upon scrubbing through the results, I found the `object-fit: cover` property. Let's try applying that to our image. Ah lovely, and just like that our image is uncrunched. Whenever you run into something that looks ugly and you want to make it look beautiful, just google it and Google will help you out.
 </Dropdown>
-
 
 ##### *\*Rounddddd*\*
 Optionally, you can round your corners. Try googling this! (maybe you can even turn your image into a circle shape if you'd like)
@@ -252,11 +269,11 @@ simply write style="border-radius: 16px; object-fit: cover" on your image tag.
 Note: Semicolons are used to separate CSS properties
 </Dropdown>
 
-
 ### Styling Font
+
 Adding a font in CSS is easy!
 
-The easiest way to add a font is to visit the [W3 Library of browser-built-in fonts](https://www.w3.org/Style/Examples/007/fonts.en.html) and select one that fits the vibe of your site! 
+The easiest way to add a font is to visit the [W3 Library of browser-built-in fonts](https://www.w3.org/Style/Examples/007/fonts.en.html) and select one that fits the vibe of your site!
 
 Once you pick out your favorite font(s), go to the body and put a style property of font-family on the opening tag.
 
@@ -269,34 +286,35 @@ Once you pick out your favorite font(s), go to the body and put a style property
 *Final Note: you can use the font-size property and font-weight property to further change the visual appearance of a text element*  
 
 ### Styling Space ✨
+
 Space is created by a combination of Margin (not margarine, MARGIN) and padding (fluff).
 
-Margin is the space between your picture frames on your wall. 
+Margin is the space between your picture frames on your wall.
 
-Padding is the gap between the photo and the frame. If you had a box with an item in the middle, the space between the object in the center and the walls of the box is padding. 
+Padding is the gap between the photo and the frame. If you had a box with an item in the middle, the space between the object in the center and the walls of the box is padding.
 
 Also... here's a comedy skit by Shubham at Epoch Bay Area to learn about Margin and Padding
 
 <video src="" controls="controls" style={{maxWidth: "480px"}}>
 </video>
 
-We'll get more into this later, but right now I would just like to bring our items closer together. 
+We'll get more into this later, but right now I would just like to bring our items closer together.
 
 So if we open the inspect window...
 
-We can see that the default margin on the h1 is quite large and it's making the site look a bit awkward. Let's correct that. 
+We can see that the default margin on the h1 is quite large and it's making the site look a bit awkward. Let's correct that.
 
 Let's reduce the margin on the h1 tag
 
-` <h1 style="margin: 4px;">thomasOS</h1>`
+`<h1 style="margin: 4px;">thomasOS</h1>`
 
 *Note: px stands for pixels, so we now have a 4px space on all sides for the header text element*
 
 If you wanted to add some space within your heading, you could add padding, so perhaps make it
-` <h1 style="padding: 4px; margin: 4px; background-color: #000; color: #fff">thomasOS</h1>`
+`<h1 style="padding: 4px; margin: 4px; background-color: #000; color: #fff">thomasOS</h1>`
 (you can see the padding added a gap between the walls of the element and the content itself)
 
-### Keep Hacking! 
+### Keep Hacking!
 
 Try adding the `background-color`, `color`, and `font-family` properties on your `body` tag to make your site look funky (or whatever style you're going for). Not sure how to use those styles? Google it!
 
@@ -308,9 +326,10 @@ Alright, lovely! Here's my finished site for this episode of the batch. I hope y
 
 *Note: You'll notice I added some unique-looking tags inside the paragraph text, YOU CAN DO THAT TOO BY CHECKING OUT THE SOMEWHAT OPTIONAL ADDITIONAL CHALLENGE BELOW.*
 
-
 ## Next time on building your own PersonalOS...
+
 In the next episode, we will build the foundation of our OS by:
+
 * Adding a wallpaper
 * Creating Your Window
 * Creating the top bar

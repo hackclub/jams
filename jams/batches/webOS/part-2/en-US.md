@@ -22,38 +22,41 @@ totalParts: 5
 ---
 Mmm... Hacker, you are more brave than I thought. You're continuing on to the second Jam in the Batch. I commend your efforts.
 
-Today we're going to be diving into JavaScript and combining it with the HTML & CSS we learned about last time. Don't worry, you'll probably survive. We'll dive into JavaScript at the end of this Jam. 
+Today we're going to be diving into JavaScript and combining it with the HTML & CSS we learned about last time. Don't worry, you'll probably survive. We'll dive into JavaScript at the end of this Jam.
 
 You'll be adding your outlining your window, creating your desktop, and adding a top bar.
-
-![ending with](https://files.catbox.moe/jfisg8.png)
 
 While we will be writing JavaScript, all code will still remain in the HTML file *(until next time on WebOS Jams)*
 
 **Outline:**
+
 1. **Defining Our “Window”**
 2. **Making Our Desktop** *(+ finding the coolest desktop images)*
 3. **Topping off with a Top Bar** *(+ letting time tell)*
 
 ## Defining the "Window"
+
 Alrighty, so you ended off last time with the start of your welcome screen. Hopefully, it looks nothing like mine. As a reminder, here's what mine looked like:
 
 ### What is a window?
-A window is a box that defines where an application on your user interface (UI) starts and ends. I suppose a div could be any shape (if you want your windows to be circles, go for it!). 
 
-As web developers, we refer to groupings/boxes as divs. You can create divs inside of divs if, for example, you had a bento box, that box itself is a group and then each little section within that group is a group. 
+A window is a box that defines where an application on your user interface (UI) starts and ends. I suppose a div could be any shape (if you want your windows to be circles, go for it!).
 
-The walls inside the box define where the content (tasty food) starts & ends & the walls along the edge of the box define where the box begins & ends. 
+As web developers, we refer to groupings/boxes as divs. You can create divs inside of divs if, for example, you had a bento box, that box itself is a group and then each little section within that group is a group.
 
-![Bento Box of Divs](https://files.catbox.moe/a17w21.png)
+The walls inside the box define where the content (tasty food) starts & ends & the walls along the edge of the box define where the box begins & ends.
+
+![Bento Box of Divs](https://cdn.hackclub.com/019d2a92-86e8-7e3b-b0cb-c2b14fc13685/2026_03_26_0hn_Kleki%20(1).png)
 
 ### Why do we need a window?
+
 Having multiple windows will allow you to make users feel in control of their experience (by choosing which windows to open and focus on and which to ignore) and provide a novel/fun experience.
 
-We need to create a div to group together the content of your window to define where your window begins and where it ends. 
+We need to create a div to group together the content of your window to define where your window begins and where it ends.
 
 ### Creating our Window
-Let's group all of our content within a div tag. 
+
+Let's group all of our content within a div tag.
 
 That should look something like...
 
@@ -65,13 +68,14 @@ That should look something like...
     </body>
 ```
 
-Cool... well you're site hopefully looks the same & you may be thinking you did something wrong. 
+Cool... well you're site hopefully looks the same & you may be thinking you did something wrong.
 
-![grouped in a div](https://files.catbox.moe/rh0o6l.png)
+![grouped in a div](https://cdn.hackclub.com/019d2a93-2d44-7311-abf7-89474a35fb40/2026_03_26_0ho_Kleki%20(1).png)
 
 Fear not, you're on the right path. The group has no style attributes that would make it visually distinct from the rest of the page **yet**.
 
 ### Outlining our Window
+
 Alrighty, let's apply a style on our div (yeah... you can apply styles to divs)
 
 ```html
@@ -80,14 +84,15 @@ Alrighty, let's apply a style on our div (yeah... you can apply styles to divs)
     </div>
 ```
 
-Simple! Now we can see that we outlined our content. 
+Simple! Now we can see that we outlined our content.
 
-![stroke added](https://files.catbox.moe/62a2w5.png)
+![stroke added](https://cdn.hackclub.com/019d2a94-613c-788c-ad43-f6b9028be2d0/2026_03_26_0hp_Kleki%20(1).png)
 
 *Hey... wanna have some fun? Visit [this site of border styles](https://developer.mozilla.org/en-US/docs/Web/CSS/border) and try adding some cool border effects (+ also your own width and color)*
 
 ### Finding our Boundary
-We can set the width and height of our box (div) using the style property. 
+
+We can set the width and height of our box (div) using the style property.
 
 At the moment our box is taking up the width of the entire site!
 
@@ -108,7 +113,7 @@ Also, remember how last time how we rounded the corners of our image using borde
 
 I chose 16px, but you can also make it much rounder by increasing that number! Experiment with it!
 
-![image of it without space](https://files.catbox.moe/ni77uo.png)
+![image of it without space](https://cdn.hackclub.com/019d2a98-2a03-7eb7-8f24-b27c75da34f4/2026_03_26_0ht_Kleki%20(1).png)
 
 AHH THE TEXT IS VERY *CLAUSTROPHOBIC*. YOU PUT IT IN A BOX AND IT HAS NOOOO BREATHING ROOM!
 
@@ -125,12 +130,12 @@ ah... that feels *much* better...
 (p.s. don't do 16px padding, do what feels right to you)
 
 ### Placing our Window
+
 We have a screen and we have an element (our window). We want to place our element on top of our window and specify where we want it to be on the screen.
 
 Because our window is going to exist on top of our desktop we need to use position absolute (which means that the position will not be relative to other items, but rather relative to the screen).
 
-
-You don't totally need to understand position absolute right now. As we go deeper into the batch, it will start to make more sense. 
+You don't totally need to understand position absolute right now. As we go deeper into the batch, it will start to make more sense.
 
 ```html
     <div style="position: absolute; (additional styles)">
@@ -140,7 +145,6 @@ You don't totally need to understand position absolute right now. As we go deepe
 
 Awesome and with the `position: absolute` property, we unlock four more properties (top, bottom, left, right). Each one defines the distance that our window will be from the edges of the screen.
 
-
 To place it in the center, we can simply write
 
 ```html
@@ -149,7 +153,7 @@ To place it in the center, we can simply write
     </div>
 ```
 
-Hmm.. well that doesn't look quite right. The reason why is that the top, left, bottom, and right properties define how far the top left corner of our window is from the walls of our browser. To fix this, let's adjust the window so that the center of the window is the point that we're positioning around by using the `transform: translate(-50%, -50%)` property. 
+Hmm.. well that doesn't look quite right. The reason why is that the top, left, bottom, and right properties define how far the top left corner of our window is from the walls of our browser. To fix this, let's adjust the window so that the center of the window is the point that we're positioning around by using the `transform: translate(-50%, -50%)` property.
 
 ```html
     <div style="position: absolute; top: 50%; left: 50%; 
@@ -158,18 +162,18 @@ transform: translate(-50%, -50%); (additional styles)">
     </div>
 ```
 
-
 Alrighty great this is looking lovely.
 
 This may be a good time to take a stretch break. You've been doing a lot of coding & your site is looking beautiful!
 
-
 ## Designing Our Desktop
-You're back. You're refreshed. Maybe you even ate a strawberry or two 
-~~(or maybe a whole package of strawberries)~~. 
 
-### Adding The Desktop Background 
-Adding the background is surprisingly easy! 
+You're back. You're refreshed. Maybe you even ate a strawberry or two
+~~(or maybe a whole package of strawberries)~~.
+
+### Adding The Desktop Background
+
+Adding the background is surprisingly easy!
 
 1. Find your image (I'll be using a photo I took in Michigan)
 2. Drag it into the Codespaces file explorer
@@ -180,13 +184,14 @@ Adding the background is surprisingly easy!
 *(optional bonus challenge, try using a gif instead of a png)*
 
 ### Separating the Window from the Desktop
+
 Alright well, this is looking beautiful!
 
-Let's add a background color to our window so it looks visually distinct from the desktop. 
-
+Let's add a background color to our window so it looks visually distinct from the desktop.
 
 ## Creating Our Top Bar
-A top bar is generally used to display the name of the OS, key functions of a selected application, and the time. You can choose to display all or none of these pieces of information. You may also decide to give it different functions! 
+
+A top bar is generally used to display the name of the OS, key functions of a selected application, and the time. You can choose to display all or none of these pieces of information. You may also decide to give it different functions!
 
 I'll show you how you can add the name of the OS and the time. You can do whatever you want with it though!
 
@@ -221,7 +226,7 @@ Note: Aye... I heard you want to master Flex. Is that right? If so, I CHALLENGE 
 
 We can optionally space out the content by applying justify-content (check out [this justify-content testing site](https://www.w3schools.com/cssref/playdemo.php?filename=playcss_justify-content) to see how you can use justify-content to space out content)
 
-based on this demo, I decided I want to use space-between in the example below, but I encourage you to check out the testing site and pick what justify-content style works best for your design! 
+based on this demo, I decided I want to use space-between in the example below, but I encourage you to check out the testing site and pick what justify-content style works best for your design!
 
 ```html
     <div style="display: flex; justify-content: space-between">
@@ -230,9 +235,10 @@ based on this demo, I decided I want to use space-between in the example below, 
 ```
 
 ### Translucent Background
-Now you can also add a semi-transparent background to your top bar by using RGBA. Try adding 
 
-RGBA stands for Red, Green, Blue, Alpha where Alpha is the level of transparency (0 being fully transparent and 1 being no-transparency or opaque). You can also google RGB color picker and then manually write the transparency from 0 to 1. 
+Now you can also add a semi-transparent background to your top bar by using RGBA. Try adding
+
+RGBA stands for Red, Green, Blue, Alpha where Alpha is the level of transparency (0 being fully transparent and 1 being no-transparency or opaque). You can also google RGB color picker and then manually write the transparency from 0 to 1.
 
 Here's an example.
 
@@ -258,11 +264,10 @@ At this point, you don't need your hand held. Let's take off the training wheels
 
 Here's how I decided to make mine look
 
-
 I hope yours looks totally different!
-Here's my code in case you want to take some inspiration from it. (but again, DON'T MAKE AN EXACT STYLE COPY) 
-```html
+Here's my code in case you want to take some inspiration from it. (but again, DON'T MAKE AN EXACT STYLE COPY)
 
+```html
   <div
     style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-between; gap: 32px;">
         <p
@@ -280,22 +285,24 @@ Here's my code in case you want to take some inspiration from it. (but again, DO
 ```
 
 Ideas to spice it up:
+
 * Try different putting different content in the top bar
 * Try a different color
 * Try including more or fewer elements
-* Include an image in your nav 
+* Include an image in your nav
 * Make it a bottom bar! (using the absolute positioning and the bottom property instead of the top property)
 
 ### Tracking The Time
+
 I promised you JavaScript, so of course I am going to give you JavaScript.
 
 JavaScript brings logic to your website. It's how your OS will respond to events (whether those be user events or events like the changing of time).
 
-We can write JavaScript in its own file, or we can just write in the HTML file inside of a `<script>` tag. We're going to start inside the HTML file. 
+We can write JavaScript in its own file, or we can just write in the HTML file inside of a `<script>` tag. We're going to start inside the HTML file.
 
-#### Where Do I Write JavaScript? 
+#### Where Do I Write JavaScript?
 
-You can include your script tag in the HTML file. 
+You can include your script tag in the HTML file.
 
 ```html
 <html>
@@ -310,8 +317,7 @@ You can include your script tag in the HTML file.
 
 **At the moment we're going to be writing our code inside of our HTML file. We're not touching the script.js file yet *(until next Jam)***
 
-
-#### How Do I Get the Time? 
+#### How Do I Get the Time?
 
 Let's begin by getting the time and storing it in a variable.
 
@@ -321,23 +327,26 @@ Let's begin by getting the time and storing it in a variable.
 </script>
 ```
 
-Alright, let's break this down. 
+Alright, let's break this down.
 
-The var keyword indicates that we're creating a variable. 
+The var keyword indicates that we're creating a variable.
 
 currentTime is the name of the variable that we're creating. We could've given this variable any name (I encourage you to try naming it something else, just for fun).
 
-new Date().toLocaleString(); is a browser function that gets the current date and formats it into plain text (what we hackers call a String). 
+new Date().toLocaleString(); is a browser function that gets the current date and formats it into plain text (what we hackers call a String).
 
 *Note: You don't need to know `new Date().toLocaleString`, you only need to know how to google "How do I get the current date as a String in JavaScript"*
 
 #### How Do I Display the Time?
+
 We have a value in JavaScript and we want to put it inside of our HTML text.
 
 Here's how we go about doing that.
 
 ##### Mark the text we'd like to alter
+
 Let's add an "id" to the time text so we can select it. Here's how that might look:
+
 ```html
     <p id="timeElement"
       style="(YOUR STYLES)">
@@ -346,6 +355,7 @@ Let's add an "id" to the time text so we can select it. Here's how that might lo
 ```
 
 ##### Select it in JavaScript
+
 We can use a querySelector to select the element and store it in a variable. We pass into the querySelector the id of the element we're working with:
 
 ```html
@@ -354,6 +364,7 @@ We can use a querySelector to select the element and store it in a variable. We 
     var timeText = document.querySelector("#timeElement");
 </script>
 ```
+
 *Note: We placed a # in front of the id name to indicate it is an id*
 
 ##### Alter The Selected Element In JavaScript
@@ -365,18 +376,19 @@ Finally, we can set the innerHTML (the peanut butter in the bagel sandwich) and 
     var currentTime = new Date().toLocaleString();
     var timeText = document.querySelector("#timeElement");
     timeText.innerHTML = currentTime
-</script>   
+</script>
 ```
-
 
 Boom, now we get the current time, but don't be too quick to celebrate. You'll notice the time doesn't update. This is because the code inside the script tag only runs a single time (when the page is first opened).
 
-We need it to run every second. 
+We need it to run every second.
 
-##### Make it run every second 
+##### Make it run every second
+
 We can use the setInterval function to make the code repeat every 1000 milliseconds (every second).
 
-Here's how we can go about doing that 
+Here's how we can go about doing that
+
 ```html
   <script>
 
@@ -390,9 +402,9 @@ Here's how we can go about doing that
   </script>
 ```
 
-I placed our previous code into a function (think of a function as an operation that we're telling the machine to run) and put that function inside of a setInterval (think of this as a robot that does the function every set amount of time). 
+I placed our previous code into a function (think of a function as an operation that we're telling the machine to run) and put that function inside of a setInterval (think of this as a robot that does the function every set amount of time).
 
-These five lines of code are very readable, but what if I told you there was a way to do it in just 3 lines line. 
+These five lines of code are very readable, but what if I told you there was a way to do it in just 3 lines line.
 
 Try updating the time every second in just three lines and then check the solution below
 
@@ -408,13 +420,12 @@ setInterval(function () {
 
 Lovely, here's what we've ended up with:
 
-
 For your final bonus challenge, try adding something interesting to your background. Maybe make it a gif?
 
 Remember, this is your site.
 
-Farewell, my dearest Hacker. 
-I suspect we shall meet again... in the next Jam. 
+Farewell, my dearest Hacker.
+I suspect we shall meet again... in the next Jam.
 
 What will be there?
 That's for me to know and for you to find out 👀
