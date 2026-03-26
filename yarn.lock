@@ -2613,10 +2613,10 @@ react-router@6.30.3:
   dependencies:
     "@remix-run/router" "1.23.2"
 
-react-scroll@^1.8.9:
-  version "1.8.9"
-  resolved "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.9.tgz"
-  integrity sha512-9m7ztraiX/l6L7erzYAD3fhnveNckei6/NkWfqwN2e0FRdoE2W6Pk4oi2Nah7mWpPCPAeIgegfaqZACTimPOwg==
+react-scroll@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.9.3.tgz#8312831244a7a8f86036e72c71de155a454a78c0"
+  integrity sha512-xv7FXqF3k63aSLNu4/NjFvRNI0ge7DmmmsbeGarP7LZVAlJMSjUuW3dTtLxp1Afijyv0lS2qwC0GiFHvx1KBHQ==
   dependencies:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
