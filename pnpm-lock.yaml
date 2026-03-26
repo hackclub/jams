@@ -115,7 +115,7 @@ importers:
         version: 0.16.2(@emotion/react@11.14.0(@types/react@19.2.14)(react@18.3.1))(react@18.3.1)
     devDependencies:
       prettier:
-        specifier: ^3.0.0
+        specifier: ^3.8.1
         version: 3.8.1
       sass:
         specifier: ^1.63.6
