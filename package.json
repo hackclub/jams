@@ -19,7 +19,7 @@
     "@hackclub/theme": "^1.1.0",
     "@mdx-js/mdx": "^3.0.0",
     "@react-pdf-viewer/core": "^3.12.0",
-    "@theme-ui/core": "^0.16.0",
+    "@theme-ui/core": "^0.17.4",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "algoliasearch": "^5.50.0",
