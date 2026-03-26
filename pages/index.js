@@ -483,8 +483,6 @@ export default function Index(props) {
 
     let bestList = searchAlgorithmLunr.search(query.toString())
 
-    console.log(bestList)
-
     let results = []
 
     for (let returnedquery in bestList) {

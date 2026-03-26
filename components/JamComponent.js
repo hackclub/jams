@@ -191,15 +191,12 @@ export default function JamComponent({ jam, jamsContent }) {
   function returnResultsLunr(query) {
     let bestList = searchAlgorithmLunr.search(query.toString())
 
-    console.log(bestList)
-
     let results = []
 
     let concatenatedJamBatch = jamsContent.singles.concat(jamsContent.batches)
 
     for (let returnedquery in bestList) {
       if (bestList[returnedquery]['score'] >= precision) {
-        console.log(bestList[returnedquery]['ref'])
         results.push(concatenatedJamBatch[bestList[returnedquery]['ref']])
       }
     }
