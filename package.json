@@ -46,7 +46,7 @@
     "theme-ui": "^0.17.4"
   },
   "devDependencies": {
-    "eslint": "9",
+    "eslint": "10",
     "eslint-config-next": "^16.2.1",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.0.0",
