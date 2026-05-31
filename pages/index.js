@@ -29,9 +29,7 @@ export async function getStaticProps() {
 function getJams(fs, directory) {
   const filenames = fs.readdirSync(directory)
 
-  return filenames.map(filename => {
-    const fileContent = fs.readFileSync(
-      path.join(directory, filename, 'en-US.md'),
+  return filenames.map(filename => { const fileContent = fs.readFileSync( path.join(directory, filename, 'en-US.md'),
       'utf8'
     )
     const { data, content } = matter(fileContent)

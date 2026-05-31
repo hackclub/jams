@@ -22,65 +22,11 @@ import Meta from '@hackclub/meta'
 import Head from 'next/head'
 
 export default function JamComponent({ jam, jamsContent }) {
-  const submitProject = async () => {
-    try {
-      let slug = ''
-      if (jam?.slug != undefined) {
-        slug = jam?.slug
-        console.log(slug)
-      } else {
-        slug = jam?.batch + jam?.part
-        console.log(slug)
-      }
-
-      const response = await fetch(
-        `https://jams-api-1daa6fb9f168.herokuapp.com/submitJam/${slug}/${submissionURL}/${projectName}`
-      )
-      if (!response.ok) {
-        throw new Error('Network response was not ok')
-      }
-
-      const data = await response.json()
-      setApiResponse(data.message)
-      // if(data.message == "Submission successful") {
-      //   router.reload()
-      // }
-    } catch (error) {
-      console.error('Error fetching data:', error)
-    }
-  }
-
-  useEffect(() => {
-    const fetchSubmissions = async () => {
-      try {
-        const response = await fetch(
-          'https://jams-api-1daa6fb9f168.herokuapp.com/getSubmissions'
-        )
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        const data = await response.json()
-        if (jam?.slug != undefined) {
-          setFinishedProjects(data.filter(project => project.jam == jam.slug))
-        } else {
-          setFinishedProjects(
-            data.filter(project => project.jam == jam.batch + jam.part)
-          )
-        }
-      } catch (error) {
-        console.error('Error fetching data:', error)
-      }
-    }
-
-    fetchSubmissions()
-  }, [])
-
   const [apiResponse, setApiResponse] = useState('')
   const [submissionURL, setSubmissionURL] = useState('')
   const [projectName, setProjectName] = useState('')
 
   const [presentationSelected, setPresentationSelected] = useState(true)
-  const [finishedProjects, setFinishedProjects] = useState([])
 
   const [activeSection, setActiveSection] = useState()
   const [passedSections, setPassedSections] = useState([])
@@ -368,7 +314,7 @@ export default function JamComponent({ jam, jamsContent }) {
           sx={{
             px: '1rem',
             display: 'flex',
-            flexDirection: ['column', 'column', 'row'],
+            flexDirection: 'column', 
             gap: [0, 0, '3rem']
           }}
           style={{ maxWidth: '64rem !important' }}>
@@ -632,62 +578,31 @@ export default function JamComponent({ jam, jamsContent }) {
               }}>
               <MDXRemote components={mdxComponents} {...jam.source} />
             </Box>
-            {jam.slug !== 'bakebuild' && (
-              <div
-                style={{
-                  border: '2px solid rgba(0, 0, 0, 0.25)',
-                  boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
-                  backgroundColor: '#E1E6EC',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  padding: '24px 24px',
-                  borderRadius: '16px'
+            <div
+              style={{
+                border: '2px solid rgba(0, 0, 0, 0.25)',
+                boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
+                backgroundColor: '#E1E6EC',
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '24px 24px',
+                borderRadius: '16px'
+              }}>
+              <Text
+                sx={{
+                  color: '#993CCF',
+                  fontSize: 32,
+                  lineHeight: 1.125,
+                  fontWeight: 700
                 }}>
-                <Text
-                  sx={{
-                    color: '#993CCF',
-                    fontSize: 32,
-                    lineHeight: 1.125,
-                    fontWeight: 700
-                  }}>
-                  You finished the Jam. <br />
-                  Congratulations! 🎉 🎉 🎉
-                </Text>
+                You finished the Jam. <br />
+                Congratulations! 🎉 🎉 🎉
+              </Text>
 
-                <Text sx={{ mt: 3 }}>
-                  Share your final project with the community
-                </Text>
-                <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
-                  <Text>Project Name</Text>
-                  <Input
-                    placeholder={'MarshaMellow - SwampLofiAnimation'}
-                    value={projectName}
-                    onChange={e => setProjectName(e.target.value)}
-                  />
-                </Box>
-                <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
-                  <Text>Project URL</Text>
-                  <Input
-                    placeholder={'https://swamplofi.marshamellow.repl.co/'}
-                    value={submissionURL}
-                    onChange={e => setSubmissionURL(e.target.value)}
-                  />
-                </Box>
-
-                <Button
-                  sx={{
-                    marginTop: '24px',
-                    borderRadius: '12px',
-                    padding: '12px',
-                    backgroundColor: '#993CCF',
-                    width: ['100%', '100%', '50%']
-                  }}
-                  onClick={() => submitProject()}>
-                  Share Project with Community
-                </Button>
-                <p>{apiResponse}</p>
-              </div>
-            )}
+              <Text sx={{ mt: 3 }}>
+                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and there's also an awesome community of 100k+ teenagers who love making cool stuff.
+              </Text>
+            </div>
           </div>
 
           <div sx={{ width: ['auto', 'auto', '20rem'], position: 'relative' }}>
@@ -949,47 +864,6 @@ export default function JamComponent({ jam, jamsContent }) {
                 </>
               )}
 
-              <div sx={{ display: ['none', 'none', 'block'] }}>
-                <h2
-                  sx={{
-                    fontSize: '1.5rem',
-                    lineHeight: '1rem',
-                    fontWeight: 'bold',
-                    mt: '2rem'
-                  }}>
-                  Outline
-                </h2>
-
-                <ul
-                  style={{
-                    paddingLeft: 16,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 6
-                  }}>
-                  {jam?.headers?.map(header => (
-                    <li key={header}>
-                      <div>
-                        <Link
-                          href={`#${header}`}
-                          onClick={() => handleSectionClick(header)}
-                          sx={{
-                            color:
-                              header === activeSection
-                                ? '#000'
-                                : passedSections?.includes(header)
-                                  ? 'muted'
-                                  : '#000',
-                            textDecoration:
-                              header === activeSection ? 'underline' : 'none'
-                          }}>
-                          {header}
-                        </Link>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </div>
         </Container>
@@ -1162,7 +1036,7 @@ export default function JamComponent({ jam, jamsContent }) {
           sx={{
             px: '1rem',
             display: 'flex',
-            flexDirection: ['column', 'column', 'row'],
+            flexDirection: 'column',
             gap: [0, 0, '3rem']
           }}
           style={{ maxWidth: '64rem !important' }}>
@@ -1428,62 +1302,31 @@ export default function JamComponent({ jam, jamsContent }) {
               }}>
               <MDXRemote components={mdxComponents} {...jam.source} />
             </Box>
-            {jam.slug !== 'bakebuild' && (
-              <div
-                style={{
-                  border: '2px solid rgba(0, 0, 0, 0.25)',
-                  boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
-                  backgroundColor: '#E1E6EC',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  padding: '24px 24px',
-                  borderRadius: '16px'
+            <div
+              style={{
+                border: '2px solid rgba(0, 0, 0, 0.25)',
+                boxShadow: '0px 0px 24px 0px rgba(153, 60, 207, 0.50)',
+                backgroundColor: '#E1E6EC',
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '24px 24px',
+                borderRadius: '16px'
+              }}>
+              <Text
+                sx={{
+                  color: '#993CCF',
+                  fontSize: 32,
+                  lineHeight: 1.125,
+                  fontWeight: 700
                 }}>
-                <Text
-                  sx={{
-                    color: '#993CCF',
-                    fontSize: 32,
-                    lineHeight: 1.125,
-                    fontWeight: 700
-                  }}>
-                  You finished the Jam. <br />
-                  Congratulations! 🎉 🎉 🎉
-                </Text>
+                You finished the Jam. <br />
+                Congratulations! 🎉 🎉 🎉
+              </Text>
 
-                <Text sx={{ mt: 3 }}>
-                  Share your final project with the community
-                </Text>
-                <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
-                  <Text>Project Name</Text>
-                  <Input
-                    placeholder={'MarshaMellow - SwampLofiAnimation'}
-                    value={projectName}
-                    onChange={e => setProjectName(e.target.value)}
-                  />
-                </Box>
-                <Box sx={{ marginTop: '8px', width: ['100%', '100%', '75%'] }}>
-                  <Text>Project URL</Text>
-                  <Input
-                    placeholder={'https://swamplofi.marshamellow.repl.co/'}
-                    value={submissionURL}
-                    onChange={e => setSubmissionURL(e.target.value)}
-                  />
-                </Box>
-
-                <Button
-                  sx={{
-                    marginTop: '24px',
-                    borderRadius: '12px',
-                    padding: '12px',
-                    backgroundColor: '#993CCF',
-                    width: ['100%', '100%', '50%']
-                  }}
-                  onClick={() => submitProject()}>
-                  Share Project with Community
-                </Button>
-                <p>{apiResponse}</p>
-              </div>
-            )}
+              <Text sx={{ mt: 3 }}>
+                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and there's also an awesome community of 100k+ teenagers who love making cool stuff.
+              </Text>
+            </div>
           </div>
 
           <div sx={{ width: ['auto', 'auto', '20rem'], position: 'relative' }}>
@@ -1744,48 +1587,6 @@ export default function JamComponent({ jam, jamsContent }) {
                   </Box>
                 </>
               )}
-
-              <div sx={{ display: ['none', 'none', 'block'] }}>
-                <h2
-                  sx={{
-                    fontSize: '1.5rem',
-                    lineHeight: '1rem',
-                    fontWeight: 'bold',
-                    mt: '2rem'
-                  }}>
-                  Outline
-                </h2>
-
-                <ul
-                  style={{
-                    paddingLeft: 16,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 6
-                  }}>
-                  {jam?.headers?.map(header => (
-                    <li key={header}>
-                      <div>
-                        <Link
-                          href={`#${header}`}
-                          onClick={() => handleSectionClick(header)}
-                          sx={{
-                            color:
-                              header === activeSection
-                                ? '#000'
-                                : passedSections?.includes(header)
-                                  ? 'muted'
-                                  : '#000',
-                            textDecoration:
-                              header === activeSection ? 'underline' : 'none'
-                          }}>
-                          {header}
-                        </Link>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </div>
         </Container>
