@@ -600,7 +600,7 @@ export default function JamComponent({ jam, jamsContent }) {
               </Text>
 
               <Text sx={{ mt: 3 }}>
-                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and there's also an awesome community of 100k+ teenagers who love making cool stuff.
+                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and you can join the awesome community of 100k+ teenagers who love making cool stuff (just like you!).
               </Text>
             </div>
           </div>
@@ -1324,7 +1324,7 @@ export default function JamComponent({ jam, jamsContent }) {
               </Text>
 
               <Text sx={{ mt: 3 }}>
-                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and there's also an awesome community of 100k+ teenagers who love making cool stuff.
+                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and you can join the awesome community of 100k+ teenagers who love making cool stuff (just like you!).
               </Text>
             </div>
           </div>
