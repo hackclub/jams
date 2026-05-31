@@ -625,8 +625,6 @@ export default function Index(props) {
     desiredSlugsBatches.includes(item.slug)
   )
 
-  console.log(fallFeatures)
-
   const [scrollPosition, setScrollPosition] = useState(0)
   useEffect(() => {
     if (localStorage.getItem('viewed'))

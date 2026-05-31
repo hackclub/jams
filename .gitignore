@@ -19,7 +19,6 @@
 .DS_Store
 *.pem
 bun.lockb
-package-lock.json
 
 # debug
 npm-debug.log*
