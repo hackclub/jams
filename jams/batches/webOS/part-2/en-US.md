@@ -431,9 +431,9 @@ What will be there?
 That's for me to know and for you to find out 👀
 
 <Announcement
-  copy="Join Hack Club Flavortown!"
-  caption="Congratulations on making your very own WebOS — now ship it with Flavortown and earn free prizes!"
-  href="https://flavortown.hackclub.com?ref=webos-announcement"
+  copy="Join Stardance!"
+  caption="Congratulations on making your very own WebOS — now ship it to Stardance and earn free prizes!"
+  href="https://stardance.space"
   sx={{
     'p > span': { pl: 0 },
     fontSize: 21,
