@@ -690,9 +690,9 @@ Take some rest & return back ready to CONQUER THE WORLDDDD (& build an awesome A
 (Seriously though, great job!)
 
 <Announcement
-  copy="Join Hack Club Flavortown!"
-  caption="Congratulations on making your very own WebOS — now ship it with Flavortown and earn free prizes!"
-  href="https://flavortown.hackclub.com?ref=webos-announcement"
+  copy="Join Stardance!"
+  caption="Congratulations on making your very own WebOS — now ship it to Stardance and earn free prizes!"
+  href="https://stardance.space"
   sx={{
     'p > span': { pl: 0 },
     fontSize: 21,
