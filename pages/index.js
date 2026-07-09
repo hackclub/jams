@@ -29,9 +29,7 @@ export async function getStaticProps() {
 function getJams(fs, directory) {
   const filenames = fs.readdirSync(directory)
 
-  return filenames.map(filename => {
-    const fileContent = fs.readFileSync(
-      path.join(directory, filename, 'en-US.md'),
+  return filenames.map(filename => { const fileContent = fs.readFileSync( path.join(directory, filename, 'en-US.md'),
       'utf8'
     )
     const { data, content } = matter(fileContent)
@@ -622,9 +620,9 @@ export default function Index(props) {
     desiredSlugs.includes(jam.slug)
   )
 
-  const desiredSlugsBatches = ['sprig', 'webOS', 'artificial-intelligence']
-  const fallFeatures = props.jamsContent.batches.filter(batch =>
-    desiredSlugsBatches.includes(batch.slug)
+  const desiredSlugsBatches = ['sprig', 'hacker-card', 'webOS']
+  const fallFeatures = [...props.jamsContent.batches, ...props.jamsContent.singles].filter(item =>
+    desiredSlugsBatches.includes(item.slug)
   )
 
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -728,7 +726,7 @@ export default function Index(props) {
           </Box>
         </Box>
 
-        <Slides initialFeatures={features} router={router} />
+{/*        <Slides initialFeatures={features} router={router} /> */}
       </Box>
 
       <Container sx={{ marginTop: '-4rem', position: 'relative', zIndex: 1 }}>
@@ -749,7 +747,7 @@ export default function Index(props) {
               p: 0,
               zIndex: 2
             }}>
-            New to Jams? Start Jamming! 🍁
+            New to Jams? Start Jamming! 
           </Text>
           <Text
             as="h2"
@@ -760,8 +758,7 @@ export default function Index(props) {
               p: 0,
               zIndex: 2
             }}>
-            Here are some great multi-part jams to kickoff your club this fall
-            🍂{' '}
+              Here's some of the most popular Jams created by Hack Clubbers.
           </Text>
           <Grid
             columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
@@ -788,7 +785,7 @@ export default function Index(props) {
                   key={idx + fallFeature.title}
                   light={true}
                   {...fallFeature}
-                  redirect={'/batch/' + fallFeature.slug}
+                  redirect={(fallFeature.isBatch ? "/batch/" : "/jam/") + fallFeature.slug}
                   isSortable={true}
                   isHot={true}
                   currentDifficulty={difficulty}

@@ -113,7 +113,3 @@ slug: 'bakebuild'
 
 ## Submitting
 * Fill out the [form](https://airtable.com/apphIjW8QTCISm6tv/pagbs9wcZpDTyQ8cZ/form).
-<br></br>
-<br></br>
-<br></br>
-# You're Done
