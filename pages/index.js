@@ -5,6 +5,7 @@ import PreviewCard from '@/components/PreviewCard'
 import { useEffect, useState, useRef } from 'react'
 import Icon from '@hackclub/icons'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import lunr from 'lunr'
 
 import path from 'path'
@@ -708,7 +709,7 @@ export default function Index(props) {
             sx={{
               maxWidth: '48rem',
               px: [2, 4],
-              py: [2, 2],
+              py: [2, 3],
               textAlign: 'center'
             }}>
             <Text
@@ -724,6 +725,7 @@ export default function Index(props) {
               dissolve, and inventions come to life.
             </Text>
           </Box>
+          <Link href="/guides" style={{color: 'white', fontSize: '1.3rem', fontWeight: '500'}}>Check out the community guides too →</Link>
         </Box>
 
 {/*        <Slides initialFeatures={features} router={router} /> */}
@@ -1195,9 +1197,13 @@ export default function Index(props) {
             fontWeight: 600,
             mt: '2rem',
             lineHeight: '3.5rem',
-            zIndex: 2
+            zIndex: 2,
+            display: 'flex',
+            gap: '1rem',
+            alignItems: 'first baseline'
           }}>
           Jams
+          <Link href='/guides' style={{fontSize: '1.1rem', color: 'black'}}>Want more? Check out the community guides →</Link>
         </Text>
 
         <Text style={{ width: '100' }}>
