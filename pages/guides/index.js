@@ -3,14 +3,58 @@ import { Box, Image, Container, Grid, Text } from 'theme-ui'
 import Footer from '@/components/Footer'
 import PreviewCard from '@/components/PreviewCard'
 import Link from 'next/link'
+import guides_data from '@/guides_data/data.json'
+import { useState, useEffect } from 'react'
+
 
 /** @jsxImportSource theme-ui */
 export default function Index(props) {
-  const jams = props.jams || []
+  const guides = guides_data;
+
+  const featuredGuidesList = ["Hackpad", "Riceathon", "RP2040 Devboard"]
+  const featuredGuides = guides.filter(guide =>
+    featuredGuidesList.includes(guide.Name)
+  );
+
+  const categories = ["Hardware", "CAD", "Web Development", "Game Development", "Command Line", "GitHub", "AI Tools", "Programming Languages"]
+  const [selectedCategories, setSelectedCategories] = useState([])
+  const [query, setQuery] = useState('')
+  const [filteredGuides, setFilteredGuides] = useState(guides);
+  const [difficulty, setDifficulty] = useState('')
+  const [time, setTime] = useState('')
+  const [viewed, setViewed] = useState([])
+
+  useEffect(() => {
+    const filtered = guides.filter((guide) => {
+      const matchesQuery = guide.Name
+        .toLowerCase()
+        .includes(query.toLowerCase());
+
+      const matchesCategories =
+        selectedCategories.length === 0 ||
+        selectedCategories.some((category) =>
+          guide.Keyword.includes(category)
+        );
+
+      const matchesDifficulty =
+        difficulty === "" || guide.Difficulty === difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+
+      const matchesTime =
+        time === "" || guide.TimeEstimate === time;
+
+      return matchesQuery && matchesCategories && matchesTime && matchesDifficulty;
+    });
+
+    setFilteredGuides(filtered);
+  }, [query, selectedCategories, difficulty, time]);
+
+  console.log(difficulty);
 
   return (
     <>
         <Header
+          query={query}
+          setQuery={setQuery}
           isHomePage={true}
         />
         <Box
@@ -129,12 +173,27 @@ export default function Index(props) {
             columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
             gap={3}
             sx={{ pt: 4, position: 'relative' }}>
-            {jams.map(jam => (
-              <PreviewCard key={jam.slug} {...jam} />
+            {featuredGuides.map((guide, index) => (
+              <PreviewCard 
+                key={index} 
+                title={guide.Name}
+                thumbnail={guide.Image.includes("hc-cdn") ? 'http://cdn.hackclub.com/rescue?url=' + guide.Image : guide.Image}
+                redirect={guide.Link}
+                timeEstimate={guide.TimeEstimate}
+                keywords={guide.Keyword}
+                difficulty={guide.Difficulty}
+                isSortable={true}
+                isHot={true}
+                currentDifficulty={difficulty}
+                currentTime={time}
+                currentCategories={selectedCategories}
+                modifyDifficulty={setDifficulty}
+                modifyTime={setTime}
+                modifyCategories={setSelectedCategories}
+              />
             ))}
           </Grid>
         </Box>
-
         <Text
           as="h1"
           sx={{
@@ -142,10 +201,41 @@ export default function Index(props) {
             fontWeight: 600,
             mt: '2rem',
             lineHeight: '3.5rem',
-            zIndex: 2,
+            zIndex: 2
           }}>
           Guides 
         </Text>
+        <Text style={{ width: '100' }}>
+          {filteredGuides.length != 0 ? (
+            <p sx={{ m: 0 }}>{filteredGuides.length} Guides Found</p>
+          ) : (
+            <p sx={{ m: 0 }}>No Results Found</p>
+          )}
+        </Text>
+        <Grid
+          columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
+          gap={3}
+          sx={{ pt: 3, pb: '4rem', mt: '1rem' }}>
+          {filteredGuides.map((guide, index) => (
+            <PreviewCard
+              key={index} 
+              title={guide.Name}
+              thumbnail={guide.Image.includes("hc-cdn") ? 'http://cdn.hackclub.com/rescue?url=' + guide.Image : guide.Image}
+              redirect={guide.Link}
+              timeEstimate={guide.TimeEstimate}
+              keywords={guide.Keyword}
+              difficulty={guide.Difficulty}
+              isSortable={true}
+              isHot={true}
+              currentDifficulty={difficulty}
+              currentTime={time}
+              currentCategories={selectedCategories}
+              modifyDifficulty={setDifficulty}
+              modifyTime={setTime}
+              modifyCategories={setSelectedCategories}
+            />
+          ))}
+        </Grid>
       </Container>
 
       <Footer />
