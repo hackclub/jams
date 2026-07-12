@@ -49,7 +49,7 @@ export default function Index(props) {
     })
 
     setFilteredGuides(filtered)
-  }, [query, selectedCategories, difficulty, time])
+  }, [guides, query, selectedCategories, difficulty, time])
 
   return (
     <>
@@ -86,6 +86,7 @@ export default function Index(props) {
             mixBlendMode: 'color-burn'
           }}
           src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"
+          alt=""
         />
 
         <Box
