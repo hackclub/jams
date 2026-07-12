@@ -48,8 +48,6 @@ export default function Index(props) {
     setFilteredGuides(filtered);
   }, [query, selectedCategories, difficulty, time]);
 
-  console.log(difficulty);
-
   return (
     <>
         <Header
