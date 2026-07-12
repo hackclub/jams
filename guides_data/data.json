@@ -1,0 +1,179 @@
+[
+  {
+    "Name": "Build Your Own Custom Mouse",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/303d6f71d20b857c40991b5a4a0a9e8a51d7982e_tut_0.png",
+    "Link": "https://blueprint.hackclub.com/starter-projects/squeak",
+    "Keyword": "CAD",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "2 hours"
+  },
+  {
+    "Name": "Learn Backend Programming in ExpressJS",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/046cbfcd93eaf65aea3ff570cedf4def19c7bd53_Screenshot_2025-12-09_at_3.37.59_PM.png",
+    "Link": "https://express.athena.hackclub.com/home",
+    "Keyword": "Web Development",
+    "Difficulty": "Intermediate",
+    "TimeEstimate": "2 hours"
+  },
+
+  {
+    "Name": "Create Your Own 2D Platformer in Godot",
+    "Image": "https://daydream.jumpstart.hackclub.com/assets/platformlandsdemo.gif",
+    "Link": "https://daydream.jumpstart.hackclub.com/attendee/guide.html",
+    "Keyword": "Game Development",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "Long"
+  },
+  {
+    "Name": "Program Your Own Personal Site",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/9f630a1f173d441d3300a41ffd97a2459cb69ff4_Screenshot_2025-12-10_at_1.32.21_PM.png",
+    "Link": "https://workshops.hackclub.com/personal_website/",
+    "Keyword": "Web Development",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "1 hour"
+  },
+  {
+    "Name": "Create Your Own eFidget",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/6fb37d980f8c75f6ea7283e98df3ba092de72a5b_image.png",
+    "Link": "https://pathfinder.hackclub.com/",
+    "Keyword": "Hardware",
+    "Difficulty": "Intermediate",
+    "TimeEstimate": "Long"
+  },
+  {
+    "Name": "Design Your First PCB With a Sensor",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/96455b23db3ab2b41028d98aec5800b80037ef6f_image.png",
+    "Link": "https://hermes.hackclub.com/",
+    "Keyword": "Hardware",
+    "Difficulty": "Intermediate",
+    "TimeEstimate": "Long"
+  },
+  {
+    "Name": "Make Your Own Music Visualizer",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/462777ca0390496fc3a0f61c38f5686c6f6f1acc_image.png",
+    "Link": "https://waveform.hackclub.com/tutorial",
+    "Keyword": "Web Development",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "1 hour"
+  },
+  {
+    "Name": "Learn to Make Pull Requests",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/98803600c0d04dc2_image.png",
+    "Link": "https://draw-dino.hackclub.com/",
+    "Keyword": "GitHub",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "15 minutes"
+  },
+  {
+    "Name": "Make Your Own Macropad",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/6b9c8661f5ae68437e90d14a214f899759eb30b5_image.png",
+    "Link": "https://blueprint.hackclub.com/hackpad",
+    "Keyword": "Hardware",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "2 hours"
+  },
+  {
+    "Name": "Learn to Use Hack Club AI",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/95fe506b80a8873c_image.png",
+    "Link": "https://docs.ai.hackclub.com/",
+    "Keyword": "AI Tools",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "30 minutes"
+  },
+  {
+    "Name": "Code Your First Site and Get Boba",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/17234390cb3b74c4_image.png",
+    "Link": "https://www.canva.com/design/DAGr1zQLfE4/eqe5sSP6hE9-4SZez72QFA/view?utm_content=DAGr1zQLfE4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25bb5bce98",
+    "Keyword": "Web Development",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "1 hour"
+  },
+  {
+    "Name": "Make Your Own Pi Pico Clone",
+    "Image": "https://kaipereira.com/images/devboard/Pasted%20image%2020250930162537.png",
+    "Link": "https://kaipereira.com/journal/build-a-devboard",
+    "Keyword": "Hardware",
+    "Difficulty": "Intermediate",
+    "TimeEstimate": "Long"
+  },
+  {
+    "Name": "Learn to Make Beautiful READMEs",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/aa0e5b70d3b6444d_image.png",
+    "Link": "https://highway.hackclub.com/guides/beautiful-readmes",
+    "Keyword": "Hardware",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "30 minutes"
+  },
+  {
+    "Name": "Design Custom Keycaps",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/558ce7c0a4677fe6_image.png",
+    "Link": "https://highway.hackclub.com/guides/custom-keycaps",
+    "Keyword": "CAD",
+    "Difficulty": "Intermediate",
+    "TimeEstimate": "2 hours"
+  },
+  {
+    "Name": "Riceathon - Customize Your Own Linux Desktop",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/b4bf96a3ecfbe5c1_image.png",
+    "Link": "https://riceathon.hackclub.com/better-guide/guide.html",
+    "Keyword": "Command Line",
+    "Difficulty": "Advanced",
+    "TimeEstimate": "2 hours"
+  },
+  {
+    "Name": "The Zoo SvelteKit Guide",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/0bc04a1846b26ed9_image.png",
+    "Link": "https://github.com/hackclub/The-Zoo/blob/main/zoo.pdf",
+    "Keyword": "Web Development",
+    "Difficulty": "Intermediate",
+    "TimeEstimate": "2 hours"
+  },
+  {
+    "Name": "Create Your Own Split Keyboard",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/e2caab7c07431f23_image.png",
+    "Link": "https://blueprint.hackclub.com/starter-projects/split-keyboard",
+    "Keyword": "Hardware",
+    "Difficulty": "Intermediate",
+    "TimeEstimate": "Long"
+  },
+  {
+    "Name": "Design a Flight Controller PCB",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/94d237c4d7e48eb2_image.png",
+    "Link": "https://blueprint.hackclub.com/starter-projects/flightcontroller",
+    "Keyword": "Hardware",
+    "Difficulty": "Advanced",
+    "TimeEstimate": "Long"
+  },
+  {
+    "Name": "Make Your Own Midi Keyboard",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/710054274784eca36dca4ca7a384e5b2f1fd4c9c_image.png",
+    "Link": "https://blueprint.hackclub.com/starter-projects/midi",
+    "Keyword": "Hardware",
+    "Difficulty": "Intermediate",
+    "TimeEstimate": "Long"
+  },
+  {
+    "Name": "Learn the Basics of KiCad & PCB Design",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/ad0f0ce4430583c1_image.png",
+    "Link": "https://solder.hackclub.com/start",
+    "Keyword": "Hardware",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "1 hour"
+  },
+  {
+    "Name": "Make a Blinky Board",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/766c5aee15a8c57b1bd57467f3382fc68c0a627c_unnamed.gif",
+    "Link": "https://blueprint.hackclub.com/starter-projects/blinky",
+    "Keyword": "Hardware",
+    "Difficulty": "Beginner",
+    "TimeEstimate": "1 hour"
+  },
+  {
+    "Name": "Create Your Own Programming Language",
+    "Image": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/f0ace900ea47c5ad_screenshot_20251213_173454.png",
+    "Link": "https://easel.hackclub.com/orpheus-finds-easel",
+    "Keyword": "Programming Languages",
+    "Difficulty": "Advanced",
+    "TimeEstimate": "Long"
+  }
+]
