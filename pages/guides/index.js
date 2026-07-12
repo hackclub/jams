@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 export default function Index(props) {
   const guides = guides_data;
 
-  const featuredGuidesList = ["Hackpad", "Riceathon", "RP2040 Devboard"]
+  const featuredGuidesList = ["Make Your Own Macropad", "Riceathon - Customize Your Own Linux Desktop", "Make Your Own Pi Pico Clone"]
   const featuredGuides = guides.filter(guide =>
     featuredGuidesList.includes(guide.Name)
   );
