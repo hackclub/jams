@@ -165,7 +165,11 @@ export default function Header({
         }}>
         {isHomePage ? (
           <Link style={{ height: '4rem' }} href="https://hackclub.com/">
-            <Image src="/assets/flag.svg" alt="Hack Club flag" sx={{ height: '100%' }} />
+            <Image
+              src="/assets/flag.svg"
+              alt="Hack Club flag"
+              sx={{ height: '100%' }}
+            />
           </Link>
         ) : (
           <a

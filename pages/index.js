@@ -30,7 +30,9 @@ export async function getStaticProps() {
 function getJams(fs, directory) {
   const filenames = fs.readdirSync(directory)
 
-  return filenames.map(filename => { const fileContent = fs.readFileSync( path.join(directory, filename, 'en-US.md'),
+  return filenames.map(filename => {
+    const fileContent = fs.readFileSync(
+      path.join(directory, filename, 'en-US.md'),
       'utf8'
     )
     const { data, content } = matter(fileContent)
@@ -622,9 +624,10 @@ export default function Index(props) {
   )
 
   const desiredSlugsBatches = ['sprig', 'hacker-card', 'webOS']
-  const fallFeatures = [...props.jamsContent.batches, ...props.jamsContent.singles].filter(item =>
-    desiredSlugsBatches.includes(item.slug)
-  )
+  const fallFeatures = [
+    ...props.jamsContent.batches,
+    ...props.jamsContent.singles
+  ].filter(item => desiredSlugsBatches.includes(item.slug))
 
   const [scrollPosition, setScrollPosition] = useState(0)
   useEffect(() => {
@@ -725,10 +728,14 @@ export default function Index(props) {
               dissolve, and inventions come to life.
             </Text>
           </Box>
-          <Link href="/guides" style={{color: 'white', fontSize: '1.3rem', fontWeight: '500'}}>Check out the community guides too →</Link>
+          <Link
+            href="/guides"
+            style={{ color: 'white', fontSize: '1.3rem', fontWeight: '500' }}>
+            Check out the community guides too →
+          </Link>
         </Box>
 
-{/*        <Slides initialFeatures={features} router={router} /> */}
+        {/*        <Slides initialFeatures={features} router={router} /> */}
       </Box>
 
       <Container sx={{ marginTop: '-4rem', position: 'relative', zIndex: 1 }}>
@@ -749,7 +756,7 @@ export default function Index(props) {
               p: 0,
               zIndex: 2
             }}>
-            New to Jams? Start Jamming! 
+            New to Jams? Start Jamming!
           </Text>
           <Text
             as="h2"
@@ -760,14 +767,16 @@ export default function Index(props) {
               p: 0,
               zIndex: 2
             }}>
-              Here's some of the most popular Jams created by Hack Clubbers.
+            Here&apos;s some of the most popular Jams created by Hack Clubbers.
           </Text>
           <Grid
             columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
             gap={3}
             sx={{ pt: 4, position: 'relative' }}>
             {fallFeatures.reverse().map((fallFeature, idx) => (
-              <div key={idx + fallFeature.title} style={{ position: 'relative' }}>
+              <div
+                key={idx + fallFeature.title}
+                style={{ position: 'relative' }}>
                 {fallFeature.sticker && (
                   <Box
                     sx={{
@@ -787,7 +796,10 @@ export default function Index(props) {
                   key={idx + fallFeature.title}
                   light={true}
                   {...fallFeature}
-                  redirect={(fallFeature.isBatch ? "/batch/" : "/jam/") + fallFeature.slug}
+                  redirect={
+                    (fallFeature.isBatch ? '/batch/' : '/jam/') +
+                    fallFeature.slug
+                  }
                   isSortable={true}
                   isHot={true}
                   currentDifficulty={difficulty}
@@ -1203,7 +1215,9 @@ export default function Index(props) {
             alignItems: 'first baseline'
           }}>
           Jams
-          <Link href='/guides' style={{fontSize: '1.1rem', color: 'black'}}>Want more? Check out the community guides →</Link>
+          <Link href="/guides" style={{ fontSize: '1.1rem', color: 'black' }}>
+            Want more? Check out the community guides →
+          </Link>
         </Text>
 
         <Text style={{ width: '100' }}>

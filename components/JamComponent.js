@@ -314,7 +314,7 @@ export default function JamComponent({ jam, jamsContent }) {
           sx={{
             px: '1rem',
             display: 'flex',
-            flexDirection: 'column', 
+            flexDirection: 'column',
             gap: [0, 0, '3rem']
           }}
           style={{ maxWidth: '64rem !important' }}>
@@ -532,7 +532,7 @@ export default function JamComponent({ jam, jamsContent }) {
                 </span>
               </div>
             </Link>
-            {/*   
+            {/*
             <Box sx={{ pt: 16 }}>
               {finishedProjects.length > 0 ? (
                 <div>
@@ -600,7 +600,19 @@ export default function JamComponent({ jam, jamsContent }) {
               </Text>
 
               <Text sx={{ mt: 3 }}>
-                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and you can join the awesome community of 100k+ teenagers who love making cool stuff (just like you!).
+                If you&apos;re a highschooler who enjoys programming or
+                tinkering with hardware, make sure to join{' '}
+                <a
+                  href="https://hackclub.com/"
+                  target="_blank"
+                  rel="noreferrer">
+                  Hack Club
+                </a>
+                , the world&apos;s largest nonprofit empowering teenagers to
+                make cool projects! There&apos;s tons of programs where you can
+                get prizes for programming, get your hardware projects fully
+                funded and you can join the awesome community of 100k+ teenagers
+                who love making cool stuff (just like you!).
               </Text>
             </div>
           </div>
@@ -863,7 +875,6 @@ export default function JamComponent({ jam, jamsContent }) {
                   </Box>
                 </>
               )}
-
             </div>
           </div>
         </Container>
@@ -1324,7 +1335,19 @@ export default function JamComponent({ jam, jamsContent }) {
               </Text>
 
               <Text sx={{ mt: 3 }}>
-                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and you can join the awesome community of 100k+ teenagers who love making cool stuff (just like you!).
+                If you&apos;re a highschooler who enjoys programming or
+                tinkering with hardware, make sure to join{' '}
+                <a
+                  href="https://hackclub.com/"
+                  target="_blank"
+                  rel="noreferrer">
+                  Hack Club
+                </a>
+                , the world&apos;s largest nonprofit empowering teenagers to
+                make cool projects! There&apos;s tons of programs where you can
+                get prizes for programming, get your hardware projects fully
+                funded and you can join the awesome community of 100k+ teenagers
+                who love making cool stuff (just like you!).
               </Text>
             </div>
           </div>
