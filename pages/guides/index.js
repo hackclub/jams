@@ -6,56 +6,55 @@ import Link from 'next/link'
 import guides_data from '@/guides_data/data.json'
 import { useState, useEffect } from 'react'
 
-
 /** @jsxImportSource theme-ui */
 export default function Index(props) {
-  const guides = guides_data;
+  const guides = guides_data
 
-  const featuredGuidesList = ["Make Your Own Macropad", "Riceathon - Customize Your Own Linux Desktop", "Make Your Own Pi Pico Clone"]
+  const featuredGuidesList = [
+    'Make Your Own Macropad',
+    'Riceathon - Customize Your Own Linux Desktop',
+    'Make Your Own Pi Pico Clone'
+  ]
   const featuredGuides = guides.filter(guide =>
     featuredGuidesList.includes(guide.Name)
-  );
+  )
 
-  const categories = ["Hardware", "CAD", "Web Development", "Game Development", "Command Line", "GitHub", "AI Tools", "Programming Languages"]
   const [selectedCategories, setSelectedCategories] = useState([])
   const [query, setQuery] = useState('')
-  const [filteredGuides, setFilteredGuides] = useState(guides);
+  const [filteredGuides, setFilteredGuides] = useState(guides)
   const [difficulty, setDifficulty] = useState('')
   const [time, setTime] = useState('')
   const [viewed, setViewed] = useState([])
 
   useEffect(() => {
-    const filtered = guides.filter((guide) => {
-      const matchesQuery = guide.Name
-        .toLowerCase()
-        .includes(query.toLowerCase());
+    const filtered = guides.filter(guide => {
+      const matchesQuery = guide.Name.toLowerCase().includes(
+        query.toLowerCase()
+      )
 
       const matchesCategories =
         selectedCategories.length === 0 ||
-        selectedCategories.some((category) =>
-          guide.Keyword.includes(category)
-        );
+        selectedCategories.some(category => guide.Keyword.includes(category))
 
       const matchesDifficulty =
-        difficulty === "" || guide.Difficulty === difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+        difficulty === '' ||
+        guide.Difficulty ===
+          difficulty.charAt(0).toUpperCase() + difficulty.slice(1)
 
-      const matchesTime =
-        time === "" || guide.TimeEstimate === time;
+      const matchesTime = time === '' || guide.TimeEstimate === time
 
-      return matchesQuery && matchesCategories && matchesTime && matchesDifficulty;
-    });
+      return (
+        matchesQuery && matchesCategories && matchesTime && matchesDifficulty
+      )
+    })
 
-    setFilteredGuides(filtered);
-  }, [query, selectedCategories, difficulty, time]);
+    setFilteredGuides(filtered)
+  }, [guides, query, selectedCategories, difficulty, time])
 
   return (
     <>
-        <Header
-          query={query}
-          setQuery={setQuery}
-          isHomePage={true}
-        />
-        <Box
+      <Header query={query} setQuery={setQuery} isHomePage={true} />
+      <Box
         sx={{
           backgroundImage:
             'linear-gradient(180deg, #3C3ACF 0%, rgba(61, 111, 204, 0.95) 17.19%, rgba(78, 155, 199, 0.90) 31.77%, rgba(127, 201, 216, 0.71) 52.08%, rgba(127, 201, 216, 0.60) 63.54%, rgba(127, 201, 216, 0) 96.88%), linear-gradient(180deg, #D9D9D9 0%, rgba(255, 255, 255, 0) 100%)',
@@ -87,6 +86,7 @@ export default function Index(props) {
             mixBlendMode: 'color-burn'
           }}
           src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"
+          alt=""
         />
 
         <Box
@@ -127,10 +127,13 @@ export default function Index(props) {
                 pt: 0,
                 px: 3
               }}>
-                These are guides spread across different events that Hack Club has run, and also created by fellow hackclubbers!
+              These are guides spread across different events that Hack Club has
+              run, and also created by fellow hackclubbers!
             </Text>
           </Box>
-          <Link href="/" style={{ color: 'white', fontSize: '1.3rem', fontWeight: '500' }}>
+          <Link
+            href="/"
+            style={{ color: 'white', fontSize: '1.3rem', fontWeight: '500' }}>
             ← Head back to jams
           </Link>
         </Box>
@@ -172,10 +175,14 @@ export default function Index(props) {
             gap={3}
             sx={{ pt: 4, position: 'relative' }}>
             {featuredGuides.map((guide, index) => (
-              <PreviewCard 
-                key={index} 
+              <PreviewCard
+                key={index}
                 title={guide.Name}
-                thumbnail={guide.Image.includes("hc-cdn") ? 'http://cdn.hackclub.com/rescue?url=' + guide.Image : guide.Image}
+                thumbnail={
+                  guide.Image.includes('hc-cdn')
+                    ? 'http://cdn.hackclub.com/rescue?url=' + guide.Image
+                    : guide.Image
+                }
                 redirect={guide.Link}
                 timeEstimate={guide.TimeEstimate}
                 keywords={guide.Keyword}
@@ -201,7 +208,7 @@ export default function Index(props) {
             lineHeight: '3.5rem',
             zIndex: 2
           }}>
-          Guides 
+          Guides
         </Text>
         <Text style={{ width: '100' }}>
           {filteredGuides.length != 0 ? (
@@ -216,9 +223,13 @@ export default function Index(props) {
           sx={{ pt: 3, pb: '4rem', mt: '1rem' }}>
           {filteredGuides.map((guide, index) => (
             <PreviewCard
-              key={index} 
+              key={index}
               title={guide.Name}
-              thumbnail={guide.Image.includes("hc-cdn") ? 'http://cdn.hackclub.com/rescue?url=' + guide.Image : guide.Image}
+              thumbnail={
+                guide.Image.includes('hc-cdn')
+                  ? 'http://cdn.hackclub.com/rescue?url=' + guide.Image
+                  : guide.Image
+              }
               redirect={guide.Link}
               timeEstimate={guide.TimeEstimate}
               keywords={guide.Keyword}

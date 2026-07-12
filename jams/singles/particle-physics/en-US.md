@@ -3,7 +3,7 @@ title: 'Making a Basic Particle Physics Simulation'
 description: Creating a basic particle physics simulation and rendering using p5.js
 contributor: 'sahitid'
 originalAuthor: 'SquarePear'
-thumbnail: '[particle physics thumbnail final demo](https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png)'
+thumbnail: 'https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png'
 timeEstimate: '30-45 Min'
 difficulty: 'Beginner'
 keywords: 'Beta, motion, fractal, particle, physics, particle physics'

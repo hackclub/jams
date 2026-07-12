@@ -3,6 +3,8 @@
 import React from 'react'
 
 const Image = ({ src, alt }) => (
+  // Guide images come from arbitrary hosts and do not provide dimensions.
+  // oxlint-disable-next-line nextjs/no-img-element
   <img
     src={src}
     alt={alt}

@@ -72,7 +72,9 @@ export default function SearchControls({
               All Languages
             </option>
             {router.locales.map(locale => (
-              <option key={locale} value={locale}>JavaScript</option>
+              <option key={locale} value={locale}>
+                JavaScript
+              </option>
             ))}
           </Select>
         </Box>

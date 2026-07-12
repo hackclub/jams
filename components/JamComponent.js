@@ -16,6 +16,7 @@ import {
 } from 'theme-ui'
 import Header from '@/components/Header'
 import lunr from 'lunr'
+import Image from 'next/image'
 
 /** @jsxImportSource theme-ui */
 import Meta from '@hackclub/meta'
@@ -99,7 +100,14 @@ export default function JamComponent({ jam, jamsContent }) {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [
+    jam.title,
+    jam.difficulty,
+    jam.keywords,
+    jam.language,
+    jam.timeEstimate,
+    jam.headers
+  ])
 
   const precision = 0.4 // arbitrary number to indicate precision of lunr
 
@@ -314,7 +322,7 @@ export default function JamComponent({ jam, jamsContent }) {
           sx={{
             px: '1rem',
             display: 'flex',
-            flexDirection: 'column', 
+            flexDirection: 'column',
             gap: [0, 0, '3rem']
           }}
           style={{ maxWidth: '64rem !important' }}>
@@ -516,9 +524,12 @@ export default function JamComponent({ jam, jamsContent }) {
                   gap: '0.5rem',
                   mt: '0.25rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${jam.contributor}.png`}
-                  sx={{ width: '1.5rem', borderRadius: '9999px' }}
+                  alt={`${jam.contributor}'s GitHub avatar`}
+                  width={24}
+                  height={24}
+                  style={{ width: '1.5rem', borderRadius: '9999px' }}
                 />
                 <span
                   sx={{
@@ -532,7 +543,7 @@ export default function JamComponent({ jam, jamsContent }) {
                 </span>
               </div>
             </Link>
-            {/*   
+            {/*
             <Box sx={{ pt: 16 }}>
               {finishedProjects.length > 0 ? (
                 <div>
@@ -600,7 +611,19 @@ export default function JamComponent({ jam, jamsContent }) {
               </Text>
 
               <Text sx={{ mt: 3 }}>
-                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and you can join the awesome community of 100k+ teenagers who love making cool stuff (just like you!).
+                If you&apos;re a highschooler who enjoys programming or
+                tinkering with hardware, make sure to join{' '}
+                <a
+                  href="https://hackclub.com/"
+                  target="_blank"
+                  rel="noreferrer">
+                  Hack Club
+                </a>
+                , the world&apos;s largest nonprofit empowering teenagers to
+                make cool projects! There&apos;s tons of programs where you can
+                get prizes for programming, get your hardware projects fully
+                funded and you can join the awesome community of 100k+ teenagers
+                who love making cool stuff (just like you!).
               </Text>
             </div>
           </div>
@@ -633,9 +656,16 @@ export default function JamComponent({ jam, jamsContent }) {
                   bg: 'rgb(229 229 229 / 0.50)',
                   borderRadius: '1rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${jam.contributor}.png`}
-                  sx={{ width: '3rem', height: '3rem', borderRadius: '9999px' }}
+                  alt={`${jam.contributor}'s GitHub avatar`}
+                  width={48}
+                  height={48}
+                  style={{
+                    width: '3rem',
+                    height: '3rem',
+                    borderRadius: '9999px'
+                  }}
                 />
                 <div>
                   <Link
@@ -863,7 +893,6 @@ export default function JamComponent({ jam, jamsContent }) {
                   </Box>
                 </>
               )}
-
             </div>
           </div>
         </Container>
@@ -1240,9 +1269,12 @@ export default function JamComponent({ jam, jamsContent }) {
                   gap: '0.5rem',
                   mt: '0.25rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${jam.contributor}.png`}
-                  sx={{ width: '1.5rem', borderRadius: '9999px' }}
+                  alt={`${jam.contributor}'s GitHub avatar`}
+                  width={24}
+                  height={24}
+                  style={{ width: '1.5rem', borderRadius: '9999px' }}
                 />
                 <span
                   sx={{
@@ -1324,7 +1356,19 @@ export default function JamComponent({ jam, jamsContent }) {
               </Text>
 
               <Text sx={{ mt: 3 }}>
-                If you're a highschooler who enjoys programming or tinkering with hardware, make sure to join <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>, the world's largest nonprofit empowering teenagers to make cool projects! There's tons of programs where you can get prizes for programming, get your hardware projects fully funded and you can join the awesome community of 100k+ teenagers who love making cool stuff (just like you!).
+                If you&apos;re a highschooler who enjoys programming or
+                tinkering with hardware, make sure to join{' '}
+                <a
+                  href="https://hackclub.com/"
+                  target="_blank"
+                  rel="noreferrer">
+                  Hack Club
+                </a>
+                , the world&apos;s largest nonprofit empowering teenagers to
+                make cool projects! There&apos;s tons of programs where you can
+                get prizes for programming, get your hardware projects fully
+                funded and you can join the awesome community of 100k+ teenagers
+                who love making cool stuff (just like you!).
               </Text>
             </div>
           </div>
@@ -1357,9 +1401,16 @@ export default function JamComponent({ jam, jamsContent }) {
                   bg: 'rgb(229 229 229 / 0.50)',
                   borderRadius: '1rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${jam.contributor}.png`}
-                  sx={{ width: '3rem', height: '3rem', borderRadius: '9999px' }}
+                  alt={`${jam.contributor}'s GitHub avatar`}
+                  width={48}
+                  height={48}
+                  style={{
+                    width: '3rem',
+                    height: '3rem',
+                    borderRadius: '9999px'
+                  }}
                 />
                 <div>
                   <Link
