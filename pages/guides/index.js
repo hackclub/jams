@@ -10,10 +10,13 @@ export default function Index(props) {
 
   return (
     <>
-      <Box
+        <Header
+          isHomePage={true}
+        />
+        <Box
         sx={{
           backgroundImage:
-            'linear-gradient(180deg, #993CCF 0%, rgba(170, 77, 181, 0.95) 17.19%, rgba(193, 99, 146, 0.90) 31.77%, rgba(223, 129, 101, 0.71) 52.08%, rgba(240, 146, 75, 0.60) 63.54%, rgba(240, 146, 75, 0.00) 96.88%), linear-gradient(180deg, #D9D9D9 0%, rgba(255, 255, 255, 0.00) 100%)',
+            'linear-gradient(180deg, #3C3ACF 0%, rgba(61, 111, 204, 0.95) 17.19%, rgba(78, 155, 199, 0.90) 31.77%, rgba(127, 201, 216, 0.71) 52.08%, rgba(127, 201, 216, 0.60) 63.54%, rgba(127, 201, 216, 0) 96.88%), linear-gradient(180deg, #D9D9D9 0%, rgba(255, 255, 255, 0) 100%)',
           backgroundSize: 'cover',
           color: 'white',
           display: 'flex',
@@ -86,7 +89,7 @@ export default function Index(props) {
             </Text>
           </Box>
           <Link href="/" style={{ color: 'white', fontSize: '1.3rem', fontWeight: '500' }}>
-            ← Head back to Jams
+            ← Head back to jams
           </Link>
         </Box>
       </Box>
@@ -109,7 +112,7 @@ export default function Index(props) {
               p: 0,
               zIndex: 2
             }}>
-            New to Jams? Start Jamming!
+            Not sure where to start?
           </Text>
           <Text
             as="h2"
@@ -120,7 +123,7 @@ export default function Index(props) {
               p: 0,
               zIndex: 2
             }}>
-            Here's some of the most popular Jams created by Hack Clubbers.
+            These are some favorites created for Hack Club events!
           </Text>
           <Grid
             columns={[null, '1fr', '1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr']}
@@ -140,14 +143,8 @@ export default function Index(props) {
             mt: '2rem',
             lineHeight: '3.5rem',
             zIndex: 2,
-            display: 'flex',
-            gap: '1rem',
-            alignItems: 'first baseline'
           }}>
-          Jams
-          <Link href="/guides" style={{ fontSize: '1.1rem', color: 'black' }}>
-            Want more? Check out the community guides →
-          </Link>
+          Guides 
         </Text>
       </Container>
 
