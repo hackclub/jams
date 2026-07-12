@@ -21,7 +21,7 @@ poster: ''
 video: ''
 totalParts: 5
 ---
-Aye there mate, welcome to the forth Jam in this Batch. We're quite impressed by your resilience. Surely you're a bit impressed with yourself as well.
+Aye there mate, welcome to the fourth Jam in this Batch. We're quite impressed by your resilience. Surely you're a bit impressed with yourself as well.
 
 Our first app is going to be a text-based app where you can create little text-based posts about yourself or whatever you'd like to post about. Your app is going to look totally different from mine, so prepare to get your creative thinking cap on and begin your first app. 
 
