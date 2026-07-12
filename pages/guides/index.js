@@ -19,16 +19,6 @@ export default function Index(props) {
     featuredGuidesList.includes(guide.Name)
   )
 
-  const categories = [
-    'Hardware',
-    'CAD',
-    'Web Development',
-    'Game Development',
-    'Command Line',
-    'GitHub',
-    'AI Tools',
-    'Programming Languages'
-  ]
   const [selectedCategories, setSelectedCategories] = useState([])
   const [query, setQuery] = useState('')
   const [filteredGuides, setFilteredGuides] = useState(guides)
