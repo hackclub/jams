@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from 'react'
 import Icon from '@hackclub/icons'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import NextImage from 'next/image'
 import lunr from 'lunr'
 
 import path from 'path'
@@ -684,6 +685,7 @@ export default function Index(props) {
             mixBlendMode: 'color-burn'
           }}
           src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"
+          alt=""
         />
 
         <Box
@@ -785,8 +787,12 @@ export default function Index(props) {
                       right: '-48px', // Adjust the right distance as needed
                       zIndex: 1
                     }}>
-                    <img
+                    <NextImage
                       src={fallFeature.sticker}
+                      alt=""
+                      width={96}
+                      height={96}
+                      sizes="96px"
                       style={{ width: '96px', height: '96px' }}
                     />
                   </Box>

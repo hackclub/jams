@@ -3,6 +3,7 @@ import { Box, Container, Grid, Text } from 'theme-ui'
 import Footer from '@/components/Footer'
 import PreviewCard from '@/components/PreviewCard'
 import { useState } from 'react'
+import Image from 'next/image'
 
 /** @jsxImportSource theme-ui */
 
@@ -64,8 +65,12 @@ export default function KeywordPage({ jams, keyword, emoji }) {
                       right: '-48px', // Adjust the right distance as needed
                       zIndex: 1
                     }}>
-                    <img
+                    <Image
                       src={jam.sticker}
+                      alt=""
+                      width={96}
+                      height={96}
+                      sizes="96px"
                       style={{ width: '96px', height: '96px' }}
                     />
                   </Box>

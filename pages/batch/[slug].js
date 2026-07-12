@@ -12,6 +12,7 @@ import JamComponent from '@/components/JamComponent'
 import Meta from '@hackclub/meta'
 import Head from 'next/head'
 import lunr from 'lunr'
+import Image from 'next/image'
 
 /** @jsxImportSource theme-ui */
 
@@ -241,14 +242,19 @@ export default function Page({ batch, params, jams }) {
             borderRadius: '16px'
           }}>
           <div sx={{ flex: '1 1 0%' }}>
-            <img
+            <Image
+              width={640}
+              height={360}
+              sizes="(max-width: 64rem) 100vw, 50vw"
               style={{
                 width: '100%',
+                height: 'auto',
                 aspectRatio: '16 / 9',
                 objectFit: 'cover',
                 borderRadius: '16px'
               }}
               src={batch.thumbnail}
+              alt={`${batch.title} thumbnail`}
             />
           </div>
 
@@ -325,9 +331,12 @@ export default function Page({ batch, params, jams }) {
                   gap: '0.5rem',
                   mt: '0.5rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${batch.contributor}.png`}
-                  sx={{ width: '1.5rem', borderRadius: '9999px' }}
+                  alt={`${batch.contributor}'s GitHub avatar`}
+                  width={24}
+                  height={24}
+                  style={{ width: '1.5rem', borderRadius: '9999px' }}
                 />
                 <span
                   sx={{

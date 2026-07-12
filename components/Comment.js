@@ -33,6 +33,7 @@ export default function Comment({ githubUser, children }) {
             }}>
             <Image
               src={`https://github.com/${githubUser}.png`}
+              alt={`${githubUser}'s GitHub avatar`}
               sx={{
                 width: '1.5rem',
                 height: '1.5rem',

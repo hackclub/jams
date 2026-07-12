@@ -16,6 +16,7 @@ import {
 } from 'theme-ui'
 import Header from '@/components/Header'
 import lunr from 'lunr'
+import Image from 'next/image'
 
 /** @jsxImportSource theme-ui */
 import Meta from '@hackclub/meta'
@@ -99,7 +100,14 @@ export default function JamComponent({ jam, jamsContent }) {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [
+    jam.title,
+    jam.difficulty,
+    jam.keywords,
+    jam.language,
+    jam.timeEstimate,
+    jam.headers
+  ])
 
   const precision = 0.4 // arbitrary number to indicate precision of lunr
 
@@ -516,9 +524,12 @@ export default function JamComponent({ jam, jamsContent }) {
                   gap: '0.5rem',
                   mt: '0.25rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${jam.contributor}.png`}
-                  sx={{ width: '1.5rem', borderRadius: '9999px' }}
+                  alt={`${jam.contributor}'s GitHub avatar`}
+                  width={24}
+                  height={24}
+                  style={{ width: '1.5rem', borderRadius: '9999px' }}
                 />
                 <span
                   sx={{
@@ -645,9 +656,16 @@ export default function JamComponent({ jam, jamsContent }) {
                   bg: 'rgb(229 229 229 / 0.50)',
                   borderRadius: '1rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${jam.contributor}.png`}
-                  sx={{ width: '3rem', height: '3rem', borderRadius: '9999px' }}
+                  alt={`${jam.contributor}'s GitHub avatar`}
+                  width={48}
+                  height={48}
+                  style={{
+                    width: '3rem',
+                    height: '3rem',
+                    borderRadius: '9999px'
+                  }}
                 />
                 <div>
                   <Link
@@ -1251,9 +1269,12 @@ export default function JamComponent({ jam, jamsContent }) {
                   gap: '0.5rem',
                   mt: '0.25rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${jam.contributor}.png`}
-                  sx={{ width: '1.5rem', borderRadius: '9999px' }}
+                  alt={`${jam.contributor}'s GitHub avatar`}
+                  width={24}
+                  height={24}
+                  style={{ width: '1.5rem', borderRadius: '9999px' }}
                 />
                 <span
                   sx={{
@@ -1380,9 +1401,16 @@ export default function JamComponent({ jam, jamsContent }) {
                   bg: 'rgb(229 229 229 / 0.50)',
                   borderRadius: '1rem'
                 }}>
-                <img
+                <Image
                   src={`https://github.com/${jam.contributor}.png`}
-                  sx={{ width: '3rem', height: '3rem', borderRadius: '9999px' }}
+                  alt={`${jam.contributor}'s GitHub avatar`}
+                  width={48}
+                  height={48}
+                  style={{
+                    width: '3rem',
+                    height: '3rem',
+                    borderRadius: '9999px'
+                  }}
                 />
                 <div>
                   <Link

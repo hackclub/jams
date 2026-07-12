@@ -3,8 +3,11 @@ import Icon from '@hackclub/icons'
 import { FiGithub, FiArrowLeft } from 'react-icons/fi'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
+import NextImage from 'next/image'
 
 /** @jsxImportSource theme-ui */
+
+const fruits = ['raspberry', 'blueberry']
 
 export default function Header({
   isHomePage = false,
@@ -18,7 +21,6 @@ export default function Header({
   const [numberAvailable, setNumberAvailable] = useState(5)
   const [showMoreVisible, setShowMoreVisible] = useState(false)
 
-  const fruits = ['raspberry', 'blueberry']
   const [placeholderText, setPlaceholderText] = useState('')
   const [didEasterEgg, setDidEasterEgg] = useState(false)
 
@@ -57,7 +59,7 @@ export default function Header({
   // make the placeholder text a random fruit using useEffect. This ensures that the UI updates as well
   useEffect(() => {
     setPlaceholderText(fruits[Math.floor(Math.random() * fruits.length)])
-  }, [fruits])
+  }, [])
 
   const easterEgg = event => {
     // If input value is preset jam
@@ -305,9 +307,14 @@ export default function Header({
                       paddingBottom: '8px',
                       paddingTop: '8px'
                     }}>
-                    <img
+                    <NextImage
                       alt={jam.title || 'Jam thumbnail'}
+                      width={320}
+                      height={180}
+                      sizes="(max-width: 40em) 100vw, 160px"
                       style={{
+                        width: '100%',
+                        height: 'auto',
                         maxWidth: '100%',
                         aspectRatio: '16/9',
                         objectFit: 'cover',

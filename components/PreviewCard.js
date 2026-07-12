@@ -242,6 +242,7 @@ export default function PreviewCard({
               ) : (
                 <Image
                   src={thumbnail}
+                  alt={`${title} thumbnail`}
                   sx={{
                     width: '100%',
                     objectFit: 'cover',
