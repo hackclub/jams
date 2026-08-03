@@ -49,6 +49,6 @@
   "devDependencies": {
     "oxfmt": "^0.58.0",
     "oxlint": "^1.73.0",
-    "sass": "^1.101.0"
+    "sass": "^1.102.0"
   }
 }
