@@ -35,7 +35,7 @@
     "next-mdx-remote": "^6.0.0",
     "nprogress": "^0.2.0",
     "prop-types": "^15.8.1",
-    "react": "^19.2.7",
+    "react": "^19.2.8",
     "react-dom": "^19.2.7",
     "react-freezeframe": "^5.0.2",
     "react-highlight": "^0.15.0",
