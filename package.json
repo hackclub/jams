@@ -28,7 +28,7 @@
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
-    "instantsearch.js": "^4.105.0",
+    "instantsearch.js": "^4.108.0",
     "levenshtein": "~1.0.5",
     "lunr": "^2.3.9",
     "next": "^16.2.10",
