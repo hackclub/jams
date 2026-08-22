@@ -35,7 +35,7 @@
     "theme-ui": "^0.17.4"
   },
   "devDependencies": {
-    "oxfmt": "^0.61.0",
+    "oxfmt": "^0.64.0",
     "oxlint": "^1.76.0",
     "sass": "^1.102.0"
   }
