@@ -8,14 +8,14 @@ description: >
   το οποίο θα είναι η βάση για τα υπόλοιπα Jams.
 contributor: SerenityUX
 contributorSlackID: 'U041FQB8VK2'
-thumbnail: 'https://cloud-1j1hqciuo-hack-club-bot.vercel.app/0desktopadded.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-1j1hqciuo-hack-club-bot.vercel.app/0desktopadded.png'
 timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, replit'
 language: 'HTML & CSS'
 presentation: 'https://www.figma.com/file/PTWgxtPTUU5ZdEr8JZtH7X/webOSPart2?type=design&node-id=0%3A1&mode=design&t=BUR8qjk3lvlcygxO-1'
 presentationPlay: 'https://www.figma.com/proto/PTWgxtPTUU5ZdEr8JZtH7X/webOSPart2?page-id=0%3A1&type=design&node-id=1-2&viewport=-21176%2C281%2C0.38&t=CSTNNjzGHDS0y5ls-1&scaling=contain&starting-point-node-id=1%3A2&mode=design'
-presentationPDF: 'https://cloud-esbedol6s-hack-club-bot.vercel.app/10webospart2-min.pdf'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-esbedol6s-hack-club-bot.vercel.app/10webospart2-min.pdf'
 notes: ''
 poster: ''
 video: ''
@@ -27,7 +27,7 @@ totalParts: 5
 
 Θα προσθέσεις το περίγραμμα των παραθύρων σου, θα δημιουργήσεις την επιφάνεια εργασίας σου και θα προσθέσεις μια πάνω μπάρα.
 
-![Θα τελειώσεις με](https://cloud-d6rlms9ox-hack-club-bot.vercel.app/0image.png)
+![Θα τελειώσεις με](https://cdn.hackclub.com/rescue?url=https://cloud-d6rlms9ox-hack-club-bot.vercel.app/0image.png)
 
 Παρ'όλο που θα γράψουμε Javascript, όλος ο κώδικας θα μείνει στο αρχείο της HTML *(μέχρι την επόμενη φορά)*
 
@@ -39,7 +39,7 @@ totalParts: 5
 ## Ορισμός του "παραθύρου"
 Λοιπόν, την τελευταία φορά τελείωσες με την αρχή της οθόνης καλωσορίσματος σου. Ας ελπίσουμε ότι δε θα μοιάζει καθόλου με το δικό μου. Ως υπενθύμιση, εδώ είναι πώς έμοιαζε το δικό μου:
 
-![Το παράθυρο](https://cloud-p1jqe7wd2-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_1.24.32_pm.png)
+![Το παράθυρο](https://cdn.hackclub.com/rescue?url=https://cloud-p1jqe7wd2-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_1.24.32_pm.png)
 
 ### Τι είναι ένα παράθυρο;
 Ένα παράθυρο είναι ένα πλαίσιο που ορίζει πού αρχίζει και πού τελειώνει μια εφαρμογή στο User Interface (UI) σου. Υποθέτω ότι ένα div θα μπορούσε να έχει οποιοδήποτε σχήμα (αν θέλεις τα παράθυρά σου να είναι κύκλοι, κάντο!).
@@ -48,7 +48,7 @@ totalParts: 5
 
 Τα τοιχώματα στο εσωτερικό του πλαισίου ορίζουν πού αρχίζει και πού τελειώνει το περιεχόμενο (νόστιμο φαγητό) και τα τοιχώματα κατά μήκος της άκρης του πλαισίου ορίζουν πού αρχίζει και πού τελειώνει το πλαίσιο.
 
-![Bento Box of Divs](https://cloud-e63a9spt4-hack-club-bot.vercel.app/0divbento.png)
+![Bento Box of Divs](https://cdn.hackclub.com/rescue?url=https://cloud-e63a9spt4-hack-club-bot.vercel.app/0divbento.png)
 
 ### Γιατί χρειαζόμαστε ένα παράθυρο;
 Η ύπαρξη πολλαπλών παραθύρων θα σου επιτρέψει να κάνεις τους χρήστες να αισθάνονται ότι έχουν τον έλεγχο της εμπειρίας τους (επιλέγοντας ποια παράθυρα θα ανοίξουν και σε ποια θα εστιάσουν και ποια θα αγνοήσουν) και θα παρέχει μια νέα/διασκεδαστική εμπειρία.
@@ -70,7 +70,7 @@ totalParts: 5
 
 Ωραία... Λοιπόν, η ιστοσελίδα σου ελπίζω να φαίνεται η ίδια και μπορεί να σκέφτεσαι ότι έκανες κάτι λάθος.
 
-![grouped in a div](https://cloud-czlk8j3wo-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_1.57.38_pm.png)
+![grouped in a div](https://cdn.hackclub.com/rescue?url=https://cloud-czlk8j3wo-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_1.57.38_pm.png)
 
 Μη φοβάσαι, είσαι στο σωστό δρόμο. Η ομάδα δεν έχει χαρακτηριστικά στυλ που θα την έκαναν οπτικά διακριτή από την υπόλοιπη σελίδα **ακόμη**.
 
@@ -85,7 +85,7 @@ totalParts: 5
 
 Απλό! Τώρα μπορούμε να δούμε ότι περιγράψαμε το περιεχόμενό μας.
 
-![stroke added](https://cloud-cn54hr3si-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.04.50_pm.png)
+![stroke added](https://cdn.hackclub.com/rescue?url=https://cloud-cn54hr3si-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.04.50_pm.png)
 
 *Έι... θέλεις να διασκεδάσεις; Επισκεφτείτε [αυτή την ιστοσελίδα](https://developer.mozilla.org/en-US/docs/Web/CSS/border) και δοκιμάστε να προσθέσετε μερικά ωραία εφέ (+ επίσης το δικό σου πλάτος και χρώμα)*.
 
@@ -111,7 +111,7 @@ totalParts: 5
 
 Επέλεξα 16px, αλλά μπορείς επίσης να το κάνεις πολύ πιο στρογγυλό αυξάνοντας αυτόν τον αριθμό! Πειραματίσου!
 
-![image of it without space](https://cloud-25a3olvni-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.21.27_pm.png)
+![image of it without space](https://cdn.hackclub.com/rescue?url=https://cloud-25a3olvni-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.21.27_pm.png)
 
 ΤΟ ΚΕΊΜΕΝΟ ΕΊΝΑΙ ΠΟΛΎ *ΚΛΑΣΤΡΟΦΟΒΙΚΌ*. ΤΟ ΒΆΖΕΙΣ ΣΕ ΈΝΑ ΚΟΥΤΊ ΚΑΙ ΔΕΝ ΈΧΕΙ ΚΑΘΌΛΟΥ ΧΏΡΟ ΓΙΑ ΝΑ ΑΝΑΠΝΕΎΣΕΙ!
 
@@ -143,7 +143,7 @@ totalParts: 5
 
 Και με την ιδιότητα `position: absolute`, ξεκλειδώνουμε τέσσερις ακόμα ιδιότητες (πάνω, κάτω, αριστερά, δεξιά). Κάθε μία ορίζει την απόσταση που θα έχει το παράθυρό μας από τα άκρα της οθόνης.
 
-![This is the screen](https://cloud-rn4u95i7l-hack-club-bot.vercel.app/0thisisthescreen.gif)
+![This is the screen](https://cdn.hackclub.com/rescue?url=https://cloud-rn4u95i7l-hack-club-bot.vercel.app/0thisisthescreen.gif)
 
 Για να το τοποθετήσουμε στο κέντρο, μπορούμε απλά να γράψουμε
 
@@ -162,13 +162,13 @@ transform: translate(-50%, -50%); (additional styles)">
     </div>
 ```
 
-![Image centered correctly](https://cloud-d0am8h8gg-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.42.10_pm.png)
+![Image centered correctly](https://cdn.hackclub.com/rescue?url=https://cloud-d0am8h8gg-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_2.42.10_pm.png)
 
 Εντάξει, αυτό φαίνεται υπέροχο.
 
 Ίσως είναι μια καλή στιγμή για να κάνεις ένα διάλειμμα για τέντωμα. Έχεις κάνει πολύ προγραμματισμό και η ιστοσελίδα σου είναι πανέμορφη!
 
-![Break](https://cloud-5gpc0802p-hack-club-bot.vercel.app/0ezgif-2-da8e476e69.gif)
+![Break](https://cdn.hackclub.com/rescue?url=https://cloud-5gpc0802p-hack-club-bot.vercel.app/0ezgif-2-da8e476e69.gif)
 
 ## Σχεδιάζοντας την επιφάνεια εργασίας μας
 Γύρισες πίσω. Είσαι ανανεωμένος. Ίσως να έφαγες και μια ή δύο φράουλες...
@@ -190,7 +190,7 @@ transform: translate(-50%, -50%); (additional styles)">
 
 Ας προσθέσουμε ένα χρώμα φόντου στο παράθυρό μας, ώστε να φαίνεται διακριτό από την επιφάνεια εργασίας.
 
-![background color added](https://cloud-4xp54hvar-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_3.31.34_pm.png)
+![background color added](https://cdn.hackclub.com/rescue?url=https://cloud-4xp54hvar-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_3.31.34_pm.png)
 
 ## Δημιουργία του Top Bar
 Μια επάνω μπάρα χρησιμοποιείται γενικά για να εμφανίζει το όνομα του λειτουργικού συστήματος, τις βασικές λειτουργίες μιας επιλεγμένης εφαρμογής και την ώρα. Μπορείς να επιλέξεις να εμφανίζεις όλες ή καμία από αυτές τις πληροφορίες. Μπορείς επίσης να αποφασίσεις να της δώσεις διαφορετικές λειτουργίες!
@@ -228,7 +228,7 @@ transform: translate(-50%, -50%); (additional styles)">
 
 Μπορούμε προαιρετικά να διαχωρίσουμε το περιεχόμενο εφαρμόζοντας το justify-content ( κοιτάξτε [αυτόν τον ιστότοπο δοκιμών justify-content](https://www.w3schools.com/cssref/playdemo.php?filename=playcss_justify-content) για να δεις πώς μπορείς να χρησιμοποιήσεις το justify-content για να διαχωρίσεις το περιεχόμενο)
 
-![justify-content](https://cloud-e3m7dz3v0-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_3.52.01_pm.png)
+![justify-content](https://cdn.hackclub.com/rescue?url=https://cloud-e3m7dz3v0-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_3.52.01_pm.png)
 με βάση αυτό το demo, αποφάσισα ότι θέλω να χρησιμοποιήσω το space-between στο παρακάτω παράδειγμα, αλλά σε συνιστώ να ελέγξεις την τοποθεσία δοκιμών και να διαλέξεις ποιο στυλ justify-content λειτουργεί καλύτερα για το σχέδιό σου!
 
 ```html
@@ -266,7 +266,7 @@ RGBA σημαίνει Red, Green, Blue, Alpha (Κόκκινο, Πράσινο, �
 
 Εδώ είναι πώς αποφάσισα να κάνω το δικό μου να φαίνεται
 
-![my top bar](https://cloud-5ozikpqtx-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.19.33_pm.png)
+![my top bar](https://cdn.hackclub.com/rescue?url=https://cloud-5ozikpqtx-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.19.33_pm.png)
 
 Ελπίζω το δικό σου να είναι τελείως διαφορετικό!
 Εδώ είναι ο κώδικάς μου σε περίπτωση που θέλεις να πάρεις έμπνευση από αυτόν. (αλλά και πάλι, ΜΗΝ ΚΑΝΕΙΣΤΕ ΑΚΡΙΒΗ ΑΝΤΙΓΡΑΦΗ)
@@ -319,7 +319,7 @@ RGBA σημαίνει Red, Green, Blue, Alpha (Κόκκινο, Πράσινο, �
 
 **Αυτή τη στιγμή θα γράψουμε τον κώδικά μας μέσα στο αρχείο HTML. Δεν θα αγγίξουμε ακόμα το αρχείο script.js *(μέχρι το επόμενο Jam)***
 
-![Write it in index.html](https://cloud-jajja5k48-hack-club-bot.vercel.app/0cat.png)
+![Write it in index.html](https://cdn.hackclub.com/rescue?url=https://cloud-jajja5k48-hack-club-bot.vercel.app/0cat.png)
 
 #### Πώς θα βρω το χρόνο;
 
@@ -378,7 +378,7 @@ new Date().toLocaleString(); είναι μια συνάρτηση του προ�
 </script>   
 ```
 
-![χρόνος που εμφανίζεται](https://cloud-rl0do8tyh-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.44.46_pm.png)
+![χρόνος που εμφανίζεται](https://cdn.hackclub.com/rescue?url=https://cloud-rl0do8tyh-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.44.46_pm.png)
 
 Τώρα έχουμε την τρέχουσα ώρα, αλλά μην βιαστείτε να πανηγυρίσετε. Θα προσέξεις ότι η ώρα δεν ενημερώνεται. Αυτό συμβαίνει επειδή ο κώδικας μέσα στην ετικέτα script εκτελείται μόνο μία φορά (όταν ανοίγει για πρώτη φορά η σελίδα).παρατηρήσετε
 
@@ -419,7 +419,7 @@ setInterval(function () {
 
 Τέλεια, να σε τι καταλήξαμε:
 
-![PersonalOS](https://cloud-r3drmd84c-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.59.32_pm.png)
+![PersonalOS](https://cdn.hackclub.com/rescue?url=https://cloud-r3drmd84c-hack-club-bot.vercel.app/0screenshot_2023-06-21_at_4.59.32_pm.png)
 
 Για την τελευταία πρόκληση μπόνους, δοκίμασε να προσθέσεις κάτι ενδιαφέρον στο φόντο σου. Ίσως να το κάνετε ένα gif;
 

@@ -3,7 +3,7 @@
 
 ### Creating a Graphical User Interface 
 
-![Putting everything together](https://cloud-8dmeqbifb-hack-club-bot.vercel.app/0arial.gif)
+![Putting everything together](https://cdn.hackclub.com/rescue?url=https://cloud-8dmeqbifb-hack-club-bot.vercel.app/0arial.gif)
 
 Once again, great job in finishing **_Level 2: Sonic Sagas_**. Now we're moving on to the third and **final** layer of the **pizza**, the *cheese*! It's the thing that all of our users will get to see and experience first before the storyline, music, etc. ***THE GUI!*** 
 
@@ -254,7 +254,7 @@ Keep storing each part of your in `def` functions... after you're done, let's ge
 
 We've been talking a lot about windows and frames-- but what are they and what's the difference? Lastly, *how* do we *MAKE* them?
 
-![Comparing windows and frames](https://cloud-p55izwnla-hack-club-bot.vercel.app/0digital.png)
+![Comparing windows and frames](https://cdn.hackclub.com/rescue?url=https://cloud-p55izwnla-hack-club-bot.vercel.app/0digital.png)
 
 This might sound crazy but imagine a house. The window is like an entire house. It has it's own structure, windows and doors (title bar, and controls), walls (size of window), etc. and it is the main thing that the user interacts with. 
 

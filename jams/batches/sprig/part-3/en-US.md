@@ -6,14 +6,14 @@ description: >
   Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
 contributorSlackId: 'U02UYFZQ0G0'
-thumbnail: 'https://cloud-mswaasys4-hack-club-bot.vercel.app/0screen_recording_2023-07-13_at_11.12.28.gif'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-mswaasys4-hack-club-bot.vercel.app/0screen_recording_2023-07-13_at_11.12.28.gif'
 timeEstimate: '100-120 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
 language: 'JavaScript'
 presentation: "https://www.figma.com/file/9BNjIY4eHfIaCEtt5wDRem/Sprig-%232?type=design&node-id=236%3A1250&mode=design&t=fM4vMhLXBrrgOLgn-1" 
 presentationPlay: "https://www.figma.com/proto/9BNjIY4eHfIaCEtt5wDRem/Sprig-%232?page-id=236%3A2&type=design&node-id=236-1250&viewport=2326%2C360%2C0.42&t=n9VGx7fjXaaTsujH-1&scaling=contain&starting-point-node-id=236%3A1250&mode=design" 
-presentationPDF: "https://cloud-dhrlob55r-hack-club-bot.vercel.app/0sprig__2.pdf" 
+presentationPDF: "https://cdn.hackclub.com/rescue?url=https://cloud-dhrlob55r-hack-club-bot.vercel.app/0sprig__2.pdf" 
 notes: "" 
 poster: "https://github.com/hackclub/posters#:~:text=Author-,Download,-Download"
 video: "" 

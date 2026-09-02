@@ -4,14 +4,14 @@ description: >
   In this jam, you'll create your very own virtual sky village with Spline, a web-based 3D modeling software.
 contributor: 'linkai101'
 contributorSlackID: 'U01R8RSGYUV'
-thumbnail: 'https://cloud-c73eqxeoz-hack-club-bot.vercel.app/00village_thumbnail_50.webp'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-c73eqxeoz-hack-club-bot.vercel.app/00village_thumbnail_50.webp'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
 keywords: 'Web, 3D, Spline'
 language: 'Spline'
 presentation: 'https://www.figma.com/file/DYnMTevG5DWxHDcVstUzIE/Jam-Presentation---3D-Club-Village?type=design&node-id=0%3A1&mode=design&t=F8dabi5Vvsa5m6pz-1'
 presentationPlay: 'https://www.figma.com/proto/DYnMTevG5DWxHDcVstUzIE/Jam-Presentation---3D-Club-Village?type=design&node-id=1-2&t=F8dabi5Vvsa5m6pz-0&scaling=contain&page-id=0%3A1'
-presentationPDF: 'https://cloud-nd30iq2uv-hack-club-bot.vercel.app/0jam_presentation_-_3d_club_village__1_.pdf'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-nd30iq2uv-hack-club-bot.vercel.app/0jam_presentation_-_3d_club_village__1_.pdf'
 video: ''
 notes: ''
 poster: ''
@@ -21,21 +21,21 @@ slug: '3d-club-village'
 Imagine a world where you have the power to shape the landscape and design your dream buildings. **Today, we'll dive into the fundamentals of 3D modeling by building our own sky islands and collaborate by merging them into a community sky village.**
 
 Here's an example of what you'll be able to make:
-![Individual demo](https://cloud-b1g9hwiu1-hack-club-bot.vercel.app/0image.png)
+![Individual demo](https://cdn.hackclub.com/rescue?url=https://cloud-b1g9hwiu1-hack-club-bot.vercel.app/0image.png)
 [Demo](https://app.spline.design/file/dd7decef-bf50-4ca5-bff5-d76ba64513c4)
 
 And... here's an example of a sky village if you put multiple islands together!
-![Group collab demo](https://cloud-8oi5u7dkg-hack-club-bot.vercel.app/0image.png)
+![Group collab demo](https://cdn.hackclub.com/rescue?url=https://cloud-8oi5u7dkg-hack-club-bot.vercel.app/0image.png)
 [Demo](https://app.spline.design/file/652cf287-958a-4b01-a818-b6a09868f645)
 
 So without further ado, let's get started!
 
 ## Getting started with Spline
 1. Head over to [spline.design](https://spline.design) and create an account. Select "New File" to get started.
-![Getting started - Step 1](https://cloud-cmkhxafch-hack-club-bot.vercel.app/1gettingstarted-1.png)
+![Getting started - Step 1](https://cdn.hackclub.com/rescue?url=https://cloud-cmkhxafch-hack-club-bot.vercel.app/1gettingstarted-1.png)
 
 2. Play around with the UI and controls!
-![Getting started - Step 2](https://cloud-cmkhxafch-hack-club-bot.vercel.app/0gettingstarted-2.png)
+![Getting started - Step 2](https://cdn.hackclub.com/rescue?url=https://cloud-cmkhxafch-hack-club-bot.vercel.app/0gettingstarted-2.png)
 **Toolbar:** Add shapes, select/view modes, and edit tools.
 - Press “+” for more tools and objects to add to the scene.
 - Press “▷” to access Play mode.  
@@ -63,7 +63,7 @@ Start thinking about what you want on your own island: your dream mansion on a m
 <Dropdown title="1. Let's start by adding the ground.">
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 1A](https://cloud-3klicbvir-hack-club-bot.vercel.app/9creatingisland-1a.gif)
+![Creating your island - Step 1A](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/9creatingisland-1a.gif)
 </GridItem>
 <GridItem>
 Select (single-click) the square.
@@ -73,7 +73,7 @@ Rotate the square flat and change the size to 500x500.
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 1B](https://cloud-3klicbvir-hack-club-bot.vercel.app/8creatingisland-1b.gif)
+![Creating your island - Step 1B](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/8creatingisland-1b.gif)
 </GridItem>
 <GridItem>
 Select (single-click) the square.
@@ -93,7 +93,7 @@ Keep in mind that you can always change these settings anytime as you add more s
 <Dropdown title="2. Create the base house model.">
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 2A](https://cloud-3klicbvir-hack-club-bot.vercel.app/7creatingisland-2a.gif)
+![Creating your island - Step 2A](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/7creatingisland-2a.gif)
 </GridItem>
 <GridItem>
 > We’ll start with the body of the house.
@@ -106,7 +106,7 @@ Adjust settings:
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 2B](https://cloud-3klicbvir-hack-club-bot.vercel.app/6creatingisland-2b.gif)
+![Creating your island - Step 2B](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/6creatingisland-2b.gif)
 </GridItem>
 <GridItem>
 Select (single-click) the cube. Adjust settings:
@@ -125,7 +125,7 @@ In the toolbar, select the `Vertex (V)` select tool.
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 2C](https://cloud-3klicbvir-hack-club-bot.vercel.app/5creatingisland-2c.gif)
+![Creating your island - Step 2C](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/5creatingisland-2c.gif)
 </GridItem>
 <GridItem>
 > Now, let’s make the roof.
@@ -140,7 +140,7 @@ Exit (”X”) out and drag the roof down. Repeat the above steps until the roof
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 2D](https://cloud-3klicbvir-hack-club-bot.vercel.app/4creatingisland-2d.gif)
+![Creating your island - Step 2D](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/4creatingisland-2d.gif)
 </GridItem>
 <GridItem>
 > Let’s add some roundness to the roof.
@@ -156,7 +156,7 @@ In the toolbar, select the `Loop Cut (C)` tool.
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 2E](https://cloud-3klicbvir-hack-club-bot.vercel.app/3creatingisland-2e.gif)
+![Creating your island - Step 2E](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/3creatingisland-2e.gif)
 </GridItem>
 <GridItem>
 > Now some roundness for the walls.
@@ -169,7 +169,7 @@ Repeat the above steps on the body.
 <Dropdown title="3. Add colors!">
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 3A](https://cloud-3klicbvir-hack-club-bot.vercel.app/2creatingisland-3a.gif)
+![Creating your island - Step 3A](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/2creatingisland-3a.gif)
 </GridItem>
 <GridItem>
 > Our scene desperately needs a makeover. Let’s start with the background!
@@ -179,7 +179,7 @@ Click the background to deselect all objects. Adjust scene settings:
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 3B](https://cloud-3klicbvir-hack-club-bot.vercel.app/1creatingisland-3b.gif)
+![Creating your island - Step 3B](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/1creatingisland-3b.gif)
 </GridItem>
 <GridItem>
 <Comment githubUser="linkai101">
@@ -198,7 +198,7 @@ In “Ramp”, select colors for dirt and grass and adjust their positions.
 </GridItem>
 
 <GridItem>
-![Creating your island - Step 3C](https://cloud-3klicbvir-hack-club-bot.vercel.app/0creatingisland-3c.gif)
+![Creating your island - Step 3C](https://cdn.hackclub.com/rescue?url=https://cloud-3klicbvir-hack-club-bot.vercel.app/0creatingisland-3c.gif)
 </GridItem>
 <GridItem>
 Repeat for the walls and the roof. Make it your own!
@@ -209,7 +209,7 @@ Repeat for the walls and the roof. Make it your own!
 <Dropdown title="4. Add doors, windows, and doorknobs.">
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 4](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/4creatingisland-4.png)
+![Creating your island - Step 4](https://cdn.hackclub.com/rescue?url=https://cloud-kv6txjh6s-hack-club-bot.vercel.app/4creatingisland-4.png)
 </GridItem>
 <GridItem>
 > You’re on your own for this one. You got this!
@@ -224,7 +224,7 @@ Add rounding and color to them as well.
 <Dropdown title="5. Add trees.">
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 5](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/3creatingisland-5.png)
+![Creating your island - Step 5](https://cdn.hackclub.com/rescue?url=https://cloud-kv6txjh6s-hack-club-bot.vercel.app/3creatingisland-5.png)
 </GridItem>
 <GridItem>
 > You’re on your own for this one. You got this!
@@ -238,7 +238,7 @@ Add rounding and color to them as well. Try using a Depth material for a gradien
 <Dropdown title="6. Add shadows influenced by surrounding color.">
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 6](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/2creatingisland-6.gif)
+![Creating your island - Step 6](https://cdn.hackclub.com/rescue?url=https://cloud-kv6txjh6s-hack-club-bot.vercel.app/2creatingisland-6.gif)
 </GridItem>
 <GridItem>
 > Let’s add a green glow effect coming from the trees!
@@ -263,7 +263,7 @@ Drag the origin of the layer to the tree and adjust the end position.
 <Dropdown title="7. Build a stone path to the door.">
 <Grid cols={2}>
 <GridItem>
-![Creating your island - Step 7](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/1creatingisland-7.gif)
+![Creating your island - Step 7](https://cdn.hackclub.com/rescue?url=https://cloud-kv6txjh6s-hack-club-bot.vercel.app/1creatingisland-7.gif)
 </GridItem>
 <GridItem>
 > Let’s build a stone path toward the door!
@@ -298,7 +298,7 @@ Now you know the basics of Spline, **it's time to start making the island your o
 ### Spline’s asset library
 Spline has a ***huge*** library of 3D models and scenes for you to use in your project! Sprinkle little details into your island or add full building prefabs to form towns and parks.
 
-![Spline's asset library](https://cloud-kv6txjh6s-hack-club-bot.vercel.app/0splinelibrary.png)
+![Spline's asset library](https://cdn.hackclub.com/rescue?url=https://cloud-kv6txjh6s-hack-club-bot.vercel.app/0splinelibrary.png)
 
 ## Build a collaborative sky village by linking islands 🌉
 Collaboration is one of the most fun and fulfilling aspects of design and making, and Spline makes it super easy! If you're working with a group or wanna collab with a few friends, let's build a sky village!
@@ -308,10 +308,10 @@ Note: Spline's free tier currently only has 2 additional editor seats. (file own
 </Comment>
 
 1. Have the club/group leader create a new file on Spline. Share the file with the rest of the group with editing privileges.
-![Linking islands - Step 1](https://cloud-mn9anfpic-hack-club-bot.vercel.app/0image.png)
+![Linking islands - Step 1](https://cdn.hackclub.com/rescue?url=https://cloud-mn9anfpic-hack-club-bot.vercel.app/0image.png)
 
 2. Copy and paste each island into this master file. Connect them with bridges in the asset library or find your own creative way to link the islands!
-![Group collab demo](https://cloud-8oi5u7dkg-hack-club-bot.vercel.app/0image.png)
+![Group collab demo](https://cdn.hackclub.com/rescue?url=https://cloud-8oi5u7dkg-hack-club-bot.vercel.app/0image.png)
 
 ## What's next 🔮
 3D modeling literally has limitless possibilities. Here are a few:
@@ -331,7 +331,7 @@ Keep in mind that some export options are only available to the paid tiers. 😐
 </Comment>
 
 1. In the toolbar, click on "Export". There will be options on the left-hand side for various file formats to export to.
-![Exporting](https://cloud-ctimzr33x-hack-club-bot.vercel.app/0image.png)
+![Exporting](https://cdn.hackclub.com/rescue?url=https://cloud-ctimzr33x-hack-club-bot.vercel.app/0image.png)
 
 ### Jams to do next
 > Looking for more 3D jams? I gotchu!

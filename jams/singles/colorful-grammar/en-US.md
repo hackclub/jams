@@ -4,7 +4,7 @@ description: >
   Let your words color the screen as you type!
 contributor: 'sahitid'
 originalAuthor: 'MatthewStanciu'
-thumbnail: 'https://cloud-pvpvkpeuc-hack-club-bot.vercel.app/0demo.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-pvpvkpeuc-hack-club-bot.vercel.app/0demo.png'
 timeEstimate: '30-45 Min'
 difficulty: 'Beginner'
 keywords: 'Beta, color, colorful, grammar, colorful grammar'

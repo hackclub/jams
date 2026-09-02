@@ -6,14 +6,14 @@ description: >
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
 contributorSlackId: 'U02UYFZQ0G0'
-thumbnail: 'https://cloud-injns3luf-hack-club-bot.vercel.app/0untitled.gif'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-injns3luf-hack-club-bot.vercel.app/0untitled.gif'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
 language: 'JavaScript'
 presentation: "https://www.figma.com/file/mYayY1K4DjZxj8cGsWLdAC/Sprig-%231?type=design&node-id=236%3A2&mode=design&t=tBVyzkkMF86LCUGx-1" 
 presentationPlay: "https://www.figma.com/proto/mYayY1K4DjZxj8cGsWLdAC/Sprig-%231?page-id=236%3A2&type=design&node-id=236-1250&viewport=346%2C360%2C0.06&t=5XhFfrVWyRo8L9CB-1&scaling=contain&starting-point-node-id=236%3A1250&mode=design" 
-presentationPDF: "https://cloud-pxftj80n6-hack-club-bot.vercel.app/0sprig__1.pdf" 
+presentationPDF: "https://cdn.hackclub.com/rescue?url=https://cloud-pxftj80n6-hack-club-bot.vercel.app/0sprig__1.pdf" 
 notes: "" 
 poster: "https://github.com/hackclub/posters#:~:text=Author-,Download,-Download"
 video: ""
@@ -55,7 +55,7 @@ By completing your own game in Sprig, you'll also qualify to receive a [Sprig Co
 
 ## 2. Let’s explore the world of Sprig
 
-<video src="https://cloud-qrfzzm21i-hack-club-bot.vercel.app/0untitled.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-qrfzzm21i-hack-club-bot.vercel.app/0untitled.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 
 This video shows you around the world of sprig.
 
@@ -75,22 +75,22 @@ You'll want to register with Sprig to save your work! Otherwise, logging out of 
 
 In the login page, enter your email. A login code will be sent.
 
-![](https://cloud-2pdfjcqvn-hack-club-bot.vercel.app/0log_in___sprig.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-2pdfjcqvn-hack-club-bot.vercel.app/0log_in___sprig.png)
 
 Use the code sent to you to log in (can't find it... check spam folders?).
 
-![](https://cloud-hpv87yyem-hack-club-bot.vercel.app/0your_games___sprig.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-hpv87yyem-hack-club-bot.vercel.app/0your_games___sprig.png)
 
 Congrats! You’re now logged in. To access your saved games, use the same email to log in.
 
 ## 3. Build Your First Game!
 Click on the gallery up top.
 
-![](https://cloud-1f122cf0k-hack-club-bot.vercel.app/0gallery___sprig.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-1f122cf0k-hack-club-bot.vercel.app/0gallery___sprig.png)
 
 We’ll be following the getting_started tutorial. Click it.
 
-![](https://cloud-pcjfwllpn-hack-club-bot.vercel.app/0getting_started___sprig.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-pcjfwllpn-hack-club-bot.vercel.app/0getting_started___sprig.png)
 
 In the HELP screen there are both a TOOLKIT of functions particular to Sprig, and a TUTORIAL for “Getting_Started.” Follow the instructions there to build your first Sokobon Puzzle!
 
@@ -99,5 +99,5 @@ Click the "remix" button in the top right corner, so that your changes will be s
 ## 4. Wrap-up!
 Congratulations! By finishing this session, you just made your first game in Sprig!  
 
-![](https://cloud-4ja9fp00s-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-4ja9fp00s-hack-club-bot.vercel.app/0image.png)
 Next session and for the next 2 sessions, we’ll be building on our knowledge and creating a maze game from scratch. Click [here](/batch/sprig/part-2) to advance to the next session.

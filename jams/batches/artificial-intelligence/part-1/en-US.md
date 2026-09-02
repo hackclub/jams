@@ -6,7 +6,7 @@ description: >
   This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
 contributor: 'sahitid' 
 contributorSlackID: 'U03RU99SGKA'
-thumbnail: 'https://cloud-aatku17lm-hack-club-bot.vercel.app/0thumbnail_1.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-aatku17lm-hack-club-bot.vercel.app/0thumbnail_1.png'
 timeEstimate: '45 Min'  
 difficulty: 'Beginner'
 keywords: 'Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'  
@@ -24,7 +24,7 @@ totalParts: 4
 
 So what is artificial intelligence and machine learning? And what can you do with them?
 
-<video src="https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 *(here's an example of what you'll create by the end of this jams. Your AI & ML model will be unique to you and serve a completely different purpose!)*
 
 **We're going to be making an AI Companion or Smart Voice Assistant in your browser!**
@@ -64,7 +64,7 @@ You may be familiar already with smart voice assistants such as Siri, Alexa, or 
 
 You will be building a similar program. Call it, and it will turn on. It will turn your speech into text, and then input your transcript into a GPT model (through an API). The GPT model will then create a response which is turned into speech. The program will essentially talk back to you.
 
-![diagram detailing the parts of our project](https://cloud-essfp77oh-hack-club-bot.vercel.app/0group_1.png)
+![diagram detailing the parts of our project](https://cdn.hackclub.com/rescue?url=https://cloud-essfp77oh-hack-club-bot.vercel.app/0group_1.png)
 
 In this part, we'll be training the model to detect when the keyword is evoked with Teachable Machine.
 
@@ -74,13 +74,13 @@ We're going to be starting with teachable machine, a web-based tool that allows 
 
 We want to make sure that our AI Companion can recognize an audio or visual keyword! Just like a smart voice assistant:
 
-![](https://cloud-iosp3gjlp-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-iosp3gjlp-hack-club-bot.vercel.app/0image.png)
 
 Head over to [Teachable Machine](https://teachablemachine.withgoogle.com/train) and create a new project. I'm going to be creating an audio project! Keep in mind that you can use any of the three projects; your keyword could be a key-hand-motion or key-object that is held in front of the camera.
 
 Anything that is obvious enough to be detected in order to prompt the AI Companion will work here!
 
-![teachable machine dashboard](https://cloud-cffjo14g3-hack-club-bot.vercel.app/0screenshot_2023-06-27_154600.png)
+![teachable machine dashboard](https://cdn.hackclub.com/rescue?url=https://cloud-cffjo14g3-hack-club-bot.vercel.app/0screenshot_2023-06-27_154600.png)
 
 Once you choose your project from the dashboard, you should see the different classes. Let's focus on what we want to train the model to learn/look out for first.
 
@@ -88,17 +88,17 @@ Once you choose your project from the dashboard, you should see the different cl
 
 I want my AI Orpheus to respond to me whenever I say "Orpheus". Rename Class 2 to match your keyword, and don't copy mine! Your AI Companion should be completely your own.
 
-![renaming teachable machine classes](https://cloud-jefx2fwob-hack-club-bot.vercel.app/0teachable.gif)
+![renaming teachable machine classes](https://cdn.hackclub.com/rescue?url=https://cloud-jefx2fwob-hack-club-bot.vercel.app/0teachable.gif)
 
 It's almost as if you have two piles of stickers. Think of each sticker as a sample of training data.
 
 You can add existing stickers (or samples) to the piles (or classes) to make it more clear what the characteristics of each class are.
 
-![two piles of stickers](https://cloud-7cg6bj1c5-hack-club-bot.vercel.app/0img_8125.jpg)
+![two piles of stickers](https://cdn.hackclub.com/rescue?url=https://cloud-7cg6bj1c5-hack-club-bot.vercel.app/0img_8125.jpg)
 
 Then the machine learning model can take and entirely new sample that you give it as input and use the data in the existing classes to sort it.
 
-![sorting stickers into respective piles based on existing data](https://cloud-jjpf3syuu-hack-club-bot.vercel.app/0jams_gifs__1_.gif)
+![sorting stickers into respective piles based on existing data](https://cdn.hackclub.com/rescue?url=https://cloud-jjpf3syuu-hack-club-bot.vercel.app/0jams_gifs__1_.gif)
 
 ## Train Your Model
 
@@ -114,7 +114,7 @@ If I had even more stickers in the piles it would be even easier to sort new sti
 
 Also make sure to record lots of silence and background noise as well in different settings (in a classroom, hallway, outside, alone, etc) so the model is good at detecting when nothing is being said. We want there to be a clear distinction between when the keyword is said vs. when it is not said.
 
-![adding audio samples to teachable machine classes](https://cloud-lmzin6jbg-hack-club-bot.vercel.app/0website_gifs.gif)
+![adding audio samples to teachable machine classes](https://cdn.hackclub.com/rescue?url=https://cloud-lmzin6jbg-hack-club-bot.vercel.app/0website_gifs.gif)
 
 ## Finish and Export
 
@@ -124,27 +124,27 @@ And you don't have to stop there: try creating another class that'll make it eas
 
 For example, I know the word "amorphous" sort of sounds like Orpheus, but isn't exactly the keyword. Currently, the model still gets a little confused and assumes that someone saying "amorphous" is partially saying Orpheus.
 
-![false keyword detected](https://cloud-3kt0jz704-hack-club-bot.vercel.app/0screenshot_2023-06-28_105128.png)
+![false keyword detected](https://cdn.hackclub.com/rescue?url=https://cloud-3kt0jz704-hack-club-bot.vercel.app/0screenshot_2023-06-28_105128.png)
 
 I'm going to make a separate class for the word "amorphous" so it no longer confuses the model.
 
 Back to our sticker and basket analogy, this is just me creating another basket so people aren't confused on where to put stickers when sorting them.
 
-![sorting sticker into wrong pile](https://cloud-b0mbeaace-hack-club-bot.vercel.app/0ad30c6eb-346a-4ba3-aa9e-954783f524a9_1.gif)
+![sorting sticker into wrong pile](https://cdn.hackclub.com/rescue?url=https://cloud-b0mbeaace-hack-club-bot.vercel.app/0ad30c6eb-346a-4ba3-aa9e-954783f524a9_1.gif)
 
 Look at the image below. Now the model is less confused when I say the similar-sounding-but-not-actually-the-keyword word.
 
-![teachable machine recognizes false keyword](https://cloud-hvxyjcxd6-hack-club-bot.vercel.app/0screenshot_2023-06-28_105711.png)
+![teachable machine recognizes false keyword](https://cdn.hackclub.com/rescue?url=https://cloud-hvxyjcxd6-hack-club-bot.vercel.app/0screenshot_2023-06-28_105711.png)
 
 You've essentially created another pile!
 
-![sorting sticker into correct pile](https://cloud-mjrezffaw-hack-club-bot.vercel.app/0975da332-06c1-4bf0-95d7-e35546326741.gif)
+![sorting sticker into correct pile](https://cdn.hackclub.com/rescue?url=https://cloud-mjrezffaw-hack-club-bot.vercel.app/0975da332-06c1-4bf0-95d7-e35546326741.gif)
 
 ### Click the Export Model Button
 
 Once you're here you should see an "Update my cloud model" button. Make sure you do this!
 
-![update my cloud model button](https://cloud-crblb6kcm-hack-club-bot.vercel.app/0screenshot_2023-06-28_142611.png)
+![update my cloud model button](https://cdn.hackclub.com/rescue?url=https://cloud-crblb6kcm-hack-club-bot.vercel.app/0screenshot_2023-06-28_142611.png)
 
 Now you can show off your work by sending people the shareable link.
 
@@ -152,7 +152,7 @@ To finish our model we'll **copy the shareable link as well as the tensorflow.js
 
 Make sure to save your teachable machine to drive so it can be accessed later. Next time, instead of creating a new project, you can open this existing project from drive.
 
-![saving project to drive](https://cloud-iibkonedk-hack-club-bot.vercel.app/0image.png)
+![saving project to drive](https://cdn.hackclub.com/rescue?url=https://cloud-iibkonedk-hack-club-bot.vercel.app/0image.png)
 
 Great! Now you've finished with the teachable machine. You've trained a machine learning model with a dataset to understand and recognize when it's being called to "turn on".
 
@@ -173,7 +173,7 @@ If you're having difficulty using the site try https://firewalledreplit.com/ or 
 
 Welcome to your Replit Dashboard. Once inside, tap "+ Creat a Repl" and then select the HTML, CSS, and JavaScript template.  
 
-![Replit Signup](https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif)
+![Replit Signup](https://cdn.hackclub.com/rescue?url=https://cloud-c6z75ah46-hack-club-bot.vercel.app/0export_jun_15_2023_0159_pm.gif)
 
 You should now have three files. Rename them to be: index.html, script.js, and style.css respectively.
 
@@ -190,7 +190,7 @@ Yay! We've just created the following two constants:
 1. `URL` represents the URL of the Teachable Machine model we will be using
 2. `THRESHOLD` represents the confidence threshold for recognizing a specific word
 
-![teachable machine output](https://cloud-f437a9orj-hack-club-bot.vercel.app/0image.png)
+![teachable machine output](https://cdn.hackclub.com/rescue?url=https://cloud-f437a9orj-hack-club-bot.vercel.app/0image.png)
 *(Feel free to set the threshold number to any amount you like! I've got it set for 90% or higher accuracy in recognition. This is essentially that output bar you see moving in the teachable machine).*
 
 Now we are going to create one big function that all the other functions + our teachable machine code will sit inside. It's an event handler that runs once the window is finished loading to ensure that the code inside only runs after all the HTML content has been loaded:
@@ -359,14 +359,14 @@ Now on Replit open up your HTML "site" in a new tab. don't worry if it's blank! 
 
 Now click ctrl+shift+i to open the inspect element and move to the console tab. If you look under choices you'll be able to see the text that has come back!
 
-![console printing response to keyword being said](https://cloud-2sz1omo3w-hack-club-bot.vercel.app/0image.png)
+![console printing response to keyword being said](https://cdn.hackclub.com/rescue?url=https://cloud-2sz1omo3w-hack-club-bot.vercel.app/0image.png)
 
 Yay! Now watch the console print "Hey" every time you say the keyword!
 
 ## Additional Challenge Hacking! (recommended)
 
 The creation doesn't have to stop here! Here are some Jam Hacks™ that you can experiment with:
-![jam hacks](https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
+![jam hacks](https://cdn.hackclub.com/rescue?url=https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
 
 - I've made the keyword an audio one but what if we tried using a visual/image model instead? *(My friend Thomas is testing to see what would happen if the teachable machine was trained to notice if you raised your hand or waved a flag!*)
 - What would happen if you added multiple keywords?

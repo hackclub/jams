@@ -4,15 +4,15 @@ description: >
     In this Jam, you'll be creating an awesome unique Lofi Animation using Voxels! It will be a lot of fun and you will have an awesome animation as a result!
 contributor: "GalaxyGamingBoy"
 contributorSlackID: "U04FMKCVASJ"
-thumbnail: "https://cloud-mzd35dnd5-hack-club-bot.vercel.app/0lofi.gif"
+thumbnail: "https://cdn.hackclub.com/rescue?url=https://cloud-mzd35dnd5-hack-club-bot.vercel.app/0lofi.gif"
 timeEstimate: "60 Min"
 difficulty: "Intermediate"
 keywords: "Web, HTML, javascript, replit, Web, Voxel, Cube, Textures, Animation, 3d"
 language: "Javascript"
 presentation: "https://www.figma.com/file/ImHTihOiCSxpcpS2AC7zYy/Voxel-Animation---Slides"
 presentationPlay: "https://www.figma.com/proto/ImHTihOiCSxpcpS2AC7zYy/Voxel-Animation---Slides"
-presentationPDF: "https://cloud-abxtk9jcc-hack-club-bot.vercel.app/0voxel_animation_-_slides__1_.pdf"
-notes: "https://cloud-irkqrfqvg-hack-club-bot.vercel.app/0three.js_ultimate_geometry_guide__1_.pdf"
+presentationPDF: "https://cdn.hackclub.com/rescue?url=https://cloud-abxtk9jcc-hack-club-bot.vercel.app/0voxel_animation_-_slides__1_.pdf"
+notes: "https://cdn.hackclub.com/rescue?url=https://cloud-irkqrfqvg-hack-club-bot.vercel.app/0three.js_ultimate_geometry_guide__1_.pdf"
 poster: ""
 video: ""
 slug: "voxel-animation"
@@ -20,7 +20,7 @@ slug: "voxel-animation"
 
 
 ~60+ Minutes, Basic javascript and html knowledge needed
-![demo_dot_webm](https://cloud-1duz1dnxo-hack-club-bot.vercel.app/0demo.gif)
+![demo_dot_webm](https://cdn.hackclub.com/rescue?url=https://cloud-1duz1dnxo-hack-club-bot.vercel.app/0demo.gif)
 
 ( _This is a demo animation, this jam encourages to create your **own!**_ )
 
@@ -60,20 +60,20 @@ You will fork the [template from this link](https://replit.com/@GalaxyGamingBoy/
 After visiting the link on the right hand side of the screen there is a `FORK` button. Click it!
 After clicking enter your voxel animation name and click `FORK REPL`.
 
-![Fork button](https://cloud-c7utcgww6-hack-club-bot.vercel.app/0image.png)
-![Fork Modal](https://cloud-puqb2ludk-hack-club-bot.vercel.app/0image.png)
+![Fork button](https://cdn.hackclub.com/rescue?url=https://cloud-c7utcgww6-hack-club-bot.vercel.app/0image.png)
+![Fork Modal](https://cdn.hackclub.com/rescue?url=https://cloud-puqb2ludk-hack-club-bot.vercel.app/0image.png)
 
 Here is a quick GIF of the proccess, if you want to verify! :D
-![replit-fork-dot-gif](https://cloud-hz6v4e4i3-hack-club-bot.vercel.app/0replit-fork-dot-gif.gif)
+![replit-fork-dot-gif](https://cdn.hackclub.com/rescue?url=https://cloud-hz6v4e4i3-hack-club-bot.vercel.app/0replit-fork-dot-gif.gif)
 
 Well now congratulations! You are a **master** of forking projects, here is a celebratory meme for you!
-<img src="https://cloud-lnspzc1vi-hack-club-bot.vercel.app/0meme_fork.jpg" width="35%"/>
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-lnspzc1vi-hack-club-bot.vercel.app/0meme_fork.jpg" width="35%"/>
 
 ### Explaining Replit
 
 After that your project that the animation will live in should be loaded into the same tab.
 It should look like this:
-![Replit](https://cloud-2ubu2qozr-hack-club-bot.vercel.app/0image.png)
+![Replit](https://cdn.hackclub.com/rescue?url=https://cloud-2ubu2qozr-hack-club-bot.vercel.app/0image.png)
 Bare with me for a bit while I explain the basics for replit, here are the breakdown of the steps shown above:
 
 1. Indicates the file manager, there you can see all of your files.
@@ -85,7 +85,7 @@ Bare with me for a bit while I explain the basics for replit, here are the break
 	Replit is a web-based independent development environment (IDE). Basically Replit allows you to write code in your browser and instantly deploy it!
 	
 	<div>
-		<img src="https://cloud-lnspzc1vi-hack-club-bot.vercel.app/1meme_magic.jpg" width="40%"/>
+		<img src="https://cdn.hackclub.com/rescue?url=https://cloud-lnspzc1vi-hack-club-bot.vercel.app/1meme_magic.jpg" width="40%"/>
 	</div>
 </Dropdown>
 
@@ -100,7 +100,7 @@ The process of uploading assets like images is very easy!
 All you need to do is to drag and drop it into the `assets` folder ot wherever else in your project!
 
 <video controls style={{width: "400px"}}>
-	<source src="https://cloud-ldawt72v9-hack-club-bot.vercel.app/0uploadtoreplit.mp4" type="video/mp4"/>
+	<source src="https://cdn.hackclub.com/rescue?url=https://cloud-ldawt72v9-hack-club-bot.vercel.app/0uploadtoreplit.mp4" type="video/mp4"/>
 </video>
 
 So yea, that's everything about replit, that you will need to know!
@@ -220,7 +220,7 @@ stopRec.addEventListener("click", () => {
 
 And the event listeners when clicked.
 
-![worker-gif-dot-gif](https://cloud-rln8wm7fd-hack-club-bot.vercel.app/0worker-phew-dot-gif.gif)
+![worker-gif-dot-gif](https://cdn.hackclub.com/rescue?url=https://cloud-rln8wm7fd-hack-club-bot.vercel.app/0worker-phew-dot-gif.gif)
 Phew that was a **lot**! But we can move over to the next session.
 The code snippets are already implemented so no need to worry about that!
 This section is purely informative.
@@ -235,7 +235,7 @@ This section will cover the basics of three.js, so you can start with the render
 
 Yes, it's time! This is where we import THREE.JS for rendering. :D
 If you had previous experience with Javascript you may already know how to import things but for those who don't, here is an explanatory Image.
-![image](https://cloud-oe00kf8q6-hack-club-bot.vercel.app/0image.png)
+![image](https://cdn.hackclub.com/rescue?url=https://cloud-oe00kf8q6-hack-club-bot.vercel.app/0image.png)
 For those who have figured it out by the image congrats!
 Imports are just requests to another javascript file saying that we want to load something from them.
 
@@ -267,14 +267,14 @@ document.body.appendChild(renderer.domElement);
 In the first line we initialize the THREE WebGL renderer, it will handle the rendering job.
 In the second line we set the rendering size, and we pass the window width and height.
 In the third line we append the renderer, so we can actually see.
-<img src="https://cloud-lnspzc1vi-hack-club-bot.vercel.app/1meme_magic.jpg" width="40%"/>
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-lnspzc1vi-hack-club-bot.vercel.app/1meme_magic.jpg" width="40%"/>
 
 ### The coordinate system
 
 Well let's make a quick reference to the **three.js coordinate system**.
 Like mostly all 3D applications, three.js utilizes the **Cartesian _coordinate system_**.
 Here is a quick illustration of it:
-![cartesian_system_illustration](https://cloud-brf44h742-hack-club-bot.vercel.app/0image.png)
+![cartesian_system_illustration](https://cdn.hackclub.com/rescue?url=https://cloud-brf44h742-hack-club-bot.vercel.app/0image.png)
 As shown above the height uses the **_Y_** variable, the depth uses the **_Z_**, and the width uses the **_X_** variable.
 Well that is all you need to know about it! Let's render some cubes! :D
 
@@ -465,7 +465,7 @@ Now
 </Dropdown>
 
 Well it is task time everyone!
-![time_meme-dot-jpg](https://cloud-qmjjp049v-hack-club-bot.vercel.app/0meme_time.jpg)
+![time_meme-dot-jpg](https://cdn.hackclub.com/rescue?url=https://cloud-qmjjp049v-hack-club-bot.vercel.app/0meme_time.jpg)
 
 <Dropdown title="Task">
 	Add 2 of your own cubes into the scene!
@@ -639,7 +639,7 @@ TIPS
 6) Feel free to seek the demo code for more examples
 ```
 
-If you would like to learn how to add more shapes to use in your lofi animation, check out the jam's note, printed or digitally. They can also be found [here](https://cloud-bt4376wp7-hack-club-bot.vercel.app/0three.js_ultimate_geometry_guide.pdf)
+If you would like to learn how to add more shapes to use in your lofi animation, check out the jam's note, printed or digitally. They can also be found [here](https://cdn.hackclub.com/rescue?url=https://cloud-bt4376wp7-hack-club-bot.vercel.app/0three.js_ultimate_geometry_guide.pdf)
 
 Farewell traveler!
 <img src="https://media1.giphy.com/media/6VriQO3GFRwwBVPbi4/giphy.gif?cid=ecf05e474dx0omnat02vthuv0n1komd3yefmcqhqljwguudnandep=v1_gifs_searchandrid=giphy.gif" width="25%"/>
@@ -661,7 +661,7 @@ It looks like you wanted to learn more, let's start with 3D models.
 
 I suggest using [this]([Goxel 0.10.5](https://goxel.xyz/live/)) tool for creating a 3D voxel model, because it is easy to use and it is **online**.
 After creating a model follow this guide:
-![export](https://cloud-de7xkh2bp-hack-club-bot.vercel.app/0image.png)
+![export](https://cdn.hackclub.com/rescue?url=https://cloud-de7xkh2bp-hack-club-bot.vercel.app/0image.png)
 Instructions as show above:
 
 1. Click the image button, it is known as **export**

@@ -36,7 +36,7 @@ This is a shortened version of the full [submission instructions for the grant](
 
 To follow the repo for updates and show you're participating, click the "star" button on the [`hackclub/onboard`](https://github.com/hackclub/OnBoard/) repo.
 
-![Star the OnBoard repo](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/3star-repo.png)
+![Star the OnBoard repo](https://cdn.hackclub.com/rescue?url=https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/3star-repo.png)
 
 ## 1. Join the Slack! 
 
@@ -54,29 +54,29 @@ Upload your Gerber files to JLCPCB.com and add them to you cart. Once completed,
 
 Fork the [`onboard`](https://github.com/hackclub/OnBoard/) repo! This is the where you'll add your project files and eventually PR from!
 
-![Fork the OnBoard repo](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/5onboard-fork.png)
+![Fork the OnBoard repo](https://cdn.hackclub.com/rescue?url=https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/5onboard-fork.png)
 
 ## 4. Add Your Design to Your Project Repo
 
 From your fork of `OnBoard`, create a folder with your project name under `OnBoard/projects`. To do this, go to the projects folder and click `Create new file`.
 
-![Projects folder](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/2projects.png)
+![Projects folder](https://cdn.hackclub.com/rescue?url=https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/2projects.png)
 
-![Create new file](https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/0add-file.png)
+![Create new file](https://cdn.hackclub.com/rescue?url=https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/0add-file.png)
 
 Then in the box labeled `name your file...`, type in `PROJECT_NAME/README.md`. This creates a README file under a folder called named after your project.
 
-![Creating a folder](https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/3creating-a-folder.png)
+![Creating a folder](https://cdn.hackclub.com/rescue?url=https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/3creating-a-folder.png)
 
 After this, copy and paste the contents of [`TEMPLATE.md`](./projects/!Template/TEMPLATE.md?plain=1) into the text editor and fill it out!
 
-![Paste in TEMPLATE.md](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/1paste-in-template.png)
+![Paste in TEMPLATE.md](https://cdn.hackclub.com/rescue?url=https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/1paste-in-template.png)
 
 Once your done, press the big green `Commit changes` button to save!
 
 With your README filled out, head over to add files to begin uploading your Gerber, design files, and screen shot of vendor approval.
 
-![Upload gerber files](https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/1adding-gerbers.png)
+![Upload gerber files](https://cdn.hackclub.com/rescue?url=https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/1adding-gerbers.png)
 
 In all, you should have the following files under your project folder:
 - [ ] `README.md`: A filled out [`TEMPLATE.md`](./projects/!Template/TEMPLATE.md?plain=1), renamed to `README.md`.
@@ -97,14 +97,14 @@ If you have all the above, you're done with this step!
 
 Once you've uploaded your files, you can merge them to the main repo through a pull request! Under the contribute tab of your forked repo, click the big green `Open pull request`.
 
-![Open a PR](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/0open-pr.png)
+![Open a PR](https://cdn.hackclub.com/rescue?url=https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/0open-pr.png)
 
 That will bring you to the main repo, where you'll initiate a pull request. All you need to do is to follow the checklist. Then, we'll review your PR, and you'll be off to the races!
-![Submission checklist](https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/4submission-checklist.png)
+![Submission checklist](https://cdn.hackclub.com/rescue?url=https://cloud-j2h1ajlmt-hack-club-bot.vercel.app/4submission-checklist.png)
 
 
 ## 6. Ship it!
 
 Post photos of your board in [`#onboard`](https://hackclub.slack.com/archives/C056AMWSFKJ)! We can't wait to see what you make!
 
-![John sharing PCB](https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/4john-sharing-pcb.png)
+![John sharing PCB](https://cdn.hackclub.com/rescue?url=https://cloud-fw3ggo1g3-hack-club-bot.vercel.app/4john-sharing-pcb.png)

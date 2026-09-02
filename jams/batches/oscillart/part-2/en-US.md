@@ -6,7 +6,7 @@ title: 'Playing Sounds with Sine Waves'
 description: "In this part of the Jam, you'll use Javascript's Web Audio API to play sounds from your browser given by user-input."
 contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
-thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/4b0f8950436ef1090644a20cca1722a0e9a9d1f3_untitled_design__26_.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/4b0f8950436ef1090644a20cca1722a0e9a9d1f3_untitled_design__26_.png'
 timeEstimate: '30-45 min'
 difficulty: 'Beginner, Intermediate'
 keywords: 'music, wave, frequency, javascript, art'
@@ -39,7 +39,7 @@ First, go to the left side of the codespaces environment, where all your project
 
 Pssst, here’s a quick screenshare if you missed any of that:
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/129d6de090147b0813e4fb4f8b8fe516fe43e984_screen_recording_2025-06-06_at_3.40.17___pm.mov.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/129d6de090147b0813e4fb4f8b8fe516fe43e984_screen_recording_2025-06-06_at_3.40.17___pm.mov.mp4" width="100%" controls></video>
 
 Yay!! You have an HTML file! Let’s start adding some elements to it. First, add the following code inside of the `<body>...</body>` tags:
 
@@ -193,7 +193,7 @@ Now, all we have to do is call the handle function whenever the button is presse
 
 Now, press the **Live Server** button at the bottom toolbar. And now, in your site, type in the number of hertz in a note (aka the frequency) into your textbox. For example, to play the note A in the middle of your piano, you use the frequency of 440 Hz. So type that into your textbox, and hit the button. You should hear that note played coming out of your browser for one second! Now, change the number so it’s higher, maybe 600 or so. Hit the button again. Is the tone that got played higher-pitched than the last one? It should be! Here's what mine looks like:
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/020eee5f6f011c8875ac2adc5f3fabae75093591_part1.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/020eee5f6f011c8875ac2adc5f3fabae75093591_part1.mp4" width="100%" controls></video>
 
 <br />
 <br />
@@ -259,7 +259,7 @@ Yay!! You’ve done it! If you add a note name into your textbox (or whatever yo
 
 Here's my result:
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/31ed37a81aea5cafc7c37b593612265685a3e102_scale1.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/31ed37a81aea5cafc7c37b593612265685a3e102_scale1.mp4" width="100%" controls></video>
 
 <br />
 

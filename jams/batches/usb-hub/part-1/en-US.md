@@ -6,7 +6,7 @@ description: >
     Get started making your schematic for your very own USB hub! Even if you're a beginner, you'll walk out of this jam with your very own schematic.
 contributor: 'MaxWofford'
 contributorSlackID: 'U0C7B14Q3'
-thumbnail: 'https://cloud-d5i0seddy-hack-club-bot.vercel.app/1usb_hub_jam_part_1_thumbnail.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-d5i0seddy-hack-club-bot.vercel.app/1usb_hub_jam_part_1_thumbnail.png'
 timeEstimate: '45-60 Min'
 difficulty: 'Intermediate'
 keywords: 'PCB, Circuit, PCB, Hub, Electronics, Schematic, Design, EasyEDA, EDA, Beginner'
@@ -19,11 +19,11 @@ video: ""
 totalParts: 2
 ---
 
-_Want to just see the result? See the [Schematic](https://cloud-1we5i4we0-hack-club-bot.vercel.app/1schematic_schematic-usb-hub-2-port-jam_2023-08-10.pdf) and the [EasyEDA source](https://cloud-1we5i4we0-hack-club-bot.vercel.app/0sch_schematic-usb-hub-2-port-jam_2023-08-10.json)._
+_Want to just see the result? See the [Schematic](https://cdn.hackclub.com/rescue?url=https://cloud-1we5i4we0-hack-club-bot.vercel.app/1schematic_schematic-usb-hub-2-port-jam_2023-08-10.pdf) and the [EasyEDA source](https://cdn.hackclub.com/rescue?url=https://cloud-1we5i4we0-hack-club-bot.vercel.app/0sch_schematic-usb-hub-2-port-jam_2023-08-10.json)._
 
 # Putting the "scheme" in schematic
 
-![](https://cloud-j8bxr01tm-hack-club-bot.vercel.app/1usb_hub_needed.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-j8bxr01tm-hack-club-bot.vercel.app/1usb_hub_needed.png)
 
 _Has this ever happened to you? You really need a USB hub!_
 
@@ -31,7 +31,7 @@ Today we're going to make a USB splitter. It'll have 1 USB-A on one side, and 2 
 
 We're starting with a schematic. They're like the blueprint for a PCB. It's a good way to figure out what's connected to what before you actually lay out the parts on your board.
 
-![](https://cloud-6d6aarot8-hack-club-bot.vercel.app/0schematic_to_pcb.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-6d6aarot8-hack-club-bot.vercel.app/0schematic_to_pcb.png)
 
 > Schematics correspond to the parts of your PCB.
 
@@ -47,7 +47,7 @@ For our design, we're going to need a USB-A connector that plugs into our comput
 
 Once you select it, click the `Place` button to add the part to our project. It might look a little different than the images in this tutorial, but that's okay.
 
-![](https://cloud-b1al1d09c-hack-club-bot.vercel.app/00screenshot_2023-08-08_at_12.20.04.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-b1al1d09c-hack-club-bot.vercel.app/00screenshot_2023-08-08_at_12.20.04.png)
 
 Yeah! You did it. Now let's add the other parts we'll need!
 
@@ -70,15 +70,15 @@ Let's find the spec for the CoreChips SL2.1A. A spec is kinda like a README for 
 
 Go to [lcsc.com](https://lcsc.com) and search for `C192893`. Click on the part and scroll down to the `Datasheet` section. Click on the link to download the datasheet.
 
-_Just in case, [here's a link to the spec sheet for the SL2.1A](https://cloud-fa5e1sjdd-hack-club-bot.vercel.app/01811151645_corechips-sl2-1a_c192893.pdf)._
+_Just in case, [here's a link to the spec sheet for the SL2.1A](https://cdn.hackclub.com/rescue?url=https://cloud-fa5e1sjdd-hack-club-bot.vercel.app/01811151645_corechips-sl2-1a_c192893.pdf)._
 
 Now let's open it up and just start reading through the table of contents to find where <i>whoops</i> wait it's all in Chinese.
 
-![](https://cloud-961a0s7fx-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_19.05.22.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-961a0s7fx-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_19.05.22.png)
 
 That's fine! Many specs are in other languages and guessing/translating is part of the skill! The important part is in here, the list of pins and what they do. It looks like this:
 
-![](https://cloud-h587v4g5f-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.37.30.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-h587v4g5f-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.37.30.png)
 
 Printed Circuit Board (PCB) part-makers really like to use acronymns, which are the same in every language! We can use the acronymns to figure out what the pins do. Here's a list of the ones we'll need:
 
@@ -95,45 +95,45 @@ The part I chose also had a spec in chinese, but it's a common part so I found [
 
 Move the parts around so they're facing eachother (you can rotate them with the `R` key), the go ahead and connect `GND` on the usb to `GND` on the chip.
 
-![](https://cloud-ntdzh89kj-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.48.41.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-ntdzh89kj-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.48.41.png)
 
 Now you can connect `VCC` on the usb to `VDD5` on the chip. They aren't labelled the same thing, but `VCC` just means a voltage source, and USB-A is a 5V source.
 
 Next up, connect `D+` on the usb to `DP` on the chip, and `D-` on the usb to `DM` on the chip.
 
-![](https://cloud-72qwemi78-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.54.13.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-72qwemi78-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.54.13.png)
 
 Hmmmm, this is looking a little like a bowl of spaghetti. Let's clean it up with nets!
 
-![](https://cloud-j8bxr01tm-hack-club-bot.vercel.app/2spaghetti.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-j8bxr01tm-hack-club-bot.vercel.app/2spaghetti.png)
 
 ### Nets
 
 Nets are a way to group together wires that are connected to eachother. They're a great way to make your schematic look cleaner and easier to read. Go ahead and remove the VCC & GND lines, then choose the GND net from the toolbar on the right.
 
-![](https://cloud-m5x117vsl-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.56.40.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-m5x117vsl-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_12.56.40.png)
 
 Connect the GND net to the GND pins on the USB-A and the CoreChips SL2.1A. See how clean that new wiring is?
 
-![](https://cloud-7pzslk6qe-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_13.04.24.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-7pzslk6qe-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_13.04.24.png)
 
 Nets are kinda like portals– you can connect them from a distance as a way to keep from crossing your wires on your schematic. They're also good for connecting lots of things together– we're going to need to wire a lot of things to `GND` in a sec, and nets are a great way to do that.
 
 Keep in mind though with nets, there are a lot of ways to write things. All the following are a way to say PIN 4 and PIN 5 are connected to `GND`:
 
-![](https://cloud-d47mlqyh7-hack-club-bot.vercel.app/0gnd_net_types.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-d47mlqyh7-hack-club-bot.vercel.app/0gnd_net_types.png)
 
 To prevent mistakes, try to keep your nets looking like mine for this tutorial, but in general everyone has their own style and that's ok.
 
-![](https://cloud-j8bxr01tm-hack-club-bot.vercel.app/0gnd_nets.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-j8bxr01tm-hack-club-bot.vercel.app/0gnd_nets.png)
 
 ## Ground the Shield
 
 Go ahead and connect MH1 & MH2 to GND also. These aren't really ports- they're just the parts where the metal cover of the USB sticks into the board. We'll connect them to ground in case there's any static electricity.
 
-![](https://cloud-7u8ahczmz-hack-club-bot.vercel.app/0screenshot_2023-10-11_at_13.27.24.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-7u8ahczmz-hack-club-bot.vercel.app/0screenshot_2023-10-11_at_13.27.24.png)
 
-![](https://cloud-1vlpmdjo8-hack-club-bot.vercel.app/0screenshot_2023-10-11_at_13.30.41.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-1vlpmdjo8-hack-club-bot.vercel.app/0screenshot_2023-10-11_at_13.30.41.png)
 
 ## Add the other USBs
 
@@ -143,7 +143,7 @@ I'll position my USB-A female ports and hook them up to the main chip's `DP` and
 
 On these USBs, ports 5 & 6 are the same as ports MH1 & MH2. They're just the metal shield, so we'll connect them to `GND` as well.
 
-![](https://cloud-6cwv1d324-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_15.16.16.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-6cwv1d324-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_15.16.16.png)
 
 _Remember, with nets you can connect from a distance!_
 
@@ -153,7 +153,7 @@ The design is almost complete, and in a perfect world it would work just fine. B
 
 Knowing where these protective components go can be an art and hotly debated on many stackoverflow forms. Fortunately, the spec sheets we're using contain some example circuits for us to use. Let's take a look at the CoreChips SL2.1A spec sheet again:
 
-![](https://cloud-a1u1u3jnb-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.32.45.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-a1u1u3jnb-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.32.45.png)
 
 _This is a little hard to see, so we'll go through it step by step. For now, just know we're getting the following instructions from reading this image & adapting it a little for our own design._
 
@@ -163,13 +163,13 @@ _Diodes ensure power flows in 1 direction. We don't want an accidental spike to 
 
 Now let's protect from power surges that make it past the diode. We'll use a capacitor for this– it's kinda like a resevior for power. It can store up power and then release it when it's needed. If there's a power fluctuation, this capacitor will let the extra power blead out to `GND` harmlessly. We'll use a 10uF capacitor with part number [`C19702`](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.html). Let's drop it in right after the diode, and connect it to `GND`.
 
-![](https://cloud-e0ekzo8gw-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.37.55.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-e0ekzo8gw-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.37.55.png)
 
 _When using a capacitor to prevent overflows like this it's called a ["decoupling capacitor"](https://components101.com/articles/decoupling-capacitor-vs-bypass-capacitors-working-and-applications). I'll admit I don't 100% understand why, but this won't short 5V to GND._
 
 Go ahead and use the same capacitors to protect the other USB-A ports. You can copy & paste the components, and then move them into place.
 
-![](https://cloud-lr6vmvrrj-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.44.21.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lr6vmvrrj-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.44.21.png)
 
 ## Unused ports
 
@@ -177,27 +177,27 @@ The SL2.1A chip we're using supports up to 4 USB ports, but we're making a small
 
 _Making a 4-port USB hub is left as a challenge for you to do if you want to!_
 
-![](https://cloud-4sab6gwqz-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.51.45.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-4sab6gwqz-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.51.45.png)
 
 All finished should have pins connected to some label or wire, even if it's just a "no connection" symbol. Your PCB will error if you try to send it to the manufacturer with any pins unlabeled.
 
-![](https://cloud-me27qfpwb-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.51.54.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-me27qfpwb-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.51.54.png)
 
 Next up are pins `VDD33` and `VDD18`. Sometimes components will have these to provide lower voltages for their internal circuitry. We don't need to worry about them for this design, but the spec shows that we need to bleed off the power to `GND` using another 10uF capacitor.
 
-![](https://cloud-p9cf2w5jg-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.58.13.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-p9cf2w5jg-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_17.58.13.png)
 
 Lastly, our chip provides clock circuitry through `XIN` and `XOUT` for advanced use if we wanted to overclock our USB ports. We aren't trying to do that, so we'll opt-out of it by connecting `XIN` to `GND` and marking `XOUT` as disconnected.
 
-![](https://cloud-np517gxwl-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_18.02.06.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-np517gxwl-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_18.02.06.png)
 
-Now, let's check if all the pins are connected. Try converting the schematic to a PCB. If you see a warning pop up that means a net is missing or not connected. ![](https://cloud-dmskkj3bl-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_18.36.08.png)
+Now, let's check if all the pins are connected. Try converting the schematic to a PCB. If you see a warning pop up that means a net is missing or not connected. ![](https://cdn.hackclub.com/rescue?url=https://cloud-dmskkj3bl-hack-club-bot.vercel.app/0screenshot_2023-08-08_at_18.36.08.png)
 
 ## Finished!
 
 If all the schematic is connected you've done it!
 
-![](https://cloud-4dr6xa7qz-hack-club-bot.vercel.app/0yay.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-4dr6xa7qz-hack-club-bot.vercel.app/0yay.gif)
 
    <Announcement
             copy="Now make your board"

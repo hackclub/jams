@@ -34,19 +34,19 @@ It can be a little bit tricky to get used to, so we made a [very short video](ht
 
 When you go to the website, you should see a screen like this. Click `Sign Up` to create an account, if you don't already have one.
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
 
 Click on the `EasyEDA Designer` button in the Navbar to open up the schematic editor.
 
 Once you've logged in, select `File` > `New` > `Project` to create a new project.
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/8new-project.png)
 
 This will open up the schematic editor. Some important parts:
 
 - `Library` on the left toolbar: This is where we will search for components and place them into our schematic.
 - `Wiring Tools` panel: We'll be using the wire tool to connect the components together.
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/3schematic.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/3schematic.png)
 
 ## Placing components into the schematic
 
@@ -59,11 +59,11 @@ For our card, we'll want a capacitor, a resistor, a 2V LED and a NFC chip:
 
 Click the `Library` button to open the parts picker. Search for a part (the part number works best), and make sure `JLCPCB Assembled` is selected. This will make sure we're choosing parts from JLCPCB's parts library, as this is currently Hack Club's Onboard PCB manufacturer.
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/4searching-for-parts.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/4searching-for-parts.png)
 
 Select the part, then hit the `Place` button to add it to your schematic. Repeat for all 4 of the parts listed above.
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/9parts-on-schematic.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/9parts-on-schematic.png)
 
 > Note: The EasyEDA parts library may not always be helpful when finding parts for your own future projects, so feel free to search the internet for parts and their codes. You can also create your own parts, but that's a bit more advanced.
 
@@ -75,7 +75,7 @@ Note: this is not an actual part, so it doesn't need to be assembled onto the bo
 
 To add the antenna, search for `25X48MM_NFC_ANTENNA` in the Library, and instead of `JLCPCB Assembled`, select `User Contributed`. Select one of the options (check the preview to make sure it looks similar to the one I used here, but most of them should work), and place it on your schematic.
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/5selecting-antenna.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/5selecting-antenna.png)
 
 ## Wiring up the components
 
@@ -92,7 +92,7 @@ The datasheet says
 
 So we'll connect the capacitor between `VOUT` and GND (the `VSS` pin).
 
-<video src="https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/1wire-tool.mp4" controls="controls" style={{ maxWidth: "480px" }}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/1wire-tool.mp4" controls="controls" style={{ maxWidth: "480px" }}></video>
 
 - The pins `LA` and `LB` are for the antenna, so we'll wire up the antenna between those two pins.
 - > If NTAG I2C also powers the I2C bus, then VCC must be connected to VOUT
@@ -105,7 +105,7 @@ Your schematic should look something like this when completed:
 
 > Note that your schematic may look a bit different from mine -- that's okay! As long as the connections are the same, it should work. So feel free to experiment with different layouts, maybe keep the antenna on the right or change the position of LEDs and resistors? It's up to you!
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/3completed-schematic.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/3completed-schematic.png)
 
 > Friendly reminder to save (`command + s` or `control + s`) your work! You can also click `Project` > `Save Project` to save your schematic. 
 
@@ -117,7 +117,7 @@ Now that the schematic is complete, we can start designing the actual PCB. In th
 
 To convert the schematic into a PCB design file, click `Design` > `Convert Schematic to PCB`. You may get a warning about unfinished nets -- this is fine, just click "No, Keep Going."
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/5convert-schematic-to-pcb.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/5convert-schematic-to-pcb.png)
 
 This will open up the PCB editor, as well as a popup window to specify the board's dimensions. (If the popup window doesn't show up for any reason, you can find it through `Tools` > `Set Board Outline`.)
 
@@ -128,13 +128,13 @@ Here are the dimensions I'll be using, but feel free to make your business card 
 - Height: 50.8mm
 - Radius: 4mm
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/6set-board-outline.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/6set-board-outline.png)
 
 ## Functionality: Making a working PCB card
 
 Once you set the board outline, you should see something like the image below. There's the outline of the board in pink, a bunch of components in red, and some thin blue lines connecting the components. Let's talk about what these are, and what the colors mean!
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/0pcb-editor.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/0pcb-editor.png)
 
 ### Layers
 
@@ -145,7 +145,7 @@ A PCB like a sandwich -- it's made up of many different layers. We're designing 
 - On top of the copper layers are **soldermask** layers. This is what gives PCBs their color -- common soldermask colors are green or black, but white, purple, blue, red, yellow, and more are also possible. Soldermask is added to the entire surface of the board (both the top and the bottom) by default. If you want to **remove** the soldermask (which will reveal the copper underneath), use the `TopSolderMaskLayer` or `BottomSolderMaskLayer` (for the top and bottom of the board, respectively).
 - On top of the soldermask layers are **silkscreen** layers. Silkscreen is usually white, and is generally used to label and identify components, but we'll be using it for ✨ PCB art ✨. We can use this to add contact info, a QR code, or even some illustrations to our business card. In EasyEDA, silkscreen is added on the `TopSilkLayer` and `BottomSilkLayer`.
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/1pcb-layers.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/1pcb-layers.png)
 
 ### Components
 
@@ -159,7 +159,7 @@ Some helpful tips:
 
 Drag the components around until you're happy with the placement. Here's what mine looks like, but don't copy it directly; almost anything will work!
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/4components-placed.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/4components-placed.png)
 
 ### Routing traces
 
@@ -167,15 +167,15 @@ Now, we have a bunch of components on the card. If we were to have the card manu
 
 It's best practice to manually route your traces, using the first button in the PCB tools panel: the `Track` tool.
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/2pcb-tools.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/2pcb-tools.png)
 
 However, to speed up the jam a bit, we'll be using EasyEDA's auto-router. Select `Route` > `Auto Route...` and click `Run` to watch the magic happen...
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/0auto-router.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/0auto-router.png)
 
 ...Except, it seems like the magical autorouter 🪄 wasn't 100% successful :(. We'll finish up the last bit with some manual routing.
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/1autorouter-results.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/1autorouter-results.png)
 
 In my case, the autorouter was able to connect most of the components, but there's still one thin blue line (representing an unrouted connection). Can you find it?
 
@@ -185,7 +185,7 @@ Zooooming in, we see that it's between the antenna loop and pin #8 on the NFC ch
 2. On the right sidebar, set `Routing Conflict` to `Ignore`. This step is generally not needed (for normal manual routing), but there's a small issue with the footprints that makes it necessary here.
 3. Click between the two pads that need to be connected. The thin blue line should disappear, and a red trace should connect the two pads.
 
-<video src="https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/0manual-routing.mp4" controls="controls" style={{ maxWidth: "480px" }}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-bfxdnmxrd-hack-club-bot.vercel.app/0manual-routing.mp4" controls="controls" style={{ maxWidth: "480px" }}></video>
 
 Now, your PCB card is functional. Woooo! 🎉
 
@@ -194,17 +194,17 @@ _WARNING: Make sure your design has no short circuits_
            Short circuits is a circuits that allow current to travel along an unintended path. 
 
           Heres a simple example:
-          ![](https://cloud-m5qt0nitx-hack-club-bot.vercel.app/0image.png)
+          ![](https://cdn.hackclub.com/rescue?url=https://cloud-m5qt0nitx-hack-club-bot.vercel.app/0image.png)
           In this circuit, the path of least resistance is the path in red. It flows through the led and the battery, thus the LED will light up
 
           However, in this circuit:
-          ![](https://cloud-abtjpv714-hack-club-bot.vercel.app/0image.png)
+          ![](https://cdn.hackclub.com/rescue?url=https://cloud-abtjpv714-hack-club-bot.vercel.app/0image.png)
           The wires cross paths and make a new path of least resistance, that does not go through the LED. This causes the led to not light up.
         
 </Dropdown>
  <Dropdown title="We don't want that! How can I see if I have a short circuit?">  
           The first thing to check for is if you have any traces(wires) that intersect or overlap, such as these 2 examples
-          ![](https://cloud-5hfwliwe8-hack-club-bot.vercel.app/0image.png) ![](https://cloud-2hhbo4z62-hack-club-bot.vercel.app/0image.png)
+          ![](https://cdn.hackclub.com/rescue?url=https://cloud-5hfwliwe8-hack-club-bot.vercel.app/0image.png) ![](https://cdn.hackclub.com/rescue?url=https://cloud-2hhbo4z62-hack-club-bot.vercel.app/0image.png)
           If you don't see any of these, you should be fine. However, if you want to be extra careful, do a Design Rule Check, by going to Design -> Check DRC
           
           Most of the errors are not actual issues, but if you click through them and find something that unsure of, consider asking around on the #Onboard channel on slack.
@@ -213,19 +213,19 @@ _WARNING: Make sure your design has no short circuits_
   You should check to see if there is a different path the wire could take so it doesn't intersect, kind of like the battery and led example from above. If this is not   possible, then don't worry. This is why our board as multiple layers!
 
 The PCB below has many shorts
-![](https://cloud-nggsler3h-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-nggsler3h-hack-club-bot.vercel.app/0image.png)
 The solution is to move the wire from the top layer to the bottom layer!
 First, select the wire you want to move
-![](https://cloud-grp5qt7qm-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-grp5qt7qm-hack-club-bot.vercel.app/0image.png)
 Next, in the top right, select TopLayer, and change it to BottomLayer
-![](https://cloud-ny3wmd3c4-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-ny3wmd3c4-hack-club-bot.vercel.app/0image.png)
 The wire should turn blue, or another color.
 
 The last step is to change the pads to multilayer. First select the area where the wire and component intersect
-![](https://cloud-hzdm59xgm-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-hzdm59xgm-hack-club-bot.vercel.app/0image.png)
 
 Select top layer, and change it to multilayer
-![](https://cloud-k7tdushgc-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-k7tdushgc-hack-club-bot.vercel.app/0image.png)
 
 Finnally, repeat for the other pad. 
 
@@ -233,7 +233,7 @@ Finnally, repeat for the other pad.
 
 Remember to save your progress! We can check out a preview by clicking the `3D` button in the top toolbar. Hmmm... doesn't look like a business card yet. Let's add some personality to it!
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/2card-preview.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/2card-preview.png)
 
 ## Aesthetics: Personalizing your card
 
@@ -243,11 +243,11 @@ We'll mostly be using the silkscreen layer to add our information and designs. S
 
 In the PCB Tools panel, select the `Text` tool. If you want to make it a business card, you can add your name and contact info -- or add any other text you want. Select the text object you just placed, and change the font, line width, and size in the right sidebar.
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/8text-properties.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/8text-properties.png)
 
 Drag the text to where you want it on your board. Here, I've added my name, website, and GitHub. If you need ideas: you can add your email, phone number, or other social media handles.
 
-![](https://cloud-lagxcclbp-hack-club-bot.vercel.app/7text-added.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lagxcclbp-hack-club-bot.vercel.app/7text-added.png)
 
 ### Adding a QR Code
 
@@ -255,7 +255,7 @@ EasyEDA also supports importing images! I'll use this to add a QR Code that link
 
 Just like Text objects, you can select the image to modify the properties (width, height, etc.) on the right sidebar.
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/6import-image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/6import-image.png)
 
 Note: we've been placing everything on the yellow `TopSilkLayer`. This means that they will all appear on the top side of our board. If you want to add anything to the bottom, use the green `BottomSilkLayer`! Keep in mind that the bottom layers of the board are a top-down, see through view, which is essentially flipped -- use the 3D viewer to check that all your text and images are oriented correctly.
 
@@ -270,7 +270,7 @@ Here are some examples -- try incorporating these techniques into your board.
 - **Textured, or with slight color variation**: add your object to only the `TopLayer` or `BottomLayer`. Without removing the soldermask, the copper will still be covered by the soldermask, but it may slightly lighten the soldermask color and will create a textured feel.
 - **Translucent yellow** (color of the FR-4 material): add our object to only the `TopSolderMaskLayer` or `BottomSolderMaskLayer`. This will remove the soldermask on the object, revealing the yellow FR-4 material underneath. This technique is useful for allowing LEDs to shine from one side of the board to the other, or just for adding another color to your design.
 
-![](https://cloud-qega55fyl-hack-club-bot.vercel.app/7layer-effects.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-qega55fyl-hack-club-bot.vercel.app/7layer-effects.png)
 
 ## Turn your design... into an actual card!
 

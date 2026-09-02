@@ -3,7 +3,7 @@ title: 'BakeBuild'
 description: 'Model a cookie, get it printed for you, and receive a cookie grant.'
 contributor: 'Kaympe20'
 contributorSlackID: 'U07HY92M9GA'
-thumbnail: 'https://cloud-rlzztwel4-hack-club-bot.vercel.app/0slide1.jpg'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-rlzztwel4-hack-club-bot.vercel.app/0slide1.jpg'
 timeEstimate: '40 Min'
 difficulty: 'Beginner'
 keywords: '3D printing, cookie cutter, modeling, design, baking, Hackclub, YSWS, beginner project, hands-on, creative, STEM, CAD, cookie grant, workshop, fun activity'
@@ -35,7 +35,7 @@ slug: 'bakebuild'
     * Talk to your friends and brainstorm ideas​
     * Sketch an outline of it using either digital tools or paper
 * Find something that has a simple outline, like this loch ness monster!
-![](https://cloud-j3vzjmngz-hack-club-bot.vercel.app/0picture.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-j3vzjmngz-hack-club-bot.vercel.app/0picture.png)
 * Once you’ve got your outline, save an image of it to your computer and return to Onshape!
 
 ## Importing the image into onshape
@@ -45,24 +45,24 @@ slug: 'bakebuild'
     * Click on the last option “import”​
 * Select your chosen file and click “open”​
 * A loading bar will appear and tell you once your image has been successfully imported
-![](https://cloud-4ld7cxlyw-hack-club-bot.vercel.app/4image6.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-4ld7cxlyw-hack-club-bot.vercel.app/4image6.png)
 
 ## Insert the picture
 * Now it’s time to add the image!​
 * Create a sketch on the top plane and insert the photo ​
 * Using the dropdown from “Insert DXF or DWG,” click on “Insert Image”​
 * An option to insert an image will appear
-![](https://cloud-i4xfog8ph-hack-club-bot.vercel.app/0image7.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-i4xfog8ph-hack-club-bot.vercel.app/0image7.png)
 * Choose your image from the pop-up​
 * Click on the pane you want to drag to draw your image​
 * DO NOT CONFIRM YOUR SKETCH YET
-![](https://cloud-jverinan3-hack-club-bot.vercel.app/0image8.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-jverinan3-hack-club-bot.vercel.app/0image8.png)
 
 
 ## Dimension
 * Use the dimensioning tool to change the size of your picture​
 * In general, your outline probably shouldn’t be over 4in x 4in or 100mm x 100mm
-![](https://cloud-jverinan3-hack-club-bot.vercel.app/1image9.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-jverinan3-hack-club-bot.vercel.app/1image9.png)
 
 
 ## Tracing
@@ -70,12 +70,12 @@ slug: 'bakebuild'
 * Use the spline tool and click along your outline to trace it out!​
     * Note that you can edit the points of your spline after confirming it but you cannot undo any (DO NOT TRY UNDOING WHILE MAKING THE OUTLINE)​
 * Once you’re happy with your outline, confirm your sketch by clicking on the green checkmark​
-![](https://cloud-jverinan3-hack-club-bot.vercel.app/2image10.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-jverinan3-hack-club-bot.vercel.app/2image10.png)
 
 ## 3D time
 * Once your sketch is confirmed, click the extrude tool and choose “thin” ​
 * Then select the outline of your sketch​
-![](https://cloud-11umbk5i1-hack-club-bot.vercel.app/0image11.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-11umbk5i1-hack-club-bot.vercel.app/0image11.png)
 * Now you can change the thickness​
 * I find that  2mm/.08in work best​
 * Then choose the depth​
@@ -87,7 +87,7 @@ slug: 'bakebuild'
 * Select the bottom side of the extrude and use thin to make a pretty border​
     * Thickness ~ 5mm​
     * Depth ~ 2mm
-![](https://cloud-11umbk5i1-hack-club-bot.vercel.app/2image13.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-11umbk5i1-hack-club-bot.vercel.app/2image13.png)
 
 ## ADMIRE IT!​
 * Look at your finished design!​
@@ -98,13 +98,13 @@ slug: 'bakebuild'
 ## Screenshot
 * Take a screenshot of your design (like so) and save it to your computer​
 * You will need this for submission
-![](https://cloud-11umbk5i1-hack-club-bot.vercel.app/3image14.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-11umbk5i1-hack-club-bot.vercel.app/3image14.png)
 
 ## Export
 * Now it’s time to export it!​
 * Right click the “part studio” tab where you made your whole design ​
 * Select “export”
-![](https://cloud-11umbk5i1-hack-club-bot.vercel.app/4image15.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-11umbk5i1-hack-club-bot.vercel.app/4image15.png)
 * A pop up will appear​
 * Name your file something relevant and boring like ​“Cookie Cutter” again​
 * Select “STEP” for the format​

@@ -3,7 +3,7 @@ title: 'Build a USB Hub'
 contributor: 'maxwofford'
 description: "Ever have a keyboard, mouse, and more to plug in but only one free USB port to use? You probably fixed it with a USB hub– but how do they work? In this jam you'll build your own from scratch."
 video: ''
-thumbnail: 'https://cloud-7x19y609v-hack-club-bot.vercel.app/0usb_hub_jam_thumbnail.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-7x19y609v-hack-club-bot.vercel.app/0usb_hub_jam_thumbnail.png'
 keywords: 'PCB, Circuit, USB, PCB, Hub, Electronics, Soldering, Schematic, Design, EasyEDA, EDA, Beginner'
 timeEstimate: '2 Hours'
 difficulty: 'Intermediate'

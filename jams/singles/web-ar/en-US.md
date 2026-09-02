@@ -3,7 +3,7 @@ title: 'Mastering the Matrix: Crafting Your Own Web-based AR App'
 description: >
   This guide outlines how to create a virtual reality scene using A-Frame, a web framework for building VR experiences. It discusses a component-based architecture to manage complexity and improve reusability.
 contributor: 'DevIos01'
-thumbnail: 'https://cloud-otgp3nnas-hack-club-bot.vercel.app/0000thumbnail-jam__1__50.webp'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-otgp3nnas-hack-club-bot.vercel.app/0000thumbnail-jam__1__50.webp'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
 keywords: 'Web, Magic, AR, Ar.js'
@@ -16,7 +16,7 @@ poster: ''
 video: ''
 slug: 'web-ar'
 ---
-![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/7image.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/7image.gif)
+![https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/7image.gif](https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/7image.gif)
 
 Imagine a universe where you hold the magic to create your own dimensions and craft the castles of your dreams. **Today, we'll embark on a journey through the heart of VR development by constructing our very own floating virtual lands and join forces by integrating them into a shared celestial town.**
 
@@ -28,7 +28,7 @@ In this workshop, we'll not only dive into the futuristic world of Augmented Rea
 
 You should have a basic understanding of HTML, CSS, and JavaScript. If you can say "Hello, World!" in these languages, you're ready to conquer the AR world.
 
-![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/6image__1_.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/6image__1_.gif)
+![https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/6image__1_.gif](https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/6image__1_.gif)
 
 ## Tools
 
@@ -41,12 +41,12 @@ You should have a basic understanding of HTML, CSS, and JavaScript. If you can s
 
 1. Head over to [Argument Reality Template](https://replit.com/@DevIos01/WebBasedArgumentReality-Template) and click "fork". Then, sign up or sign in, which will load the new dashboard where you can do everything.
 
-![Gif of how to fork the project](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/5ar__1_.gif)
+![Gif of how to fork the project](https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/5ar__1_.gif)
 
 
 1. Take a moment to look around and familiarize yourself with this lovely dashboard.
 
-![image (19).png](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/4image__19___1_.png)
+![image (19).png](https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/4image__19___1_.png)
 
 **Source Code:** The canvas where all your creativity takes the form of code.
 
@@ -81,7 +81,7 @@ You should have a basic understanding of HTML, CSS, and JavaScript. If you can s
 - **Go to line:** **`Ctrl`** + **`G`**
 - **Autocomplete:** **`Ctrl`** + **`Space`**
 
-![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/3image__2_.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/3image__2_.gif)
+![https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/3image__2_.gif](https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/3image__2_.gif)
 
 Steps
 
@@ -109,7 +109,7 @@ Picture this - you're a wizard, and you're about to cast your first spell. You r
 
 ```
 
-![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/2image__3_.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/2image__3_.gif)
+![https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/2image__3_.gif](https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/2image__3_.gif)
 
 We're essentially incorporating these 'spells' into our web page to breathe interactivity into it. Without them, our web page would be a static set. But with JS (our magic ink), we make the elements come alive, move, disappear, change colors, and much more!
 
@@ -162,7 +162,7 @@ Lastly, the magician leaves a message, guiding the audience on how to partake in
       color="red" visible="true"></a-text>
 ```
 
-![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/1image__4_.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/1image__4_.gif)
+![https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/1image__4_.gif](https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/1image__4_.gif)
 
 When these ingredients come together in our digital cauldron, a delightful AR experience is brewed! The 3D duck majestically appears, twirling and spinning in all its glory. Every magician has more than one trick up their sleeve, and so will we! Stay tuned!🎩🔮
 
@@ -219,4 +219,4 @@ Alright, conjuring one 3D duck is cool, but you know what's cooler? Conjuring mu
 
 We've now built a basic AR application with multiple 3D models, and we didn't even need goofy glasses! Not only do we know how to set up an AR scene, but we can also add multiple 3D models to the scene and make them come alive. We've mastered the basics and we're ready to create our own digital universe. Remember, in the world of AR, the only limit is your imagination. Keep coding and keep exploring!
 
-![https://cloud-4vl3zrzew-hack-club-bot.vercel.app/0image__5_.gif](https://cloud-4vl3zrzew-hack-club-bot.vercel.app/0image__5_.gif)
+![https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/0image__5_.gif](https://cdn.hackclub.com/rescue?url=https://cloud-4vl3zrzew-hack-club-bot.vercel.app/0image__5_.gif)

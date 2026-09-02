@@ -6,14 +6,14 @@ description: >
     Get started making your very first game with the Sprig game engine! Even if you're a beginner, you'll walk out of this jam with your very own game in the Gallery.
 contributor: 'recursiveforte'
 contributorSlackId: 'U02UYFZQ0G0'
-thumbnail: 'https://cloud-ctbvwlpse-hack-club-bot.vercel.app/0sprig.gif'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-ctbvwlpse-hack-club-bot.vercel.app/0sprig.gif'
 timeEstimate: '45-60 Min'
 difficulty: 'Beginner'
 keywords: 'Sprig, Games, Game'
 language: 'JavaScript'
 presentation: "https://www.figma.com/file/Csn3pewJwcY5zk1mD8TnKS/Sprig-%232?type=design&node-id=236%3A2&mode=design&t=vsryibC09yq38LhW-1" 
 presentationPlay: "https://www.figma.com/proto/Csn3pewJwcY5zk1mD8TnKS/Sprig-%232?page-id=236%3A2&type=design&node-id=236-1250&viewport=884%2C360%2C0.15&t=Guxr4TgtI1gYXnGc-1&scaling=contain&starting-point-node-id=236%3A1250&mode=design" 
-presentationPDF: "https://cloud-9yb2ef0ar-hack-club-bot.vercel.app/0sprig__1.pdf" 
+presentationPDF: "https://cdn.hackclub.com/rescue?url=https://cloud-9yb2ef0ar-hack-club-bot.vercel.app/0sprig__1.pdf" 
 notes: "" 
 poster: "https://github.com/hackclub/posters#:~:text=Author-,Download,-Download"
 video: "" 
@@ -29,7 +29,7 @@ Here's some ideas to encourage this:
 ## Get Started
 Last session, you built a push block game in Sprig (if you haven't, check out [part 1](/batch/sprig/part-1) of this jam!). Let's build off that experience and make something even more awesome!
 
-![](https://cloud-ctbvwlpse-hack-club-bot.vercel.app/0sprig.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-ctbvwlpse-hack-club-bot.vercel.app/0sprig.gif)
 *This is a sample of what your base game might look like! I made mine about a watering can who needs to get to a flower, but your game's story, levels, sprites, etc. will be your very own :)*
 
 Today, we'll be learning to make a maze game in Sprig! By the end of this jam, you'll have created your very own maze game from scratch! Next session we'll be adding custom game mechanics and getting ready to share your game with the world! (how exciting is that??)
@@ -49,5 +49,5 @@ Let's head to [this page](https://sprig.hackclub.com/gallery/maze_game_starter) 
 ## Wrap-up!
 Congratulations!! By finishing this tutorial, you just made your own game from scratch!
 
-![](https://cloud-bsg8pyzmi-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_15.27.47.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-bsg8pyzmi-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_15.27.47.png)
 Next session, we'll be adding custom game mechanics to our game! Take a look at the game mechanics list in [part 3](/batch/sprig/part-3) for some examples of what you can make.

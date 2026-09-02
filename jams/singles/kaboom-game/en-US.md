@@ -4,14 +4,14 @@ description: >
   In this Jam, you'll be designing and creating a fun platformer-style game and sharing it with your friends.
 contributor: 'ajs256'
 contributorSlackID: 'U04MDFEBL2U'
-thumbnail: 'https://cloud-5kma4td0d-hack-club-bot.vercel.app/0kaboom.gif'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-5kma4td0d-hack-club-bot.vercel.app/0kaboom.gif'
 timeEstimate: '30 Min'  
 difficulty: 'Intermediate'  
 keywords: 'Web, Game, js, JavaScript, glitch, kaboom, gamedev' 
 language: 'JavaScript'  
 presentation: "https://www.figma.com/file/fUIpjYIAnybmQXUOr8rEPn/KaboomJam?type=design&node-id=0%3A1&mode=design&t=HnYTGbk8JkUTZmWg-1" 
 presentationPlay: "https://www.figma.com/proto/fUIpjYIAnybmQXUOr8rEPn/KaboomJam?type=design&node-id=1-2&t=phUMnwxbFt7UStva-1&scaling=contain&page-id=0%3A1&mode=design" 
-presentationPDF: "https://cloud-93xagowus-hack-club-bot.vercel.app/0kaboomjam__1_.pdf" 
+presentationPDF: "https://cdn.hackclub.com/rescue?url=https://cloud-93xagowus-hack-club-bot.vercel.app/0kaboomjam__1_.pdf" 
 notes: "" 
 poster: "" 
 video: "" 
@@ -20,7 +20,7 @@ slug: 'kaboom-game'
 
 
 Hello!! In this Jam, you will be designing and building a web game. When you're all done, it'll look a bit like this:
-![A demonstration of a completed platformer game](https://cloud-4p2y0vzmm-hack-club-bot.vercel.app/0screen_recording_2023-08-04_at_11.06.53_am.gif)
+![A demonstration of a completed platformer game](https://cdn.hackclub.com/rescue?url=https://cloud-4p2y0vzmm-hack-club-bot.vercel.app/0screen_recording_2023-08-04_at_11.06.53_am.gif)
 
 ## So how are we gonna do this?
 Here are the steps we'll go through to build your own game:
@@ -35,7 +35,7 @@ First, let's get started on [🎏 Glitch](https://glitch.com).
            Glitch is a site that makes it super simple to build web apps. You can code in your browser and see your results live.
 </Dropdown>
 1. Go to [glitch.com](https://glitch.com) and click `Sign Up`.
-   ![Glitch.com's header, with an arrow pointing to the Sign Up button](https://cloud-ic6sx4m6w-hack-club-bot.vercel.app/0scr-20230714-psiv-3.png)
+   ![Glitch.com's header, with an arrow pointing to the Sign Up button](https://cdn.hackclub.com/rescue?url=https://cloud-ic6sx4m6w-hack-club-bot.vercel.app/0scr-20230714-psiv-3.png)
 2. Choose how you'd like to sign up - you can use a GitHub account or a Google account, or if you don't have either, click `Email Magic Link` and you'll get a link and code in your email. 
 3. Either click the link in the email or enter the code from the message in your browser.
 4. Wahoo! You're ready to code!
@@ -50,7 +50,7 @@ Before we go any further, let's take a look at the structure of a Kaboom game.
 kaboom()
 ```
 Every Kaboom game's code will start with this - it initializes the library and gets everything set up. Here's what it looks like:
-![A blank checkerboard canvas](https://cloud-6n8dlncke-hack-club-bot.vercel.app/0image.png)
+![A blank checkerboard canvas](https://cdn.hackclub.com/rescue?url=https://cloud-6n8dlncke-hack-club-bot.vercel.app/0image.png)
 
 Pretty boring. Let's get some action going!
 ```js
@@ -65,7 +65,7 @@ add([
 ])
 ```
 This adds a sprite to the screen. 
-![The same background, but now there's a frog-bean-like sprite on it](https://cloud-65jcy7vy5-hack-club-bot.vercel.app/0image.png)
+![The same background, but now there's a frog-bean-like sprite on it](https://cdn.hackclub.com/rescue?url=https://cloud-65jcy7vy5-hack-club-bot.vercel.app/0image.png)
 
 Right now, it doesn't do much. Let's change that!
 ```js
@@ -101,7 +101,7 @@ Now, head back to your code. You'll notice I've left a comment in the code with 
            There's a place in the code where the level is laid out with symbols. Can you try to add more?
 </Dropdown>
 Once you're done, your game should look a bit like this:
-![a screenshot of a platformer game with a wider platform and more coins](https://cloud-7rnuby5u8-hack-club-bot.vercel.app/0image.png)
+![a screenshot of a platformer game with a wider platform and more coins](https://cdn.hackclub.com/rescue?url=https://cloud-7rnuby5u8-hack-club-bot.vercel.app/0image.png)
 
 > Psst.. here's a tip. Hit <kbd>F1</kbd>. See all those blue boxes? Those are the collision areas of each object in your game. Now hover over one of those objects. Now you can see every object's components! It's a bit like those [x-ray specs](https://en.wikipedia.org/wiki/X-ray_specs) that there used to be ads for in comic books, but it actually works. 
 > 
@@ -173,4 +173,4 @@ Now that you've made the perfect game, it's time to let others play it. Just fol
 5. Click the `Edit project` button to get back to coding.
 
 To get a link that your friends can use to play your game, click the big purple `Share` button at the top, then copy the `Live site` link.
-![A screenshot of Glitch's share dialog with the "Live site" link highlighted](https://cloud-mmr3sh0b9-hack-club-bot.vercel.app/0image.png)
+![A screenshot of Glitch's share dialog with the "Live site" link highlighted](https://cdn.hackclub.com/rescue?url=https://cloud-mmr3sh0b9-hack-club-bot.vercel.app/0image.png)

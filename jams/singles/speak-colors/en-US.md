@@ -3,7 +3,7 @@ title: 'Speak & Color Your Screen Outloud'
 description: Color your screen with your voice via speech recognition.
 contributor: 'sahitid'
 originalAuthor: 'lachlanjc'
-thumbnail: 'https://cloud-3ipvngxk0-hack-club-bot.vercel.app/0screen_shot_2022-01-24_at_1.04.09_pm.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-3ipvngxk0-hack-club-bot.vercel.app/0screen_shot_2022-01-24_at_1.04.09_pm.png'
 timeEstimate: '30-45 Min'
 difficulty: 'Beginner'
 keywords: 'Beta, speech recognition, colors, speak colors'

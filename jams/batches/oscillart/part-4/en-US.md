@@ -6,7 +6,7 @@ title: 'Write Full Songs and Melodies'
 description: "In this part of the Jam, you'll use loops to use your app to create full songs and complex melodies."
 contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
-thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/72b9b84489a40f839f7d97f3e0ecd4e97e366f23_1.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/72b9b84489a40f839f7d97f3e0ecd4e97e366f23_1.png'
 timeEstimate: '1 hr'
 difficulty: 'Beginner, Intermediate'
 keywords: 'music, songs, melodies, javascript'
@@ -48,7 +48,7 @@ for (i = 0; i < usernotes.length; i++) {
 
 Now, what this does is create a loop that uses the variable i to **iterate** through the numbers 0 until the note before the end of your list length. The way indexes work in javascript is that the last number’s (let's declare the nunmber as n) index will be **n-1**. Here’s a diagram to help explain it:
 
-![javascript index diagram](https://hc-cdn.hel1.your-objectstorage.com/s/v3/8f5293dbe91459c9a31a444f6b84ba6db81cc053_index.png)
+![javascript index diagram](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/8f5293dbe91459c9a31a444f6b84ba6db81cc053_index.png)
 
 Now, to keep track of all of the notes that users have in their input, let’s create an **array** to hold the notes, called **noteslist**. Make sure to do this *before* your for-loop. Here are the following methods regarding arrays you should know:
 
@@ -124,7 +124,7 @@ Now, this code means that every 2 seconds, frequency will play a new note and dr
 
 But if we run our code, we run into a few issues…
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/306036ad306181fa751fc2a42a53ad363686ea17_notesissue.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/306036ad306181fa751fc2a42a53ad363686ea17_notesissue.mp4" width="100%" controls></video>
 
 <br />
 
@@ -168,7 +168,7 @@ gainNode.gain.setValueAtTime(0, audioCtx.currentTime + 0.9);
 
 Now, if you type in multiple note names into the text box, and run your code, you should see all of those notes be played and be drawn on your canvas, and you should hear them all too! Here's my example:
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/2e25f09c3bdbe0660d0a11b4de41499b83536169_4waves.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/2e25f09c3bdbe0660d0a11b4de41499b83536169_4waves.mp4" width="100%" controls></video>
 
 <br />
 
@@ -243,7 +243,7 @@ Finally, to make sure that we’re ending the interval after the correct amount 
 
 Now, if we press our button after inputting a lot more notes, like 4 or 5…
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/246c5f953ebfca718787658e6fbcef7bcb869725_spacedout.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/246c5f953ebfca718787658e6fbcef7bcb869725_spacedout.mp4" width="100%" controls></video>
 
 <br />
 

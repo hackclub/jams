@@ -6,7 +6,7 @@ description: >
   This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
 contributor: 'sahitid'  
 contributorSlackID: 'U03RU99SGKA'
-thumbnail: 'https://cloud-1xtor5uxe-hack-club-bot.vercel.app/0thumbnail_2.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-1xtor5uxe-hack-club-bot.vercel.app/0thumbnail_2.png'
 timeEstimate: '45 Min'  
 difficulty: 'Beginner'
 keywords: 'Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'  
@@ -28,7 +28,7 @@ Although this Jams goes over the fundamentals of using AI and ML, reign all your
 
 In fact I encourage that you go out of your way to think of the most bizarre uses of your program. Take a look at what an AI came up with as ideas.
 
-![chatgpt response with ideas for projects](https://cloud-jmwnkv7lq-hack-club-bot.vercel.app/0image.png)
+![chatgpt response with ideas for projects](https://cdn.hackclub.com/rescue?url=https://cloud-jmwnkv7lq-hack-club-bot.vercel.app/0image.png)
 
 In this part, we'll start coding our web app with JavaScript and HTML to set up our speech to text feature, start listening function, and stop listening function!
 
@@ -75,7 +75,7 @@ Some of these will be invisible at first, so let's add some CSS:
 
 ## Let's Get Orpheus to Speak!
 
-![orpheus plushie gif](https://cloud-lsz4bcbfi-hack-club-bot.vercel.app/0jams_gifs.gif)
+![orpheus plushie gif](https://cdn.hackclub.com/rescue?url=https://cloud-lsz4bcbfi-hack-club-bot.vercel.app/0jams_gifs.gif)
 
 Now we can create the two functions to first output the response through text onto the screen and then to output the speech
 
@@ -156,7 +156,7 @@ recognizer.listen(
 
 In case it wasn't obvious enough, here is what we changed:
 
-![before and after for code](https://cloud-8s76y8brd-hack-club-bot.vercel.app/0jams_gifs.png)
+![before and after for code](https://cdn.hackclub.com/rescue?url=https://cloud-8s76y8brd-hack-club-bot.vercel.app/0jams_gifs.png)
 
 Notice that we replaced `console.log` with `speak('Hey!').then(() => ...)`. Because we used promises, we can say, once speak is done done running, we can **then** move on to the next thing, which is `console.log`ging "Done speaking
 
@@ -273,12 +273,12 @@ window.onload = () => {
 }
 ```
 
-<video src="https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 
 ## Additional Challenge Hacking! (recommended)
 
 It's that time you've all been waiting for! Let's Hack our Jam! Try doing one of the following:
-![jam hacks](https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
+![jam hacks](https://cdn.hackclub.com/rescue?url=https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
 
 - Try adding a setting that lets people choose their voice option
 - Have you ever looked into [Eleven Labs](https://beta.elevenlabs.io/) AI voices? How might one go about incorporating their API into this project for more realistic voices?

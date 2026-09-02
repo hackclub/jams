@@ -4,23 +4,23 @@ description: >
   In this Jam, we'll be working on creating stunning shapes and graphics using Python and its pre-installed Turtle library.
 contributor: 'zsh'
 originalAuthor: 'YashKalbande'
-thumbnail: 'https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif'
 timeEstimate: '45 Min'
 difficulty: 'Beginner'
 keywords: 'Beta, Python, Art'
 language: 'Python'
 presentation: 'https://www.figma.com/file/UFFlwD9kEFmMkygaY8yG3h/Untitled?type=design&node-id=0%3A1&mode=design&t=9UnEZB6EYxvg2aQv-1'
 presentationPlay: 'https://www.figma.com/proto/UFFlwD9kEFmMkygaY8yG3h/Untitled?type=design&node-id=2-2&t=IebotsxN9M6q3Edr-1&scaling=contain&page-id=0%3A1&mode=design'
-presentationPDF: 'https://cloud-fplorbj3h-hack-club-bot.vercel.app/0make_your_own_club_token_w_solidity.pdf'
-notes: 'https://cloud-mrmhmej0t-hack-club-bot.vercel.app/0notes_for_this_jam__for_learner_to_note__jot_down_.pdf'
-poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-fplorbj3h-hack-club-bot.vercel.app/0make_your_own_club_token_w_solidity.pdf'
+notes: 'https://cdn.hackclub.com/rescue?url=https://cloud-mrmhmej0t-hack-club-bot.vercel.app/0notes_for_this_jam__for_learner_to_note__jot_down_.pdf'
+poster: 'https://cdn.hackclub.com/rescue?url=https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
 video: ''
 slug: 'exciting-python-visuals'
 ---
 
 Ahoy! In this Jam, we'll be working on creating stunning shapes and graphics using Python and its pre-installed Turtle library. Are you ready? Let's begin!
 
-![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
+![Benzen ring with Turtle](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 ## Outline
 1. **Hello, Turtle!:** An introduction to Turtle, Python's build in library that enables users to create pictures and shapes by providing them with a virtual canvas. Set up your environment and learn the basic methods for drawing.
@@ -79,7 +79,7 @@ forward(100)
 
 Click on Run Button. The output of this program will look like this:
 
-![Square](https://cloud-36kk4uh0h.vercel.app/square.gif)
+![Square](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/square.gif)
 
 The instructions in your program tell the "turtle" how to move. The turtle draws a line behind it as it moves. This program draws a square. The steps given to the program are:
 
@@ -230,7 +230,7 @@ pencil.forward(100)
 turtle.done()
 ```
 
-![Triangle](https://cloud-36kk4uh0h.vercel.app/triangle.gif)
+![Triangle](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/triangle.gif)
 
 **Star**
 ```python
@@ -245,7 +245,7 @@ for i in range(50):
 turtle.done()
 ```
 
-![Star](https://cloud-36kk4uh0h.vercel.app/star.gif)
+![Star](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/star.gif)
 
 **Hexagon**
 ```python
@@ -263,7 +263,7 @@ for i in range(num_sides):
 turtle.done()
 ```
 
-![Hexagon](https://cloud-36kk4uh0h.vercel.app/hexagon.gif)
+![Hexagon](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/hexagon.gif)
 
 Now, try creating different kinds shapes by changing the number of sides, angles and lengths of our original code using our new functions. As well, try creating more complex figures by combining and overlapping shapes.
 
@@ -282,7 +282,7 @@ for x in range(360):
     t.left(59)
 ```
 
-![Turtle Benzen ring](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
+![Turtle Benzen ring](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 ## Drawing
 ### pendown()
@@ -387,4 +387,4 @@ Here are some examples to give you some ideas:
 - [Geometrical Wheel Shape Demo and Code](https://repl.it/@YashKalbande/geometrical#main.py)
 - [Colorful Spiral Demo and Code](https://repl.it/@YashKalbande/spiral#main.py)
 
-![Turtle Spiral](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
+![Turtle Spiral](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/spiral.gif)

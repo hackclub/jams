@@ -3,7 +3,7 @@ title: 'Create Your Own Space-Themed Audio Visualizer'
 description: Visualize sound by making particles move in a galaxy!
 contributor: 'sahitid'
 originalAuthor: 'MatthewStanciu'
-thumbnail: 'https://cloud-mtoslrg9r-hack-club-bot.vercel.app/2final-demo.gif'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-mtoslrg9r-hack-club-bot.vercel.app/2final-demo.gif'
 timeEstimate: '30-45 Min'
 difficulty: 'Beginner'
 keywords: 'Beta, sound, sound galaxy, beginner, web dev, p5.js, '

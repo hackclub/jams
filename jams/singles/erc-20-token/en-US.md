@@ -11,9 +11,9 @@ keywords: 'Crypto, Cryptocurrency, Token, ERC-20, Metamask, Endpoint, Solidity, 
 language: 'Solidity'
 presentation: 'https://www.figma.com/file/UFFlwD9kEFmMkygaY8yG3h/Untitled?type=design&node-id=0%3A1&mode=design&t=9UnEZB6EYxvg2aQv-1'
 presentationPlay: 'https://www.figma.com/proto/UFFlwD9kEFmMkygaY8yG3h/Untitled?type=design&node-id=2-2&t=IebotsxN9M6q3Edr-1&scaling=contain&page-id=0%3A1&mode=design'
-presentationPDF: 'https://cloud-fplorbj3h-hack-club-bot.vercel.app/0make_your_own_club_token_w_solidity.pdf'
-notes: 'https://cloud-mrmhmej0t-hack-club-bot.vercel.app/0notes_for_this_jam__for_learner_to_note__jot_down_.pdf'
-poster: 'https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-fplorbj3h-hack-club-bot.vercel.app/0make_your_own_club_token_w_solidity.pdf'
+notes: 'https://cdn.hackclub.com/rescue?url=https://cloud-mrmhmej0t-hack-club-bot.vercel.app/0notes_for_this_jam__for_learner_to_note__jot_down_.pdf'
+poster: 'https://cdn.hackclub.com/rescue?url=https://cloud-5bv8lvd9u-hack-club-bot.vercel.app/0red_modern_and_minimalist_crypto_tips_your_story.png'
 video: ''
 slug: 'erc-20-token'
 ---
@@ -23,7 +23,7 @@ slug: 'erc-20-token'
 
 What you will end up with:
 
-![Demo](https://cloud-rcnqjs0ni-hack-club-bot.vercel.app/0image.png)
+![Demo](https://cdn.hackclub.com/rescue?url=https://cloud-rcnqjs0ni-hack-club-bot.vercel.app/0image.png)
 
 ## How you will use this as a club?
 
@@ -33,13 +33,13 @@ This guide teaches users how to create their own personalized cryptocurrency tok
 
 <dropdown title="Here are some memes to convey the message:">
 
-![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/77tjen8.jpg)
+![meme](https://cdn.hackclub.com/rescue?url=https://cloud-db2kqcawa-hack-club-bot.vercel.app/77tjen8.jpg)
 
-![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/67tjep6.jpg)
+![meme](https://cdn.hackclub.com/rescue?url=https://cloud-db2kqcawa-hack-club-bot.vercel.app/67tjep6.jpg)
 
-![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/4download__2_.jpg)
+![meme](https://cdn.hackclub.com/rescue?url=https://cloud-db2kqcawa-hack-club-bot.vercel.app/4download__2_.jpg)
 
-![meme](https://cloud-db2kqcawa-hack-club-bot.vercel.app/3download__3_.jpg)
+![meme](https://cdn.hackclub.com/rescue?url=https://cloud-db2kqcawa-hack-club-bot.vercel.app/3download__3_.jpg)
 </dropdown>
 
 ## Why should you even care?
@@ -117,7 +117,7 @@ This guide teaches users how to create their own personalized cryptocurrency tok
 
 14. Scroll to the bottom and click "Add a Network Manually"
 
-![Ss](https://cloud-es32hz2zz-hack-club-bot.vercel.app/0screenshot__74_.png)
+![Ss](https://cdn.hackclub.com/rescue?url=https://cloud-es32hz2zz-hack-club-bot.vercel.app/0screenshot__74_.png)
 
 16. Fill out the form as follows:
     - Network Name: Ethereum Sepolia
@@ -134,7 +134,7 @@ This guide teaches users how to create their own personalized cryptocurrency tok
 
 19. Go to sepoliafaucet.com in your web browser (You're just a few clicks away from being a crypto millionaire! Well, at least in Sepolia. Time to collect those shiny tokens!)
 
-     ![ss](https://cloud-noik0omfz-hack-club-bot.vercel.app/0screenshot__77_.png)
+     ![ss](https://cdn.hackclub.com/rescue?url=https://cloud-noik0omfz-hack-club-bot.vercel.app/0screenshot__77_.png)
 
 21. Paste the copied MetaMask address into the provided field on the Sepolia Faucet website
 
@@ -162,7 +162,7 @@ contract MyToken is ERC20 {
 
 ```
 
-![ss](https://cloud-37tpft686-hack-club-bot.vercel.app/0screenshot__80_.png)
+![ss](https://cdn.hackclub.com/rescue?url=https://cloud-37tpft686-hack-club-bot.vercel.app/0screenshot__80_.png)
 
 ```
 Code explaination:
@@ -199,7 +199,7 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 
 28. Wait for the MetaMask popup to appear and accept any prompts that show up (Buckle up, folks! You're about to embark on a digital transaction journey. Fasten your seatbelts and prepare for takeoff!)
 
-    ![ss](https://cloud-qsv7014dp-hack-club-bot.vercel.app/0screenshot__81_.png)
+    ![ss](https://cdn.hackclub.com/rescue?url=https://cloud-qsv7014dp-hack-club-bot.vercel.app/0screenshot__81_.png)
 
 30. Wait for a message or confirmation from MetaMask indicating the successful deployment
 
@@ -213,8 +213,8 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 
 34. Paste the copied contract address into the search bar on Etherscan and verify its existence (Let's play detective! Paste the contract address and see if our virtual creation has left its digital footprint on the blockchain.)
 
-    ![ss](https://cloud-jje5y5mxt-hack-club-bot.vercel.app/0screenshot__82_.png)
-    ![ss](https://cloud-jje5y5mxt-hack-club-bot.vercel.app/1screenshot__83_.png)
+    ![ss](https://cdn.hackclub.com/rescue?url=https://cloud-jje5y5mxt-hack-club-bot.vercel.app/0screenshot__82_.png)
+    ![ss](https://cdn.hackclub.com/rescue?url=https://cloud-jje5y5mxt-hack-club-bot.vercel.app/1screenshot__83_.png)
 
 36. Go back to MetaMask (Time to check on your tokens like a dragon guarding its treasure!)
 
@@ -222,13 +222,13 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 
 38. Paste the deployed contract's address (same one used in sepolia.etherscan.io) and wait for the form to auto-complete
 
-    ![ss](https://cloud-67bytcbnd-hack-club-bot.vercel.app/0screenshot__85_.png)
+    ![ss](https://cdn.hackclub.com/rescue?url=https://cloud-67bytcbnd-hack-club-bot.vercel.app/0screenshot__85_.png)
 
 40. Continue and wait for the token to be imported
 
 41. You will receive your coins in MetaMask (Cha-ching! It's raining digital coins in your MetaMask wallet. Time to celebrate!)
 
-    ![ss](https://cloud-67bytcbnd-hack-club-bot.vercel.app/1screenshot__86_.png)
+    ![ss](https://cdn.hackclub.com/rescue?url=https://cloud-67bytcbnd-hack-club-bot.vercel.app/1screenshot__86_.png)
 
 ### Personalizing options
 
@@ -242,9 +242,9 @@ _mint is used to set and create an amount of tokens in the blockchain, you can i
 * IMPORTANT STEP - You can rename the Network name to your coins name and ** ADD YOUR (THE PERSON SENDING THE TOKEN) Quicknode http link (step 9) and paste it in the reciever's NEW RPC URL field.
 * then go back your dashboard, click on your coin, click on send, paste the recievers address (step 18) to send it to him! Its that easy!!!!
 
-  ![sending](https://cloud-ago25sz07-hack-club-bot.vercel.app/0how_to_send_tokens.gif)
+  ![sending](https://cdn.hackclub.com/rescue?url=https://cloud-ago25sz07-hack-club-bot.vercel.app/0how_to_send_tokens.gif)
   
-  ![getting](https://cloud-ago25sz07-hack-club-bot.vercel.app/1recieved_tokens.gif)
+  ![getting](https://cdn.hackclub.com/rescue?url=https://cloud-ago25sz07-hack-club-bot.vercel.app/1recieved_tokens.gif)
 
 ### A couple of things as tips or bonus
 * Make sure to give all your addresses right as messing up addresses can ruin literally everything

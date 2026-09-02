@@ -5,14 +5,14 @@ batch: '3d-armory'
 description: >  
   In this Jam, you'll be learning what CAD is, the functions of TinkerCAD, and learning how to make the blade of a medieval sword. You will have fun customizing your blade while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
 contributor: 'thesuperRL'  
-thumbnail: 'https://cloud-ft14x3slq-hack-club-bot.vercel.app/0image.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-ft14x3slq-hack-club-bot.vercel.app/0image.png'
 timeEstimate: '40 Min'  
 difficulty: 'Beginner'
 keywords: 'Sword, CAD, 3D Design, Model, TinkerCAD, 3D Printing, 3D, 3d'  
 language: 'N/A'
 presentation: "https://www.figma.com/file/382ID03pU0oFQhYQRHc86V/Forge-of-Legends-Part-1-Presentation?type=design&node-id=0-1&mode=design&t=5cqrU8dmRL9Ap3a0-0" 
 presentationPlay: "https://www.figma.com/proto/382ID03pU0oFQhYQRHc86V/Forge-of-Legends-Part-1-Presentation?type=design&node-id=1-3&t=PAhbnoBq1Sn0zbae-0&scaling=contain&page-id=0%3A1" 
-presentationPDF: "https://cloud-a4eaqfm9v-hack-club-bot.vercel.app/0forge_of_legends_part_1_presentation__2_.pdf" 
+presentationPDF: "https://cdn.hackclub.com/rescue?url=https://cloud-a4eaqfm9v-hack-club-bot.vercel.app/0forge_of_legends_part_1_presentation__2_.pdf" 
 notes: "https://docs.google.com/document/d/1MsnPHKdCjI5Qz-b-30BlTOcyaVMjJLMo8Am--FTmLgA/edit" 
 poster: "" 
 video: "" 
@@ -21,7 +21,7 @@ contributorSlackID: "U05E2FK240N"
 ---
 
 
-![Fire](https://cloud-bwybtmgkd-hack-club-bot.vercel.app/0image.png)
+![Fire](https://cdn.hackclub.com/rescue?url=https://cloud-bwybtmgkd-hack-club-bot.vercel.app/0image.png)
 
 (3D Modeled fire credits to Thiên Huỳnh Quốc)
 
@@ -58,7 +58,7 @@ CAD can be split into two major types: 2D CAD and 3D CAD.
 
 ##### 2D CAD
 
-![A 2D CAD Floor Plan](https://cloud-b9hkk1e7s-hack-club-bot.vercel.app/0image.png)
+![A 2D CAD Floor Plan](https://cdn.hackclub.com/rescue?url=https://cloud-b9hkk1e7s-hack-club-bot.vercel.app/0image.png)
 
 (Barki, Hichem & Fadli, Fodil & Shaat, Ahmed & Boguslawski, Pawel & Mahdjoubi, Lamine. (2015). BIM Models Generation From 2D CAD Drawings And 3D Scans: An Analysis Of Challenges And Opportunities For AEC Practitioners. 10.2495/BIM150311.)
 
@@ -66,7 +66,7 @@ CAD can be split into two major types: 2D CAD and 3D CAD.
 
 ##### 3D CAD
 
-![3D CAD Manufacturing Part](https://cloud-2ciz1c7b0-hack-club-bot.vercel.app/0image.png)
+![3D CAD Manufacturing Part](https://cdn.hackclub.com/rescue?url=https://cloud-2ciz1c7b0-hack-club-bot.vercel.app/0image.png)
 
 (Osborne, Angela, 6-21-2022, "Autodesk Fusion 360 Unifies Design, Manufacturing Process," Production Machining, https://www.productionmachining.com/products/autodesk-fusion-360-unifies-design-manufacturing-process)
 
@@ -74,7 +74,7 @@ CAD can be split into two major types: 2D CAD and 3D CAD.
 
 ##### CAD in Industry
 
-![Some Industry Uses](https://cloud-2iy9idjv7-hack-club-bot.vercel.app/0image.png)
+![Some Industry Uses](https://cdn.hackclub.com/rescue?url=https://cloud-2iy9idjv7-hack-club-bot.vercel.app/0image.png)
 
 (Michael Gigante, 7-15-2020, "Computer-Aided Design (CAD): State of Category," G2, https://www.g2.com/articles/computer-aided-design-cad-state-of-category)
 ^ Provides a lot of cool insights about uses of CAD in the Market today
@@ -148,7 +148,7 @@ I found many very interesting communities on discord. All of them are filled wit
 
 Welcome to your TinkerCAD Dashboard! 
 
-![TinkerCAD Home](https://cloud-9lm6dohxy-hack-club-bot.vercel.app/0image.png)
+![TinkerCAD Home](https://cdn.hackclub.com/rescue?url=https://cloud-9lm6dohxy-hack-club-bot.vercel.app/0image.png)
 
 On the left is your profile. Everything here is self explanatory, and Collections is equivalent to folders (or I guess something like an armory to store collections of items). 
 
@@ -162,13 +162,13 @@ At the middle-top of the screen you can find many different things. From left to
 
 If you scroll down a bit, you can find the three types of things that TinkerCAD currently allows you to make. 
 
-![Scrolled Down](https://cloud-3y9wqx163-hack-club-bot.vercel.app/0image.png)
+![Scrolled Down](https://cdn.hackclub.com/rescue?url=https://cloud-3y9wqx163-hack-club-bot.vercel.app/0image.png)
 
 We'll start with the first one, a 3D design. Create a new one, and let's hop in!
 
 ## Learning the Ways of the Craft
 
-![BP](https://cloud-r7su62mp4-hack-club-bot.vercel.app/0image.png)
+![BP](https://cdn.hackclub.com/rescue?url=https://cloud-r7su62mp4-hack-club-bot.vercel.app/0image.png)
 
 Woah...
 
@@ -180,7 +180,7 @@ Did you expect this forge to be realistic, and accurate to the Middle Ages?
 
 NO! Like many fantasy worlds, we have ***MAGIC*** to speed up your forging process!
 
-![Magic](https://cloud-6r1vkcvp3-hack-club-bot.vercel.app/0image.png)
+![Magic](https://cdn.hackclub.com/rescue?url=https://cloud-6r1vkcvp3-hack-club-bot.vercel.app/0image.png)
 
 These are your magical tools that do the basic functions for you.
 
@@ -203,7 +203,7 @@ If you're using the spellbook Mac Book, just use Cmd instead.
 
 ### Top Right: Magic Simulations
 
-![Sims](https://cloud-fknezgu6z-hack-club-bot.vercel.app/0image.png)
+![Sims](https://cdn.hackclub.com/rescue?url=https://cloud-fknezgu6z-hack-club-bot.vercel.app/0image.png)
 
 From left to right, they are:
 
@@ -215,7 +215,7 @@ Invite Collaborators
 
 ### Just Below That: Taking it out of the Forge
 
-![Exporting](https://cloud-iap0mf39z-hack-club-bot.vercel.app/0image.png)
+![Exporting](https://cdn.hackclub.com/rescue?url=https://cloud-iap0mf39z-hack-club-bot.vercel.app/0image.png)
 
 First, the blue buttons below let you create workplanes, rulers, and notes. 
 
@@ -225,7 +225,7 @@ Below this is the gallery of shapes, and to the right are additional tools. We w
 
 ### The Workplane: Your Anvil
 
-![Workplane](https://cloud-1a8ccnyrn-hack-club-bot.vercel.app/0image.png)
+![Workplane](https://cdn.hackclub.com/rescue?url=https://cloud-1a8ccnyrn-hack-club-bot.vercel.app/0image.png)
 
 Finally we get to the biggest thing on the screen. This is where all of your items are going to go. 
 
@@ -251,13 +251,13 @@ TinkerCAD's assistants already made the base materials for our sword, so that yo
 
 Remember the shapes panel to the very right? Now we are going to introduce that. 
 
-![Sidebar](https://cloud-guk4phez0-hack-club-bot.vercel.app/0image.png)
+![Sidebar](https://cdn.hackclub.com/rescue?url=https://cloud-guk4phez0-hack-club-bot.vercel.app/0image.png)
 
 This side panel shows you all the shapes for your project. These basic shapes let you create the basic parts of your model from common polyhedrons, and there are many shapes that others have made already, which you can find by expanding the drop-down bar and clicking on another collection.
 
 Alright, now let's place a cube into the workspace. Drag the red cube onto the workplane (or just click twice). A small menu should pop up: 
 
-![ObjMenu](https://cloud-uelpmjkk4-hack-club-bot.vercel.app/0image.png)
+![ObjMenu](https://cdn.hackclub.com/rescue?url=https://cloud-uelpmjkk4-hack-club-bot.vercel.app/0image.png)
 
 These are the shape's **Attributes**. Each shape has its own unique attributes, but generally all shapes have at least one. 
 
@@ -271,13 +271,13 @@ We will address what Solid and Hole means in part 2! We will explore that in par
 
 As a 3D Modeler (or Blacksmith, however you prefer to call yourself), you need to practice the skill of generalizing an object into its basic, regular polyhedron pieces. Or in other words, you have to break an object up into its basic shapes (if you are an artist, it's like breaking an animal's leg into quadrilaterals for easier drawing).
 
-![bird](https://cloud-lo854k5el-hack-club-bot.vercel.app/0image.png)
+![bird](https://cdn.hackclub.com/rescue?url=https://cloud-lo854k5el-hack-club-bot.vercel.app/0image.png)
 
 (Administrator, 12-6-2020, "Week Starting 7th December," Space Aylesbury, https://www.spaceaylesbury.org/week-starting-7th-december-breaking-down-a-drawing-into-shapes-part-1/)
 
 We will practice this on the blade. Let's look at how a sword's blade usually looks (along with my terrible drawing).
 
-![Sword Breakdown](https://cloud-2a8js3e0d-hack-club-bot.vercel.app/0screenshot_2023-08-03_at_1.54.34_pm.png)
+![Sword Breakdown](https://cdn.hackclub.com/rescue?url=https://cloud-2a8js3e0d-hack-club-bot.vercel.app/0screenshot_2023-08-03_at_1.54.34_pm.png)
 
 (Militarysurplusworld.Com Based On Idosell, n.d., "Ferrum sword -Magnum," militarysurplusworld, https://www.militarysurplusworld.com/product-eng-43263-Ferrum-sword-Magnum.html)
 
@@ -285,7 +285,7 @@ Looks like a long, almost rectangular shape, with a triangle attached to the end
 
 And let's also look at the cross-section. 
 
-![Blade Cross Sections](https://cloud-ffm4mev78-hack-club-bot.vercel.app/0image.png)
+![Blade Cross Sections](https://cdn.hackclub.com/rescue?url=https://cloud-ffm4mev78-hack-club-bot.vercel.app/0image.png)
 
 (Starr Z. Davies, n.d., "Wednesday Warriors," https://starrzdavies.com/wednesday-warriors-3-basic-blade-cross-sections-and-their-purpose/)
 
@@ -325,13 +325,13 @@ Let me tell you the ways of the 3D Modeling Blacksmith. There's 3 ways to make a
 
 Let's take a look at the sidebar again, and cross out everything that doesn't look even remotely workable. We need sharp edges, right? We can cross out all the rounded shapes.
 
-![Crossed out bad options](https://cloud-d7x8mzz7m-hack-club-bot.vercel.app/0image.png)
+![Crossed out bad options](https://cdn.hackclub.com/rescue?url=https://cloud-d7x8mzz7m-hack-club-bot.vercel.app/0image.png)
 
 Let's go through our options and try each one. First is addition. We know that we want a rhombus shape, and a rhombus is basically just two triangles. The green triangular prism seems up to the job. Let's drag it onto the workplane.
 
 Oh right, let me tell you the basic controls. Click to select, Hold right click and drag to change perspective, and scroll to zoom. Press shift while dragging with right click to slide your perspective. If you want to return to a cardinal direction, just click a face, edge, or vertex of the little cube at the top left.
 
-![Selecting a Shape](https://cloud-ekuqoiqkx-hack-club-bot.vercel.app/0image.png)
+![Selecting a Shape](https://cdn.hackclub.com/rescue?url=https://cloud-ekuqoiqkx-hack-club-bot.vercel.app/0image.png)
 
 The blue highlight shows what you are clicking, the white squares at the bottom allow you to modify the length and width when you drag it, and the black dots only change one dimension if you want to (for instance) lock the width and only modify the length. The top white dot also lets you only modify the height.
 
@@ -341,39 +341,39 @@ The three arrow things indicate rotations. We will be using that now.
 
 We want to rotate this so it stands upright. Click and hole on the little rotation button you see on the top right (you may want to change perspectives, since if you are just looking at the front you won't see it)
 
-![Rotation Ring](https://cloud-kyclafb1o-hack-club-bot.vercel.app/0image.png)
+![Rotation Ring](https://cdn.hackclub.com/rescue?url=https://cloud-kyclafb1o-hack-club-bot.vercel.app/0image.png)
 
 Now a ring will pop up. Drag it around the ring, but hold it over the bigger inside ticks instead of the smaller outside ticks. Doing this makes your shape snap to 45 degree increments instead of making it less precise.
 
-![Rotated](https://cloud-7m6d0lwtj-hack-club-bot.vercel.app/0image.png)
+![Rotated](https://cdn.hackclub.com/rescue?url=https://cloud-7m6d0lwtj-hack-club-bot.vercel.app/0image.png)
 
 Great! It's upright! We'll need another prism, so just go ahead and make another one, but rotate it the other way. You can also drag the shape to move it around
 
 Now let's align and merge.
 
-![Two aligned](https://cloud-68ym5um4a-hack-club-bot.vercel.app/0image.png)
+![Two aligned](https://cdn.hackclub.com/rescue?url=https://cloud-68ym5um4a-hack-club-bot.vercel.app/0image.png)
 
 Move it until it's roughly touching. The line between them will be very thin.
 
-![Two Touching](https://cloud-k5j0yfozs-hack-club-bot.vercel.app/0image.png)
+![Two Touching](https://cdn.hackclub.com/rescue?url=https://cloud-k5j0yfozs-hack-club-bot.vercel.app/0image.png)
 
 Next, hold shift and select both shapes. Look to the top right, the group symbol should light up.
 
-![Group Button](https://cloud-fb1jdb1yr-hack-club-bot.vercel.app/0image.png)
+![Group Button](https://cdn.hackclub.com/rescue?url=https://cloud-fb1jdb1yr-hack-club-bot.vercel.app/0image.png)
 
-![Selected](https://cloud-q9pyttv6b-hack-club-bot.vercel.app/0image.png)
+![Selected](https://cdn.hackclub.com/rescue?url=https://cloud-q9pyttv6b-hack-club-bot.vercel.app/0image.png)
 
 Click it and after a while, the line between should dissapear. You've grouped a shape! 
 
-![Merged](https://cloud-7o9iz07ko-hack-club-bot.vercel.app/0image.png)
+![Merged](https://cdn.hackclub.com/rescue?url=https://cloud-7o9iz07ko-hack-club-bot.vercel.app/0image.png)
 
 Now just stretch it a bit with the little black dot at the bottom.
 
-![Selected Bottom Dot](https://cloud-1zlkxugpq-hack-club-bot.vercel.app/0image.png)
+![Selected Bottom Dot](https://cdn.hackclub.com/rescue?url=https://cloud-1zlkxugpq-hack-club-bot.vercel.app/0image.png)
 
 The number indicates now long in millimeters it is. Click and type into it to indicate a length if you would like, or just drag the black dot that should have just turned red. 
 
-![Stretched](https://cloud-adhbzxjbq-hack-club-bot.vercel.app/0image.png)
+![Stretched](https://cdn.hackclub.com/rescue?url=https://cloud-adhbzxjbq-hack-club-bot.vercel.app/0image.png)
 
 Great! That's one way of forging the stem. The other way, using the modification technique, will be left as an exercise to the reader (always wanted to say that)
 
@@ -395,7 +395,7 @@ Now, just drag the top white dot upwards, and you now have a long blade! For now
 
 Remember the dimensions of the bottom? Just click on a white dot to check.
 
-![Check Dimensions](https://cloud-ozsdfln1l-hack-club-bot.vercel.app/0image.png)
+![Check Dimensions](https://cdn.hackclub.com/rescue?url=https://cloud-ozsdfln1l-hack-club-bot.vercel.app/0image.png)
 
 20 mm by 50 mm. Let's now make the tip. Let's also go a bit faster now that you've learn the basics. 
 
@@ -403,43 +403,43 @@ Drag a yellow pyramid onto the plane, and rotate it 45 degrees to align with the
 
 Edit its dimensions to match with the base. 
 
-![Sword Tip](https://cloud-22l1svwby-hack-club-bot.vercel.app/0image.png)
+![Sword Tip](https://cdn.hackclub.com/rescue?url=https://cloud-22l1svwby-hack-club-bot.vercel.app/0image.png)
 
 Let's use a neat little tool called align. select both shapes with shift, now click this new button on the top right.
 
-![Align Button](https://cloud-22l1svwby-hack-club-bot.vercel.app/1image.png)
+![Align Button](https://cdn.hackclub.com/rescue?url=https://cloud-22l1svwby-hack-club-bot.vercel.app/1image.png)
 
 Black dots should pop up. Each one aligns the shapes in a different dimension. We are interested in the ones in the middle of the base. 
 
-![Align Dots](https://cloud-m5wixe5jx-hack-club-bot.vercel.app/0image.png)
+![Align Dots](https://cdn.hackclub.com/rescue?url=https://cloud-m5wixe5jx-hack-club-bot.vercel.app/0image.png)
 
 You should get this. 
 
-![Inside](https://cloud-m5wixe5jx-hack-club-bot.vercel.app/1image.png)
+![Inside](https://cdn.hackclub.com/rescue?url=https://cloud-m5wixe5jx-hack-club-bot.vercel.app/1image.png)
 
 Press "d" to situate it on the workplane, and drag the pyramid up using the arrow until it aligns with the base, much like we did earlier with the two green triangles.
 
-![Aligned Vertically](https://cloud-m5wixe5jx-hack-club-bot.vercel.app/2image.png)
+![Aligned Vertically](https://cdn.hackclub.com/rescue?url=https://cloud-m5wixe5jx-hack-club-bot.vercel.app/2image.png)
 
 Group them together, and you have a short blade!
 
-![Short Blade](https://cloud-m5wixe5jx-hack-club-bot.vercel.app/3image.png)
+![Short Blade](https://cdn.hackclub.com/rescue?url=https://cloud-m5wixe5jx-hack-club-bot.vercel.app/3image.png)
 
 Don't worry if it changed entirely to yellow or green, TinkerCAD assigns colors based on its parts to the grouped whole. just click on it, and then this in the sidebar to change color if you would like. 
 
-![Item Color](https://cloud-m5wixe5jx-hack-club-bot.vercel.app/4image.png)
+![Item Color](https://cdn.hackclub.com/rescue?url=https://cloud-m5wixe5jx-hack-club-bot.vercel.app/4image.png)
 
 To lengthen the blade, let's drag the top white dot upwards, but not before zooming out first so we have more space. 
 
-![Top Dot Drag](https://cloud-m5wixe5jx-hack-club-bot.vercel.app/5image.png)
+![Top Dot Drag](https://cdn.hackclub.com/rescue?url=https://cloud-m5wixe5jx-hack-club-bot.vercel.app/5image.png)
 
 Feel free to click this button and ungroup to resize the stem and tip individually. 
 
-![Ungroup](https://cloud-m5wixe5jx-hack-club-bot.vercel.app/6image.png)
+![Ungroup](https://cdn.hackclub.com/rescue?url=https://cloud-m5wixe5jx-hack-club-bot.vercel.app/6image.png)
 
 Great! You now have a blade of the legends!!!
 
-![End Blade](https://cloud-m5wixe5jx-hack-club-bot.vercel.app/7image.png)
+![End Blade](https://cdn.hackclub.com/rescue?url=https://cloud-m5wixe5jx-hack-club-bot.vercel.app/7image.png)
 
 
 

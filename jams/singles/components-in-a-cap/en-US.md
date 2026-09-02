@@ -3,14 +3,14 @@ title: 'Make Your Own Electronic Trash Out Of A Magical Hat'
 description: Let's build a hacky electronics gizmo -- but with a twist -- you can only use three components that you draw out of a cap! You'll learn the basics of designing a PCB, and you can get the cards made for free, with Hack Club's OnBoard.
 contributor: 'maxwofford'
 contributorSlackID: U0C7B14Q3
-thumbnail: 'https://cloud-f9qeb5d02-hack-club-bot.vercel.app/00componentsinhat__1_.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-f9qeb5d02-hack-club-bot.vercel.app/00componentsinhat__1_.png'
 timeEstimate: '1 Hour'
 difficulty: 'Beginner'
 keywords: 'Hardware, PCB, EasyEDA, Business Card, OnBoard'
 language: 'EasyEDA'
 presentation: 'https://www.figma.com/file/5kXADOfqHzoV6kaA9xNl1T/components-jam?type=design&node-id=154%3A341&mode=design&t=pHzt7QifMykaDnCB-1'
 presentationPlay: 'https://www.figma.com/proto/5kXADOfqHzoV6kaA9xNl1T/components-jam?page-id=154%3A341&type=design&node-id=154-343&viewport=-11%2C1340%2C0.07&t=2LfA5bNVMXiFqIyP-1&scaling=contain&mode=design'
-presentationPDF: 'https://cloud-421055gkt-hack-club-bot.vercel.app/00components-jam_compressed__1_.pdf'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-421055gkt-hack-club-bot.vercel.app/00components-jam_compressed__1_.pdf'
 notes: ''
 poster: 'https://github.com/hackclub/posters#:~:text=%40Krishna%20Bansal-,Download,-Go%20to%20Figma'
 video: 'https://www.youtube.com/embed/bumzyz2advg?si=oLItGZB1qI2EQN1m'
@@ -37,26 +37,26 @@ Here's an example of what you might end up with (EXCEPT YOU'RE NOT GOING TO HAVE
 
 Combine a **Light Sensor**, **Rumble Motor**, and **Battery** to make a rattle snake that rumbles whenever you put it in the light.
 
-![rattleSnake](https://cloud-62nxyioni-hack-club-bot.vercel.app/0drawing__7_.png)
+![rattleSnake](https://cdn.hackclub.com/rescue?url=https://cloud-62nxyioni-hack-club-bot.vercel.app/0drawing__7_.png)
 
 No one has ever sat down to learn web dev & made the next facebook. Similarly, if you sit down thinking "I'm going to make something as helpful as an iPhone", you're destined for failure...
 
 But sit down to make some trash, and you'll end up with this treasure:
 
-![board color](https://cloud-plhykfmfn-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.23.48_pm.png)
+![board color](https://cdn.hackclub.com/rescue?url=https://cloud-plhykfmfn-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.23.48_pm.png)
 
 ## Get In Your Workspace
 
 Now it's the time to open up good ol' [easyeda](https://easyeda.com/)
 
 Step 1: create an account or login with google (tapping Register in the top right corner)
-![loginWithGoogle](https://cloud-8c6bzxhxx-hack-club-bot.vercel.app/0registereda.gif)
+![loginWithGoogle](https://cdn.hackclub.com/rescue?url=https://cloud-8c6bzxhxx-hack-club-bot.vercel.app/0registereda.gif)
 
 Step 2: Tap on Easy EDA Designer Open the "STD" (student) edition of EasyEDA
-![STDEdition](https://cloud-8lt1ycvzx-hack-club-bot.vercel.app/0easyeda_designer.gif)
+![STDEdition](https://cdn.hackclub.com/rescue?url=https://cloud-8lt1ycvzx-hack-club-bot.vercel.app/0easyeda_designer.gif)
 
 Step 3: Start A New Project
-![NewProject](https://cloud-3oval3xig-hack-club-bot.vercel.app/0newproject.gif)
+![NewProject](https://cdn.hackclub.com/rescue?url=https://cloud-3oval3xig-hack-club-bot.vercel.app/0newproject.gif)
 
 ## Add In Your Components
 
@@ -70,11 +70,11 @@ Once you select a component
 3. Search for your component (tap search icon)
 4. Select your component and place it anywhere on your schematic
 
-![Light Sensor](https://cloud-lvwqcxzv9-hack-club-bot.vercel.app/0getcomponentid.gif)
+![Light Sensor](https://cdn.hackclub.com/rescue?url=https://cloud-lvwqcxzv9-hack-club-bot.vercel.app/0getcomponentid.gif)
 
 Repeat this step for all 3 of your components
 
-![your components](https://cloud-ecs518tqh-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.48.02_pm.png)
+![your components](https://cdn.hackclub.com/rescue?url=https://cloud-ecs518tqh-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.48.02_pm.png)
 
 ## Wire the components up
 
@@ -82,7 +82,7 @@ Look at the documentation for each component in the [component library](https://
 
 Use R to rotate your elements and drag them around. Remember this is the NO CREATIVITY ZONE because your design will be totally moved around when you convert it to a PCB. 
 
-![wired up](https://cloud-gsil8fuxg-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.48.14_pm.png)
+![wired up](https://cdn.hackclub.com/rescue?url=https://cloud-gsil8fuxg-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.48.14_pm.png)
 
 
 ## Convert to PCB
@@ -90,41 +90,41 @@ Use R to rotate your elements and drag them around. Remember this is the NO CREA
 Save your design (control S or CMD S)
 
 Tap Convert To PCB under Design -> "Convert To PCB"
-![conver to schematic](https://cloud-g1kkox8xj-hack-club-bot.vercel.app/0converttoschematic.gif)
+![conver to schematic](https://cdn.hackclub.com/rescue?url=https://cloud-g1kkox8xj-hack-club-bot.vercel.app/0converttoschematic.gif)
 
 Rotate your components to minimize the rat lines (these subtle blue lines) crossing over each other. It's okay if it happens sometimes, but minimize the amount of times. 
 
-![noRatsCrossing](https://cloud-3ts8mn0bw-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.57.23_pm.png)
+![noRatsCrossing](https://cdn.hackclub.com/rescue?url=https://cloud-3ts8mn0bw-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_2.57.23_pm.png)
 
 Then use the Track Tool (W) to begin connecting the rat lines
 
-![connectRats](https://cloud-q6a3ktc2y-hack-club-bot.vercel.app/0connectrats.gif)
+![connectRats](https://cdn.hackclub.com/rescue?url=https://cloud-q6a3ktc2y-hack-club-bot.vercel.app/0connectrats.gif)
 
 ## Getting Artistic 
 
 Now, throw your art into the schematic! This will be on a silk layer, so it will not impact your wiring.
 
-![Make First Pcb](https://cloud-l9r67m3n3-hack-club-bot.vercel.app/0add_in_the_art.gif)
+![Make First Pcb](https://cdn.hackclub.com/rescue?url=https://cloud-l9r67m3n3-hack-club-bot.vercel.app/0add_in_the_art.gif)
 
 You now need to make you art into a silk layer
 
-![makeYellow](https://cloud-pihem7ix9-hack-club-bot.vercel.app/0silklayer.gif)
+![makeYellow](https://cdn.hackclub.com/rescue?url=https://cloud-pihem7ix9-hack-club-bot.vercel.app/0silklayer.gif)
 
 Next, move your components to make them fit your design.
 
-![movedAround](https://cloud-d4z0ripa1-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.18.18_pm.png)
+![movedAround](https://cdn.hackclub.com/rescue?url=https://cloud-d4z0ripa1-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.18.18_pm.png)
 
 It's time to cut out your board! 
 
-![cut out](https://cloud-7kaunz432-hack-club-bot.vercel.app/0outline.gif)
+![cut out](https://cdn.hackclub.com/rescue?url=https://cloud-7kaunz432-hack-club-bot.vercel.app/0outline.gif)
 
 Now you may have some loose wires or some rat lines that are not connected yet. Connect all of your loose wires to components and fix any of the yellow xs (that means your lines are crossing in a way that will cause a problem)
 
-![Here is a snake](https://cloud-8uy971i40-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.45.18_pm.png)
+![Here is a snake](https://cdn.hackclub.com/rescue?url=https://cloud-8uy971i40-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.45.18_pm.png)
 
 Boom... now you have a PCB!
 
-![board color](https://cloud-plhykfmfn-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.23.48_pm.png)
+![board color](https://cdn.hackclub.com/rescue?url=https://cloud-plhykfmfn-hack-club-bot.vercel.app/0screenshot_2024-03-13_at_3.23.48_pm.png)
 
 You should now go & order this board! 
 

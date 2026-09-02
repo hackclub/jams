@@ -4,14 +4,14 @@ description: >
     At the end of this jam, you'll create your very own social media app that handles users and posts.
 contributor: "InternetRamen"
 contributorSlackID: "U03AUPJQKLN"
-thumbnail: "https://cloud-30x6q0o6o-hack-club-bot.vercel.app/0000slide_16_9_-_3__1__50.webp"
+thumbnail: "https://cdn.hackclub.com/rescue?url=https://cloud-30x6q0o6o-hack-club-bot.vercel.app/0000slide_16_9_-_3__1__50.webp"
 timeEstimate: "60 Min"
 difficulty: "Intermediate"
 keywords: "Web, App, Website, JavaScript"
 language: "HTML & JS"
 presentation: "https://www.figma.com/file/erQf158AHyOtwmEqWUyI1p/Building-your-own-social-media-app?type=design&node-id=2%3A2&mode=design&t=hpquuvbUlSrQk1HU-1"
 presentationPlay: "https://www.figma.com/proto/erQf158AHyOtwmEqWUyI1p/Building-your-own-social-media-app?type=design&node-id=2-4&t=UixZlCs2fBTa1TgT-1&scaling=contain&page-id=2%3A2&mode=design"
-presentationPDF: "https://cloud-hl5mkgjy0-hack-club-bot.vercel.app/0building_your_own_social_media_app.pdf"
+presentationPDF: "https://cdn.hackclub.com/rescue?url=https://cloud-hl5mkgjy0-hack-club-bot.vercel.app/0building_your_own_social_media_app.pdf"
 notes: ""
 poster: ""
 video: ""
@@ -22,7 +22,7 @@ At the end of this jam, we'll create a social media app that handles users and p
 We'll be using [Firebase](https://firebase.google.com) SDKs to help us with user authentication and data storage.
 
 Here's a demo of something you could build:
-![Demo](https://cloud-aspwulevx-hack-club-bot.vercel.app/0document.png)
+![Demo](https://cdn.hackclub.com/rescue?url=https://cloud-aspwulevx-hack-club-bot.vercel.app/0document.png)
 
 [Link To Live Demo](https://demo.jaden.mov)
 
@@ -62,7 +62,7 @@ On each page, we have a basic HTML boilerplate with script and style tags. Conve
 Head over to [Firebase Console](https://console.firebase.google.com/u/0/) and log in with Google. Once you're in, create a new project and name it whatever you want.
 
 Then, click and enable `Authentication` and `Firestore Database`.
-![Console](https://cloud-5uj5nkwmd-hack-club-bot.vercel.app/0image-1.png)
+![Console](https://cdn.hackclub.com/rescue?url=https://cloud-5uj5nkwmd-hack-club-bot.vercel.app/0image-1.png)
 
 **Authentication**
 
@@ -83,7 +83,7 @@ Sharks...do not have bones
 
 ### Creating an app in Firebase
 
-![Console](https://cloud-aal2o35z9-hack-club-bot.vercel.app/0image-3.png)
+![Console](https://cdn.hackclub.com/rescue?url=https://cloud-aal2o35z9-hack-club-bot.vercel.app/0image-3.png)
 
 1. Click the `</>` icon
 2. Name your app anything
@@ -111,7 +111,7 @@ Here is what the code snippet looks like and what each line does:
 
 ## Logging in
 
-![Logs](https://cloud-aal2o35z9-hack-club-bot.vercel.app/1image-4.png)
+![Logs](https://cdn.hackclub.com/rescue?url=https://cloud-aal2o35z9-hack-club-bot.vercel.app/1image-4.png)
 
 Head over to `index.html`. Firebase makes it super easy to add user authentication to your app. We'll be using Google Sign-In, but you can use any of the other methods Firebase provides.
 
@@ -190,12 +190,12 @@ document.getElementById("login").addEventListener("click", () => {
 
 </Dropdown>
 
-![Login button](https://cloud-aal2o35z9-hack-club-bot.vercel.app/7image-5.png)
+![Login button](https://cdn.hackclub.com/rescue?url=https://cloud-aal2o35z9-hack-club-bot.vercel.app/7image-5.png)
 Test it out! You should receive a prompt to login. <small>[Need help?](https://firebase.google.com/docs/auth/web/google-signin)</small>
 
 ## Creating a post
 
-![Alt text](https://cloud-aal2o35z9-hack-club-bot.vercel.app/3image-7.png)
+![Alt text](https://cdn.hackclub.com/rescue?url=https://cloud-aal2o35z9-hack-club-bot.vercel.app/3image-7.png)
 
 <Dropdown title="Whale Fact!">
 Whales can get SUNBURNS
@@ -274,14 +274,14 @@ if (!currentUser) {
 `auth.currentUser` lets us access the current user. If there is no current user, the variable will be `null`, so we can alert the user and not add anything. `return` will stop the function from executing any more code.
 
 Then, create a collection in Firestore. A collection holds all your documents. It's like a bucket for all your data.
-![Alt text](https://cloud-aal2o35z9-hack-club-bot.vercel.app/4image-8.png)
-![Alt text](https://cloud-aal2o35z9-hack-club-bot.vercel.app/5image-9.png)
+![Alt text](https://cdn.hackclub.com/rescue?url=https://cloud-aal2o35z9-hack-club-bot.vercel.app/4image-8.png)
+![Alt text](https://cdn.hackclub.com/rescue?url=https://cloud-aal2o35z9-hack-club-bot.vercel.app/5image-9.png)
 
 > Choose a collection name that makes sense for your app! It doesn't have to be posts if that doesn't make sense. Maybe something like `recipes` or `clubs` would make more sense for your idea
 
 When you're prompted to create the first document, add sample data for the fields you've already created above. You can just click auto-ID for the document ID.
 _For example, in my case I'll add `name` and `description`._
-![Alt text](https://cloud-aal2o35z9-hack-club-bot.vercel.app/6image-10.png)
+![Alt text](https://cdn.hackclub.com/rescue?url=https://cloud-aal2o35z9-hack-club-bot.vercel.app/6image-10.png)
 
 Now, we can access the values of each input and add them to the database. We'll use `addDoc` to add a document to the database. `addDoc` takes in 2 parameters: the reference to the collection and the data to add. We'll use `collection` to reference the collection we want to add to, `name.value` to get the value of the first input, and `description.value` to get the value of the second input. We can also use `currentUser.displayName` to grab the name of the author to display.
 

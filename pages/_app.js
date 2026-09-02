@@ -69,7 +69,7 @@ export default function App({
         title="Jams"
         description="Collaborative coding workshops for clubs where sparks ignite,
         fears dissolve, and inventions come to life."
-        image="https://cloud-fryy8trec-hack-club-bot.vercel.app/00hack_club_assemble_ltnj_00622.jpg"
+        image="https://cdn.hackclub.com/rescue?url=https://cloud-fryy8trec-hack-club-bot.vercel.app/00hack_club_assemble_ltnj_00622.jpg"
         color="#ec3750"
       />
       <Component {...pageProps} />

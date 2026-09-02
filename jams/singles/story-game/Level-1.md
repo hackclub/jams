@@ -8,7 +8,7 @@ Here is the example code of what we're going to create!: https://replit.com/@Con
 
 Building a Choose Your Own Adventure Game is kinda like making a **pizza**! First, the base! The most important part, and the thing that holds everything up... *drum roll please...* the story line!
 
-![The storyline, the base of all games, is like the dough of a pizza. ](https://cloud-kck0n0txs-hack-club-bot.vercel.app/0copy_of_copy_of_arial.gif)
+![The storyline, the base of all games, is like the dough of a pizza. ](https://cdn.hackclub.com/rescue?url=https://cloud-kck0n0txs-hack-club-bot.vercel.app/0copy_of_copy_of_arial.gif)
 
 ## What Makes Text Based Adventure Games SO Playable?
 
@@ -23,7 +23,7 @@ So what's the most important part? Planning.
 
 ## Game Design
 
-![You need to branch out with Gane Design](https://cloud-d4qej17bj-hack-club-bot.vercel.app/0story2.gif)
+![You need to branch out with Gane Design](https://cdn.hackclub.com/rescue?url=https://cloud-d4qej17bj-hack-club-bot.vercel.app/0story2.gif)
 
 ### Choosing a Theme or Setting! 
 
@@ -45,7 +45,7 @@ The best part is the sky's the limit! Keep brainstorming until you find somethin
 Also consider the potential story choices, depth, and player engagement.
 
 ### Planning Game Structure!
-![Planning a player's journey](https://cloud-ojeynixq6-hack-club-bot.vercel.app/0untitled_design-removebg-preview.png)
+![Planning a player's journey](https://cdn.hackclub.com/rescue?url=https://cloud-ojeynixq6-hack-club-bot.vercel.app/0untitled_design-removebg-preview.png)
 
 Define what the game structure by figuring out the overall goal that players will strive to achieve. It can be finding treasure, surviving on an abandoned island, solving a mystery, or saving the world!
 
@@ -54,7 +54,7 @@ In this stage determine the key challenges, events, or puzzles the players will 
 Now figure out your player's choices. Imagine a tree, and each choice is a different branch of the story. Identify these "branching off" points in the narrative where the player's choices will affect the outcome. 
 
 ### Characters!
-![Characters](https://cloud-8yiaur9jb-hack-club-bot.vercel.app/0untitled_design__2_.gif)
+![Characters](https://cdn.hackclub.com/rescue?url=https://cloud-8yiaur9jb-hack-club-bot.vercel.app/0untitled_design__2_.gif)
 
 This is also a good time to figure out any potential non-player characters (NPC's). These are characters that the player can interact with and can make the storyline richer.  
 
@@ -72,11 +72,11 @@ Once you're all done writing everything up- let's start programming!
 
 
 ## Setting Up Replit
-![Replit.com Home Page](https://cloud-rmnz8besq-hack-club-bot.vercel.app/0replit_sigh_up.gif) 
+![Replit.com Home Page](https://cdn.hackclub.com/rescue?url=https://cloud-rmnz8besq-hack-club-bot.vercel.app/0replit_sigh_up.gif) 
 
 Before continuing further, make sure to set up or log in to your https://replit.com account. 
 
-![Create a New Repl](https://cloud-lthzt6trl-hack-club-bot.vercel.app/0untitled_design.gif)
+![Create a New Repl](https://cdn.hackclub.com/rescue?url=https://cloud-lthzt6trl-hack-club-bot.vercel.app/0untitled_design.gif)
 
 Once there click on 'Create a New Repl'
 

@@ -85,7 +85,7 @@ export default function Index(props) {
             position: 'absolute',
             mixBlendMode: 'color-burn'
           }}
-          src="https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"
+          src="https://cdn.hackclub.com/rescue?url=https://cloud-omdlqtlig-hack-club-bot.vercel.app/0rectangle_60.png"
           alt=""
         />
 

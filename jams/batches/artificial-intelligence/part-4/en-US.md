@@ -6,7 +6,7 @@ description: >
   This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
 contributor: 'sahitid'  
 contributorSlackID: 'U03RU99SGKA'
-thumbnail: 'https://cloud-bq06l4opt-hack-club-bot.vercel.app/0thumbnail_4.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-bq06l4opt-hack-club-bot.vercel.app/0thumbnail_4.png'
 timeEstimate: '45 Min'  
 difficulty: 'Beginner'
 keywords: 'Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'  
@@ -27,11 +27,11 @@ AITokenLink: "https://hackclub.slack.com/archives/C05L8BSDJJ3"
 
 In the first part of the Jams, we used Teachable machine to train a model in order to recognize the keyword "Orpheus". We then used the Replit online IDE to create an empty site that would print a message in the console every time the keyword was detected to be said.
 
-![console printing response to keyword being said](https://cloud-2sz1omo3w-hack-club-bot.vercel.app/0image.png)
+![console printing response to keyword being said](https://cdn.hackclub.com/rescue?url=https://cloud-2sz1omo3w-hack-club-bot.vercel.app/0image.png)
 
 In the second part of the Jams, we gave Orpheus a voice! Now instead of printing out a message in the console, our AI Companion would speak and say it out loud.
 
-<video src="https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 In the third part of the Jams, we gave Orpheus the power to convert our speech into text.
 
 Now, in the fourth and final part, we will finally incorporate the OpenAI API to utilize the GPT 3.5 model. Ever heard of ChatGPT? OpenAI built it and invested years and billions of dollars to create the dataset that you will be using for your AI Companion.
@@ -47,14 +47,14 @@ Now, in the fourth and final part, we will finally incorporate the OpenAI API to
 1. Make an account and login to https://platform.openai.com/
 2. Go to API keys and create a new API key. *Make sure to save it! never share it! As you can see in the demo, we haven't provided our own API key in the project for this reason.*
 
-![API keys on OpenAI](https://cloud-n3hgshowm-hack-club-bot.vercel.app/0image.png)
+![API keys on OpenAI](https://cdn.hackclub.com/rescue?url=https://cloud-n3hgshowm-hack-club-bot.vercel.app/0image.png)
 
 We will be using GPT-3.5 or GPT-4, the most accessible and recently updated set of models that can understand & generate both natural language and code. There are also [models](https://platform.openai.com/docs/models/overview) such as Whisper (that can convert audio into text) or Dall-e (that can generate and edit images based on a prompt).
 
 ##### There's Two Parts to Implementing a Text Model
 Firstly, the AI needs to be able to generate its own ideas. Next, the AI must complete text suggestions, such as how Google tries to guess what you're searching.
 
-![google autocomplete](https://cloud-ae241kl1y-hack-club-bot.vercel.app/0image.png)
+![google autocomplete](https://cdn.hackclub.com/rescue?url=https://cloud-ae241kl1y-hack-club-bot.vercel.app/0image.png)
 
 This will allow us to have a conversation with the AI!
 
@@ -67,7 +67,7 @@ APIs are really simple! there's 4 main requests for HTTP request methods:
 
 > APIs (or Application Programming Interfaces) are like a digital restaurant, they are the waiter that goes between you (the client) and the kitchen (the server). Requests are sent from you the client to the server to perform actions.
 
-![digital restaurant gif](https://cloud-lk53rqdly-hack-club-bot.vercel.app/0bb312c00-400b-4da4-bc6a-6fbd2a91cca4.gif)
+![digital restaurant gif](https://cdn.hackclub.com/rescue?url=https://cloud-lk53rqdly-hack-club-bot.vercel.app/0bb312c00-400b-4da4-bc6a-6fbd2a91cca4.gif)
 
 <table>
   <thead>
@@ -161,7 +161,7 @@ Tokens are common sequences of characters found in text and what the models use 
 
 The OpenAI tokenizer (https://platform.openai.com/tokenizer) can be used to visually demonstrate how an API would tokenize a string of text, as well as how many tokens it would be.
 
-![tokenizer](https://cloud-1sxrk5p2x-hack-club-bot.vercel.app/0image.png)
+![tokenizer](https://cdn.hackclub.com/rescue?url=https://cloud-1sxrk5p2x-hack-club-bot.vercel.app/0image.png)
 
 *General rule: 1 token generally corresponds to ~4 characters of text for common English text or 3/4 of a word. this is roughly 100 tokens ~= 75 words.*
 
@@ -525,12 +525,12 @@ html {
 ```
 
 ## Final Demo
-<video src="https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-ckyxamknp-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 
 ## Additional Challenge Hacking! (recommended)
 
 It's that time you've all been waiting for! Let's Hack our Jam! Try doing one of the following:
-![jam hacks](https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
+![jam hacks](https://cdn.hackclub.com/rescue?url=https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
 
 Use any one of the APIs in your own project. Here are some examples:
 
@@ -544,4 +544,4 @@ Use any one of the APIs in your own project. Here are some examples:
 
 You've created a project with artificial intelligence and machine learning. Now go forth and be hacky!
 
-![orpheus celebration dance](https://cloud-12ntu5q74-hack-club-bot.vercel.app/0jams_gifs__1_.gif)
+![orpheus celebration dance](https://cdn.hackclub.com/rescue?url=https://cloud-12ntu5q74-hack-club-bot.vercel.app/0jams_gifs__1_.gif)

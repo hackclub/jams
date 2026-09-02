@@ -4,14 +4,14 @@ description: >
   This Jam will teach you how to use ChatGPT and AI to create a trip itinerary planner. It is extremely customizable and gives a foundation for you to expand upon with your own ideas!
 contributor: 'ShubhamPatilsd'  
 contributorSlackID: 'U029D5FG8EN'
-thumbnail: 'https://cloud-obssy416r-hack-club-bot.vercel.app/00000image__2___1_-2_50.webp'  
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-obssy416r-hack-club-bot.vercel.app/00000image__2___1_-2_50.webp'  
 timeEstimate: '60 Min'  
 difficulty: 'Intermediate'  
 keywords: 'replit, API, trip itinerary, itinerary planner ai, planner ai, website, javascript, HTML, CSS, AI, chatgpt, openai, ai, ai api'  
 language: 'HTML, JS'  
 presentation: 'https://www.figma.com/file/eT0znn6hYdESlhCSfmmwBG/Untitled?type=design&node-id=1%3A2&mode=design&t=6KWZTxjPBdL20osY-1'  
 presentationPlay: 'https://www.figma.com/proto/eT0znn6hYdESlhCSfmmwBG/Untitled?type=design&node-id=1-2&t=jECJDbIDCUZQwKjc-1&scaling=contain&page-id=0%3A1&mode=design'  
-presentationPDF: 'https://cloud-opfk4nagv-hack-club-bot.vercel.app/0ai_trip_itinerary_planner.pdf'  
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-opfk4nagv-hack-club-bot.vercel.app/0ai_trip_itinerary_planner.pdf'  
 notes: ''  
 poster: ''  
 video: ''  
@@ -26,7 +26,7 @@ Take some time as a club to brainstorm the greatest place to take a vacation. Ma
 However, you might have run into a problem: you can't think of things to do! For example, in San Francisco, you might think of going to the Golden Gate Bridge, but what else?
 
 This is where we can use AI and code to solve our problem by making an AI travel itinerary planner:
-![Live Demo Gif](https://cloud-j37pzs32q-hack-club-bot.vercel.app/0plantripwithaigif.gif)
+![Live Demo Gif](https://cdn.hackclub.com/rescue?url=https://cloud-j37pzs32q-hack-club-bot.vercel.app/0plantripwithaigif.gif)
 
 Try it out [here](https://replit.com/@ShubhamPatilsd/AI-Trip-Itinerary)!
 
@@ -45,10 +45,10 @@ So, you decide to get started! You log onto your laptop and then realize that yo
 You take two deep breaths and realize that you can just use Replit to do this.
 
 So you go to https://replit.com and sign up for an account.
-![login page](https://cloud-2vb2zquzl-hack-club-bot.vercel.app/0pasted_image_20230714142545.png)
+![login page](https://cdn.hackclub.com/rescue?url=https://cloud-2vb2zquzl-hack-club-bot.vercel.app/0pasted_image_20230714142545.png)
 
 Then, you create a new project with the HTML, CSS, and JS template
-![create repl](https://cloud-2vb2zquzl-hack-club-bot.vercel.app/1pasted_image_20230714142701.png)
+![create repl](https://cdn.hackclub.com/rescue?url=https://cloud-2vb2zquzl-hack-club-bot.vercel.app/1pasted_image_20230714142701.png)
 
 
 ## Inputting information
@@ -86,7 +86,7 @@ Underneath your `location` input, add two of these and assign them unique names:
 ```
 
 At this stage, you should have something like this:
-![result](https://cloud-2vb2zquzl-hack-club-bot.vercel.app/2pasted_image_20230715110807.png)
+![result](https://cdn.hackclub.com/rescue?url=https://cloud-2vb2zquzl-hack-club-bot.vercel.app/2pasted_image_20230715110807.png)
 
 
 ### Adding more inputs
@@ -124,7 +124,7 @@ Our Cool And Easy to Digest™ Definition:
 title="So which API are we using?"
 >
 Great question! Let's break down the API structure for ChatGPT!
-![explanation of API](https://cloud-647cibhzc-hack-club-bot.vercel.app/0hack_club_jam.png)
+![explanation of API](https://cdn.hackclub.com/rescue?url=https://cloud-647cibhzc-hack-club-bot.vercel.app/0hack_club_jam.png)
 
 We are going to be using the `/v1/chat/completions` endpoint to get the job done; it's the core technology behind ChatGPT!
 
@@ -140,7 +140,7 @@ We can send a ***"request"*** to our API in order to talk to it.
 ### Types of Requests
 There are four types of requests: GET, POST, PUT, and DELETE
 
-![](https://cloud-c8wbo8ip9-hack-club-bot.vercel.app/0image2.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-c8wbo8ip9-hack-club-bot.vercel.app/0image2.png)
 
 > GET: We tell the API to fetch some data for us to use<br/>
 > POST: We tell the API to create some data for us<br/>
@@ -171,7 +171,7 @@ Since we're going to be sending a `POST` request, that also means that we have t
 
 Think of the request as a cardboard box and the body being the stuff that goes inside that box. We (our browser) can then package and ship that box to the API.
 
-![explanation of api request body](https://cloud-iux06nddt-hack-club-bot.vercel.app/0untitled.png)
+![explanation of api request body](https://cdn.hackclub.com/rescue?url=https://cloud-iux06nddt-hack-club-bot.vercel.app/0untitled.png)
 
 Here's the request body that we use to communicate with the ChatGPT API:
 ```json
@@ -287,7 +287,7 @@ Ideally, this form should be able to pass the values of our `<input/>` parameter
 Let's try running this and see if we get a `console.log` in the browser console!
 
 Hint: Open the developer tools in Replit to see the console! It's the wrench icon right here:
-![open the wrench icon in replit to see dev tools](https://cloud-88lqktoh1-hack-club-bot.vercel.app/0image.png)
+![open the wrench icon in replit to see dev tools](https://cdn.hackclub.com/rescue?url=https://cloud-88lqktoh1-hack-club-bot.vercel.app/0image.png)
 
 ---
 
@@ -330,7 +330,7 @@ function getItinerary(event) {
 ```
 
 Nice! We just got something in the console!
-![console.log output showing in the console](https://cloud-lx8djo7vn-hack-club-bot.vercel.app/0image.png)
+![console.log output showing in the console](https://cdn.hackclub.com/rescue?url=https://cloud-lx8djo7vn-hack-club-bot.vercel.app/0image.png)
 
 ### We're making so much progress! Great work!
 ![great work gif](https://gifdb.com/images/high/great-job-guys-jimmy-fallon-wsvujhpbhgk80bh7.gif)
@@ -368,7 +368,7 @@ function getItinerary(event) {
 **Also remember to add any additional input elements that you made at the start!**
 
 Run your code, type in your location and dates, click submit, and check in the console! This is what I got:
-![result with everything printed](https://cloud-giko7ueoa-hack-club-bot.vercel.app/0image.png)
+![result with everything printed](https://cdn.hackclub.com/rescue?url=https://cloud-giko7ueoa-hack-club-bot.vercel.app/0image.png)
 
 ## Interacting with the ChatGPT API
 This is going great so far! We have all the values from our input elements. Now the only thing left is to communicate with the ChatGPT API.
@@ -438,13 +438,13 @@ fetch('https://api.openai.com/v1/chat/completions', {
 Well, some APIs need to verify that we're authorized to use them. This could be because it's too expensive to run those APIs and they need some way to limit usage or keep track of who is using them.
 
 Let's add something to our diagram:
-![headers are like the labels on a package](https://cloud-27qdx0gbm-hack-club-bot.vercel.app/0untitledheaders.png)
+![headers are like the labels on a package](https://cdn.hackclub.com/rescue?url=https://cloud-27qdx0gbm-hack-club-bot.vercel.app/0untitledheaders.png)
 
 You know how the labels on a package can identify who sent the package? Likewise, request headers also identify who is sending the request.
 
 Most often, APIs use something called an **API key** to check who sent the information. They distribute these keys and each one is unique, which means that given a key, they can find out who they handed it out to.
 
-![the api developer hands out keys to each unique user](https://cloud-hqp06ld4l-hack-club-bot.vercel.app/0keyexplanation.png)
+![the api developer hands out keys to each unique user](https://cdn.hackclub.com/rescue?url=https://cloud-hqp06ld4l-hack-club-bot.vercel.app/0keyexplanation.png)
 
 To contact the ChatGPT API, we need to send these `headers` in the `fetch` request:
 ```js
@@ -461,8 +461,8 @@ Let's break this down:
 **Hmm, what API Key should I get?**
 Good observation, we need an API key. Here are the steps on how to do so:
 1. Create an account on the [OpenAI Platform](https://platform.openai.com/)
-2. Go to the API keys page:![click the user profile and in the popup, click view api keys](https://cloud-873naq3sb-hack-club-bot.vercel.app/0image.png)
-3. Create a new API key secret:![button to create new api key secret](https://cloud-ee2akama4-hack-club-bot.vercel.app/0image.png)
+2. Go to the API keys page:![click the user profile and in the popup, click view api keys](https://cdn.hackclub.com/rescue?url=https://cloud-873naq3sb-hack-club-bot.vercel.app/0image.png)
+3. Create a new API key secret:![button to create new api key secret](https://cdn.hackclub.com/rescue?url=https://cloud-ee2akama4-hack-club-bot.vercel.app/0image.png)
 4. Replace `OPENAI_API_KEY` with your new API key!
 
 Now, your `fetch` request should look something like this:
@@ -922,7 +922,7 @@ And this is my `index.html` file:
 Now, if you run this code, and type in some inputs, you should get a trip itinerary beautifully displayed on your screen!
 
 **Result:**
-![result](https://cloud-r7dc1z25v-hack-club-bot.vercel.app/0image.png)
+![result](https://cdn.hackclub.com/rescue?url=https://cloud-r7dc1z25v-hack-club-bot.vercel.app/0image.png)
 
 
 ---
