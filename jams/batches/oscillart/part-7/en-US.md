@@ -6,7 +6,7 @@ title: 'Styling and Shipping'
 description: "In this part of the Jam, you'll finalize your app design with CSS and ship it using GitHub pages."
 contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
-thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/a775a91ea2c5e600296aae5274a84ed1a8e85188_1__3_.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/a775a91ea2c5e600296aae5274a84ed1a8e85188_1__3_.png'
 timeEstimate: '30-45 min'
 difficulty: 'Beginner, Intermediate'
 keywords: 'shipping, deploying, github pages, CSS, style'
@@ -97,7 +97,7 @@ The styles you might want to use use here:
 
 I used all of the methods above in my stylesheet to customize my site. Here’s my end result!
 
-![oscillart demo picture](https://hc-cdn.hel1.your-objectstorage.com/s/v3/72ebb828de43d89615be69cd44ed04451e968888_screenshot_2025-06-06_at_1.03.12___pm.png)
+![oscillart demo picture](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/72ebb828de43d89615be69cd44ed04451e968888_screenshot_2025-06-06_at_1.03.12___pm.png)
 
 Now that I’ve gone through my suggestions, here are some ideas on what you could customize on your own. W3Schools is my favorite site for finding CSS inspiration. Go off and explore!
 - Background images
@@ -108,7 +108,7 @@ Now that I’ve gone through my suggestions, here are some ideas on what you cou
 
 ## Section 2: time to ship!
 
-![dancing-orpheus-gif](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f606f18cca43d719f3e9aecaa9a6c23fd37baade_orpheus.gif)
+![dancing-orpheus-gif](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/f606f18cca43d719f3e9aecaa9a6c23fd37baade_orpheus.gif)
 
 🎉🥳 ***WHOOP WHOOP WHOOP PARTY TIME PARTY PARTY TIME*** 🥳🎉
 
@@ -120,23 +120,23 @@ In addition, if you’re completing this project for the Athena awards, by shipp
 
 We’re going to publish our sites to a URL using **GitHub Pages**. To do so, follow these steps:
 
-![instructions #1](https://hc-cdn.hel1.your-objectstorage.com/s/v3/6134cbcedc6488f68621ebd8d2443c889f56a190_screenshot_2025-06-06_at_1.11.44___pm.png)
+![instructions #1](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/6134cbcedc6488f68621ebd8d2443c889f56a190_screenshot_2025-06-06_at_1.11.44___pm.png)
 
 1. Go to your GitHub repository
 
-![instructions #2](https://hc-cdn.hel1.your-objectstorage.com/s/v3/3ffe0b814f2e3e21de6919d8b8d187e67ba064bb_screenshot_2025-06-06_at_1.12.56___pm.png)
+![instructions #2](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/3ffe0b814f2e3e21de6919d8b8d187e67ba064bb_screenshot_2025-06-06_at_1.12.56___pm.png)
 
 2. Go to Settings
 
-![instructions #3](https://hc-cdn.hel1.your-objectstorage.com/s/v3/62a2848d3066a5a90bc3736c7e7394dcb31d2ad5_screenshot_2025-06-05_at_11.18.45___am.png)
+![instructions #3](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/62a2848d3066a5a90bc3736c7e7394dcb31d2ad5_screenshot_2025-06-05_at_11.18.45___am.png)
 
 3. On the left menu bar, click on Pages
 
-![instructions #4](https://hc-cdn.hel1.your-objectstorage.com/s/v3/404ac5c32ff39d88e3ccdec134df62ca4c93690c_screenshot_2025-06-05_at_11.19.36___am.png)
+![instructions #4](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/404ac5c32ff39d88e3ccdec134df62ca4c93690c_screenshot_2025-06-05_at_11.19.36___am.png)
 
 4. Under Build and Deployment, then under Branch, click on None and in the dropdown, select Main
 
-![instructions #5](https://hc-cdn.hel1.your-objectstorage.com/s/v3/cdb25d39224dc06b0b09948c70c3915c831de226_screenshot_2025-06-05_at_11.20.30___am.png)
+![instructions #5](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/cdb25d39224dc06b0b09948c70c3915c831de226_screenshot_2025-06-05_at_11.20.30___am.png)
 
 5. Refresh the page, then click the URL after “Your site is live at…” at the top
 
@@ -150,7 +150,7 @@ Remember that pesky README file we created when we initialized our repository? N
 
 Go back to your GitHub repository, and click on the file README.md.
 
-![readme file](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2bd1375419f0a4daf5dff26aa1da88d95c33f485_screenshot_2025-06-09_at_11.21.22___am.png)
+![readme file](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/2bd1375419f0a4daf5dff26aa1da88d95c33f485_screenshot_2025-06-09_at_11.21.22___am.png)
 
 Inside it, include some info about your project! README's are written in Markdown, so you can include plain text here, but if you want some extra features (like headers, bolding text, links, etc.) check out this [link](https://www.markdownguide.org/). Here are some ideas to get started:
 
@@ -164,7 +164,7 @@ Inside it, include some info about your project! README's are written in Markdow
 
 Then, when you're done, don't forget to click the green "Commit Changes" button in the top righthand corner!
 
-![readme file open](https://hc-cdn.hel1.your-objectstorage.com/s/v3/bd3a4af0d7c73843a02fcf86778574ed9ec44c4e_screenshot_2025-06-09_at_11.22.35___am.png)
+![readme file open](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/bd3a4af0d7c73843a02fcf86778574ed9ec44c4e_screenshot_2025-06-09_at_11.22.35___am.png)
 
 <br />
 

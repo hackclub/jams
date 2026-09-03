@@ -9,7 +9,7 @@ description: >
   that you'll build upon in subsequent Jams.
 contributor: SerenityUX
 contributorSlackID: 'U041FQB8VK2'
-thumbnail: 'https://cloud-78mhgjste-hack-club-bot.vercel.app/0welcomescreen.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-78mhgjste-hack-club-bot.vercel.app/0welcomescreen.png'
 timeEstimate: '30 Min'
 difficulty: Intermediate
 keywords: 'Web, os, personalOS, webOS, website, javascript, html, css, codespaces'

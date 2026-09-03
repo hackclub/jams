@@ -6,7 +6,7 @@ description: >
     features! The most important part is to use your imagination since there is no limit to what YOU can create!
 contributor: 'necode2'
 contributorSlackID: 'U05E5U2D91P'
-thumbnail: 'https://cloud-c7go8kd3a-hack-club-bot.vercel.app/0ezgif-4-92cc368f0d.gif'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-c7go8kd3a-hack-club-bot.vercel.app/0ezgif-4-92cc368f0d.gif'
 timeEstimate: '30 Min'
 difficulty: 'Beginner'
 keywords: 'Game, Adventure, Pythons, CYOA, replit, storytelling, interactive'
@@ -15,10 +15,10 @@ presentation: 'https://www.figma.com/file/GzkGDAybZ9hO1AHfWMMvAR/CYOA-New-Jam-Pr
 id=0%3A1&mode=design&t=u1D1Lu50ZkHThvo1-1'  
 presentationPlay: 'https://www.figma.com/proto/GzkGDAybZ9hO1AHfWMMvAR/CYOA-New-Jam-Presentation?type=design&node-id=5-
 2343&t=tg1xDh0nrZuq8lMk-1&scaling=min-zoom&page-id=0%3A1&mode=design'  
-presentationPDF: 'https://cloud-b7pr0h6i7-hack-club-bot.vercel.app/0cyoa_new_jam_presentation.pdf'  
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-b7pr0h6i7-hack-club-bot.vercel.app/0cyoa_new_jam_presentation.pdf'  
 notes: ''  
-poster: 'https://cloud-fulkcjrnl-hack-club-bot.vercel.app/0build_a_choose_your_own_adventure_game_.pdf'  
-video: 'https://cloud-9mn1z1s9z-hack-club-bot.vercel.app/0coose_your_own_adventure_game.mp4'  
+poster: 'https://cdn.hackclub.com/rescue?url=https://cloud-fulkcjrnl-hack-club-bot.vercel.app/0build_a_choose_your_own_adventure_game_.pdf'  
+video: 'https://cdn.hackclub.com/rescue?url=https://cloud-9mn1z1s9z-hack-club-bot.vercel.app/0coose_your_own_adventure_game.mp4'  
 slug: 'story-game' 
 ---
 ## Choose Wisely, Code Boldly; Crafting a Build Your Own Adventure Game!
@@ -55,7 +55,7 @@ Here is Replit's Documentation for future Reference: https://docs.replit.com/
 ## Level 1: The Storyteller's Forge
 ### Create your Text-Based Adventure Game
 
-<video src="https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{width: "100%"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{width: "100%"}}></video>
 
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Beginner-CYOA?v=1
@@ -63,7 +63,7 @@ Here is the example code of what we're going to create!: https://replit.com/@Con
 Building a Choose Your Own Adventure Game is kinda like making a **pizza**! First, the base! The most important part, and the thing that 
 holds everything up... *drum roll please...* the storyline!
 
-![The storyline, the base of all games, is like the dough of a pizza. ](https://cloud-kck0n0txs-hack-club-bot.vercel.app/0copy_of_copy_of_arial.gif)
+![The storyline, the base of all games, is like the dough of a pizza. ](https://cdn.hackclub.com/rescue?url=https://cloud-kck0n0txs-hack-club-bot.vercel.app/0copy_of_copy_of_arial.gif)
 
 ## What Makes Text Based Adventure Games SO Playable?
 
@@ -81,7 +81,7 @@ So what's the most important part? Planning.
 
 ## Game Design
 
-![You need to branch out with Gane Design](https://cloud-d4qej17bj-hack-club-bot.vercel.app/0story2.gif)
+![You need to branch out with Gane Design](https://cdn.hackclub.com/rescue?url=https://cloud-d4qej17bj-hack-club-bot.vercel.app/0story2.gif)
 
 ### Choosing a Theme or Setting! 
 
@@ -104,7 +104,7 @@ The best part is the sky's the limit! Keep brainstorming until you find somethin
 Also consider the potential story choices, depth, and player engagement.
 
 ### Planning Game Structure!
-![Planning a player's journey](https://cloud-ojeynixq6-hack-club-bot.vercel.app/0untitled_design-removebg-preview.png)
+![Planning a player's journey](https://cdn.hackclub.com/rescue?url=https://cloud-ojeynixq6-hack-club-bot.vercel.app/0untitled_design-removebg-preview.png)
 
 Define what the game structure by figuring out the overall goal that players will strive to achieve. It can be finding treasure, surviving 
 on an abandoned island, solving a mystery, or saving the world!
@@ -116,7 +116,7 @@ Now figure out your player's choices. Imagine a tree, and each choice is a diffe
 points in the narrative where the player's choices will affect the outcome. 
 
 ### Characters!
-![Characters](https://cloud-8yiaur9jb-hack-club-bot.vercel.app/0untitled_design__2_.gif)
+![Characters](https://cdn.hackclub.com/rescue?url=https://cloud-8yiaur9jb-hack-club-bot.vercel.app/0untitled_design__2_.gif)
 
 This is also a good time to figure out any potential non-player characters (NPC's). These are characters that the player can interact with 
 and can make the storyline richer.  
@@ -138,11 +138,11 @@ Once you're all done writing everything up- let's start programming!
 
 
 ## Setting Up Replit
-![Replit.com Home Page](https://cloud-rmnz8besq-hack-club-bot.vercel.app/0replit_sigh_up.gif) 
+![Replit.com Home Page](https://cdn.hackclub.com/rescue?url=https://cloud-rmnz8besq-hack-club-bot.vercel.app/0replit_sigh_up.gif) 
 
 Before continuing further, make sure to set up or log in to your https://replit.com account. 
 
-![Create a New Repl](https://cloud-lthzt6trl-hack-club-bot.vercel.app/0untitled_design.gif)
+![Create a New Repl](https://cdn.hackclub.com/rescue?url=https://cloud-lthzt6trl-hack-club-bot.vercel.app/0untitled_design.gif)
 
 Once there click on 'Create a New Repl'
 
@@ -325,13 +325,13 @@ Go to the next level now!
 ##  Level 2: Sonic Sagas
 ### Adding Music and Style to your Text-Based Adventure Game
 
-![Adding music and style](https://cloud-3usasijgs-hack-club-bot.vercel.app/0copy_of_arial.gif)
+![Adding music and style](https://cdn.hackclub.com/rescue?url=https://cloud-3usasijgs-hack-club-bot.vercel.app/0copy_of_arial.gif)
 
 Once again, great job in finishing ***Level 1: The Storyteller's Forge***. Now we're moving on to the second layer of the **pizza**, the 
 *sauce*! A cool add-on that gives a kick of flavor! In this level, we will be learning how to add background music, sound effects, text 
 animation, and color! 
 
-<video src="https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{width: "100%"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-mxm9fsiqn-hack-club-bot.vercel.app/0level_2_cyoa.mp4" controls="controls" style={{width: "100%"}}></video>
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Intermediate-CYOA?v=1
 
@@ -555,12 +555,12 @@ Go to the next level now!
 
 ### Creating a Graphical User Interface 
 
-![Putting everything together](https://cloud-8dmeqbifb-hack-club-bot.vercel.app/0arial.gif)
+![Putting everything together](https://cdn.hackclub.com/rescue?url=https://cloud-8dmeqbifb-hack-club-bot.vercel.app/0arial.gif)
 
 Once again, great job in finishing **_Level 2: Sonic Sagas_**. Now we're moving on to the third and **final** layer of the **pizza**, 
 the *cheese*! It's the thing that all of our users will get to see and experience first before the storyline, music, etc. ***THE GUI!*** 
 
-<video src="https://cloud-o4r2cm0xj-hack-club-bot.vercel.app/0point_systems_were_created_at_the_end_of_the_level_1_jam_.mp4" controls="controls" style={{width: "100%"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-o4r2cm0xj-hack-club-bot.vercel.app/0point_systems_were_created_at_the_end_of_the_level_1_jam_.mp4" controls="controls" style={{width: "100%"}}></video>
 
 Here is the example code of what we're going to create!: https://replit.com/@ConnemaraPony/Advanced-CYOA?v=1
 
@@ -816,7 +816,7 @@ Keep storing each part of your in `def` functions... after you're done, let's ge
 
 We've been talking a lot about windows and frames-- but what are they and what's the difference? Lastly, *how* do we *MAKE* them?
 
-![Comparing windows and frames](https://cloud-p55izwnla-hack-club-bot.vercel.app/0digital.png)
+![Comparing windows and frames](https://cdn.hackclub.com/rescue?url=https://cloud-p55izwnla-hack-club-bot.vercel.app/0digital.png)
 
 This might sound crazy but imagine a house. The window is like an entire house. It has its own structure, windows and doors (title bar, 
 and controls), walls (size of window), etc. and it is the main thing that the user interacts with. 

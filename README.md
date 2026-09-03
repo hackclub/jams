@@ -38,7 +38,7 @@ git push
 
 This will send the changes you made to your repository. To send it to ours, go to your repository on GitHub and click on the button that says `Contribute` right above the code viewer. It will ask you to `Open a pull request` - go ahead and do that. It'll take you to a page that looks like this:
 
-![PR page](https://cloud-3d1rlweqr-hack-club-bot.vercel.app/0screenshot_2023-08-16_at_15-47-10_comparing_hackclub_main...jianmin-chen_main____hackclub_workshops.png)
+![PR page](https://cdn.hackclub.com/rescue?url=https://cloud-3d1rlweqr-hack-club-bot.vercel.app/0screenshot_2023-08-16_at_15-47-10_comparing_hackclub_main...jianmin-chen_main____hackclub_workshops.png)
 
 Fill in the title, maybe add a little description, and click that big green button that says `Create pull request`! That's it! You've made a PR!
 
@@ -73,7 +73,7 @@ isBatch: True
 
 We use this info for this page:
 
-![Batch info](https://cloud-qitwm6rk9-hack-club-bot.vercel.app/0screenshot_2023-08-16_at_14-45-22_create_your_own_smart_ai_voice_companion.png)
+![Batch info](https://cdn.hackclub.com/rescue?url=https://cloud-qitwm6rk9-hack-club-bot.vercel.app/0screenshot_2023-08-16_at_14-45-22_create_your_own_smart_ai_voice_companion.png)
 
 Now you can start writing the parts for your jam! For every part of your jam, create a folder inside your jam folder titled `part-<part #>`. Create a file inside that folder called `en-US.md` (or whatever your locale is) and will it with the following content:
 

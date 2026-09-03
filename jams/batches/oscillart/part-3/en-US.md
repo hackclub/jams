@@ -6,7 +6,7 @@ title: 'Drawing Sine Waves on the JS Canvas'
 description: "In this part of the Jam, you'll draw the sine waves that you're hearing on JS's canvas, creating your first art designs."
 contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
-thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/be97f69ac117aac3db0ed6d9d6da6862fd3dfa71_untitled_design__27_.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/be97f69ac117aac3db0ed6d9d6da6862fd3dfa71_untitled_design__27_.png'
 timeEstimate: '30-45 min'
 difficulty: 'Beginner, Intermediate'
 keywords: 'art, music, waves, javascript, canvas'
@@ -53,7 +53,7 @@ Copy the following into your style.css file:
 
 Now, what this does is add a black border around our canvas, keep it at a stable height and width, and add a little margin underneath it, so that it doesn’t run into our button (em is a unit of thickness by the way). Here's what mine looks like:
 
-![image of canvas](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a8166444eb15926661847e2988f538c64d8939b3_screenshot_2025-06-08_at_1.29.51___pm.png)
+![image of canvas](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/a8166444eb15926661847e2988f538c64d8939b3_screenshot_2025-06-08_at_1.29.51___pm.png)
 
 So you know for the future, we use `#<id-name>` to add styles to an element with a unique ID, `.<class-name>` to refer to elements with shared classes, and simply the element name to add styles to all elements of that type.
 
@@ -98,7 +98,7 @@ Then, we’re going to be using the following methods:
 
 And, this isn’t a coding method, but here’s a helpful math equation when creating your function:
 
-![equation of sine waves](https://hc-cdn.hel1.your-objectstorage.com/s/v3/9c0e592bffc7573402d4b629f52be60ba5155773_screenshot_2025-06-10_at_12.11.06___pm.png)
+![equation of sine waves](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/9c0e592bffc7573402d4b629f52be60ba5155773_screenshot_2025-06-10_at_12.11.06___pm.png)
 
 <Dropdown title="Here’s a MEGA challenge: can you code this function all on your own? I believe in you! Don’t worry about including any loops or trying to call it as an interval; we’ll do that later. Just try and create a function that, if called intervally, would draw a sine wave. Make sure to use that equation I gave you!! And, call it line(). Pssst… Make sure to increase x by 1 at the end!">
 
@@ -203,7 +203,7 @@ Now, let’s add drawWave to our handle function, so that when we press our subm
 
 You should have a working web app that plays both music and art when you press a button!! Here's my result:
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/16a23c6547279ae957baa2712b7e4e0e796ec602_drawscale.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/16a23c6547279ae957baa2712b7e4e0e796ec602_drawscale.mp4" width="100%" controls></video>
 
 <br />
 

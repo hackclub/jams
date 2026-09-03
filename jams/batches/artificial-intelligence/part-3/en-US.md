@@ -6,7 +6,7 @@ description: >
   This is a workshop description introducing the concept of Artificial Intelligence and Machine Learning, focusing on creating a web-based AI Companion or Smart Voice Assistant using HTML, JS, and CSS, as well as tools like Teachable Machine by Google and Replit, and incorporating OpenAI API to recognize an audio or visual keyword, with examples of different ideas for AI Companions.
 contributor: 'sahitid'  
 contributorSlackID: 'U03RU99SGKA'
-thumbnail: 'https://cloud-pn240umd6-hack-club-bot.vercel.app/0thumbnail_3.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-pn240umd6-hack-club-bot.vercel.app/0thumbnail_3.png'
 timeEstimate: '45 Min'  
 difficulty: 'Beginner'
 keywords: 'Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'  
@@ -28,11 +28,11 @@ Welcome back to our little journey to create a walking talking Orpheus AI Compan
 
 In the first part of the Jams, we used Teachable machine to train a model in order to recognize the keyword "Orpheus". We then used the Replit online IDE to create an empty site that would print a message in the console every time the keyword was detected to be said.
 
-![console printing response to keyword being said](https://cloud-2sz1omo3w-hack-club-bot.vercel.app/0image.png)
+![console printing response to keyword being said](https://cdn.hackclub.com/rescue?url=https://cloud-2sz1omo3w-hack-club-bot.vercel.app/0image.png)
 
 In the second part of the Jams, we gave Orpheus a voice! Now instead of printing out a message in the console, our AI Companion would speak and say it out loud.
 
-<video src="https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://cloud-18r0fzw3m-hack-club-bot.vercel.app/0jams_gifs__1_.mp4" controls="controls" style={{maxWidth: "720px"}}></video>
 Now in the third part of the Jams, we will allow Orpheus to convert the speech that we say when we talk to it into text.
 
 *Reminder: If you're ever stuck or confused ~~or have a spelling mistake in your code that your IDE isn't catching but continues to break the whole program~~, try asking [AI such as ChatGPT](https://chat.openai.com/) to figure it out for you!*
@@ -116,7 +116,7 @@ recognizer.listen(
 
 Here's the edit you just made, if it's not obvious enough.
 
-![before and after image](https://cloud-oqe6fu130-hack-club-bot.vercel.app/0jams_gifs.png)
+![before and after image](https://cdn.hackclub.com/rescue?url=https://cloud-oqe6fu130-hack-club-bot.vercel.app/0jams_gifs.png)
 
 ## See It In Action!
 
@@ -126,7 +126,7 @@ Try saying the keyword and Orpheus will say "Hey" back.
 
 Now try saying something else to your AI Companion and watch as it `console.log`s what you said! Woah! 
 
-![console.log of speech](https://cloud-mzlajhso5-hack-club-bot.vercel.app/0image.png)
+![console.log of speech](https://cdn.hackclub.com/rescue?url=https://cloud-mzlajhso5-hack-club-bot.vercel.app/0image.png)
 
 And now do you see how useful promises are? We can wait for `speak()` to finish before we start `hear()`ing, and then only after the computer is done hearing do we log the message.
 
@@ -169,12 +169,12 @@ Now the process is:
 
 Yay! Now Orpheus can hear you and convert your voice into text.
 
-![final demo of speech being printed as text on screen](https://cloud-d37x8o6qj-hack-club-bot.vercel.app/0image.png)
+![final demo of speech being printed as text on screen](https://cdn.hackclub.com/rescue?url=https://cloud-d37x8o6qj-hack-club-bot.vercel.app/0image.png)
 
 ## Additional Challenge Hacking! (recommended)
 
 It's that time you've all been waiting for! Let's Hack our Jam! Try doing one of the following:
-![jam hacks](https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
+![jam hacks](https://cdn.hackclub.com/rescue?url=https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
 
 - Change up your character! We're doing Orpheus but you don't have to.
 - Our UI is also going to look like a smart phone & text messaging system. But I encourage everyone to do their own play on this AI Companion. What if your screen has a sound visualizer?

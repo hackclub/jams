@@ -3,14 +3,14 @@ title: 'Make an AI Game in 40 Lines'
 description: >
     In this Jam, you will make your own AI Game in 40 lines of code using Wizard Orpheus! Wizard Orpheus is a JavaScript library that makes it easy peasy to build AI apps in JavaScript with minimal prior knowledge!
 contributor: 'zachlatta'
-thumbnail: 'https://cloud-njbdwayky-hack-club-bot.vercel.app/00rugmerchant__1_.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-njbdwayky-hack-club-bot.vercel.app/00rugmerchant__1_.png'
 timeEstimate: '60 Min'
 difficulty: 'Beginner'
 keywords: 'AI, Web'
 language: 'JavaScript'
 presentation: ''
 presentationPlay: 'https://www.figma.com/proto/NbF4B2LzkN1GSYEEuSFkpp/AI-Orpheus?page-id=0%3A1&type=design&node-id=1-2&viewport=411%2C392%2C0.3&t=lAQeAkJIJzYIFPzn-1&scaling=scale-down-width&mode=design'
-presentationPDF: 'https://cloud-7vhdadbef-hack-club-bot.vercel.app/0ai_orpheus_compressed__1_.pdf'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-7vhdadbef-hack-club-bot.vercel.app/0ai_orpheus_compressed__1_.pdf'
 notes: 'https://github.com/hackclub/wizard-orpheus/blob/main/README.md'
 poster: ''
 video: ''
@@ -34,10 +34,10 @@ You will get to come up with your own story, game variables, and fun mechanics. 
 Visit [hack.club/wow-starter](https://hack.club/wow-starter
 ) and tap Fork & Run. You'll need to create a Replit account for this to work. 
 
-![Wizard Orpheus Fork & Run Gif](https://cloud-rfnb1efui-hack-club-bot.vercel.app/0wizard-orpheus-fork-and-run.gif)
+![Wizard Orpheus Fork & Run Gif](https://cdn.hackclub.com/rescue?url=https://cloud-rfnb1efui-hack-club-bot.vercel.app/0wizard-orpheus-fork-and-run.gif)
 ## Add ability for users to send a message
 Currently when the user taps enter... 
-![user tapping enter](https://cloud-wd3hweveh-hack-club-bot.vercel.app/0noenter.gif)
+![user tapping enter](https://cdn.hackclub.com/rescue?url=https://cloud-wd3hweveh-hack-club-bot.vercel.app/0noenter.gif)
 
 It does not send the message! Let's change that
 
@@ -66,7 +66,7 @@ document.getElementById('input').addEventListener('keyup', function(e) {
 
 This code is giving the user the ability to send a message when they tap Enter. It also clears out the input afterwards so that the input is ready for the next message. 
 
-![new code segment shown working](https://cloud-prej9qe5y-hack-club-bot.vercel.app/0newcodesegment.gif)
+![new code segment shown working](https://cdn.hackclub.com/rescue?url=https://cloud-prej9qe5y-hack-club-bot.vercel.app/0newcodesegment.gif)
 
 ## Add ability for bot to respond
 We're able to send a message, but we're not currently getting a response. 
@@ -82,7 +82,7 @@ myGame.botAction('respond', 'Send a text response to the user', { message: 'What
 
 Now we're able to get a response to our messages!
 
-![getting response](https://cloud-ajjskyyoq-hack-club-bot.vercel.app/0getmeout.gif)
+![getting response](https://cdn.hackclub.com/rescue?url=https://cloud-ajjskyyoq-hack-club-bot.vercel.app/0getmeout.gif)
 
 ## Create a variable to keep score
 To add more complexity to our game, we can add variables. Variables can be anything from the mood of the character you're talking with to the darkness of the room you're in. 
@@ -101,7 +101,7 @@ document.getElementById('score').innerHTML = data.currentVariables.score.value
 
 Keep in mind that you're *adding to the bot action* instead of creating a whole new bot action.
 
-![Change my score](https://cloud-3so5m9g4f-hack-club-bot.vercel.app/0changemyscore.gif)
+![Change my score](https://cdn.hackclub.com/rescue?url=https://cloud-3so5m9g4f-hack-club-bot.vercel.app/0changemyscore.gif)
 
 
 ## Update the background with variables
@@ -119,7 +119,7 @@ myGame.botAction('respond', 'Send a text response to the user', { message: 'What
 })
 ```
 
-![Darken screen](https://cloud-detca5vdf-hack-club-bot.vercel.app/0darkerscreen.gif)
+![Darken screen](https://cdn.hackclub.com/rescue?url=https://cloud-detca5vdf-hack-club-bot.vercel.app/0darkerscreen.gif)
 
 ## Customize prompt to make your own game
 

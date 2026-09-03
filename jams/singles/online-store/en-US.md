@@ -4,21 +4,21 @@ description: >
   In this jam, you'll be designing your own online store with Figma! In the next jam, we'll be using the Shopify API to turn this into a real store.
 contributor: 'ryanchou-dev'
 contributorSlackID: 'U033ER629RD'
-thumbnail: 'https://cloud-hlz9l0kzh-hack-club-bot.vercel.app/0000image__3___1__50.webp'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-hlz9l0kzh-hack-club-bot.vercel.app/0000image__3___1__50.webp'
 timeEstimate: '45 Min'
 difficulty: 'Easy'
 keywords: 'Design, Figma, website, store, design, ux, ui'
 language: 'Figma'
 presentation: 'https://www.figma.com/file/ZZtBSywMbFgI8T3NWVWXP7/Online-Store-Odyssey?type=design&node-id=8%3A2&mode=design&t=p3WdMPuooBnKpTcP-1'
 presentationPlay: 'https://www.figma.com/proto/ZZtBSywMbFgI8T3NWVWXP7/Online-Store-Odyssey?page-id=0%3A1&type=design&node-id=8-2&viewport=171%2C208%2C0.07&t=1T2UYUSbx8HOPyTG-1&scaling=contain&mode=design'
-presentationPDF: 'https://cloud-mhlmx28h4-hack-club-bot.vercel.app/0online_store_odyssey-min.pdf'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-mhlmx28h4-hack-club-bot.vercel.app/0online_store_odyssey-min.pdf'
 notes: ''
-poster: 'https://cloud-cqx4mk7nt-hack-club-bot.vercel.app/0online-store-poster.pdf'
+poster: 'https://cdn.hackclub.com/rescue?url=https://cloud-cqx4mk7nt-hack-club-bot.vercel.app/0online-store-poster.pdf'
 video: ''
 slug: 'online-store'
 ---
 
-<video controls style={{width: "400px"}}> <source src="https://cloud-opkznq4e6-hack-club-bot.vercel.app/1store_preview.mp4" type="video/mp4" /></video>
+<video controls style={{width: "400px"}}> <source src="https://cdn.hackclub.com/rescue?url=https://cloud-opkznq4e6-hack-club-bot.vercel.app/1store_preview.mp4" type="video/mp4" /></video>
 
 [Sample Figma Design](https://www.figma.com/file/R0x2u5Z0n1wcOAbVVekcei/The-Cow-Charm?type=design&node-id=34%3A423&mode=design&t=68QuGZqGJfs2QT92-1)
 [Interactive Demo](https://www.figma.com/proto/R0x2u5Z0n1wcOAbVVekcei/The-Cow-Charm?page-id=34%3A423&type=design&node-id=34-507&viewport=535%2C362%2C0.09&t=RaHKT5mf6K7wXh1B-1&scaling=scale-down&starting-point-node-id=34%3A507&mode=design)
@@ -68,11 +68,11 @@ Head over to [figma.com](https://www.figma.com/) and create an account! Afterwar
 
 You should be instantly booted into a new design file!
 
-![Figma New File](https://cloud-opkznq4e6-hack-club-bot.vercel.app/0figma_new_file.png)
+![Figma New File](https://cdn.hackclub.com/rescue?url=https://cloud-opkznq4e6-hack-club-bot.vercel.app/0figma_new_file.png)
 
 <Dropdown title="Not there?">
 If you're redirected to the dashboard instead, just click the **+ New Design File** button!
-<video controls style={{width: "400px"}}> <source src="https://cloud-n2adyd9na-hack-club-bot.vercel.app/0file_from_dashboard.mp4" type="video/mp4" /></video>
+<video controls style={{width: "400px"}}> <source src="https://cdn.hackclub.com/rescue?url=https://cloud-n2adyd9na-hack-club-bot.vercel.app/0file_from_dashboard.mp4" type="video/mp4" /></video>
 </Dropdown>
 
 If you're working with a team, click the Share button in the top right and add your groupmates' emails with "Edit" permissions!
@@ -96,19 +96,19 @@ Okay! So, let's go over the structure of the Figma editor.
 
 ---
 
-![Left Sidebar](https://cloud-p4lmdd3r0-hack-club-bot.vercel.app/0pasted_image_20230716011036.png)
+![Left Sidebar](https://cdn.hackclub.com/rescue?url=https://cloud-p4lmdd3r0-hack-club-bot.vercel.app/0pasted_image_20230716011036.png)
 
 ### Left Sidebar
 
 Here, you'll keep track of the current objects in your design (text, shapes, images), and be able to access assets & pages (we'll go over this later).
 
-![Toolbar](https://cloud-i2t8xhz0p-hack-club-bot.vercel.app/0pasted_image_20230716011117.png)
+![Toolbar](https://cdn.hackclub.com/rescue?url=https://cloud-i2t8xhz0p-hack-club-bot.vercel.app/0pasted_image_20230716011117.png)
 
 ### Toolbar
 
 Situated at the top of your screen, this contains every tool you need to start designing, we'll break them down below :)).
 
-![Right Sidebar](https://cloud-i2t8xhz0p-hack-club-bot.vercel.app/1pasted_image_20230716011129.png)
+![Right Sidebar](https://cdn.hackclub.com/rescue?url=https://cloud-i2t8xhz0p-hack-club-bot.vercel.app/1pasted_image_20230716011129.png)
 
 ### Right Sidebar
 
@@ -122,7 +122,7 @@ Figma relies on a layered system of groups. Think about it like you're stacking 
 
 The foundational element for your designs is called a "frame"! It acts like a top-level container for your content. We normally set these to the dimensions of a target device to see what our design might look like on it.
 
-![](https://cloud-ki7xeojmd-hack-club-bot.vercel.app/0frame.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-ki7xeojmd-hack-club-bot.vercel.app/0frame.gif)
 
 ### Group
 
@@ -130,7 +130,7 @@ A group combines related objects together. This is a temporary union that helps 
 
 You can group a selection of layers together with `Ctrl + G`!
 
-![](https://cloud-8utwa7bc9-hack-club-bot.vercel.app/0group.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-8utwa7bc9-hack-club-bot.vercel.app/0group.gif)
 
 ### Layers
 
@@ -142,7 +142,7 @@ Let's have a quick rundown of the tools we'll be using in our design.
 
 Your workshop host should have given you a cheat sheet for Figma's tools; this is your chance to read through it!
 
-You can view the digital copy [here](https://cloud-brvsdgazn-hack-club-bot.vercel.app/0figma_tools.pdf)
+You can view the digital copy [here](https://cdn.hackclub.com/rescue?url=https://cloud-brvsdgazn-hack-club-bot.vercel.app/0figma_tools.pdf)
 
 **Phew!** That was a lot of content. Like I said earlier, feel free to come back and review :D
 
@@ -160,11 +160,11 @@ Take this time to think about the name of your corporation and the products you 
 
 Let's give your project an awesome name! Click into the area which says "Untitled" and give it a name of your choosing (you can change this at any time).
 
-![Name your Project](https://cloud-4m7ljqmox-hack-club-bot.vercel.app/0image.png)
+![Name your Project](https://cdn.hackclub.com/rescue?url=https://cloud-4m7ljqmox-hack-club-bot.vercel.app/0image.png)
 
 Next, we'll make a frame for the landing page of our website. We'll do this by clicking the hashtag-esque button on the navbar, and clicking **Desktop > Macbook Pro 16"** as our size.
 
-<video controls style={{width: "400px"}}> <source src="https://cloud-hivp3jiyp-hack-club-bot.vercel.app/02023-07-15_21-19-10.mp4" type="video/mp4"/> </video>
+<video controls style={{width: "400px"}}> <source src="https://cdn.hackclub.com/rescue?url=https://cloud-hivp3jiyp-hack-club-bot.vercel.app/02023-07-15_21-19-10.mp4" type="video/mp4"/> </video>
 
 Note that you can always extend the height of the frame as you need.
 
@@ -177,7 +177,7 @@ Can you believe it? You've created your first layer in Figma. 🎉
 Inside your frame, we'll create a _text object_! Once the tool is selected, click anywhere in your frame to create a text box. You may type whatever you'd like here.
 
 wait a minute...
-![Text is too small naurr](https://cloud-6gf9bcrd6-hack-club-bot.vercel.app/0pasted_image_20230716031051.png)
+![Text is too small naurr](https://cdn.hackclub.com/rescue?url=https://cloud-6gf9bcrd6-hack-club-bot.vercel.app/0pasted_image_20230716031051.png)
 
 What do you think we should do?
 
@@ -200,19 +200,19 @@ Let's try adding stars to our page. We can do this by selecting the **Star Tool*
 #### Quiz Time!
 
 <Dropdown title="Try to find these properties yourself! (expand for solution)">
-![Needed Properties](https://cloud-6fotdvxns-hack-club-bot.vercel.app/0pasted_image_20230716203619_480.png)
+![Needed Properties](https://cdn.hackclub.com/rescue?url=https://cloud-6fotdvxns-hack-club-bot.vercel.app/0pasted_image_20230716203619_480.png)
 </Dropdown>
 
 Now, I'll make the background black, text white, and change the color and size of the stars!
-![Initial background](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/0pasted_image_20230718011242.png)
+![Initial background](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/0pasted_image_20230718011242.png)
 
 I want the background to resemble a dark sky with a bright moon, so I'll set it to a gradient with dark shades of purple. You can find the settings of the **Fill Color**.
 
-![Gradient](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/1pasted_image_20230718011436.png)
+![Gradient](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/1pasted_image_20230718011436.png)
 
 It's time to create the ✨ charm ✨! I'll make a Circle with the **Ellipse Tool** and import the images I want to use for the design.
 
-![First charm](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/2pasted_image_20230718011702.png)
+![First charm](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/2pasted_image_20230718011702.png)
 
 It's starting to come together! It would be really awesome to have it drop down from the top of the screen, but I'm not sure how to create a string.
 
@@ -224,7 +224,7 @@ It's starting to come together! It would be really awesome to have it drop down 
 > I think I'll stick with the **Line** tool, thanks for your help!
 
 This is cool, but something seems a bit off.
-![String](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/3pasted_image_20230718012123.png)
+![String](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/3pasted_image_20230718012123.png)
 
 There isn't a hole for the string to go through!! It would be easy to just use another circle to indicate the hole, but the gradient background makes it hard to replicate.
 
@@ -234,11 +234,11 @@ If only, we could cut a hole in the circle...
 
 Let's first create a circle to designate the hole, and then select both the charm and the circle destined to be a hole on top of it.
 
-![Circle](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/4pasted_image_20230718012451.png)
+![Circle](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/4pasted_image_20230718012451.png)
 
 At the top of your screen, you'll see an icon that looks like two overlapping rectangles; click that!
 
-![Boolean operators](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/5pasted_image_20230718012524.png)
+![Boolean operators](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/5pasted_image_20230718012524.png)
 
 These are Figma's boolean operators!! 😍😍
 
@@ -261,45 +261,45 @@ You have four options:
 > The **Subtract** boolean operator! We want to remove the smaller circle from the larger one.
 >
 > Awesome! Now we'll select both and perform that operation:
-> ![Subtract](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/6pasted_image_20230718112359.png)
+> ![Subtract](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/6pasted_image_20230718112359.png)
 
 It's starting to look more and more like a charm!
-![Charm](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/7pasted_image_20230718112519.png)
+![Charm](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/7pasted_image_20230718112519.png)
 
 Now, I'll add some decorations and drop shadow, and we'll have a completed element!
 
-![Charm with effects](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/8pasted_image_20230718112914.png)
+![Charm with effects](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/8pasted_image_20230718112914.png)
 
 If I have multiple layers that I want to fit into a circle, I can use Figma's **Mask** tool!
-![Mask select](https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/9pasted_image_20230718113841.png)
+![Mask select](https://cdn.hackclub.com/rescue?url=https://cloud-rh9f8bcjk-hack-club-bot.vercel.app/9pasted_image_20230718113841.png)
 _Here, I've created a new circle to use as the frame and selected all the layers I want to be inside of it!_
 
 This tool allows you to use a layer as a "cutout" for another, and we can even adjust it after masking!
 
 Here's the result:
-![Masked layers](https://cloud-f6y742j59-hack-club-bot.vercel.app/0pasted_image_20230718114047.png)
+![Masked layers](https://cdn.hackclub.com/rescue?url=https://cloud-f6y742j59-hack-club-bot.vercel.app/0pasted_image_20230718114047.png)
 
 Now, we'll place in a product image (ill use the mockup we designed earlier).
-![Background + Product](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/1pasted_image_20230722221003.png)
+![Background + Product](https://cdn.hackclub.com/rescue?url=https://cloud-rgpmdor1b-hack-club-bot.vercel.app/1pasted_image_20230722221003.png)
 _To make the background stars, I created 4 stars and dropped the opacity to ~60%_
 
 From here, I can add some text using the **Text Tool (T)**, setting its fill color to whatever I want.
 
-![With Text](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/2pasted_image_20230722221229.png)
+![With Text](https://cdn.hackclub.com/rescue?url=https://cloud-rgpmdor1b-hack-club-bot.vercel.app/2pasted_image_20230722221229.png)
 
 Awesome! I'll create a couple more to create a grid-like format.
 
-![Few more!](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/3pasted_image_20230722221310.png)
+![Few more!](https://cdn.hackclub.com/rescue?url=https://cloud-rgpmdor1b-hack-club-bot.vercel.app/3pasted_image_20230722221310.png)
 
 As you might have guessed, the footer will also be the same; we'll use a rectangle as a background:
-![Step 1](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/4pasted_image_20230722221404.png)
+![Step 1](https://cdn.hackclub.com/rescue?url=https://cloud-rgpmdor1b-hack-club-bot.vercel.app/4pasted_image_20230722221404.png)
 
 Add in star shapes with the **Star Tool** and add our logo!
-![Step 2](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/5pasted_image_20230722221434.png)
+![Step 2](https://cdn.hackclub.com/rescue?url=https://cloud-rgpmdor1b-hack-club-bot.vercel.app/5pasted_image_20230722221434.png)
 
 After that, it's up to us to add whatever information we think is necessary. I'll add a privacy & terms page and a contact us page :D
 
-![Step 3](https://cloud-rgpmdor1b-hack-club-bot.vercel.app/6pasted_image_20230722221519.png)
+![Step 3](https://cdn.hackclub.com/rescue?url=https://cloud-rgpmdor1b-hack-club-bot.vercel.app/6pasted_image_20230722221519.png)
 
 Try creating the Navbar by yourself :)
 
@@ -330,29 +330,29 @@ These are layers that reference another layer instead of having its own value. I
 
 ### Layer
 
-![Layer Animation](https://cloud-faklou4uh-hack-club-bot.vercel.app/0color-scheme-_remix_.gif)
+![Layer Animation](https://cdn.hackclub.com/rescue?url=https://cloud-faklou4uh-hack-club-bot.vercel.app/0color-scheme-_remix_.gif)
 
 ### Asset
 
-![Asset Animation](https://cloud-ghmaoucif-hack-club-bot.vercel.app/0color-scheme-_remix___1_.gif)
+![Asset Animation](https://cdn.hackclub.com/rescue?url=https://cloud-ghmaoucif-hack-club-bot.vercel.app/0color-scheme-_remix___1_.gif)
 
 First, we'll create a new page so that we have our final prototype in one place. We can do this by expanding the "Page" icon on the left sidebar and clicking the '+' icon when it appears. Name this page **Assets**.
 
 Now, we'll copy over the elements that we want to turn into components.
 
-![Copied Elements](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/0pasted_image_20230717003414.png)
+![Copied Elements](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/0pasted_image_20230717003414.png)
 
 Now, select the entire asset, right-click, and select "**Create Component**"
 
-![Create Component](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/1pasted_image_20230717003457.png)
+![Create Component](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/1pasted_image_20230717003457.png)
 
 Do the same for every other asset you want to create. You'll know you've done it correctly if they appear purple in the left sidebar.
 
-![Component layers](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/2pasted_image_20230717003601.png)
+![Component layers](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/2pasted_image_20230717003601.png)
 
 When you open the **Assets** tab in the left sidebar, you'll get the chance to drag it into your project!
 
-![Asset sidebar](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/3pasted_image_20230717003648.png)
+![Asset sidebar](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/3pasted_image_20230717003648.png)
 
 You did it hacker!
 
@@ -366,19 +366,19 @@ You might have noticed a **Prototype** tab in the right sidebar; this tab helps 
 
 For example, if we click an element on our **About** page, we'll get options to create an interaction.
 
-![Prototype tab](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/4pasted_image_20230717004550.png)
+![Prototype tab](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/4pasted_image_20230717004550.png)
 
 Let's try that!
-![Interaction](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/5pasted_image_20230717004607.png)
+![Interaction](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/5pasted_image_20230717004607.png)
 
 For now, we'll just use the **On Click** trigger with the **Navigate to** response. This gives us a list of frames in our project we can jump to:
-![Navigate to?](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/6pasted_image_20230717004656.png)
+![Navigate to?](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/6pasted_image_20230717004656.png)
 
 Select the one you want and customize the transition!
 p.s. for similar pages (such as your product page), it might be more intuitive for a "**Smart Animate**" transition.
 
 For example, I set the transition between the home and about page to "**Smart Animate**", and this is the result:
-![Animation Preview](https://cloud-h7lkfzs4c-hack-club-bot.vercel.app/02023-07-18_11-49-28.gif)
+![Animation Preview](https://cdn.hackclub.com/rescue?url=https://cloud-h7lkfzs4c-hack-club-bot.vercel.app/02023-07-18_11-49-28.gif)
 
 **Follow the same technique for every single clickable element!**
 
@@ -387,7 +387,7 @@ For example, I set the transition between the home and about page to "**Smart An
 Once you're finished, click the present icon on the top right corner (looks like a play button) and enjoy the show! Make sure you're on the final prototype page and not the assets page!
 
 Splendid! Here are my interactions in my example design:
-![Final prototype](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/7pasted_image_20230717005112.png)
+![Final prototype](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/7pasted_image_20230717005112.png)
 
 Hopefully, your design looks totally unique and different!
 
@@ -396,7 +396,7 @@ Get ready to pitch it to the hosts... 🍿
 ## Up for a challenge?
 
 There's a really awesome tool in your toolbar that I haven't mentioned.
-![Plugins?!](https://cloud-e1j5bcew3-hack-club-bot.vercel.app/8pasted_image_20230717005231.png)
+![Plugins?!](https://cdn.hackclub.com/rescue?url=https://cloud-e1j5bcew3-hack-club-bot.vercel.app/8pasted_image_20230717005231.png)
 
 The **Plugins** tab :00
 
@@ -410,7 +410,7 @@ Feel free to browse through and find something awesome for your design. One that
 If you'd like to implement this prototype into a working website, check out the jam "**Wielding the Elemental Magic of the Web (not evil)**" to figure out how to implement your design in HTML and CSS! Also, try enabling "**Dev Mode**" in Figma (a switch on the top right corner) to see property values in CSS and example code for some objects!
 
 It's been a blast jamming out with you! Catch you later :>
-<video controls style={{width: "400px"}}> <source src="https://cloud-f39p2nwab-hack-club-bot.vercel.app/00718.mp4" type="video/mp4"/> </video>
+<video controls style={{width: "400px"}}> <source src="https://cdn.hackclub.com/rescue?url=https://cloud-f39p2nwab-hack-club-bot.vercel.app/00718.mp4" type="video/mp4"/> </video>
 <br/>
 <small>"Oh, Christmas Tree" Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 4.0 License

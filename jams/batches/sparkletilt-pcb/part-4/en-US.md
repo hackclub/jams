@@ -3,7 +3,7 @@ title: 'Ordering a KiCAD board from JLCPCB'
 description: 'Learn how to convert a board design into an actual order'
 contributor: 'karmanyaahm'
 contributorSlackID: 'U04CNFV0T4M'
-thumbnail: 'https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/514.webp'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/514.webp'
 timeEstimate: '1 hour'
 difficulty: 'Intermediate'
 keywords: 'PCB, KiCAD, electronics, schematic, Atmel, ATMega328P, Arduino, microcontroller, circuit'
@@ -36,11 +36,11 @@ Here are some component notes[^3]:
 
 Click on Plugin Manager on the KiCAD home page.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/111.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/111.webp)
 
 Search for 'JLC'.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/122.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/122.webp)
 
 Install 'Fabrication Toolkit' and apply changes.
 
@@ -49,11 +49,11 @@ Install 'Fabrication Toolkit' and apply changes.
 
 Open your schematic. Go to Bulk Edit fields.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/135.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/135.webp)
 
 In the Field Editor window, click on 'Add Field' and add the field `LCSC`. It doesn't matter whether you have `Sim.*` or `Datasheet` fields or not.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/146.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/146.webp)
 
 Then, search for your components at [jlcpcb.com/parts](https://jlcpcb.com/parts) and fill in the LCSC id.
 
@@ -63,11 +63,11 @@ You don't *have* to necessarily specify the part number for generic components l
 
 The LCSC Part number (aka JLCPCB Part #) looks like `Cxxxx`.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/157.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/157.webp)
 
 For more specific components, like the Atmega328P-AU, you should only have a couple of options and just pick the most popular one (Basic Part if possible).
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/168.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/168.webp)
 
 
 Try doing this yourself before you look at my version below.
@@ -76,7 +76,7 @@ Try doing this yourself before you look at my version below.
 
 <summary>This is what your table should look like, and then Apply and Save.</summary>
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/179.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/179.webp)
 
 Because A1 and J2 aren't real components - we only need their footprint and pin layout, not the component itself - they don't need an LCSC part number.
 </details>
@@ -85,21 +85,21 @@ Because A1 and J2 aren't real components - we only need their footprint and pin 
 
 Now, go back to the PCB view and sync it.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/110.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/110.webp)
 
 Then, click on Tools > External Plugins > Fabrication Toolkit.
 
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/211.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/211.webp)
 
 Everything you need to order your board will now be in `your_kicad_project/production/`.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/312.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/312.webp)
 
 Now, log in to [jlcpcb.com](https://jlcpcb.com). Go to [cart.jlcpcb.com/quote](https://cart.jlcpcb.com/quote) and upload `gerber.zip` into "Add Gerber file".
 
 You should see something like this:
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/413.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/413.webp)
 
 Tips:
 - 5 is the minimum number of PCBs you can order.
@@ -113,26 +113,26 @@ Leave the 'High-spec options' at their defaults, and then, enable assembly.
 - Standard PCB assembly with both sides is very expensive  (~$65) and will use up most of your grant money. Try to design PCBs that have components on one side and don't use any 'Standard Only' components. Or, solder the other side by hand.
 
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/514.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/514.webp)
 Then, on the Bill of Materials page, upload bom.csv and positions.csv from your production folder. 
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/716.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/716.webp)
 
 - You can save a lot of money on Extended Parts in the long run (if you plan on making many PCBs) by buying them directly and soldering them yourself [^1]. For example, basically every project has a USB-C connector and header pins, so it makes sense to buy a bunch yourself and avoid the $3 extended part fee every time you buy a board from JLCPCB.
 - Virtual Components (only used for their through holes) like the Arduino Nano and ICSP header can be ignored.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/817.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/817.webp)
 When it prompts you about unselected parts, just click 'Do not place'.
 
 Zoom into your components on the 'Component Placements' screen and rotate them to the correct orientation if they're wrong.
 
 If you get all parts assembled, this board (from part 2)[^4] ends up being around $33.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/918.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/918.webp)
 
 With shipping, that's $45 for me.
 
-![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/1019.webp)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/1019.webp)
 
 [^1]: You might want to edit the footprints of components you are hand-soldering. For example, to hand solder the USB-C connector, make the pads longer and remove unused ones like SBUS.
 [^2]: There are a million different ways to export your files and order with different manufacturers, but for simplicity, this jam only focuses on one.

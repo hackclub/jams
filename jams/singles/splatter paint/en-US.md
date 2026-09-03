@@ -4,7 +4,7 @@ description: >
   Crazy colorful splatter paint in your browser with Paper.js
 contributor: 'sahitid'
 originalAuthor: 'MatthewStanciu'
-thumbnail: 'https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png'
 timeEstimate: '30-45 Min'
 difficulty: 'Beginner'
 keywords: 'Beta, colors, paint, art, splatter paint'
@@ -22,7 +22,7 @@ One of the most common myths about coding among people who are first learning to
 
 You’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your web browser, in only 20 minutes.
 
-![Colorful patterns of dots and lines on a canvas](https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png)
+![Colorful patterns of dots and lines on a canvas](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png)
 
 [Final code](https://repl.it/@TechBug2012/splatter-paint#index.html)
 [Final demo](https://splatter-paint.techbug2012.repl.co)
@@ -114,7 +114,7 @@ function onMouseMove(event) {
 
 Instead of using the more common hexademical or RGB color systems, Paper.js uses the HSB color system, which uses angles on a color wheel to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
 
-![Color wheel in which each color is assigned a degree value](https://cloud-b0scmt0cu-hack-club-bot.vercel.app/0hsb-color-wheel.png)
+![Color wheel in which each color is assigned a degree value](https://cdn.hackclub.com/rescue?url=https://cloud-b0scmt0cu-hack-club-bot.vercel.app/0hsb-color-wheel.png)
 
 (If you’re interested in learning more about the HSB color system, check out [this fantastic explanation](https://learnui.design/blog/the-hsb-color-system-practicioners-primer.html))
 
@@ -163,23 +163,23 @@ canvas {
 
 If you run your repl again, you should notice that your red circles are now filling the entire screen!
 
-![Random pattern formed by red circles](https://cloud-3aosybiuc-hack-club-bot.vercel.app/6red-circles.jpg)
+![Random pattern formed by red circles](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/6red-circles.jpg)
 
 ## Making it Splattery
 
 We’re getting somewhere, but this still doesn’t feel very splattery.
 
-![colorful paint randomly splattered on a canvas](https://cloud-3aosybiuc-hack-club-bot.vercel.app/5real-splatter-paint.jpg)
+![colorful paint randomly splattered on a canvas](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/5real-splatter-paint.jpg)
 
 Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if you want to get your website as close to splatter paint as possible, the best way to do it is to introduce some randomness.
 
 Change the radius of your circles from `10` to `Math.round(Math.random() * 25) + 5`. This makes the radius a random number between 5 and 30. Then run the repl again.
 
-![Circles with large radii forming a random pattern on a canvas](https://cloud-3aosybiuc-hack-club-bot.vercel.app/4random-radius.jpg)
+![Circles with large radii forming a random pattern on a canvas](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/4random-radius.jpg)
 
 Not bad, but it feels sort of mashed together, doesn’t it? Maybe we can make each circle unique by making it a different color than the last. Try changing the hue from `0` to `event.count * 3`. Run the repl and see what happens.
 
-![Rainbow assortment of circles of various sizes on a canvas](https://cloud-3aosybiuc-hack-club-bot.vercel.app/3rainbow-colors.jpg)
+![Rainbow assortment of circles of various sizes on a canvas](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/3rainbow-colors.jpg)
 
 `event.count * 3` creates a rainbow effect by setting the hue on each circle to the total number of times a circle has been drawn multiplied by 3, which jumps around the HSB color wheel. And it looks great!
 

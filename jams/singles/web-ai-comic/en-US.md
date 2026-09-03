@@ -4,16 +4,16 @@ description: >
     In this jam, we'll be using ChatGPT to generate the text of a children's comic, and use Stable Diffusion to create pictures for the comic. Both ChatGPT and Stable Diffusion are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 contributor: 'ganning127'
 contributorSlackID: 'U03336QJ21H'
-thumbnail: 'https://cloud-9f9dwksme-hack-club-bot.vercel.app/00000thumbnail__2___1_-2_70_50.webp'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-9f9dwksme-hack-club-bot.vercel.app/00000thumbnail__2___1_-2_70_50.webp'
 timeEstimate: '60 Min'
 difficulty: 'Easy'
 keywords: 'AI, ChatGPT, Stable Diffusion, HTML, CSS, Machine Learning, Artificial Intelligence, AI, ML, chatgpt, openai, ai, ai api'
 language: 'ChatGPT,HTMl,CSS,StableDiffusion'
 presentation: 'https://www.figma.com/file/vPvkTekK6hzED7fowx0aBf/ComicBookAi?type=design&node-id=11%3A182&mode=design&t=Qgq1JvXvHyxwNwAo-1'
 presentationPlay: 'https://www.figma.com/proto/vPvkTekK6hzED7fowx0aBf/ComicBookAi?type=design&node-id=1-2&t=Qgq1JvXvHyxwNwAo-0&scaling=contain&page-id=0%3A1'
-presentationPDF: 'https://cloud-c4phbrzty-hack-club-bot.vercel.app/0comicbookai.pdf'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-c4phbrzty-hack-club-bot.vercel.app/0comicbookai.pdf'
 notes: 'https://hackmd.io/l3VKBJluTM2tdP40TDFCIw'
-poster: 'https://cloud-h5osxqcta-hack-club-bot.vercel.app/0build_your_own_comic_book_with_ai.pdf'
+poster: 'https://cdn.hackclub.com/rescue?url=https://cloud-h5osxqcta-hack-club-bot.vercel.app/0build_your_own_comic_book_with_ai.pdf'
 video: ''
 slug: 'web-ai-comic'
 ---
@@ -23,14 +23,14 @@ slug: 'web-ai-comic'
 Hey hacker, welcome to the land of writing and drawing, or rather, using **AI to write and draw for you**! 👋 In this jam, we'll be using **ChatGPT** to generate the text of a children's comic, and use **Stable Diffusion** to create pictures for the comic. Both ChatGPT and Stable Diffusion  are completely free. Lastly, we'll walk through deploying your comic as a website (yes, with a live URL :)) so you can share it with your friends 🌎
 
 This jam will take you from 0 to a ChatGPT and AI model "Hero":
-![](https://cloud-a10rlmpqz-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-a10rlmpqz-hack-club-bot.vercel.app/0image.png)
 
 As an example, here is an example of what your finished storybook may look like ([alex-gets-his-private-pilot-license.ganningxu.repl.co](https://alex-gets-his-private-pilot-license.ganningxu.repl.co))!
 
-![](https://cloud-d9ibqv1p3-hack-club-bot.vercel.app/0screen_recording_2023-08-01_at_12.26.59_pm__2_.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-d9ibqv1p3-hack-club-bot.vercel.app/0screen_recording_2023-08-01_at_12.26.59_pm__2_.gif)
 
 If you're interested, here's another comic that I made with ChatGPT and DALL-E ([robotics-mayhem.ganningxu.repl.co](https://robotics-mayhem.ganningxu.repl.co/))
-![](https://cloud-dau1tq7mx-hack-club-bot.vercel.app/0screen_recording_2023-08-08_at_7.06.00_pm.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-dau1tq7mx-hack-club-bot.vercel.app/0screen_recording_2023-08-08_at_7.06.00_pm.gif)
 
 Keep in mind that your result will be completely different. In fact, if it is the same, you're probably doing something wrong :) With that said, here are some resources that you may find helpful!
 
@@ -73,7 +73,7 @@ For more information on prompting basics, check out [promptingguide.ai](https://
 Next, we'll cover some common prompt engineering techniques. For each section, there will be a small challenge. You'll share your responses to each section on a Google Form that the club leader shares with you. You'll also have access to other people's responses, to stalk---I mean learn.
 
 Now, let's go into some specifics!
-![](https://cloud-o5nnqusk0-hack-club-bot.vercel.app/0giphy.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-o5nnqusk0-hack-club-bot.vercel.app/0giphy.gif)
 
 ### Zero-Shot Prompting
 > ❓ Using zero-shot prompting, come up with a sentence of your own and ask ChatGPT to classify it as spam or safe :)
@@ -127,12 +127,12 @@ When we won the game, we all started to farduddle in celebration.
 When using Chain-of-Thought prompting, you'll want to ask the model to **explain the intermediate reasoning steps** before giving the final answer. 
 
 Here's an [example](https://towardsdatascience.com/prompt-engineering-guide-for-data-analysts-54f480ba4d98):
-![](https://cloud-6v5c2pm6e-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-6v5c2pm6e-hack-club-bot.vercel.app/0image.png)
 
 Telling the model to solve it "step by step" helps it **think through its own answer**, giving more accurate results.
 
 Here's [another example](https://ai.googleblog.com/2022/05/language-models-perform-reasoning-via.html) (note that you can also "show" the model what step by step looks like):
-![](https://cloud-aaphlohmn-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-aaphlohmn-hack-club-bot.vercel.app/0image.png)
 
 ### Generated Knowledge Prompting
 > ❓ Using generated knowledge prompting, get ChatGPT to write a three paragraph essay on why comics and AI belong together. 
@@ -144,15 +144,15 @@ You can think of [GKP](https://arxiv.org/pdf/2110.08387.pdf) as the model **"sea
 These two screenshots are one example of GKP.
 
 [Generating the information](https://towardsdatascience.com/prompt-engineering-guide-for-data-analysts-54f480ba4d98) ("the search"):
-![](https://cloud-7rs0kqnrj-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-7rs0kqnrj-hack-club-bot.vercel.app/0image.png)
 
 [Using information to make answer](https://towardsdatascience.com/prompt-engineering-guide-for-data-analysts-54f480ba4d98) ("the answer"):
-![](https://cloud-5gt4oyd57-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-5gt4oyd57-hack-club-bot.vercel.app/0image.png)
 
 ### Self-Refine Prompting
 > ❓ Using self-refine prompting, ask ChatGPT to generate a function (in your choice of programming language) to play the game [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz#:~:text=Fizz%20buzz%20is%20a%20group,with%20the%20word%20%22fizzbuzz%22.). Though arguably Python is the best language hehe
 
-![](https://cloud-lfhygu0v3-hack-club-bot.vercel.app/0coding.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-lfhygu0v3-hack-club-bot.vercel.app/0coding.gif)
 
 You can think of SFP as the model "teaching itself". First, the user asks the model to provide an initial solution. Next, the user asks the model for problems with its original solution. Afterward, the user prompts the model to address the problems in its solution. This process can repeat until the user is happy with the result.
 
@@ -240,7 +240,7 @@ All three experts agree that the ball is in the bedroom.
 ## DAD JOKE COMPETITION
 AHA you didn't think you could skip this, did you >:) Here are the rules. Using the prompting techniques from above, generate five of your best dad jokes.
 
-![](https://cloud-54mgddtet-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-54mgddtet-hack-club-bot.vercel.app/0image.png)
 
 Your club leader will send a Google Form to everyone. At the end of the **five minutes**, submit your five jokes.
 
@@ -529,7 +529,7 @@ Prompt for Stable Diffusion:
 
 When feeding in a prompt to Stable Diffusion, you'll get four images. If you don't like them, feel free to adjust the prompt or click "Generate image" again. The image I liked the most was:
 
-![](https://cloud-41es9von4-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-41es9von4-hack-club-bot.vercel.app/0image.png)
 
 Make sure to save these images to your computer, as you'll be creating a website with them!
 
@@ -540,35 +540,35 @@ Continue doing this for the rest of the 8 sections.
 
 **Prompt 1**: Create a vibrant comic-style illustration featuring Alex, a determined high school student in North Carolina, who dreams of earning his private pilot license. Show Alex with a wide-eyed expression of excitement and wonder as he looks up at the sky filled with airplanes and clouds. Let his aviation enthusiast father be there, wearing a pilot's cap and sharing in his son's enthusiasm, supporting him in his journey. Surround them with motivational aviation posters and aviation-themed décor in the background, symbolizing Alex's aspirations and determination to soar high in the sky. Make sure to capture the essence of Alex's passion for flying and his desire to prove himself, both to his father and to himself, in the details of their expressions and body language.
     
-![](https://cloud-41es9von4-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-41es9von4-hack-club-bot.vercel.app/0image.png)
 
 **Prompt 2**: Create an expressive comic-style illustration depicting Alex's journey of setting his sights on earning his private pilot license. Show Alex in his room, surrounded by aviation posters, airplane models, and flight manuals, symbolizing his determination and focus on his dream. Capture the conflict of emotions on his face as he grapples with self-doubt and worries about the challenges ahead. Let his reflection in a mirror reveal a mix of determination and uncertainty, highlighting his inner struggle. Meanwhile, show his aviation enthusiast father by his side, offering encouraging words and support, showcasing their close bond. In the background, include scenes of Alex researching flight schools and requirements online, interacting with the local aviation community, and receiving valuable guidance, symbolizing the network of support he discovers. The illustration should portray both the emotional journey and the determination he gains from his support system, emphasizing the resilience of his character and the hope for a bright future in aviation
     
-![](https://cloud-htzl0ftuj-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-htzl0ftuj-hack-club-bot.vercel.app/0image.png)
 
 **Prompt 3**: Create an engaging comic-style illustration showcasing Alex's exciting journey as he enrolls in a reputable local flight school to pursue his dream of becoming a pilot. Illustrate the moment he meets his flight instructor, Captain Johnson, who exudes an air of authority and experience. Show Captain Johnson with a caring yet firm expression, emphasizing his strict yet nurturing teaching style. As Alex interacts with his fellow aviation enthusiasts, Sarah and Mike, illustrate the budding friendship among the trio, capturing their shared passion for flying. They are seen exchanging aviation books, sharing stories, and cheering each other on during their flight training. The illustration should portray a sense of camaraderie and mutual support, highlighting the bond they form over their common aspirations and dedication to aviation. In the background, include scenes of the flight school's hangar, airplanes, and aviation-themed decorations, setting the stage for their exciting journey into the world of aviation
     
-![](https://cloud-i1teccyai-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-i1teccyai-hack-club-bot.vercel.app/0image.png)
     
 **Prompt 4**: Create a vibrant comic-style illustration portraying the challenges and triumphs of Alex's flight training journey. Show Alex in the cockpit of a training aircraft, facing various difficulties while practicing complex flight maneuvers. Illustrate his expressions, body language, and interactions with his flight instructor, Captain Johnson, to convey the emotional ups and downs of the learning process. In contrast, depict heartwarming scenes of Alex's family and friends offering support and encouragement, standing by him through setbacks. Showcase a transformative moment where Alex's determination begins to shine through, as he gains confidence and embraces the learning process. Use dynamic poses and facial expressions to evoke empathy and admiration for Alex's resilience. In the background, include scenes of the flight school environment and other student pilots practicing, emphasizing the sense of community and shared experiences in aviation. The illustration should capture the essence of Alex's growth as a pilot, the power of determination, and the importance of a support system in overcoming challenges
 
-![](https://cloud-ih2dlt9xb-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-ih2dlt9xb-hack-club-bot.vercel.app/0image.png)
     
 **Prompt 5**: Craft a captivating comic-style illustration capturing the momentous occasion of Alex's first solo flight. Show Alex in the cockpit of a training aircraft, dressed in his flight gear, with a mix of excitement and nervousness evident on his face. Illustrate the aircraft's controls, surrounding instruments, and the vast sky outside, symbolizing the responsibility and freedom he feels as he takes control of the aircraft alone. Depict his flight instructor, Captain Johnson, watching from the ground with pride and confidence in his student's abilities. Use dynamic and expressive poses to convey the emotional intensity of the moment. In the background, include elements of the flight school environment, such as other planes and student pilots, adding to the sense of accomplishment and community. The illustration should capture the essence of Alex's personal growth, boosted confidence, and unwavering passion for aviation as he embarks on this significant turning point in his journey as a pilot."
 
-![](https://cloud-3wvlrjhsi-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-3wvlrjhsi-hack-club-bot.vercel.app/0image.png)
     
 **Prompt 6**: Create a compelling comic-style illustration portraying the build-up to Alex's flight test. Show Alex and Captain Johnson in intense flight training sessions, with Alex's expressions conveying his mounting anxiety and determination to excel. Illustrate the cockpit environment, with flight instruments and checklists, to depict the preparation and focus required for the test. Highlight moments of perseverance and discipline as Alex dedicates himself to rigorous practice. Use Captain Johnson's mentorship and supportive gestures to show the valuable life lessons he imparts to Alex, emphasizing the importance of staying calm under pressure. Incorporate visual cues, such as a calendar marking the approaching test date, to build suspense. In the background, include scenes of the flight school and other student pilots, reflecting the atmosphere of anticipation and determination. The illustration should capture the emotional intensity and the valuable growth experiences that Alex undergoes in preparation for the flight test, showcasing his resilience and commitment to becoming a skilled pilot.
     
-![](https://cloud-6y6x41yaf-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-6y6x41yaf-hack-club-bot.vercel.app/0image.png)
     
 **Prompt 7**: Create an intense comic-style illustration capturing the pivotal flight test day for Alex. Show Alex in the cockpit of the aircraft, surrounded by stormy skies and turbulent weather, symbolizing the unexpected challenges he faces. Illustrate his focused expression and confident posture as he navigates through the turbulence, demonstrating his proficiency as a pilot. Use dynamic poses and flight maneuvers to convey the intensity of the situation. Depict the aircraft's controls and instruments to emphasize his decision-making skills under pressure. Show Captain Johnson observing from the ground with a mix of concern and pride, reflecting the stakes of the test. As Alex applies everything he's learned, illustrate moments of growth as both a pilot and an individual, capturing the sense of achievement and self-assurance. In the background, include elements of the flight school and other planes, adding to the immersive atmosphere of the test environment. The illustration should showcase the test's challenging nature, the demonstration of Alex's growth, and the significance of this day in his journey as a skilled pilot
 
-![](https://cloud-m3sbbrf3q-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-m3sbbrf3q-hack-club-bot.vercel.app/0image.png)
     
 **Prompt 8**: Create a triumphant comic-style illustration capturing the moment when Alex successfully completes his flight test and earns his private pilot license. Show Alex in the cockpit of the aircraft, with a jubilant expression and a sense of accomplishment evident on his face. Illustrate the flight test examiner presenting him with the pilot license, symbolizing the achievement of his dream. Use dynamic poses and a celebratory atmosphere to convey the excitement of the moment. In the background, include scenes of North Carolina's landscape, with the sky painted in warm hues during sunset or sunrise, signifying the beginning of a new chapter in Alex's life as a pilot. Show his family and friends cheering from the ground, reflecting the support and love that made this accomplishment possible. The illustration should portray the culmination of Alex's hard work, determination, and growth throughout the journey, showcasing the importance of pursuing one's dreams and the joy of achieving them with the backing of loved ones.
     
-![](https://cloud-1ns1fl309-hack-club-bot.vercel.app/0image.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-1ns1fl309-hack-club-bot.vercel.app/0image.png)
     
 </details>
 
@@ -581,13 +581,13 @@ Also, if you have no experience with web development, don't panic, we'll walk yo
 1. First, using the [provided site template](https://replit.com/@GanningXu/ComicAiSiteTemplate?v=1), click "Fork"
 2. Name the template anything you'd like. For example, you could use the title of your comic.
 3. Now you should have an editable version that looks like this!
-![](https://cloud-h8lzbpzlx-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.39.15_pm.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-h8lzbpzlx-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.39.15_pm.png)
 
 **Upload your images**
 1. In the left file pane, click the three dots, and then click "Upload File":
-![](https://cloud-hq2einq2r-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.41.23_pm.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-hq2einq2r-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.41.23_pm.png)
 2. Using your file explorer, upload all the saved images that Stable Diffusion (or whichever image generator you used) created. After uploading, your file pane should look something like this (of course, your files may have different names).
-![](https://cloud-ebgrxv038-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.42.37_pm.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-ebgrxv038-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.42.37_pm.png)
 
 **Editing the HTML file**
 1. Let's get the images and text you uploaded onto your site!
@@ -601,16 +601,16 @@ Also, if you have no experience with web development, don't panic, we'll walk yo
 
 For example, since the filename of my first image is called `img1.png` and filename of my second image is `img2.jpeg`, my `index.html` file looks like: 
 
-![](https://cloud-mctosy4p1-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.50.44_pm.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-mctosy4p1-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.50.44_pm.png)
 
 **Getting the URL**
 1. To get the sharable URL for your new site, first click the green "Run" button at the top of your screen.
 2. Next, find the URL of the "embeded" browser, where your site is showing, and copy that URL, as shown below!
-![](https://cloud-90323bbsa-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.58.02_pm.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-90323bbsa-hack-club-bot.vercel.app/0screenshot_2023-07-26_at_9.58.02_pm.png)
 
 Feel free to share that URL with friends/family :) HOORAY, YOU DID IT!!!
 
-![](https://cloud-5y24e2iqg-hack-club-bot.vercel.app/0minions-yay.gif)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-5y24e2iqg-hack-club-bot.vercel.app/0minions-yay.gif)
 
 ## Extensions
 If you're feeling adventurous (or just want to learn something new), here are some extensions you can try out!

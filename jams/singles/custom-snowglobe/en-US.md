@@ -3,7 +3,7 @@ title: 'Making a Custom Digital Snowglobe'
 description: >  
   This Jam leads participants through a journey of creating their very own custom digital snowglobe that can even react to device motion!
 contributor: 'VelocityDesign'  
-thumbnail: 'https://cloud-lhlq7iz03-hack-club-bot.vercel.app/0snowglobe.gif'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-lhlq7iz03-hack-club-bot.vercel.app/0snowglobe.gif'
 timeEstimate: '60 Min'
 difficulty: 'Intermediate'
 keywords: 'Web, Snowglobe, Snow, website, javascript, HTML, CSS, replit'
@@ -12,28 +12,28 @@ slug: 'custom-snowglobe'
 presentation: 'https://www.figma.com/proto/irzmIKLAgp2DC0Op6LL46d/Snowglobe?type=design&node-id=1-3&t=R9P5nSfR6B0jP1bd-1&scaling=contain&page-id=0%3A1&mode=design'
 presentationPlay: 'https://www.figma.com/file/irzmIKLAgp2DC0Op6LL46d/Snowglobe?type=design&mode=design&t=D4GxfdgxV0G6w8MC-1'
 video: ''
-presentationPDF: 'https://cloud-cgmqkb53u-hack-club-bot.vercel.app/0snowglobe-compressed.pdf'
-notes: 'https://cloud-avh8xhfhk-hack-club-bot.vercel.app/0presentation_notes.pdf'
-poster: 'https://cloud-mura8dz7x-hack-club-bot.vercel.app/0poster.pdf'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-cgmqkb53u-hack-club-bot.vercel.app/0snowglobe-compressed.pdf'
+notes: 'https://cdn.hackclub.com/rescue?url=https://cloud-avh8xhfhk-hack-club-bot.vercel.app/0presentation_notes.pdf'
+poster: 'https://cdn.hackclub.com/rescue?url=https://cloud-mura8dz7x-hack-club-bot.vercel.app/0poster.pdf'
 ---
 
-> For the Code Snippets PDF, [click here.](https://cloud-gdufd98x3-hack-club-bot.vercel.app/0code_snippets.pdf)
+> For the Code Snippets PDF, [click here.](https://cdn.hackclub.com/rescue?url=https://cloud-gdufd98x3-hack-club-bot.vercel.app/0code_snippets.pdf)
 
 # Introduction
 Winter is objectively the best season of the year. Hot cocoa, pine trees, family tradition, sledding, and, most importantly, snow, are all favourites from this cozy season. However, winter doesn't last forever, and snow melts, much to the dismay of every five-year-old with a snowman. But, we humans have made a solution... snowglobes!
 
-![https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cloud-fcssxnb6l-hack-club-bot.vercel.app/6snow_doge.png)]
+![https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/6snow_doge.png)]
 
 So much snow in a small sphere?!? What much more could a person want?
 
-![https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cloud-fcssxnb6l-hack-club-bot.vercel.app/7power_graph.png)
+![https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/7power_graph.png)
 > It's scientifically proven!
 
 So, how would you like to create your own, virtual, shareable snowglobe? (I guess you don't have a choice at this point because, spoiler alert, you are doing that right about now...)
 
 ## What We're Making
 
-![https://cloud-782rtf1du-hack-club-bot.vercel.app/0ezgif.com-resize.gif](https://cloud-782rtf1du-hack-club-bot.vercel.app/0ezgif.com-resize.gif)
+![https://cdn.hackclub.com/rescue?url=https://cloud-782rtf1du-hack-club-bot.vercel.app/0ezgif.com-resize.gif](https://cdn.hackclub.com/rescue?url=https://cloud-782rtf1du-hack-club-bot.vercel.app/0ezgif.com-resize.gif)
 
 In this jam, we'll be making a custom, digital snowglobe (as implied by the title!) You'll be able to choose the background, particles, or even the music. [Here's a live demo of what we're building.](https://snowglobe.judahbrown.dev/)
 
@@ -209,7 +209,7 @@ Finally, we'll add the function to handle shaking activation!
 ```
 
 ### ↕ Choices, choices
-Now, time to tie it all together! tsParticles can load particle configuration in a number of ways, but one of the easiest is to load it from a `.json` file. Go ahead and download [this default snow configuration](https://cloud-66d7j3kh5-hack-club-bot.vercel.app/0particles.json) and place it in your website root as `particles.json`. You can customize these values later.
+Now, time to tie it all together! tsParticles can load particle configuration in a number of ways, but one of the easiest is to load it from a `.json` file. Go ahead and download [this default snow configuration](https://cdn.hackclub.com/rescue?url=https://cloud-66d7j3kh5-hack-club-bot.vercel.app/0particles.json) and place it in your website root as `particles.json`. You can customize these values later.
 
 Under the `calculateAcceleration()` function, add the command `tsParticles.load()`, which allows us to load the configuration. This command takes two inputs, element ID and configuration. Our element ID is the ID of the element where we want the particles to appear, and our configuration is the path to our config file, `particles.json`.
 
@@ -271,7 +271,7 @@ And, that's all!
 At this point, you have a nice, amazing snowglobe. Congratulations 🎉
 However, it's looking like all of these snowglobes are the same...
 
-![https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cloud-fcssxnb6l-hack-club-bot.vercel.app/8identical_snowglobes.png)
+![https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/8identical_snowglobes.png)
 
 Let's fix that by spicing them up a bit!
 
@@ -280,7 +280,7 @@ Let's fix that by spicing them up a bit!
 ### Adding an Image
 Adding an image is super simple! If you don't have an image you'd like to use already, you can find one on a free service like [Unsplash!](https://unsplash.com/) 
 
-![https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cloud-fcssxnb6l-hack-club-bot.vercel.app/3mountains.png)
+![https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/3mountains.png)
 > For example, this one.
 
 Download the image and add it to the website folder (Err- upload it to your repl!) For simplicity, let's rename the file to `background.jpg` (or `.png`, etc.) Now, go into the CSS for the `#snowglobe` element. Let's change up that background...
@@ -293,13 +293,13 @@ Download the image and add it to the website folder (Err- upload it to your repl
 
 Now, if you want to change up the position of the image within the globe, just change `center` in `center/cover`  to another location such as `right`, `top`, or `bottom`.
 
-![https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cloud-fcssxnb6l-hack-club-bot.vercel.app/4picture_globe.png)
+![https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/4picture_globe.png)
 > Hurrah, cool mountains!
 
 ### Adding a Gradient
 To keep it simple, you can use a tool like [cssgradient.io](https://cssgradient.io/) to generate a cool gradient background. Once you're done, all you need to do is copy the part that starts with `linear-gradient`.
 
-![https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cloud-fcssxnb6l-hack-club-bot.vercel.app/2gradient_highlighted.png)
+![https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/2gradient_highlighted.png)
 > Just the highlighted part!
 
 Next, go into the CSS for the `#snowglobe` element. Let's change up that background...
@@ -311,7 +311,7 @@ Next, go into the CSS for the `#snowglobe` element. Let's change up that backgro
 }
 ```
 
-![https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cloud-fcssxnb6l-hack-club-bot.vercel.app/5gradient_globe.png)
+![https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/](https://cdn.hackclub.com/rescue?url=https://cloud-fcssxnb6l-hack-club-bot.vercel.app/5gradient_globe.png)
 > A cool sunset made with the gradient `linear-gradient(4deg, rgba(134, 100, 0, 1) 0%, rgba(121, 9, 9, 1) 32%, rgba(4, 0, 70, 1) 100%)`
 
 If you want an extra cool challenge, try animating it! See [the section on animation above](#### Bonus: A shake animation!) and try to figure it out for yourself!
@@ -361,7 +361,7 @@ At this point, you have a cool snowglobe that's custom to you. Now, you can make
 
 In order to do this, we'll use a web technology called a Progressive Web App (Or, PWA for short.) PWA uses a combination of smaller web technologies, like web manifests that declare your site and its content and service workers that allow your site to cache content and run in the background. All in all, it creates a neat little package for a web app.
 
-To start, download [these assets](https://cloud-osijhtm8u-hack-club-bot.vercel.app/0pwa.zip) and unzip them into the root of your project. If you want, you can generate these assets with a custom icon and color scheme using a tool like [Real Favicon Generator](https://realfavicongenerator.net/), my personal favourite. Now, add the following HTML to the end of your head:
+To start, download [these assets](https://cdn.hackclub.com/rescue?url=https://cloud-osijhtm8u-hack-club-bot.vercel.app/0pwa.zip) and unzip them into the root of your project. If you want, you can generate these assets with a custom icon and color scheme using a tool like [Real Favicon Generator](https://realfavicongenerator.net/), my personal favourite. Now, add the following HTML to the end of your head:
 
 ```html
   <!-- PWA Stuff -->

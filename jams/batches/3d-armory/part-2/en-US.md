@@ -5,14 +5,14 @@ batch: '3d-armory'
 description: >  
     In this Jam, you will be finishing the hilt of the sword that we made in the last jam part. You will have fun customizing your product while learning both how to use TinkerCAD AND how to think like a 3D Modeler! 
 contributor: 'thesuperRL'  
-thumbnail: 'https://cloud-ft14x3slq-hack-club-bot.vercel.app/1image.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-ft14x3slq-hack-club-bot.vercel.app/1image.png'
 timeEstimate: '30 Min'  
 difficulty: 'Beginner'
 keywords: 'Sword, CAD, 3D Design, Model, TinkerCAD, 3D Printing, 3D, 3d'  
 language: 'N/A'
 presentation: "https://www.figma.com/file/tjUONBV4t7nCGpdYqXHfe0/Forge-of-Legends-Part-2-Presentation?type=design&node-id=0%3A1&mode=design&t=Rj7r7AQCUkpHkSFB-1" 
 presentationPlay: "https://www.figma.com/proto/tjUONBV4t7nCGpdYqXHfe0/Forge-of-Legends-Part-2-Presentation?type=design&node-id=2-14&t=PAhbnoBq1Sn0zbae-0&scaling=contain&page-id=0%3A1" 
-presentationPDF: "https://cloud-ec18cvc7z-hack-club-bot.vercel.app/0forge_of_legends_part_2_presentation__1_.pdf" 
+presentationPDF: "https://cdn.hackclub.com/rescue?url=https://cloud-ec18cvc7z-hack-club-bot.vercel.app/0forge_of_legends_part_2_presentation__1_.pdf" 
 notes: "https://docs.google.com/document/d/1MsnPHKdCjI5Qz-b-30BlTOcyaVMjJLMo8Am--FTmLgA/edit" 
 poster: ""
 video: "" 
@@ -20,11 +20,11 @@ totalParts: 2
 contributorSlackID: "U05E2FK240N"
 ---
 
-![Excalibur?](https://cloud-jtvxpzl1c-hack-club-bot.vercel.app/0image.png)
+![Excalibur?](https://cdn.hackclub.com/rescue?url=https://cloud-jtvxpzl1c-hack-club-bot.vercel.app/0image.png)
 
 *(Mountains and crystal models from TinkerCAD's Library)*
 
-![woscenery](https://cloud-jtvxpzl1c-hack-club-bot.vercel.app/1image.png)
+![woscenery](https://cdn.hackclub.com/rescue?url=https://cloud-jtvxpzl1c-hack-club-bot.vercel.app/1image.png)
 
 *(and now without scenery)*
 
@@ -48,7 +48,7 @@ Remember to use the handout from last time!
 
 Let's do a similar process with 
 
-![Wikipedia Image of Sword Parts](https://cloud-jtvxpzl1c-hack-club-bot.vercel.app/2image.png)
+![Wikipedia Image of Sword Parts](https://cdn.hackclub.com/rescue?url=https://cloud-jtvxpzl1c-hack-club-bot.vercel.app/2image.png)
 
 When you are modeling (like when you are programming), it's always helpful to break big items into smaller parts. Modeling individual pieces and grouping them together is always easier than trying to do the whole thing. 
 
@@ -71,7 +71,7 @@ Let's take a look at a real one
 
 It looks already quite simple, but we can make it simpler. It's basically the same as the blade (a diamond prism shape) but stretched way wider and being shorter.
 
-![Hilt Base](https://cloud-lpi8legia-hack-club-bot.vercel.app/0image.png)
+![Hilt Base](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/0image.png)
 
 If you wanted a straight handguard, we are done. But we can do better than that. 
 
@@ -85,33 +85,33 @@ In this case, let's try subtraction since it's hard to add a curve or do anythin
 
 Let's grab a cylinder and rotate it 90 degrees. Stretch it out lengthwise and decrease its height to make its curve more gradual. 
 
-![Cylinder Modifying](https://cloud-lpi8legia-hack-club-bot.vercel.app/1image.png)
+![Cylinder Modifying](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/1image.png)
 
 Let's duplicate it (either by using Ctrl C and Ctrl V, or just Ctrl D). Move it so that they are barely touching, and use our old friend the align tool to, well, align them. 
 
-![Align](https://cloud-lpi8legia-hack-club-bot.vercel.app/2image.png)
+![Align](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/2image.png)
 
 Notice how I will only click the red dot (align width-wise) and not the middle dot on the long side, since that will just make them overlap. We get this:
 
-![Cyl2](https://cloud-lpi8legia-hack-club-bot.vercel.app/3image.png)
+![Cyl2](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/3image.png)
 
 Group them, and align them with the red hilt body. You can make a few adjustments to the height and length of the cylinder abomination, and make sure to move it up a bit since we want to cut the top, not the bottom of the red shape.
 
-![Example](https://cloud-lpi8legia-hack-club-bot.vercel.app/4image.png)
+![Example](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/4image.png)
 
 Now we address what you see here: Holes. 
 
-![Holes](https://cloud-lpi8legia-hack-club-bot.vercel.app/5image.png)
+![Holes](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/5image.png)
 
 You're probably wondering how we can do subtraction, if so far all I showed you is combining two shapes into one. To that I say, we use **holes**. 
 
 Grouping a hole with a solid cuts holes in it. Let's make the orange shape a hole, and then use the group tool on it and the red shape. 
 
 Before the grouping:
-![pregroup](https://cloud-lpi8legia-hack-club-bot.vercel.app/6image.png)
+![pregroup](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/6image.png)
 
 After the grouping:
-![postgroup](https://cloud-lpi8legia-hack-club-bot.vercel.app/7image.png)
+![postgroup](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/7image.png)
 
 A small tip with holes: remember that you can use an object you've already cut shapes out of as another hole! 
 
@@ -121,7 +121,7 @@ A small tip with holes: remember that you can use an object you've already cut s
 
 With this technique I made the bottom curve as well. Try to figure out how I did that as a challenge, or simply move on if you'd like. 
 
-![chal](https://cloud-lpi8legia-hack-club-bot.vercel.app/8image.png)
+![chal](https://cdn.hackclub.com/rescue?url=https://cloud-lpi8legia-hack-club-bot.vercel.app/8image.png)
 
 Great! You've made it past the most difficult part! You can stay here to decorate more, but for our purposes (whether you did the challenge or not) this hilt is more than enough. Now let's move on. 
 
@@ -133,15 +133,15 @@ This is much easier. All we need is a cylinder that shrinks as you get higher. I
 
 If you search up frustum you will probably see diagrams like this:
 
-![Cone Frustum](https://cloud-fb5vv4641-hack-club-bot.vercel.app/0image.png)
+![Cone Frustum](https://cdn.hackclub.com/rescue?url=https://cloud-fb5vv4641-hack-club-bot.vercel.app/0image.png)
 
 Hey, isn't that just a cone but with the tip cut out? We can do that with holes!
 
 Since you already know how to use holes (and are probably tired with my rambling), I'm not going to elaborate much. I'll just show pictures.
 
-![frust1](https://cloud-fb5vv4641-hack-club-bot.vercel.app/1image.png)
+![frust1](https://cdn.hackclub.com/rescue?url=https://cloud-fb5vv4641-hack-club-bot.vercel.app/1image.png)
 
-![f2](https://cloud-fb5vv4641-hack-club-bot.vercel.app/2image.png)
+![f2](https://cdn.hackclub.com/rescue?url=https://cloud-fb5vv4641-hack-club-bot.vercel.app/2image.png)
 
 Easy right? Shapes like this gets easier and easier to identify as you model more and more.
 
@@ -153,18 +153,18 @@ I'm just going to show some pictures of me making an easy cylinder pommel if you
 
 This simple cylinder pommel is just making each part separately, aligning and fusing. The tutorial video in the slides gives an even easier example that doesn't even include the center sphere.
 
-![c1](https://cloud-cof3vpycd-hack-club-bot.vercel.app/0image.png)
+![c1](https://cdn.hackclub.com/rescue?url=https://cloud-cof3vpycd-hack-club-bot.vercel.app/0image.png)
 
-![c2](https://cloud-cof3vpycd-hack-club-bot.vercel.app/1image.png)
+![c2](https://cdn.hackclub.com/rescue?url=https://cloud-cof3vpycd-hack-club-bot.vercel.app/1image.png)
 
-![c3](https://cloud-cof3vpycd-hack-club-bot.vercel.app/2image.png)
+![c3](https://cdn.hackclub.com/rescue?url=https://cloud-cof3vpycd-hack-club-bot.vercel.app/2image.png)
 
 
 ## Fusing the Pieces
 
 Let's look at our inventory.
 
-![Inventory](https://cloud-bl0ftjpng-hack-club-bot.vercel.app/0image.png)
+![Inventory](https://cdn.hackclub.com/rescue?url=https://cloud-bl0ftjpng-hack-club-bot.vercel.app/0image.png)
 
 (I just made all of them a bit smaller because TinkerCAD was yelling at me about a size limit... oops)
 
@@ -172,7 +172,7 @@ A video of the fusing process is within the slides again, but this is basically 
 
 After some resizing and combination, we are (FINALLY) done!
 
-![End product](https://cloud-bl0ftjpng-hack-club-bot.vercel.app/1image.png)
+![End product](https://cdn.hackclub.com/rescue?url=https://cloud-bl0ftjpng-hack-club-bot.vercel.app/1image.png)
 
 (You can recolor parts by ungrouping it, then recoloring each piece by selecting it, clicking the "solid" button, and pressing a different color.)
 

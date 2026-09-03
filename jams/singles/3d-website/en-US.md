@@ -2,14 +2,14 @@
 title: Making 3D Worlds in HTML
 description: 
 contributor: shubhampatilsd
-thumbnail: 'https://cloud-mh2cnr5di-hack-club-bot.vercel.app/0slide_16_9_-_1thumbnail.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://cloud-mh2cnr5di-hack-club-bot.vercel.app/0slide_16_9_-_1thumbnail.png'
 timeEstimate: 90 Min
 difficulty: Beginner
 keywords: 3D, Web, VR
 language: HTML, CSS, JavaScript
 presentation: "https://www.figma.com/design/mxwZ1xrkPSWKDvU3VTX9Au/Hackaccino-Slides?node-id=1-2&t=VJbkLd4RrosLFv3R-1"
 presentationPlay: 'https://www.figma.com/proto/mxwZ1xrkPSWKDvU3VTX9Au/Hackaccino-Slides?page-id=0%3A1&node-id=1-2&viewport=-7853%2C490%2C0.74&t=V1iwVSMKcxtlBxPL-1&scaling=contain&content-scaling=fixed'
-presentationPDF: 'https://cloud-snbrt3xlv-hack-club-bot.vercel.app/0hackaccino_slides.pdf'
+presentationPDF: 'https://cdn.hackclub.com/rescue?url=https://cloud-snbrt3xlv-hack-club-bot.vercel.app/0hackaccino_slides.pdf'
 notes: 
 poster: ""
 video: ""
@@ -34,25 +34,25 @@ If you've ever wanted to make your own immersive and expansive 3D worlds, you've
 10. Wrapping up
 ## Setting up Replit 
 Go to [https://replit.com](https://replit.com) and create/log into an account:
-![Replit authentication page](https://cloud-99ig98peo-hack-club-bot.vercel.app/0image.png)
+![Replit authentication page](https://cdn.hackclub.com/rescue?url=https://cloud-99ig98peo-hack-club-bot.vercel.app/0image.png)
 
 Then, go ahead and create a project by going to "Create Repl" on the sidebar > selecting HTML, CSS, JS > giving it a title > hitting "Create Repl"
 
-![Creating HTML CSS JS Repl](https://cloud-p82fpfgs2-hack-club-bot.vercel.app/0outputgif.gif)
+![Creating HTML CSS JS Repl](https://cdn.hackclub.com/rescue?url=https://cloud-p82fpfgs2-hack-club-bot.vercel.app/0outputgif.gif)
 
 ## What's A-Frame?
 
-![aframe logo](https://cloud-m5c3nxgbo-hack-club-bot.vercel.app/0image.png)
+![aframe logo](https://cdn.hackclub.com/rescue?url=https://cloud-m5c3nxgbo-hack-club-bot.vercel.app/0image.png)
 
 Building 3D worlds used to be pretty hard to approach due to its high learning curve. A-Frame is a library to help make this stuff MUCH easier. Instead of getting lost in the weeds, it provides a simple interface for you to create 3D websites.
 
 Here are some of the amazing things people have made with A-Frame:
 1. [A-Blast](https://aframe.io/a-blast/)
-![a-blast ui](https://cloud-3j84pfit2-hack-club-bot.vercel.app/0image.png)
+![a-blast ui](https://cdn.hackclub.com/rescue?url=https://cloud-3j84pfit2-hack-club-bot.vercel.app/0image.png)
 2. [Access Mars](https://accessmars.withgoogle.com/)
-![access mars preview](https://cloud-grr8upimy-hack-club-bot.vercel.app/0image.png)
+![access mars preview](https://cdn.hackclub.com/rescue?url=https://cloud-grr8upimy-hack-club-bot.vercel.app/0image.png)
 3. [Moonrider](https://moonrider.xyz/)
-![moonrider ui](https://cloud-rcqx7la5t-hack-club-bot.vercel.app/0image.png)
+![moonrider ui](https://cdn.hackclub.com/rescue?url=https://cloud-rcqx7la5t-hack-club-bot.vercel.app/0image.png)
 
 ## Adding A-Frame
 
@@ -61,7 +61,7 @@ Hey, do you notice the `<head>` tag in our HTML? Yeah, we can add a script via t
 ```js
 <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
 ```
-![instructions of putting script within head tag](https://cloud-byterps5u-hack-club-bot.vercel.app/0image.png)
+![instructions of putting script within head tag](https://cdn.hackclub.com/rescue?url=https://cloud-byterps5u-hack-club-bot.vercel.app/0image.png)
 
 ## Creating a scene
 
@@ -80,9 +80,9 @@ All of our elements will go here. What are these elements you might ask?
 A-Frame has different tags for different 3D elements. For example, you can use `<a-box>` to create a cube, and `<a-sphere>` to create a ball.
 
 Here are all the different kinds of elements (use `<a-[ELEMENT-NAME]>` to use these):
-![showcase of all a-frame tags](https://cloud-69ehuc8ev-hack-club-bot.vercel.app/0image.png)
+![showcase of all a-frame tags](https://cdn.hackclub.com/rescue?url=https://cloud-69ehuc8ev-hack-club-bot.vercel.app/0image.png)
 
-![visual map of entities in a scene](https://cloud-mgilf4sx7-hack-club-bot.vercel.app/0image.png)
+![visual map of entities in a scene](https://cdn.hackclub.com/rescue?url=https://cloud-mgilf4sx7-hack-club-bot.vercel.app/0image.png)
 
 Within your `<a-scene>`, add a box:
 
@@ -93,7 +93,7 @@ Within your `<a-scene>`, add a box:
 ```
 
 Click on the panel on the right and use your WASD keys + mouse to move around. You should see a box after you move around (click the run button at the top of the page if nothing shows up):
-![demo of white box ](https://cloud-klvbtj50y-hack-club-bot.vercel.app/0screen_recording_june_17.gif)
+![demo of white box ](https://cdn.hackclub.com/rescue?url=https://cloud-klvbtj50y-hack-club-bot.vercel.app/0screen_recording_june_17.gif)
 
 Hmm, we should probably have some color. After all, things are much better with colors!
 
@@ -125,13 +125,13 @@ It's really simple to deploy your site. Go to https://netlify.app and create an 
 
 After doing so, go to Replit and download your files as a `.zip` file. You can do this by clicking the three dots above all your files and clicking "Download as ZIP":
 
-![image of ui to download as zip](https://cloud-ecgsox4ue-hack-club-bot.vercel.app/0image.png)
+![image of ui to download as zip](https://cdn.hackclub.com/rescue?url=https://cloud-ecgsox4ue-hack-club-bot.vercel.app/0image.png)
 
 After this, go to https://app.netlify.com/drop and drag and drop your `.zip` file there.
 
 After it uploads, click "Open production deploy" to see your live site!
 
-![image of opening deploy](https://cloud-bpr687t0e-hack-club-bot.vercel.app/0image.png)
+![image of opening deploy](https://cdn.hackclub.com/rescue?url=https://cloud-bpr687t0e-hack-club-bot.vercel.app/0image.png)
 
 ## Getting a free frappuccino
 
@@ -146,13 +146,13 @@ Awesome work on this site! To wrap up, we suggest sharing your site in our [Slac
 Here's some cool stuff that Hack Clubbers have made:
 
 1. [Adrian De Gendt](https://github.com/Space1415/) made an amazing [solar system model](https://subsequent-thoughtful-tarantula.glitch.me/) 
-![solar system example from adrian de gendt](https://cloud-1e2jtrqm9-hack-club-bot.vercel.app/0image.png)
+![solar system example from adrian de gendt](https://cdn.hackclub.com/rescue?url=https://cloud-1e2jtrqm9-hack-club-bot.vercel.app/0image.png)
 
 2. [Aayan Rahman](https://github.com/aayanrahman/) made [Bloxy](https://aayanrahman.github.io/HackaccinoGrant.github.io/), a block-game demo inspired by Minecraft 
-![bloxy demo](https://cloud-c2fzf76vl-hack-club-bot.vercel.app/0image.png)
+![bloxy demo](https://cdn.hackclub.com/rescue?url=https://cloud-c2fzf76vl-hack-club-bot.vercel.app/0image.png)
 
 3. [Dieter Schoening](https://github.com/Deetschoe) made [Aurality](https://aurality.vercel.app/), a webapp that displays your Spotify top songs in 3D!
-![aurality demo](https://cloud-a5dhhs37l-hack-club-bot.vercel.app/0image.png)
+![aurality demo](https://cdn.hackclub.com/rescue?url=https://cloud-a5dhhs37l-hack-club-bot.vercel.app/0image.png)
 
 So there you have it, go out and create great things with the tools and skills you have.
 

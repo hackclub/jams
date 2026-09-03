@@ -6,7 +6,7 @@ title: 'Add in User Input and Customization'
 description: "In this part of the Jam, you'll add sliders and inputs so your user can customize your art and music."
 contributor: "celesteroselli"
 contributorSlackID: 'U06TV3F4HEU'
-thumbnail: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/e2205fabe35fae365098c1fd3501b322504dac6b_1__1_.png'
+thumbnail: 'https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/e2205fabe35fae365098c1fd3501b322504dac6b_1__1_.png'
 timeEstimate: '30-45 min'
 difficulty: 'Beginner, Intermediate'
 keywords: 'art, color, input, button, javascript'
@@ -78,7 +78,7 @@ Answer:
 
 Yay!! If you run your code now, while adjusting the color picker, you should notice something… 
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/c7ba76ec303f75c9dccab2cb0fcca713aedd807f_color.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/c7ba76ec303f75c9dccab2cb0fcca713aedd807f_color.mp4" width="100%" controls></video>
 
 <br />
 
@@ -90,23 +90,23 @@ That’s right! Your line is changing color! You’re one step closer to an awes
 
 **Ok, we’ve gotten it all artsy up in here with our majestic palettes of customizable colors.**
 
-![art-orpheus](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2d121580ca3c44438bfd1068158f93f1cab58bed_artorpheus.jpeg)
+![art-orpheus](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/2d121580ca3c44438bfd1068158f93f1cab58bed_artorpheus.jpeg)
 
 Credit to @Jordi (Jordan)
 
 **But let’s get it funky up in here.**
 
-![dj-1](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a0ad58660dc0575aa0043fe166733ce65981a742_dj1.jpg)
+![dj-1](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/a0ad58660dc0575aa0043fe166733ce65981a742_dj1.jpg)
 
 Credit to @Space_Duck (Navya M)
 
-![dj-2](https://hc-cdn.hel1.your-objectstorage.com/s/v3/0d62c4789fd87525a4ace7ae7b4e3b0b56d11629_dj2.jpeg)
+![dj-2](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/0d62c4789fd87525a4ace7ae7b4e3b0b56d11629_dj2.jpeg)
 
 Credit to @Jordi (Jordan)
 
 In this section, we’re going to be giving users the ability to change the volume of the sound that comes out of their laptop. In addition, this change will **also affect the drawn sine waves**, because in real-life, waves with higher volumes have higher **amplitudes**! So, when the user increases volume on a slider, not only will the sound come out louder, but their waves will be taller.
 
-![diagram of volume and amplitude](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2441a2227b8c9793f044245f44e5a2033d6fa78c_screenshot_2025-06-06_at_12.50.36___pm.png)
+![diagram of volume and amplitude](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/2441a2227b8c9793f044245f44e5a2033d6fa78c_screenshot_2025-06-06_at_12.50.36___pm.png)
 
 Let’s start by adding a slider input, which is gonna control the volume/amplitude. Add this to your index.html around where you added the color picker:
 
@@ -203,7 +203,7 @@ Now, to clean up your code, go ahead and get rid of the amplitude value wherever
 
 If you run your code…
 
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/5d78eec3ceb31ab8560ad174ff87640fc512c881_realvolume.mp4" width="100%" controls></video>
+<video src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/5d78eec3ceb31ab8560ad174ff87640fc512c881_realvolume.mp4" width="100%" controls></video>
 
 <br />
 
