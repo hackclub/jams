@@ -35,7 +35,7 @@ In this part, we'll start coding our web app with JavaScript and HTML to set up 
 ### **Outline:**
 1. **Enter The Code Editor** *(start coding in your browser)*
 2. **Set Up the HTML Some More** *(visualize the conversation with AI)*
-3. **Let's Get Orpheus to Speak!** *(text to speech recognition!)*
+3. **Let's Get Orpheus to Speak!** *(text-to-speech synthesis!)*
 
 ## Enter the Code Editor
 
@@ -77,16 +77,13 @@ Some of these will be invisible at first, so let's add some CSS:
 
 ![orpheus plushie gif](https://cdn.hackclub.com/rescue?url=https://cloud-lsz4bcbfi-hack-club-bot.vercel.app/0jams_gifs.gif)
 
-Now we can create the two functions to first output the response through text onto the screen and then to output the speech
-
-We will create 2 functions, one to output Orpheus' response to the screen and the other one to actually speak:
-
-Okay, let's get Orpheus to speak now! We will create 2 functions in the JavaScript file, one to output Orpheus' response to the screen:
+Now we can create two functions: one to display Orpheus' response on the screen and another to speak it aloud. Start with the function that displays a message:
 
 ```js
 function addMessage({ role, content }) {
   let message = document.createElement('div')
   message.innerText = content
+  document.querySelector('#messages').appendChild(message)
   message.scrollIntoView(false) // Scroll to the message
 }
 ```
@@ -158,7 +155,7 @@ In case it wasn't obvious enough, here is what we changed:
 
 ![before and after for code](https://cdn.hackclub.com/rescue?url=https://cloud-8s76y8brd-hack-club-bot.vercel.app/0jams_gifs.png)
 
-Notice that we replaced `console.log` with `speak('Hey!').then(() => ...)`. Because we used promises, we can say, once speak is done done running, we can **then** move on to the next thing, which is `console.log`ging "Done speaking
+Notice that we replaced `console.log` with `speak('Hey!').then(() => ...)`. Because we used promises, once `speak` is done running, we can **then** move on to the next thing and log `Done speaking`.
 
 We need to also implement the `listening` variable so that Orpheus isn't listening and speaking at the same time that it is listening! It will tell Orpheus whether or not she should be speaking or listening *(that way, listening doens't overlap with Orpheus speaking, which could lead to problems).*
 
@@ -224,6 +221,7 @@ async function speak(message) {
 function addMessage({ role, content }) {
   let message = document.createElement('div')
   message.innerText = content
+  document.querySelector('#messages').appendChild(message)
   message.scrollIntoView(false)
 }
 
@@ -281,8 +279,11 @@ It's that time you've all been waiting for! Let's Hack our Jam! Try doing one of
 ![jam hacks](https://cdn.hackclub.com/rescue?url=https://cloud-f7mhrygov-hack-club-bot.vercel.app/0jam_hacks_2.gif)
 
 - Try adding a setting that lets people choose their voice option
-- Have you ever looked into [Eleven Labs](https://beta.elevenlabs.io/) AI voices? How might one go about incorporating their API into this project for more realistic voices?
+- Compare the same short line with your browser's built-in voices and a hosted [text to speech AI](https://flowspeech.io/) playground. Try neutral, excited, and calm deliveries, then write down what changes in pacing, pronunciation, and emotion.
+- Have you ever looked into [ElevenLabs](https://elevenlabs.io/) AI voices? How might one go about incorporating their API into this project for more realistic voices?
 - Could you add a setting that lets people choose their assistant's voice when they open your web app?
+
+If you later connect a cloud voice API, keep its secret key in a server-side route or serverless function. Never paste a private API key into `script.js`, because anyone visiting the page can read client-side code.
 
 ## Stay Tuned To Build Your Very Own Smart Voice Assistant
 
