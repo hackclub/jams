@@ -95,7 +95,7 @@ Tilesets are used to easily make and customize grid-based 2D maps in games. Add 
 
 ### 5. Add Collision For Tileset
 
-Just like the player, each block of the map needs a collision box too (or else the player would just fall through the ground). Open TileSet in the Inspector and under Physics Layers, click Add Element. Then in the TileSet area in the bottom, change to the Pain tool and select Physics Layer 0 as the Paint Property. Then, select all the squares.
+Just like the player, each block of the map needs a collision box too (or else the player would just fall through the ground). Open TileSet in the Inspector and under Physics Layers, click Add Element. Then in the TileSet area in the bottom, change to the Paint tool and select Physics Layer 0 as the Paint Property. Then, select all the squares.
 ![tilsetcollision](https://cdn.hackclub.com/019d2a89-0c9d-7322-a4f0-bee3c92ecbff/Jumpstart%20Guide%20Tileset%20Physics.gif)
 
 ### 6. Draw a Map
