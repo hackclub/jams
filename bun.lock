@@ -7,7 +7,7 @@
       "dependencies": {
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.1",
-        "@fullstory/browser": "^2.0.8",
+        "@fullstory/browser": "^2.1.2",
         "@hackclub/icons": "^0.2.2",
         "@hackclub/meta": "^1.2.1",
         "@hackclub/theme": "^1.1.0",
@@ -85,9 +85,9 @@
 
     "@emotion/weak-memoize": ["@emotion/weak-memoize@0.4.0", "", {}, "sha512-snKqtPW01tN0ui7yu9rGv69aJXr/a/Ywvl11sUjNtEcRc+ng/mQriFL0wLXMef74iHa/EkftbDzU9F8iFbH+zg=="],
 
-    "@fullstory/browser": ["@fullstory/browser@2.0.8", "", { "dependencies": { "@fullstory/snippet": "2.0.6" } }, "sha512-MOylRaBAs7y7xFLvBQo446/xbTZ9MbPZSn3B4go4+eXI1o/uY7F+30ow6CA1i8fVoE4ScXDYpRtffDBBFsd8CQ=="],
+    "@fullstory/browser": ["@fullstory/browser@2.1.2", "", { "dependencies": { "@fullstory/snippet": "2.1.0" } }, "sha512-/QZfY1k4iSq8x4Mt//YzniX5dUk4EXFLpHIA9MxZS6IU5aRJuJ3q7+SDBWqh3XZGyS5IcWuA16kNeOm9GwSAXA=="],
 
-    "@fullstory/snippet": ["@fullstory/snippet@2.0.6", "", {}, "sha512-GECETOTiW8XhRAr4q94rXY8Uc315KGmSepZQvBKW1LONJiKFvKzKpm/6Lystw/8lHFsDT7hD5VIZntMNOO2VAQ=="],
+    "@fullstory/snippet": ["@fullstory/snippet@2.1.0", "", {}, "sha512-iuwwwa9AG9OSBnKoPxGdX69Hyu3tX1pw1rhuB02RArpeGW7jnUpDnIOrn0Y07B2PSTJqiQzp1b4P/jLzHCI9Ew=="],
 
     "@hackclub/icons": ["@hackclub/icons@0.2.2", "", { "peerDependencies": { "react": "^18.2.0 || ^19.0.0" } }, "sha512-dfcTgjrkep22tbCRpNHlbqIpKAxyXIHLlHJEXwP5e95/t1NUTsyKW8fXzAbIDrgrtUhyLiL7seYKzXz30mgYRg=="],
 
